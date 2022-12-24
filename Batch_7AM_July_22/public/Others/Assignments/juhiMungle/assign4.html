@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Block Float Concept</title>
+    <center><h1><i><u><b>Block Game</b></u></i></h1></center>
+    <style>
+        h1{
+            border: solid;
+            border-color: black;
+            width: 50%;
+            background-color: whitesmoke;
+            font-size: 40px;
+        }
+        
+        body{
+            background-color:darkturquoise;
+        }
+
+        .block{
+            border: 4px solid;
+            height: 120px;
+            width: 120px;
+            text-align: center;
+            margin: 10px;
+            cursor: pointer;
+            border-color: darkslategrey;   
+        }
+
+        .block:hover{
+            transform: scale(1.3);
+        }
+        .block01{
+            background-color: palevioletred;
+            float: left;
+        }
+        .block02{
+            background-color: blue;
+            float: left;
+        }
+
+        .block03{
+            background-color: orange;
+            float: right;
+            
+        }
+
+        .block04{
+            background-color: yellowgreen;
+            float: right; 
+            clear: both; 
+        }
+
+        .block05{
+            background-color: darkgoldenrod;
+            float: left;
+            clear: both;
+        }
+
+        .block06{
+            background-color: darkgreen;
+            float: right;
+        }
+
+        .block07{
+            background-color: deeppink;
+            float: left;
+            clear: both;
+        }
+
+        .block08{
+            background-color: darkviolet;
+            float: left;
+        }
+
+        .block09{
+            background-color: chocolate;
+            float: right;
+        }
+
+        .block10{
+            background-color: brown;
+            float: left;
+            clear: both;  
+        }
+
+        .block11{
+            background-color:magenta;
+            float: right;   
+        }
+
+        div{
+            font-size: xx-large;
+            font-style: oblique;
+            color: white;   
+        }
+        .main{
+           
+            height: 800px;
+            border-style: solid;
+            padding: 20px;   
+            margin: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="block block01">Block 01</div>
+        <div class="block block02">Block 02</div>
+        <div class="block block03">Block 03</div>
+        <div class="block block04">Block 04</div>
+        <div class="block block05">Block 05</div>
+        <div class="block block06">Block 06</div>
+        <div class="block block07">Block 07</div>
+        <div class="block block08">Block 08</div>
+        <div class="block block09">Block 09</div>
+        <div class="block block10">Block 10</div>
+        <div class="block block11">Block 11</div>
+    </div>
+    
+</body>
+</html> 

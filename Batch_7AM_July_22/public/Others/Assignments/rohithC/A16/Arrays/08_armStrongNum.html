@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> finding armstrong number from array </title>
+    </head>
+    <body>
+        press F12 or go to consoletab
+       <script>
+
+            var data = [2,12,31,52,75,89,105,153,407,689,998] ;
+               
+                for (i = 0 ; i < data.length; i++) {
+                    var nums = data[i];
+                    var nums = nums.toString();
+                    var ttld = nums.length;
+                        nums = parseInt(nums);
+                    var temp = nums;
+                    var armstrong = 0;
+                    
+                    while (nums > 0){
+                        rem = nums % 10;
+                        armstrong = armstrong + (rem ** ttld);
+                        nums = nums/10;
+                        nums = parseInt(nums);
+
+                    }
+                    if (temp == armstrong) {
+                        console.log(armstrong);
+                    }
+
+                }
+                            
+                </script> 
+    </body>
+</html>

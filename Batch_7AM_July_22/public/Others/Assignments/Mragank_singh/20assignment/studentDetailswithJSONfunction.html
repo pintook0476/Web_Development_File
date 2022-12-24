@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details with JSON function</title>
+  </head>
+  <body>
+    <script>
+      var studentdetails = {
+        readStudentdetails: function () {
+          this.sname = prompt("Enter The Name");
+          this.sclass = prompt("Enter The Class");
+          this.subject1 = parseInt(prompt("Enter The subject1 Mark"));
+          this.subject2 = parseInt(prompt("Enter The subject2 Mark"));
+          this.subject3 = parseInt(prompt("Enter The subject3 Mark"));
+          this.subject4 = parseInt(prompt("Enter The subject4 Mark"));
+          this.subject5= parseInt(prompt("Enter The subject5 Mark"));
+          this.TotalAndAvg();
+        },
+        TotalAndAvg: function () {
+          this.totalmark = this.subject1 + this.subject2 + this.subject3 + this.subject4 + this.subject5;
+          this.avgmark = this.totalmark / 5;
+          this.percentage = (this.totalmark * 100) / 500;
+          this.displaystudentdetails();
+        },
+        displaystudentdetails: function () {
+          console.log("Student Details");
+          console.log("Student Name: " + this.sname);
+          console.log("Student Class: " + this.sclass);
+          console.log("Student subject1: " + this.subject1);
+          console.log("Student subject2: " + this.subject2);
+          console.log("Student subject3: " + this.subject3);
+          console.log("Student subject4: " + this.subject4);
+          console.log("Student subject5: " + this.subject5);
+          console.log("Student Total Mark:"+ this.totalmark);
+          console.log("Student Average Mark:"+ this.avgmark);
+          console.log("Student Total Percentage :"+ this.percentage +"%");          
+        },
+      };
+      studentdetails.readStudentdetails();
+      console.log(studentdetails);
+    </script>
+  </body>
+</html>

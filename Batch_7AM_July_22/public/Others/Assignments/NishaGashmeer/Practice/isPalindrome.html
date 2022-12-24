@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Enter the number");
+        num = parseInt(num);// 12
+        var rev = 0;
+        while(num > 0){
+            //find the remainder
+            var rem = num % 10; // 2
+            //find the new num
+            //var div = num; // 12
+            num = Math.floor(num/10); // 1
+            //num = div;
+            rev = rev * 10 + rem; // 2
+            // console.log(num); //2
+        }
+
+        console.log(rev);
+
+        if(num === rev){
+            console.log(rev + " is a Palindrome");
+        }
+        //find a way to put in reverse order
+    </script>
+</body>
+</html>

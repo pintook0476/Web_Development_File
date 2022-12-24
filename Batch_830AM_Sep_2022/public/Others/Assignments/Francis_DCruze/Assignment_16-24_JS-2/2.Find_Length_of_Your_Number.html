@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Length of Your Number</title>
+        <style>
+            body{
+                background-color: rgb(30, 104, 165);
+            }
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: rgba(0, 0, 0, 0.87);
+                color: rgb(255, 255, 255);
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Length of Your Number</h2>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h3>THANK YOU !</h3>
+        </div>
+
+        <script>
+            /// with string method 
+            var userNum = prompt("Enter any digit number");
+            console.log(userNum.length);
+            
+            /// without string method 
+            userNum = parseInt(userNum);
+            var numLength = 0;
+            while(userNum > 0)
+            {
+                userNum = userNum / 10;
+                userNum = parseInt(userNum);
+                numLength++;
+            }
+            console.log(numLength);
+
+        </script>
+    </body>
+</html>

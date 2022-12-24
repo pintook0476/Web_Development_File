@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out Palindromes in an array</title>
+</head>
+<body>
+    <h3> palindromes in an array </h3>
+    <h2></h2>
+    <script>
+        
+        
+        var a = [22,20,44,11,142,1441]
+        console.log("Given array:" + a);
+
+        
+        //find out palindromes
+        for(var i=0; i<a.length; i++){ 
+            var temp = a[i];
+            var reverse = 0 ;
+            while(temp > 0){
+                var rem = temp % 10 ;
+                reverse = (reverse * 10 ) + rem ;
+                temp = parseInt(temp / 10) ;
+            }
+            if(reverse == a[i]){
+                console.log(a[i] + "is a palindrome");
+                document.querySelector("h2").innerHTML += a[i] + "  is a palindrome,   " ;
+            }
+        }       
+    </script>
+</body>
+</html>

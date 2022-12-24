@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_11(Employee details using conditional statements)</title>
+  </head>
+  <body>
+    <script>
+      document.write(" To Check Output, go to Console Window ");
+      var emp_name = prompt("Enter Employee Name ");
+      var emp_gender = prompt(" Enter Employee Gender");
+      var emp_dept = prompt("Enter Emplyoee Department");
+      var emp_basicsal = prompt("Enter Employee Basic Salary in Rs");
+      emp_basicsal = parseInt(emp_basicsal);
+
+      var pf = emp_basicsal * (14 / 100);
+      var hra = emp_basicsal * (24 / 100);
+      var total_sal = pf + hra + emp_basicsal;
+
+      if (emp_gender == "male" || emp_gender == "Male") {
+        console.log("Employee name is " + emp_name);
+        console.log("Employee Department is " + emp_dept);
+        console.log("Employee Gender is " + emp_gender);
+        if (total_sal >= 200000) {
+          console.log("Your Total Salary is Rs " + total_sal);
+          var tax = (15 / 100) * total_sal;
+          var new_sal = total_sal - tax;
+          console.log("Your Salary after tax deduction is Rs " + new_sal);
+        } else if (total_sal >= 100000 && total_sal < 200000) {
+          console.log("Your Total Salary is Rs " + total_sal);
+          var tax = (10 / 100) * total_sal;
+          var new_sal = total_sal - tax;
+          console.log("Your salary after tax dedcution is Rs " + new_sal);
+        } else if (total_sal >= 50000 && total_sal < 100000) {
+          console.log("Your Total Salary is Rs " + total_sal);
+          var tax = (5 / 100) * total_sal;
+          var new_sal = total_sal - tax;
+          console.log("Your Salary after tax deduction is Rs " + new_sal);
+        } else {
+          console.log(
+            "Your don't need to pay tax because your salary is less than 50k"
+          );
+          console.log("Your Salary after adding allowances is Rs " + total_sal);
+        }
+      } else if (emp_gender == "female" || emp_gender == "Female") {
+        console.log("Employee name is " + emp_name);
+        console.log("Employee Department is " + emp_dept);
+        console.log("Employee Gender is " + emp_gender);
+        if (total_sal >= 200000) {
+          console.log("Your Total Salary is Rs " + total_sal);
+          var tax = (10 / 100) * total_sal;
+          var new_sal = total_sal - tax;
+          console.log("Your salary after tax deduction is Rs" + new_sal);
+        } else if (total_sal >= 100000 && total_sal < 200000) {
+          console.log("Your Total Salary is Rs " + total_sal);
+          var tax = (5 / 100) * total_sal;
+          var new_sal = total_sal - tax;
+          console.log("Your salary after tax deduction is Rs" + new_sal);
+        } else if (total_sal < 100000) {
+          console.log(
+            "Your don't need to pay tax because your Total Salary after adding allowances is less than 1 lacs"
+          );
+          console.log("Your Net Salary is Rs" + total_sal);
+        }
+      } else {
+        console.log("  INVALID GENDER ");
+        console.log(" Type Either Male/male or female/Female");
+      }
+    </script>
+  </body>
+</html>

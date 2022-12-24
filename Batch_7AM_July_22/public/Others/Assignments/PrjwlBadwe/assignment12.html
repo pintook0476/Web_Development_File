@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+
+    <script>    
+        var ename = prompt("Enter the name of employee");
+        var eage = prompt("Enter the Age of employee");
+        var gender = prompt("Enter the gender of employee Male or Female");
+        var dep = prompt("Enter the department of Employee");
+        var basicSalary = prompt("Enter the salary of employee");
+        basicSalary = parseInt(basicSalary);
+        var pf = basicSalary * 14 / 100;
+        var hra = basicSalary * 25 / 100;
+        var totalSalary = pf + hra + basicSalary;
+        console.log("This is basic salary which user enter " + basicSalary);
+        console.log("This is total salary after adding pf and hra " + totalSalary);
+        var tax;
+
+        if(gender == "Male" || gender == "male") {
+            if (totalSalary >= 200000 ) {
+                tax = totalSalary * 15 / 100;
+                console.log("The tax is 15% of your salary is " + tax);
+            }else if (totalSalary >= 100000 ) {
+                tax = totalSalary * 10 / 100;
+                console.log("The tax is 10% of your salary is " + tax);
+            }else if (totalSalary >= 50000 ) {
+                tax = totalSalary * 5 / 100;
+                console.log("The tax is 5% of your salary is " + tax);
+            }else{
+                console.log("Your income less than 50000 so you don't have to pay tax");
+            }
+        }
+        else if(gender == "Female" || gender == "female") {
+                if (totalSalary >= 200000 ) {
+                    tax = totalSalary * 10 / 100;
+                    console.log("The tax is 10% of your salary is " + tax);
+                }else if (totalSalary >= 100000 ) {
+                    tax = totalSalary * 5 / 100;
+                    console.log("The tax is 5% of your salary is " + tax);
+                }else{
+                    console.log("Your income less than 50000 so you don't have to pay tax");
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Inheritance btwn two static objects
+        </title>
+    </head>
+    <body>
+        <script>
+            var sellerDetails = {
+                sellerName: 'Abc Electronics',
+                sellerRating: '4/5',
+                sellerLocation: 'New Delhi',
+                sample() {
+                    console.log("sample method");
+                }
+            }
+
+            var product1 = {
+                name: 'Laptop',
+                price: 35000,
+                manufacturer: 'Samsung',
+                discountPercent: 10,                
+                displayProductDetails() {
+                    console.log("Product Name " + this.name)
+                    console.log("Product Price " + this.price)
+                    console.log("Product MAnu " + this.manufacturer)
+                    console.log("Product discountPercent " + this.discountPercent);
+                    console.log("Seller name " + this.sellerName);
+                    console.log("Seller Rating " + this.sellerRating);
+                    console.log("Seller Location " + this.sellerLocation);
+                    this.sample();
+                }
+            }
+
+            product1.__proto__ = sellerDetails;
+
+
+            product1.displayProductDetails();
+
+            var product2 = {
+                name: 'TV',
+                price: 50000,
+                manufacturer: 'Sony',
+                discountPercent: 7,
+                displayProductDetails() {
+                    console.log("Product Name " + this.name)
+                    console.log("Product Price " + this.price)
+                    console.log("Product MAnu " + this.manufacturer)
+                    console.log("Product discountPercent " + this.discountPercent);
+                    console.log("Seller name " + this.sellerName);
+                    console.log("Seller Rating " + this.sellerRating);
+                    console.log("Seller Location " + this.sellerLocation);
+                }
+            }
+           
+
+            product2.__proto__ = sellerDetails;
+            product2.displayProductDetails();
+
+            console.log(product1);
+        </script>
+    </body>
+</html>

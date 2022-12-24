@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_09</title>
+    <style>
+        .header{
+            border: 1px solid;
+            background-color: aqua;
+            text-align: center;
+            margin: 30px;
+            font-weight: bold;
+        }
+        .container{
+            border: 1px solid;
+            width: 700px;
+            height: 600px;
+            background-color: #ccc;
+            margin-left: 300px;
+        }
+        .block{
+            border: 1px solid;
+            margin: 20px;
+        }
+        .blockHeader{
+            border: 1px solid;
+            background-color: palevioletred;
+            margin: -10px 400px 5px 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .fristLabel{
+            float: left;
+        }
+        .thirdLabel{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Student Details</div>
+    <div class="container">
+        <div class="block">
+            <div class="blockHeader">Personal Details</div>
+            <form action="" method="post">
+                <ul>
+                    <li class="fristLabel">
+                        <lable for="Student Name:"> Name of the Student:</lable>
+                        <input type="text" name="Student Name:">
+                    </li>
+                    <li class="secondLabel">
+                        <lable>Course Opted:</lable>
+                        <select title="Choose Course">
+                            <option></option>
+                            <option>UI Fullsatck</option>
+                            <option>Java Fullsatck</option>
+                            <option>Python Fullsatck</option>
+                            <option>.Net Fullsatck</option>
+                            <option>Data Science</option>
+                        </select>
+                        
+                    </li>
+                    <li class="thirdLabel">
+                        <label for="Mail ID:">Mail Id:</label>
+                        <input type="text" name="Mail ID:">
+                    </li>
+                    <li>
+                        <label for="Gender">Select Gender:</label>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                        <input type="radio" name="Gender">Others
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block">
+            <div class="blockHeader">Education Details</div>
+            <form action="" method="post">
+                <ul>
+                    <li class="qualificationLabel">
+                        <label for="Qualification">Qualification:</label>
+                        <input type="text" name="Qualification:">
+                    </li>
+                    <li>
+                        <label for="Langauges">Known Langauges</label>
+                        <input type="radio" name="Langauges">Telugu
+                        <input type="radio" name="Langauges">Hindi
+                        <input type="radio" name="Langauges">English
+                    </li>
+                    <li>
+                        <label for="Avg Marks">Avg Marks</label>
+                        <input type="text" name="Avg marks">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block">
+        <div class="blockHeader">Address</div>
+            <form action="" method="post">
+                <ul>
+                    <li class="fristLabel">
+                        <label for="Dno">Dno:</label>
+                        <input type="text" name="Dno">
+                    </li>
+                    <li class="secondLabel">
+                        <label for="landmark">Landmark:</label>
+                        <input type="text" name="landmark">
+                    </li>
+                    <li class="thirdLabel">
+                        <label for="Street Name">Street Name</label>
+                        <input type="text" name="Street Name">
+                    </li>
+                    <li class="Select State">
+                        <label for="state">Select State</label>
+                        <select>
+                            <option></option>
+                            <option>Andhrapradesh</option>
+                            <option>Telengana</option>
+                            <option>Tamilnadu</option>
+                            <option>Karnataka</option>
+                            <option>Maharastra</option>
+                            <option>Odissa</option>
+                        </select>
+                    </li>
+                    <li class="selectCountry">
+                        <label for="country">Select Country</label>
+                        <select>
+                            <option></option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Austrlia</option>
+                            <option>Russia</option>
+                            <option>China</option>
+                            <option>Europe</option>
+                            
+                        </select>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block">
+            <div class="blockHeader">About Yourself</div>
+            <li>
+                <label for="text">Write About Yourself</label><br>
+                <textarea name="text" rows="4" cols="50"></textarea>
+            </li>
+        </div>
+    </div>
+    <div class="header">@copyrights 2022</div>
+</body>
+</html>

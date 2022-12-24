@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-10</title>
+</head>
+<body>
+    <h3>Employee Details in JavaScript</h3>
+    <script>
+        var empName=prompt("enter empName");
+        var empAge=prompt("enter age");
+        var empDept=prompt("enter department");
+
+        var basicSal=prompt("enter basicSal");  
+        basicSal=parseInt(basicSal);
+
+        var pf= basicSal * (14 / 100);
+        var hra= basicSal * (25 / 100);
+        var totalSal= pf + hra + basicSal;
+
+        console.log("employee name is " +empName);
+        console.log("employee age is " +empAge);
+        console.log("employee department is " +empDept);
+        console.log("employee basic salary is " +basicSal);
+        console.log("employee pf is " +pf);
+        console.log("employee hra is " + hra);
+        console.log("employee total salary is " +totalSal)
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<script>
+    var str = prompt("Enter a word or sentence"); mom
+
+    var lowerCase = 0, upperCase = 0;
+
+    for (var i = 0; i < str.length; i++)
+    {
+        if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90)
+        {
+            upperCase++;
+        }
+        else if(str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122)
+        {
+            lowerCase++;
+        }
+    }
+
+    console.log("Upper Case Letter :" +upperCase);
+    console.log("Lower Case Letter :" +lowerCase);
+
+</script>

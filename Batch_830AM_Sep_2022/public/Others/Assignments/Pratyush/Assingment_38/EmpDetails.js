@@ -1,0 +1,81 @@
+
+var EmpDetails=[
+    {
+        Empname:'Jenifer',
+        Empage:24,
+        Gender:'Female',
+        Location:'USA',
+        BasicSal: '$5000',
+        Img:'/Emp Img/emp1.jpg.jpg'
+    },
+    {
+        Empname:'Mak',
+        Empage:34,
+        Gender:'MALE',
+        Location:'USA',
+        BasicSal: '$2000',
+        Img:'/Emp Img/emp2.jpg'
+    },
+    {
+        Empname:'Rabart',
+        Empage:32,
+        Gender:'Male',
+        Location:'UK',
+        BasicSal: '$8000',
+        Img:'/Emp Img/emp3.jpg'
+    },
+    {
+        Empname:'Krish',
+        Empage:29,
+        Gender:'Male',
+        Location:'Pak',
+        BasicSal: '$1000',
+        Img:'/Emp Img/emp4.jpg'
+    },
+    {
+        Empname:'Harish',
+        Empage:26,
+        Gender:'Female',
+        Location:'Canada',
+        BasicSal: '$6000',
+        Img:'/Emp Img/emp5.jpg'
+    }
+]
+var EmpData=(EmpDetails)=>{
+var litag=document.createElement("li")
+litag.setAttribute("class" , "Empdata")
+
+var ultag=document.createElement("ul")
+var li1=document.createElement('li');
+li1.innerHTML="Empname :"+EmpDetails.Empname; 
+ultag.append(li1)
+
+var li2=document.createElement("li");
+li2.innerHTML="Empage :"+EmpDetails.Empage; 
+ultag.append(li2)
+
+
+var li3=document.createElement('li');
+li3.innerHTML="Gender :"+EmpDetails.Gender; 
+ultag.append(li3)
+
+
+var li4=document.createElement('li');
+li4.innerHTML="Location :"+EmpDetails.Location; 
+ultag.append(li4)
+
+var li5=document.createElement('li');
+li5.innerHTML="BasicSal :"+EmpDetails.BasicSal; 
+ultag.append(li5)
+
+var li6=document.createElement('li')
+var Imgtag=document.createElement("img")
+Imgtag.setAttribute("src",EmpDetails.Img)
+li6.append(Imgtag)
+ ultag.append(li6)
+console.log(ultag)
+document.querySelector("#EmpContainer").append(ultag)
+}
+for(var i=0;i<EmpDetails.length;i++){
+EmpData(EmpDetails[i])
+}

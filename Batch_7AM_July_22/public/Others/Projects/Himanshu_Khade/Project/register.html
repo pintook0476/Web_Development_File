@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration form</title>
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(#9ED2C6, #68696b);
+            }
+            .box{
+                width: 831px;
+                height: 510px;
+                border-radius: 15px;
+                position: absolute;
+                left: 281px;
+                top: 75px;
+                background: linear-gradient(#c4d4f5,#eaecea);
+            }
+            h1{
+                margin-left: 291px;
+                color: #18978F;
+            }
+            .innerMainbox{
+                width: 648px;
+                height: 313px;
+                padding-top: 10px !important; 
+                left: 39px;
+                position: absolute;
+                padding: 50px;
+                overflow: auto;
+                text-align: center;
+            }
+            .div1{
+                float: left;
+                position: absolute;
+                left:150px;
+            }
+            .div2{
+                position: absolute;
+                left: 413px;
+            }
+            label{
+                font-size: large;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .textBox{
+                width: 182px;
+                height: 20px; 
+                border-radius: 5px;    
+                border: 0.5px solid #00FFAB;
+            }
+            .box1{
+                margin: 20px;
+                width: 542px;
+                padding: 5px;
+                height: 32px;
+            }
+            #radioButton{
+                width: 38px;
+                height: 18px; 
+                border-radius: 5px;    
+                border: 0.5px solid #00FFAB;
+            }
+            .button{
+                width: 146px;
+                height: 35px;
+                background: linear-gradient(#00ffaa, #26b5c5);
+                border-radius: 10px;
+                border: 1px;
+                margin: 10px;
+            }
+            .submit{
+                position: absolute;
+                left: 194px;
+                bottom: -126px;
+            }
+            .reset{
+                position: absolute;
+                left: 397px;
+                bottom: -126px;
+            }
+            .logo{
+                height: 82px;
+                width: 123px;
+                position: relative;
+                top: 12px;
+                left: 48px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./image/logo.png" class="logo" alt="">
+        </div>
+        <div class="box">
+           <form action="" method="get">
+            <ul><h1>Registration</h1></ul>
+            <div class="innerMainbox">
+                <div class="box1">
+                    <div class="div1"> <label for="fname">First Name</label></div>
+                    <div class="div2"><input class="textBox" name="fname" type="text" placeholder="First Name "></div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="lname">Last Name</label></div>
+                    <div class="div2"><input class="textBox" name="lname" type="text" placeholder="Last Name"></div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="gender">Gender</label></div>
+                    <div class="div2">
+                        <input id="radioButton" type="radio" name="gender" id="">Male
+                        <input id="radioButton" type="radio" name="gender" id="">Female
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="email">Email ID</label></div>
+                    <div class="div2"><input class="textBox" name="email" type="text" placeholder="abc@gmail.com"></div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="username">UserName</label></div>
+                    <div class="div2"><input class="textBox" name="username" type="text" placeholder="username"></div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="password">Password</label></div>
+                    <div class="div2"><input class="textBox" name="password" type="password" placeholder="password"></div>
+                </div>
+                <div class="box1">
+                    <div class="div1"> <label for="cpassword">Confirm Password</label></div>
+                    <div class="div2"><input class="textBox" name="cpassword" type="password" placeholder="confirm password"></div>
+                    <div><input type="submit" name="" class="button submit"></div>
+                    <div><input type="reset" class="button reset"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

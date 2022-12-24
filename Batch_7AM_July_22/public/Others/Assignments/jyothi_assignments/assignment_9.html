@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <style>
+        .headerFooter{
+            border: 2px solid;
+            height: 20px;
+            width: 70%;
+            text-align: center;
+            font-weight: bold;
+            margin-left: 15%;
+        }
+        .container{
+            border: 2px solid;
+            height: 250px;
+            width: 70%;
+            margin: 5px auto;
+        }
+        li{
+            padding: 20px;
+            font-weight: bold;
+        }
+        .rightSide{
+            float: right;
+        }
+    </style>
+    <body>
+        <div class="headerFooter">Student Registration Page</div>
+        <div class="container">
+            <ul>
+            <li class="rightSide">Course occupied: <input type="text"></li>
+            <li>Student Name: <input type="text"></li>
+            <li >Mail id: <input type="email"></li>
+            <li>Gender: <input type="radio" name="Male">Male<input type="radio" name="Female">Female</li>
+            </ul>
+        </div>
+        <div class="container">
+            <li>Qualification: <input type="text"></li>
+            <li>Languages Known: <input type="checkbox" name=ENG>English<input type="checkbox" name=HIN>Hindi<input type="checkbox" name=Tel>Telugu</li>
+            <li>Average Marks: <input type="text"></li>
+        </div>
+        <div class="container">
+            <ul>
+            <li class="rightSide">Landmark<input type="text"></li>
+            <li>Door No: <input type="text"></li>
+            <li>Street Name: <input type=""></li>
+            <li>State: <select>
+                <option>TELANGANA</option>
+                <option>ANDHRA PRADESH</option>
+                <option>GUJARAT</option>
+                <option>MAHARASTHRA</option>
+            </select>
+            <li>Country: 
+                <select>
+                    <option>INDIA</option>
+                    <option>USA</option>
+                    <option>CANADA</option>
+                </li></select>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>About Yourself <textarea rows="8" maxlength="100"></textarea></li>
+                <li><input type="button" value="Submit"></li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

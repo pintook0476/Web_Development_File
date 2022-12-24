@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment9</title>
+        <style>
+            li{
+                list-style: none;
+            }
+            .header,.footer{
+                text-align: center;
+                border: 2px solid;
+                background-color: gray;
+                padding: 6px;
+            }
+            .maincontainer{
+                width: 1329px;
+                height: 910px;
+                border: 2px solid;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                background-color: rgb(180, 169, 169);
+            }
+            .container{
+                margin: 10px;
+                width: 1260px;
+                height: 150px;
+                border: 2px solid;
+                margin-top: 32px;
+                background-color: honeydew;
+            }
+            .container1{
+                margin: 10px;
+                width: 1260px;
+                border: 2px solid;
+                height: 300px;
+                margin-top: 32px;
+                background-color: honeydew;
+            }
+            .subbox,.subbox1,.subbox2,.subbox3{
+                border: 2px solid;
+                width: 220px;
+                position: absolute;
+                background-color: white;
+            }
+            .subbox{
+                top:93px;
+            }
+            .subbox1{
+                top: 277px;
+            }
+            .subbox2{
+                top: 465px;
+            }
+            .subbox3{
+                top: 650px;
+            }
+            .textBox1{
+                position: absolute;
+                left: 42px;
+                top: 88px;
+                border: 2px solid;
+                width: 200px;
+            }
+            .label1{
+                position: absolute;
+                top: 130px;
+                left: 30px;
+            }
+            .box1{
+                position: absolute;
+                top: 1px;
+                left: 190px;
+            }
+            .label2{
+                position: absolute;
+                top: 170px;
+                left: 30px;
+            }
+            .box2{
+                position: absolute;
+                top: 1px;
+                left: 190px;
+            }
+            .label3{
+                position: absolute;
+                top: 210px;
+                left: 30px;
+            }
+            .radioButton1{
+                position: absolute;
+                left: 185px;
+            }
+            .male{
+                position: absolute;
+                left: 210px;
+            }
+            .radioButton2{
+                position: absolute;
+                left: 285px;
+            }
+            .female{
+                position: absolute;
+                left: 310px;
+            }
+            .label4{
+                position: absolute;
+                top: 130px;
+                left: 800px;
+            }
+            .box4{
+                position: absolute;
+                left: 190px;
+                width: 180px;
+            }
+            .label5{
+                position: absolute;
+                top: 315px;
+                left: 30px;
+            }
+            .box5{
+                position: absolute;
+                left: 185px;
+            }
+            .label6{
+                position: absolute;
+                top: 350px;
+                left: 30px;
+            }
+            .checkbox1{
+                position: absolute;
+                left: 182px;
+            }
+            .hindi{
+                position: absolute;
+                left: 207px;
+            }
+            .checkbox2{
+                position: absolute;
+                left: 285px;
+            }
+            .english{
+                position: absolute;
+                left: 310px;
+            }
+            .checkbox3{
+                position: absolute;
+                left: 400px;
+            }
+            .urdu{
+                position: absolute;
+                left: 425px;
+            }
+            .label7{
+                position: absolute;
+                left: 30px;
+                top: 390px;
+            }
+            .box6{
+                position: absolute;
+                left: 185px;
+            }
+            .label8{
+                position: absolute;
+                left: 30px;
+                top: 500px;
+            }
+            .box7{
+                position: absolute;
+                left: 185px;
+            }
+            .label9{
+                position: absolute;
+                left: 30px;
+                top: 533px;
+            }
+            .box8{
+                position: absolute;
+                left: 185px;
+            }
+            .label10{
+                position: absolute;
+                top: 510px;
+                left: 800px;
+            }
+            .box9{
+                position: absolute;
+                left: 190px;
+                height: 40px;
+            }
+            .label11{
+                position: absolute;
+                top: 563px;
+                left: 30px;
+            }
+            .box10{
+                position: absolute;
+                left: 185px;
+                width: 180px;
+            }
+            .label12{
+                position: absolute;
+                top: 590px;
+                left: 30px;
+            }
+            .box11{
+                position: absolute;
+                left: 185px;
+                width: 180px;
+            }
+            .label13{
+                margin-left: 250px;
+            }
+            .pos{
+                position: absolute;
+                left: 30px;
+                top: 800px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">Student Registration Page</div>
+        <div class="maincontainer">
+            <ul class="container">
+                <li>
+                    <div class="subbox">Personal Details</div> 
+                </li>
+                <li class="label1">
+                    <label for="userName">Student Name:</label>
+                    <input class="box1" type="text" name="username">
+                </li>
+                <li class="label2">
+                    <label for="mailId">Mail ID:</label>
+                    <input class="box2" type="text" name="mailId">
+                </li>
+                <li class="label3">
+                    <label for="gender">Gender:</label>
+                    <input class="radioButton1" type="radio" name="gender"><span class="male">Male</span>
+                    <input class="radioButton2" type="radio" name="gender"><span class="female">Female</span>
+                </li>
+                <li class="label4">
+                    <label for="courseOpted">Course Opted:</label>
+                    <select class="box4" name="course" id="">
+                        <option value="ba">B.A</option>
+                        <option value="ma">M.A</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="btech">B.tech</option>
+                    </select>
+                </li>
+
+            </ul>
+            <ul class="container">
+                <li>
+                    <div class="subbox1">Education Details</div>
+                </li>
+                <li class="label5">
+                    <label for="qualification">Qualification:</label>
+                    <input class="box5" type="text" name="qualification">
+                </li>
+                <li class="label6">
+                    <label for="languageKnown">Language Known:</label>
+                    <input class="checkbox1" type="checkbox" name="Hindi" id=""><span class="hindi">Hindi</span> 
+                    <input class="checkbox2" type="checkbox" name="English" id=""><span class="english">English</span>
+                    <input class="checkbox3" type="checkbox" name="Urdu" id=""><span class="urdu">Urdu</span>               
+                </li>
+                <li class="label7">
+                    <label for="averageMarks">Average Marks:</label>
+                    <input class="box6" type="text" name="averageMarks">
+                </li>
+            </ul>
+            <ul class="container">
+                <li>
+                    <div class="subbox2">Address</div>
+                </li>
+                <li class="label8">
+                    <label for="dno">D No.:</label>
+                    <input class="box7" type="text" name="dno">
+                </li>
+                <li class="label9">
+                    <label for="streetName">Street Name:</label>
+                    <input class="box8" type="text" name="streetName">
+                </li>
+                <li class="label10">
+                    <label for="landmark">Landmark:</label>
+                    <input class="box9" type="text" name="landmark">
+                </li>
+                <li class="label11">
+                    <label for="State">State:</label>
+                    <select class="box10" name="State" id="">
+                        <option value="UK">UTTRAKHAND</option>
+                        <option value="UP">U.P</option>
+                        <option value="PJ">PUNJAB</option>
+                        <option value="AP">A.P</option>
+                    </select>
+                </li>
+                <li class="label12">
+                    <label for="Country">Country:</label>
+                    <select class="box11" name="Country" id="">
+                        <option value="usa">U.S.A</option>
+                        <option value="RUSSIA">RUSSIA</option>
+                        <option value="pak">PAKISTAN</option>
+                        <option value="ch">CHINA</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="container1">
+                <li>
+                    <div class="subbox3">About Yourself</div>
+                </li>
+                <br>
+                <br>
+                <li class="label13">
+                    <label for="About Yourself"><span class="pos"> About Yourself:</span></label>
+                    <textarea  name="About Yourself" id="" cols="120" rows="15"></textarea>
+                </li>
+            </ul>
+         </div>
+        <div class="footer"> 
+            &#169; copyright 2022
+       </div>
+    </body>
+</html>

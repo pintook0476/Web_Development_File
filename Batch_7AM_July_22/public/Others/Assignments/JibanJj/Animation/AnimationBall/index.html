@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 29</title>
+</head>
+<style>
+    .container{
+        border: 2px solid;
+        height: 500px;
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    .circle img{
+        border: 2px solid;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+        animation: circlegame;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes circlegame {
+        25% {
+        margin-top: 390px;
+        margin-left: 10px;
+        }
+        50% {
+        margin-top: 390px;
+        margin-left: 390px;
+        } 
+        75%{
+        margin-top: 10px;
+        margin-left: 390px;
+        }
+    }
+    h3{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <h3>Animation Game</h3>
+    <div class="container">
+        <div class="circle">
+            <img src="Images/smriti.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

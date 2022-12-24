@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div onclick="showOTPValue()">Refresh</div>
+        <div id="OtpValue"></div>
+        <script>
+            var otpLength = 5;
+            var otpValue = ''; // 1. total of 5 digits 2. btwn 0 - 9
+
+            var generateRandomNumber = () => {
+                var randomNumber = Math.round(Math.random() * 9);
+                otpValue += randomNumber;
+                
+            }
+            var showOTPValue = () => {
+                otpValue = '';
+                for (var i = 0; i < otpLength; i++) {
+                    generateRandomNumber();
+                }
+                document.querySelector("#OtpValue").innerHTML = '<b>' + otpValue + '</b>'
+            }
+            showOTPValue();
+        </script>
+    </body>
+</html>

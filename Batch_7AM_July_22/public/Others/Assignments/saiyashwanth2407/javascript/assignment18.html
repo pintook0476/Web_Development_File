@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Assignment 18</title>
+    </head>
+    <body>
+        <h3>Employe Salary calculator by using function</h3>
+        <script>
+            function getInputFromUser(){
+                var ename,egen,edept,ebasic;
+                ename=prompt("Enter your Name");
+                egen=prompt("Enter your Gender");
+                edept=prompt("Enter your Department");
+                ebasic=prompt("Enter your Basic sal");
+                ebasic=parseInt(ebasic);
+                printData(ename,egen,edept,ebasic);
+                var etax=calculateTax(ebasic,egen);
+                var salary=calculatePfAndHra(ebasic,etax);
+                console.log("Employe total salary= "+salary);
+            }
+            function calculateTax(basic,gen){
+                var tax;
+                if(gen=='male'||gen=='Male'){
+                    if(basic>200000){
+                    tax=basic*(15/100);   
+                    }
+                    else if(basic>100000){
+                    tax=basic*(10/100);   
+                    }
+                    else if(basic>50000){
+                    tax=basic*(5/100); 
+                    }
+                    else{
+                        tax=basic*0;
+                    }
+                }
+                else if(gen=='female'||gen=='Female'){
+                    if(basic>200000){
+                    tax=basic*(10/100);   
+                    }
+                    else if(basic>100000){
+                    tax=basic*(5/100);   
+                    }
+                    else {
+                    tax=basic*0; 
+                    }
+                }
+                else{
+                    console.log("Enter correct gender male/femal/Male/Female");
+                    tax=0;
+                }
+                return tax;
+            }
+            function calculatePfAndHra(basic,tax){
+                var pf=basic*(14/100);
+                console.log("Employe Pf= "+pf);
+                var hra=basic*(25/100);
+                console.log("Employe HRA= "+hra);
+                console.log("Employe Tax= "+tax);
+                var total=basic+pf+hra-tax;
+                return total;
+            }
+            function printData(name,gen,dept,basic){
+                console.log("Employe Name= "+name);
+                console.log("Employe Gender= "+gen);
+                console.log("Employe Department= "+dept);
+                console.log("Employe Basic= "+basic);
+            }
+            getInputFromUser();
+        </script>
+    </body>
+</html>

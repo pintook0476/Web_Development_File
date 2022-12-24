@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate The total salary of Software Engineer</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // Taking Input from User (Dynamically)
+        var ename = prompt("Enter The Employee Name");
+        var age = prompt("Enter The Employee Age");
+        var bSalary = prompt("Enter The Employee Salary");
+        bSalary = parseInt(bSalary);
+
+        // Calculating The pf + hra + basic Salary 
+        var pf = bSalary * (14 / 100);
+        var hra = bSalary * (25 / 100);
+        var totalSalary = pf + hra + bSalary;
+
+        console.log(totalSalary);
+    </script>
+</body>
+
+</html>

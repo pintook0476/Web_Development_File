@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Number Array</title>
+</head>
+<body>
+    <script>
+        /* Write a program to take a static array with values and return all the even numbers with it*/
+
+        var num = []; // empty array
+        for ( var i = 0; i < 5; i++){
+            num[i] = prompt("Enter any 5 number to see even number "+ i);
+            num[i] = parseInt(num[i]);
+        }
+
+        for( var x = 0 ; x < num.length; x++){
+            if(num[x] % 2 == 0)
+            {
+                console.log(num[x]);
+            }
+        }
+    </script>
+</body>
+</html>

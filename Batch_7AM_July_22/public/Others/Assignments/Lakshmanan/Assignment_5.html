@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <title>
+            RandomAssigments
+        </title>
+        <style>
+            /*Header part css*/
+
+            .header{
+                border: 2px solid;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+            }
+            .header:hover{
+                background-color: goldenrod;
+            }
+
+            /*Main Container Block css*/
+
+            .maincontainer{
+                border: 2px solid;
+                padding: 5px;
+                margin: 5px;
+                height: 530px;
+            }
+
+            /*Common css property For both Left and Right Container*/
+
+            .leftblock ,
+             .rightblock{
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+                height: 500px;
+                float: left;
+                overflow: auto;
+             }
+
+            /*Left block css*/
+
+             .leftblock{
+                width: 30%;
+             }
+             .leftblock li{
+                border: 2px solid;
+                margin:5px;
+                padding: 10px;
+                list-style-position: inside;
+             }
+             .leftblock li:hover{
+                background-color: darkcyan;
+            }
+            
+            /*Right block css*/
+
+             .rightblock{
+                width: 62%;
+             }
+             .detailscontainer > li{
+                border: 1px solid;
+                list-style: none;
+                height: 150px;
+                margin: 5px;
+                padding: 5px;
+             }
+             .detailscontainer li:hover{
+                background-color: darkcyan;
+             }
+            
+            /*Imgblock css property*/
+
+            .imgblock,
+            .detailsblock{
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+           
+            .imgblock{
+                border: 2px solid;
+                width: 200px;
+           
+            }
+            .imgblock img{
+                width: 200px;
+                height: 125px;
+            }
+
+            ul{
+                margin: 5px;
+                padding: 5px;
+            }
+
+            /*Footer Css property */
+
+            .footer{
+                border: 2px solid;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+            }
+            .footer:hover{
+                background-color:goldenrod ;
+            }
+        </style>
+    </head>
+    <body>
+        <body background="https://theculturetrip.com/wp-content/uploads/2017/01/peaky-blinders--danny-piercy-flickr.jpg"></body>
+        <h2 class="header">
+           Peaky Blinders 
+        </h2 >
+        <div class="maincontainer">
+        <div class="leftblock">
+            <ol>
+                <li>Tommy Shelby</li>
+                <li>Arthur shelby</li>
+                <li>John shelby</li>
+                <li>Polly Gray</li>
+                <li>Ada Throne</li>
+                <li>Alfie solomons</li>
+                <li>Michael Gray</li>
+                <li>Lizzie Shelby</li>
+                <li>Aberama Gold</li>
+                <li>Grace Burgess</li>
+            </ol>
+        </div>
+        <div class="rightblock">
+            <ul class="detailscontainer">
+            <li id="TommyDetails">
+                <div class="imgblock">
+                    <img src="https://variety.com/wp-content/uploads/2019/09/peaky-blinders-season-5.jpg?w=681&h=383&crop=1">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Tommy shelby</li>
+                        <li>Age:43</li>
+                        <li>Occupation:Soldier (1914-1918)</li>  
+                    </ul>
+                </div>
+            </li>
+            <li id="ArthurDetails">
+                <div class="imgblock">
+                    <img src="https://decider.com/wp-content/uploads/2014/11/recap-episode-4.png">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Arthur shelby</li>
+                        <li>Age:46</li>
+                        <li>Occupation:Soldier (1914-1918)</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="JohnDetails">
+                <div class="imgblock">
+                    <img src="https://i.pinimg.com/originals/27/af/10/27af102af31213c7c4e0e76b88ec56a2.jpg">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:John shelby</li>
+                        <li>Age:30</li>
+                        <li>Occupation:Soldier (1914-1918)</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-15-1565294001.jpg?crop=0.675xw:0.510xh;0.240xw,0.0531xh&resize=1200:*">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Polly Gray</li>
+                        <li>Age:45</li>
+                        <li>Occupation:Gangster Businesswomen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://static.wikia.nocookie.net/totalwar-ar/images/9/92/Ada_Thorne.png/revision/latest?cb=20190529033351">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Ada Throne</li>
+                        <li>Age:36</li>
+                        <li>Occupation:
+                            Librarian (1924)  Businesswomen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-season-5-alfie-solomons-tom-hardy-1569167471.jpg?resize=480:*">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Alfie solomons</li>
+                        <li>Age:334</li>
+                        <li>Occupation:Gang leader</li>
+                        
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9it8M1mbrYvkA1M_j5uDiXO-2-A1jfWk4g&usqp=CAU">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Michael Grey</li>
+                        <li>Age:30</li>
+                        <li>Occupation:
+                            Shelby Family (banished)
+                            Peaky Blinders (formerly)</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQly-yJ5A4HbiIdbcwT8FnEbo6-mmtPnO5GAdnSb9vMTpxV54wqCVoyn94Lx4flfkmSc&usqp=CAU">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Lizzie shelby</li>
+                        <li>Age:34</li>
+                        <li>Occupation:Secretary (formerly)
+                            Businesswoman</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="imgblock">
+                    <img src="https://i.redd.it/orwsaw9x5rr81.jpg">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Aberama Gold</li>
+                        <li>Age:54</li>
+                        <li>Occupation:
+                            Hitman</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="GraceDetails">
+                <div class="imgblock">
+                    <img src="https://fictionhorizon.com/wp-content/uploads/2022/03/4nLUTK8bJ86YJRWQs3fZbX-1024x576.jpg">
+                </div>
+                <div class="detailsblock">
+                    <ul>
+                        <li>Name:Grace Burgess</li>
+                        <li>Age:30</li>
+                        <li>Occupation:Undercover agent (-1919)</li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer">	
+            &#169; CopyRights 2022
+        </div>
+    </body>
+</html>

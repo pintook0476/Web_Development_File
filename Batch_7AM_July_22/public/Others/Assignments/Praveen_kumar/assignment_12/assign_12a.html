@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_no_count</title>
+</head>
+<body>
+    <script>
+        var count=0;
+        var sum=0;
+        for( var i=200;i>=20;i--)
+        {
+           count=0;
+            for( var j=2; j<=i/2;j++)
+            {
+                if(i%j==0)
+                {
+                
+                   count++;
+                    break;
+                }
+                
+            }
+            if(count==0)
+            console.log(i);
+            
+        }
+    </script>
+</body>
+</html>

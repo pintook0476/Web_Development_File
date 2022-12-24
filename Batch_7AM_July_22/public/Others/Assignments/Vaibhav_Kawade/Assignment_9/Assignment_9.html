@@ -1,0 +1,180 @@
+<html>
+
+<head>
+	<title>Student Registration Page</title>
+	<style>
+		body {
+			background-color: rgb(3, 148, 184);
+		}
+
+		h3 {
+			text-align: center;
+			border: 1px solid;
+			padding: 10px;
+			background-color: rgb(2, 2, 63);
+			color: white;
+		}
+
+		.container {
+			border: 1px solid;
+			width: 800px;
+			margin: 10px auto;
+			padding: 10px;
+			background-color: rgb(138, 160, 232);
+		}
+
+		li {
+			list-style: none;
+			border: 1px solid;
+			padding: 10px;
+			background-color: #fff;
+			height: auto;
+		}
+
+		.conroller {
+			float: left;
+		}
+
+		.lableContent {
+			width: 160px;
+			float: left;
+		}
+
+		.block1 {
+			border: 1px solid;
+			width: fit-content;
+			position: relative;
+			top: 10px;
+			left: 30px;
+			text-decoration: underline;
+			background-color: cornsilk;
+		}
+
+		.block2 {
+			border: 1px solid;
+			width: fit-content;
+			position: relative;
+			top: 10px;
+			left: 30px;
+			text-decoration: underline;
+			background-color: cornsilk;
+		}
+
+		.block3 {
+			border: 1px solid;
+			width: fit-content;
+			position: relative;
+			top: 8px;
+			background-color: cornsilk;
+			left: 22px;
+		}
+
+		.block4 {
+			border: 1px solid;
+			width: fit-content;
+			position: relative;
+			top: 8px;
+			background-color: cornsilk;
+			left: 25px;
+		}
+
+		.abc {
+			float: right;
+
+		}
+
+		.footer {
+			text-align: center;
+			border: 1px solid;
+			padding: 10px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<h3>Student Registration Page</h3>
+	<ul class="container">
+		<div class="block1">Personal Details</div>
+		<li>
+			<div class="abc">
+				Course opted :
+				<select name="" id="">
+					<option value="UID">UIdevlopment</option>
+					<option value="">Python</option>
+					<option value="">Java</option>
+					<option value="">Ruby on Rails</option>
+				</select>
+			</div>
+
+			<div for="userName" class="lableContent">Student Name:</div>
+			<div class="controller">
+				<input type="text" name="userName" placeholder="Enter Student name" required>
+			</div><br>
+
+
+
+			<div for="Email" class="lableContent">Email:</div>
+			<div class="controller">
+				<input type="text" name="Email" placeholder="Enter Email" required>
+			</div><br>
+
+			Gender:
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+		</li>
+
+		<div class="block2">Education Details</div>
+		<li>
+			Qualification:
+			<input type="text" name="qualification"><br><br>
+			Language Known:
+			<input type="checkbox" value="English" name="language_eng"> English
+			<input type="checkbox" value="Telugu" name="language_tel"> Telugu
+			<input type="checkbox" value="Hindi" name="language_hin"> Hindi
+			<br><br>
+			AVG Marks:
+			<input type="text" name="avgmarks">
+		</li>
+
+		<div class="block3">Address</div>
+		<li>
+			<div class="abc">
+				landmark :
+				<input type="text" name="landmark">
+			</div>
+			House no.:
+			<input type="text"><br><br>
+
+			State :
+			<select name="" id="">
+				<option value="mah">Maharastra</option>
+				<option value="wes">west bengal</option>
+				<option value="de">Madhya Pradesh</option>
+				<option value="tel">telangana</option>
+			</select><br><br>
+			Country :
+			<select name="" id="">
+				<option value="Ind">India</option>
+				<option value="usa">USA</option>
+				<option value="jap">Japan</option>
+				<option value="ken">Kenya</option>
+			</select>
+		</li>
+		<div class="block4">About Yourself</div>
+		<li class="a">
+			Tell about yourself: <textarea maxlength="100" cols="50" rows="5" name="aboutUser"
+				placeholder="Tell about yourselfS"></textarea>
+		</li>
+
+		<li>
+			<input type="submit" value="Register Student">
+		</li>
+	</ul>
+	</form>
+</body>
+<div class="footer">copyrights @2022 <i><u></div>
+</ul>
+</body>
+
+</html>

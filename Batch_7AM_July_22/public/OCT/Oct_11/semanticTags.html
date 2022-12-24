@@ -1,0 +1,64 @@
+<!DOCTYPE HTML >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Semantic tags 
+        </title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <header class="hblock">Welcome to our online shopping application</header>
+        <main class="mblock">
+            <aside class="lblock">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+            </aside>
+            <aside class="rblock">
+                <section class="details">
+                    <prasad id="abc" class="testing" style="color:green;">Hello every one</prasad>
+                    <employeeDetails>
+                        <pre>
+                            empname: RAj 
+                            empAGe: 20
+                            Gender: MAle
+                            Location: Hyderabad
+                        </pre>
+                    </employeeDetails>
+                </section>
+                <section class="details" id="details2"></section>
+                <section class="details">
+                    <footer>test1</footer>
+                    <footer>test2</footer>
+                    <aside>test3</aside>
+                    <aside>test4</aside>
+                    <article>test5</article>
+                    <article>test6</article>
+                    <figure>Test 7</figure>
+                    <figure>Test 8</figure>
+                    
+                </section>
+                <section class="details">Details about to come</section>
+                <section class="details">Details about to come</section>
+                <section class="details">Details about to come</section>
+                <section class="details">Details about to come</section>
+            </aside>
+        </main>
+        <footer class="fblock">@copyrights 20222</footer>
+
+        <script>
+            var element = document.createElement("movedetails");
+            element.setAttribute("id", 'test');
+            element.innerHTML = 'HEllo i got created dynamically';
+            document.querySelector("#details2").append(element)
+        </script>
+    </body>
+</html>

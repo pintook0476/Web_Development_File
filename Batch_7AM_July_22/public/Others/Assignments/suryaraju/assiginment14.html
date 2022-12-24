@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport"content="width=device-width,initial-scale=1.0" />
+        <title>
+            Assignment_14  Employee details using the function statement 
+
+        </title>
+    </head>
+        <body>
+            <script>
+            var e_name, age, gender, dept, basicsal, tax, new_sal, total_sal, pf, hra;
+            function readDataFromUser() {
+                eName = prompt("Enter Employee Name ");
+                age = prompt("enter the employee age");
+                gender = prompt(" Enter Employee Gender");
+                dept = prompt("Enter Emplyoee Department");
+                basicSal = prompt("Enter Employee Basic Salary ");
+                basicSal = parseInt(basicSal);
+                pfhraTotalSal_Count();
+            }
+            function pfhraTotalSal_Count() {
+                pf = basicsal * (14 / 100);
+                hra = basicsal * (24 / 100);
+                total_sal = pf + hra + basicsal;
+                condition_Checking_Area_For_Male_Employee();
+            }
+
+            function condition_Checking_Area_For_Male_Employee() {
+                if (gender == "male" || gender == "Male") {
+                console.log("Employee name is :" + eName);
+                console.log("Employee age is:" + age);
+                console.log("Employee Department is :" + dept);
+                console.log("Employee Gender is: " + gender);
+                if (total_sal >= 200000) {
+                    console.log("Your Total Salary is Rs :" + total_sal);
+                    tax = (15 / 100) * total_sal;
+                    new_sal = total_sal - tax;
+                    console.log("Your Salary after tax deduction is Rs :" + new_sal);
+                } else if (total_sal >= 100000 && total_sal < 200000) {
+                    console.log("Your Total Salary is Rs :" + total_sal);
+                    tax = (10 / 100) * total_sal;
+                    new_sal = total_sal - tax;
+                    console.log("Your salary after tax dedcution is Rs-:" +new_sal);
+                } else if (total_sal >= 50000 && total_sal < 100000) {
+                    console.log("Your Total Salary is Rs :" + total_sal);
+                    tax = (5 / 100) * total_sal;
+                    new_sal = total_sal - tax;
+                    console.log("Your Salary after tax deduction is Rs- :" + new_sal);
+                } else {
+                    console.log("Your don't need to pay tax because your salary is less than 50k" );
+                    console.log("Your Salary after adding allowances is Rs :" + total_sal);
+                }
+                }
+                condition_Checking_Area_For_Female_Employee();
+            }
+            function condition_Checking_Area_For_Female_Employee() {
+                if (gender == "female" || gender == "Female") {
+                console.log("Employee name is :" + eName);
+                console.log("Employee age is:" + age);
+                console.log("Employee Department is :" + dept);
+                console.log("Employee Gender is :" + gender);
+                if (total_sal >= 200000) {
+                    console.log("Your Total Salary is Rs :" + total_sal);
+                    tax = (10 / 100) * total_sal;
+                    new_sal = total_sal - tax;
+                    console.log("Your salary after tax deduction is Rs- :" + new_sal);
+                } else if (total_sal >= 100000 && total_sal < 200000) {
+                    console.log("Your Total Salary is Rs :" + total_sal);
+                    tax = (5 / 100) * total_sal;
+                    new_sal = total_sal - tax;
+                    console.log("Your salary after tax deduction is Rs-: " + new_sal);
+                } else if (total_sal < 100000) {
+                    console.log("Your don't need to pay tax because your Total Salary after adding allowances is less than 1 lacs");
+                    console.log("Your Net Salary is Rs-: " + total_sal);
+                }
+                } else {
+                console.log("  Done  ");
+                }
+            }
+            readDataFromUser();
+            </script>
+        </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h3 {
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        border: 2px solid;
+        background-color: brown;
+        font-size: 25px;
+    }
+
+    .main {
+        border: 2px solid;
+        margin: 5px;
+        list-style: none;
+    }
+
+    li {
+        margin-top: 15px;
+        height: 45px;
+
+    }
+
+    legend {
+        border: 1px solid;
+        margin: 3px;
+
+    }
+
+    .right {
+        float: right;
+    }
+
+    .foot {
+        border: 2px solid;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .right2 {
+        float: right;
+        clear: both;
+    }
+
+    .astric {
+        color: red;
+        font-size: 15px;
+    }
+
+    .controller {
+        float: left;
+    }
+
+    .labcon {
+        width: 150px;
+        float: left;
+
+    }
+
+    .labcon2 {
+        float: right;
+        margin-right: 45px;
+    }
+
+    .controller2 {
+        float: right;
+        clear: both;
+    }
+</style>
+
+<body>
+    <h3>STUDENTS REGISTRATION PAGE</h3>
+    <ul class="main">
+        <fieldset style="margin: 5px ;">
+
+            <legend> personl details</legend>
+
+            <li><span>
+                    <div for="userName" class="labcon"> enter studend name :</div>
+                    <div class="controller">
+                        <span class="astric">*</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="labcon2">course opted :
+                        <select>
+                            <option value="">UI FULL STACK</option>
+                            <option value="">JAVA FULL STACK</option>
+                            <option value="">.NET</option>
+                            <option value="">DATA SCIENCE</option>
+                        </select>
+                    </div>
+                </span></li>
+
+            <li><span>
+                    <div class="labcon"> e-mail :</div><span class="astric">*</span>
+                    <input type="text">
+                </span>
+            </li>
+            <li>
+                <div class="labcon"> gender : </div><span class="astric">*</span>
+                <input type="radio" name="test"> male
+                <input type="radio" name="test"> female
+
+
+            </li>
+        </fieldset>
+        <fieldset style="margin: 5px ;">
+            <legend>
+                education details
+            </legend>
+            <li>
+                <label>
+                    <div class="labcon">qualification details :</div>
+                </label><span class="astric">*</span><select>
+                    <option value="">12th</option>
+                    <option value="">DIPLOMA</option>
+                    <option value="">ANY GRAJUTE</option>
+                    <option value="">B.TECH</option>
+                </select>
+
+            </li>
+            <li><label>
+                    <div class="labcon"> language known : </div>
+                </label>
+                <input type="checkbox" name="language">hindi
+                <input type="checkbox" name="language"> telgu <input type="checkbox" name="language">english
+                <input type="checkbox" name="language">other
+            </li>
+            <li>
+                <div class="labcon">
+                    average marks :</div><span class="astric">*</span>
+                <input type="text">
+            </li>
+        </fieldset>
+        <fieldset style="margin: 5px ;">
+            <legend> Address</legend>
+            <li><span>
+                    <div class="labcon">document no : </div><span class="astric">*</span>
+                    <input type="text">
+
+                    <div class="labcon2"> land-mark :
+                        <input type="text">
+                    </div>
+                </span>
+            </li>
+            <li><span>
+                    <div class="labcon"> street name : </div>
+                    <div class="controller"> <input type="text"></div>
+                </span></li>
+            <li>
+                <div class="labcon">state :</div><span class="astric">*</span>
+                <select>
+                    <option value="">UP</option>
+                    <option value="">AP</option>
+                    <option value="">UK</option>
+                    <option value="">MP</option>
+                    <option value="">BIHAR</option>
+                    <option value="">DELHI</option>
+                    <option value="">J&K</option>
+                </select>
+            </li>
+            <li>
+                <div class="labcon">country :</div><span class="astric">*</span> <select>
+                    <option value="IND" selected>India</option>
+                    <option value="KNY">Kenya</option>
+                    <option value="ISL">Isral</option>
+                    <option value="">Singapur</option>
+                </select>
+
+            </li>
+        </fieldset>
+        <fieldset style="margin: 5px ;">
+            <legend>about your self :</legend>
+
+            <li>
+                <div class="labcon"> about your self :</div>
+                <textarea maxlength="25" cols="50" rows="3"></textarea>
+            </li>
+
+        </fieldset>
+
+        <li style="margin-bottom:5px;"><span><input type="submit" value="student registration"> &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;<input type="reset" value="reset" name="reset"></span></li>
+    </ul>
+    <footer class="foot">@copy rights 2022 </footer>
+</body>
+
+</html>

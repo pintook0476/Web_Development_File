@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../../jquery.js"></script>
+    </head>
+    <body>
+        <table border="1px solid" cellspacing="5px" cellpadding="5px">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Student Name</th>
+                    <th>Maths Marks</th>
+                    <th>Sceience Marks</th>
+                    <th>Social marks</th>
+                    <th>Computers Marks</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>90</td>
+                    <td>99</td>
+                    <td>67</td>
+                    <td>98</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Krish</td>
+                    <td>90</td>
+                    <td>88</td>
+                    <td>67</td>
+                    <td>44</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rajesh</td>
+                    <td>90</td>
+                    <td>55</td>
+                    <td>67</td>
+                    <td>56</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            
+            var trList = $("tr");
+            for (var i = 1 ; i < trList.length; i++) {
+                var currentTr = trList[i];
+                var currentTdList = $(currentTr).find("td");
+                var total = 0;
+                for (var j = 2; j < currentTdList.length - 1; j++) {
+                    console.log($(currentTdList[j]).text())
+                    total += parseInt($(currentTdList[j]).text());
+                    
+                }
+                $(currentTdList[6]).text(total);
+            }
+
+        </script>
+    </body>
+</html>

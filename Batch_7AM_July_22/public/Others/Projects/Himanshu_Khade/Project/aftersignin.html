@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        html{
+            height: 100%;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+        .navBar{
+            border: 1px solid;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 600;
+            /*background: linear-gradient(#7FBCD2, #E1FFEE);*/
+        }
+        
+        .div1{
+            border: 1px solid;
+            position: relative;
+            top: -11px;
+            left: -8px;
+            right: -52px;
+            width: 101%;
+            height: 800px;
+            bottom: 0px;
+            margin: 0;
+           /*background: linear-gradient(#069A8E, #FFE2E2);*/
+        }
+        .logo{
+            width: 148px;
+            height: 38px;
+            position:absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .leftbox{
+            position: absolute;
+            left: 8px;
+            top: 54px;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 238px;
+            height: 633px;
+            float: left;
+            z-index: 400;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 130%;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 14px;
+            height: 30px;
+            width: 149px;
+            padding: 6px;
+            margin-top: 27px;
+            margin-left: -10px;
+        }
+        li:hover{
+            background-color:#61C0BF;
+        }
+        .rightbox{
+            background-color: #f5f5f5;
+            border: 1px solid;
+            width: 1096px;
+            height: 400px;
+            position: absolute;
+            top: 54px;
+            left: 241px;
+            height: 633px;
+            z-index: 300;
+            overflow: auto;
+        }
+        .rblock{
+            float: left;
+            width: 288px;
+            height: 250px;
+            border: 1px solid;
+            margin: 4px 4px 4px 6px;
+            padding: 5px;
+            border-radius: 97px;
+        }
+        .product1{        
+                position: absolute;
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <img src="./image/placeholder.png" class="logo" alt="">
+    </div>
+    
+    <div class="div1">
+    <div class="leftbox">
+        <ul>
+            <li>Men's Fashion</li>
+            <li>Wowen's Fashion</li>
+            <li>Electronic</li>
+            <li>Kid's Fashion</li>
+            <li>Home & Kitchen</li>
+            <li>Beauty,Health</li>
+            <li>Books</li>
+        </ul>
+    </div>
+    <div class="rightbox">
+        <div class="rblock product1"></div>
+        <div class="rblock product"></div>
+        <div class="rblock product"></div>
+        <div class="rblock product"></div>
+        <div class="rblock product"></div>
+        <div class="rblock product"></div>
+        <div class="rblock product"></div>
+    </div>
+    </div>
+   
+</body>
+</html>

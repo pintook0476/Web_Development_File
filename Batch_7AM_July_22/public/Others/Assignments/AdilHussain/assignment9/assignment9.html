@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9 - Form</title>
+    <style>
+        body {
+            margin: 0px;
+            background: url(cas5.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        .heading,
+        .footer {
+            border: 2px solid red;
+            border-radius: 3px;
+            background-color: red;
+            color: beige;
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .mainContainer {
+            border: 2px solid whitesmoke;
+            background-color: #fff;
+            border-radius: 3px;
+            margin: 20px 50px;
+
+        }
+
+        .personalDetailsContainer {
+            border: 1px solid;
+            margin: 20px;
+
+        }
+
+        .personalDetailHeading {
+            border: 2px solid green;
+            background-color: green;
+            border-radius: 3px;
+            color: #fff;
+            margin: 20px 80px;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: -30px;
+
+
+        }
+
+        label {
+            padding: 10px;
+        }
+
+        .personalsDetails input,
+        .personalsDetails select,
+        textarea {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid green;
+        }
+
+        textarea {
+            width: 500px;
+            height: 300px;
+            resize: none;
+        }
+
+        .personalsDetails input:focus,
+        .personalsDetails select:focus {
+            outline: none;
+        }
+
+        .personalsDetails input[type=email] {
+            margin-left: 55px;
+        }
+
+        .personalsDetails input[type=phone] {
+            margin-left: 32px;
+            width: 280px;
+        }
+
+        .personalsDetails input[type=radio],
+        .personalsDetails input[type=checkbox] {
+            width: 50px;
+        }
+
+        .personalsDetails label[for=male] {
+            margin-left: 40px;
+        }
+
+        .submit {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            position: relative;
+            left: 40%;
+            background-color: red;
+            color: #fff;
+            border: 2px solid red;
+            border-radius: 3px;
+        }
+
+        .submit:hover {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            position: relative;
+            left: 40%;
+            background-color: green;
+            color: #fff;
+            border: 2px solid green;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="heading">Student Registration </h3>
+    <form action="">
+        <div class="mainContainer">
+            <div class="personalDetailsContainer">
+                <div class="personalDetailHeading">Personal Details</div>
+                <div class="personalsDetails">
+                    <div>
+                        <label for="Name">Student Name</label>
+                        <input type="text" placeholder="Enter Your Name">
+                        <label for="course">Opted Course</label>
+                        <select name="" id="">
+                            <option value="none">Select</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="C">C</option>
+                            <option value="java">Java</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mail">E-mail</label>
+                        <input type="email" placeholder="Enter your Mail">
+                        <label for="Phone No.">Phone No.</label>
+                        <input type="phone" placeholder="Enter your Phone No.">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" value="female">
+                    </div>
+                </div>
+            </div>
+            <div class="personalDetailsContainer">
+                <div class="personalDetailHeading">Education Details</div>
+                <div class="personalsDetails">
+                    <div>
+                        <label for="Qualification">Qualification</label>
+                        <select name="" id="">
+                            <option value="none">Select</option>
+                            <option value="Bachlor">Bachlor</option>
+                            <option value="Master">Master</option>
+                            <option value="High School">High School</option>
+                        </select>
+                        <label for="course">Specialised in</label>
+                        <select name="" id="">
+                            <option value="none">Select</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value=" BCA">BCA</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MCA">MCA</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="Language">Language Known</label>
+                        <label for="English">English</label>
+                        <input type="checkbox" value="English">
+                        <label for="Hindi">Hindi</label>
+                        <input type="checkbox" value="Hindi">
+                        <label for="Telugu">Telugu</label>
+                        <input type="checkbox" value="Telugu">
+                        <label for="Urdu">Urdu</label>
+                        <input type="checkbox" value="Urdu">
+                    </div>
+                    <div>
+                        <label for="Average Marks.">Average Marks</label>
+                        <input type="text" placeholder="Enter your Average Marks">
+                        <label for="All Over Marks">All Over Marks</label>
+                        <input type="text" placeholder="Enter your All Over Marks">
+                    </div>
+                </div>
+            </div>
+            <div class="personalDetailsContainer">
+                <div class="personalDetailHeading">Address</div>
+                <div class="personalsDetails">
+                    <div>
+                        <label for="house">House No.</label>
+                        <input type="text" placeholder="House No.">
+                        <label for="Landmark">Landmark</label>
+                        <input type="text" placeholder="Landmark">
+                    </div>
+                    <div>
+                        <label for="street">Street Name</label>
+                        <input type="text" placeholder="Street Name">
+                        <label for="Pin Code">Pin Code</label>
+                        <input type="text" placeholder="Pin Code">
+                    </div>
+                    <label for="Country">Country</label>
+                    <select name="" id="">
+                        <option value="none">Select</option>
+                        <option value="india">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New Zeland">New Zeland</option>
+                    </select>
+                    <label for="Country">State</label>
+                    <select name="" id="">
+                        <option value="none">Select</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Maharastra">Maharastra</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="personalDetailsContainer">
+                <div class="personalDetailHeading">About Yourself</div>
+                <div class="personalsDetails">
+                    <label for="textarea" class="about">About Yourself</label>
+                    <textarea></textarea>
+
+
+                </div>
+            </div>
+            <input type="submit" class="submit" value="Submit">
+
+        </div>
+
+        </div>
+        <h3 class="footer">Copyright &copy; 2022 </h3>
+    </form>
+</body>
+
+</html>

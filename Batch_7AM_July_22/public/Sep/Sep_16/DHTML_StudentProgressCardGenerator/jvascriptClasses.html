@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*var bookdetails = {
+                name: ' my dreams',
+                price: '2000$',
+                displayBookDetails() {
+                    console.log("hello from book details");
+                }
+            }*/
+
+            
+            class BookDetails {
+                constructor(bookname, bpirce, bauthor) {
+                    console.log("constructor got called");
+                    var a = 90;
+                    this.bookname = bookname;
+                    this.price = bpirce;
+                    this.author = bauthor;
+                    
+                }
+                displayBookDetails(name) {
+                    console.log("Boiok details method got called");
+                  
+                }
+                sample() {
+                    console.log("am frm sample")
+                }
+            }
+            var b1 = new BookDetails("My Dreams", 2000, 'Mr Prasad'); // new instance/object to class 'BookDetails'
+            
+            
+            b1.displayBookDetails("Prasad");
+
+            var b2 = new BookDetails("My Travelling", 1500, 'Mr Krish'); // new instance/object to class 'BookDetails'
+            
+            
+            b1.displayBookDetails("Prasad");
+
+            console.log(b1);
+            console.log(b2);
+        </script>
+    </body>
+</html>

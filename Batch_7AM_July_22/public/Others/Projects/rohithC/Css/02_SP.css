@@ -1,0 +1,139 @@
+.bgimg{
+    width: auto;
+    height: 800px;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.8),rgba(13, 2, 105, 0.7)),url(../Img/Bg2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+                    
+   }
+   
+   .logo{
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+  
+   }
+   .logo img {
+    width: 240px;
+    height: 160px;
+   }
+   .container{
+    width: 480px;
+    height: 420px;
+    background-color: azure;
+    border-radius: 10px;
+    position: relative;
+    top:260px;
+    left: 180px;
+    text-align: left;
+   }
+   .inputs {
+    font-size: 30px;
+    padding: 30px;
+    list-style-type: none;
+    text-align: left;
+
+    }
+    
+   
+    
+    .button{
+        text-align: center;
+        text-decoration: dotted;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        left: 100px;
+        }
+    .button:hover{
+        background-color: rgb(112, 52, 91);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(248, 237, 237);
+        font-weight: bold;
+        
+    }
+    .signup{
+        text-decoration: underline;
+        width: 150px;
+        height: 30px;
+    }
+    .extras{
+        font-size: 20px;
+    }
+    
+        
+    
+    .orders{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        position: relative;
+        top : 350px;
+        left: 150px;
+        color: white;
+    }
+    .icons li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid;
+        background-color: aliceblue;
+        position: relative;
+        left: 880px;
+        bottom: 700px;
+        border-radius: 10px;
+        opacity: 0.50;
+
+    }
+    .icons li:hover{
+        color: white;
+        background-color: rgb(167, 201, 0);
+        
+    }
+    
+    .ourspecails{
+        position: relative;
+        left: 700px;
+        bottom: 550px;
+        list-style:disc;
+        color: aliceblue;
+        font-size: 30px;
+        padding: 30px;
+        margin: 10px;
+        text-align: left;
+    }
+    
+    .ourspecails li::first-letter{
+        color: yellow;
+    }
+     
+    .ourspecails li:hover{
+        text-decoration: underline;
+    }
+    .also{
+        color: yellow;
+    }
+    footer{
+        border: 1px solid;
+        width: auto;
+        height: 20px;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+        background-color: teal;
+        font-size: 20px;
+        
+    }
+    .sign-here{
+        font-size: 20px;
+        position: absolute;
+        top: -50px;
+        left: 180px;
+        color: cornsilk;
+        border: 1px solid;
+        padding: 5px;
+    }

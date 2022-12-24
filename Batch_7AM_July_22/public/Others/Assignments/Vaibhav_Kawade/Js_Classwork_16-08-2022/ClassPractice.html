@@ -1,0 +1,61 @@
+<script>
+//write a program to display all the even numbers between 100 - 250 .
+
+for(var number=100; number<=250; number++){
+	if(number%2==0){
+		console.log(number);
+	}
+}
+
+
+//write a program to display all the odd numbers between 454-267 .
+
+for(var number=454; number<=267; number--){
+	if(number%2!=0){
+		console.log(number);
+	}
+}
+
+//write a program to find the sum of all the even numbers between 1 - 200 .
+
+var Sum=0;
+for(var number=1; number<=200; number++){
+	if(number%2==0){
+		Sum+=number;
+	}
+	console.log(Sum);
+}
+
+//write a program to find out the sum of all the odd numbers between 176 - 27 .
+
+var Sum=0;
+for(var number=176; number>=27; number--){
+	if(number%2!=0){
+		Sum+=number;
+	}
+	console.log(Sum);
+}
+
+//write a program to display the table of given number ( upto 20). 
+
+var Number=prompt("Enter a Number");
+    Number=parseInt(Number);
+for (count=1; count<=20; count++){
+	 var result=Number*count;
+	console.log(User_input + "*" + count + "=" + result);
+}
+
+//write a program to check whether user given number is prime number or Not . 
+
+var Number=prompt("Enter a Number");
+Number=parseInt(Number);
+for (var count=1; count<=Number; count++){
+	if (Number%1==0 && Number%Number==0){
+		console.log(Number + "is a Prime Number");
+	}
+	else{
+		console.log(Number + "is Not a Prime Number");
+	}
+}
+
+</script>

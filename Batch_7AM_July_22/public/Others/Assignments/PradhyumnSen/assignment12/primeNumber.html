@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            primeNumber
+        </title>
+    </head>
+    <body>
+        <h1>prime numbers between 200 and 20</h1>
+        <script>
+            var timeComplexity = 0;
+            for(var n = 200 ; n >= 20 ; n-- ){
+                count = 0;
+                for(var i = 2 ; i <= n/2 ; i++){
+                    timeComplexity++;
+                    if(n%i == 0){
+                        count++; 
+                        break;
+                    }
+                }
+                if(count == 0){
+                       console.log(n);
+                      
+                } 
+
+            }
+            console.log("time complexity is " + timeComplexity);
+
+        </script>
+    </body>
+</html>

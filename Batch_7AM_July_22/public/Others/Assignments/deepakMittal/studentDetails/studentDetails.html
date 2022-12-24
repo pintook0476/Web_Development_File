@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fill Up Process</title>
+    <link rel="stylesheet" href="studetailsStyle.css">
+    
+</head>
+<body>
+    <div class="getStudentDetails">
+        <h3><div>Student Address Details</div></h3>
+        <ul>
+            <li>Student Name : <input type="text" name=""  placeholder="First Name" id="fName"> <input type="text" placeholder="Last Name" id="sName"></li>
+            <li>Enter Mobile No. : <input type="text" id="stMob"></li>
+            <li>Enter Email Id : <input type="text" id="stEmail"></li>
+            <li>Flat No. : <input type="text" id="stFlatNo"></li>
+            <li>City / Villege <input type="text" id="stCity"></li>
+            <li>Pin Code : <input type="number" id="pinCode"></li>
+            <li>State : <input type="text" id="state"></li>
+            <li>Country : <input type="text" id="country"></li>
+
+            <li><input type="button" value="Submit Here" id="submitDetailsHere"  onclick="getStAdress()"></li>
+        </ul>
+    </div>
+
+
+    <div class="displayValueOfStudent">
+        <h3><div>Verify Your Details</div></h3>
+        <li>Student Name : <span class="displayName"></span></li>
+        <li>Mobile No. : <span class="displayMobile"></span></li>
+        <li>Email Id : <span class="displayEmail"></span></li>
+        <li>Flat No. : <span class="displayFlat"></span></li>
+        <li>City Name : <span class="displayCity"></span></li>
+        <li>Pin Code : <span class="displayPin"></span></li>
+        <li>State Name : <span class="displayState"></span></li>
+        <li>Country Name : <span class="displayCountry"></span></li>
+        <button type="submit"><a href="printStudentDetails.html">Confirm</a></button>
+    </div>
+   <script src="getStudentDetails.js"></script>
+    
+</body>
+</html>

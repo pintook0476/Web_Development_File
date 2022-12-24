@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-9(input elements)</title>
+    <style>
+        body{
+            width:100%;
+            box-sizing: border-box;          
+            overflow-x: hidden;
+            background-color: bisque;
+        }
+            h2{
+                border-radius: 50px;
+                text-align:center;
+                margin:auto; 
+                width: 600px;
+                font-style: italic;
+                font-size: 30px;
+                background-color: darkgray;
+            }
+            .mainContainer{               
+                border: 1px solid none;
+                border-radius: 30px;
+                margin: 15px auto;
+                padding: 15px;  
+                background:rgb(138, 188, 116); 
+                background-image: url("https://getmyuni.azureedge.net/college-images-test/dehradun-institute-of-technology-dit-dehradun/infrastucture-6a70fd35cd98970bfe78827a3e5e305d.JPG");    
+                background-repeat: no-repeat;  /* all these prop comes under CSS-3         */
+                background-position: center;
+                background-size: 100% 100%;
+            }
+            .firstContainer{
+                border: 1px solid;
+                margin: 15px;
+                padding: 15px;
+                position:relative;
+                color:beige;
+              /*  background-image: url("https://wallpapercave.com/wp/wp3433688.jpg");
+                background-repeat: no-repeat; */
+            }
+            .coursebox{
+                position: relative;
+                left: 650px;
+                top: -240px;
+                
+            }
+            .personalDetails{
+                border: 2px solid;
+                position:absolute;
+                top: -10px;
+                left: 25px;               
+                width: 200px; 
+                text-align: center;  
+                background-color:black;
+                color:white;  
+                font-weight: bold;
+            }
+            .secondContainer{
+                border: 1px solid;
+                margin: 15px;
+                padding: 15px;
+                position:relative;
+                color: floralwhite;
+             }
+            .eduQualifucation{
+                border: 2px solid;
+                position:absolute;
+                left: 30px;
+                top: -12px;
+                width: 200px; 
+                text-align: center;  
+                background-color:black;
+                color:white;  
+                font-weight: bold;
+            }    
+            .thirdContainer{
+                border: 1px solid;
+                margin: 15px;
+                padding: 15px;
+                position:relative;
+                color: beige;
+                /*
+                background-image: url("https://wallpapercave.com/wp/wp3433688.jpg");
+                background-repeat: no-repeat; */
+            }
+            .address{
+                border: 2px solid;
+                position:absolute;
+                left: 30px;
+                top: -12px;
+                width: 200px; 
+                text-align: center;  
+                background-color:black;
+                color:white;  
+                font-weight: bold;
+            }
+            .fouthContainer{
+                border: 1px solid;
+                margin: 15px;
+                padding: 15px;
+                position:relative;
+                color: deeppink;
+            }
+            .aboutYourself{
+                border: 2px solid;
+                position: absolute;
+                top: -12px;
+                left: 33px;
+                width: 200px; 
+                height: 20px;
+                text-align: center;  
+                background-color:black;
+                color:white; 
+                font-weight: bold;
+            }
+            .footer{
+                width: 600px;
+                border:2px solid;
+                text-align: center;
+                margin:auto;
+                padding: 15px;
+                background-color:lightgray;                
+            }
+            .button{
+                margin: 10px auto;
+                border: 1px solid none;
+                width: 200px;
+                height: 25px;
+            }
+            button{
+                background-color: greenyellow;
+                border-radius: 50px; 
+                width: 200px;
+                height: 40px;
+                border: none;
+            }
+            button:hover{
+	        background:red;
+	        }
+
+    </style>
+</head>
+<body>
+    <h2>Student Registration Page</h2>
+
+    <form action="www.samplepage.com" method="post" target="_blank">
+
+        <div class="mainContainer" >
+    <!--first container starts here-->
+
+            <div class="firstContainer"> 
+                <div class="personalDetails">Personal Details </div>
+                <label for="">Student Name</label>
+                <input  type="text" name="username" required ><br>
+                <br>
+                <label for="">Father's Name</label>
+                <input type="text" name="fathername" required><br>
+                <br>
+                <label for="">Mother's Name</label>
+                <input type="text" name="mothername" required><br>
+                <br>
+                <label>E-Mail ID</label>
+                <input type="email" name="emailID" required ><br>
+                <br>
+                <label>Contact Number</label>
+                <input type="number" name="number" value="num" maxlength="10" required><br>
+                <br>
+                <label>Gender:-</label>      
+                <input type="radio" name="gender"   value="male">Male
+                <input type="radio" name="gender"   value="female">Female
+                <input type="radio" name="gender"   value="others">Others
+                <br>
+                <br>
+                <label>Date Of Birth</label>
+                <input type="date" name="dob">
+                <div class="coursebox">
+                    <label>Programmes you are looking for &nbsp;</label>
+                    <select>
+                        <option selected>Select your course</option>
+                        <option >Diploma</option>
+                        <option >B.Tech</option>
+                        <option >M.Tech</option>
+                        <option >M.Sc</option>
+                        <option >MBA</option>
+                        <option >Ph.D</option>                                             
+                    </select>
+                </div>
+            </div>            
+<!--second container starts here-->
+
+            <div class="secondContainer">
+                <div class="eduQualifucation">Educational Qualification</div>
+                <label>Highest Qualification:- </label>
+                <input type="text" name="eduQualifucation" value=""><br>
+                <br>
+                <label>Highest Qualification Percentage:- </label>
+                <input type="number" name="" value=""><br>
+                <br>
+                <label>Highest Qualification Passout Year</label>
+                <input type="number" name="" value=""><br>
+                <br>
+                <label>Languages Spoken</label>
+                <input type="checkbox" name="lang" value="engLang">English
+                <input type="checkbox" name="lang" value="hinLang">Hindi
+                <input type="checkbox" name="lang" value="urdLang">Urdu
+                <input type="checkbox" name="lang" value="othLang">Others
+            </div>
+
+ <!--thrid conatiner starts here-->
+
+            <div class="thirdContainer"> 
+                <div class="address">Address</div>
+                <label>Door-No</label> <input type="text" value><br>
+                <br>
+                <label>Street Name</label><input type="text" value=""><br>
+                <br>
+                <label>Nationality</label>
+                <select>
+                    <option>Select</option>
+                    <option>Indian</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Ireland</option>
+                    <option>United Kingdom</option>                    
+                </select><br>
+                <br>
+                <label>State</label>
+                <select>
+                    <option>Select</option>
+                    <option>Assam</option>
+                    <option>Mizoram</option>
+                    <option>Meghalaya</option>
+                    <option>Manipur</option>
+                    <option>Arunachal Pradesh</option>
+                </select><br>
+                <br>
+                <label >Landmark</label>
+                <input type="text" name=""><br>
+             </div>
+             
+        <!--fourth contaier starts here-->
+             
+             <div class="fouthContainer">
+                <div class="aboutYourself">About Yourself</div>
+                <label>Tell us about yourself</label><br>
+                <textarea maxlength="1000" cols="50" rows="5" placeholder="Type here.."></textarea>
+                <br>              
+                    <div class="button">
+                        <button  type="submit"  name="submit">Submit your details</button>
+                    </div>
+               
+                
+             </div>    
+        </div>
+
+        <!--  footer-->
+        <div class="footer"> Copyright@2022 </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capcha</title>
+        <link rel="stylesheet" href="./capcha.css">
+    </head>
+    <body>
+        <div class="section">
+            <div class="capchaBox">
+                <div id="showdata">
+                    
+                </div>
+            </div>
+            <div>
+                <input type="text" id="inputCapcha">
+            </div>
+            <div>
+                <input type="button" value="Login" id="button" onclick="readData();">
+            </div>
+            <div>
+                <input type="button" value="Reset" id="reload" onclick="reset();">
+            </div>
+        </div>
+        <div>
+            <div class="section hide" id="slogin">
+                succesfully loged in 
+            </div>
+        </div>
+        <script src="./capcha.js"></script>
+    </body>
+</html>

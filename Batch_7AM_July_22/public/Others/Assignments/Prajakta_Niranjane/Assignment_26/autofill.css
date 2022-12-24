@@ -1,0 +1,54 @@
+.container{
+    border: 1px solid;
+    width: 450px;
+    margin: 0px auto;
+    background-color: rgb(247, 247, 212);
+}
+.section{
+    padding-left: 90px;
+}
+h3 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(58, 66, 109);
+    color: rgb(247, 247, 212);
+    margin: 20px 10px;
+}
+#button{
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(58, 66, 109);
+    color: rgb(247, 247, 212);
+    margin-bottom: 20px;
+    width: 258px;
+    border: none;
+    margin-left: 90px;
+    line-height: 5px;
+}
+input{
+    height:25px;
+    width: 250px;
+}
+label{
+    color: rgb(58, 66, 109); 
+    font-weight: bold;
+}
+.autoFillContainer {
+    padding: 0px;
+    width: 400px;
+    position: relative;
+    left: 0px;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: white;
+    border: 1px solid gray;
+    width: 235px;
+}
+li:hover{
+    background-color: rgb(235, 232, 232);
+    cursor: pointer;
+}

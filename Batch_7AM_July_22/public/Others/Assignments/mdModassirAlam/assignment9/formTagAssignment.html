@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        h3{
+            border: 1px solid;
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px;
+            /* z-index: 5; */
+        }
+        .container{
+            border: 1px solid;
+            width: 100%;
+            height: 1200px;
+        }
+        .personalDetails{
+            border: 1px solid;
+            width: 97%;
+            height: 250px;
+            margin: 20px auto;
+            z-index: 30;
+            /* position: static; */
+            /* left: 10px; */
+        }
+        .smallBox{
+            border: 1px solid;
+            width: 316px;
+            height: 28px;
+            position: absolute;
+            left: 107px;
+            top: 64px;
+            text-align: center;
+            z-index: 10;
+            margin-top: 18px;
+            font-weight: bold;
+            background-color: cornflowerblue;
+        }
+        form{
+            margin: 10px;
+            padding: 5px;
+        }
+    
+        .detailStu{
+            width: 300px;
+            margin-left: 32px;
+        }
+        .detailStu1{
+            margin-left: 62px;
+            margin-top: 25px;
+            width: 300px;
+        }
+        .detailStu2{
+            margin-left: 73px;
+            margin-top: 25px;
+        }
+        .detailStu3{
+            margin-left: 99px;
+        }
+        .courseOpted{
+            position: absolute;
+            left: 930px;
+            top: 163px;
+        }
+        .selectCourse{
+            margin-left: 73px;
+        }
+        .EduDetails{
+            border: 1px solid;
+            width: 316px;
+            height: 28px;
+            position: absolute;
+            left: 109px;
+            top: 355px;
+            text-align: center;
+            font-weight: bold;
+            background-color: cornflowerblue;
+        }
+        .detailStu4{
+            width: 300px;
+            margin-left: 116px;
+        }
+        .detailStu5{
+           margin-left: 80px;
+           margin-top: 5x;
+        }
+        .detailStu6{
+            margin-left: 80px;
+        }
+        .detailStu7{
+            margin-left: 80px;
+        }
+        .detailStu8{
+            margin-left: 80px;
+        }
+        .detailStu9{
+            margin-left: 127px;
+        }
+        .AddDetails{
+            border: 1px solid;
+            width: 316px;
+            height: 28px;
+            position: absolute;
+            left: 109px;
+            top: 627px;
+            text-align: center;
+            font-weight: bold;
+            background-color: cornflowerblue;
+        }
+        .land{
+            position: absolute;
+            left: 923px;
+            top: 703px;
+        }
+        .landMark{
+            margin-left: 10px;
+            width: 404px;
+            height: 93px;
+        }
+        .labMark{
+            margin-top: 5px;
+        }
+        .aboutYourSelf{
+            border: 1px solid;
+            width: 316px;
+            height: 28px;
+            position: absolute;
+            left: 109px;
+            top: 897px;
+            text-align: center;
+            font-weight: bold;
+            background-color: cornflowerblue;
+        }
+        .aboutYourSelf1{
+            border: 1px solid;
+            width: 97%;
+            height: 344px;
+            margin: 20px auto;
+            z-index: 30;
+        }
+        .about{
+            border: 1px solid;
+            width: 769px;
+            height: 249px;
+            margin-left: 89px;
+        }
+        .address{
+            width: 300px;
+            margin-left: 116px;
+        }
+        .address1{
+            width: 300px;
+            margin-left: 64px;
+        }
+        .selectState{
+            margin-left: 111px;
+        }
+        .selectCountry{
+            margin-left: 89px;
+        }
+        .footer {
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+            }
+        
+    </style>
+</head>
+<body>
+    <h3>Student Registration Page</h3>
+    <div class="container">
+
+        <!--First container for Personal Details-->
+        <div class="smallBox">
+            Personal Details
+        </div>
+        <div class="personalDetails">
+           
+            <br>
+            <br>
+            <br>
+            <form>
+                <label for="studentName" >Student Name:</label>
+                <input type="text" name="studentName" class="detailStu"><br>
+                <label for="mailId" >Email ID:</label>
+                <input type="email" name="studentEmail" class="detailStu1" required><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" class="detailStu2" value="male">Male
+                <input type="radio" name="gender" class="detailStu3" value="Female">Female<br>
+                <div class="courseOpted">
+                    <label>Course Opted:</label>
+                <select class="selectCourse">
+                    <option>Java</option>
+                    <option>C++</option>
+                    <option>Web Devlopment</option>
+                    <option>Python</option>
+                </select>
+                </div>
+                
+            </form>
+        </div>
+
+        <!-- Second Container for student details-->
+        <div class="EduDetails">
+            Education Details
+        </div>
+        <div class="personalDetails">
+           
+            <br>
+            <br>
+            <br>
+            <form>
+                <label for="studentName" >Qualification:</label>
+                <input type="text" name="studentQuali" class="detailStu4"><br><br>
+                <label for="gender">Languages Known:</label>
+                <input type="checkbox" name="lang" class="detailStu5" value="male">English
+                <input type="checkbox" name="lang" class="detailStu6" value="Female">Telugu
+                <input type="checkbox" name="lang" class="detailStu7" value="male">Urdu
+                <input type="checkbox" name="lang" class="detailStu8" value="Female">Hindi<br><br>
+                <label for="mailId" >Avg Marks:</label>
+                <input type="email" name="studentEmail" class="detailStu9" required><br>  
+            </form>
+        </div>
+
+        <!--Third Container for Student Address-->
+
+        <div class="AddDetails">
+            Address 
+        </div>
+        <div class="personalDetails">
+           
+            <br>
+            <br>
+            <br>
+            <form>
+                <label for="studentName" >Dno:</label>
+                <input type="text" name="studentQuali" class="address"><br><br>
+                <label for="studentName" >Street Name:</label>
+                <input type="text" name="studentQuali" class="address1"><br><br>
+                <label>State:</label>
+                <select class="selectState">
+                    <option>Patna</option>
+                    <option>Hyderabad</option>
+                    <option>Delhi</option>
+                    <option>Kolkata</option>
+                </select><br><br>
+
+                <label>Country:</label>
+                <select class="selectCountry">
+                    <option>India</option>
+                    <option>England</option>
+                    <option>Austrila</option>
+                    <option>Srilanka</option>
+                </select><br>
+                
+                <div class="land">
+                    <label for="landMark" class="labMark">LandMark:</label>
+                    <input type="text" name="landMark" class="landMark">
+                </div>  
+            </form>
+        </div>
+
+        <!--Forth Container for Student About Your-Self-->
+
+        <div class="aboutYourSelf">
+            About YourSelf 
+        </div>
+        <div class="aboutYourSelf1">
+           
+            <br>
+            <br>
+            <br>
+            <form>
+                <label for="about" >About Your-Self:</label>
+                <input type="text" name="about" class="about"><br><br>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    
+    <div class="footer">
+        &#169; copyrights 2022
+    </div>
+</body>
+</html>

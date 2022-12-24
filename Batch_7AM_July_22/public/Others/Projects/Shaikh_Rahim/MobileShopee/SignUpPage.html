@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: azure;
+        }
+
+        .Headings {
+            position: sticky;
+            top: 0px;
+            color: rgba(172, 120, 41, 0.918);
+            background-color: rgba(171, 229, 229, 0.734);
+            padding: 5px;
+            text-align: center;
+        }
+
+        .HeadButtons {
+
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+
+        .HeadButtons:hover {
+            background-color: rgb(171, 229, 229)
+        }
+
+        .UserInfo {
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            border: 1px solid;
+            padding: 15px;
+            background-color: rgba(87, 151, 181, 0.512);
+        }
+
+        #UserName {
+            margin-right: 66px;
+        }
+
+        #password {
+            margin-right: 73px;
+        }
+
+        #confirmPassword {
+            margin-right: 15px;
+        }
+
+        #MobileNo {
+            margin-right: 67px;
+        }
+
+        #Email {
+            margin-right: 95px;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: rgba(28, 25, 107, 0.622);
+        }
+
+        footer {
+            margin-top: 500px;
+            font-size: small;
+            color: blue;
+        }
+    </style>
+    <title>SignUpPage</title>
+</head>
+
+<body>
+    <div class="Headings">
+        <span class="HeadButtons">
+            Home
+        </span>
+        <span class="HeadButtons">
+            Galary
+        </span>
+        <span class="HeadButtons">
+            AboutUs
+        </span>
+        <span class="HeadButtons">
+            ContactUs
+        </span>
+        <span class="HeadButtons">
+            Offers
+        </span>
+    </div>
+    <div class="UserInfo">
+        <form action="HomePage.html" method="get">
+
+            <label id="UserName" for="UserName">UserName:</label>
+            <input type="text" name="UserName" required>
+            <br>
+            <br>
+            <label id="password" for="password">Password:</label>
+            <input type="password" name="password" required>
+            <br>
+            <br>
+            <label id="confirmPassword" for="Confirm password">Confirm Password:</label>
+            <input type="password" name="ConfirmPassword" required>
+            <br>
+            <br>
+            <label id="MobileNo" for="MobileNo">MobileNo:</label>
+            <input type="number" name="MobileNo" required>
+            <br>
+            <br>
+            <label id="Email" for="Email">Email:</label>
+            <input type="email" name="Email" required>
+            <br><br>
+            <center>
+                <a href="HomePage.html">
+                    <button>SignUp</button>
+                </a>
+            </center>
+        </form>
+    </div>
+    <footer>
+        @copyright2022 all rights riserved
+    </footer>
+</body>
+
+</html>

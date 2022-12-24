@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>descending Order</title>
+</head>
+<body>
+    <div>to findout the descending order of given array</div>
+
+    <script type="text/javascript">
+
+        var n=prompt("Enter the value of n");
+        var a=[];
+        for (var i=0; i<n; i++) {
+            a[i]=prompt("Enter the value for array" + (i+1));
+            a[i]=parseInt(a[i]);
+        }
+        for (var i=0; i<a.length-1; i++) {
+            for (var j=0; j<a.length-1-i; j++) {
+                if (a[j]<a[j+1]) {
+                    temp=a[j+1];
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        console.log("The descending order is" + a);
+        console.log("The second largest nubmer" + a[1]);
+    </script>
+</body>
+</html>

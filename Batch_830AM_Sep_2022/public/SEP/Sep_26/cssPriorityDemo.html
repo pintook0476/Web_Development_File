@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS Priority Order
+        </title>
+        <style>
+            p {
+                color: yellowgreen !important;
+                font-size: 25px;
+            }
+            #content {
+                font-size: 10px !important;
+            }
+            .container {
+                text-decoration: underline;
+                font-size: 35px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="background-color: blue;font-size: 20px;" id="content" class="container">
+            Hello every one
+        </p>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .container{
+            border: 2px solid;
+            width :150px;
+            height: 30px;
+            margin: 10px;
+            font-size: 30px;
+
+        }
+        .result {
+            margin: 10px;
+        }
+        .display{
+            margin: 10px;
+        }
+    </style>
+    <body>
+            <div class="container"> 
+                
+            </div>
+            <div> 
+                <input type="button" value="Generate Captcha" onclick="generateCaptca();">
+            </div>
+            <br>
+            <div class="result">   
+                <input type="text" placeholder="Enter captcha" id="capcha">
+            </div>
+            <div> 
+                <input type="button" value="Enter" onclick="matching()">
+            </div>
+
+            <div class="display">
+                
+            </div>
+        <script>
+            
+            var characters = ["A" , "B", "C", "D", "E","F","G","L","R","T","V","X","Z"]
+            var lcharacters = ["j", "k", "m","p","y","u","h","i","n","o","q","s","w"]
+
+            var generateCaptca = () =>{
+                var captcha = " "
+                captcha += getranndomletter();
+                captcha += getrandomnumbers();
+                captcha += getrandomsmallletters();
+                captcha += getrandomnumbers();
+                captcha += getranndomletter();
+                document.querySelector(".container").innerHTML = captcha;
+
+                lastvalue = captcha;
+                console.log(lastvalue);
+            }
+
+            var getranndomletter = () => {
+                var index = Math.random() * characters.length;
+                    index = Math.floor(index);
+                    return (characters[index]);
+                    
+            }
+
+            var getrandomnumbers = () => {
+                    var randomnum = Math.random() * 10;
+                    randomnum = Math.floor(randomnum);
+                    return randomnum;
+            }
+            
+            var getrandomsmallletters = () => {
+                var sletters = Math.random() * lcharacters.length;
+                    sletters = Math.floor(sletters) 
+                    return (lcharacters[sletters]);
+            }
+
+            var matching = () => {
+                var enterdvalue = document.querySelector("#capcha").value;
+                    console.log(enterdvalue);
+                    console.log(lastvalue);
+
+                    if(enterdvalue.trim() == lastvalue.trim()){
+                        final = "correct"
+                    }else{
+                        final = "wrong"
+                    }
+
+                    document.querySelector(".display").innerHTML = final;
+            }
+            
+
+            
+
+
+        </script>
+    </body>
+</html>

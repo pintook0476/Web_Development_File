@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            assignment_14
+        </title>
+    </head>
+    <body>
+        <script>
+             var  a = [121,274,383,900,517,256,696,969,734,567,282];
+             var i;
+             var temp;
+             var rev=0;
+             var n;
+             for(i=0;i<a.length;i++)
+             { 
+                temp=a[i];
+                n=a[i];
+                while (n!=0)
+                {
+                    var rem=n%10;
+                    n=n/a;
+                    n=parseInt(n);
+                    rev=rev*10+rem;
+                }
+                if(temp==rev)
+                {
+                    console.log(temp+" palindrome number");
+                }
+                else{
+                    console.log(temp+" not a palindrome number");
+                }
+             }
+        </script>
+    </body>
+</html>

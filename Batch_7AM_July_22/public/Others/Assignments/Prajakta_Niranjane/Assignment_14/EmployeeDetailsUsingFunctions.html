@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details By Using Functions</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        var empname, empage, empdept, empgender, empsal, totalsal, pf, hra, tax, inHandSalary;
+        function readEmployeeData(){
+                 empname = prompt('Enter Employee Name');
+                 empage = prompt('Enter Your Age');
+                 empgender = prompt('Enter Gender');
+                 empdept = prompt('Enter Department');
+                 empsal = prompt('Enter Your Basic salary');
+                 empsal = parseFloat(empsal);
+                 tax = parseFloat(tax);
+        }
+        readEmployeeData();
+        function PfAndHraCalculation()
+        {        
+                  pf = empsal * (14 / 100);
+                  hra = empsal * (24 / 100);
+                  totalsal = pf + hra + empsal ;
+                  console.log('PF: ₹' + pf);
+                  console.log('HRA: ₹' + hra);
+                  console.log('Total Salary: ₹' + totalsal);
+        }
+        displayEmployeeDetails();
+              
+        function displayEmployeeDetails()
+       {
+                  console.log('Employee Name: '+ empname);
+                  console.log('Employee Age: '+ empage);
+                  console.log('Employee Gender: '+ empgender);
+                  console.log('Employee Department: '+ empdept);
+                  console.log('Employee Salary: ₹' + empsal);        
+        }        
+        PfAndHraCalculation();
+
+        function taxCalculation()
+        {
+                if (empgender == "Male" || empgender == "male" ) {
+                  if (totalsal >= 200000) {
+                    console.log('Your Tax percentage is 15%');
+                    var tax = totalsal * (15 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                  }
+                  else if ( totalsal >= 100000 && totalsal < 200000) {
+                    console.log('Your Tax percentage is 10%');
+                    var tax = totalsal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);  
+                  } 
+                  else if (totalsal >= 50000 && totalsal < 100000) {
+                    console.log('Your Tax percentage is 5%');
+                    var tax = totalsal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);  
+                  }
+                  else {
+                    var tax = 0;
+                    console.log('Tax = 0'); 
+                  }
+                }
+                else if (empgender == "Female" || empgender == "female" ) {
+                  if (totalsal >= 200000) {
+                    console.log('Your Tax percentage is 10%');
+                    var tax = totalsal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                  }
+                  else if (totalsal >= 100000 && totalsal < 200000) {
+                    console.log('Your Tax percentage is 5%');
+                    var tax = totalsal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);  
+                  } 
+                  else if (totalsal >= 50000 && totalsal < 100000) {
+                    var tax = 0;
+                    console.log('Tax = 0'); 
+                  }
+                  else {
+                    var tax = 0;
+                    console.log('Tax = 0'); 
+                  }
+                 }
+                 else {
+                   console.log("Invalid Gender");
+                   console.log("Please! Enter the Valid gender.");
+                 }
+                    inHandsalary = totalsal - tax ;   
+                    console.log('Total In Hand Salary After Tax-Deduction: ₹' + inHandsalary); 
+        }
+             taxCalculation();  
+              
+    </script>
+</body>
+</html>

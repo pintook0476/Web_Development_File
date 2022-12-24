@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arranging array in ascending order</title>
+</head>
+<body>
+    <h3> Arranging array in asending order</h3>
+    <h2></h2>
+    <script>
+        
+        //initializing an array
+        var a = [];
+        var range = parseInt(prompt("enter the size of an array:"));
+        for(var i=0; i<range; i++){
+        a[i]=parseInt(prompt("enter the value at index:"+ i));
+        }
+        console.log("Values in an array: " + a);
+
+        //find out odd values in array
+        var b = [];
+        for(i=0; i<a.length; i++){
+            if(a[i] % 2 != 0){
+                b.push(a[i]);
+            }
+        }
+        console.log("Odd values in the array: " + b);
+
+        //sort out in ascending order
+        for(i=0; i<b.length; i++){
+            for(j=i+1; j<b.length; j++){
+                if(b[i] > b[j]){
+                    var temp = b[j];
+                    b[j] = b[i];
+                    b[i] = temp;
+                }
+            }
+        }
+        console.log("After Ascending order: " + b);
+        document.querySelector("h2").innerHTML=b;
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<div class="product">
+    <div>
+        <img src="./photos/2593044.jpg" alt="" class="productImg">
+    </div>
+    <div>Product Name : keyboard</div>
+    <div>Price : 2000</div>
+    <div>Manufacturer : Sony</div>
+    <div>Rating : 4.5</div>
+ </div>

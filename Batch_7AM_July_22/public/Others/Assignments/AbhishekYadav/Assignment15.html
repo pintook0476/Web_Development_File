@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Tital Salary By Using Function</title>
+</head>
+
+<body>
+    <h3>Demonstrating Employee Details </h3>
+
+    <script>
+        var getDataFromUser = () => {
+            var ename, eage, egender, bsalary, edepartment, tsalary;
+            ename = prompt("Enter Employee Name ");
+            eage = prompt("Enter Employee Age ");
+            egender = prompt("Enter Employee Gender in the form of 'M' and 'F'");
+            bsalary = prompt("Enter Employee Basic Salary");
+            bsalary = parseInt(bsalary);
+            edepartment = prompt("Enter Employee Department");
+            tsalary = getgender(egender, bsalary);
+            giveDataToUser(ename, eage, egender, edepartment, tsalary);
+        }
+
+        var getgender = (egender, bsalary) => {
+            if (egender == 'm' || egender == 'M') {
+                var taxPercentage;
+                if (bsalary >= 200000) {
+                    console.log("Tax Percentage is 15%");
+                    taxPercentage = 15;
+                } else if (bsalary >= 100000) {
+                    console.log("Tax Percentage is 10%");
+                    taxPercentage = 10;
+                } else if (bsalary >= 50000) {
+                    console.log("Tax Percentage is 5%");
+                    taxPercentage = 5;
+                } else if (bsalary < 50000) {
+                    console.log("Feel Free You are free form tax");
+                }
+            }
+
+            if (egender == 'F' || egender == 'f') {
+                var taxPercentage;
+                if (bsalary >= 200000) {
+                    console.log("Tax Percentage is 10%");
+                    taxPercentage = 10;
+                } else if (bsalary >= 100000) {
+                    console.log("Tax Percentage is 5%");
+                    taxPercentage = 5;
+                } else if (bsalary < 100000) {
+                    console.log("Feel Free You are free form tax");
+                    taxPercentage = 1;
+                }
+            }
+            var tsalary = calculateHrPf(bsalary, taxPercentage);
+            return tsalary;
+        }
+
+        var calculateHrPf = (bsalary, taxPercentage) => {
+            var tsalary, hr, pf;
+            hr = bsalary * 25 / 100;
+            pf = bsalary * taxPercentage / 100;
+            tsalary = hr + pf + bsalary;
+            return tsalary;
+        }
+
+        var giveDataToUser = (ename, eage, egender, edepartment, tsalary) => {
+            console.log("Employee Name is " + ename);
+            console.log("Employee Age is " + eage);
+            console.log("Employee Gender is " + egender);
+            console.log("Employee Department is " + edepartment);
+            console.log("Employee Total Salary is " + tsalary);
+        }
+
+        getDataFromUser();
+    </script>
+</body>
+
+</html>

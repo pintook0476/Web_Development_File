@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0 px;
+        }
+
+     
+        .container{
+            
+            background-image: linear-gradient(rgba(216,194,249,0.7),rgba(212,160,229,1.0)),url('Image/backGround_2.jpg');
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .navBar{
+            background-color:white;
+            width: 100vw;
+            height: 8vh;
+            position: absolute;
+            border-top: 1px ridge rgb(178, 238, 183) ; 
+           
+        }
+
+        .logo{
+
+            width:120px;
+            height:40px;
+            display: block;
+            float: left;
+            color: rgb(233, 48, 109);
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin: 2px;
+            padding-top: 1px;
+            font-weight:bold;
+           
+        }
+
+        .logo::first-letter{
+            font-size: 30px;
+            font-family:cursive;
+            color: purple;
+            
+            
+            
+        } 
+
+        .navBar ul{
+
+            width:400px;
+            height: 8vh;
+            display: inline-block;
+           
+        }
+
+        .navBar ul li{
+           
+            list-style: none;
+            padding-top: 12px;
+            float: left;
+            
+        }
+
+        .navBar ul li a{
+
+            text-decoration: none;
+            color: rgba(148, 44, 148, 1.0);
+            padding: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            
+        }
+
+        .search{
+            display: inline-block;
+            position: absolute;
+            top: -1px;
+            right:300px;
+           
+        }
+
+        .search #search{
+
+            width: 300px;
+            height: 4vh;
+            margin-top: 10px;
+            background-color: rgb(223, 247, 185);
+            background-color: rgb(215, 245, 235)!important;
+            border-radius: 8px;
+          
+            
+            
+            
+        }
+
+        .search #btn{
+
+            margin-left: 20px;
+            display: inline-block;
+            width:70px;
+            height: 5vh ;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(88, 4, 84);
+            border-radius: 8px;
+            color: white;
+            border: 1px solid rgb(39, 2, 37);
+          
+        }
+
+        
+
+        ::placeholder{
+
+            color: black;
+        }
+
+        .login_cart{
+
+            width:200px;
+            height: 6vh;
+           
+            position: absolute;
+            display: inline-block;
+            right:10px;
+            top: 2px;
+            
+        }
+
+        .login_cart #login{
+
+            width:40px;
+            height:40px;
+            padding-left: 30px;
+            padding-top: 3px;
+
+
+        }
+
+        .login_cart #cart{
+
+            width:30px;
+            height:35px;
+            padding-left: 30px;
+            margin-bottom: 2px;
+        }
+
+        .text{
+
+            width:600px;
+            height:250px;
+            
+            position: relative;
+            top: 150px;
+            left: 100px;
+        }
+
+        .text h1{
+            font-size: 60px; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+
+        h1::first-letter{
+            font-size: 90px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;        
+        }
+
+        h1::first-line{
+            font-size: 50px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;        
+        }
+
+        
+
+        .text p{
+
+            font-size: 35px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 15px;
+        }
+
+        .womenShopping{
+
+            position: absolute;
+            left:800px;
+            bottom:-20px;
+            
+        }
+
+        .text #Explore{
+
+            margin-top: 20px;
+            width: 120px;
+            height: 30px;
+            border: 1px solid purple;
+            background-color: rgb(39, 2, 37);
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .category{
+
+            width:100vw;
+            height:70vh;
+            background-color: white;
+        }
+
+        .footer{
+
+            width:100vw;
+            height:10vh;
+            background-color: rgb(85, 62, 83);
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navBar">
+
+                <div class="logo">NuSH</div>
+
+                <ul>
+                    <li><a href="#home">Men</a></li>
+                    <li><a href="#home">Womens</a></li>
+                    <li><a href="#home">Kids</a></li>
+                    <li><a href="#home">Home Decore</a></li>
+		    
+                    
+                </ul>
+
+                <div class="search">
+                    <input type="text" name="src" id="search" placeholder="search for products, brands and more">
+                    <input type="submit" value="Search" id="btn">
+                </div>
+
+                <div class="login_cart">
+                    <a href="login_page.html"><img src="Image/login_icon.png" alt="login icon" id="login" class="login_icon">
+                    </a>
+                    <img src="Image/cart_icon.png" alt="cart" id="cart">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text">
+            <h1>Give yourself a<br>new look with us!!</h1>
+            <p>“Never give up on something you really want. However impossible things seem, there's always a way.”</p>
+            <input type="button" value="Explore More" id="Explore">
+        </div>
+
+        <div class="womenShopping">
+            <img src="Image/women_shopping.png" alt="women shopping">
+        </div>
+
+    </div>
+
+    <div class="category">
+
+    </div>
+
+    <div class="footer">
+
+
+    </div>
+
+    
+</body>
+</html>

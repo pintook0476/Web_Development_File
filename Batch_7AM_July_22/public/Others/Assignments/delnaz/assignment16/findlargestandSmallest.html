@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to find the largest and smallest no. in array values
+        var n = [23 , 56 ,78 , 90 , 20 , 56 , 21 , 80 , 45]
+        console.log("Total no. of digit = " +n.length);
+        var largest  = n[0];
+        var smallest = n [0];
+        for (var i = 0 ; i < n.length ; i ++)
+        {
+            if(n[i] > largest)
+            {
+                largest  = n[i];
+            }
+            else if(n[i] < smallest)
+               smallest  = n[i];
+        }
+        console.log("largest no is = " +largest);
+        console.log("smallest no. is = " +smallest);
+       
+    </script>
+</body>
+</html>

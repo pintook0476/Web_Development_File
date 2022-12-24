@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmStrong Number Array</title>
+</head>
+<body>
+    <script>
+        const range = [11, 1111];
+        const isArmstrong = (num) => {
+        const numberOfDigits = ('' + num).length;
+        let sum = 0;
+        let temp = num;
+        while (temp > 0) {
+            let remainder = temp % 10;
+            sum += remainder ** numberOfDigits;
+            temp = parseInt(temp / 10);
+        }
+        return sum === num;
+        };
+        const findAllArmstrong = ([start, end]) => {
+        const res = [];
+        for(let i = start; i <= end; i++){
+            if(isArmstrong(i)){
+                res.push(i);
+            };
+        };
+        return res;
+        };
+        console.log(findAllArmstrong(range));
+    </script>
+</body>
+</html>

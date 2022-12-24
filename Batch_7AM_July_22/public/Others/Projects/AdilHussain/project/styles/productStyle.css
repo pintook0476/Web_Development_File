@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: crimson pro;
+
+}
+
+/*logo image style*/
+.logoImg {
+    height: 200px;
+    margin: -35px 0px;
+
+}
+
+.navbar {
+    border: 2px solid white;
+    /* border-radius: 2px; */
+    box-shadow: 2px 2px 15px black;
+    height: 120px;
+    font-size: 17px;
+    position: sticky;
+
+}
+
+.navbar .search,
+.navbar .navItems,
+.navbar .navItems li {
+    display: inline-block;
+}
+
+.allElement {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+
+}
+
+.search input {
+    width: 400px;
+    padding: 10px 10px;
+
+    border: 2px solid #4287f5;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search button {
+    position: relative;
+    right: 45px;
+    background-color: #4287f5;
+    border: 2px solid #4287f5;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+.navItems {
+    margin-left: 50px;
+}
+
+.navItems li {
+    margin-left: 15px;
+}
+
+.navItems li a {
+    text-decoration: none;
+    color: #4287f5;
+}
+
+.navItems .menu li a:hover {
+    background-color: #4287f5;
+    border: 2px solid #4287f5;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 10px;
+}
+
+.navItems .profile {
+    position: relative;
+    top: -30px;
+    right: -250px;
+    float: right;
+    text-align: center;
+}
+
+.navItems .profile p {
+    margin-top: 5px;
+}
+
+.productDetails .productRows {
+    display: flex;
+    flex-flow: row;
+    margin: 20px 10px;
+}
+
+.productDetails h4 {
+    margin: 20px 100px;
+    color: #4287f5;
+}
+
+.sideMenu {
+    margin: 40px 20px;
+    color: #4287f5;
+}
+
+.sideMenu .inputBar {
+    margin-top: 10px;
+
+}
+
+.inputBar label {
+    margin-left: 5px;
+}
+
+.inputBar .check {
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+

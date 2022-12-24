@@ -1,0 +1,152 @@
+{
+
+   "orderDetails": [{
+
+      "modifier": "1",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0001",
+
+      "Sequencenumber": "0001",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "3",
+
+      "Price": "25",
+
+      "positive": "001",
+
+      "description": "Jack's Spicy chicken",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":".25",
+         "positive":null,
+         "description":"Cheese",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra Spicy",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra pepper",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+   }, {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0001",
+
+      "Sequencenumber": "0001",
+
+      "Parentserialnumber": "0002",
+
+      "Discount": "0000",
+
+      "Itemquantity": "01",
+
+      "Price": "13.98",
+
+      "positive": "002",
+
+      "description": "Grilled Chicken Salad",
+
+      "items": []
+
+   }, {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "02",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken",
+
+      "items": []
+
+   },
+   {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "02",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken",
+
+      "items": []
+
+   }],
+
+   "metaInfo": {
+
+      "Ordertax": 3.0,
+
+      "Ordertotal": 36.75,
+
+      "totalOrderedItems": 6,
+      "dayUpSell_img": "images/Day_Upsell.jpg"
+
+   }
+
+}

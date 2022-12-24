@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <title>
+            assignment_09
+        </title>
+        <style>
+            .header
+            {
+                border:2px solid;
+                text-align:center;
+            }
+            .registrationBlock
+            {
+                border:2px solid;
+            }
+            .personalDetailsBlock
+            {
+                border:1px solid;
+                margin:20px;
+                height: 25%;
+                z-index: 1;
+            }
+            .personalDetailssubblock
+            {
+                border:1px solid;
+                width:12%;
+                height:3%;
+                position: absolute;
+                left:7%;
+                top:11%;
+                text-align: center;
+                z-index: 200;
+            }
+            li{
+                margin:5px;
+                padding:5px;
+                list-style: none;
+            }
+            .selectionBlock
+            {
+                position: absolute;
+                right:12%;
+                top:16%;
+            }
+            .educationDetailsBlock
+            {
+                border:1px solid;
+                margin:20px;
+                height: 25%;
+                z-index: 1;
+            }
+            .educationDetailssubblock{
+                border:1px solid;
+                width:12%;
+                height:3%;
+                position: absolute;
+                left:7%;
+                top:40%;
+            }
+            .addressBlock
+            {
+                border:1px solid;
+                margin:20px;
+                height: 29%;
+                z-index: 1; 
+            }
+            .addressSubBlock
+            {
+                border:1px solid;
+                width:12%;
+                height:3%;
+                position: absolute;
+                left:7%;
+                top:68%;
+            }
+            .landmarkBlock
+            {
+                position: absolute;
+                right:15%;
+                top:74%;
+            }
+            .abouturselfBlock
+            {
+                border:1px solid;
+                margin:20px;
+                height: 29%;
+                z-index: 1; 
+            }
+            .abouturselfsubblock
+            {
+                border:1px solid;
+                width:12%;
+                height:3%;
+                position: absolute;
+                left:7%;
+                bottom:-3%;
+            }
+            .textbox
+            {
+                margin:20px auto;
+            }
+            .copyrightblock
+            {
+                border:2px solid;
+                margin-top:5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="header">Student Registration Page</h3>
+        <div class="registrationblock">
+            <div class="personalDetailsBlock">
+                <div class="personalDetailssubblock">personal details</div>
+                <ul>
+                    <li>student name:
+                        <input type="text" name="student name">
+                    </li>
+                    <li> mail id :
+                        <input type="mail id" name="mail id">
+                    </li>
+                    <li>
+                        gender:
+                        <input type="radio" name="gender">male
+                        <input type="radio" name="gender">female
+                        <input type="radio" name="gender">others
+                    </li>
+                </ul>
+                <div class="selectionBlock">
+                    course opted:
+                    <select>
+                        <option>python</option>
+                        <option>java</option>
+                        <option>ui full stack</option>
+                        <option>data structure</option>
+                        <option>c</option>
+                    </select>
+                </div>
+            </div>
+            <div class="educationDetailsBlock">
+                <div class="educationDetailssubblock">education details block</div>
+                <ul>
+                    <li>Qulification:
+                        <input type="text" name="qulification">
+                    </li>
+                    <li>languages know:
+                        <input type="checkbox" name="language">English
+                        <input type="checkbox" name="language">Hindi
+                        <input type="checkbox" name="language">Telugu
+                        <input type="checkbox" name="language">Urdu
+                    </li>
+                    <li>average marks:
+                        <input type="text" name="marks">
+                    </li>
+                </ul>
+            </div>
+            <div class="addressBlock">
+                <div class="addressSubBlock">address</div>
+                <ul>
+                    <li>Dno:
+                        <input type="text" name="dnumber">
+                    </li>
+                    <li>street name:
+                        <input type="text" name="street">
+                    </li>
+                    <li>state:
+                        <select>
+                            <option>andhra predesh</option>
+                            <option>telagana</option>
+                            <option>tamil nadu</option>
+                            <option>kerela</option>
+                            <option>karanataka</option>
+                        </select>
+                    </li>
+                    <li>country:
+                        <select>
+                            <option>india</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>russia</option>
+                            <option>UAE</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="landmarkBlock">
+                    landmark:<input type="text" name="landmark">
+                </div>
+            </div>
+            <div class="abouturselfBlock">
+                <div class="abouturselfsubblock">abouturself</div>
+                <div class="textbox">aboutyourself:
+                    <textarea rows="6" cols="100"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightblock">
+            <a href="http://www.copyrights.com" target="_blank">@copyrights2022</a>
+        </div>
+    </body>
+</html>

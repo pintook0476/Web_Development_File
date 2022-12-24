@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Table with table tag</title>
+    <style>
+        .mainHeading,
+        .footer {
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid skyblue;
+            border-radius: 3px;
+            background-color: skyblue;
+            color: red;
+
+        }
+        .footer {
+            padding: 5px;
+        }
+
+        table {
+            margin: 20px auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 4px;
+        }
+
+        th,
+        td {
+            width: 120px;
+            text-align: center;
+        }
+
+        th {
+            background-color: skyblue;
+            color: red;
+            border-color: red;
+        }
+
+        .imgSet {
+            background-image: url(images/student_img.png);
+
+        }
+
+        .progress {
+            width: 500px;
+        }
+
+        .sikhar {
+            background-position: -25px -5px;
+        }
+
+        .rohit {
+            background-position: -223px -1px;
+        }
+
+        .virat {
+            background-position: -406px -5px;
+        }
+
+        .dhoni {
+            background-position: -562px 0px;
+        }
+
+        .harmanpreet {
+            background-position: 340px 0px;
+        }
+
+        .jhulan {
+            background-position: 153px 0px;
+        }
+
+        .mithali {
+            background-position: -11px -178px;
+        }
+
+        .smiriti {
+            background-position: -230px 178px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="mainHeading">Registered Student details</h3>
+    <table>
+        <thead>
+            <th>Sr No.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Pictures</th>
+            <th>Class</th>
+            <th class="progress">Progress Card</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sikhar</td>
+                <td>Delhi</td>
+                <td class="imgSet sikhar"></td>
+                <td>11</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rohit</td>
+                <td>Mumbai</td>
+                <td class="imgSet rohit"></td>
+                <td>12</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            <tr>
+                <td>3</td>
+                <td>Virat</td>
+                <td>Delhi</td>
+                <td class="imgSet virat"></td>
+                <td>10</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Dhoni</td>
+                <td>Mumbai</td>
+                <td class="imgSet dhoni"></td>
+                <td>12</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            <tr>
+                <td>5</td>
+                <td>Harmanpreet</td>
+                <td>Punjab</td>
+                <td class="imgSet harmanpreet"></td>
+                <td>09</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Jhulan</td>
+                <td>Haryana</td>
+                <td class="imgSet jhulan"></td>
+                <td>08</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mithali</td>
+                <td>Delhi</td>
+                <td class="imgSet mithali"></td>
+                <td>12</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Smiriti</td>
+                <td>Delhi</td>
+                <td class="imgSet smiriti"></td>
+                <td>11</td>
+                <td>
+                    <table>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max. Marks</th>
+                            <th>Min. Marks</th>
+                            <th>Obtained Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>55.</td>
+                            </tr>
+                            <tr>
+                                <td>G.K.</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td>50.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <h3>Copyright &copy; 2022</h3>
+    </div>
+</body>
+
+</html>

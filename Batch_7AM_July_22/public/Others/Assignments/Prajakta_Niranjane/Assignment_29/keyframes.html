@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-image: repeating-linear-gradient(to right top,rgb(225, 197, 197), rgb(11, 11, 79) 10%, rgb(95, 243, 95) 20%);
+            border-radius: 10px;
+            color: bisque;
+            margin: 5px;
+            position: absolute;
+            animation: mystyle 15s infinite;
+        }
+        @keyframes mystyle{
+            10% {
+                background-image: repeating-linear-gradient(to right top,rgb(225, 197, 197), rgb(11, 11, 79) 10%, rgb(95, 243, 95) 20%);
+                top: 5px;
+                left: 5px;
+                }
+            20% {
+                background-image: repeating-radial-gradient(rgb(246, 140, 158), yellow 10%, blue 15%);
+                top: 5px;
+                left: 88%;
+                }
+            30% {
+                background-image: repeating-linear-gradient(to right top,rgb(63, 12, 71), rgb(57, 185, 70) 10%, rgb(6, 48, 103) 20%);
+                top: 75%;
+                left: 88%;
+                }
+           
+            40% {
+                background-image: repeating-radial-gradient(pink, red 10%, blue 15%);
+                top: 75%;
+                left: 5px;
+            }
+            50% {
+                background-image: repeating-linear-gradient(to right top,#f1e538, rgb(57, 185, 70) 10%, rgb(6, 48, 103) 20%);
+                left: 5px;
+                top: 5px;
+            }
+            60% {
+                background-image: repeating-radial-gradient(rgb(236, 123, 17), rgb(147, 15, 130) 10%, rgb(230, 144, 7) 15%);
+                top: 40%;
+                left: 45%;
+            }
+            65% {
+                background-image: repeating-conic-gradient(rgb(134, 19, 145), rgb(28, 78, 82) 10%, rgb(241, 48, 129) 20%);
+                top: 5px;
+                left: 5px;
+                }
+            70% {
+                background-image: repeating-radial-gradient(rgb(233, 1, 1), rgba(15, 147, 44, 0.966) 10%, rgb(230, 144, 7) 15%);
+                top: 40%;
+                left: 45%;
+            }
+            75% {
+                background-image: repeating-conic-gradient(rgb(224, 24, 57), rgb(235, 235, 19) 10%, rgb(95, 95, 175) 15%);
+                top: 5px;
+                left: 88%;
+                }
+            80% {
+                background-image: repeating-radial-gradient(rgb(217, 235, 115), rgba(18, 37, 90, 0.966) 10%, rgb(121, 221, 28) 15%);
+                top: 40%;
+                left: 45%;
+            }
+            85% {
+                background-image: repeating-conic-gradient(rgb(63, 12, 71), rgb(57, 185, 70) 10%, rgb(6, 48, 103) 20%);
+                top: 75%;
+                left: 88%;
+                }
+            90% {
+                background-image: repeating-radial-gradient(rgb(77, 10, 122), rgb(240, 221, 160) 10%, rgb(116, 95, 62) 15%);
+                top: 40%;
+                left: 45%;
+            }
+            95% {
+                background-image: repeating-conic-gradient(pink, red 10%, blue 15%);
+                top: 75%;
+                left: 5px;
+            }
+            100% {
+                background-image: repeating-radial-gradient(rgb(184, 6, 6), rgb(221, 174, 19) 10%, rgb(46, 21, 138) 15%);
+                top: 40%;
+                left: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

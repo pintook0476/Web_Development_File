@@ -1,0 +1,71 @@
+.mainTitle {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: underline;
+}
+#pDetailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ratingImg img {
+    width: 20px;
+    height: 20px;
+}
+
+.pImage img {
+    width: 120px;
+    height: 120px;
+}
+.pdetails {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+.pdetails li {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+.actualPrice {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-line: line-through;
+}
+.discountedPrice {
+    color: green;
+    font-weight: bold;
+}
+
+
+.ratingStars img {
+    width: 20px;
+    height: 20px;
+}
+
+.errorBlock {
+    color: red;
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display: none;
+}
+
+.loadingGif {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: none;
+}
+
+.productDetails {
+    float: left;
+}

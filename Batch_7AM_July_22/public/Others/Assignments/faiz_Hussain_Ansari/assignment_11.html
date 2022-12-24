@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Employee Details in js</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt('Enter the name');
+            var gender = prompt('Gender');
+            var department = prompt('Department');
+            var basicsalary = prompt('Enter basic salary');
+            basicsalary = parseInt(basicsalary);
+            var pf = basicsalary * 14/100;
+            var hra = basicsalary * 25/100;
+            var totalSalary = basicsalary + pf + hra;
+            var taxFifteen =  totalSalary * (15/100);
+            var taxten =  totalSalary * (10/100);
+            var taxFive =  totalSalary * (5/100);
+            console.log('Name : ' + name);
+            console.log('Gender : ' + gender);
+            console.log('Department : ' + department);
+            console.log("Basic Salary : " + basicsalary)
+            console.log('PF : ' + pf);
+            console.log('HRA : ' + hra);
+            console.log('Total : ' + totalSalary);
+            if(totalSalary >= 200000 && gender == "male") {
+                console.log('Tax to paid ' + taxFifteen)
+            }else if (totalSalary >=100000 && totalSalary < 200000 && gender == "male") {
+                console.log('Tax to paid ' + taxten)
+            }else if (totalSalary >= 50000 && totalSalary < 100000 && gender == "male") {
+                console.log('Tax to paid ' + taxFive)
+            }else if (totalSalary < 50000 && gender =="male") {
+                console.log('Tax to paid 0' )
+            }
+            if(totalSalary >= 200000 && gender == "female") {
+                console.log('Tax to paid ' + taxten)
+            }else if (totalSalary >=100000 && totalSalary < 200000 && gender == "female") {
+                console.log('Tax to paid ' + taxFive)
+            }else if (totalSalary >= 50000 && totalSalary < 100000 && gender == "female") {
+                console.log('Tax to paid  0 ')
+            }
+
+
+
+        </script>
+    </body>
+</html>

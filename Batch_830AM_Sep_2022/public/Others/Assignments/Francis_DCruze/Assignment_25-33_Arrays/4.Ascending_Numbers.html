@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Your Prime Number</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: rgb(95, 81, 81);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 8px 5px;
+            }
+            h1,h2,h3{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+            <h3>PLEASE REFRESH THE PAGE TO CHECK MORE NUMBERS</h3>
+        </div>
+
+        <script>
+            var arrNum = [21, 14, 12, 88, 98, 147, 5,255, 56, 63];
+            var newArr = [];
+            var temp = 0;
+            
+           for(var i = 0; i < arrNum.length; i++)
+           {    
+                var pos= 0;
+                temp = arrNum[0];
+
+                for(var j = 0; j < arrNum.length-1; j++)
+                {
+                    if(temp > arrNum[j+1])               
+                    {
+                        temp = arrNum[j+1];
+                        pos = j+1;
+                    }
+                }
+                newArr.push(temp);
+                arrNum.splice(pos, 1);
+                i=0;
+           }
+           newArr.push(arrNum[0]);
+           console.log(newArr);
+
+        </script>
+    </body>
+</html>

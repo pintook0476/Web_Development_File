@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        html{
+            height: 80%;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: #f3f3ee;
+            }
+        .navBar{
+            border: 1px solid;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 600;
+            background-color: #0b1725;
+        }
+        
+        .div1{
+            position: relative;
+            top: -11px;
+            left: -8px;
+            right: -52px;
+            width: 101%;
+            height: 800px;
+            bottom: 0px;
+            margin: 0;       
+        }
+        .logo{
+            width: 148px;
+            height: 38px;
+            position:relative;
+            top: 4px;
+            left: 43px;
+            float: left;
+        }
+        .searchBar{
+            right: 244px;
+            bottom: 13px;
+            position: absolute;
+            width: 209px;
+            border-radius: 18px;
+            height: 21px;
+        }
+        .signinButton{
+            position: absolute;
+            right: 54px;
+            font-size: large;
+            bottom: 13px;
+            border: none;
+            background-color: #0b1725;
+        }
+        .aboutUs{
+            position: absolute;
+            right: 140px;
+            font-size: large;
+            bottom: 13px;
+            border: none;
+            background-color: #0b1725;
+        }
+        .searchButton{
+            position: absolute;
+            right: 239px;
+            bottom: 13px;
+            border-radius: 15px;
+            
+        }
+        .searchimage{
+            width: 19px;
+
+        }
+        .leftbox{
+            border: 1px solid;
+            border-radius: 5px;
+            width: 100%;
+            height: 42px;
+            z-index: 400;
+            position: relative;
+            left: 0px;
+            top: 53px; 
+            background-color: antiquewhite;         
+        }
+        .rightbox{
+            left: 81px;
+            border-radius: 50px;
+            width: 1200px;
+            height: 400px;
+            position: absolute;
+            height: 633px;
+            z-index: 300;
+            overflow: auto;
+            top: 122px;
+            background-color: #ebebeb;
+        }
+        
+        
+        .rblock{
+               
+                float: left;
+                width: 217px;
+                height: 328px;
+                margin: 41px 22px 4px 28px;
+                padding: 5px;
+                background-color:#f3f3ee;
+                position: relative;
+        }
+        .imgBox{
+            width: 200px;
+            height: 286px;
+            margin: 7px 2px 3px 8px;
+        }
+        .contantBox{
+            width: 219px;
+            bottom: 3px;
+            height: 36px;
+            margin: 5px 2px 3px 8px;
+            position: relative;
+            left: -4px;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+        h5{
+            font-size: medium;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            left: 40px;
+        }
+        .price{
+            top: 19px;
+            position: absolute;
+            left: 11px;
+        }
+        .options{
+            float: left;
+            border-radius: 2px;
+            margin: 9px;
+            padding: 3px;
+            text-align: center;
+            height: 21px;
+            color:#9f5326  ;
+        }
+        .options:hover{
+            color: #0b1725;
+        }
+        .Men{
+            width: 111px;         
+        }
+        .Wowen{
+            width: 125px;
+            
+        }
+        .Electronic{
+            width: 76px;           
+        }
+        .Kid{
+            width: 101px;          
+        }
+        .Home{
+            width: 119px;          
+        }
+        .Beauty{
+            width: 106px;         
+        }
+        .Books{
+            width: 52px;       
+        }
+        .Shoes{
+            width: 10px;
+        }
+        .navright{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .copyRight{
+            position: relative;
+            bottom: 5px;
+            left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <img src="./image/logo.png" class="logo" alt="">
+        <input class="searchBar" type="text">
+        <button class="searchButton">
+            <img class="searchimage" src="./image/search.png" alt="">
+        </button>
+        <button class="signinButton">
+            <a class="navright" href="./login.html">SignIn</a>
+        </button>
+        <button class="aboutUs">
+            <a  class="navright" href="">About us</a>
+        </button>
+    </div>
+    
+    <div class="div1">
+    <div class="leftbox">
+            <div class="options Men">Men's Fashion</div>
+            <a href="./product.html"><div class="options Wowen">Wowen's Fashion</div></a>
+            <a href="./product.html"><div class="options Electronic">Electronic</div></a>
+            <div class="options Kid">Kid's Fashion</div>
+            <div class="options Home">Home & Kitchen</div>
+            <div class="options Beauty">Beauty,Health</div>
+            <div class="options Books">Books</div>
+            <div class="options Shoes">Shoes</div>
+    </div>
+    <div class="rightbox">
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth1.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth2.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Blue</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth3.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Cream</h5><br><span>$40.00</span><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth4.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth5.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth6.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth7.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth8.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth9.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth10.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth11.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+        <div class="rblock ">
+            <div class="imgBox">
+                <img class="image" src="./image/cloth12.jpg" alt="">
+            </div>
+            <div class="contantBox"><h5>Lounge Tunic / Black</h5><br><span class="price">$50.00</span></div> 
+        </div>
+    </div>
+    
+    </div>
+    <div class="copyRight">@copy right 2022</div>
+</body>
+</html>

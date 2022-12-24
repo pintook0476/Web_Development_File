@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domostrating of Json object</title>
+</head>
+<body>
+   <script>
+    // data={};
+    // data.name = prompt("enter the name");
+    // data.Gender = prompt("enter the Gender");
+    // data.Age = prompt("enter the Age");
+    // data.marks =[];
+    // for(var i = 0 ;  i < 5 ; i++)
+    // {
+    //    data.marks[i] = prompt("enter marks "+i);
+    //    data.marks[i] = parseInt(data.marks[i]);
+
+    // }
+    // data.totalmarks =0;
+    // for(var i = 0; i < data.marks.length;i++)
+    // {
+    //     data.totalmarks +=data.marks[i] ;
+    // } 
+
+    // data.Avg = data.totalmarks/data.marks.length;
+
+    // console.log("User name is "+data.name);
+    // console.log("User Gender is  "+data.Gender);
+    // console.log("User Age is "+data.Age);
+    // console.log("User Marks is "+data.totalmarks);
+    // console.log("Avg is "+data.Avg);
+
+//--------------------------------------------------------------------------------------
+
+
+    var employeedata={};
+              
+              employeedata.eName = prompt("Enter the employee full name");
+              employeedata.age = prompt("Enter the employee Age");
+              employeedata.gender = prompt("Enter the gender (male or female)");
+              employeedata.basicSal = prompt("Enter the employee basic sallary");
+              employeedata.basicSal = parseInt(employeedata.basicSal);             
+              employeedata.pf = employeedata.basicSal*(15/100);
+              employeedata.hra = employeedata.basicSal*(25/100);
+              employeedata.totalSal = employeedata.pf + employeedata.hra + employeedata.basicSal;
+              
+              
+
+              console.log("Employee Name:- " +employeedata.eName);
+            console.log("Employee Age:- "+employeedata.age);
+            console.log("Employee Gender:- "+employeedata.gender);
+            console.log("Employee Basic Sallary:- "+employeedata.basicSal);
+            console.log("Your total salary:- "+employeedata.totalSal);
+
+
+    
+        if(employeedata.gender == 'male' || employeedata.gender == 'Male' || employeedata.gender == 'MALE')
+        {
+                
+              if(employeedata.totalSal >= 20000)
+              {
+                employeedata.tax = (15/100)*employeedata.totalSal;
+                employeedata.newSal = employeedata.totalSal - employeedata.tax;
+                console.log("In-Hand Sallary after 15% tax deduction  "+employeedata.newSal);
+              }
+
+              else if(employeedata.totalSal >= 100000 && employeedata.totalSal < 200000)
+              {
+                employeedata.tax = (10/100)*employeedata.totalSal;
+                employeedata.newSal = employeedata.totalSal - employeedata.tax;
+                console.log("In-Hand Sallary after 10% tax dedution  "+employeedata.newSal);
+              }
+
+              else if(employeedata.totalSal >= 50000 && employeedata.totalSal < 100000)
+              {
+                employeedata.tax = (5/100)*employeedata.totalSal;
+                employeedata.newSal = employeedata.totalSal - employeedata.tax;
+                console.log("In-Hand Sallary after 5% tax dedution  "+employeedata.newSal);
+
+              }
+
+              else if(employeedata.totalSal < 49999)
+              {
+                  console.log("No any tax dudection your sallary is less than 50k  "+employeedata.totalSal);
+              }
+
+
+        }
+
+        else if(employeedata.gender == 'female' || employeedata.gender == 'Female' || employeedata.gender == 'FEMALE')
+        {
+            
+
+            if(employeedata.totalSal >= 20000)
+            {
+              employeedata.tax = (10/100)*totalSal;
+              employeedata.newSal = totalSal - tax;
+              console.log("In-Hand Sallary after 10% tax deduction  "+employeedata.newSal);
+            }
+
+            else if(employeedata.totalSal >= 100000 && employeedata.totalSal < 200000)
+            {
+              employeedata.tax = (5/100)*totalSal;
+              employeedata.newSal = totalSal - tax;
+              console.log("In-Hand Sallary after 5% tax dedution  "+employeedata.newSal);
+            }
+
+            else if(totalSal < 99999)
+            {
+              console.log("you don't need to pay tax your sallary is less than 1 lack  " +totalSal );
+            }
+
+        }
+         else
+            {
+            console.log("INVALID GENDER");
+            }
+      
+                
+    
+
+   </script> 
+</body>
+</html>

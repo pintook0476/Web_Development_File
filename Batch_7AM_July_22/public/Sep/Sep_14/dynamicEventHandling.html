@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Dynamic Event handling
+        </title>
+    </head>
+    <body>
+        <div id="container" >
+            Hello Click here
+        </div>
+        <script>
+            var showMsg= () => {
+                console.log("User did a click");
+            }
+            // document.querySelector("#container").addEventListener("click", showMsg);
+
+            document.querySelector("#container").addEventListener("mouseover", () => {
+                console.log("User did a click ....");
+            });
+
+            //showMsg();
+        </script>
+    </body>
+</html>

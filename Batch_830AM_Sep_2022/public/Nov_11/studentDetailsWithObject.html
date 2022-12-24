@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Student Details with objects
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname = 'Teena';
+
+            var sDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'MAle',
+                marks: [34, 56, 78, 90, 88],
+                getTotalAndAvg() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += sDetails.marks[i];
+                    }
+                    sDetails.avg = this.total / this.marks.length;
+                    var data = this.getGrade();
+                    this.grade = data.grade;
+                },
+                getGrade: () => {
+                    var gradeValue;
+                    if (sDetails.avg >= 40) {
+                        gradeValue = 'you are Passed';
+                    } else {
+                        gradeValue = 'You have a surprise';
+                    }
+                    return {grade: gradeValue};
+                },
+                displayDetails() {
+                    this.getTotalAndAvg();
+                    console.log("STudent name is " + sDetails.name);
+                    console.log("Age is " + this.age);
+                    console.log("Gender is " + this.gender);
+                    console.log("Totla is " + sDetails.total);
+                    console.log("Avg is " + this.avg);
+                    console.log("Grade is " + sDetails.grade);
+                }
+            };
+
+            var empDetails = {
+                name: 'TEena',
+                displayEmpDetails: () => {
+                    console.log(this.name)
+                }
+            }
+            
+                sDetails.displayDetails();
+            
+        </script>
+    </body>
+</html>
+
+this 

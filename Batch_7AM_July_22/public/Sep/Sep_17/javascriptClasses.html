@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Javascript classes.
+        </title>
+    </head>
+    <body>
+        <script>
+
+            class EmployeeDetails {
+                constructor(details) {
+                    this.orgName = "ABC Company";
+                    this.empname = details.name
+                    this.age = details.age;
+                    this.gender = details.gender;
+                    this.location = details.location;
+                    this.basicSal = details.sal;
+                }
+                getPfAndHra(a) {
+                    this.pf = this.basicSal * (12/100);
+                    this.hra = this.basicSal * (25/100);
+                    this.getTotalSal();
+                }
+                getTotalSal() {
+                    this.totalSal = 0;
+                    this.totalSal = this.basicSal + this.pf + this.hra;
+                }
+                getTotalTax() {
+                    var taxPercent = 0;
+                    if (this.gender == 'Male') {
+                        if (this.totalSal >= 200000) {
+                            taxPercent = 10
+                        } else {
+                            taxPercent = 5;
+                        }
+                    } else {
+                        if (this.totalSal >= 200000) {
+                            taxPercent = 5
+                        }
+                    }
+                    this.totalTaxAmount = this.totalSal * (taxPercent / 100);
+                    this.totalSal = this.totalSal - this.totalTaxAmount;
+                }
+                displayEmployeeDetails() {
+                    this.getPfAndHra();
+                    this.getTotalTax();
+                    
+                    console.log("Employee Details ");
+                    console.log("Name " + this.empname);
+                    console.log("Age " + this.age);
+                    console.log("Gender " + this.gender);
+                    console.log("Total sal " + this.totalSal);
+                }
+            }
+            var data1 ={name:'PRasad', age: 60, gender: 'Male', location: 'Hyd', sal: 10000};
+
+            
+            var e1 = new EmployeeDetails(data1);
+            e1.displayEmployeeDetails();
+            e1.departmentName = "IT";
+            console.log("e1.empname");
+            console.log(e1.empname);
+
+            var e2 = new EmployeeDetails({name:'Teena', age: 20, gender: 'Female', location: 'Delhi', sal: 440000});
+            e2.displayEmployeeDetails();
+
+            var e3 = new EmployeeDetails({name:'Meena', age: 21, gender: 'Female', location: 'Mumbai', sal: 23000});
+            e3.displayEmployeeDetails();
+
+            console.log(e1)
+            console.log(e2)
+            console.log(e3)
+        </script>
+    </body>
+</html>

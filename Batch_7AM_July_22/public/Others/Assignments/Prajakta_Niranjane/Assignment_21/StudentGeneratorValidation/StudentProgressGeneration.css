@@ -1,0 +1,160 @@
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   .mainContainer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(9, 80, 172);
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgb(233, 231, 231);
+   }
+   div .heading {
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgb(9, 80, 172);
+    color: rgb(248, 244, 244);
+    border-radius: 5px; 
+   }
+   #img{
+    margin-top: 3px;
+    width: 80px;
+    float: left;
+ }
+   #img img {
+      border-radius: 30px; 
+      float: right;
+   }
+   #headline {
+    display: inline;
+    float: left;
+    padding-left: 20px;
+   }
+   .readStuData{
+    list-style: none;
+    width: 80%;
+    margin: 10px auto;
+   }
+    input {
+      color: rgb(9, 80, 172);  
+    }
+   .input{
+    height: 25px;
+    width: 425px;
+    border: 1px solid rgb(9, 80, 172);
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+   }
+   .gen {
+    border: 1px solid rgb(9, 80, 172);
+    margin: 10px auto;
+    padding: 5px;
+    color: rgb(9, 80, 172);
+    background-color: white;
+    border-radius: 5px;
+   }
+   .marksBlock, #gen1{
+    font-size: 14px;
+    color: rgb(9, 80, 172);
+    background-color: white;
+   }
+   .marksBlock {
+   border: 1px solid rgb(9, 80, 172);
+   padding-left: 5px;
+   border-radius: 5px;
+   }
+   .marksBlock input {
+    width: 50px;
+    height: 25px;
+    margin: 2px;
+    padding-left: 5px;
+   }
+   .btn {
+    margin: 10px auto;
+    padding: 5px 5px 5px 30px;
+    width: 45%;
+   }
+   #mainbutton {
+    height: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(9, 80, 172);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 20px 5px 20px;
+   }
+   .displayBlock {
+    display: none;
+   }
+  /* display result */
+
+  .displayBlock {
+    width: 50%;
+    margin: 10px auto; 
+}
+.innertable {
+  width: 70%;
+  margin: 20px auto; 
+}
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 2px;
+}
+.logo1 {
+  height: 50px;
+  width: 70px;
+}
+ .block {
+  height: 40px;
+  width: 320px;
+   float: right;
+  font-size: 18px;
+  padding: 5px 30px 5px 0px;
+}  
+.content {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  background-color:  #f0e7cf !important;
+  color: #0d57ac !important;
+}
+.inertable table, tr, td, th {
+  border: 0.3px solid #6f6fa5;
+  border-collapse: collapse;
+}
+tfoot {
+  font-size: 14px;
+}
+#id, tfoot{
+  background-color:  rgb(253, 246, 246);
+  color: #0d57ac;
+}
+.innertable tbody tr .litheading {
+  background-color: #126cb6;
+  color: #f5f1f0;
+  padding: 10px;
+}
+      
+.innertable tbody tr:nth-child(even) {
+background-color: #b0b0d4;
+color: #515157;
+}
+.innertable tbody tr:nth-child(odd) {
+background-color: rgb(209, 209, 209);
+color: rgb(43, 43, 105);
+}
+.text {
+  font-size: 15px;
+}
+/* Field validation */
+.mandate {
+  color : red;
+  font-size: 11px;
+  display: none;
+}

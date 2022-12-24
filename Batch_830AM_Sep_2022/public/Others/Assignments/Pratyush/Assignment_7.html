@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Details_Data From User</title>
+</head>
+
+<body>
+
+
+    <script>
+        var empname, age, gender, dep, basicsal;
+        var empname = prompt("Enter Name")
+        var age = prompt("Age")
+        var gender = prompt("Gender")
+        var dep = prompt("Depart")
+        var basicsal = prompt("Salary")
+        var pf = ((basicsal / 100) * 12)
+        var hra = ((basicsal / 100) * 24)
+
+        age = parseInt(age)
+        basicsal = parseInt(basicsal)
+        pf = parseInt(pf)
+        hra = parseInt(hra)
+        total = parseInt(total)
+        var total = (pf + hra + basicsal)
+
+        console.log("EmpName:-" + empname)
+        console.log("Gender:-" + gender)
+        console.log("dep:-" + dep)
+        console.log("Age:-" + age)
+        console.log("Pf:-" + pf)
+        console.log("hra:-" + hra)
+        console.log("totalsal:-" + total)
+
+    </script>
+</body>
+
+</html>

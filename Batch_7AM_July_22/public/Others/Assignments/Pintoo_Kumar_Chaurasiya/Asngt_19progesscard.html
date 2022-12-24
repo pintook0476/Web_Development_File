@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main1 {
+        /* display: none; */
+        border: 1px solid;
+        margin: 10px auto;
+        width: 500px;
+        height: 500px;
+    }
+
+    ul {
+
+        padding: 10px;
+        /* margin:  auto; */
+        /* margin-right: 15px; */
+        list-style: none;
+        margin-top: -8px;
+    }
+
+    .m1 {
+        width: 25px;
+    }
+
+    .main1 form ul li {
+
+        border: 1px solid;
+        margin: 25px;
+        padding: 15px;
+    }
+
+    .main2 {
+        border: 1px solid;
+        width: 350px;
+        margin: auto;
+    }
+
+    .main2 form ul li {
+        padding: 5px;
+        margin-top: 25px;
+        /* margin: auto; */
+        border: 1px solid;
+    }
+</style>
+
+<body>
+    <div class="main1">
+        <form>
+            <ul>
+                <li>Enter Student name : <input type="text" id="sname"> </li>
+                <li>Enter Student age : <input type="number" id="sage"> </li>
+                <li>Gnder : <input type="radio" name="one" value="male"> male
+                    <input type="radio" name="one" value="female"> female
+                </li>
+                <li> Class :
+                    <select id="tick">
+                        <option> Class 1</option>
+                        <option> Class 2</option>
+                        <option> Class 3</option>
+                        <option> Class 4</option>
+                    </select>
+                </li>
+                <li>marks :
+                    <input type="number" class="m1">
+                    <input type="number" class="m1">
+                    <input type="number" class="m1">
+                    <input type="number" class="m1">
+                    <input type="number" class="m1">
+                </li>
+                <li> <input type="button" value="generate progress card " onclick="genResult();"> </li>
+            </ul>
+        </form>
+    </div>
+    <div class="main2">
+        <form>
+            <ul>
+                <li>student name :</li>
+                <li>student age :</li>
+                <li>gender :</li>
+                <li>class :</li>
+                <li> marks :</li>
+                <li>genResult :</li>
+            </ul>
+        </form>
+    </div>
+    <script>
+        var genResult = () => {
+            var namestu = document.querySelector("#sname").innerHTML
+            var agestu = document.querySelector("#sage").value;
+            agestu = parseInt(agestu)
+            
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel ="stylesheet" href="css\emp.css">
+        <script src = "javascript/emp.js" ></script>
+    </head>
+    <body>
+        <div  class = "title">
+            EMPLOYEE PAY SLIP
+        </div>
+            <ul class="rblock">
+                <li>
+                    <input type="text" id="uname" name="Employee Name" placeholder="Enter Employee Name">
+                    
+                </li>
+                <li>
+                    Gender :
+                    <input type="radio" name="gender" value="Male" checked> Male
+                    <input type="radio" name="gender" value="Female" > Female
+                </li>
+                <li>
+                    <input type = "text" id="uage" name = "Age" placeholder = "Enter  Employee Age">
+                </li>
+                <li>
+                    <input  type = "text" id="uBasicsal" placeholder = "Enter  Employee Basics Salary">
+                </li>
+                <li>
+                    <input type = "Button" value = "Generate Pay Slip" onclick="empData.empDetails()">
+                    
+                </li>
+          </ul>  
+           <ul class = "dblock">
+                <li>
+                    Employee Name = <span id = "d_name"> </span>
+                </li>
+                <li>
+                    Employee Age =  <span id = "d_age"> </span>
+                </li>
+                <li>
+                    Employee Gender = <span id = "d_gender"> </span>
+                </li>
+                <li>
+                    Employee Monthly Salary = <span id = "d_msal"> </span>
+                </li>
+                <li>
+                   Employee Annual Salary =   <span id = "d_asal"> </span>
+                </li>
+                <li>
+                    Tax paid by employee =  <span id = "d_tax"> </span>
+                </li>
+           </ul> 
+          <script>
+            
+          </script>
+    </body>

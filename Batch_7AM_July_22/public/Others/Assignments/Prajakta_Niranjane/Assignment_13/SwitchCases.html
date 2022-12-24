@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Cases</title>
+</head>
+<body> 
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        // Switch Cases
+        
+        var userAction = prompt(`To check below actions press a valid number
+             press 1 : to get Armstrong Number
+             press 2 : to get Palindrome Number
+             press 3 : to get Lucky Number
+             press 4 : to get Prime Number
+             press 5 : to get Reverse Number
+             press 6 : to get SUM of digits
+             press 7 : to get Total Number of digits
+             press 8 : to get Total Number of Zeros
+             press 9 : to get Total Number of Even digits
+             press 10 : to get Total Number of Odd Digits
+             press 11 : to get Even or Odd Number
+             press 12 : to get Multiplication Table For`);
+        var num = prompt('Enter Any Number');
+           // num = parseInt(num);
+        switch (userAction)
+        {
+            case '1' : //Armstrong
+
+                var enteredNum = num ;
+                var totalDigit = num.length;
+                num = parseInt(num);
+                var armstrong = 0;
+
+                while(num > 0)
+                {
+                    var rem = num % 10;
+                    armstrong = armstrong + (rem ** totalDigit);
+                    num = num / 10;
+                    num = parseInt(num);
+
+                }
+                    console.log('Entered Number is: ' + enteredNum);
+                    if (enteredNum == armstrong) 
+                    {
+                        console.log(enteredNum + " is an Armstrong Number");
+                    }
+                    else {
+                        console.log(enteredNum + " is NOT an Armstrong Number");
+                    }
+                    break;
+
+            case '2' : //Plindrome  
+                    var enteredNum = num ;
+                    var rev = 0;
+                    while (num != 0) {
+                    rev = (rev * 10) + (num % 10);
+                    num = parseInt(num / 10);
+                    }
+                    console.log('Entered Number is: ' + enteredNum);
+                    if (enteredNum == rev) 
+                    {
+                        console.log(enteredNum + ' is a Palindrome Number');
+                    }
+                    else 
+                    {
+                        console.log(enteredNum + ' is NOT a Palindrome Number');
+                    }
+                    break;
+
+            case '3' : //Lucky
+                    console.log('Entered Number is: ' + num);
+                    var rem;
+                    var count = 0;
+                    while (num > 0) 
+                    {
+                        rem = num % 10 ;
+                        num = num / 10;
+                        num = parseInt(num);
+                        count = count + rem ;
+                        if (num == 0 && count > 9)
+                        {
+                            num = count ;
+                            count = 0;
+                        }
+                    }
+                    console.log('Lucky Number Is ' + count); 
+                    break;
+
+            case '4' : // prime 
+                        console.log('Entered Number is: ' + num);
+                        var count = 0;
+                        for ( var a = 1; a <= num; a++) 
+                        {
+                        var rem = num % a ; 
+                        if (rem == 0) 
+                        {
+                            count++;
+                        }
+                      }
+                      if (count == 2) 
+                      {
+                        console.log(num + " is a Prime Number.");
+                      }
+                      else 
+                      {
+                        console.log(num + " is NOT a Prime Number.");
+                      }
+                      break;
+                      
+            case '5' : //reverse
+                    console.log('Entered Number is: ' + num);
+                    var rev = ' ';
+                    while (num != 0) 
+                    {  
+                        rev = rev + (num % 10);   
+                        num = parseInt(num / 10);
+                    }
+                    console.log('Reverse of Number is: ' + rev);          
+                    break;
+
+            case '6' :  //sum of digits
+                    console.log('Entered Number is: ' + num);
+                    var sum = 0;
+                    while (num != 0) 
+                    {
+                        sum += num % 10;
+                        num = parseInt(num /10); 
+                    }
+                    console.log('Entered Number Individual Digits Sum is: ' + sum);
+                    break;
+
+            case '7' : //TOtal Number of Digits
+                    console.log('Entered Number is: ' + num);
+                    var digit = 0;
+                    var count = 0;
+                    while (num != 0) 
+                    {
+                        digit = (num % 10);
+                        count++;
+                        num = parseInt(num / 10);
+                    }
+                    console.log('Total Number Of Digits is: ' + count); 
+                    break;
+                    
+            case '8' : //Total number of Zeros
+                    var enteredNum = num;
+                    var digit = 0;
+                    var count = 0;
+                
+                    while (num != 0) 
+                    {
+                        digit = (num % 10);
+                        if (digit == 0) {
+                            count++; 
+                        }
+                    num = parseInt(num / 10);
+                    }
+                    console.log('Entered Number is: ' + enteredNum);
+                    console.log('Total Number Of Zeroes: ' + count);
+                    break;
+
+            case '9' : //Total number of Even Digits
+                    var enteredNum = num;
+                    var evendigit = 0;
+                    var count = 0;
+                
+                    while (num != 0) 
+                    {
+                        evendigit = (num % 10);
+                        if (evendigit % 2 == 0) {
+                            count++; 
+                        }
+                    num = parseInt(num / 10);
+                   }
+                    console.log('Entered Number is: ' + enteredNum);
+                    console.log('Total Number Of Even-Digits: ' + count);    
+                    break;
+            
+            case '10' :// Total number of Odd Digits
+                    var enteredNum = num;
+                    var oddDigit = 0;
+                    var count = 0;
+                
+                    while (num != 0) 
+                    {
+                        oddDigit = (num % 10);
+                        if (oddDigit % 2 != 0) {
+                            count++; 
+                        }
+                    num = parseInt(num / 10);
+                    }
+                    console.log('Entered Number is: ' + enteredNum);
+                    console.log('Total Number Of Odd-Digits: ' + count); 
+                    break;
+                    
+            case '11' :// Even or Odd
+                    console.log('Entered Number is ' + num);
+                    if (num % 2 == 0 )
+                    {
+                        console.log(num + ' is an Even Number');
+                    }
+                    else
+                    {
+                        console.log(num + ' is an Odd Number');
+                    }
+                    break;
+
+            case '12' : //Multiplication Table
+                    for(var a = 1; a <= 20; a++) 
+                    {
+                    var b = num * a ;
+                    console.log(num + "*" + a + "=" + b);
+                    }
+                    break; 
+            
+            default : console.log('Please Enter valid Number from 1 to 12 in order to check Action');
+        }     
+    </script>
+</body>
+</html>

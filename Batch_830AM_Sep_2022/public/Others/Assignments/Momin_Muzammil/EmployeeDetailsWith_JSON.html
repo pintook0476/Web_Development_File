@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>employee Details With JSON</title>
+  </head>
+  <body>
+    <script>
+      var employeeData = {
+        userInput: () => {
+          empName = prompt("Enter Employee name");
+          empDep = prompt("Enter employee Department");
+          empGender = prompt("Enter employee Gender");
+          empBasicSal = prompt("Enter Employee Basic salary");
+          empBasicSal = parseInt(empBasicSal,empGender);
+          employeeData.calc(empBasicSal);
+          return {empName,empDep,empGender,empBasicSal,totalSal,taxValue};
+
+        },
+        calc: (empBasicSal,empGender) => {
+          pf = (12 / 100) *empBasicSal;
+          hra = (24 / 100) * empBasicSal;
+
+          totalSal = pf + hra + empBasicSal;
+          employeeData.tax(totalSal,empGender)
+          return totalSal;
+        },
+        tax: (totalSal,empGender) => {
+          //var data = employeeData.calc();
+          if (empGender == "Male" || empGender == "male") {
+            if (totalSal >= 500000) {
+              taxValue = totalSal * (15 / 100)
+            } else if (totalSal >= 30000) {
+              taxValue = totalSal * (10 / 100)
+            } else {
+              taxValue = 0;
+            }
+          } else {
+            if (totalSal >= 500000) {
+              taxValue = totalSal * (10 / 100)
+            } else {
+              taxValue = 0
+            }
+          }
+          return taxValue;
+        },
+        displayDetails: () => {
+          var data=employeeData.userInput();
+          // var total=employeeData.calc();
+          // var taxData=employeeData.tax();
+          console.log("Name   "+data.empName);
+          console.log("Department "+data.empDep);
+          console.log("Gender  "+data.empGender);
+          console.log(`Basic Salary: ` + data.empBasicSal);
+          console.log(`Total Salary: ` +data.totalSal);
+          console.log(`Tax Value: ` + data.taxValue);
+        }
+      }
+      employeeData.displayDetails();
+      
+      
+    </script>
+  </body>
+</html>

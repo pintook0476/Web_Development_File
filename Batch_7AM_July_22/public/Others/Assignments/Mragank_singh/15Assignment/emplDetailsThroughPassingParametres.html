@@ -1,0 +1,123 @@
+<html>
+<head>
+     <title>Employee Details through passing parameters</title>
+</head>
+<body>
+    <h3> Employee Details through passing parameters</h3>
+    <script >
+        
+        
+        
+        //reading Employee Data
+        function reademployeedata(){
+         var employeename, age, gen, dept, basic_sal; //local variable
+         employeename = prompt("Enter Employee name:");
+         age = prompt("Enter Age: ");
+         gen = prompt("Enter Gender:");
+         dept = prompt("Enter Department:");
+         basic_sal = parseInt(prompt("Enter Basic Salary:"));
+
+         var pf = calculatePf(basic_sal);
+         var hra = calculateHra(basic_sal);
+         var total_salary = calculatetotal_salary(basic_sal);
+
+         displayEmpData(employeename, age, gen, dept, basic_sal,pf,hra,total_salary);
+        }
+
+        //calculating pf
+        function calculatePf(basic_sal){
+         var pf;
+         pf = basic_sal * ( 14 / 100 );
+         return pf;
+       }
+
+        //calculating hra
+         function calculateHra(basic_sal){
+         var hra;
+         hra = basic_sal * ( 25 / 100 );
+         return hra;
+       }
+
+        //calculating total salry
+        function calculatetotal_salary(basic_sal){
+         var total_salary;
+         var pf = calculatePf(basic_sal);
+         var hra = calculateHra(basic_sal);
+         total_salary = pf + hra + basic_sal;
+         return total_salary;
+       }
+
+        //display employee details
+        function displayEmpData(employeename, age, gen, dept, basic_sal,pf,hra,total_salary,){
+        console.log("Employee Details:")
+        console.log("Name: " + employeename);
+        console.log("Age: " + age);
+        console.log("Gender: " + gen);
+        console.log("Department: " + dept);
+        console.log("Basic Salary: " + basic_sal);
+
+        console.log("pf: " + pf);
+        console.log("hra: " + hra);
+        console.log("Total Salary: " + total_salary);
+
+        tax(gen, total_salary);
+        }
+
+        //calculating tax
+        function tax(gen, total_salary){
+        var tax;
+            if (gen == 'male')
+        {
+            if ( total_salary >= 200000)
+            {          
+                tax = ( 15 / 100 ) * total_salary;
+                console.log("Tax: " + tax);
+            } 
+            
+            else if( total_salary >= 100000)
+            {
+                tax = ( 10 / 100 ) * total_salary;
+                console.log("Tax: " + tax);
+            }
+            
+            else if ( total_salary >=50000 )
+            {
+                tax = ( 5 / 100 ) * total_salary;
+                console.log("Tax: " + tax);
+            }
+            
+            else {
+                console.log("Tax is Zero");
+            }
+         } 
+         
+         else if(gen == 'female')
+         {
+            if( total_salary >= 200000)
+            {
+                tax = ( 10 /100 ) * total_salary;
+                console.log("Tax: " + tax);
+            }
+            
+            else if( total_salary >= 100000)
+            {
+                tax = ( 5 / 100 ) * total_salary;
+                console.log("Tax: " + tax);
+            }
+            
+            else
+            {
+                console.log("Tax is Zero");
+            }
+         }
+
+         else {
+            console.log("Invalid gender");
+         }
+
+        }
+
+        reademployeedata();
+    </script>
+</body>
+</html>

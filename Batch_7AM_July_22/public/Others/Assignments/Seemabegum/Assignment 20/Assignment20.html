@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student progress card </title>
+    <link rel="stylesheet" href="card.css">
+   
+</head>
+<body>
+    
+<div class="box">
+    <h1>EMPLOYEE PAYSLIP</h1>
+    <ul>
+        <li>Enter employee name :
+            <input type="text" id="name">
+        </li>
+        <li>Enter employee age :
+            <input type="text" id="age">
+        </li>
+        <li>Enter employee gender :
+            <input   type="radio"  name = "gender" value="male" id="gender"  >male </input>
+            <input type="radio"   name = "gender"  value="female" id=" gender" >female </input>
+        </li>
+        <li>Enter company name :
+            <input type="text" id= "comp">
+        </li>
+        <li>Enter basic salary :
+            <input type="text" id="basicsalary">
+        </li>
+       <li> <button onclick= " employeedetails.salary()" class="btn">SUBMIT </button>
+       </li>
+    </ul>
+    
+</div>
+<div class="box1">
+    <h1>EMPLOYEE PAYSLIP</h1>
+    <ul class="box2">
+        <li>
+            EMPLOYEE NAME : <span  id="ename"></span>
+        </li>
+        <li>
+            EMPLOYEE AGE : <span  id="eage"></span>
+        </li>
+        <li>
+            EMPLOYEE GENDER : <span  id="egender"></span>
+        </li>
+        <li>
+            COMPANY NAME : <span  id="ecom"></span>
+        </li>
+        <li>
+            EMPLOYEE BASICPAY : <span  id="ebasicpay"></span>
+        </li>
+        <li>
+            TOTAL PF : <span  id="epf"></span>
+        </li>
+        <li>
+            TOTAL HRA  : <span  id="ehra">
+            </span>
+        </li>
+        <li>
+            TOTAL BASICPAY  : <span  id="etotalpay"></span>
+        </li>
+    </ul>
+</div>
+    <script src="card.js"></script>
+</body>
+</html>

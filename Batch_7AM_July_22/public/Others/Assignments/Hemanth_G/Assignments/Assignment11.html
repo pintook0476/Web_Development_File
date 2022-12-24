@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment11</title>
+</head>
+<body>
+    <script>
+        console.log("Demonstating Employe Details with Taxsheet")
+
+        var empname = prompt("enter Ename");
+        var age = prompt("enter age");
+        var gender = prompt("enter gender");
+        var department = prompt("enter your department");
+        var basicsal = prompt("enter basicsal");
+       basicsal = parseInt(basicsal);
+        //calculate 
+       
+        var pf = basicsal*(14/100);
+    
+        var hra = basicsal*(24/100);
+        
+        var totalsal = basicsal + pf + hra;
+        totalsal = parseInt(totalsal);
+
+        console.log("Employe Details");
+        console.log("empname is " + empname);
+        console.log("age is " + age );
+        console.log("gender is " + gender);
+        console.log("department is " + department);
+        console.log("basicsal is " + basicsal );
+        console.log("pf is " + pf);
+        console.log("hra is " + hra);
+        console.log("totalsalary is " + totalsal);
+        
+
+
+        if ( gender =='male'){
+
+        if (totalsal >= 200000) {
+            console.log("tax percentage is" + (15/100)*totalsal);
+        }else if (totalsal >= 100000) {
+            console.log("tax percentage is" + (10/100)*totalsal);
+        } else if (totalsal >= 50000) {
+            console.log("tax percentage is" + (5/100)*totalsal);
+        }else  {
+            console.log("tax is 0 ");
+        }
+        }else {
+            if (totalsal >= 200000) {
+            console.log("tax percentage is" + (10/100)*totalsal);
+
+        }else if (totalsal >= 100000) {
+            console.log("tax percentage is" + (5/100)*totalsal);
+        } else  {
+            console.log("tax percentage is 0 " )
+        }
+
+        }
+    </script>
+    
+</body>
+</html>

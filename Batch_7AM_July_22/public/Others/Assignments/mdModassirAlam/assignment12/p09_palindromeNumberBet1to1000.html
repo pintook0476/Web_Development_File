@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number Between 1 to 1000</title>
+</head>
+<body>
+    <script>
+        /* Write a program to list out all the palindrome number between 1 to 1000*/
+
+        for(var i = 1; i <= 1000; i++){
+        var num = i;
+        var temp;
+        temp = parseInt(num);
+        var rem;
+        var rev = 0;
+
+        while(num > 0){
+            rem = num % 10;
+            rev = rev * 10 + rem;
+            num = num / 10;
+            num = parseInt(num);
+        }
+        //console.log(rev);
+        if(temp == rev){
+            console.log(rev+" is Palindrome Number");
+        }else{
+            console.log(rev+" is not Palindrome Number");
+        }
+      
+        }
+       
+    </script>
+</body>
+</html>

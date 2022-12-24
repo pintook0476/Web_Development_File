@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Hi</title>
+    </head>
+    <body>
+        No of Zeros in a number
+        <script>
+            var a=prompt("Enter a number");
+            var reminder;
+            var count=0;
+            console.log("Number= "+a);
+            while(a>0){
+                reminder=a%10;
+                if(reminder==0){
+                    count++;
+                }
+                a=Math.floor(a/10);
+            }
+            console.log("No od Zeros in that number= "+count);
+        </script>
+    </body>
+</html>

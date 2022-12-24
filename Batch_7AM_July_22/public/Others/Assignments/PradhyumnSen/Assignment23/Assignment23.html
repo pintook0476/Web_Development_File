@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment23.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="cdetails">
+            College Details
+        </div>
+        <div class="cname">
+            College Name :
+        </div>
+        <div class="cinput">
+            <input type="text" id="outputcollegename">
+        </div>
+        <div class="cAddress">
+            College Address :
+        </div>
+        <div class="cinput">
+            <input type="text" id="outputcollegeaddress">
+        </div>
+        <div class="cCode">
+            College Code :
+        </div>
+        <div class="cinput">
+            <input type="text" id="outputcollegecode">
+        </div>
+        <div >
+            <input type="button" id="outputgender" value="Go to Student Details"  onclick="usercollegeData();">
+        </div>
+    </div>
+    <div class="sContainer">
+        <div class="sdetails">
+            Student Details
+        </div>
+        <div class="inputName">
+            Student Name :
+        </div>
+        <div class="sname">
+            <input type="text" id="outputstudentname">
+        </div>
+        <div class="inputage">
+            Student Age :
+        </div>
+        <div class="sname">
+            <input type="text" id ="outputstudentage"  >
+        </div>
+        <div class="inputGender">
+            Gender :
+        </div>
+        <div class="sgender">
+            <input type="radio" name="gender"  value="Male" id="outputstudentgender" checked>Male
+            <input type="radio" name="gender" value="Female" id="outputstudentgender">Female
+        </div>
+        <div class="inputAddress">
+            Student Address :
+        </div>
+        <div class="sname">
+            <input type="text" id="outputstudentaddress">
+        </div>
+        <div class="inputeno">
+            Enrollment Number :
+        </div>
+        <div class="sname">
+            <input type="text" id="outputstudentenrollment">
+        </div>
+        <div class="inputbranch">
+            Branch :
+            <select name="" id="selectioninput">
+                <option value="Computer Science">CS</option>
+                <option value="Information Technology">IT</option>
+                <option value="Mechanical">ME</option>
+                <option value="Automobile">AU</option>
+                <option value="Electronics and Communication">EC</option>
+                <option value="Ex">EX</option>
+            </select>
+
+        </div>
+        <div >
+            <input type="button" value="Submit" id="Submit" onclick="userStudentdata();" >
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="showcontainer">
+        <div class="showSdetails">
+            Student Details
+        </div>
+
+        <div id="showcname">
+
+        </div>
+        <div id="showcAddress">
+
+        </div>
+        <div id="showCcode">
+
+        </div>
+        <div id="showSname">
+
+        </div>
+        <div id="showSage">
+
+        </div>
+        <div id="showSgender">
+
+        </div>
+        <div id="showSaddress">
+
+        </div>
+        <div id="showSenumber">
+
+        </div>
+        <div id="showSbranch">
+
+        </div>
+    </div>
+    
+    <script src="Assignment23.js"></script>
+</body>
+
+</html>

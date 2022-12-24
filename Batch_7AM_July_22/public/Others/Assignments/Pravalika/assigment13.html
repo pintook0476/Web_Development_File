@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SWITCH CASE
+        </title>
+        <body> 
+         <div>
+           <div>accept one number from user,given operation to user like 1,2,3,4</div>
+           <div> 1.total number of digits in the number</div>
+           <div> 2.reverse of the give number</div>
+          <div> 3.lucky number of a given number</div>
+          
+        </div>
+            <script>
+                var num=prompt('enter the number');
+                num=parseInt(num);
+                var userOption=prompt('choose option number between:1.number of digits 2.reverse  3.lucky number 4.prine or not');
+                userOption=parseInt(num);
+                switch(userOption){
+                    case 1:
+                        count=0;
+                        while(num>0){
+                            var remainder=num%10;
+                            count++;
+                            num=num/10;
+                            num=parseInt;
+                        }
+                        console.log("Total digits in number are:" +count);
+                        break;
+                        case 2:
+                            var reverse=0;
+                            while(num>0)
+                            {
+
+                            var remainder=num%10;
+                            reverse=(reverse*10)+remainder;
+                            num=num/10;
+                            num=parseInt(num);
+
+                        }
+                        console.log('The reverse of given number is:'+reverse);
+                        break;
+                        case 3:
+                            var sum=0;
+                            var reminder;
+                            while(num>0)
+                            {
+                                remainder=num%10;
+                                sum=sum+remainder;
+                                num=num/10;
+                                num=parseInt(num);
+                                    num=sum;
+                                    sum=0;
+
+                                }
+
+                            }
+                            console.log('lucky number of a given number'+sum);
+                            if(sum<10)
+                            {
+                                console.log('lucky number of given number'+sum);
+                            }
+                            else{
+                                while(sum>0){
+                                    var remainder=sum%10;
+                                    sum2=sum2+remainder;
+                                    sum=sum/10;
+                                    sum=parseInt(sum);
+                                }
+                                console.log('lucky number of a given number is'+sum2);
+                                }
+
+                
+            </script>
+        </body>
+    </head>
+</html>

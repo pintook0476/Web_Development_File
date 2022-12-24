@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding out smallest and largest and the smallest number from an array</title>
+</head>
+<body>
+    <h1>To see the result go to console</h1>
+
+    <script>
+
+        var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var largest= list[0] ;
+        var smallest = list[0] ;
+
+        for(var i = 0; i < list.length; i++){
+            if (largest < list[i]) {
+                largest = list[i];
+            }
+            if(smallest> list[i]){
+                smallest = list[i]
+            }
+        }
+        console.log("The smallest value in the array is "+ smallest);
+        console.log("The largest value in the array is "+ largest);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+        body{
+        background-color: rgb(176, 181, 183);
+        }
+
+        .takinginput{
+            border: 2px solid rgb(220, 4, 55);
+            color: rgba(78, 8, 216, 0.829);
+        
+            width:500px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        .class1{
+            width: 120px;
+            float: left;
+        }
+            
+        
+        .class2{
+            float: left;
+        }
+        .class3{
+            display: none;
+        }
+        .dtitle{
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(195, 21, 218);
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        
+       
+        ul{
+            border: 2px solid rgb(135, 9, 218);
+            width: 400px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+        li{
+            list-style: none;
+            border: 1px solid rgb(202, 38, 9);
+            height: 30px;
+            margin: 10px;
+            padding: 10px 10px 10px 30px;        
+        }
+        .smarks input{
+            width:20px;
+        }

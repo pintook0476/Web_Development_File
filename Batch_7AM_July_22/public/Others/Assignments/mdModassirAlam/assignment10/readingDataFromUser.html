@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From The User</title>
+</head>
+<body>
+    <script>
+        /*Write a program to work with employee details like employee name, gender, department, basic salary, calculate the total salary where total salary is equal to pf + HRA + basic salary. Where pf is 14% of basic salary and HRA is 25% of basic salary*/
+
+        var empName = prompt("Enter user name");
+        var empGender = prompt("Enter user age");
+        var empDept = prompt("Enter user department");
+        var empBasicSalary = prompt("Enter user Salary");
+        empBasicSalary = parseInt(empBasicSalary);
+
+        console.log("The name of the employee is "+ empName);
+        console.log("The employee gender is "+ empGender);
+        console.log("The basic salary of employee is "+ empBasicSalary);
+
+        var empPf = empBasicSalary * 14/100;
+        console.log("The employee pf is "+empPf);
+        var empHra = empBasicSalary * 25/100;
+        console.log("The employee HRA is "+empHra);
+
+        var empTotalSalary = empPf + empHra + empBasicSalary;
+        console.log("The total employee salary is "+empTotalSalary);
+    </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+</head>
+<style>
+    h2 {
+        border: 2px solid;
+        background-color: #ccc;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .tablehead{
+        font-weight: bold;
+    }
+    .tablehead{
+        background-color: aqua;
+    }
+    .table{
+        width: 98%;
+        overflow: auto;
+        text-align: center;
+        font-size: 15px;
+    }
+    .details{
+        background-color: blueviolet;
+    }
+    .pass:hover{
+        background-color: green;
+    }
+    .fail:hover{
+        background-color: red;
+    }
+</style>
+
+<body>
+    <h2>Student Details - Progress Card</h2>
+    <table border="1px solid" cellpadding="10px" cellspacing="10px" class="table">
+        <thead class="tablehead">
+            <tr>
+                <td>Sno</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Picture</td>
+                <td>Class</td>
+                <td>Marks</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Virat</td>
+                <td>Male</td>
+                <td><img src="https://i.pinimg.com/originals/49/74/ff/4974ff3320c1c8bbb10b54f48938f1d1.jpg"
+                        height="100px" width="100px" alt=""></td>
+                <td>10th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">14</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rohit</td>
+                <td>Male</td>
+                <td> <img src="https://www.cricket.com.au/-/media/Players/Men/International/India/2021%20T20WC/Rohit-Sharma-2122.ashx"
+                        height="100px" width="100px" alt=""></td>
+                <td>11th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">94</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Smriti</td>
+                <td>Female</td>
+                <td> <img src="https://www.kreedon.com/wp-content/uploads/2018/06/smriti-1-1200x900.jpg"
+                        height="100px" width="100px" alt=""></td>
+                <td>12th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">9</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ishan</td>
+                <td>Male</td>
+                <td> <img src="https://english.cdn.zeenews.com/sites/default/files/2021/12/01/992179-ishan-kishan.jpg"
+                        height="100px" width="100px" alt=""></td>
+                <td>10th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">94</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Harmanpreet</td>
+                <td>Female</td>
+                <td> <img src="https://m.media-amazon.com/images/M/MV5BNGQ4NjQ4NjAtM2JjNi00ODUyLWJmNGUtZTQzMWYxMzJhOWEzXkEyXkFqcGdeQXVyNDAzNDk0MTQ@._V1_.jpg"
+                        height="100px" width="100px" alt=""></td>
+                <td>10th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">1</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">19</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Bumrah</td>
+                <td>Male</td>
+                <td> <img src="https://c.ndtvimg.com/2021-11/ei73i9eg_bumrah-t20-wc-afp_625x300_05_November_21.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" height="100px" width="100px" alt=""></td>
+                <td>10th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">94</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Chahal</td>
+                <td>Male</td>
+                <td> <img src="https://img.mensxp.com/media/content/2021/Sep/Chahals-Wife-Posts-Cryptic-Post-After-His-Shocking-Snub-From-T20-World-Cup-Squad-1200x900_613a03a82c160.jpeg"
+                        height="100px" width="100px" alt=""></td>
+                <td>10th</td>
+                <td>
+                    <table border="1px solid" cellpadding="5px" cellspacing="5px">
+                        <thead class="details">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Max Marks</td>
+                                <td>Min Marks</td>
+                                <td>Obtained Marks</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">22</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="fail">28</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>30</td>
+                                <td class="pass">97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h2>@copy rights 2022</h2>
+</body>
+
+</html>

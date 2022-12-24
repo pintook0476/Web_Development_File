@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Product Details Using HTML</title>
+    <style>
+                .header{
+            border: 1px solid beige;
+            height: 40px;
+            width: 1300px;
+            margin: 10px auto;
+            background-color: rgb(85, 19, 76);
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            color:fuchsia;
+            padding: 10px;
+        }
+        .pContainer{
+            border: 1px solid rgb(235, 235, 235);
+            width: 1300px;
+            margin: 10px auto;
+            position:absolute;
+            left: 10px;
+            right: 10px;
+            background-color: black;
+           
+        }
+        .pdetails{
+            border: 1.5px solid rgb(116, 238, 249);
+            border-style: groove;
+            width: 260px;
+            margin: 27px 26px;
+            padding: 5px;
+            color:cyan;
+            font-size: large;
+            font-style: oblique;
+            float: left;
+        }
+        .valueStyles, .actualPrice, .discountedPrice{
+            font-style: italic;
+            font-weight: bold;
+            color: gold;
+            font-size: 20px;
+        }
+        .actualPrice{
+            text-decoration-line: line-through;
+        }
+        .discountedPrice{
+            color:chartreuse;
+        }
+        .pdetails li{
+            list-style: none;
+            border: 0.5px solid rgb(88, 87, 88);
+            margin: 5px;
+            padding: 5px;
+        }
+        .pdetails img{
+            margin:5px auto;
+            padding: 10px;
+            height: 110px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Products Details</div>
+    <div class="pContainer">
+        <ul class="pdetails" title="Laptop Details">
+            <li>Product Name: <span class="valueStyles"> Laptop</span> </li>
+            <li>Product Price:<span class="actualPrice"> 45000 </span><span class="discountedPrice">43500</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Sony</span> </li>
+            <li>Rating: <span class="valueStyles"> 5/5</span> </li>
+            <li><img src="images/laptop.jpg" alt="Laptop"></li>
+        </ul>
+        
+        <ul class="pdetails" title="Pendrive Details">
+            <li>Product Name: <span class="valueStyles"> Pendrive</span> </li>
+            <li>Product Price:<span class="actualPrice"> 2000 </span><span class="discountedPrice">1500</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> hp</span> </li>
+            <li>Rating: <span class="valueStyles"> 4.7/5</span> </li>
+            <li><img src="images/pendrive.jpg" alt="pendrive"></li>
+        </ul>
+
+        <ul class="pdetails" title="Mouse Details">
+            <li>Product Name: <span class="valueStyles"> Mouse</span> </li>
+            <li>Product Price:<span class="actualPrice"> 620 </span><span class="discountedPrice">600</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Dell</span> </li>
+            <li>Rating: <span class="valueStyles"> 4.9/5</span> </li>
+            <li><img src="images/mouse.jpg" alt="Mouse"></li>
+        </ul>
+
+        <ul class="pdetails" title="Inverter Details">
+            <li>Product Name: <span class="valueStyles"> Inverter</span> </li>
+            <li>Product Price:<span class="actualPrice"> 50000 </span><span class="discountedPrice">45000</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Luminous</span> </li>
+            <li>Rating: <span class="valueStyles"> 5/5</span> </li>
+            <li><img src="images/inverter.webp" alt="Inverter"></li>
+        </ul>
+
+        <ul class="pdetails" title="Ceilingfan Details">
+            <li>Product Name: <span class="valueStyles">Ceiling Fan</span> </li>
+            <li>Product Price:<span class="actualPrice"> 6000 </span><span class="discountedPrice">5800</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Orino</span> </li>
+            <li>Rating: <span class="valueStyles"> 4.5/5</span> </li>
+            <li><img src="images/fan.jpg" alt="Ceilingfan"></li>
+        </ul>
+
+        <ul class="pdetails" title="Calculator Details">
+            <li>Product Name: <span class="valueStyles"> Scientific Calc</span> </li>
+            <li>Product Price:<span class="actualPrice"> 650 </span><span class="discountedPrice">600</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Casio</span> </li>
+            <li>Rating: <span class="valueStyles"> 5/5</span> </li>
+            <li><img src="images/calculator.webp" alt="Calculator"></li>
+        </ul>
+
+        <ul class="pdetails" title="Book Details">
+            <li>Product Name: <span class="valueStyles">Book</span> </li>
+            <li>Product Price:<span class="actualPrice">200 </span><span class="discountedPrice"> 180</span> </li>
+            <li>Manufacturer: <span class="valueStyles">Sanjo</span> </li>
+            <li>Rating: <span class="valueStyles"> 4.7/5</span> </li>
+            <li><img src="images/book.png" alt="Book"></li>
+        </ul>
+
+        <ul class="pdetails" title="Wheelbag Details">
+            <li>Product Name: <span class="valueStyles"> Wheelbag</span> </li>
+            <li>Product Price:<span class="actualPrice">3000 </span><span class="discountedPrice">2500</span> </li>
+            <li>Manufacturer: <span class="valueStyles"> Ursuit</span> </li>
+            <li>Rating: <span class="valueStyles"> 4.5/5</span> </li>
+            <li><img src="images/wheelbag.png" alt="Wheelbag"></li>
+        </ul>
+    </div>       
+</body>
+</html>

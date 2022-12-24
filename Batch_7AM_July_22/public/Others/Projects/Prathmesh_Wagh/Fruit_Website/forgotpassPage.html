@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <style>
+            .main {
+                background-image: url(https://i.pinimg.com/originals/9b/d7/21/9bd721984cbec79e5a2405d1894d036e.jpg);
+                background-repeat: no-repeat;
+                border: 1px solid;
+                width: 100%;
+                height: 600px;
+                font-size: bold;
+            }
+            .formbox {
+                background-color: burlywood;
+                border: 1px solid;
+                margin: 20px auto;
+                height: 480px;
+                width: 550px;
+            }
+            ul , li{
+                list-style-type: none;
+                padding: 15px;
+            }
+            .labelcontent {
+                
+                padding: 10px;
+            }
+            
+            .inputbox {
+                float: right;
+                width: 290px;
+                color: beige;
+            }
+            
+            #subm:hover {
+                cursor: pointer;
+                color: #ed640e;
+            }
+            h2 {
+                text-align: center;
+                text-decoration: underline;
+            }
+            #subm {
+                width: 100px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="formbox"><h2>Forgot Password </h2> 
+                <form action="file:///E:/Development_course_with_nodejs/UI%20Class_test/webapplication/public/Project/Fruit_Website/homePage.html" method="get">
+                    <ul>
+                        <li>
+                            <div class="labelcontent">
+                                <label for="forgotpassword"><b>Enter Email-Id: </b></label>
+                                <div class="inputbox">
+                                    <input type="email" name="forgotpassword">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="labelcontent">
+                                <div class="inputbox">
+                                    <input type="submit" name="forgotpassword" id="subm">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Assignment 12</title>
+        <style>
+            h3{
+                border: 1px solid;
+                color: blue;
+                background-color: aquamarine;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+                text-decoration: underline;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Showing 1 to 1000 Plindrom Number</h3>
+        <script>
+            for(var i=0;i<=1000;i++){
+            var a=i;
+            var b=a;
+            var rem;
+            var pal=0;
+            while(a>0){
+                rem=a%10;
+                pal=pal*10+rem;
+                a=parseInt(a/10);
+            }
+            if(b==pal){
+                console.log(b);
+            }
+        }
+        </script>        
+    </body>
+</html>

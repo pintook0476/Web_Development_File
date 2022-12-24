@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating employee detail using json</title>
+        <script>
+            var empdetails ={
+
+                "getEmpdetails" : ()=>{
+                empdetails.eName = prompt("enter employee name");
+                empdetails.eDept = prompt("enter department name");
+                empdetails.age = prompt("enter employee age");
+                empdetails.gender = prompt("enter employee gender");
+                empdetails.basicSalary = prompt("enter employee basic salary");
+                empdetails.basicSalary = parseInt(empdetails.basicSalary);
+                empdetails.findpfandhra();
+            },
+
+                "findpfandhra"  : ()=>{
+                empdetails.pf = (14/100)*empdetails.basicSalary;
+                empdetails.hra = (25/100)*empdetails.basicSalary;
+                empdetails.totalSalary = empdetails.basicSalary + empdetails.pf + empdetails.hra;
+                empdetails.findTaxpercent();
+            },
+
+                "findTaxpercent" : ()=>{
+                empdetails.taxPercent =0;
+                if(empdetails.gender == "male"){
+                    if(empdetails.totalSalary >= 200000){
+                        empdetails.taxPercent = (15/100)*empdetails.totalSalary ;
+                    } else if(empdetails.totalSalary >= 100000){
+                        empdetails.taxPercent = (10/100)*empdetails.totalSalary ;
+                    } else if(empdetails.totalSalary >= 50000){
+                        empdetails.taxPercent = (5/100)*empdetails.totalSalary ;
+                    } else{
+                        empdetails.taxPercent = 0;
+                    }
+                } else{
+                    if(empdetails.totalSalary >= 200000){
+                        empdetails.taxPercent = (10/100)*empdetails.totalSalary ;
+                    } else if(empdetails.totalSalary >= 100000){
+                        empdetails.taxPercent = (5/100)*empdetails.totalSalary ;
+                    }else{
+                        empdetails.taxPercent =0;
+                    }
+                }
+                empdetails.displayDetails();
+            },
+
+                "displayDetails" : ()=>{
+                console.log("empName " + empdetails.eName);
+                console.log("Gender " + empdetails.gender);
+                console.log("deptName " + empdetails.eDept);
+                console.log("basicsalary " + empdetails.basicSalary);
+                console.log("pf " + empdetails.pf);
+                console.log("hra " + empdetails.hra);
+                console.log("totalSalary " + empdetails.totalSalary);
+                console.log(" tax percentage is " + empdetails.taxPercent);
+            }
+            }
+            empdetails.getEmpdetails();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

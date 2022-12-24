@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>palindrome from array</title>
+    </head>
+    <body>
+        <script>
+            var data = [5,12,52,95,121,153,300,606,778,888,923,191] ;
+
+                for (i = 0 ; i < data.length ; i++) {
+                    var palindrome = data[i];
+                    //console.log(palindrome);
+                    var rem;
+                    var rev = 0 ;
+                    var temp = palindrome; 
+
+                    while(palindrome > 0) {
+                        
+                        rem = palindrome % 10 ;
+                        rev = rev * 10 + rem;
+
+                        palindrome = palindrome / 10 ;
+                        palindrome = parseInt(palindrome);
+
+                        if (temp == rev) {
+                            console.log(rev);
+                        }
+
+                    }               
+
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_9</title>
+    <style>
+      .mainHeading{
+        border: 1px solid;
+        text-align: center;
+        background-color: rgb(155, 150, 146);
+        width: 800px;
+        height: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 360px;
+      }
+
+      /* set throught the position not use any other property */
+
+      .personalDetailsBox {
+        border: 2px solid blueviolet;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 200px;
+        height: 15px;
+        padding: 5px;
+        margin-left: 25px;
+        position: relative;
+        top: -15px;
+        background-color: black;
+        color: aliceblue;
+      }
+
+      /* Personaldetails box stylling and className is userDetailBox_1  */
+      .allArea {
+        border: 1px dashed;
+        width: 800px;
+        height: auto;
+        margin-left: 360px;
+        background-color: bisque;
+      }
+
+      /* personal details input elements box section-1    [inputElementsSection_1] */
+
+      .inputElementsSection_1 {
+        border: 1px solid;
+        width: 720px;
+        margin-left: 15px;
+        background-color: aquamarine;
+      }
+      li {
+        list-style: none;
+        padding: 12px;
+      }
+      .courseOption {
+        margin-left: 300px;
+      }
+      /*    To need set the position   all input boxes */
+      .boxAllignment {
+        position: absolute;
+        left: 550px;
+      }
+      .foot{
+        border: 1px solid;
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+        width: 800px;
+        height: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        
+
+      }
+    </style>
+  </head>
+  <body>
+                                    <!--heading part-->
+
+
+
+    <div class="mainHeading">Student Registration Form</div>
+    <div>
+      <!--all input elements are in this div,this is parents container-->
+
+      <div class="allArea">
+        <div>
+          <ul class="inputElementsSection_1">
+            <li class="personalDetailsBox">Personal Details</li>
+            <li>
+              <label for="userName">Student Name: </label>
+              <input class="boxAllignment" type="text" required />
+
+
+                                             <!--Second cols  [course option]-->
+
+
+              <label for="courseName" class="courseOption">
+                Course Opted:
+              </label>
+              <select name="coureName" id="courseOption">
+                <option value="Select Course">Select Course</option>
+                <option value="Select Course">Web Devlopement</option>
+                <option value="Select Course">Full Stack Java</option>
+                <option value="Select Course">ASP .Net</option>
+                <option value="Select Course">Python</option>
+                <option value="Select Course">Angular</option>
+              </select>
+            </li>
+            <li>
+              <label for="mail">Mail Id: </label>
+              <input class="boxAllignment" type="email" required />
+            </li>
+            <li>
+              <label for="gender">Gender: </label>
+              <input type="radio" required name="gender" /> Male
+              <input type="radio" name="gender" required /> Female
+              <input type="radio" name="gender" required /> Others
+            </li>
+          </ul>
+        </div>
+
+
+                                                        <!--begining of second box  for educational details and all-->
+
+
+
+        <div>
+          <ul class="inputElementsSection_1">
+            <li class="personalDetailsBox">Educational Details</li>
+            <li>
+              <label for="userName">Qualification: </label>
+              <input class="boxAllignment" type="text" required />
+            </li>
+            <li>
+              <label for="mail">Language Known: </label>
+              <input type="checkbox" />Hindi <input type="checkbox" />English
+              <input type="checkbox" />Telgu <input type="checkbox" />Marathi
+            </li>
+            <li>
+              <label for="gender">Average Marks </label>
+              <input class="boxAllignment" type="text" required name="gender" />
+            </li>
+          </ul>
+        </div>
+
+
+                                    <!--begining of third(3rd) box for address and oyhers-->
+
+
+        <div>
+            <ul class="inputElementsSection_1">
+              <li class="personalDetailsBox">Address</li>
+              <li>
+                <label for="userName">  D N O: </label>
+                <input class="boxAllignment" type="text" required />
+  
+                <!--Second cols  [course option]-->
+                <label for="courseName" class="courseOption">
+                  Land-Mark:
+                </label>
+                <textarea name="landMark"></textarea>
+              </li>
+              <li>
+                <label for="street">Street Name: </label>
+                <input class="boxAllignment" type="text" required />
+              </li>
+              <li>
+
+                
+                                                                         <!--- India states -->
+
+
+                <label for="stateName" class="stateList">State: </label>    
+
+                <select class="boxAllignment" id="country-state" name="country-state">
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="DN">Dadra and Nagar Haveli</option>
+                    <option value="DD">Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="LA">Ladakh</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PY">Puducherry</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+                </select>
+                <li>
+                <label for="countryName"> Country: </label>
+                <select class="boxAllignment" name="countryName" id="">
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="XK">Kosovo</option>
+                    <option value="KW">Kuwait</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="inputElementsSection_1">
+              <li class="personalDetailsBox">About Yourself</li>
+              
+                
+            <li>About Yourself<textarea cols="60" rows="10"></textarea></li>
+            
+        </ul>
+          </div>
+          <div class="foot">Copyright@@__2022</div>
+
+    
+
+      
+    </div>
+  </body>
+</html>

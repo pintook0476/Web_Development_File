@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="header"><h2>University Sports Meet - Registration</h2></div> 
+        <div class="container">
+            <ul class="cRegistration">
+                <li class="cHeading">College Registration</li>
+                <li>Enter College Name : <input type="text" id="cName"></li>
+                <li>Enter College Code : <input type="text" id="cCode"></li>
+                <li><input type="button" value="Register College" onclick="getCollegeRegistration()"></li>
+            </ul>
+            <ul class="sRegistration">
+                <li class="sHeading">Student Registration</li>
+                <li>Enter Student Name : <input type="text" id="sName"></li>
+                <li> Student Age : <input type="text" id="sAge"></li>
+                <li>Student Gender : 
+                    <input checked type="radio" value="Male" name="gender" id="">Male
+                    <input type="radio" name="gender" value="Female" id="">Female
+                </li>
+                <li>Select Spoarts : <select name="" id="sSports">
+                    <option value="Basketball">Basketball</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Football">Football</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Badmintion">Badmintion</option>
+                    <option value="Shotput">Shotput</option>
+                    <option value="Jevlin Throw">Jevlin Throw</option>
+                    <option value="Swimming">Swimming</option>
+                </select></li>
+                <li><input type="button" value="Register Student" onclick="getStudentRegistration();"></li>
+            </ul>
+            <ul class="tRegistration">
+                <li class="tHeading"> Team Registration</li>
+                <li>Enter Team Name : <input type="text" id="tName"></li>
+                <li>No. Of Players : <input type="text" id="tPlayer"></li>
+                <li>No. Of Matches: <input type="text" id="tMatches"></li>
+                <li><input type="button" value="Register Team" onclick="getTeamRegistration();"></li>
+            </ul>
+            <div class="sucessfulRegistr">Student is Register Sucessfully</div>
+            <script src="app.js"></script>
+        </div>
+    </body>
+</html>

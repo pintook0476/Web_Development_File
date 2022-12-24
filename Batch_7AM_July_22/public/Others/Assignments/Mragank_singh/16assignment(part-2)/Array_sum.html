@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all numbers in an array</title>
+</head>
+<body>
+    <h3> Sum of all numbers in an array </h3>
+    <script>
+        // Enter Array by user
+        var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+        
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);
+
+
+        // summing up all values in an array
+        var temp = 0;
+        for(var i=0; i<a.length; i++){
+           temp = temp + a[i];
+        }
+        console.log("The sum of all values in an array: " + temp);
+    </script>
+</body>
+</html>

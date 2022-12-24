@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+             var userInfo = {
+                name: 'Raj',
+                age: 20,
+                address: {
+                    dno: '34/Q',
+                    sateCode: 'ABC',
+                    countryCode: {
+                        countryName: 'India',
+                        code: 'IND'
+                    }
+                },
+                phonno: [3445, 35343]
+            };
+
+            var iterateObjectDetails = (userData) => {
+                for ( var tempKey  in userData) {
+                    if (typeof(userData[tempKey]) == 'object' && userData[tempKey].length == undefined) { // object, not array
+                        iterateObjectDetails(userData[tempKey])
+                    }
+                    else {
+                        console.log(tempKey)
+                        console.log(userData[tempKey]);
+                    }
+                }
+            }
+
+            iterateObjectDetails(userInfo);
+            /*for (var tempKey in userData) {                
+                if (typeof(userData[tempKey]) == 'object' && userData[tempKey].length == undefined) { // object, not array
+                    for (var tempkey2 in userData[tempKey]) {
+                        console.log(tempkey2);
+                        console.log(userData[tempKey][tempkey2]);
+                    }
+                } else {
+                    console.log(tempKey)
+                    console.log(userData[tempKey]);
+                }
+            }*/
+
+        </script>
+    </body>
+</html>

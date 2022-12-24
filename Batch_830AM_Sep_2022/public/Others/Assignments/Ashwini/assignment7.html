@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Emp Details</title>
+    </head>
+    <body>
+        <script>
+            var empName=prompt(" enter the employee name"), basic_sal, pf, tsal, hrf;
+            var empAge=prompt(" enter the emp age");
+            var gender=prompt(" enter the gender");
+            var Dept=prompt(" enter the department");
+            var basic_sal=prompt(" enter the basic sal");
+            basic_sal=parseInt(basic_sal);
+            pf= (basic_sal*12)/100;
+            hrf=(basic_sal*24)/100;
+            tsal=basic_sal+pf+hrf;
+            console.log("empName is " + empName);
+            console.log("empAge is " + empAge);
+            console.log("gender is " + gender);
+            console.log("Dept is " + Dept);
+            console.log("Basic salary is " + basic_sal);
+            console.log("pf is " + pf);
+            console.log("hrf is " + hrf);
+            console.log("Total salary is " + tsal);
+        </script>
+    </body>
+</html>

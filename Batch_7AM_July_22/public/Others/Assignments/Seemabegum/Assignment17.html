@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get dates </title>
+</head>
+<body>
+    <script>
+        //2.Auguest , 30th 2022 //
+         
+        var now = new Date ();
+        var months = ["January" ,'February' ,'March' ,'April' ,'May','June', 'July', 'August' ,'September' ,'October ',"November" ,"December" ]
+        var dateMonths = months[now.getMonth()]  + "/ " + now.getDate() + " / " + now.getFullYear() ;
+        console.log(dateMonths);
+
+
+        // 3 . tue , aug 30th 2022 //
+          
+        var days = ["MonDay" , "TuesDay", "WednesDay" , "ThursDay" , "FriDay", "SaturDay" , "SunDay"];
+        var daydate = days[now.getDay()].substr(0,3)+ "," + months[now.getMonth()] .substr(0,3)+ "-" + now.getDate() + "th" + "- " + now.getFullYear() ;
+        console.log(daydate); 
+        
+     
+        //4. Tuesday ,Auguest 30th 2022 //
+        var daydate = days[now.getDay()]+ "," + months[now.getMonth()] + "-" + now.getDate() + "th" + "- " + now.getFullYear() ;
+        console.log(daydate)
+
+        //5. 30 / 8 / 2022 //
+
+        var date5 = now.getDate() + "/ " + now.getMonth() + "/ " + now.getFullYear (); 
+        console.log(date5);
+
+        // 6. 30th , Aug, 2022 //
+        var date6 = now.getDate() + "th" + ","  + months[now.getMonth()].substr(0,3) +
+        "," + now.getFullYear();
+        console.log(date6);
+
+        // 7. 30th Aug, 2022 09: 30:10 //
+
+        var date7 = now.getDate()+ "th" + "," + months[now.getMonth()].substr(0,3)+ "," + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        console.log(date7);
+
+
+        // 8.Aug/30/2022 10: 20 //
+
+        var date8 = months[now.getMonth()].substr(0,3) + "/" + now.getDate()+ "th" + "/" + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes();
+       console.log(date8);
+
+       // 9. 30- Aug- 2022 20 :30: 10 //
+       var date9 = now.getDate() + "-" + months[now.getMonth()] + "-" + now.getFullYear() + " " + now.getHours() + " : " + now.getMinutes() + ":" + now.getSeconds();
+       console.log(date9);
+       </script>
+    
+</body>
+</html>

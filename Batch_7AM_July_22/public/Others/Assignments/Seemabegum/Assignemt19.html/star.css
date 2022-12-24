@@ -1,0 +1,47 @@
+.head{
+    border: 2px solid;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: pink;
+}
+.fashionbox{
+    border: 2px solid;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.checked{
+    color: orange
+}
+.fash{
+    width: 250px;
+    border: 1px solid;
+    padding :10px;
+    margin: 10px;
+    float: left;
+    list-style-type: none;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    
+}
+.fash li {
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Price {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-line: line-through;
+}
+.disPrice {
+    color: green;
+    font-weight: bold;
+}

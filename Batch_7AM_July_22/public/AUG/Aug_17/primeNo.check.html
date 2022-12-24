@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("enter a no.");
+            n = parseInt(n);
+            var counter = 0;
+            for (var i = 2; i <= n-1; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    counter++;
+                    break;
+                }
+            }
+            console.log("Total no. of iterations " +(i-1));
+            if (counter == 0) { 
+                console.log("ITs prime no.")
+            } else {
+                console.log("not a prime");
+            }
+        </script>
+    </body>
+</html>

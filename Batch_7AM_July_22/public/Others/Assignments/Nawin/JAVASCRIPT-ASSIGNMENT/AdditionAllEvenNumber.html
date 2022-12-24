@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Taking Input 
+        var takeInput=() =>{
+
+            var num=[11,32,23,14,5,6,8,6];
+            var sum=calculatingAdd(num);
+            console.log("Sum of numbers= "+sum);
+        }
+        //Calculating even numbers
+        var calculatingAdd=(data) =>{
+            console.log(data);
+            var sum=0;
+            for(var i=0;i<data.length;i++){
+                if(data[i]%2==0){
+                    sum+=data[i];
+                }
+            }
+            return sum;
+        }
+        takeInput();
+    </script>
+</body>
+</html>

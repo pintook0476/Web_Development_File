@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>  
+        <h3>Employees Details With Json Object</h3>
+
+        <script>
+
+            var empdetails = {
+                readValueFromEmp : function(){
+                    this.name = "Deepak Mittal";
+                    this.gender = "male";
+                    this.location = "Hyd";
+                    this.basicSal = prompt("Enter Your Salary");
+                    this.basicSal = parseInt(this.basicSal);
+                    empdetails.getHraPfOfEmp();
+                },
+
+                getHraPfOfEmp : function (){
+                    this.hra = (this.basicSal * 12) / 100;
+                    this.pf = (this.basicSal * 25) / 100;
+                    this.salBeforeTax = this.hra + this.pf + this.basicSal;
+                    empdetails.calTotalTax();
+                },
+
+                calTotalTax : function(){
+                    this.taxPercentage = 0;
+                    if(this.gender == 'male'){
+                        if(this.salBeforeTax >= 500000){
+                            this.taxPercentage = 15;
+
+                        }else if(this.salBeforeTax >= 300000){
+                            this.taxPercentage = 10;
+                        }else if(this.salBeforeTax >= 100000){
+                            this.taxPercentage = 5;
+                        }
+                    }else{
+                        if(this.salBeforeTax >= 500000){
+                            this.taxPercentage = 10;
+
+                        }else if(this.salBeforeTax >= 300000){
+                            this.taxPercentage = 5;
+                        }
+                       
+                    };
+                    this.totalTax = (this.taxPercentage * this.salBeforeTax) / 100;
+                    this.salAfterTax = (this.salBeforeTax - this.totalTax); 
+                    empdetails.displayEmployeeDetails();
+
+                },
+                displayEmployeeDetails : function (){
+                    console.log("Emp Details ");
+                    console.log("Emp Name - " + this.name);
+                    console.log("Emp Gender - " + this.gender);
+                    console.log("Emp Location - " + this.location);
+                    console.log("Emp Salary Before Tax - " + this.salBeforeTax);
+                    console.log("Emp Tax Paid - " + this.totalTax + " " + this.taxPercentage + "%");
+                    console.log("Emp Salary After Tax - " + this.salAfterTax);
+                }
+
+               
+           };
+           empdetails.readValueFromEmp();
+           console.log(empdetails);
+           
+           
+          
+
+        </script>
+        
+    </body>
+</html>

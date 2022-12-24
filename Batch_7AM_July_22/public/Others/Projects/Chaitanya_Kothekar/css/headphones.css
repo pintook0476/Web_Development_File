@@ -1,0 +1,112 @@
+.header {
+    background-color: #222831;
+    padding: 20px 15px;
+    margin-bottom: 0%;
+}
+
+.logoImageContainer {
+    position: absolute;
+    float: left;
+    margin: -19px 24px;
+}
+
+.logoImg {
+    height: 37px;
+    width: 37px;
+}
+
+.logoTextContainer {
+    position: absolute;
+    font-weight: bold;
+    font-size:23px;
+    margin: -15px 60px;
+    color: aliceblue;
+}
+
+.logoColor {
+    color: orange;
+}
+.footer {
+    background-color: #222831;
+    padding: 15px 15px;
+}
+.body {
+    overflow: auto;
+    clear: both;
+    height: 600px;
+}
+
+.copyright {
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+
+.productHeader{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    font-size: x-large;
+    font-weight:bolder;
+    text-decoration: underline darkorange;
+
+}
+
+.productContainer{
+    padding: 2px;
+    float: left;
+    margin: 2px;   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 480px;
+    border: 1px solid transparent;
+}
+.productContainer:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.pDetails{
+    padding: 10px;
+}
+
+.pDetails li{
+    color: black;
+    list-style: none;
+    padding: 10px;
+}
+
+.productImg1{
+    
+    height: 250px;
+    width: 250px;
+}
+
+.productImg1:hover{
+    height: 252px;
+    width: 252px;
+}
+
+.name{
+    color: black;
+    font-size: large;
+
+
+}
+.realPrice{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.ratingimg img{
+    height: 25px;
+    width: 25px;
+}

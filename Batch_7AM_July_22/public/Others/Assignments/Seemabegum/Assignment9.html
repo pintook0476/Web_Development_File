@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .head,.foot{
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            font-weight: bold;
+            font-size: medium;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .container{
+            border: 1px solid;
+            background-color: lightslategray;
+        }
+        .block1{
+            border: 1px solid;
+            height: 200px;
+            width: auto;
+            margin: 20px;
+        }
+        .b1{
+            border: 1px solid;
+            height: 29px;
+            width: 218px;
+            position: relative;
+            left: 79px;
+            top: -14px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        label{
+            margin: 10px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        #in,#in1{
+            text-align: center;
+            font-weight: bold;
+            background-color: white;
+            width: 350px;
+        }
+        #in1{
+            position: relative;
+            left: 51px;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+        .in2{  
+            text-align: center;
+            font-weight: bold;
+            width: 350px;  
+            position: relative;
+            left: 595px; top:-137px;
+        
+        }
+        .in3{
+            margin: 10px;
+        }
+        .in4{
+            text-align: center;
+            font-weight: bold;
+            background-color: white;
+            width: 350px;
+            position: relative;
+            left: 107px;
+        }
+        .b2{
+            height:242px ;
+        }
+        .b3{
+            height: 250px;
+        }
+        #l1{
+        position: relative;
+        top: -113px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="head">Student Registration Page</div>
+    <div class="container">
+
+        <ul class="block1">
+            <li>
+            <div class="b1">  Personal Details</div>
+            <label class="pd">Student Name :</label>
+            <input type="text"placeholder="Enter name" id="in">
+            </li>
+            <li>
+            <label>Mail Id :</label>
+            <input type="email" placeholder="Enter mail id" id="in1">
+        </li>
+        <li>
+            <label>Gender :</label>
+            <input type="radio" name="gender" value="male" >Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li>
+        <label class ="in2">Course option :</label>
+        <select name="course" class="in2">
+            <option value="web">web technology</option>
+            <option value="c">c</option>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+
+        </select>
+        </li>
+        </ul>
+        <ul class="block1">
+            <li>
+            <div class="b1"> Educational Details</div>
+            <label for="qualification">Qualification :</label>
+            <input type="text" id="in1">
+            <li>
+            <label>Languages Knowns :</label>
+            <input type="checkbox" value="English" name="language_eng" class="in3">English
+            <input type="checkbox" value="Telugu" name="language_tel" class="in3">Telugu
+            <input type="checkbox" value="Hindi" name="language_hin" class="in3">Hindi
+            <input type="checkbox" value="Arabic" name="language_arabic" class="in3">Arabic
+            </li>
+            </li>
+            <li>
+                <label for="marks">Avg Marks :</label>
+                <input type="number" id="in1">
+            </li>
+
+            </ul>
+        <ul class="block1 b2">
+            <Li>
+            <div class="b1"> Address</div>
+            <label >Dno:</label>
+            <input type="number" class="in4">
+            </Li>
+            <li>
+                <label>Street Name</label>
+                <input type="text" id="in1">
+            </li>
+            <li>
+                <label>State :</label>
+                <select name="state" class="in4">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </li>
+            <li>
+                <label >Country :</label>
+                <select name="country" class="in4">
+                    <option value="india">India</option>
+                    <option value="America">America</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="China">China</option>
+                </select>
+            </li>
+            <li>
+                <label   class ="in2">Land mark:</label>
+                <input type="text" class="in2">
+            </li>
+
+            </ul>
+            <ul class="block1 b3">
+                <li>
+                <div class="b1"> About yourself
+                </div>
+                <label id="l1">About yourself</label>
+                <textarea name="my text" cols="80" rows="10"></textarea>
+                </li>
+                </ul>
+                <li>
+                    <input type="button" value="submit" name="submit">
+                </li>
+            
+
+        </div>
+        
+    </div>
+    <div class="foot">@copyright 2022</div>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Employe Details Dyanamically
+        </title>
+    </head>
+    <body>
+        <script>
+            var ename = prompt("Enter Employe Name ");
+            var eage = prompt("Enter Employe Age ");
+            var gender = prompt("Enter Employe Gender ");
+            var dep = prompt("Enter Employe Department");
+            var basicsal = prompt("Enter Employe Basicsalary");
+            basicsal = parseInt(basicsal);
+            var pf = basicsal * (15 / 100);
+            var hra = basicsal * (25 / 100);
+            var totalsal = pf + hra + basicsal;
+            console.log(" Name " + ename);
+            console.log(" Age " + eage);
+            console.log(" Gender" + gender);
+            console.log(" Department " + dep);
+            console.log(" Basicsalary " + basicsal);
+            console.log(" Total " + totalsal);
+        </script>
+    </body>
+</html>

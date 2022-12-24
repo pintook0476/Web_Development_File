@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Online shopping page
+    </title>
+    <script src="javascript/lib/jquery.js"> </script>
+    <script src="javascript/lib/html2canvas.min.js"></script>
+    <script src="javascript/capchaAndOtpGenerator.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="javascript/mainpage.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon@4x.png" type="image/x-icon">
+    <!-- Bootstrap5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN -->
+    <script src='https://kit.fontawesome.com/171d988dc1.js'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/goShopping.png" alt="" width="191" height="41"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" aria-current="page" href="#">Mens</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="#">Womens</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="#">Home & Living</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="#">Beauty</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="#">Trending</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-absolute top-5 translate-middle-x search-bar">
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="position-absolute top-5 end-0 translate-middle-x user-access">
+                <ul class="navbar-nav">
+                    <a href="" class="nav-link active"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="" class="nav-link active"><i class="fa-solid fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="" class="nav-link active"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        main content
+        <div class="links">
+            <span onclick="loadSelectedPage('login');">Login</span>
+            <span onclick="loadSelectedPage('signup');">Signup</span>
+        </div>
+        <div class="blockContent"></div>
+    </main>
+
+
+    <div class="card p-5">
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-2">
+                <ul class="navbar-nav">
+                    <li><b>GO SHOPPING</b></li>
+                    <li class="ms-3 mt-1">@2022 india</li>
+                </ul>
+            </div>
+            <div class="col col-2">
+                  <ul class="navbar-nav">
+                      <li><b>Customer</b></li>
+                      <li class="ms-1 mt-1">Buyer</li>
+                      <li class="ms-1 mt-1">Seller</li>
+                  </ul>
+                </div>
+                <div class="col col-2">
+                  <ul class="navbar-nav">
+                      <li><b>Company</b></li>
+                      <li class="ms-1 mt-1">About</li>
+                      <li class="ms-1 mt-1">Careers</li>
+                      <li class="ms-1 mt-1">Contract us</li>
+                  </ul>
+              </div>
+              <div class="col col-2">
+                  <ul class="navbar-nav">
+                      <li><b>Information</b></li>
+                      <li class="ms-1 mt-1">Term & Condition</li>
+                      <li class="ms-1 mt-1">Privacy Policy</li>
+                  </ul>
+              </div>
+              <div class="col col-2">
+                  <ul class="navbar-nav">
+                      <li><b>Follow us</b></li>
+                      <div class="navbar navbar-expand-lg">
+                        <li class="nav-item ms-1 mt-1"><i class="fa-brands fa-facebook"></i></li>
+                      <li class="nav-item ms-1 mt-1"><i class="fa-brands fa-instagram"></i></li>
+                      <li class="nav-item ms-1 mt-1"><i class="fa-brands fa-twitter"></i></li>
+                      <li class="nav-item ms-1 mt-1"><i class="fa-brands fa-github"></i></li>
+                      <li class="nav-item ms-1 mt-1"><i class="fa-brands fa-linkedin"></i></li>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reverse of a Word</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: rgb(95, 81, 81);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 8px 5px;
+            }
+            h1,h2,h3{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+            <h3>PLEASE REFRESH THE PAGE TO CHECK MORE NUMBERS</h3>
+        </div>
+
+        <script>
+            var str = prompt("Enter a word or sentence");
+            var revStr = "";
+
+            for (var i = str.length-1; i >= 0; i--)
+            {
+                revStr = revStr + str[i];
+            }
+
+            console.log("Word : " +str + "\nReverse Of a word : " + revStr);
+
+        </script>
+    </body>
+</html>

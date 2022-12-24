@@ -1,0 +1,227 @@
+<div class="topNavBar">
+    <div class="goLogo" onclick="loadSelectedPage('index')">
+        <img src="images/GoLogo.png" alt="">
+        <span>TRENDS</span>
+    </div>
+    <div class="categoryBrands">
+        <li class="categoryLink"><a href="#" onclick="loadSelectedPage('index')">Home</a></li>
+        <li id="hoverCategory" class="categoryLink">
+            <a href="#">Category</a>
+            <span class="material-symbols-outlined" id="expandMore">expand_more</span>
+            <!-- Add Hover Container From Here-->
+            <div id="containerCategory">
+                <div class="menContainer">
+                    <h4>MEN CLOTHING</h4>
+                    <ul id="menTopWearContainer" class="positionAbsolute">
+                        <h5>Top Wears</h5>
+                        <li><a href="#">Printed T-Shirts</a></li>
+                        <li><a href="#">Fashion T-Shirts</a></li>
+                        <li><a href="#">Full Slaves T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Vests</a></li>
+                        <li><a href="#">Kurtas</a></li>
+                        <li><a href="#">Sweaters</a></li>
+                        <li><a href="#">Half Slaves T-Shirts</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        
+                    </ul>
+                    <ul id="menBottomwears" class="positionAbsolute">
+                        <h5>Bottom Wears</h5>
+                        <li><a href="#">Joggers</a></li>
+                        <li><a href="#">Payajams</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Boxers</a></li>
+                        <li><a href="#">Trunks</a></li>
+                        <li><a href="#">Trousers & Pants</a></li>
+                        <li><a href="#">Activewear Shorts</a></li>
+                        <li><a href="#">All Bottom Wears</a></li>
+                    </ul>
+                </div>
+                <div class="womenContainer">
+                    <h4>WOMEN CLOTHING</h4>
+                    <ul id="womenTopWearContainer" class="positionAbsolute">
+                        <h5>Top Wears</h5>
+                        <li><a href="#">Kurtis & Kurtas</a></li>
+                        <li><a href="#">Fashion T-Shirts</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Sarees & Lehenga Sets</a></li>
+                        <li><a href="#">Dupattas</a></li>
+                        <li><a href="#">Jackets & Blazers</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Inner Wears</a></li>
+                        
+                    </ul>
+                    <ul id="womenBottomwears" class="positionAbsolute">
+                        <h5>Bottom Wears</h5>
+                        <li><a href="#">Leggings</a></li>
+                        <li><a href="#">Skirts</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shurngs</a></li>
+                        <li><a href="#">Tops & Tunics</a></li>
+                        <li><a href="#">Trousers & Pants</a></li>
+                        <li><a href="#">Activewear Shorts</a></li>
+                        <li><a href="#">All Bottom Wears</a></li>
+                    </ul>
+                </div>
+                <div class="childContainer">
+                    <h4>KID'S CLOTHING</h4>
+                    <ul id="childTopWearContainer" class="positionAbsolute">
+                        <h5>Top Wears</h5>
+                        <li><a href="#">Matching Sets</a></li>
+                        <li><a href="#">Fashion T-Shirts</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Winter Wear</a></li>
+                        <li><a href="#">Kurtas</a></li>
+                        <li><a href="#">Sweaters</a></li>
+                        <li><a href="#">Half Slaves T-Shirts</a></li>
+                        <li><a href="#">Ethnic Wear</a></li>
+                        
+                    </ul>
+                    <ul id="childBottomwears" class="positionAbsolute">
+                        <h5>Bottom Wears</h5>
+                        <li><a href="#">Jeans & Trousers</a></li>
+                        <li><a href="#">Skirts, Shorts & Jumpsuits</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Shorts & Dungarees</a></li>
+                        <li><a href="#">Matching Sets</a></li>
+                        <li><a href="#">Trunks</a></li>
+                        <li><a href="#">Trousers & Pants</a></li>
+                        <li><a href="#">Shorts & Jumpsuits</a></li>
+                        <li><a href="#">All Bottom Wears</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="hoverCategory" class="categoryLink">
+            <a href="#">Brands</a>
+            <span class="material-symbols-outlined" id="expandMore">expand_more</span>
+        </li>
+    </div>
+    <div class="searchBar">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Search By Category">
+    </div>
+    <div class="rightSideButton">
+        <span class="material-symbols-outlined" onclick="loadSelectedPage('orderBag')">local_mall</span>
+    </div>
+    <div class="loginButton">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="loginSignup">Log In / Sign Up</button>
+
+        <div class="btn-group rightSideProfileBtn">
+            <button type="button" class="btn btn-secondary" id="userNameBtn" onclick="loadSelectedPage('userProfile')"></button>
+            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item" onclick="loadSelectedPage('myAccount')">
+                    <span class="bi bi-person"></span> My Account</a></li>
+                <li><a href="#" class="dropdown-item">
+                    <span class="bi bi-bag-check-fill"></span> Orders</a></li>
+                <li><a href="#" class="dropdown-item">
+                    <span class="bi bi-suit-heart"></span> My Wishlist</a></li>
+                <li><a href="#" class="dropdown-item">
+                   <span class="bi bi-bell-fill"></span> Alert & Coupons</a></li>
+                <li><a href="#" class="dropdown-item">
+                   <span class="bi bi-gift-fill"></span> Gift Card</a></li>
+                   <li><a href="#" class="dropdown-item">
+                    <span class="bi bi-gear"></span>Account Setting</a></li>
+                <li><a href="#" class="dropdown-item">
+                   <span class="bi bi-square-fill"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">WELCOME TO GO TRENDS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="loginInputDetails">
+                <h5>Log In</h5>
+                <div class="inputElements">
+                <li>
+                    <input type="text" id="uid" placeholder="Enter Email or Mobile">
+                    <div id="inValidateName">Invalid Name</div>
+                </li>
+                <li>
+                    <input type="password" id="userPassword" placeholder="Enter Password">
+                    <div id="invalidPwd">Incorrect Password</div>
+                </li>
+                </div>
+
+                <div class="capchaVerification">
+                    Capcha :<div id="capchaContainer"></div>
+                    <span class="refreshCapcha" onclick="reGenerateCapcha()">
+                        <img src="images/login/refresh_FILL0.png" alt="" id="refresCap"> Refresh
+                    </span>
+                    <div>Enter Capcha : <input type="text" id="capchaInput"></div>
+                </div>
+                <div class="loginButtonDetails">
+                    <button id="loginBtn" onclick="validateUser()">Log In</button>
+                </div>
+                <div class="forgotpwd"><a href="#">FORGOT PASSWORD?</a></div>
+                <div class="donthaveAnAccount">Don't have an account <span id="signContainerShow">Sign Up</span></div>
+            </div>
+
+            <div class="signUpInputDetails">
+                <h5>Sign Up</h5>
+                <div class="signUpInput">
+                    <li><input type="text" placeholder="Enter Your Mobile or Email" onkeypress="return validateSignup(event)"></li>
+                    <li><input type="text" placeholder="Enter Password" id="signUppwd"></li>
+                    <li><input type="password" placeholder="Re-enter Password" 
+                    id="signupRepwd"></li>
+                    <li id="signUpButton"><input type="button" value="Sign up" onclick="signupbuttonClicked()"></li>
+                    <li><span id="loginRedirect">Log in</span></li>
+                    <li>
+                        <div id="signupWith">Sign up with</div>
+                        <div class="socialIcons">
+                            <a href="https://www.facebook.com"><img src="images/login/facebook.png" alt=""></a>
+                            <a href="https://www.instagram.com/login"><img src="images/login/instagram.png" alt=""></a>
+                            <a href="https://www.linkedin.com"><img src="images/login/linkedin.png" alt=""></a>
+                            <a href="#"><img src="images/login/telegram.png" alt=""></a>
+                            <a href="#"><img src="images/login/twitter.png" alt=""></a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+            <div class="forgetpwdContainer">
+                <h5>Forgot Password</h5>
+                <h6>Reset Password</h6>
+                <div class="forgotInput">
+                    <li><input type="text" placeholder="Enter Your Mobile or Email" id="forgotEmailMobile"></li>
+                    <li id="recapchaContainer">
+                        <img src="images/login/check_box.png" alt="" id="checkBoxImg" onclick="checkboxClicked()">
+                        <img src="images/login/check_FILL0.png" alt="" id="checkedDoneImg">
+                        <img src="images/login/RecaptchaLogo.svg.png" alt="" id="recapchaLogo">
+                    </li>
+                    <div id="recapchaVerified">Capcha Verified</div>
+                    <li><input type="button" value="Send Otp" id="forgotSentOtpBtn" onclick="sendOtpBtnForgot()"></li>
+                    <li><span id="loginRedirecttoMain">Log in</span></li>
+                </div>
+                <div class="forgotOtpVerification">
+                    <span class="otpSendInfo">Otp Send to Your Registerd Mobile</span>
+                    <div>Enter Otp :
+                        <input type="text" id="gotOtpValue">
+                        <span class="refreshForgotOtp" onclick="resendOtpBtn()">Re-send</span>
+                    </div>
+                    <div>
+                        <input type="button" value="Submit Otp" id="submitOtpForgot" onclick="submitForgotOtpBtn()">
+                    </div>
+                    Temporary Otp Box :
+                    <div class="temporaryOtpBox"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    </div>
+</div>

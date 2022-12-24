@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        overflow: hidden;
+        background-image: url("https://images.unsplash.com/photo-1524239077444-27413e763bba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-size: cover;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .box {
+        position: relative;
+      }
+
+      .box .square {
+        position: absolute;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 25px 45px rgb(0 0 0 / 10%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: none;
+        border-radius: 100%;
+        animation: animate 10s linear infinite;
+        animation-delay: calc(-1s * var(--i));
+      }
+
+      @keyframes animate {
+        0%.100% {
+          transform: translateY(-40px);
+        }
+        50% {
+          transform: translateY(40px);
+        }
+      }
+
+      .box .square:nth-child(1) {
+        top: -50px;
+        right: -60px;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+      }
+      .box .square:nth-child(2) {
+        top: 150px;
+        left: -100px;
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+      }
+      .box .square:nth-child(3) {
+        bottom: 50px;
+        right: -60px;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+      }
+      .box .square:nth-child(4) {
+        bottom: -80px;
+        left: 100px;
+        width: 50px;
+        height: 50px;
+      }
+      .box .square:nth-child(5) {
+        top: -80px;
+        left: 140px;
+        width: 60px;
+        height: 60px;
+      }
+      .container {
+        position: relative;
+        width: 400px;
+        min-height: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+      }
+
+      .form h1 {
+        position: relative;
+        color: azure;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+      }
+
+      .form h1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 80px;
+        height: 4px;
+        background: #fff;
+      }
+
+      .form .inputBox {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .form .inputBox input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: khaki;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .form .inputBox input::placeholder {
+        color: khaki;
+      }
+
+      .form .inputBox input[type="submit"] {
+        background: khaki;
+        color: #666;
+        max-width: 100px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .forget {
+        margin-top: 5px;
+        color: #fff;
+      }
+      .forget a {
+        font-weight: 600;
+        color: khaki;
+      }
+
+      .square0 {
+        top: -50px;
+        right: -60px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .square1 {
+        top: 150px;
+        left: -100px;
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+      }
+
+      .square2 {
+        bottom: 50px;
+        right: -60px;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+      }
+
+      .square3 {
+        bottom: -80px;
+        left: 100px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .square4 {
+        top: -80px;
+        left: 140px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .loginImage {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <div class="square" style="--i: 0">
+          <img class="square0" src="https://i.gifer.com/JUU.gif" alt="" />
+        </div>
+        <div class="square" style="--i: 1">
+          <img
+            class="square1"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Foods_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif"
+            alt=""
+          />
+        </div>
+        <div class="square" style="--i: 2">
+          <img
+            class="square2"
+            src="https://www.eastcoastdaily.in/wp-content/uploads/2020/05/martina-1.gif"
+            alt=""
+          />
+        </div>
+        <div class="square" style="--i: 3">
+          <img
+            class="square3"
+            src="https://media3.giphy.com/media/kELXPGMOmmCLxhMr6R/giphy.gif"
+            alt=""
+          />
+        </div>
+        <div class="square" style="--i: 4">
+          <img
+            class="square4"
+            src="https://i.pinimg.com/originals/88/38/ce/8838ce0c962b6b121f4a8d3ec81dffe5.gif"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="form">
+            <h1>
+              Login
+              <img
+                class="loginImage"
+                src="https://static1.squarespace.com/static/5b33c1c8620b8581cba04f0f/t/5b33c835352f53062b010229/1650792369232/"
+                alt=""
+              />
+            </h1>
+            <form action="">
+              <div class="inputBox">
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="inputBox">
+                <input type="password" placeholder="Password" />
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="Login" />
+              </div>
+              <p class="forget">
+                Forget Password ? <a href="forgetPassword.html">Click Here</a>
+              </p>
+              <p class="forget">
+                Dont't have an account ? <a href="registertion.html">Sign up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

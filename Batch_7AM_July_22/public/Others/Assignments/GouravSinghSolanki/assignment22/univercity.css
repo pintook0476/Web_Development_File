@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.section{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 28%;
+    border: 1px solid;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid;
+}
+.mainBlock{
+    margin-top: 40px;
+}
+.sdetail{
+    margin: 10px 0px;
+    padding: 10px;
+}
+.attribute{
+    display: inline-block;
+    width: 167px;
+    font-size: 18px ;
+    font-weight: bold;
+}
+.value{
+    display: inline-block;
+}
+input{
+    font-size: 16px;
+    padding: 5px;
+}
+.button{
+    padding: 5px 20px ;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,264 @@
+1. What is Closure, explain with example
+Ans:
+    Closures are used to implement security in javascript, we can bind set of javascript code (variables, methods,objects, classes etc) as a module, so that the data cannot be accessable outside of the Closure.
+
+    Syntax:
+        (() => {
+            ...
+            Set of js code.
+        })();
+    
+    Example:
+
+        var mathUtil = (() => {
+            
+            var addValues = (p1, p2) => {
+                var sum = p1 + p2;
+                return sum;
+            }
+            
+            return {
+                doAddition(a1, a2) {
+                    return addValues(a1, a2);
+                }
+            }
+        })();
+
+        var result = mathUtil.doAddition(20, 30);
+
+2 Question: Program to find the second largest number
+
+Ans: 
+        <script>
+            var temp;
+            var data = [73, 30, 22,95, 31, 26, 89, 12];
+            var firstLargest = data[0];
+            var secondLargest = data[0];
+            for (var i = 1 ; i < data.length; i++) {
+                if (firstLargest < data[i]) {
+                    secondLargest = firstLargest;
+                    firstLargest = data[i];
+                }
+            }
+            console.log("firstLargest => " + firstLargest)
+            console.log("secondLargest - > " + secondLargest)
+        </script>
+
+Question 3:
+    Function to iterate over a json
+Ans:
+    <script>
+            var data = {
+                name: 'RAj',
+                age: 20,
+                gender: 'male',
+                address: {
+                    pinCode: 23456,
+                    stateInfo: {
+                        stateName: 'AP',
+                        code: 'AP_345'
+                    }
+                }
+            }
+            var iterateObject = (data) => {
+                for (var temp in data) {
+                    if (typeof(data[temp]) == 'object') {
+                        iterateObject(data[temp]);
+                    } else {
+                        console.log(temp + ' -> ' + data[temp]);
+                    }
+                }
+            }
+            iterateObject(data);
+        </script> 
+
+Question 4:
+    GEnerating captcha:
+Ans: 
+        <script>
+            var lowerCaseChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+            var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+            var generateCaptcha = () => {
+                var captchaText = getRandomeUpperCaseCharecter() + 
+                                  getRandomeLowerCaseCharecter() + 
+                                  getRandomNumber(9) +                                  
+                                  getRandomeUpperCaseCharecter() +
+                                  getRandomNumber(9) + 
+                console.log(captchaText);
+            }
+
+            var getRandomNumber = (maxValue) => {
+                var randomNumber = Math.round(Math.random() * maxValue);
+                return randomNumber;
+            }
+
+
+            var getRandomeLowerCaseCharecter = () => {
+                var randomIndex = getRandomNumber(lowerCaseChar.length);
+                return lowerCaseChar[randomIndex];
+            }
+
+            var getRandomeUpperCaseCharecter = () => {
+                var randomIndex = getRandomNumber(upperCaseChar.length);
+                return upperCaseChar[randomIndex];
+            }
+            generateCaptcha();
+        </script>
+Question 5: Differnt ways of defining functions in js
+Ans: 
+    Type 1:
+        function functionName() {
+            ... set of instructions
+        }
+    Type 2:
+        var functionName = function() {
+            ... set of instructions
+        }
+    Type 3:
+        var functionName = () => {
+            ... set of instructions.
+        }
+
+Question 6:
+    Explaing session and local storage Objects.
+Ans:
+    localStorage and sessionStorage are predefined objects supported in javascript, using which we could store user preferecnes within the browser cache. 
+    The data stored under localStorage object can be retrived even on refresh or reload of page.
+    The data stored under sessionStorage object can be retrived on reload of page, but the data will be automatically cleared out on reopening of page.
+    The following are predefined methods can be applied on both objects.
+        setItem(key, value)
+        getItem(key)
+        removeItem(key)
+        removeAll();
+
+Question 7:
+    Find Lucky number:
+Ans:
+    <script>
+        var n = 2356;
+        var rem;
+        var luckyNumber = 0;
+        while (n > 0) {
+            rem = n % 10;
+            n = parseInt(n / 10);
+            luckyNumber += rem;
+
+            if (n == 0 && luckyNumber > 9) {
+                n = luckyNumber;
+                luckyNumber = 0;
+            }
+        }
+        console.log(luckyNumber);
+    </script>
+
+Question 8: 
+    Different layouts supported in css 
+Ans:
+    Inline layouts, block level layouts, positioned layouts, Flex layouts, Grid layouts.
+
+Question 9:
+    create layouts:
+Ans:
+    Check whehter html elments created using grid layouts 
+
+Question 10:
+    Jaascript Classes:
+Ans: 
+    'Class' is the keyword using which we can create classes in javascript.
+        Syntax:
+            class ClassName {
+                constructor(optional Params) {
+                    // initializing class variables
+                }
+                method1() {
+                    ...
+                } 
+                method2() {
+                    ..
+                }
+            }
+            var ob1 = new ClassName();
+
+        Example:
+            class AccountDetails {
+                constructor(data) {
+                    this.accountNumber = data.aNumber;
+                    this.accountType = data.aType;
+                    this.accountBalance = data.aBalance;
+                    this.cardsList = data.acardList;
+                    this.loansTaken = data.loansTaken;
+                }
+                setAcountNumber(value) {
+                    this.accountNumber = value;
+                }
+                getAcountNumber(value) {
+                    return this.accountNumber;
+                }
+                setAcountBalance(value) {
+                    this.accountBalance = value;
+                }
+                getAcountBalance(value) {
+                    return this.accountBalance;
+                }
+                ...
+                ...
+            }
+
+Question 11:
+Ans:
+    Oops concepts supported in js:
+        1. Classes: 
+        2. Object:
+        3. Inheritance
+        4. Encapsulation
+        5. Abstraction
+
+        Polimorphism is not supported in js
+    
+    Inheritance in js:
+        class First {
+
+        }
+        class Second extends First {
+
+        }
+    Exceptions in js:
+        using try,catch, finally and throws we can handle both Dynamic and user defined exceptions
+
+        Syntax:
+            try {
+                ...
+                ... // code in which there is a chance to get error
+            } catch(error) {
+
+            }
+            finally 
+            {
+                ..set of instructions to get executed irrelavent of whehter there is error generated or not.
+            }
+
+Question 12:
+    Difference btwn Angular and React 
+Ans:
+    Angular is popular framework used to develop rich UI using Typescript as programming language, Where React is a popular javascript based library uses component based structure to develop web pages.
+    Both supports:
+        Databinding
+        component Based
+        Single page web application structures
+        Reusable services
+        Templating
+        Supports interacting with webservices
+        Directives
+        etc.
+
+    Difference btwn Typescript and Javascript:
+        Typescript is superset of javascript, any js instruction can be exectued within the typescript compiler. But to excute typescript code within the browser, it has to be compiled back to javascript code. None of browser supports executing TS code.
+
+        In js not need to define the type of data, where in typescript we can define the type of data;
+
+            Example:
+                JS -> var a = 10
+                TS -> var a:number = 10;
+
+
+

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Assignment 14
+        </title>
+    </head>
+    <body>
+        <script>
+            var eName, Age, Gender, Dept, basicsal, pf, hra, totalsal;
+
+            function readEmpData() {
+                eName = prompt("Enter user name");
+                Age = prompt("Enter age");
+                Gender = prompt("Enter gender");
+                Dept = prompt("Enter dept");
+                basicsal = prompt("Enter basicsal");
+                basicsal = parseInt(basicsal);
+                getPfHraAndTotal();
+            }
+            function getPfHraAndTotal() {
+                pf = 14/100 * basicsal;
+                hra = 25/100 * basicsal;
+
+                totalsal = pf + hra + basicsal;
+            }
+            
+            function displayEmpDetails() {
+                readEmpData();
+                console.log("eName " + eName);
+                console.log("Age " + Age);
+                console.log("Gender " + Gender);
+                console.log("Dept " + Dept);
+                console.log("Basic sal " + basicsal);
+                console.log("pf is " + pf);
+                console.log("hra is " + hra);
+                console.log("totalsal is " + totalsal);
+                getEmpTax();
+            }
+            
+            function getEmpTax() {
+                if (Gender == 'Male' || Gender == 'male') {
+                    if (totalsal >= 200000) {
+                        console.log("Tax percent is 15%");
+                    } else if (totalsal >= 100000) {
+                        console.log("Tax percent is 10%");
+                    } else if (totalsal >= 50000) {
+                        console.log("Tax percent is 5%");
+                    } else {
+                        console.log("Tax is zero");
+                    }
+                }
+                if (Gender == 'Female' || Gender == 'female') {
+                    if (totalsal >= 200000) {
+                        console.log("Tax percent is 10%");
+                    } else if (totalsal >= 100000) {
+                        console.log("Tax percent is 5%");
+                    } else if (totalsal >= 50000) {
+                        console.log("Tax is zero");
+                    }
+                }
+            }
+            for (var i = 0 ; i < 2 ; i++) {
+            displayEmpDetails(); 
+            }
+        </script>
+    </body>
+</html>

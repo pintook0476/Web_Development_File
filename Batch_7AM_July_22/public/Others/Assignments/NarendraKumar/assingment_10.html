@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            employee sal
+        </title>
+    </head>
+    <body>
+        <h3>
+            employee salory
+        </h3>
+        <script>
+            var name = prompt("name of the emp")
+            var age = prompt("age of the emp")
+            var gender = prompt("gender of the emp")
+            if(gender=="male" || gender=="Male" || gender=="female" || gender ==" Female")
+             {
+               var emploc = prompt("enter location ")
+               var basicsalory = prompt("basicsalory")
+               basicsalory=parseInt(basicsalory)
+               var pf = basicsalory*(20/100)
+               var hra = basicsalory*(24/100) 
+               var total= basicsalory + pf + hra
+               
+               console.log("name of the emp " + name)
+               console.log("age of the emp " + age)
+               console.log("gender of the emp " + gender)
+               console.log("enter location " + emploc)
+               console.log("basicsalory " + basicsalory)
+               console.log("pf " + pf) 
+               console.log("hra " + hra)
+               console.log("total " + total)
+               if(gender=="male" || gender=="Male" ){
+                gender = "male"
+                if(total>=200000){
+                    var etax = total*(15/100)
+                    total = total - etax;
+                     }
+                    else if(total>=100000){
+                    var etax = total*(10/100)
+                    total = total - etax;
+                    }
+                    else if(total>=50000){
+                    var etax = total*(5/100)
+                    total = total - etax
+                    }
+                    else  {
+                    var etax = total*(0/100)
+                    total = total - etax
+                    }
+                }
+                 else  {
+                     gender = "female"
+                    if(total>=200000) {
+                    var etax = total*(10/100)
+                    total = total - etax;
+                     }
+                    else if(total>=100000){
+                    var etax = total*(5/100)
+                    total = total - etax;
+                    }
+                    else if(total>=50000){
+                    var etax = total*(3/100)
+                    total = total - etax
+                    }
+                    else {
+                    var etax = total*(0/100)
+                    total = total - etax
+                    }
+                }
+                console.log("etax " + etax) 
+            }
+            else {
+                console.log("invalid gender")
+                console.log("enter male/Male/female/Female")
+            } 
+                     
+        </script>
+    </body>
+</html>

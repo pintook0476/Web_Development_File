@@ -1,0 +1,55 @@
+.sDetails,.showingData {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px auto;
+    width: 500px;
+    background-color: rgb(185, 185, 185);
+
+}
+ li {
+    border:  1px solid;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: white;
+}
+.marksBlock input {
+    width: 25px;
+}
+.showingData{
+    background-color: cadetblue;
+    display: none;
+}
+.cardHeading {
+    font-size: large;
+    font-weight: bold;
+    color: brown;
+}
+.nameMandateErr {
+    color: red;
+    display: none;
+}
+.ageMandateErr {
+    color: red;
+    display: none;
+}
+.ageNumMandate{
+    color: red;
+    display: none;
+}
+.nameCharMandate {
+    color: red;
+    display: none;
+}
+.classMandateErr {
+    color: red;
+    display: none;
+}
+.marksNumMandate {
+    color: red;
+    display: none;
+}
+.marksMandateErr {
+    color: red;
+    display: none;
+}

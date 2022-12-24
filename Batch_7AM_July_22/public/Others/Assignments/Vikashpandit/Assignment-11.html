@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment-11</title>
+        <body>
+            <script>
+                var name= prompt("Enter your Name: ");
+                var gender= prompt("your Gender: ");
+                var age= prompt("your Age: ");
+                var basic_salary= prompt("Enter your basic salary: ");
+                basic_salary= parseInt(basic_salary);
+
+                var pf = basic_salary* (14/100);
+                var hra = basic_salary* (25/100);
+                var total_salary= basic_salary+ pf+hra;
+
+                if(gender=="male" || gender=="Male")
+                {
+                         console.log("Employee name is: "+ name);
+                         console.log("Your gernder is: "+ gender);
+                         console.log("Your age: "+ age);
+                      if(total_salary=>200000)
+                      {
+                        console.log("Your total salary is: "+ total_salary);
+                        var tax=(15/100)*total_salary;
+                        var new_sal= total_salary- tax;
+                        console.log("your new salary after deducation of tax is: "+ new_sal);
+                     }
+                     else if(total_salary=>100000 && total_salary<200000)
+                     {
+                       var tax=(10/100)*total_salary;
+                       var new_sal= total_salary- tax;
+                        console.log("your new salary after deducation of tax is: "+ new_sal);
+                     }
+                     else if(total_salary=>50000 && total_salary<100000)
+                     {
+                        var tax=(5/100)* total_salary;
+                        var new_sal= total_salary- tax;
+                        console.log("your new salary after deducation of tax is: "+ new_sal);
+                     }
+                     else
+                     {
+                        console.log("no need to pay tax");
+                        console.log("your salary is: "+ total_salary);
+                     }
+                }
+                else if(gender=="female" || gender=="Female")
+                {
+                    console.log("Employee name is: "+ name);
+                         console.log("Your gernder is: "+ gender);
+                         console.log("Your age: "+ age);
+                      if(total_salary=>200000)
+                      {
+                        console.log("Your total salary is: "+ total_salary);
+                        var tax=(10/100)*total_salary;
+                        var new_sal= total_salary- tax;
+                        console.log("your new salary after deducation of tax is: "+ new_sal);
+                     }
+                     else if(total_salary=>100000 && total_salary<200000)
+                     {
+                       var tax=(5/100)*total_salary;
+                       var new_sal= total_salary- tax;
+                        console.log("your new salary after deducation of tax is: "+ new_sal);
+                     }
+                     else if(total_salary<100000)
+                     {
+                        console.log("no need to pay tax");
+                        console.log("your salary is: "+ total_salary);
+                     }
+                }
+                else
+                     {
+                        console.log("enter valid gender");
+                     }
+            </script>
+        </body>
+    </head>
+</html>

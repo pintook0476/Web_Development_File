@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>sum of all odd numbers in array</title>
+    </head>
+    <body>
+        <h1>sum of the elements of an array which all are odd</h1>
+        <script>
+            var declaration = () => { //arrow function
+                var data = [1,2,3,4,5,6,7,8,9,10];
+                operation(data);
+            }
+            var operation = (data) => {
+                var result = 0 ;
+                for ( i = 0 ; i < data.length ; i ++){
+                    if ( data[i] % 2 != 0)
+                    result +=data[i];
+                }
+                output(data , result);
+            }
+            var output = (data ,result) => {
+                console.log(data);
+                console.log("sum of odd array element is : " + result);
+            }
+            declaration();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            var name,age,gender,department,basicsalary,pf,hra,total_salary,tax;
+            name=prompt("enter your name");
+            age=prompt("enter your age");
+            gender=prompt("enter your gender");
+            department=prompt("enter your department");
+            basicsalary=parseInt(prompt("enter your basic salary"));
+            pf=basicsalary*(14/100);
+            hra=basicsalary*(25/100);
+            total_salary=basicsalary+pf+hra;
+            if(gender=="male")
+            {
+                if(total_salary>=200000)
+                {
+                    tax=total_salary*(15/100);
+                    console.log("tax is "+tax);
+                    total_salary=total_salary-tax;
+                    console.log("your salary is "+total_salary);
+                }
+                else if(total_salary>=100000)
+                {
+                    tax=total_salary*(10/100);
+                    console.log("tax is "+tax);
+                    total_salary=total_salary-tax;
+                    console.log("your salary is "+total_salary);
+                }
+                else if(total_salary>=50000)
+                {
+                    tax=total_salary*(5/100);
+                    console.log("tax is "+tax);
+                    total_salary=total_salary-tax;
+                    console.log("your salary is "+total_salary);
+                }
+               else
+               {
+                console.log("no tax ");
+               }
+            }
+            else if(gender=="female")
+            {
+                if(total_salary>=200000)
+                {
+                    tax=total_salary*(10/100);
+                    console.log("tax is "+tax);
+                    total_salary=total_salary-tax;
+                    console.log("your salary is "+total_salary);
+                }
+                else if(total_salary>=100000)
+                {
+                    tax=total_salary*(5/100);
+                    console.log("tax is "+tax);
+                    total_salary=total_salary-tax;
+                    console.log("your salary is "+total_salary);
+                }
+                else
+                {
+                    console.log("no tax");
+                }
+            }
+            else
+            {
+                console.log("no tax");
+            }
+            </script>
+    </body>
+</html>

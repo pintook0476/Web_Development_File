@@ -1,0 +1,49 @@
+.mainTitle {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: underline;
+}
+.pDetailsContainer {
+    border: 1px solid;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    top: 50px;
+}
+
+
+.pImage img {
+    width: 120px;
+    height: 120px;
+}
+.pdetails {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    float: left;
+}
+.pdetails li {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+.actualPrice {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-line: line-through;
+}
+.discountedPrice {
+    color: green;
+    font-weight: bold;
+}
+
+
+.ratingStars img {
+    width: 20px;
+    height: 20px;
+}

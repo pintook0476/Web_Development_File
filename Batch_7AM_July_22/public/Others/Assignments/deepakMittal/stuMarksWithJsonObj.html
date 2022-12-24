@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Student Details With Json Object</h3>
+
+        <script>
+            var sDetails = {
+                getStudentDetails : function() {
+                    this.sName = "Deepak Mittal";
+                    this.gender = "Male";
+                    this.location = "Hyderabad";
+                    this.rollNo = "A-32";
+                    this.marks = [80, 70, 92, 85, 90];
+                    this.calParcentageMarks();
+                },
+                calParcentageMarks : function (){
+                    this.totalMarks = 0;
+                    for(var i = 0; i < this.marks.length; i++){
+                        this.totalMarks += this.marks[i]; 
+                    };
+                    this.avgMarks = this.totalMarks / this.marks.length;
+                    
+
+                },
+
+                displayStudentDetails : function(){
+                    sDetails.getStudentDetails();
+                    console.log("Student Details");
+                    console.log("Student Name - " +  sDetails.sName);
+                    console.log("Student Gender - " + this.gender);
+                    console.log("Student location - " + this.location);
+                    console.log("Student Total Marks " + this.totalMarks);
+                    console.log("Student Percentage " + this.avgMarks + "%");
+                    if(this.avgMarks <= 60){
+                        console.log("You Got Passed");
+                    }else{
+                        console.log("You Got A Surprise");
+                    };
+                    
+
+                }
+            }
+
+            sDetails.displayStudentDetails();
+        </script>
+        
+    </body>
+</html>

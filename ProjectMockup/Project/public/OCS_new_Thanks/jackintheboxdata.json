@@ -1,0 +1,442 @@
+{
+
+   "orderDetails": [ {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0001",
+
+      "Sequencenumber": "0001",
+
+      "Parentserialnumber": "0002",
+
+      "Discount": "0000",
+
+      "Itemquantity": "1",
+
+      "Price": "13.98",
+
+      "positive": "002",
+
+      "description": "Grilled Chicken Salad",
+
+      "items": []
+
+   },
+    {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken ",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":"1.00",
+         "positive":null,
+         "description":"Tamoto",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra onion",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra corn",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   },
+
+   {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":"1.00",
+         "positive":null,
+         "description":"Tamoto",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     
+    {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra corn",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   },
+{
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":"1.00",
+         "positive":null,
+         "description":"Tamoto",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     {
+        "Itemquantity":1,
+        "Price": null,
+        "positive":null,
+        "description":"Extra onion",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra bbq sauce",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":3,
+        "Price": null,
+        "positive":null,
+        "description":"Extra corn",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   },
+
+
+     {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken",
+
+      "items": [{
+        "Itemquantity":1,
+        "Price": "2.00",
+        "positive":null,
+        "description":"Extra Chicken",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   },
+   {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "1",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Tacos",
+
+      "items": [{
+        "Itemquantity":1,
+        "Price": null,
+        "positive":null,
+        "description":"Extra sauce",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+   },
+   {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0001",
+
+      "Sequencenumber": "0001",
+
+      "Parentserialnumber": "0002",
+
+      "Discount": "0000",
+
+      "Itemquantity": "1",
+
+      "Price": "13.98",
+
+      "positive": "002",
+
+      "description": "Grilled Chicken Salad",
+
+      "items": []
+
+   },
+    {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken ",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":"1.00",
+         "positive":null,
+         "description":"Tamoto",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra onion",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":null,
+        "Price": null,
+        "positive":null,
+        "description":"Extra corn",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   },
+   {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0001",
+
+      "Sequencenumber": "0001",
+
+      "Parentserialnumber": "0002",
+
+      "Discount": "0000",
+
+      "Itemquantity": "1",
+
+      "Price": "13.98",
+
+      "positive": "002",
+
+      "description": "Grilled Chicken Salad",
+
+      "items": []
+
+   },
+    {
+
+      "modifier": "0",
+
+      "beverage": "0",
+
+      "food": "1",
+
+      "Entrée": "1",
+
+      "Serialnumber": "0003",
+
+      "Sequencenumber": "0003",
+
+      "Parentserialnumber": "0001",
+
+      "Discount": "0000",
+
+      "Itemquantity": "2",
+
+      "Price": "13.98",
+
+      "positive": "001",
+
+      "description": "Sourdough Grilled Chicken ",
+
+      "items": [{
+         "Itemquantity":2,
+         "Price":"1.00",
+         "positive":null,
+         "description":"Tamoto",
+         "Ordertax":null,
+         "Ordertotal":null
+     },
+     {
+        "Itemquantity":2,
+        "Price": null,
+        "positive":null,
+        "description":"Extra onion",
+        "Ordertax":null,
+        "Ordertotal":null
+    },
+    {
+        "Itemquantity":6,
+        "Price": null,
+        "positive":null,
+        "description":"Extra corn",
+        "Ordertax":null,
+        "Ordertotal":null
+     }]
+
+
+   }],
+
+   "metaInfo": {
+      "Ordertax": 40.2,
+      "Ordertotal": 360.75,
+      "totalOrderedItems": 9,
+      "dayUpSell_img": "images/Day_Upsell.jpg",
+      "dayUpSell_img_small": "images/Day_Upsell_small.png"
+
+   }
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    function setEmpData() 
+    {
+      var ename,dept,bs,hra,da,ta,ts;
+      ename='sukumar rajaka';
+      dept='MCA';
+      bs=7000;
+      hra=2000;
+      da=1000;
+      ta=500;
+      ts=calTotalSal(bs,hra,da,ta);
+      console.log('Total salary of sukumar is:'+ts);
+    }
+    function calTotalSal(bs,hra,da,ta)
+    {
+      return bs+hra+da+ta;
+    }
+    setEmpData();
+    
+    </script>
+</body> 
+</html>

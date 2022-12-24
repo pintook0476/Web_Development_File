@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment-6</title>
+    <link rel="stylesheet" href="assignment6.css" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .header,
+      .container,
+      .footer {
+        border: 3px solid;
+        text-align: center;
+        margin: 5px;
+        font-weight: bold;
+        padding: 5px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        background-color: #b8e8fc;
+      }
+      .footer {
+        bottom: 10px;
+        background-color: #9e7676;
+      }
+      .block {
+        width: 150px;
+        height: 150px;
+        border: 3px solid;
+        position: relative;
+        display: inline-block;
+      }
+      .container {
+        top: 50px;
+        bottom: 50px;
+        overflow: auto;
+        background-color: white;
+      }
+      .top-bottom-layer {
+        height: 100px;
+        width: 100%;
+      }
+      .block1,
+      .block2 {
+        float: left;
+        left: 5px;
+        background-color: #ff6d28;
+      }
+      .block {
+        z-index: 1000;
+      }
+      .block2 {
+        left: -90px;
+        top: 70px;
+        background-color: #815b5b;
+        z-index: 100;
+      }
+      .block4,
+      .block3 {
+        float: right;
+        background-color: #ff6d28;
+        z-index: 100;
+      }
+      .block3 {
+        z-index: 1000;
+      }
+      .block4 {
+        right: -90px;
+        top: 70px;
+        background-color: #815b5b;
+        z-index: 100;
+      }
+      .middle {
+        position: relative;
+        top: 100px;
+        display: block;
+      }
+      .blockm {
+        width: 150px;
+        height: 150px;
+        border: 3px solid;
+        position: relative;
+        margin: auto;
+      }
+      .block8 {
+        left: 90px;
+        bottom: 60px;
+        background-color: #9f8772;
+      }
+      .block9 {
+        left: -90px;
+        bottom: 215px;
+        background-color: #d8d9cf;
+      }
+      .block6 {
+        left: 90px;
+        top: 60px;
+        background-color: #e26868;
+      }
+      .block5 {
+        left: -90px;
+        top: 215px;
+        background-color: #5f9df7;
+      }
+      .block7 {
+        z-index: 100;
+        background-color: #ff731d;
+      }
+      .block5,
+      .block6,
+      .block8,
+      .block9 {
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Block Game</div>
+    <div class="container">
+      <div class="top-layer">
+        <div class="block block1"></div>
+        <div class="block block2"></div>
+
+        <div class="block block3"></div>
+        <div class="block block4"></div>
+      </div>
+      <div class="middle">
+        <div class="blockm block5"></div>
+        <div class="blockm block6"></div>
+        <div class="blockm block7"></div>
+        <div class="blockm block8"></div>
+        <div class="blockm block9"></div>
+      </div>
+      <div class="top-bottom-layer">
+        <div class="block block1"></div>
+        <div class="block block2"></div>
+
+        <div class="block block3"></div>
+        <div class="block block4"></div>
+      </div>
+    </div>
+    <div class="footer">@Copy Rights 2022</div>
+  </body>
+</html>

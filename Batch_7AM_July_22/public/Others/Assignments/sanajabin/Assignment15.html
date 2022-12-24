@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+</head>
+<body>
+    <h2>Employee Details using Private data</h2>
+    <script>
+        function EmpDetails(){
+            var eName,eAge,eGender,eDept,basicSalary
+            eName = prompt("Enter Employee Name");
+            eAge = prompt("Enter Employee Age");
+            eGender = prompt("Enter Employee Gender");
+            eDept = prompt("Enter Dept Name");
+            basicSalary = prompt("Enter basicSalary");
+            basicSalary=parseInt(basicSalary)
+            totalSalary=calculateEmpDetails(basicSalary);
+            userEmpDetails(eName,eGender,eDept,basicSalary,totalSalary);
+        }
+        function  calculateEmpDetails (basicSalary){
+            var pf ,hra, totalSalary;
+            var pf = (14*basicSalary)/100 ;
+            var hra = (25*basicSalary)/100 ;
+            totalSalary=pf+hra+basicSalary;
+            return totalSalary;
+        }
+        function userEmpDetails(eName,eGender,eDept,basicSalary,totalSalary){
+            console.log("Employee Name: " + eName );
+            console.log ("Employee Gender: "  +eGender);
+            console.log("Dept Name: " + eDept) ;
+            console.log("Basic Salary : " + basicSalary);
+            console.log("totalSalary: " + totalSalary);
+            taxPercentage(eGender);
+         }
+        function taxPercentage(eGender){
+            if (eGender == 'Male' || eGender == 'male') 
+            if (totalSalary >= 200000) {
+                console.log('Tax Percentage is 15%');
+            } else if (totalSalary >= 100000) {
+                console.log('Tax Percentage is 10%');
+            } else if (totalSalary >= 50000) {
+                console.log('Tax Percentage is 5%');
+            } else if (totalSalary < 50000) {
+                console.log('No Need to Pay tax');
+            }
+            if (eGender == 'Female' || eGender == 'female') 
+            if (totalSalary >= 200000) {
+                console.log('Tax Percentage is 10%');
+            } else if (totalSalary >= 100000) {
+                console.log('Tax Percentage is 5%');
+            } else if (totalSalary >= 50000) {
+                console.log('No Need to Pay Tax')
+            }
+           }
+        EmpDetails();
+    </script>
+</body>
+</html>

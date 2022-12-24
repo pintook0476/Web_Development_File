@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>
+        emp details
+    </title>
+    <style>
+    h2{
+       border: 1px solid;
+       text-align: center;
+       width: 500px;
+       background-color: aqua;
+      border-style:groove ;
+    }
+    </style>
+</head>
+<body>
+       <h2>Emp Details</h2>
+    <script>
+        var ename = prompt("Enter the ename");
+        var age = prompt("Enter the age");
+        var dept = prompt("Enter the dept");
+        var basicsal = prompt("Enter the basicsal");
+        basicsal = parseInt(basicsal);
+        var pf = (basicsal * 14)/100;
+        var hra = (basicsal * 20)/100;
+        var totalsal = pf + hra + basicsal;
+        console.log("Empname  :" + ename);
+        console.log("Age  :" + age);
+        console.log("Dept :" + dept);
+        console.log("Basicsal : " + basicsal);
+        console.log("Pf :" + pf);
+        console.log("Hra :" + hra);
+        console.log("Totalsal :" + totalsal);
+    </script>
+</body>
+</html>

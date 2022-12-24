@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div>WAP to check wheather user given number is prime or not</div>
+<body>
+    <script>
+    var userNum = prompt('Enter a number');
+    var countTracker = 0, i;
+    if(userNum > 1)
+    {
+        for(i = 2;i <= userNum;i++)
+        {
+            if(userNum % i == 0){
+                countTracker++;
+            }
+        }
+        if(countTracker > 1)
+        {
+            console.log("userNum is not a prime");
+        }else{
+            console.log("userNum is a prime");
+        }
+    }
+</script>
+</body>
+</html>

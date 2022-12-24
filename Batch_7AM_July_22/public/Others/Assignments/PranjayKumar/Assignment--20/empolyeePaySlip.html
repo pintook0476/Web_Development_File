@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Employee Pay Slip</title>
+
+    <style>
+      .title {
+        width: 400px;
+        height: -50px;
+        background-color: burlywood;
+        color: rgb(45, 12, 12);
+        border: 3px solid blue;
+        text-align: center;
+        margin-left: 50px;
+      }
+      .title2 {
+        text-align: center;
+        color: rgb(60, 60, 62);
+      }
+      .inputBox {
+        width: 400px;
+        background-color: darkgoldenrod;
+        color: rgb(7, 7, 87);
+        border: 3px solid red;
+        margin-left: 50px;
+      }
+      .displayEmpData {
+        width: 400px;
+        background-color: darkgoldenrod;
+        color: rgb(7, 7, 87);
+        border: 3px solid red;
+        margin-left: 550px;
+        margin-top: -410px;
+        display: none;
+      }
+      ul li {
+        list-style-type: none;
+        border: 2px solid yellow;
+        margin: 5px;
+        padding: 10px;
+        margin-left: -30px;
+      }
+    </style>
+    <script src="employeePaySlip.js"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h2>Generate Employee Pay Slip</h2>
+    </div>
+    <div class="inputBox">
+      <ul>
+        <li>
+          Name:
+          <input type="text" id="eName" />
+        </li>
+        <li>
+          Age:
+          <input type="text" id="eAge" />
+        </li>
+        <li>
+          Gender:
+          <input checked type="radio" name="gender" value="male" />male
+          <input type="radio" name="gender" value="female" />Female
+        </li>
+        <li>
+          Dipartment:
+          <input type="text" id="eDpt" />
+        </li>
+        <li>
+          Basic Salary:
+          <input type="text" id="eBasicSalary" />
+        </li>
+        <li>
+          <input type="button" value="Create Pay Slip"onclick="paySlipData.readEmpData ()"/>
+        </li>
+      </ul>
+    </div>
+    <div class="displayEmpData">
+      <div class="title2">
+        <h2>IBM Employee Pay Slip</h2>
+      </div>
+      <ul>
+        <li>Employee Name: <span id="showName"></span></li>
+        <li>Employee Age: <span id="showAge"></span></li>
+        <li>Employee Gender: <span id="showGen"></span></li>
+        <li>Department: <span id="showDpt"></span></li>
+        <li>Basic Salary: <span id="showBSal"></span></li>
+        <li>Tax[%]: <span id="showTax"></span></li>
+        <li>In Hand Salary: <span id="showNetSal"></span></li>
+      </ul>
+      <div class="title2">
+        <h2>Thank You Dear Employee</h2>
+      </div>
+    </div>
+  </body>
+</html>

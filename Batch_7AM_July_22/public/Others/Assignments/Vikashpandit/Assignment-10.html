@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Students Details
+        </title>
+        <body>
+            <script>
+                var studentNmae= prompt('Enter student name');
+                var Rollno= prompt("enter your roll no");
+                var mark1=prompt("Enter your first subject mark");
+                var mark2=prompt("Enter your second subject mark");
+                var mark3=prompt("Enter your third subject mark");
+
+                var Rollno= parseInt(Rollno);
+                var mark1= parseInt(mark1);
+                var mark2= parseInt(mark2);
+                var mark3= parseInt(mark3);
+                 
+                var total= mark1+mark2+mark3;
+                var Avg= total/3;
+
+                console.log("Student name is:" + studentNmae);
+                console.log("Rollno: "+ Rollno);
+                console.log("subject one mark:"+ mark1);
+                console.log("subject two mark:"+ mark2);
+                console.log("subject three mark:"+ mark3);
+                console.log("your total mark is:"+ total);
+                console.log("your average is:"+ Avg);
+                if(Avg=>40){
+                    console.log("you are pass");
+                }
+                if(Avg<=39){
+                    console.log("sorry you are fail");
+                }
+            </script>
+        </body>
+    </head>
+</html>

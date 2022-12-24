@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(216, 216, 216);
+}
+
+.logo{
+    width: 161px;
+    height: 88px;
+    position: absolute;
+    left: 20px;
+}
+.header{
+    background-color: rgb(0, 27, 100);
+    width: auto;
+    height: 98px;
+    margin: 0px;
+    overflow-x: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#searchbox{
+    position: absolute;
+    left: 230px;
+    top : 28px;
+    width:650px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid greenyellow;
+    font-size: 20px;
+}
+#searchbtn{
+    position: absolute;
+    left: 890px;
+    top : 28px;
+    background-color: greenyellow;
+    padding: 10px;
+    width: 100px;
+    height: 55px;
+    color: red;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px greenyellow;
+    cursor: pointer;
+}
+#searchbtn:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid greenyellow;
+    
+}
+.icons{
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    left: 1040px;
+    color:red;
+}
+
+.icons li {
+    float: left;
+    border: 1px solid whitesmoke;
+    color: white;
+    margin: 5px ;
+    padding: 5px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    color: greenyellow;
+}
+.icons li:hover{
+    color: red;
+    background-color: greenyellow;
+    
+}
+.container1{
+    width: 250px;
+    height: 1170px;
+    border-right: 4px solid greenyellow;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(0, 27, 100);
+    float: left;
+    margin-top: 20px;
+    position: relative;
+    top: 100px;
+}
+.container1  div span{
+    color: brown;
+    background-color: greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.container1 li {
+    color: red;
+    padding: 5px;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    border: 1px solid;
+    list-style-type:circle;
+    cursor: pointer;
+    background-color: rgb(151, 176, 164);
+    
+}
+.container1 li:hover{
+    color: yellowgreen;
+    background-color: red;
+}
+.products1{
+    width: 1200px;
+    height: 400px;
+    margin-top: 10px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    top: 100px;
+    
+}
+.subcontainers img{
+    width: 270px;
+    height: 200px;
+    text-align: center;
+
+}
+
+.subcontainers{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+
+}
+.subcontainers .title{
+    font-size: 25px;
+    font-weight: bolder;
+    color: brown;
+    text-align: center;
+}
+.subcontainers .splprice{
+    font-size: 20px;
+    font-weight: bold;
+}
+.subcontainers .dprice{
+    text-decoration-line: line-through;
+}
+.subcontainers:hover{
+    background-color: white;
+}
+.cover {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(33, 9, 56, 0.9)),url(../Img/cover.jpg);
+    width: auto;
+    height: 600px;
+    position: relative;
+    top: 100px;
+}
+
+.cover img {
+    width: 420px;
+    height: 400px;
+    position: relative;
+    left: 100px;
+    top: 120px;
+}
+.container1 , .subbtn{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ending{
+    width: 1550px;
+    height: 350px;
+    background-color: rgb(10, 18, 43);
+    float: right;
+    position: absolute;
+    bottom: -1550px;
+    text-align: center;
+}
+.info{
+    margin: 50px;
+    color: aliceblue;
+    float: left;
+}
+.info div {
+    padding: 7px;
+    font-size: 20px;
+}
+h1{
+    text-decoration: underline;
+}
+.ending span{
+    text-align: right;
+    color: antiquewhite;
+    float: left;
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    left: 500px;
+    border: 1px solid;
+}
+
+#payment{
+    position: relative;
+    bottom: 40px;
+    right: 250px;
+
+}
+h2{
+    position: absolute;
+    color: #fff;
+    top: 278px;
+    left: 347px;
+}

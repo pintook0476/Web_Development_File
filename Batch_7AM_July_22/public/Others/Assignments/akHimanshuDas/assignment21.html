@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Assignment 21</title>
+    </head>
+    <body>
+        <h3>Sum of all the odd number inside an array</h3>
+        <script>
+            var dataInput=() =>{
+                var data=[1,2,3,4,5,6,7,8,9];
+                var sum=calculatingSumOdd(data);
+                console.log("Sum of all the odd number insdide an array= "+sum);
+            }
+            var calculatingSumOdd=(mark) =>{
+                var sum=0;
+                for(var i=0;i<mark.length;i++){
+                    if(mark[i]%2==0){
+                            sum+=mark[i];
+                    }
+                }
+                return sum;
+            }
+            dataInput();
+        </script>
+    </body>
+</html>

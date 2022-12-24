@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empName="raj",age,gender,department,basic_Salary,TotalSalary,annualsalary;
+        var EmployeeDetails = () =>{
+            age = 22;
+            department = "it sup";
+            gender = "male";
+            basic_Salary = 50000;
+        }
+        var CalcSalary = () =>{
+            pf =basic_Salary*0.12;
+            hra = basic_Salary*0.24;
+            TotalSalary = basic_Salary+pf+hra;
+            annualsalary = TotalSalary*12;
+        }
+        var displayDetails = () =>{
+        console.log("empname is " +empName);
+        console.log("age is " +age);
+        console.log("gender is "+gender);
+        console.log("department is " +department);
+        console.log("basicsalary is "+basic_Salary);
+        console.log("annualsalary is "+annualsalary);
+        }
+        var CalcTax = () =>{
+            if (gender == "male"){
+                if (annualsalary >500000){
+                    console.log("tax is" +annualsalary*0.15);
+                }else if (annualsalary > 300000){
+                    console.log("tax is" +annualsalary*0.10);
+                }else {
+                    console.log("tax is : 0");
+                }
+            }else {
+                if (annualsalary > 500000){
+                    console.log("tax is" +annualsalary*0.10);
+                }else {
+                    console.log("tax is : 0")
+                }
+            }
+        }
+        EmployeeDetails();
+        CalcSalary();
+        CalcTax();
+        displayDetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Start Of Execution");
+            var n = prompt("Enter a number");
+            var n = parseInt(n)
+            var count = 0;
+                for (var i = 1; i <= n; i++) {
+                    var rem = n % i;
+                    if (rem == 0) {
+                        count ++;
+                    }
+                }
+                if (count == 2) { //u got only twice as zero reminder
+                    console.log("prime number " );  
+                   
+                } else {
+                    console.log("not a prime number ");
+                }
+                console.log("End")
+        </script>
+    </body>
+</html>

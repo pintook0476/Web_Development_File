@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome numbers from 1 to 1000</title>
+    </head>
+    <body>
+        <script>
+            for(i=1;i<=1000;i++){
+                var sum;
+                var newNum = 0;
+                var palindrome = i;
+                while(palindrome>0){
+                    sum = i%10;
+                    newNum = newNum*10+sum;
+                    palindrome = parseInt(palindrome/10);
+                }
+                if(newNum==i){
+                    console.log(newNum);
+                }
+            }
+        </script>
+    </body>
+</html>

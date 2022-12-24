@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total No of Values in an array without using length property</title>
+</head>
+<body>
+    <script>
+        var a = [10,3,5,"H",true,44,66,77,"L",false];
+        console.log("given array " +a);
+
+        //find out no of values
+
+        var temp = 0;
+        for (var i=0; a[i]!=undefined;i++){
+        temp=temp+1;
+        }
+        console.log("size of given array "+temp);
+    
+    </script>
+
+    
+</body>
+</html>

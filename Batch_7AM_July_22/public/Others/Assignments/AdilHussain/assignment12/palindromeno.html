@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var rev = 0;
+        var b = 0;
+        var c;
+        var a = prompt("enter a no");
+        a = parseInt(a);
+        c = a;
+        while (a != 0) {
+
+            b = a % 10;
+            rev = rev * 10 + b;
+
+            a = a / 10;
+            a = parseInt(a);
+        }
+        if (rev == c) {
+            document.write("it is palindrome no");
+        } else {
+            document.write("it is not palindrome no");
+        }
+    </script>
+</body>
+
+</html>

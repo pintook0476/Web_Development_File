@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMploye pay slip</title>
+    <link rel="stylesheet" href="./employepayslip.css">
+</head>
+
+<body>
+    <div class="block1">
+        <div class="sec1">
+            Employe Pay slip Generator
+        </div>
+        <div>
+            <div>
+                <div class="edetails">
+                    Employe Name :
+                </div>
+                <input type="text" placeholder="Enter Name" id="ename">
+            </div>
+            <div>
+                <div class="edetails">
+                    Employe age :
+                </div>
+                <input type="text" placeholder="Enter age" id="eage">
+            </div>
+            <div>
+                <div class="edetails">
+                    Gender :
+                </div>
+                <input type="radio" name="Gender" value="Male" checked >Male
+                <input type="radio" name="Gender" value="Female">Female
+            </div>
+            <div>
+                <div class="edetails">
+                    Department :
+                </div>
+                <select name="" id="department">
+                    <option value="IT" >IT</option>
+                    <option value="Mechanical" >Mechanical</option>
+                    <option value="Technician" >Technician</option>
+                </select>
+            </div>
+            <div>
+                <div class="edetails">
+                    Employe Id :
+                </div>
+                <input type="text" placeholder="Enter Id" id="eid">
+            </div>
+            <div>
+                <div class="edetails">
+                    Basic Salary :
+                </div>
+                <input type="text" id="salary" placeholder="Enter salary">
+            </div>
+            <div>
+                <input type="button" id="submit" value="Submit" onclick="edata();">
+            </div>
+
+        </div>
+    </div>
+    <div class="block2 hide">
+        <div class="sec1">
+            Employe Pay slip Generator
+        </div>
+        <div>
+            <div>
+                <div class="edetails">
+                    Employe Name :
+                </div>
+                <span id="enameout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    Employe age :
+                </div>
+                <span id="egeout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    Gender :
+                </div>
+                <span id="genderout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    Department :
+                </div>
+                <span id="departmentout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    Employe Id :
+                </div>
+                <span id="eidout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    Basic Salary :
+                </div>
+                <span id="salaryout"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                    totalsalary :
+                </div>
+                <span id="total"></span>
+            </div>
+            <div>
+                <div class="edetails">
+                 Tax:
+                </div>
+                <span id="tax"></span>
+            </div>
+
+        </div>
+    </div>
+    <script src="./employ.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	  <meta charset="UTF-8">
+	  <meta name="Generator" content="EditPlus®">
+	  <meta name="Author" content="">
+	  <meta name="Keywords" content="">
+	  <meta name="Description" content="">
+	  <title>Float_Prperties</title>
+	  		<style>
+				.block{
+				
+					text-align:center;
+					width:100px;
+					height:100px;
+					margin:3px;
+				}
+				.block1{
+					background:red;
+					float:left; 
+				}
+				.block2{
+					background:yellow;
+					float:left;
+				}
+				.block3{
+					background:blue;
+					float:right;
+				}
+				.block4{
+					background:green;
+					float:right;
+					clear:both;	
+				}
+				.block5{
+					background:orange;
+					clear:both;	
+					float:left;
+				}
+				.block6{
+					background:pink;
+					float:right;
+				}
+				.block7{
+					background:lime;
+					clear:both;
+					float:left;
+					
+				}
+				.block8{
+					background:brown;
+					float:left;
+				}
+				.block9{
+					background:grey;
+					float:right;
+				}
+				.block10{
+					background:gold;
+					clear:both;
+					float:left;
+				}
+				.block11{
+					background:purple;
+					float:right;
+				}
+				h2{
+					text-align:center;
+					width:500px;
+					border:2px ridge;
+					margin:auto;
+				}
+
+			</style>
+ </head>
+ <body>
+ 		<h2>BLOCK GAME</h2>
+ 		<div class="block block1"> BLOCK-1</div>
+		<div class="block block2"> BLOCK-2</div>
+		<div class="block block3"> BLOCK-3</div>
+		<div class="block block4"> BLOCK-4</div>
+		<div class="block block5"> BLOCK-5</div>
+		<div class="block block6"> BLOCK-6</div>
+		<div class="block block7"> BLOCK-7</div>
+		<div class="block block8"> BLOCK-8</div>
+		<div class="block block9"> BLOCK-9</div>
+		<div class="block block10"> BLOCK-10</div>
+		<div class="block block11"> BLOCK-11</div>
+		
+ </body>
+</html>

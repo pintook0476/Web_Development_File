@@ -1,0 +1,49 @@
+<html>
+    <head> 
+        <title> Date Formats Assignment </title>
+    </head>    
+    <body> 
+        Press F12 
+        <script> 
+            var todaysdate = new Date ;
+            console.log(todaysdate);
+            var listmonths= ['jan','feb','march','april','may','june','july','aug','sept','oct','nov','dec'];
+            var listmonthsfull= ['january','febuary','march','april','may','june','july','august','september','october','november','december'];
+            var listdays =[ 'sun','mon','tues','wed','thus','fri','sat'];
+            var listdaysfull =[ 'sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+            //formats-
+            //mm-dd-yyyy
+            var ex = todaysdate.getMonth() + '-' + todaysdate.getDate() + '-' + todaysdate.getFullYear();
+                console.log(ex);
+            //1.aug, 30th 2022
+            var firstone = listmonths[todaysdate.getMonth()] + ',' + todaysdate.getDate() + 'th' + todaysdate.getFullYear(); 
+                console.log(firstone);
+            //2.august, 30th 2022
+            var second = listmonthsfull[todaysdate.getMonth()] + ',' + todaysdate.getDate() + 'th' +todaysdate.getFullYear();
+                console.log(second);
+            //3. tue, Aug 30th 2022
+            var third = listdays[todaysdate.getDay()] + ',' + listmonths[todaysdate.getMonth()]+' '+todaysdate.getDate() + ' '+ todaysdate.getFullYear();
+                console.log(third);
+            //4.tuesdey, August 30th 2022
+            var forth = listdaysfull[todaysdate.getDay()]+','+listmonthsfull[todaysdate.getMonth()]+' '+todaysdate.getDate()+' '+ todaysdate.getFullYear();
+                console.log(forth);
+            //5.30/08/2022
+            var fifth = todaysdate.getDate()+'/'+todaysdate.getMonth()+'/'+todaysdate.getFullYear();
+                console.log(fifth);
+            //6.30th Aug , 2022
+            var sixth   = todaysdate.getDate()+' '+listmonths[todaysdate.getMonth()]+','+ todaysdate.getFullYear();
+                console.log(sixth);
+            //7.30th Aug, 2022 09:30:10
+            var seventh = todaysdate.getDate()+' '+listmonths[todaysdate.getMonth()]+','+ todaysdate.getFullYear()+' '+todaysdate.getHours()+':'+todaysdate.getMinutes()+
+                          ':'+todaysdate.getSeconds();
+                console.log(seventh);
+            //8.Aug/30/2022 10:20
+            var eigth = listmonths[todaysdate.getMonth()]+'/'+todaysdate.getDay()+'/'+todaysdate.getFullYear()+' '+ todaysdate.getHours()+':'+todaysdate.getMinutes();
+                console.log(eigth);
+            //9.30-Aug-2022 22:02:46
+            var ninth = todaysdate.getDate()+'-'+listmonths[todaysdate.getMonth()]+'-'+todaysdate.getFullYear()+' '+todaysdate.getHours()+':'+todaysdate.getMinutes()+
+                          ':'+todaysdate.getSeconds();
+                console.log(ninth);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Inheritance Concept Between Staric And Dynamic</h3>
+
+        <script>
+            var studentDetails = {
+                name : "Deepak",
+                age : 25,
+                location : "Hyderabad"
+            };
+
+            var sDetails = Object.create(studentDetails);
+
+            console.log(sDetails);
+            console.log(sDetails.name);
+            console.log(studentDetails.name);
+
+        </script>
+        
+    </body>
+</html>

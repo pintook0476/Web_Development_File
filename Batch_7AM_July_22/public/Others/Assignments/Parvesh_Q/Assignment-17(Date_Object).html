@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-17 </title>
+</head>
+<body><h2>Finding Date Object Using pre Defined Methods, Goto Console Window</h2>
+
+    <script>
+
+        function format1 () // Aug, 31th 2022
+        {
+            var present_date = new Date();
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var date_format_1 = m[present_date.getMonth()] + ',' + present_date.getDate() + 'th ' + present_date.getFullYear() ;
+
+            console.log(date_format_1);
+        }
+        format1();
+
+        function format2 ()  // August, 30th 2022
+        {
+            var present_date = new Date();
+            var m_1 = ['January', 'February','March','April','May','June','July','August','September','October','November','December'] ;
+            var date_format_2 = m_1[present_date.getMonth()] + ', ' + present_date.getDate() + 'th ' + present_date.getFullYear() ;
+
+            console.log(date_format_2);
+        }
+        format2();
+
+        function format3 () // Tue, Aug 30th 2022
+        {
+            var present_date = new Date();
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var d= ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+            var date_format_3 = d[present_date.getDay()] + ', '  + m[present_date.getMonth()] + ' '+ present_date.getDate() + 'th '+ present_date.getFullYear();
+
+            console.log(date_format_3);
+        }
+        format3();
+
+        function format4 () //tuesday august 30th 2022
+        {  
+            var present_date = new Date();
+            var d1 = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            var m_1 = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','August','Sept','Oct','Nov','Dec'] ;
+            var date_format_4 = d1[present_date.getDay()] + ', '  + m_1[present_date.getMonth()] + ' '+ present_date.getDate() + 'th '+ present_date.getFullYear();
+
+            console.log(date_format_4);
+        }
+        format4();
+
+        function format5() //     30/08/2022
+        {
+            var present_date = new Date();
+            var  num = [ '1','2','3','4','5','6','7','8','9','10', '11','12' ];
+            var date_format_5 = present_date.getDate() + '/' + num[present_date.getMonth()] + '/' + present_date.getFullYear();
+
+            console.log(date_format_5);
+        }
+        format5();
+
+        function format6 ()  // 30th Aug, 2022
+        {
+            var present_date = new Date();
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var date_format_6 = present_date.getDate() + 'th ' + m[present_date.getMonth()] + ', ' + present_date.getFullYear();
+
+            console.log(date_format_6);
+        }
+        format6();
+
+        function format7()  // 30th Aug, 2022 time
+        {
+            var present_date = new Date();
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var date_format_7 = present_date.getDate() + 'th ' + m[present_date.getMonth()] + ', ' + present_date.getFullYear() + ' ' + present_date.getHours() + ':' + present_date.getMinutes() + ':' + present_date.getSeconds();
+
+            console.log(date_format_7); 
+        }
+        format7();
+
+        function format8 ()   // Nov /30/2022 
+        {
+            var static_date = new Date(' Nov/30/2020 15:45 ');
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var date_format_8 = m[static_date.getMonth()] + '/' + static_date.getDate() + '/' + static_date.getFullYear() + ' ' + static_date.getHours() + ':' + static_date.getMinutes();
+            
+            console.log(date_format_8); 
+        }
+        format8 ();
+
+        function format9 ()   // 26-Jan-2020 15:45:30
+        {
+            var static_date = new Date(' Jan/26/2020 15:45:30 ');
+            var m = ['Jan', 'Feb','Mar','Apr','MAy','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] ;
+            var date_format_9 =  static_date.getDate() + '-' + m[static_date.getMonth()] + '-'  + static_date.getFullYear() + ' ' + static_date.getHours() + ':' + static_date.getMinutes() + ':' + static_date.getSeconds();
+            console.log(date_format_9); 
+        }
+        format9 ();
+    </script>  
+    
+</body>
+</html>

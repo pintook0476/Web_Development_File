@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>parameter passing</title>
+</head>
+<body> 
+    <script>
+
+              /*  function para() {
+                    let first=12;
+                    let second=14;
+                    let temp=add(first,second);
+                    console.log(temp);
+                    let temp1=mul(first,second);
+                    console.log(temp1);
+                }
+                function add(a,b){
+                  
+                     let res= a + b;
+                     return res;
+                }
+                function mul(p,q){
+                 
+                    let res= p * q;
+                    return res;
+                }*/
+              /*  function test(12,78){
+                    console.log(arguments);
+                }
+                function addValues(34,78,23,33,55,12){
+                    var result = 0;
+                    for(var i = 0; i < arguments.length;i++){
+                        result += arguments[i];
+                    }
+                    console.log(result);
+                }
+               
+                addValues();
+                test();*/
+                /*global variable decla*/
+
+
+
+                function toread(){
+                    var ename=prompt("Enter employee name");
+                    var eage=prompt("enter age");
+                    var gender=prompt("enter gender");
+                    var basicsal=prompt("enter basic salary");
+                    basicsal=parseInt(basicsal);
+        /*actual parameter*/
+                  tocalculate(ename,eage,gender,basicsal);
+                    
+                }
+
+                function tocalculate(en,ea,eg,b){
+                   
+                    var pf=(b*0.2);
+                    var hra=(b*0.4);
+                    pf=parseInt(pf);
+                    hra=parseInt(hra);
+                    var total=(pf+hra+b);
+         /*actual parameter*/
+                    view(en,ea,eg,b,pf,hra,total);
+                
+                }
+
+                function view(en,ea,eg,b1,p1,h1,t1){
+                    console.log("user name is:-"+ en);
+                    console.log("user age is:-"+ ea);
+                    console.log("user gender is:-"+ eg);
+                    console.log("the basic salary is"+ b1);
+                    console.log("the pf is"+p1);
+                    console.log("the hra is"+h1);
+                    console.log("the total salary is"+t1);
+                }
+        /*function calling*/
+                toread();
+    </script>
+      
+    
+</body>
+</html>

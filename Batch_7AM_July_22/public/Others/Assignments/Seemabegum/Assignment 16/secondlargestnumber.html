@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second largest number </title>
+</head>
+<body>
+    <script>
+       // 5. write a program to find out the second largest number from the given array//
+    var secondlargestnumber = ()=>{
+        var ary = new Array(2,5,6,4,33,45,67,89,23,45,12,34,69,9,99 ,100);
+        var largestnumber = ary[0];
+        var seconflarnumber = ary[0];
+        for ( var i = 0 ; i < ary.length; i ++){
+            if (ary[i] > largestnumber ) {
+               
+                seconflarnumber = largestnumber;
+                largestnumber = ary[i];
+                
+            }
+            else if ( ary[i] > seconflarnumber){
+                seconflarnumber = ary[i];
+
+            }
+        }
+        console.log("the largest number is " + largestnumber);
+        console.log("the second largest number is " + seconflarnumber);
+
+
+    }
+    secondlargestnumber  ();
+    
+    </script>
+    
+</body>
+</html>

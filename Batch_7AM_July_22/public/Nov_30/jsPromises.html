@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+            <script>
+                var timeToStartClass = '7:00';
+                var mypromise = new Promise((resolved, rejected) => {
+                    var myWkuptime = '9:00';
+                    if (myWkuptime == timeToStartClass ) {
+                        setTimeout(() => {
+                            resolved();
+                        }, 3000);
+                        
+                    } else {
+                        rejected();
+                    }
+                });
+                
+                
+                mypromise.then(() => {
+                    console.log("Resolved - > go and attend the class");
+                }, () => {
+                    console.log("Rejected -> go back to room and do practice");
+                }).catch(() => {
+                    // only gets executed in case of error
+                    console.log("Rejected -> go back to room and do practice");
+                }).finally(() => {
+                    console.log("Finally gt executed")
+                });
+
+            </script>
+    </body>
+</html> 

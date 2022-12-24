@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            margin: 10px;
+        }
+        #submitDetails{
+            margin-left: 140px;
+        }
+        .error{
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+            display: none;
+        }
+        #displayR{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>Input Key Validation</h3>
+    <div>
+        <li>Enter First Value : <input type="text" id="fValue" onkeypress="return validateData(event, '#fvalErr')">
+        <div class="error" id="fvalErr">Only Nubmers Allowed</div></li>
+
+        <li>Enter Second Value : <input type="text" id="sValue" onkeypress="return validateData(event, '#svalErr')">
+        <div class="error" id="svalErr">Only Nubmers Allowed</div></li>
+
+        <li><input type="button" id="submitDetails" value="Addition" onclick="doAddition()"></li>
+        <li id="displayR">Sum of Value is : <span class="displayResult"></span></li>
+    </div>
+
+    <script>
+        var doAddition = () => {
+            var firstV = document.querySelector("#fValue").value;
+            firstV = parseInt(firstV);
+            var secondV = document.querySelector("#sValue").value;
+            secondV = parseInt(secondV);
+            var sumOfV = firstV + secondV;
+            document.querySelector(".displayResult").innerHTML = sumOfV;
+            document.querySelector("#displayR").style.display = "block";
+
+        };
+
+        var validateData = (event, elementId) => {
+            if(event.keyCode >= 48 && event.keyCode <= 57){
+                document.querySelector(elementId).style.display = "none";
+                return true;
+            }else{
+                document.querySelector(elementId).style.display = "block";
+                return false;
+                
+            }
+        }
+    </script>
+</body>
+</html>

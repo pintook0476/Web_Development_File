@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total No of Digits in a number</title>
+</head>
+<body>
+    <script>
+        /*Write a program to read a number from the user and return the total number of digits in it*/
+
+        var num = prompt("Enter any number to read it total number of digits");
+        num = parseInt(num);
+        console.log(num);
+        var rem;
+        var count = 0;
+        var i;
+        while(num > 0){
+            rem = num % 10;
+            //console.log(rem);
+            count++;
+            num = parseInt(num / 10);
+            //console.log(count++);
+        }
+        console.log("The number of digit are "+count);
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Class Based Practice</title>
+    <link rel="stylesheet" href="StyleOfAssignment23.css">
+    <script src="jsOfAssignment23.js"></script>
+</head>
+<body>
+        
+   <div class="collegeBox">
+    <ul>
+        <li class="cTitle">COLLEGE REGISTRATION FORM</li>
+        <li>
+            College Name: <input type="text" id="cName" placeholder="College Name">
+        </li>
+
+        <li>
+            College Code: <input type="text" id="cCode" placeholder="Code_Ap_221">
+        </li>
+
+        <li>
+            College Type: <input type="text" id="cType" placeholder="Privet or Public">
+        </li>
+
+        <li>
+            College Address: <input type="text" id="cAddress" placeholder="delhi">
+        </li>
+        <li>
+            <input type="button" value="Register College" onclick="registerCollege()">
+        </li>
+    </ul>
+   </div> 
+
+   <div class="studentBox">
+    <ul>
+        <li class="stitle">STUDENT REGISTRATION FORM</li>
+        <li>
+            Student Name: <input type="text" id="sName" placeholder="Raj">
+        </li>
+
+        <li>
+            Age: <input type="number" min="18" max="25" id="sAge" placeholder="18-25">
+        </li>
+
+        <li>
+            Gender: <input type="text" name="gender" id="mGen" >
+                    
+        </li>
+
+        <li>
+            Select Streem: <select id="streem">
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>B.tch</option>
+                <option>Bsc.IT</option>
+                <option>P.hd</option>
+            </select>
+        </li>
+        select Game: <select id="game">
+            <option>Cricket</option>
+            <option>Football</option>
+            <option>Race</option>
+            <option>Batmintion</option>
+            <option>Music Chair</option>
+        </select>
+        
+        </li>
+        
+        <li>
+            Medical Fit:
+            <input type="text" id="report" placeholder="Yes or No">
+        </li>
+
+        <li>
+            <input type="button" value="Student Registration" onclick="registerStudent()">
+        </li>
+
+
+    </ul>
+   </div>
+    
+</body>
+</html>

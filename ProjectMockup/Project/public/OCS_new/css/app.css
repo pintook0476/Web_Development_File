@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: headerContent;
+    src: url(../Font/Brandon_Grotesque_Medium_Regular.ttf);
+}
+
+@font-face {
+    font-family: bodyContent;
+    src: url(../Font/Helvetica_Neue_LT\ _Std_57_Condensed.otf);
+}
+
+
+.footer .container {
+    height: 30px;
+}
+
+.container{
+    max-width: 100%;
+}
+
+
+.header {
+    margin-top: 3px;   
+    text-align: center;
+    color: #fff;
+    background-color: #b01131;
+}
+
+.subItems {
+    padding-left: 10px;
+}
+
+
+.thanksTotalPrice,
+.msgCell,
+.headerText,
+.thanksCell {
+    font-family: headerContent;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.thanksTotalPrice,
+.msgCell {
+    font-size: 35.77pt;
+}
+
+.thanksCell,
+.headerText {
+    font-size: 45.77pt;
+}
+.itemCount,
+.footer,
+.bodyBlock,
+.flexItem,
+.flexItemSingle {
+    font-size: 15pt;
+    font-family: bodyContent;
+}
+
+.itemCount {
+    float: left;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.bodyBlock {
+    background-color: #e5e5e5;
+    padding: 1px 5px;
+}
+.col-sm-12 {
+    background-color: #fff;
+    margin: 5px;
+}
+.dataRow {    
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.priceDetails {
+    text-align: right;
+}
+.bodyBlock .singleColumn {
+    padding: 0 5px !important;
+}
+
+.descBlock {
+    padding-left: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.itemQuantity {
+    font-weight: bold;
+}
+
+.tax {
+    float: left;
+    padding-left: 15px;
+}
+.total {
+    float: right;
+    padding-right: 15px;
+}
+.footer {
+    color: #fff;
+    background-color: #b01131;
+    padding: 7px 0;
+}
+.footer .dataRow {
+    background-color: #b01131;
+}
+
+.twoColumnBlock1 {
+    padding-right: 5px;
+}
+
+.twoColumnBlock2 {
+    padding-left: 5px;
+}
+
+/** New changes **/
+td {
+    padding: 0px !important;
+    line-height: 105%;
+    
+}
+.flexItemSingle,
+.flexItem {
+    flex-grow: 1;
+    flex-basis: auto;    
+}
+.flexItem {
+    width: 49.5%;
+}
+.flexItemRow {
+    background-color: #fff;
+    margin: 5px 0;
+}
+.flexItemSingle,
+.flexItem:first-child {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.flexItem:nth-child(2) {
+    margin-right: 8px;
+}
+
+table {
+    margin-bottom: 5px !important;
+} 
+.priceCell {
+    text-align: right;
+    padding-right: 10px !important;
+}
+.subItemDesc {
+    padding-left: 10px !important;
+}
+td:first-child {
+    width: 25px !important;
+}
+span {
+    white-space: nowrap;
+}
+.itemQuantity {
+    padding-left: 5px;
+}
+
+.taxValue {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.totalValue {
+    float: right;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#thanksTable tr:first-child td,
+#thanksTable tr:last-child td {
+    background-color: #b01131;
+}
+.thanksCell,
+.msgCell {
+    height: 250px;    
+    color: #fff;
+}
+
+.thanksTotalPrice {
+    font-weight: bold;
+    color: #b01131;
+    border: none;
+    
+}
+
+.table > tbody > tr > .msgCell ,
+.table > tbody > tr > .thanksCell {
+    vertical-align: middle;
+}
+
+#thanksTable {
+    text-align: center;
+}
+
+.thanksTotalPrice,
+.mainApp  {
+    background-color: #e5e5e5;
+}
+
+td {
+    border: 1px solid #fff;
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

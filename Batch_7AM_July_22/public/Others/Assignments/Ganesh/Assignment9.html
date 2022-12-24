@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>studentregistrationpage</title>
+        <style>
+             li{
+                list-style:none;
+                padding: 10px;
+                margin:10px;
+                font-style:italic;
+                font-weight: bold;
+            }
+            .personalh,.educationh,.address,.abouturself{
+               border: 10px;
+               width: 200px;
+               margin: 5px;
+               padding: 5px;
+               background-color:tomato;
+               position: absolute;
+               top: 55px;
+               left: 100px;
+               text-align: center;
+               font-size: large;
+               font-family: fantasy;
+            }
+            .educationh{
+            position: absolute;
+            top:295px ;
+            }
+            .address{
+                position: absolute;
+                top: 525px;
+            }
+            .abouturself{
+                position: absolute;
+                top: 785;
+            }
+            .astric{
+                color: brown;
+            }
+            .head{
+                border: 1px solid;
+                text-align: center;
+               background-color:rgb(96, 96, 221);
+               border-style:dashed;
+            }
+            .head1{
+                border: 1px solid;
+                height: 1000px;
+                background-color:grey;
+                margin: 10px;
+            }
+            .stdnm{
+             position: absolute;
+            }
+            .stdcourse{
+                position: absolute;
+                left: 800px;
+                bottom: 500px;
+            }
+            .head2,.head4,.head6,.head8{
+              border: 1px solid;
+              height: auto;
+              margin: 11px;
+            }
+            .dno{
+             position:relative;
+            }
+            .landmark{
+                position: absolute;
+                left:700px;
+                bottom:-50px;
+            }
+            .submit{
+                position: relative;
+                left: 100px;
+                bottom: -10px;
+            }
+            .reset{
+                position: absolute;
+                left:200px;
+                bottom: -368px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="head">Student Registration Page</h2>
+        <div class="head1">
+            <div class="head2">
+                <form action="" method="get">
+              <div class="personalh">Personal Details</div><br>
+                    <ul>
+                        <li>
+                         <div class="stdnm"> Student Name :
+                         <span class="astric">*</span>
+                         <input type="text">
+                         </div>
+                        </li>
+                        <li><div class="stdcourse">
+                          Course opted :
+                            <select name="" id="">
+                             <option value="">None</option>
+                             <option value="">JAVA</option>
+                             <option value="">C</option>
+                             <option value="">C++</option>
+                             <option value="">ui full stack</option>
+                             <option value="">Python</option>
+                             <option value="">Power BI</option>
+                             <option value="">Tablue</option>
+                             </select>
+                             </div>
+                        </li>
+                        <li>
+                         Mail Id :
+                         <input type="email">
+                            </li>
+                        <li> 
+                          Gender :
+                           <input type="radio" Name="text">Male
+                          <input type="radio" Name="text">Female
+                        </li>
+                    </ul>
+            </div><br>
+                <div class="head4">
+                    <div class="educationh">Education Details</div><br>
+                    <ul>
+                        <li> Qualification:
+                            <input type="text">
+                         </li>
+                         <li>
+                            Languages Known:
+                            <input type="checkbox" name="test">English
+                            <input type="checkbox" name="test">Telugu
+                            <input type="checkbox" name="test">Hindi
+                            <input type="checkbox" name="test">Tamil
+                         </li>
+                         <li>
+                            Avg Marks  :
+                            <input type="text">
+                         </li>
+                    </ul>
+                </div><br>
+                <div class="head6">
+                 <div class="address"> Address</div>
+                 <ul>
+                    <li class="dno">
+                        Dno :
+                        <input type="text">
+                    </li>
+                    <li class="landmark">
+                     LandMark :
+                     <textarea maxlength="500px" cols="50" rows="3"></textarea>
+                    </li>
+                    <li>
+                        Street Name :
+                        <input type="text">
+                    </li>
+                    <li>
+                        State :
+                        <select>
+                            <option value="">Andra Pradesh</option>
+                            <option value="">Telangana</option>
+                            <option value="">Karnataka</option>
+                            <option value="">Kerala</option>
+                            <option value="">Maharastra</option>
+                            <option value="">Madya pradesh</option>
+                            <option value="">UP</option>
+                        </select>
+                    </li>
+                    <li> country  :
+                        <select>
+                            <option value="">India</option>
+                            <option value="">USA</option>
+                            <option value="">China</option>
+                            <option value="">Pak</option>
+                            <option value="">Sri lanka</option>
+                            <option value="">Bal</option>
+                            <option value="">aus</option>
+                            <option value="">SA</option>
+                            <option value="">WI</option>
+                        </select>
+                    </li>
+                 </ul>
+                </div><br>
+                <div class="head8">
+                   <div class="abouturself">About Your Self</div>
+                   <ul>
+                    <li>
+                        About Your Self  :
+                       <textarea maxlength="500px" cols="30" rows="5"></textarea>
+                    </li>
+                   </ul>
+                </div> <br>
+             <div class="submit">
+                    <input type="submit">
+              </div><br><br>
+            <div class="reset">
+                    <input type="reset">
+             </div>
+            </form>
+        </div>
+    </body>
+</html>

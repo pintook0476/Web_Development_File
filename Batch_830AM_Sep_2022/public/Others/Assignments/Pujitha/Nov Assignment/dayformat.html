@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Days Format
+        </title>
+    </head>
+    <body>
+        <script>
+            var currentdate = new Date() ;
+            var days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            var months = ['Januvary','Februvary','March','April','May','June','July','August','September','October','November','December'];
+            console.log(currentdate.getFullYear());
+            var dayIndex = currentdate.getDay();
+            console.log(days[dayIndex]);
+            console.log(currentdate.getDate());
+            var monthIndex = currentdate.getMonth();
+            console.log(months[monthIndex]);
+            console.log(days[dayIndex] + ',' + ' ' + currentdate.getDate() + ' ' + months[monthIndex] + ' ' + currentdate.getFullYear());
+            console.log(days[dayIndex] + ',' + ' ' + months[monthIndex] + ' ' + currentdate.getDate() + ' ' + currentdate.getFullYear());
+            console.log(currentdate.getDate() + '/' + months[monthIndex] + '/' + currentdate.getFullYear());
+            console.log(days[dayIndex] + ' ' + currentdate.getDate() + ' ' + months[monthIndex]);
+            console.log(days[dayIndex] + ',' + ' ' + months[monthIndex] +' ' + currentdate.getDate());
+            console.log(currentdate.getHours());
+            console.log(currentdate.getMinutes());
+            console.log(currentdate.getMilliseconds());
+            console.log(currentdate.getDate() + ' ' + months[monthIndex] + ' ' + currentdate.getFullYear() + '  ' + currentdate.getHours() + ':' + currentdate.getMinutes() + ':' + currentdate.getSeconds());
+            const time = new Date().toLocaleString([], { hour : 'numeric', minute : 'numeric' }); // "6:30 AM"
+            console.log(new Date ().toLocaleString());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Write a program to find out the sum of all the values with in the given array*/
+
+        var num = [];  //empty static array
+        for(var i = 0; i < 5; i++){
+            num[i] = prompt("Enter 5 number to sum them "+ i);
+            num[i] = parseInt(num[i]);
+            console.log(num[i]);
+        }
+        var sum = 0;
+        for( var x = 0; x < num.length; x++){
+            var result = sum + num[x];
+            sum = result;
+        
+        }
+        console.log(result);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+        employ details
+     </title>
+     <style>
+        .head{
+            border: 2px solid;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: yellowgreen;
+        }
+     </style>
+    </head>
+    <body>
+        <div class="head">
+            employ details
+        </div>
+        <script>
+            var ename=prompt("enter employ name");
+            var eage=prompt("enter employ age");
+            var egender=prompt("enter employ gender");
+            var elocation=prompt("enter location");
+            var basicSal=prompt("enter employ basic salary");
+            basicSal=parseInt(basicSal)
+            var pf=(12/100)*basicSal
+            var hra=(24/100)*basicSal
+            var totalSal=pf+hra+basicSal;
+            var taxvalue;
+            if(egender=="male"){
+                if(totalSal>=500000){
+                    taxvalue=totalSal*(15/100)
+                }else if(esalary>=300000){
+                    taxvalue=totalSal*(10/100)
+                }else{
+                    taxvalue=0
+                }
+            }else{//female
+                if(totalSal>=300000){
+                    taxvalue=totalSal*(10/100)
+                }
+            }
+
+            console.log(" ename is"+ename);
+            console.log(" eage"+eage);
+            console.log(" egender"+egender);
+            console.log(" eloacation"+elocation);
+            console.log("basic salary"+basicSal);
+            console.log("pf"+pf);
+            console.log("hra"+hra);
+            console.log("total salary"+totalSal)
+            console.log("total tax"+taxvalue)
+        </script>
+    </body>
+    
+</html>

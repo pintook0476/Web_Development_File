@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-11</title>
+</head>
+
+<body>
+    <h1>Employee Salary Details Program</h1>
+    <script>
+        var eName = prompt("Please enter employee name");
+        var eAge = prompt("Please enter employee age");
+        var eDept = prompt("Please enter employee department");
+        var bSal = parseInt(prompt("Please enter employee basic salary"));
+        var gender = prompt("Please enter your gender male/female");
+
+        var pf = bSal * 0.14;
+        var hra = bSal * 0.25;
+        var tSal = bSal + pf + hra;
+
+        document.write("Employee Name : " + eName + "<br>");
+        document.write("Employee Age : " + eAge + "<br>");
+        document.write("Employee Department : " + eDept + "<br>");
+        document.write("Employee Total Salary : " + tSal + "<br>");
+
+        if (gender === "male" || gender === "Male") {
+            if (tSal <= 50000) {
+                document.write("You don't need to pay a tax.");
+            }
+            if (tSal > 50000 && tSal < 100000) {
+                document.write("You have to pay 5% tax.");
+            }
+            if (tSal >= 100000 && tSal < 200000) {
+                document.write("You have to pay 10% tax.");
+            }
+            if (tSal >= 200000) {
+                document.write("You have to pay 15% tax.");
+            }
+        }
+        else {
+            if (tSal <= 100000) {
+                document.write("You don't need to pay a tax.");
+            }
+            if (tSal > 100000 && tSal < 200000) {
+                document.write("You have to pay 5% tax.");
+            }
+            if (tSal >= 200000) {
+                document.write("You have to pay 10% tax.");
+            }
+        }
+    </script>
+</body>
+
+</html>

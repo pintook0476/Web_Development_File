@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            pallindrome Number
+        </title>
+    </head>
+    <body>
+        <h1>Pallindrome Number</h1>
+        <script>
+            var num = prompt("enter number");
+            var n = parseInt(num);
+            var q = "";
+            while(n>0){
+                var p = n%10;
+                q = q + p ; 
+                n = n/10;
+                n = parseInt(n);    
+            }
+            if(q == num){
+                console.log("it is Pallindrome");
+            } else{
+                console.log("it is not Pallindrome");
+            }
+        </script>
+    </body>
+</html>

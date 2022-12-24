@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Employee Details in js</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt('Enter the name');
+            var gender = prompt('Gender');
+            var department = prompt('Department');
+            var basicsalary = prompt('Enter basic salary');
+            basicsalary = parseInt(basicsalary);
+            var pf = basicsalary * 14/100;
+            var hra = basicsalary * 25/100;
+            var total = basicsalary + pf + hra;
+            console.log('Name : ' + name);
+            console.log('Gender : ' + gender);
+            console.log('Department : ' + department);
+            console.log("Basic Salary : " + basicsalary)
+            console.log('PF : ' + pf);
+            console.log('HRA : ' + hra);
+            console.log('Total : ' + total);
+
+
+
+        </script>
+    </body>
+</html>

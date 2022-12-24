@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Assignment 15</title>
+    </head>
+    <body>
+        Addition of Even Digit
+        <script>
+            var reminder;
+            var sum=0;
+            var a=prompt("Enter a number");
+            a=parseInt(a);
+            console.log("The given no= "+a);
+            while(a>0){
+                reminder=a%10;
+                if(reminder%2==0){
+                    sum=sum+reminder;
+                }
+                a=Math.floor(a/10);
+            }
+            console.log(sum);
+        </script>
+    </body>
+</html>

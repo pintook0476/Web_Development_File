@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration form</title>
+    <style>
+        h2{
+            padding-top: 20px;
+            margin: auto;
+            border: 1px solid ;
+            height: 50px;
+            width: auto;
+            text-align: center;
+        }
+        h2:hover{
+            background-color: cadetblue;
+        }
+        ul{
+           list-style: none;
+        }
+        #form{
+            border: 1px solid;
+            height: 40%;
+            width: 50%;
+            position: relative;
+            left: 30%;
+            margin-top: 5%;
+            background-color: rgb(76, 152, 177);
+        }
+        #submit:hover{
+        background-color: rgb(43, 226, 70);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+    <form action="" id="form">
+        <label for="">
+            <ul>
+                <li>
+                    Name:<input type="text" maxlength="16" placeholder="Enter your Name">
+                </li>
+            </ul>
+           
+            <ul>
+                <li>
+                    Password:<input type="password" maxlength="10" placeholder="Enter Password">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Gender: <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Language: <input type="checkbox"> English<input type="checkbox"> Hindi <input type="checkbox"> Odia
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Write something About You: <textarea name="" id="" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Country: <select name="" id="">
+                        <option value="">India</option>
+                        <option value="">Japan</option>
+                        <option value="">Usa</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <br>
+
+            <div>
+                <button  id="submit">Submit</button>
+            </div>
+        </ul>
+        </label>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+     //Declare variables
+    //get input from the user
+    //calculate total 
+    
+        var empTax = 0;
+        var empName = prompt("Enter employee name");
+        var empGender = prompt("Enter employee gender");
+        var empDept = prompt ("Enter employee department");
+        var bSal = prompt("Enter basic salary of employee");
+        bSal = parseInt(bSal);
+        var PF = 14 * bSal/100;
+        var HRA = 24 * bSal/100;
+        var tSal = PF + HRA + bSal;
+
+   //display total 
+   
+        console.log("total PF is" + PF);
+        console.log("total HRA is" + HRA);
+        console.log("total salary is "+ tSal);
+
+
+    //check if employee is female or male 
+    //apply tax bracket accordingly
+    //show the output
+        
+        if (empGender == "male"){
+
+            if(tSal <= 50000){
+                empTax = 0;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 0 tax");
+            }
+
+            else if( tSal <= 100000){
+                empTax = 10 * bSal/100;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 10% tax");
+            }
+            }
+
+            else {
+                empTax = 20 * bSal/100;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 20% tax");
+
+            }
+
+        
+        if(empGender == "female")
+        
+        {
+
+            if (tSal <= 50000){
+                empTax = 0;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 0 tax");
+            }
+
+             else if( tSal <= 100000){
+                empTax = 5 * bSal/100;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 5% tax");
+            }
+
+            else {
+                empTax = 10 * bSal/100;
+                console.log("employee name is : " + empName);
+                console.log("employee gender is : " + empGender);
+                console.log("employee basic salary is : " + bSal);
+                console.log("Total tax is: " + empTax);
+                console.log("employee is : " + empGender + " 10% tax");
+
+            }
+
+        }
+       
+
+    </script>
+    
+</body>
+</html>

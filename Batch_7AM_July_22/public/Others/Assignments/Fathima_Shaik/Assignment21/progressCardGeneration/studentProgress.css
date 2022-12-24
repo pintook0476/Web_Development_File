@@ -1,0 +1,45 @@
+        .title{
+            border: 1px solid black;
+            width:400px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: pink;
+        }
+        .displayCard{
+            display: none;
+        }
+        .dtitle{
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: pink;
+        }
+        .labelContainer{
+            width: 120px;
+            float: left;
+        }
+        .inputController{
+            float: left;
+        }
+        ul{
+            border: 1px solid black;
+            width: 400px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+        li{
+            list-style: none;
+            border: 1px solid black;
+            height: 30px;
+            margin: 10px;
+            padding: 10px 10px 10px 30px;        
+        }
+        .smarks input{
+            width:20px;
+        }
+    

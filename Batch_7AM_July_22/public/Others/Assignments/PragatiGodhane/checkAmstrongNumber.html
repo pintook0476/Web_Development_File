@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amstrong Number</title>
+    <style>
+        body{
+            background-color: rgb(141, 221, 197);
+        }
+
+        p{
+            text-decoration: underline;
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<p>Amstrong Number</p>
+<script>
+
+    var num = (prompt("Enter a number"));
+    var num2 = num;
+    var rev=0;
+    var rem=0;
+    var val;
+
+    for(var i = 1 ; i<=num2.length; i++){
+    val = num2.length; 
+    rev = num % 10; 
+    num = parseInt(num/10); 
+    rem = rem + (rev**val); 
+   
+    }
+
+    if(num2 == rem)
+    {
+        console.log(`Its a amstrong number : ${rem}`);
+    }
+    else 
+    {
+        console.log(`Not a amstrong number`);
+    }
+
+   
+    
+    
+    
+
+
+
+</script>
+    
+</body>
+</html>

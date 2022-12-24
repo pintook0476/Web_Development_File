@@ -1,0 +1,14 @@
+CSS Float Property :
+	By default while the elements gets rended on the page , They follow the default top to bottom for block level,left to right direction for inline elements.In order to make the elements to get rended either to the complete left side or right of container or to make multiple block level elements getting rended within same line we use CSS Float property
+	"float"
+	1.left
+	2.right
+Syntax:
+	float:left/right;
+
+Note:Multiple contineius DOM elements having changed their default rendering direction through float property always tries to render within the same line. 
+
+CSS Clear property:
+	when elements are changing the rendering direction through float property,the element which is following trie to follow same direction.In order to make DOM element to not to follow the previous element direction  we use CSS Clear property 
+Syntax:
+	clear:left/right/both;

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>practice of dhtml concepts</title>
+    </head>
+    <body>
+        <h1 class="ename"></h1>
+        <h1 class="age"></h1>
+        <h1 class="gender"></h1>
+        <h1 class="basicSal"></h1>
+        <script>
+            var edetails = {
+                getDetails()  {
+                    this.ename = prompt("Enter Employee Name : ");
+                    this.age = prompt("Enter age : "); 
+                    this.gender = prompt("Enter gender : "); 
+                    this.basicSal = prompt("Enter basic salary : "); 
+                    this.basicSal = parseInt(this.basicSal) ;
+                    edetails.calculateTotalSal() ;
+                    
+                },
+                calculateTotalSal()  {
+                    var pf = this.basicSal * 12 / 100 ;
+                    var hra = this.basicSal * 25 / 100 ;
+                    this.totalSal = pf + hra + this.basicSal ;
+                    edetails.calculateTax() ;
+                }, 
+                calculateTax() {
+                    this.tax = 0 ;
+                    if( this.totalSal > 200000){
+                        this.tax = this.totalSal * 10 / 100 ;
+                    }
+                    edetails.output() ;
+                },
+                output() {
+                    this.getDetails();          
+                    this.calculateTotalSal() ;
+                    this.calculateTax() ;
+                    document.querySelector(".ename").innerText = "Name : " + ename ;
+                    document.querySelector(".age").innerText = "Age : " + age ;
+                    document.querySelector(".gender").innerText = "Gender : " + gender ;
+                    document.querySelector(".basicSal").innerText = "Basic Salary : " + basicSal ;
+                    var hedding1 = document.createElement("h1");
+                    hedding1.innerText = "Total Salary : " + this.totalSal ;
+                    document.querySelector(".basicSal").after(hedding1) ;
+                    var hedding2 = document.createElement("h1") ;
+                    hedding2.innerText = "Payable Tax : " + this.tax ;
+                    hedding1.after(hedding2) ;
+                    var input = document.createElement("input");
+                    input.setAttribute("type","search");
+                    hedding2.after(input);
+                }              
+            }
+            edetails.getDetails();          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <title>Assignment-9</title>
+        <style>
+            .heading,.footer,.content,.box1,.box2,.pd,.ad,.ed,.lastbox{
+                border: 1px solid;
+                background-image: url('12235.jpg');
+                color: red;
+                
+            }
+            .heading,.footer{
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+                background-color: rgb(211, 226, 43);
+                color: brown;
+            }
+            .content{
+                height: 950px;
+                margin: 5px;
+            }
+            .box1,.box2{
+                margin: 20px;
+                color: red;
+            }
+            .box1{
+                height: 200px;
+            }
+            .box2{
+                height: 220;
+            }
+            .pd,.ed,.ad,.lastbox{
+                background-color: white;
+                padding: 7px;
+                width: 180px;
+                height: 15px;
+                position: absolute;
+            }
+            .pd{
+                left: 90px;
+                top: 50px;
+            }
+            .ed{
+                left: 90px;
+                top: 272px;
+            }
+            .ad{
+                left: 90px;
+                top: 494px;
+            }
+            .lastbox{
+                left: 90px;
+                top: 750px;
+            }
+            .innerbox{
+                padding: 10px;
+                margin: 15px;
+            }
+            .innerbox label{
+                width: 150px;
+                float: left;
+            }
+            .course,.landmark{
+                position: absolute;
+            }
+            .course{
+                right: 60px;
+                top: 70px;
+            }
+            .landmark{
+                right: 60px;
+                top: 510px;
+            }
+            .urself{
+                margin-top: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">STUDENT REGISTATION PAGE</div>
+       
+        <div class="content">
+            <div class="box1">
+                <div class="innerbox">
+                    <label for="StudentName">Student Name:</label>
+                    <input type="text">
+                </div>
+                <div class="innerbox">
+                    <label for="Mail_id">Mail ID:</label>
+                    <input type="email">
+                </div>
+                <div class="innerbox">
+                    <label for="Gender">Gender</label>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </div>
+                <div class="innerbox course">
+                    <label for="CourseOpted">Course Opted:</label>
+                    <select>
+                        <option value="Course">MECH</option>
+                        <option value="Course">C.S.E</option>
+                        <option value="Course">E.C.E</option>
+                        <option value="Course">CIVIL</option>
+                        <option value="Course">E.E.E</option>
+                        <option value="Course">I.T</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pd">Personal Details</div>
+            <div class="box1">
+                <div class="innerbox">
+                    <label for="Qualification">Qualification:</label>
+                    <input type="text">
+                </div>
+                <div class="innerbox">
+                    <label for="Languages">Languages Known</label>
+                    <input type="checkbox">English
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">Urdu
+                    <input type="checkbox">Hindi
+                </div>
+                <div class="innerbox">
+                    <label for="AvgMarks">Avd Marks</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="ed">Education Details</div>
+            <div class="box2">
+                <div class="innerbox">
+                    <label for="D.NO">Dno:</label>
+                    <input type="text">
+                </div>
+                <div class="innerbox">
+                    <label for="StreetName">Street Name:</label>
+                    <input type="text">
+                </div>
+                <div class="innerbox">
+                    <label for="State">State</label>
+                    <select>
+                        <option value="State">Andhra Pradesh</option>
+                        <option value="State">Telangana</option>
+                        <option value="State">Uttar pradesh</option>
+                        <option value="State">Delhi</option>
+                    </select>
+                </div>
+                <div class="innerbox">
+                    <label for="Country">Country</label>
+                    <select>
+                        <option value="Country">India</option>
+                        <option value="Country">Australia</option>
+                        <option value="Country">England</option>
+                        <option value="Country">USA</option>
+                    </select>
+                </div>
+                <div class="innerbox landmark">
+                    <label for="Landmark">LandMark</label>
+                    <textarea cols="50" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="ad">Adress</div>
+            <div class="box1">
+                <div class="innerbox">
+                    <label for="About urself" class="urself">About Your Self</label>
+                    <textarea cols="80" rows="10"></textarea>
+
+                
+                </div>
+            </div>
+            <div class="lastbox">About urself</div>
+        </div>
+        <div class="footer">@copyraide2020</div> 
+    </body>
+</html>

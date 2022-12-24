@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot ID or Password</title>
+</head>
+<style>
+    .maincontainer {
+        background-color: white;
+        height: 950px;
+    }
+
+    .loginbox {
+        border: 1px solid;
+        border-radius: 4px;
+        height: 800px;
+        width: 23%;
+        background-color: white;
+        margin: auto;
+        position: absolute;
+        top: 50px;
+        left: 560px;
+    }
+
+    .loginbox img {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 30px;
+        left: 131px;
+    }
+
+    .loginbox h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        position: absolute;
+        top: 105px;
+        left: 50px;
+    }
+
+    .inputbox {
+        position: absolute;
+        top: 175px;
+        left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 90%;
+    }
+
+    .userid,
+    .pan {
+        height: 35px;
+        width: 270px;
+        opacity: 90%;
+    }
+
+    .userid {
+        position: absolute;
+        top: 70px;
+    }
+
+    .pan {
+        position: absolute;
+        top: 130px;
+    }
+    .recieve{
+        position: absolute;
+        top: 190px;
+    }
+    .email:hover{
+        cursor: pointer;
+    }
+    .sms:hover{
+        cursor: pointer;
+    }
+    .recieveMail{
+        height: 35px;
+        width: 270px;
+        opacity: 90%;
+        position: absolute;
+        top: 265px;
+    }
+    .captchabox{
+        border: 1px solid;
+        height: 150px;
+        width: 276px;
+        position: absolute;
+        top: 330px;
+        background-color: rgb(159, 182, 203);
+        opacity: 40%;
+    }
+    .captcha input{
+        height: 35px;
+        width: 222px;
+        position: absolute;
+        top: 94px;
+        left: 22px;
+        opacity: 100%;
+    }
+    .button input{
+        height: 41px;
+        width: 277px;
+        position: absolute;
+        bottom: -510px;
+        background-color: orangered;
+        border: white;
+        border-radius: 5px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .button input:hover{
+        cursor: pointer;
+        transition: 2s;
+        background-color: rgb(228, 128, 92);
+    }
+    .back{
+        position: absolute;
+        top: 570px;
+        left: 85px;
+        font-size: 12px;
+    }
+    .logo img{
+        height: 20px;
+        width: 30px;
+        position: absolute;
+        top: 880px;
+        left: 700px;
+    }
+    .logo .applelogo{
+        left: 740px;
+        width: 15px;
+    }
+    .zerodha img{
+        height: 60px;
+        width: 140px;
+        position: absolute;
+        top: 900px;
+        left: 660px;
+        opacity: 70%;
+    }
+    .signup{
+        position: absolute;
+        top: 930px;
+        left: 620px;
+    }
+    .signup:hover{
+        cursor: pointer;
+        transition: 1s;
+        color: blue;
+    }
+    .footer{
+        text-align: center;
+        position: absolute;
+        top: 970px;
+        left: 600px;
+        font-size: 10px;
+    }
+</style>
+
+<body>
+    <div class="maincontainer">
+        <div class="loginbox">
+            <a href="#">
+                <img src="Images/kitelogo.png"
+                    alt="Kite">
+            </a>
+            <h3>Forgot User ID or Password?</h3>
+            <div class="inputbox">
+                <div>
+                    <input type="radio" value="Remember my User ID" name="UserID">
+                    <label for="radio">I remember my user ID</label>
+                    <br>
+                    <input type="radio" value="Forgot my User ID" name="UserID">
+                    <label for="radio">I forgot my user ID</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="USER ID" class="userid">
+                    <input type="text" placeholder="PAN" class="pan">
+                </div>
+                <div class="recieve">
+                    <label for="Recieve">Recieve on :</label>
+                    <br>
+                    <br>
+                    <input type="radio" value="E-mail" name="recieve" class="email">
+                    <label for="E-mail" class="email">E-mail</label>
+                    <input type="radio" value="sms" name="recieve" class="sms">
+                    <label for="sms" class="sms">SMS</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="E-mail(as on account)" class="recieveMail">
+                </div>
+                <div class="captchabox">
+                    <div class="captcha">
+                        <input type="text" placeholder="Captcha">
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value="Reset">
+                </div>
+                <div>
+                    <p class="back"> >> Back to login</p>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="#">
+            <img src="Images/playstorelogo.jpg" alt="playstore">
+            </a>
+            <a href="#">
+            <img src="Images/applelogo.jpg" alt="apple" class="applelogo">
+            </a>
+        </div>
+        <div class="zerodha">
+            <a href="#">
+            <img src="Images/zerodha.webp" alt="zerodha">
+            </a>
+        </div>
+        <p class="signup">Don't have an account? Signup now!</p>
+        <div class="footer">
+            <p>Zerodha Broking Limited: Member of NSE, BSE ‐ SEBI Reg. no. <br> INZ000031633, CDSL ‐ SEBI Reg. no. IN-DP-431-2019 | Zerodha <br> Commodities Pvt. Ltd.: MCX ‐ SEBI Reg. no. INZ000038238 </p>
+
+        </div>
+    </div>
+</body>
+
+</html>

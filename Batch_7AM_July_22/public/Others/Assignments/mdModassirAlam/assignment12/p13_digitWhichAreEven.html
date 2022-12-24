@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Which Are Even</title>
+</head>
+<body>
+    <script>
+        /* Write a program to read a number from the user and return the total no of individuals digits which all are even*/
+
+        var num = prompt("Enter any number to see number of zero in it");
+        num = parseInt(num);
+        var rem;
+        var count = 0;
+
+        while(num > 0){
+            rem = num % 10;
+            if(rem % 2 == 0){
+                console.log(rem);
+                count++;
+            }
+            num = parseInt(num / 10);
+        }
+        console.log("Number of even number in given number is "+ count);
+    </script>
+</body>
+</html>

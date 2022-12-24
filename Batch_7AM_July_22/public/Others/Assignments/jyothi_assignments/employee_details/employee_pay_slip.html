@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Payslip</title>
+        <link rel ="stylesheet" href="employee_pay_slip.css">
+        
+    </head>
+    <body>
+        <h1>Payslip</h1>
+        <div class="test">
+        <ul>
+            <li>Employee Name:
+                <input type="text" id="ename"></li>
+            <li>Employee Id:
+                <input type="text" id="empid"></li>
+            <li>Employee Age:
+                <input type="text" id="eage"></li>
+            <li>Gender:
+                <input checked type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female</li>
+            <li>Department:
+                <input type="text" id="edept"></li>
+            <li>Basic salary:
+                <input type="text" id="empbs"></li>
+            <li>
+                <input type="button" value="submit" onclick="empDetails.readData();"></li>
+        </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Employee Name: <span id="disname"></span></li>
+                <li>Employee Id: <span id="disID"></span</li>
+                <li>Employee Age: <span id="disage"></span></li>
+                <li>Gender: <span id="disgender"></span></li>
+                <li>Department: <span id="disdept"></span></li>
+                <li>Basic salary: <span id="disbasicpay"></span></li>
+                <li>PF: <span id="dispf"></span></li>
+                <li>HRA: <span id="dishra"></span></li>
+                <li>Total salary: <span id="distotalsal"></span></li>
+            </ul>
+        </div>
+        <script src="employee_pay_slip.js"></script>
+
+    </body>
+</html>

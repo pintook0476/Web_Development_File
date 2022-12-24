@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment19_Style.css">
+</head>
+<body>
+    <div class="main">
+        <ul class="InputUl">
+            <li class="l1">
+                Enter Name: <input type="text" class="name">
+            </li>
+            <li class="l2">
+                Enter Age: <input type="text" class="age">
+            </li>
+            <li class="l3">
+                Enter Gender: <input type="radio" class="gender" name="gender" value="male" checked>Male
+                <input type="radio"  name="gender" value="female">Female
+            </li>
+            <li class="l4">
+                Enter Department: <input type="text" class="department">
+            </li>
+            <li class="l5">
+                Enter BasicSalary: <input type="text" class="bsalary">
+            </li>
+            <li class="l6">
+                 <input type="submit" class="submit" onclick="EmployeeDetails.getData();" onclick="setData()">
+                 <input type="button" class="submit"value="Reload" onclick="EmployeeDetails.reload();">
+                 <input type="button" value="print" onclick="EmployeeDetails.print();">
+            </li>
+        </ul>
+    </div>
+    <div class="displayDetails">
+        <ul class="displayUl">
+            <li>
+                Your Name is : <span class="dname"></span>
+            </li>
+            <li>
+                Your Gender is : <span class="dgender"></span>
+            </li>
+            <li>
+                Your Department is : <span class="dDepartment"></span>
+            </li>
+            <li>
+                Your BasicSalary is : <span class="dbsalary"></span>
+            </li>
+            <li>
+                Your TotalSalary is : <span class="totalSalary"></span>
+            </li>
+            <li>
+                Your payable tax is : <span class="tax"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="Assignment19_Js.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment7</title>
+
+<style>
+    
+ #container{
+    position:relative;
+    height:35rem;
+    width:45rem;
+    left:28rem;
+    top:5rem;
+    text-align:left;
+    border-radius: 4px;
+    background-color:rgb(199, 43, 43);
+    border:1px solid black;
+    animation: mymove 5s infinite;
+  }
+  @keyframes mymove {
+  50% {background-color: rgba(9, 12, 118, 0.897);}
+}
+  ul{
+  font-size: 18px;
+  color:black;
+  background-color:rgb(235, 189, 64);
+  list-style: none;
+  text-align: left;
+  animation: mymove 5s infinite;
+    width: 700px;
+    margin: 12px auto;
+    padding: 10px;
+  }
+  ul >li{
+    list-style: none;
+    margin: 7px;
+    background-color: white;
+
+    padding:7px;
+  }
+  #text0{
+    height: 1.8rem;
+   width:40%;
+   font-size: 20px;
+  }
+  #text{
+    height: 1.8rem;
+   width:40%;
+   font-size: 20px;
+  }
+  #and{
+   position:absolute;
+   font-size: 28px;
+   color:grey;
+   font-weight: bold;
+   right:0;
+   left:38%;
+   cursor: pointer;
+  }
+  #or{
+   position:absolute;
+   font-size: 28px;
+   color:grey;
+   font-weight: bold;
+   right:0;
+   left:38%;
+   cursor: pointer;
+  }
+  #btn{
+    width:100%;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    color:white;
+    background-image: linear-gradient(rgb(65, 65, 222),rgb(118, 122, 171));
+  }
+  .subjects >input{
+    width:50px;
+  }
+  #dblock{
+    display:none;
+  }
+::placeholder{
+  color:rgb(207, 158, 80);
+  font-weight: normal;
+  font-size: 16px;
+}
+Select{
+font-size: 20px;
+
+}
+
+    </style>
+    </head>
+
+<body>
+ <div id="container">
+ <ul id="rblock">
+ <li><input type="text" placeholder="Enter the name" id="text0"><span id="and"class="clear">&times;</span></li>
+ 
+ <li><input type="text" placeholder="Enter the age" id="text"><span id="or" class="clear">&times;</span></li>
+
+ <li class="gen">Gender :
+    <input type="radio" name="gender" id="abc" value="male">male
+    <input type="radio" name="gender"id="def" value="female">female</li>
+<li class="language">Language opt :
+        <input type="checkbox"value="eng">English
+        <input type="checkbox"value="hndi">hindi
+        <input type="checkbox"value="social">social
+        <input type="checkbox"value="math">Math
+    
+    </li>
+    <li class ="subjects"> Subject Marks:
+    <input type="text" id="t1" placeholder="Maths" maxlength="3">
+    <input type="text" id="t2" placeholder="science">
+    <input type="text" id="t3" placeholder="social">
+    <input type="text" id="t4" placeholder="computer">
+    <input type="text" id="t5" placeholder="language">
+    </li>
+<li id="select">
+    <select id="selected">
+        <option value="">GRADE</option>
+        <option value="Class I">Class I</option>
+        <option value="Class II">Class II</option>
+        <option value="Class III">Class III</option>
+        <option value="Class IV">Class IV</option>
+        <option value="Class V">Class V</option>
+
+    </select>
+</li>
+<li id="button">
+    <input type="button" id="btn"value="Generate card" onclick="generateCard()">
+</li>
+ </ul>
+ <ul id="dblock">
+  <li> Name:&nbsp;<span id="text1"></span></li>
+  <li> Age:&nbsp;<span id="text2"></span></li>
+  <li> Gender:&nbsp;<span id="text3"></span></li>
+  <li> Marks:&nbsp;<span id="text4"></span></li>
+  <li> Avg:&nbsp;<span id="text5"></span></li>
+  <li> Grade:&nbsp;<span id="text6"></span></li>
+ </ul>
+
+ </div>
+
+<script type="text/javascript">
+var pD={};
+
+var generateCard=()=>{
+pD.sname=document.querySelector("#text0").value;
+pD.sage=document.querySelector("#text").value;
+pD.gender=document.querySelector(".gen input:checked");
+pD.language=[];
+var checklist=document.querySelectorAll(".language input:checked");
+ for(i=0;i<checklist.length;i++){
+pD.language.push(checklist[i].value);
+ }
+ pD.marks=[];
+ for(i=1;i<=5;i++){
+    var id="#t"+i;
+    pD.marks.push(parseInt(document.querySelector(id).value));
+ }
+ pD.classname=document.querySelector("#selected").value;
+ getAvg();
+};
+var getAvg=()=>{
+pD.total=0;
+for (i=0;i< pD.marks.length;i++){
+pD.total+=pD.marks[i];
+pD.avg = pD.total / pD.marks.length;
+}
+getGrade();
+}
+var getGrade=()=>{
+    if (pD.avg >= 40) {
+        pD.grade = "You are passed";
+    } else {
+        pD.grade = 'You have a Surprise';
+    }
+
+    displayStudentProgressCard();
+}
+var displayStudentProgressCard=()=>{
+document.querySelector("#dblock").style.display="block";
+document.querySelector("#rblock").style.display="none";
+document.querySelector("#text1").innerHTML=pD.sname;
+document.querySelector("#text2").innerHTML=pD.sage;
+document.querySelector("#text3").innerHTML=pD.gender;
+document.querySelector("#text4").innerHTML=pD.marks;
+document.querySelector("#text5").innerHTML=pD.avg;
+document.querySelector("#text6").innerHTML=pD.grade;
+
+
+}
+const clear=document.querySelector("#and");
+const reset=document.querySelector("#or");
+clear.addEventListener("click",()=>{
+document.querySelector("#text0").value="";
+
+});
+reset.addEventListener("click",()=>{
+  document.querySelector("#text").value="";
+});
+
+</script>
+
+
+</body>
+</html>

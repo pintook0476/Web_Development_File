@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="shortcut icon" type="image" href="images/loginImgUser.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image:url(images/backimage.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background-color: bisque;
+            margin-top: 0px;
+        }
+        /* nav{
+            margin: 10px;
+        } */
+        .imglogo{
+            width: 70px;
+            height: 30px;
+            background: transparent;
+            margin-top: 10px;
+            border: 3px solid red;
+            border-radius: 100%;
+        }
+        ul{
+            margin-left: 260px;
+            margin-top: -40px;
+            font-weight: bold;
+        }
+         ul li{
+            float: left;
+            list-style-type: none;
+            font-family: Arial;
+            margin: 20px;
+        }
+        .go{
+            font-style:oblique;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Arial;
+            color: red;
+            margin-top: 4px;
+        }
+        .trands{
+            font-style:italic;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: cursive;
+            color: blue;
+            margin-top: 14px;
+        }
+        .icon{
+            margin-left: 400px;
+            padding-right: 20px;
+            justify-content: space-between;
+        }
+        .logiContainer{
+            width: 650px;
+            height: 650px;
+            border: 2px solid;
+            margin: 16px;
+            margin-left: 550px;
+            background-image: url(images/loginBg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            padding-top: 80px;
+        }
+        .leftImages{
+            width: 180px;
+            height: 180px;
+            margin-top: 100px;
+            margin-left: 20px;
+
+        }
+        .rightSec{
+            margin-top: -200px;
+        }
+        .userPic
+        {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-left: 300px;
+
+        }
+        .userid,  .userpass,  .submit {
+        border-bottom: 3px solid #000;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: x-large;
+        margin-left: 200px;
+        margin-top: 25px;
+        width: 300px;
+        height: 40px;
+        background: aquamarine;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        margin: 17px 210px
+      }
+      .submit {
+        width: 100px;
+        margin-left: 320px;
+        background-color:white;
+        height: 40px;
+        font-weight: 600;
+      }
+      .link1 {
+        margin-left: 320px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: azure;
+        padding: 20px;
+      }
+      .link2{
+        margin-left: 300px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: azure;
+        padding: 20px;
+      }
+      .link:active {
+        color: yellow;
+      }
+      .submit:hover {
+        background-color: green;
+      }
+      .footer{
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        color: aliceblue;
+        
+        
+      }
+      h3{
+        text-align: center;
+        padding: 20px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav"><img class="imglogo" src="images/GTlogo.jpg" alt=""><span class="go">Go</span> <span class="trands">Treands</span></div>
+            <ul>
+                <li>HOME</li>
+                <li>MEN'S</li>
+                <li>WOMEN'S</li>
+                <li>KIDS'S</li>
+                <li>HOME&LIVING</li>
+                <li>BEAUTY</li>
+                <li class="icon"><span id="search" class="bi bi-search"></span>
+                <span class="bi bi-people"></span><span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span> </li>
+            </ul>
+    </div>
+
+    <div class="logiContainer">
+        <div class="leftSec"> <img class="leftImages" src="images/loginSecurity.png" alt=""></div>
+        <div class="rightSec">
+            <img class="userPic" src="images/loginImgUser.webp" alt="Unavilable">
+            <form method="post">
+                <input class="userid" type="text" placeholder="username" /><br />
+                <input class="userpass" type="password" placeholder="password" required />
+                <br />
+                <input class="submit" type="submit" value="Login" />
+                <br>
+                <br>
+                <a class="link1" href="#">Sign Up</a>
+                <br />
+                <a class="link2" href="#">forget password?</a> 
+              </form>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Copyrights@--2022</h3>
+    </div>
+</body>
+</html>

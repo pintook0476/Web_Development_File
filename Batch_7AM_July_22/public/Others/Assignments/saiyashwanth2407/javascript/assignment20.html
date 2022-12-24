@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Assignment 20</title>
+    </head>
+    <body>
+        <h3>Addition of all the number inside the array</h3>
+        <script>
+            var dataInput=() =>{
+                var data=[1,2,3,4,5,6,7,8,9,10];
+                var sum=calculatingSum(data);
+                console.log("Sum of all the number inside an array= "+sum);
+            }
+            var calculatingSum=(mark) =>{
+                var sum=0;
+                for(var i=0;i<mark.length;i++){
+                    sum+=mark[i];
+                }
+                return sum;
+            }
+            dataInput();
+        </script>
+    </body>
+</html>

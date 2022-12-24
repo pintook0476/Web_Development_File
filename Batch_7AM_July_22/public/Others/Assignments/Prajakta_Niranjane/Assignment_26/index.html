@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofill</title>
+   <link rel="stylesheet" href="autofill.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Student Library</h3>
+        <form action="">
+        <div class="section">
+            <label for="">Student Name</label><br>
+            <input type="text" placeholder="Enter Name"><br><br>
+            <label for="">Department</label><br>
+            <input type="text" placeholder="Department"><br><br>
+            <label for="">Book Name</label><br>
+            <input type="text" id="searchBook" placeholder="Search Book" autocomplete="off" onkeyup="searchBookNames();">
+            <ul class="autoFillContainer">
+            
+            </ul>
+        </div>
+        <input type="submit" value="Issue Book" id="button">
+    </form>
+    </div> 
+    <script src="autofill.js"></script>   
+</body>
+</html>

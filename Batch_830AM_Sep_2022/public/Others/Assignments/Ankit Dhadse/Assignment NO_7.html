@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMPLOYEE DETAILS</title>
+    </head>
+    <style>
+        .emp{
+            border: 3px solid;
+            text-align: center;
+            text-decoration-color: aliceblue red;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 6px;
+            position: relative;
+            padding: 6px;
+            font-size: 25pt;
+            background-position: center;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXQQb03KXU-SnVRvZLUjSZ_7RvKriBfLDnA&usqp=CAU);
+        }
+        .emp1{
+            text-align: center;
+            text-decoration: underline blue;
+            font-size: 30px;
+            font-style: oblique;
+            border: 4px solid;
+            margin: auto;
+            padding: 100px;
+            border-radius: 30px;
+            position: center;
+            background-color:whitesmoke;
+
+        }
+        .emp3{
+            border: 3px solid;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            bottom: auto;
+            background-color: rgb(249, 166, 166);
+        }
+        .img{
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
+    <body>
+        <div class="emp">EMPLOYEE DETAILS</div>
+        <div class="emp1"> *This Page Is A Demo*
+            <img src="https://i.ytimg.com/vi/r56Tmwr6PAA/maxresdefault.jpg">
+        </div>
+       <script>
+            var empName=prompt(" enter the employee name "),pf, sal, total;
+            var empAge=prompt(" enter the emp age ");
+            var gender=prompt(" enter the emp gender ");
+            var dept=prompt(" enter the emp dept ");
+            var city=prompt(" enter the emp city");
+            var sal=prompt(" enter the emp sal");
+            sal=parseInt(sal);
+            pf=(sal*12)/100;
+            hrf=(sal*24)/100;
+            totle=sal+pf+hrf;
+            console.log("empName is " + empName);
+            console.log("empAge is " + empAge);
+            console.log("gender is " + gender);
+            console.log("dept is " + dept);
+            console.log("city is " + city);
+            console.log("pf is " + pf);
+            console.log("hrf is " + hrf);
+           
+       </script>
+       <div class="emp3">@ Copy Right 2022</div>
+    </body>
+</html>

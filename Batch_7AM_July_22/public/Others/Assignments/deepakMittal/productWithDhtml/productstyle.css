@@ -1,0 +1,30 @@
+.productHeading div{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    background-color: #2874f0;
+    color: whitesmoke;
+}
+.productHeading{
+    text-align: center;
+}
+#productImages{
+    width: 280px;
+    height: 320px;
+    margin-bottom: 10px;
+}
+.container{
+    font-family: sans-serif;
+    color: gray;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+#rateOfProduct{
+    margin-top: 7px;
+    color: #000;
+}
+#productImages{
+    margin-top: 20px;
+}

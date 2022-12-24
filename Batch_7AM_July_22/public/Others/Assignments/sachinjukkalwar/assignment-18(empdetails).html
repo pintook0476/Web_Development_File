@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 18
+        </title>
+    </head>
+    <body>
+        
+        <script>
+            var empdetails={
+                readempdata : () =>{
+                    empdetails. name = prompt("enter ename");
+                    empdetails.  age = prompt("enter eage");
+                    empdetails. gender=prompt("enter ur gender");
+                    empdetails. basicsalary = prompt("enter basicsalary ");
+                    empdetails.  basicsalary = parseInt( empdetails.basicsalary);
+                empdetails. getpfandhra ();
+                },
+                getpfandhra :()=>{
+                    empdetails.   pf = (15 *empdetails. basicsalary)/100;
+                    empdetails.   hra = (20 * empdetails.basicsalary)/100;
+                    empdetails. totalsalary = empdetails.pf + empdetails.hra +empdetails.basicsalary;
+                    empdetails.gettotaltax ();
+                
+                },
+                gettotaltax :()=>{
+                    empdetails. totaltax=0;
+                    if (empdetails.gender == 'male' && empdetails.gender=='MALE'){
+                        if(empdetails.totalsalary >=500000){
+                            empdetails. taxtobepaidis = 15;
+
+                        }else if (empdetails.totalsalary >=300000){ 
+                            empdetails. taxtobepaidis =10;
+                        }
+
+                        else if (empdetails.totalsalary >=100000){
+                            empdetails. taxtobepaidis =5;
+                        }
+                        if (empdetails.gender == 'female' &&empdetails.gender=='FEMALE'){
+                        if(empdetails.totalsalary >=500000){
+                            empdetails. taxtobepaidis = 10;
+
+                        }else if (empdetails.totalsalary >=300000){ 
+                            empdetails. taxtobepaidis =5;
+
+                        }
+
+                    }
+                  
+                }
+            
+                empdetails.  Displayempdetails() ;
+            },
+               Displayempdetails:()=>{
+                  
+                    console.log(" Employee Details");
+                    console.log("Employee name is :" + empdetails.name);
+                    console.log("Employee age is :" + empdetails.age);
+                    console.log("Employee gender is :" + empdetails.gender);
+                    console.log("Employee basicsalary is :" + empdetails.basicsalary);
+                    console.log("Employee pf is :" + empdetails.pf);
+                    console.log("Employee hra is :" + empdetails.hra);
+                    console.log("Employee totalsalary is :" + empdetails.totalsalary);
+
+                }
+            }
+            empdetails.readempdata();
+        </script>
+    </body>
+</html>

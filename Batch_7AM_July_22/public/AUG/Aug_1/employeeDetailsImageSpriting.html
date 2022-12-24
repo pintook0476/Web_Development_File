@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating image spriting...
+        </title>
+        <style>
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                padding: 10px;
+            }
+            .empDetails{
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            .empImage {
+                border: 1px solid;
+                height: 80px;
+                width: 120px;
+                background-image: url('images/spriteimage.png');
+            }
+            .emp2 {
+                background-position: -168px -4px;
+            }
+            .emp3 {
+                background-position: 129px -4px;
+            }
+            .emp4 {
+                background-position: -13px 83px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Employee Details
+        </h3>
+        <div class="empDetails">
+            <div>Name: Teena</div>
+            <div>Age: 20</div>
+            <div>Gender: Female</div>
+            <div>Address: Hyderabad</div>
+            <div class="empImage"></div>
+        </div>
+        <div class="empDetails">
+            <div>Name: Meena</div>
+            <div>Age: 18</div>
+            <div>Gender: Female</div>
+            <div>Address: Hyderabad</div>
+            <div class="empImage emp2"></div>
+        </div>
+        <div class="empDetails">
+            <div>Name: Krish</div>
+            <div>Age: 18</div>
+            <div>Gender: Male</div>
+            <div>Address: Hyderabad</div>
+            <div class="empImage emp3"></div>
+        </div>
+        <div class="empDetails">
+            <div>Name: Prasad</div>
+            <div>Age: 18</div>
+            <div>Gender: Male</div>
+            <div>Address: Hyderabad</div>
+            <div class="empImage emp4"></div>
+        </div>
+    </body>
+</html>

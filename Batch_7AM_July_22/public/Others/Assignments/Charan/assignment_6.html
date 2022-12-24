@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>student <details></title>
+         <style>
+
+            .header{
+                border:1px solid black;
+                text-align: center;
+                background-color: aquamarine;
+                padding:1px;
+            }
+             
+            .container{
+                border: 1px solid black;
+                width: 1500px;
+                height: 1000px;
+            }
+
+            .leftBlock{
+                border: 1px solid black;
+                margin: 2px;
+                width: 400px;
+                height: 990px;
+                padding: 2px;
+                text-align: center;
+                float :left;
+            }
+            .rightblock{
+                border: 1px solid black;
+                width: 1080px;
+                height: 990px;
+                margin: 2px;
+                padding: 2px;
+                float: right;
+                clear:both;
+                position: relative;
+                bottom: 100%;
+                overflow-y: scroll;
+            }
+            .detailscont{
+                border: 1px solid black;
+                width : 1075px;
+                height : 200px;
+                margin : 1px;
+                padding : 1px;
+            }
+            .imgcont{
+                border : 1px solid black;
+                width : 150px;
+                height : 150px;
+                margin : 1px;
+                padding : 1px;
+                float : left;
+                background-image: url(file:///F:/UIFullstack/webapplication/public/spriting.png);
+            }
+            .details{
+                list-style-type: none;
+                float : left;
+            }
+            .img1{
+                width: 150px;
+                height : 150px;
+                background-position: 5% 16%;
+
+            }
+            .img2{
+                width: 150px;
+                height : 150px;
+                background-position: 22% 7%;
+
+            }
+            .img3{
+                width: 150px;
+                height : 150px;
+                background-position: 40% 10%;
+
+            }
+            .img4{
+                width: 150px;
+                height : 150px;
+                background-position: 53% 7%;
+
+            }
+            .img5{
+                width: 150px;
+                height : 150px;
+                background-position: 73% 13%;
+
+            }
+         </style>   
+    </head>
+    <body>
+        <h2 class="header">Student Details</h2>
+        <div class="container">
+             <div class="leftBlock">
+                <ul>
+                <li>charan</li>
+                <li>Nikhil</li>
+                <li>Sai Prakash</li>
+                <li>Veerababu</li>
+                <li>Pradeep</li> 
+                </ul>
+             </div>
+             <div class="rightblock">
+                <div class="detailscont">
+                    <div class="imgcont img1">                   
+                    </div>
+                    <ul class="details">
+                        <li>Name: Charan</li>
+                        <li>Age: 24</li>
+                        <li>Gender: male</li>
+                        <li>Location: Hyderabad</li>
+                    </ul>
+                </div>
+                <div class="detailscont">
+                    <div class="imgcont img2">
+                    </div>
+                    <ul class="details">
+                        <li>Name: Nikhil</li>
+                        <li>Age: 26</li>
+                        <li>Gender: male</li>
+                        <li>Location: Hyderabad</li>
+                    </ul>
+                </div>    
+                    <div class="detailscont">
+                        <div class="imgcont img3"></div>
+                        <ul class="details">
+                            <li>Name: saiprakash</li>
+                            <li>Age: 21</li>
+                            <li>Gender: male</li>
+                            <li>Location: Hyderabad</li>
+                         </ul>
+                    </div>     
+                     <div class="detailscont">
+                            <div class="imgcont img4"></div>
+                            <ul class="details">
+                                <li>Name: Pradeep</li>
+                                <li>Age: 25</li>
+                                <li>Gender: male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                    </div>
+                    <div class="detailscont">
+                        <div class="imgcont img5"></div>
+                        <ul class="details">
+                            <li>Name: Veerababu</li>
+                            <li>Age: 20</li>
+                            <li>Gender: male</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                </div>
+             </div>
+
+        </div>
+        
+    </body>
+    </html>

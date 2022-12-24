@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Assignment no 1</title>
+
+  				<style>
+						.header{
+						text-align:center;
+						text-decoration:underline;
+						}
+						.image{
+						height:150px;
+						width:150px;
+						margin-left:20px;
+						}
+						body{
+						background-color:#ffffcc;
+						border:2px solid black;
+						}
+						.para{
+						color:#ff00ff;
+						margin-left:20px;
+						}
+				</style>
+ </head>
+ <body>
+ 			<h3 class="header">Registered Student Details</h3>
+			<br>
+			
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s1.jpg " alt="student-1" title="" /> <br>
+			<p class="para">
+			Name: Maryam Ayub <br>
+			Age: 24	<br>
+			Gender: Female<br>
+			Location: Kochin<br>
+			</p>
+			<hr>
+
+			<img class="image"src="C:\Users\Parvesh\Downloads\Telegram Desktop\s2.jpg" alt="student-2" />
+			<p class="para">
+			Name: Amal Joy <br>
+			Age: 22	<br>
+			Gender: Male<br>
+			Location: Bengluru<br>
+			<p/>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s3.jpg" alt="student-3"/><br>
+			<p class="para">
+			Name: Niraj P.G <br>
+			Age: 22	<br>
+			Gender: Male<br>
+			Location: Chennai<br>
+			</p>
+			<hr>
+			<br>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s4.jpg" alt="student-4"/><br>
+			<p class="para">		
+			Name: Jeswin Geroge <br>
+			Age: 24	<br>
+			Gender: Male<br>
+			Location: Mumbai<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s5.jpg" alt="student-5"/><br>
+			<p class="para">
+			Name: Jhanvi Rawat <br>
+			Age: 23<br>
+			Gender: Femaale<br>
+			Location: Delhi<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s6.jpg" alt="student-6"/>
+			<p class="para">
+			Name:Niharika Gogoi <br>
+			Age: 23<br>
+			Gender: Femaale<br>
+			Location: Guwahati<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s7.jpg" alt="student-7"/><br>
+			<p class="para">
+			Name: Manisha Roy <br>
+			Age: 25<br>
+			Gender: Femaale<br>
+			Location: Kolkata<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s8.jpg" alt="student-8"/><br>
+			<p class="para">
+			Name: Rishav Das <br>
+			Age: 20<br>
+			Gender: Male<br>
+			Location: Vizag<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s9.jpg" alt="student-9"/><br>
+			<p class="para">
+			Name: Prabhati Tiwari <br>
+			Age: 21<br>
+			Gender: Femaale<br>
+			Location: Indore<br>
+			</p>
+			<hr>
+
+			<img class="image" src="C:\Users\Parvesh\Downloads\Telegram Desktop\s10.jpg" alt="student-10"/><br>
+			<p class="para">
+			Name: Shyam Godavari <br>
+			Age: 23<br>
+			Gender: Male<br>
+			Location: Kakinada<br>
+			</p>
+ </body>
+</html>

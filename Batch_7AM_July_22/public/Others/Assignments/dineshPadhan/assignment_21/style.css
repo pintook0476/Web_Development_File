@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f6e4ff;
+}
+.heading {
+  width: 100%;
+  height: 70px;
+  background-color: #9d61af;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 70px;
+  color: #f0f8ff;
+}
+.generateNote {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+form {
+  width: 60%;
+  height: 500px;
+  /* border: 1px solid; */
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.leftBox {
+  width: 48%;
+  position: relative;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  border: 1px solid #9d61af;
+  outline-color: #9d61af;
+  margin-bottom: 10px;
+}
+textarea {
+  height: 155px;
+  resize: none;
+  padding: 5px 15px;
+}
+.mark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mark1 {
+  width: 48%;
+}
+h4 {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.report , .LoadBtn, .reload {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  width: 200px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #b37cc4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.report{
+  display: none;
+}
+.reload{
+  bottom: 75px;
+}
+
+img{
+  width: 707px;
+  height: 1000px;
+}
+
+/* report Card */
+.reportcard {
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 707px;
+  height: 1000px;
+  border: 1px solid;
+  position: relative;
+  background-size: cover;
+  display: none;
+}
+.remark {
+  height: 114px;
+  width: 322px;
+  position: absolute;
+  left: 323px;
+  bottom: 118px;
+}
+.name {
+  position: absolute;
+  top: 186px;
+  left: 155px;
+}
+.level {
+  position: absolute;
+  top: 186px;
+  right: 255px;
+}
+.adviser {
+  position: absolute;
+  top: 221px;
+  left: 185px;
+}
+.section {
+  position: absolute;
+  top: 221px;
+  right: 245px;
+}
+.writting {
+  position: absolute;
+  top: 330px;
+  right: 150px;
+}
+.reading {
+  position: absolute;
+  top: 370px;
+  right: 150px;
+}
+.speaking {
+  position: absolute;
+  top: 405px;
+  right: 150px;
+}
+.langauage {
+  position: absolute;
+  top: 440px;
+  right: 150px;
+}
+.counting {
+  position: absolute;
+  top: 475px;
+  right: 150px;
+}
+.art {
+  position: absolute;
+  top: 510px;
+  right: 150px;
+}
+.playing {
+  position: absolute;
+  top: 550px;
+  right: 150px;
+}
+.total {
+  position: absolute;
+  top: 640px;
+  right: 150px;
+}
+.grade {
+  position: absolute;
+  top: 675px;
+  right: 150px;
+}

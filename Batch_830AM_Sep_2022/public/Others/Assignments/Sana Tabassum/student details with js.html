@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<title>student details with js</title>
+<head>
+    <style>
+      body{
+    background-image: radial-gradient(rgb(32, 31, 31),rgb(242, 239, 233))  ; 
+    
+  }
+#header{
+    border:2px solid black;
+    width:90%;
+    margin-left: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2em;
+    animation: slide 2s ease;
+     font-size: 12px;
+    font-family:Lucida Bright;
+}
+#header h1{
+
+    text-align: center;
+  font-size:1.5rem;
+  letter-spacing: 1.5em;
+  padding:em 0;
+  animation: silde 2s ease;
+  padding-top: 1rem;
+
+}
+@keyframes silde{
+  0%{
+    opacity:0;
+    transform: scale(1.5);
+  }
+  100%{
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+#container{
+   padding:20px;
+   width:100%;
+   border: 2px solid white;
+   background-color:black;
+}
+ #student1{
+        background-color: antiquewhite;
+        position: relative;
+        align-items: center;
+        width:100%;
+        display: none;
+        top:3rem;
+        border:2px solid black;
+ }
+ #student2{
+  background-color: antiquewhite;
+  position: relative;
+  align-items: center;
+  width:100%;
+  display: none;
+  top:3rem;
+  border:2px solid black;
+}
+#student3{
+  background-color: antiquewhite;
+  position: absolute;
+  align-items: center;
+  width:50%;
+  display: none;
+  top:10rem;
+  left:40rem;
+  border:2px solid black;
+}
+#student4{
+  background-color: antiquewhite;
+  position: absolute;
+  align-items: center;
+  width:50%;
+  display: none;
+  top:10rem;
+  left:40rem;
+  border:2px solid black;
+}
+#student5{
+  background-color: antiquewhite;
+  position: absolute;
+  align-items: center;
+  width:50%;
+  display: none;
+  top:10rem;
+  left:40rem;
+  border:2px solid black;
+}
+#student6{
+  background-color: antiquewhite;
+  position:absolute;
+  align-items: center;
+  width:50%;
+  display: none;
+  top:10rem;
+  left:40rem;
+  border:2px solid black;
+}
+
+    ul{
+        font-size: 20px;
+        font-weight: bold;
+        list-style: none;
+    }
+    
+    img{
+    margin-left: 30px;
+    height:5rem;
+    width:5rem;
+    object-fit: cover;
+    }
+    
+#sidebox{
+
+    position:relative;
+        
+        align-items: left;
+        width:35%;
+        height:100%;
+        left:2rem;
+        top:0px;
+        color:white;
+        border:2px solid rgb(217, 206, 206);
+ }
+ ol{
+   list-style: none;
+
+ }
+
+#side li{
+border:2px solid grey;
+font-size: 24px;
+padding:10px;
+cursor: pointer;
+margin-top: 10px;
+}
+#side li:hover{
+   transform: scale(1);
+   background-color: rgb(234, 148, 19);
+}
+#cont2{
+   position: absolute;
+   border: 2px solid white;
+   background-color: rgb(170, 169, 169);
+   height:65%;
+   width:50%;
+   left:40%;
+   overflow: scroll;
+   overflow: hidden;
+   bottom:5.1rem;
+   padding: 20px;
+  
+   
+}
+#close{
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
+    color:black;
+    margin-left: 40rem;
+}
+
+#footer{
+                border: 2px solid;
+                width:100%;
+            height:40%;
+             text-transform: uppercase;
+             font-size: 12px;
+             font-family:Lucclassa Bright;
+             text-align: center;
+             margin-top:10px;
+            
+    
+            }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Student Details</h1>
+        </div>
+        <br>
+        <div id="container">
+            <div id="sidebox">
+             <ol id ="side">
+        
+             <li id="abc" class="ben ">1) Ravi Kumar</li><br>
+             <li id="bdc" class="let">2) Rajesh kur</li><br>
+             <li id="suzi"class="let">3) Suzi Saki</li><br>
+             <li id="aliya" class="let">4) Kishore kumar</li><br>
+             <li id="raj" class="let">5) Raj Malik</li><br>
+             <li id="harsha" class="let">6) Harsha Singh</li><br>
+            
+             </ol>
+           </div>
+           <div id="cont2">
+           <div id="student1">
+            <span id="close" onclick="document.getElementById('student1').style.display='none'" >&times;</span:id>
+            <ul>
+         <li>Name:Ravi Kumar</li>
+         <li>Age :21</li>
+         <li id="gmail">Emailid:RaviKumar@gmail.com</li>
+         <li>Mobile:+4534592932</li>
+         </ul>
+         <img src="stpic1.jpg" id="img" alt="Ravi kumar">
+         </div>
+         <div id="student2">
+            <span id="close" onclick="document.getElementById('student2').style.display='none'" >&times;</span:id>
+            <ul>
+         <li>Name:Rajesh Kur</li>
+         <li>Age :23</li>
+         <li id="gmail">Emailid:Rajeshkur@gmail.com</li>
+         <li>Mobile:+4592932</li>
+         </ul>
+         <img src="stpic2.jpg" id="img" alt="Ravi kumar">
+         </div>
+        </div> 
+        <div id="student3">
+            <span id="close" onclick="document.getElementById('student3').style.display='none'" >&times;</span:id>
+
+            <ul>
+         <li>Name:suzi sexena</li>
+         <li>Age :26</li>
+         <li id="gmail">Emailid:suzzzzzi@gmail.com</li>
+         <li>Mobile:+0167882932</li>
+         </ul>
+         <img src="stpicg1.jpg" id="img" alt="Ravi kumar">
+         </div>
+         <br>
+         <div id="student4">
+            <span id="close" onclick="document.getElementById('student4').style.display='none'" >&times;</span:id>
+
+            <ul>
+         <li>Name:kishore Kumar</li>
+         <li>Age :21</li>
+         <li id="gmail">Emailid:kishoreKumar@gmail.com</li>
+         <li>Mobile:+555492932</li>
+         </ul>
+         <img src="stpic3.jpg" id="img" alt="Ravi kumar">
+         </div>
+         
+         
+         <br>
+         <div id="student5">
+            <span id="close" onclick="document.getElementById('student5').style.display='none'" >&times;</span:id>
+
+            <ul>
+         <li>Name:Aditya singh</li>
+         <li>Age :21</li>
+         <li id="gmail">Emailid:aditya singh@gmail.com</li>
+         <li>Mobile:+5554932</li>
+         </ul>
+         <img src="stpic4.jpg" id="img" alt="Ravi kumar">
+         </div>
+         
+         
+         <br>
+         <div id="student6">
+            <span id="close" onclick="document.getElementById('student6').style.display='none'" >&times;</span:id>
+
+            <ul>
+         <li>Name:harsha aingh</li>
+         <li>Age :21</li>
+         <li id="gmail">Emailid:harsha@gmail.com</li>
+         <li>Mobile:+55592932</li>
+         </ul>
+         <img src="stpicg.jpg" id="img" alt="Ravi kumar">
+         </div>
+         
+         
+         <br>
+         <div id="student6">
+            <ul>
+         <li>Name:ravi Kumar</li>
+         <li>Age :21</li>
+         <li id="gmail">Emailid:raviKumar@gmail.com</li>
+         <li>Mobile:+555492932</li>
+         </ul>
+         <img src="pic21.jfif" id="img" alt="Ravi kumar">
+         </div>
+</div>
+
+
+
+
+
+    <script type="text/javascript">
+const abc=document.getElementById("abc");
+const student1=document.getElementById("student1");
+const student2=document.getElementById("student2");
+const student3=document.getElementById("student3");
+const student4=document.getElementById("student4");
+const student5=document.getElementById("student5");
+const student6=document.getElementById("student6");
+const student7=document.getElementById("student7");
+const closed=document.getElementById("close");
+const conted=document.getElementById("cont2");
+const rajesh=document.getElementById("bdc");
+const suzis=document.getElementById("suzi");
+const aliy=document.getElementById("aliya");
+const rajed=document.getElementById("raj");
+const hars=document.getElementById("harsha");
+const aliyass=document.getElementById("aliyas");
+
+
+rajesh.addEventListener("click",()=>{
+    
+    student2.style.display="block";
+    conted.style.background="black";
+
+});
+abc.addEventListener("click",()=>{
+student1.style.display="block";
+conted.style.background="black";
+});
+suzis.addEventListener("click",()=>{
+
+    student3.style.display="block";
+    conted.style.background="black";
+});
+aliy.addEventListener("click",()=>{
+
+    student4.style.display="block";
+    conted.style.background="black";
+});
+rajed.addEventListener("click",()=>{
+
+    student5.style.display="block";
+    conted.style.background="black";
+});
+hars.addEventListener("click",()=>{
+
+    student6.style.display="block";
+    conted.style.background="black";
+});
+
+    </script>
+</body>
+</html>

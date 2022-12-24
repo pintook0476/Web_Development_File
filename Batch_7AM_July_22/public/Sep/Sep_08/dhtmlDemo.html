@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DHTML
+        </title>
+    </head>
+    <body>
+        <div>
+            Demonstrating DHTML concepts
+        </div>
+        <div>
+            The sum of two numbers is <span id="rblock">....</span>
+        </div>
+        <script>
+            var a1 = 20;
+            var a2 = 30;
+            var result = a1 + a2;
+           document.write(result)
+
+            document.getElementById("rblock").innerHTML = result;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <metacharset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>return and passing both</title>
+    </head>
+    <body>
+       <script>
+       var empname, empdep, empbasicSal, empGender, pf, hra, totalSal, taxValue;
+
+       var displayEmpDetails=(empName,empDepartment,empbasicSal,pf,hra,emptotalSal,taxValue)=> {
+                console.log("Employee Details")   ;
+                console.log("empName " + empName);
+                //console.log("Gender " + empGender);
+                console.log("Department " + empDepartment);
+                console.log("BAsic sal " + empbasicSal);
+                console.log("Total Sal " + totalSal);
+                console.log("Tax vlaue is " + taxValue);
+            }
+            var readEmployeedetails=()=>{
+                empName=prompt("Enter empName ")
+                empGender=prompt("Enter empGender")
+                empDepartment=prompt("Enter empDepartment")
+                empbasicSal=prompt("Enter empbasicSal")
+                empbasicSal = parseInt(empbasicSal); 
+
+                var data =  getPfHraAndTotalSal(empbasicSal);
+                 pf=data[0];
+                  hra=data[1];
+                  totalSal=[2];
+                  displayEmpDetails(empName,empDepartment,empbasicSal, pf, hra ,totalSal, taxValue);
+                
+            }
+                var getPfHraAndTotalSal = (empbasicSal) =>{
+                var pf = (12 / 100 ) * empbasicSal;
+                 var hra = (24 / 100 ) * empbasicSal;
+                  var totalSal = pf + hra + empbasicSal;
+                return [pf,hra,totalSal];
+                taxvalue=0;
+                }
+            var  getTotalTax=()=> {
+                var empGender;
+                if (empGender == 'Male') {
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (15 / 100);
+                    } else if (totalSal >= 30000) {
+                        taxValue = totalSal * (10 / 100);
+                    }  else {
+                        taxValue = 0;
+                    }
+                } else { // Female
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (10 / 100);
+                    } else {
+                    return; taxValue
+                    }
+                }
+            }
+
+           
+            readEmployeedetails();
+
+        </script>
+    </body>
+</html>

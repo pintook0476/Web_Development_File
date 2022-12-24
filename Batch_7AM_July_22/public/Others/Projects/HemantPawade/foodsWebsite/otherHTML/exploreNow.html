@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Website</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-size: 16px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #666;
+      }
+
+      .pimg0 {
+        background-image: url("https://www.bu.edu/files/2023/05/ezgif.com-gif-maker-6.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .pimg1 {
+        background-image: url("https://sulaindianrestaurant.com/wp-content/uploads/2021/05/main-street-patio-dining.jpg");
+        min-height: 100%;
+      }
+      .pimg2 {
+        background-image: url("https://media.newyorker.com/photos/5f0b4c5e559b0ea7be05c09d/16:9/w_2559,h_1439,c_limit/Mattoo-RoganJosh.jpg");
+        min-height: 400px;
+      }
+      .pimg3 {
+        background-image: url("http://lh3.googleusercontent.com/N11teizzfiVp-3jyVXvtK92Ri0UQ5myGl3fvxfIYuMIlLz0Xy7uexri5D2-pgaO2YYe2OAveNQursTZDipYll-qTEhU=s750");
+        min-height: 400px;
+      }
+      .pimg1,
+      .pimg2,
+      .pimg3 {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .ptext {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+      }
+      .textBg {
+        background: #313534;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .section {
+        padding: 50px 80px;
+        text-align: center;
+      }
+      .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+      }
+      .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="pimg0">
+      <div class="">
+        <video
+          width="100%"
+          height="720vh"
+          autoplay
+          loop
+          controls
+          controlslist="nodownload"
+          webkitallowfullscreen
+          mozallowf
+        >
+          <source src="Restaurantpromotion.mp4" type="video/mp4" />
+          you have older version of browser
+        </video>
+        <!-- <span class="textBg"> Parallax Website </span> -->
+      </div>
+    </section>
+    <section class="section section-light">
+      <h2>What's On Your Plate, India?</h2>
+      <p>
+        The Indian sub-continent is blessed with diversity, and with the vast
+        expanse of people, culture and traditions, food becomes a life line, a
+        common connection for all. As a wise person once said, ‘there is no love
+        more sincere, than the love for food’. Putting our traditional dishes in
+        the spotlight here are the most famous dishes from each state of the
+        country you must try, before you say goodbye.
+      </p>
+    </section>
+    <section class="pimg2"></section>
+    <section class="section section-dark">
+      <h2>Kashmir: Rogan Josh</h2>
+      <p>
+        Rogan Josh is an aromatic lamb dish with flavors of browned onions,
+        various spices and yoghurt. It is usually served with steamed rice and
+        consists of pieces of lamb or mutton braised with gravy flavored with
+        garlic, ginger and aromatic spices (cloves, bay leaves, cardamom, and
+        cinnamon).
+      </p>
+    </section>
+    <section class="pimg3"></section>
+    <section class="section section-dark">
+      <h2>Telengana: Biryani</h2>
+      <p>
+        Biryani more famously the Hyderabadi version, is prepared in the form of
+        kachay gosht ki Biryani and dum ki Biryani. This all time classic needs
+        no explanation.
+      </p>
+    </section>
+    <section class="pimg1"></section>
+  </body>
+</html>

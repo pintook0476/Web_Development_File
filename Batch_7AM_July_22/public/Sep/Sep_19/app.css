@@ -1,0 +1,29 @@
+
+.title {
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+}
+ul {
+    border: 1px solid;
+    margin: 20px auto;
+    padding: 10px;
+    width: 400px;
+}
+li {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    list-style: none;
+}
+.stitle {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+.successflyRegistered {
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    display: none;
+}

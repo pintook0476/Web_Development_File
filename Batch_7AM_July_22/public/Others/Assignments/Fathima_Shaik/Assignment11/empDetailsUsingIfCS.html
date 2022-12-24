@@ -1,0 +1,75 @@
+<html>
+<head>
+     <title>Assignment-11(Employee Details)</title>
+</head>
+<body>
+    <h3> Employee Details</h3>
+    <script type="text/javascript">
+        var ename = prompt("Enter Employee name:");
+        var gen = prompt("Enterr Gender:");
+        var dept = prompt("Enter Department:");
+        var basic_sal = parseInt(prompt("Enter Basic Salary:"));
+
+        //calculating pf,hra,total salry
+        var pf = basic_sal * ( 14 / 100 );
+        var hra = basic_sal * ( 25 / 100 );
+        var tot_sal = pf + hra + basic_sal;
+
+        //display employee details
+        console.log("Employee Details:")
+        console.log("Name: " + ename);
+        console.log("Gender: " + gen);
+        console.log("Department: " + dept);
+        console.log("Basic Salary: " + basic_sal);
+        console.log("pf: " + pf);
+        console.log("hra: " + hra);
+        console.log("Total Salary: " + tot_sal);
+
+        //tax if gender is male
+        if (gen == 'male')
+        {
+            if ( tot_sal >= 200000)
+            {          
+                var tax = ( 15 / 100 ) * tot_sal;
+                console.log("Tax: " + tax);
+            } 
+            
+            else if( tot_sal >= 100000)
+            {
+                tax = ( 10 / 100 ) * tot_sal;
+                console.log("Tax: " + tax);
+            }
+            
+            else if ( tot_sal >=50000 )
+            {
+                tax = ( 5 / 100 ) * tot_sal;
+                console.log("Tax: " + tax);
+            }
+            
+            else {
+                console.log("Tax is Zero");
+            }
+         } 
+         
+         else
+         {
+            if( tot_sal >= 200000)
+            {
+                var tax = ( 10 /100 ) * tot_sal;
+                console.log("Tax: " + tax);
+            }
+            
+            else if( tot_sal >= 100000)
+            {
+                tax = ( 5 / 100 ) * tot_sal;
+                console.log("Tax: " + tax);
+            }
+            
+            else
+            {
+                console.log("Tax is Zero");
+            }
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Media queries
+        </title>
+        <link rel="stylesheet" href="abc_200X300.css" media="min-height:200;max-width:300">
+        <link rel="stylesheet" href="abc_200X300.css" media="min-height:200;max-width:300">
+        <link rel="stylesheet" href="abc_200X300.css" media="min-height:200;max-width:300">
+        <link rel="stylesheet" href="abc_200X300.css" media="min-height:200;max-width:300">
+        <style>
+            body {
+                background-color: #ccc;
+            }
+            header, footer, main {
+                border: 1px solid;
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                background-color: #fff;
+                padding: 5px;
+            }
+            main {
+                top: 50px;
+                bottom: 55px;
+            }
+            footer {
+                bottom: 5px;
+            }
+            .statusBar {
+                width: 600px;
+                background-color: aquamarine;
+                text-align: center;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 30px;
+            }
+
+            .addsBlock {
+                border: 1px solid;
+                width: 200px;
+                height: 250px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                background-color: yellow;
+            }
+
+            @media screen and (max-width: 300px) and (min-width: 250px) {
+                .statusBar {
+                    background-color: blue;
+                    width: 200px;
+                    margin: 2px;
+
+                }
+                .addsBlock {
+                    display: none;
+                }
+
+            }
+
+            @media screen and (min-width: 550px) and (max-width: 700px) and (orentation: landscape){
+                .addsBlock {
+                    width: 150px;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+                .statusBar {
+                    width: 450px;
+                    margin: 10px;
+                }
+            }
+
+            @media print {
+                .addsBlock  {
+                    display: none;
+                }
+                header {
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Online shopping page
+        </header>
+        <main>
+            <div class="statusBar">
+                Welcome to our online shopping page
+            </div>
+            <div class="addsBlock">
+                <marquee behavior="" direction="">Adds are about to come....</marquee>
+            </div>
+        </main>
+        <footer>
+            @copy rights 2022
+        </footer>
+    </body>
+</html>

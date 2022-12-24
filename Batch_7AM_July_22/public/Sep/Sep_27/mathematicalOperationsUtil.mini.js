@@ -1,0 +1,2 @@
+var count=10,getAddition=(t,n)=>{var r;return count++,r=(t=parseInt(t))+(n=parseInt(n))},getMultiplication=(t,n)=>{var r;return count++,r=(t=parseInt(t))*(n=parseInt(n))},getDivision=(t,n)=>{var r;return count++,r=(t=parseInt(t))/(n=parseInt(n))},getCount=()=>count,getSubstrac
+tion=(t,n)=>{var r;return count++,r=(t=parseInt(t))-(n=parseInt(n))};

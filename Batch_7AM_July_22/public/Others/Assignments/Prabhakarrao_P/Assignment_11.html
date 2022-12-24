@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        tax calculation
+    </h3>
+    <script>
+            var sal = prompt("Enter the salary")
+            var gender = prompt('Enter gender M/F');
+            sal = parseInt(sal)
+            var hra  = sal * 10/100; 
+            var da  = sal * 15/100; 
+            var pf  = sal * 8/100; 
+
+
+            // Caluculating total and avg.
+            var totalSal = sal + hra + da - pf;
+
+            // display the values back to user
+
+            console.log("Employee Salary = " + sal );
+            console.log("Employee H.R.A = " + hra );
+            console.log("Employee D.A = " + da );
+            console.log("Employee pf = " + pf );
+            console.log("Total Salary of Employee is = " + totalSal );
+            console.log(" Employee is " + gender);
+          
+
+            if (gender == "M") {
+                if (totalSal >= 200000) {
+                    console.log(" Tax persent is 15 %");
+                    tax = 15/100 * totalSal
+                }
+                else if (totalSal >= 100000) {
+                    console.log(" Tax persent is 10 %");
+                    tax = 10/100 * totalSal
+                } else if (totalSal >= 50000) {
+                    console.log(" Tax persent is 5 %");
+                } else {
+                    console.log(" Tax persent is 0 %");
+                }
+
+            } else {
+                if (totalSal >= 200000) {
+                    console.log(" Tax persent is 10 %");
+                    tax = 10/100 * totalSal
+                }
+                else if (totalSal >= 100000) {
+                    console.log(" Tax persent is 5 %");
+                    tax = 5/100 * totalSal
+                } else {
+                    console.log(" Tax persent is 0 %");
+                }
+            }
+              
+            console.log("done");
+    </script>
+</body>
+</html>

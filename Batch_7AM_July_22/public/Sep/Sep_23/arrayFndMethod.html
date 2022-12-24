@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARray find method</title>
+    </head>
+    <body>
+        <script>
+            var data = [ 34, 56, 67, 78, 99];
+            
+           /*for (var i = 0; i < data.length; i++) {
+                if (data[i] == 78) {
+                    console.log("found value");
+                }
+            } */
+
+            data.find((value) => {
+                if (value == 78) {
+                    console.log("found value")
+                }
+            });
+
+            console.log(data.includes(78));
+        </script>
+    </body>
+</html>

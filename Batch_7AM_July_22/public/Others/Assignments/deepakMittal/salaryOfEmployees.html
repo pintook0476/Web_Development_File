@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Employees Salary Details</h3>
+
+        <script>
+            var empName = "Deepak";
+            var empAge = 22;
+            var empGender = "Male";
+            var empDept = "It";
+            var basicSal = prompt("Enter Your Salary");
+            basicSal = parseInt(basicSal);
+            var empPf = 20 * (basicSal / 100);
+            var empHra = 15 * (basicSal / 100);
+            var totalSal = basicSal + empHra + empPf;
+
+            console.log("Employee Name = " + empName);
+            console.log("Employee Age = " + empAge);
+            console.log("Employee Gender " + empGender);
+            console.log("Employee Dept. " + empDept);
+            console.log("Basic Salary " + basicSal);
+            console.log("Before Tax Salary " + totalSal);
+            
+
+           
+            if(empGender == "Male"){
+                if(basicSal <= 50000 > 0){
+                    var totalSalTax = totalSal + 5 * (totalSal /100);
+                    var empTax = 15 * (totalSal /100);
+                    console.log("Tax Deducted = " + empTax);
+                    console.log("Total Salary is " + totalSalTax);
+                }
+
+                if(basicSal <= 100000 > 50000){
+                    var totalSalTax = totalSal + 10 * (totalSal /100);
+                    var empTax = 15 * (totalSal /100);
+                    console.log("Tax Deducted = " + empTax);
+                    console.log("Total Salary is " + totalSalTax);
+                }
+
+                if(basicSal >= 200000 > 100000){
+                    var totalSalTax = totalSal + 15 * (totalSal /100);
+                    var empTax = 15 * (totalSal /100);
+                    console.log("Tax Deducted = " + empTax);
+                    console.log("Total Salary is " + totalSalTax);
+                }
+                else{
+                        console.log("Tax Deducted 0");
+                        console.log("Salary After Tax " + totalSal);
+                        console.log("Your Salary is Tax Free");
+
+                    }
+            }
+           
+           
+        </script>
+        
+    </body>
+</html>

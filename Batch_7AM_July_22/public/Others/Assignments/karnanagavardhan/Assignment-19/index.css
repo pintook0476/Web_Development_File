@@ -1,0 +1,24 @@
+
+.box1{
+    
+    text-align: center;
+    color: navy;
+
+
+}
+ul{
+    border: 1px solid;
+    width: 350px;
+    margin: 20px auto;
+    padding: 10px;
+    
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+.hide{
+    display: none;
+}

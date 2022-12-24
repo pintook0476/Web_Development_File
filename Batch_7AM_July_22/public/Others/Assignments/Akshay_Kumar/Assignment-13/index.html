@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-13/Switch Case</title>
+    </head>
+    <body>
+        <script>
+            var num = prompt("enter the number");
+            num = parseInt(num);
+            var input = prompt("enter input between 1-4");
+            input = parseInt(input);
+            switch(input){
+                case 1 :
+                    var sum;
+                    var newNum=0;
+                    var paindrome = num;
+                    while(num>0){
+                        sum = num%10;
+                        newNum = newNum*10+sum;
+                        num = parseInt(num/10);
+                    }
+                    if(newNum==paindrome){
+                        console.log("given number is palindrome");
+                    }else{
+                        console.log("not a palindrome");
+                    }
+                break;
+                case 2 :
+                    var ams = num;
+                    var sum = 0;
+                    var i = num.toString().length;
+                    while(num>0){
+                        sum += (num%10)**i;
+                        num = parseInt(num/10);
+                    }
+                    if(sum==ams){
+                        console.log("given number is Armstrong");
+                    }else{
+                        console.log("not a Armstrong number");
+                    }
+                break;
+                case 3 :
+                    var sum = 0;
+                    while(num>0||sum>9){
+                        if(num==0){
+                            num = sum;
+                            sum = 0;
+                        }
+                        sum += num%10;
+                        num = parseInt(num/10);
+                    }
+                    console.log(sum);
+                break;
+                case 4 :
+                    var sum=0;
+                    while(num>0){
+                        sum += num%10;
+                        num = parseInt(num/10);
+                    }
+                    console.log(sum);
+                break;
+                default :
+                    console.log("invalid input");
+                break;
+            }
+        </script>
+    </body>
+</html>

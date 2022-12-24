@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Details using Functions</title>
+</head>
+
+<body>
+    <script>
+        var empName, age, gender, department, basicsal, pf, hra;
+        function readthedata () {
+            empName = prompt("enter Ename");
+            age = prompt("enter age");
+            gender = prompt("enter gender");
+            department = prompt("enter your department");
+            basicsal = prompt("enter basicsal");
+            basicsal = parseInt(basicsal);
+            calculatethetotal ();
+        }
+
+        //calculation
+        function calculatethetotal () {
+            pf = basicsal * (14 / 100);
+
+            hra = basicsal * (24 / 100);
+
+            totalsal = basicsal + pf + hra;
+            totalsal = parseInt(totalsal);
+            displaythedata ();
+        }
+
+        function displaythedata () {
+            console.log("Employe Details");
+            console.log("empName is " + empName);
+            console.log("age is " + age);
+            console.log("gender is " + gender);
+            console.log("department is " + department);
+            console.log("basicsal is " + basicsal);
+            console.log("pf is " + pf);
+            console.log("hra is " + hra);
+            console.log("totalsalary is " + totalsal);
+            calculatethetax ();
+        }
+
+        function calculatethetax () {
+            if (gender == 'male') {
+
+                if (totalsal >= 200000) {
+                    console.log("tax percentage is" + (15 / 100) * totalsal);
+                } else if (totalsal >= 100000) {
+                    console.log("tax percentage is" + (10 / 100) * totalsal);
+                } else if (totalsal >= 50000) {
+                    console.log("tax percentage is" + (5 / 100) * totalsal);
+                } else {
+                    console.log("tax is 0 ");
+                }
+            } else {
+                if (totalsal >= 200000) {
+                    console.log("tax percentage is" + (10 / 100) * totalsal);
+
+                } else if (totalsal >= 100000) {
+                    console.log("tax percentage is" + (5 / 100) * totalsal);
+                } else {
+                    console.log("tax percentage is 0 ")
+                }
+
+            }
+
+        }
+        readthedata ();
+    </script>
+
+</body>
+
+</html>

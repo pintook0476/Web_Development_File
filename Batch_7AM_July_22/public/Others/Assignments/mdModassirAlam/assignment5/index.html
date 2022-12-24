@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Assignment - Layout
+        </title>
+        <style>
+            .footer,
+            .header {
+                border: 1px solid;
+                text-align: center;
+                text-decoration: underline;
+                padding: 5px;
+                margin: 5px;
+                background-color: coral;
+            }
+            .header{
+                font-weight: bold;
+            }
+            .mainContainer {
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+                height: 500px;
+                background-color: aquamarine;
+            }
+            .footer {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .leftBlock,
+            .rightBlock {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                height: 460px;
+                overflow: auto;
+            }
+            .leftBlock {
+                width: 30%;
+               
+            }
+            .rightBlock {
+                width: 55%;
+            }
+            .leftBlock li {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style-position: inside;
+                background-color: chartreuse;
+            }
+            .leftBlock li:hover {
+                 background-color: #ccc;
+            }
+            .detailsContainer > li {
+                list-style: none;
+                height: 150px;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock,
+            .detailsBlock {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .imgBlock {
+                border: 1px solid;
+                /* height: 150px;
+                width: 150px; */
+                background-image: url('rank1.jpg');
+            }
+            .imgBlock {
+                width: 120px;
+                height: 120px;
+                /* background-position: 10px 10px; */
+            }
+            .cele1{
+            background-position: -103px -3px;
+        }
+        .cele2{
+            background-position: -302px -12px;
+        } .cele3{
+            background-position: -575px -13px;
+        } .cele4{
+            background-position: -837px -3px;
+        } .cele5{
+            background-position: -85px -223px;
+        } .cele6{
+            background-position: -330px -225px;
+        } .cele7{
+            background-position: -594px -225px;
+        } .cele8{
+            background-position: -865px -225px;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <span style="border: 1px solid">Student Details</span>
+        </div>
+        <div class="mainContainer">
+            <div class="leftBlock">
+                <ol>
+                    <li>Ranveer Singh</li>
+                    <li>
+                        <a href="#teenaDetails">Shah Rukh Khan</a>
+                    </li>
+                    <li>Salman Khan</li>
+                    <li>Hrithik Roshan</li>
+                    <li>Akshay Kumar</li>
+                    <li>Shahid Kapoor</li>
+                    <li>Aamir Khan</li>
+                    <li>Kartik Aaryan</li>
+                   
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <ul class="detailsContainer">
+                    <li>
+                        <div class="imgBlock cele1">
+                            <!-- <img src="rank1.JPG" alt="Image not found"> -->
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Ranveer Singh</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele2">
+                        
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Shah Rukh Khan</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele3">
+                            
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name: Salman Khan</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele4">
+                            
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Hrithik Roshan</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele5">
+                            
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Akshay Kumar</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele6">
+                            
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Shahid Kapoor</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="teenaDetails">
+                        <div class="imgBlock cele7">
+                            
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Teena</li>
+                                <li>Age: 90</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock cele8">
+                           
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                                <li>Place: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            &#169; copyrights 2022
+        </div>
+    </body>
+</html>

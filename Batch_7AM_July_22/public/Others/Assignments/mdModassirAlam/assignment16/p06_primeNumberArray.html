@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Prime Number</title>
+</head>
+<body>
+    <script>
+        /* Write a program to find the list of all the prime number within the given array*/
+   
+      
+        // var num = 19;
+        // var count = 0;
+        
+        // for(var i = 1; i <= num ; i++){
+        //     var rem = num % i;
+        //     if(rem == 0){
+        //         count++
+        //     }
+        // }
+        // if(count == 2){
+        //     console.log("Prime No "+ num);
+        // }else{
+        //     console.log("Not Prime No "+ num);
+        // }
+
+        // var num = [3,7,9,19];
+        // //console.log(num[0]);
+        // var count = 0;
+        
+        // for(var i = 0; i <= num.length -1 ; i++){
+        //     //console.log(i);
+        //     for(var j = 1; j < num[i]; j++){
+        //         //console.log("aaa"+num[i]);
+        //         var rem = num[i] % j;
+        //         if(rem == 0){
+        //             count++
+        //         }
+        //     }
+        //     if(count == 2){
+        //     console.log("Prime No "+ num[i]);
+        //     }else{
+        //         console.log("Not Prime No "+ num[i]);
+        //     }
+          
+        // }
+
+        const arr = [34, 56, 3, 56, 4, 343, 68, 56, 34, 87, 8, 45, 34,5,11];
+        const isPrime = n => {
+        if (n===1){
+        return false;
+        }else if(n === 2){
+            return true;
+        }else{
+            for(let x = 2; x < n; x++){
+                if(n % x === 0){
+                    return false;
+                }
+            }
+            return true;
+        };
+        };
+        const filterPrime = arr => {
+        const filtered = arr.filter(el => isPrime(el));
+        return filtered;
+        };
+        console.log(filterPrime(arr));
+        
+    </script>
+</body>
+</html>

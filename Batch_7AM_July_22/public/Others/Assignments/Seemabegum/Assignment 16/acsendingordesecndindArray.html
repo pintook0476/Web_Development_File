@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascending or descending</title>
+</head>
+<body>
+    <script>
+       // 9. Write a program to read values dynamically into an array and sort the values to either ascending or descending order//
+    
+       var orders = ()=>{
+// Ascending order //
+        var array = new Array ( 12 ,34,45,67,78,89,2,3,4);
+        console.log("Not in order  " +array)
+        array.sort((x,y) => x-y );
+        console.log (  "In  Ascending order "+ array);
+       }
+  orders();
+
+  var Orders = ()=>{
+// descending order //
+        var arr = new Array ( 12 ,34,45,67,78,89,2,3,4);
+        console.log("Not in order  " +arr)
+        arr.sort((x,y) => y -x);
+        console.log (  "In  descending order "+ arr);
+       }
+  Orders();
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8 using Table Tag</title>
+            <style>
+                    h1  {
+                        width: 800px;
+                        border: 2px solid none;
+                        margin: 20px auto;
+                        text-align: center;
+                        border-radius: 20px; 
+                        position: relative;                      
+                    }
+                    .logo  {
+                        width: 80px;
+                        height: 80px;
+                        position: absolute;
+                        top: 25px; left: 144px;                       
+                    }
+                    h2 {
+                       width: 800px;
+                       border: 2px solid;
+                       margin: 20px auto;
+                       text-align: center;
+                       border-radius: 20px;    
+                       font-size: x-large;  
+                       background-color:burlywood;            
+                    }
+                    h4{
+                        border: 2px solid none;
+                        margin: 5px auto;
+                        text-align: center;
+                        border-radius: 20px; 
+                    }
+                    .main_table {
+                        background-color:bisque;
+                        text-align:center;
+                        border:;                        
+                    }
+                    th{
+                        background-color: khaki;
+                        border-radius: 10px;
+                    }
+                    img {
+                        height: 120px;
+                        width: 120px;
+                    }
+                    .legend {
+                        border: 2px solid;
+                        margin:12px;
+                        padding:12px;
+                        background-color: burlywood;
+                    }
+                    .main_cotainer {
+                        overflow:scroll;
+                        width: 100%;
+                        height: 500px;                        
+                    }
+                    .row1, .row3, .row5{
+                        background-color:sandybrown;
+                    }
+            </style>
+</head>
+
+    <body>     
+            <h1> Central Board of Secondary Education , New Delhi-India </h1>
+            <h4> SENIOR SCHOOL CERTIFICATE EXAMINATION, 2022</h4>
+            <img class="logo"    src="logo.jpg" alt="logo"/>
+            <h2> Student Progrees Report</h2>
+            
+                <div class="main_cotainer">
+                    <table class="main_table" border="4px" cellpadding="10px" cellspacing="10px">
+                        <tr>
+                            <th>Hall Ticket No</th>
+                            <th> Student Name</th>
+                            <th> Gender</th>
+                            <th>School</th>
+                            <th> Class </th>
+                            <th> Photo</th>
+                            <th> Marks Allotment </th>
+                        </tr>
+                        <tr class="row1">
+                            <td> 360051</td>
+                            <td> Ankuran Borah </td>
+                            <td> Male</td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s8.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 85 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 80 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 75</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 70 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                             <td> Total Marks Scored-310 </td>
+                                             <td> Result:- Pass </td>
+                                             <td> Grade:- A</td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr>
+                <!-- Second student data starts here -->
+                        
+                        <tr>
+                            <td> 360052</td>
+                            <td> Manisha Pegu </td>
+                            <td> Female</td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s6.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 90 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 76 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 65 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 55 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                            <td> Total Marks Scored-286 </td>
+                                            <td> Result:- Pass </td>
+                                            <td> Grade:- B+ </td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr>
+                <!-- third student details starts here -->
+                        <tr class="row3">
+                            <td> 360053</td>
+                            <td> Sami Ahmed </td>
+                            <td> Male</td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s3.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 84 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 80 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 60 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 55 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                            <td> Total Marks Scored-299 </td>
+                                            <td> Result:- Pass </td>
+                                            <td> Grade:- B+ </td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr> 
+<!--fourth student -->
+                        <tr>
+                            <td> 360054</td>
+                            <td> Barnali Das </td>
+                            <td> Female </td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s9.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 88 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 73 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 65 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 95 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                            <td> Total Marks Scored- 321 </td>
+                                            <td> Result:- Pass </td>
+                                            <td> Grade:- A </td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr> 
+<!--fifth student-->
+                        <tr class="row5">
+                            <td> 360055</td>
+                            <td> Nandita Talukdar </td>
+                            <td> Female </td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s2.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 85 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 71 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 62 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 79 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                            <td> Total Marks Scored- 297 </td>
+                                            <td> Result:- Pass </td>
+                                            <td> Grade:- B+ </td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr>
+<!--sixth student -->
+                        <tr>
+                            <td> 360056 </td>
+                            <td> Manish Narzary </td>
+                            <td> Male </td>
+                            <td> KVK </td>
+                            <td> XII </td>
+                            <td> <img src="s4.jpg"  alt="" >  </td>
+                            <td>
+                                <table border="2px" cellpadding="6px" cellspacing="6px">
+                                    <tr>
+                                        <th> Subject</th>
+                                        <th> Max Marks </th>
+                                        <th> Min Marks </th>
+                                        <th> Marks Awareded </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td> English </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 78 </td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td> Physics </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 73 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Chemistry </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 72 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Maths </td>
+                                        <td> 100 </td>
+                                        <td> 40 </td>
+                                        <td> 89 </td>
+                                    </tr>     
+                                    <tfoot>
+                                        <tr>
+                                            <td> Total Marks Scored- 312 </td>
+                                            <td> Result:- Pass </td>
+                                            <td> Grade:- A </td>
+                                        </tr>
+                                    </tfoot>                               
+                                </table>                                 
+                            </td>
+                        </tr>
+        <!-- main table ends here-->
+                    </table>
+                    <div class="legend">
+                        <li style="list-style-type: none; font-size:large;font-weight: bolder;">Legend:- </li>
+                        <br>
+                        <span> Grade A+ , score between 351 to 400 </span> &nbsp;&nbsp;&nbsp;
+                        <span> Grade A , score between 301 to 350 </span> &nbsp;&nbsp;&nbsp;
+                        <span> Grade B+ , score between 251 to 300 </span> &nbsp;&nbsp;&nbsp;
+                        <br><br>
+                        <span> Grade B , score between 201 to 250 </span> &nbsp;&nbsp;&nbsp;
+                        <span> Grade C+ , score between 151 to 200 </span> &nbsp;&nbsp;&nbsp;
+                        <span> Grade C , score between 101 to 150 </span>
+                     </div>
+                </div>
+     </body>
+</html>
+

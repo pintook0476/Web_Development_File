@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Assignment 16</title>
+    </head>
+    <body>
+        Finding lucky number
+        <script>
+            var a=prompt("Enter a number");
+            var sum=0;
+            var reminder;
+            console.log("Given Number= "+a);
+            while(a>0){
+                reminder=a%10;
+                sum=reminder+sum;
+                a=Math.floor(a/10);
+            }
+            var rem;
+            var tsum=0;
+            if(sum>=10){
+                while(sum>0){
+                    rem=sum%10;
+                    tsum=tsum+rem;
+                    sum=Math.floor(sum/10);
+                }
+                console.log("Lucky no of that no is= "+tsum);
+            }
+            console.log("Lucky no of thet no is= "+sum);
+        </script>
+    </body>
+</html>

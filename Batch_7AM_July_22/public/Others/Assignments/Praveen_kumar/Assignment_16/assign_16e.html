@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2nd largest num</title>
+    </head>
+    <body>
+        <script>
+                 var arr=[5,34,21,60,42,13,80]
+
+                 var res=arr[0];
+                 var maxi=arr[0];
+                 for(var i=1; i<arr.length; i++)
+                    {
+                      
+                       if(arr[i]>maxi)
+                       maxi=arr[i];
+                    } 
+
+                    for(var i=1;i<arr.length;i++)
+                    {
+                        if(res<arr[i])
+                        {
+                            if(arr[i]==maxi)
+                            continue;
+
+                            else
+                            res=arr[i];
+                        }
+                    }
+
+                    
+                    console.log("Largest number: " + res);
+        </script>
+   
+
+</body>
+</html>

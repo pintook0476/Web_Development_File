@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers Of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+    //  var list = [2, 100, 7, 35, 37, 41, 23, 59, 73, 77, 80, 97];
+           var count = prompt(" Enter upto what COUNT you want to store array values ");
+            count = parseInt(count);
+            var list=[];
+
+            for ( var i=1 ; i<=count ; i++)
+            {
+                list[i] = prompt('Enter Number Of an Array ' + i );
+                list[i] = parseInt(list[i]);  
+            }
+
+        console.log('Original Array:');
+        console.log(list);
+        console.log('Prime Numbers Of an Array:');
+    var primeList = (list) =>
+    {   
+            for (var i = 0; i < list.length; i++) 
+            {
+
+                for (var j = 2; j <= list[i]; j++) 
+                {
+                if (list[i] % j == 0) 
+                {
+                    break;
+                }
+                }
+                    if (list[i] == j) 
+                    {                                        
+                        console.log(list[i]);
+                    }
+            }
+     }  
+     primeList(list);       
+    </script>
+</body>
+</html>

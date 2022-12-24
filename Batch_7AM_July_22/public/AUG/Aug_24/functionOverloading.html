@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Function overloading
+        </title>
+    </head>
+    <body>
+        <script>
+            
+            showData(10);
+            var showData = (a) => {
+                console.log("From second fuction")
+            }
+
+            var showData = (a, b) => {
+                console.log("From Third fuction")
+            }
+            var showData = () => {
+                console.log("From first fuction")
+            }
+
+            
+            
+            showData(10, 20);
+            showData();
+        </script>
+    </body>
+</html>

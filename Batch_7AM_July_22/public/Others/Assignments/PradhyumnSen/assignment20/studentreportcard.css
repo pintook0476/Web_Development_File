@@ -1,0 +1,52 @@
+.block1,
+.block2{
+    top: 44px;
+    border: 1px solid;
+    width: 455px;
+    position: relative;
+    left: 34%;
+    padding: 19px
+}
+.sec1{
+    border: 1px solid;
+    height: 27px;
+    text-align: center;
+    padding: 18px;
+    font-weight: bold;
+    font-size: x-large;
+    
+    
+}
+
+
+.sec2{
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 8px;
+    font-weight: 600;
+}
+.sec2 div{
+    margin: 14px;
+}
+.subject input{
+    width: 28px;
+    height: 26px;
+}
+.sub{
+    width: 138px;
+    display: inline-block;
+    
+}
+.submit input{
+    width: 115px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 34px;
+}
+.hide{
+    display: none;
+
+}
+#sname,#sage{
+    text-align: center;
+}

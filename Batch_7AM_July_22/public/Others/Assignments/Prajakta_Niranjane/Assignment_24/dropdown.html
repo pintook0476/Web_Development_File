@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Drop Down </title>
+
+    <style>
+        .block{
+            width: 500px;
+            border: 1px solid green;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: rgb(107, 29, 84);
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <label> Select page</label>
+    <select  id="pageType" onchange="ShowPage()">
+    
+        <option value="log" > Log In</option>
+        <option value="frgt" > Forgot Password</option>
+        <option value="newuser"> New user</option>
+        <option value="Help" > Help</option>
+    </select>
+
+    <div class="mainContainer">
+
+        <div class="login block " id="login_block">
+            User ID <input type="text"><br><br>
+            Password <input type="password">       
+        </div>
+
+        <div class="Forgot block" id="frgt_block">
+            New password <input type="password"><br><br>
+            Confirm-Password <input type="password">         
+       </div>
+
+        <div class="NewUser block" id="newuser_block">
+            First Name <input type="text"><br><br>
+            Last Name <input type="text">                     
+        </div>
+
+        <div class="help block" id="help_block">
+            <label> How can i help you.</label>
+           <textarea name="" id="" cols="30" rows="10" placeholder="Type your Queries here...."></textarea>
+        </div>
+
+    </div>
+    
+    <script>
+
+        function ShowPage()
+        {
+           var a=  document.querySelectorAll(".block ");
+           var store = document.querySelector("#pageType").value;
+            switch(store)
+            {
+                case 'log' :
+                    a[0].style.display='block';
+                    a[1].style.display='none';
+                    a[2].style.display='none';
+                    a[3].style.display='none';
+                break;
+
+                case 'frgt' : 
+                    a[0].style.display='none';
+                    a[1].style.display='block';
+                    a[2].style.display='none';
+                    a[3].style.display='none';     
+                break;
+
+                case 'newuser' :
+                    a[0].style.display='none';
+                    a[1].style.display='none';
+                    a[2].style.display='block';
+                    a[3].style.display='none';
+                break;
+
+                case 'Help' : 
+                    a[0].style.display='none';
+                    a[1].style.display='none';
+                    a[2].style.display='none';
+                    a[3].style.display='block';
+                break;
+            }
+        }
+        ShowPage();
+    </script>
+    
+</body>
+</html>

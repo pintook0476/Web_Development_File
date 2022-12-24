@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/91063dabde.js" crossorigin="anonymous"></script>
+    <title>website developing</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding 20px;
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    p {
+        color: #555
+    }
+
+    .container {
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+
+    .col-2 img {
+        max-width: 100%;
+        padding: 50px 0;
+    }
+
+    .col-2 h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 25px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        color: #fff;
+        ;
+
+        padding: 8px 30px;
+        margin: 30px 0;
+        border: 1px solid;
+        border-radius: 30px;
+        background-color: #ff523b;
+        transition: background 0.5s;
+    }
+
+    .btn:hover {
+        background: #563434;
+    }
+
+    .header {
+        background: radial-gradient(#fff, #e28181);
+    }
+
+    .header .row {
+        margin-top: 70px;
+    }
+
+    .col-3 {
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .col-3 img {
+        width: 110%;
+    }
+
+    .small-container {
+        max-width: 1080px;
+        margin: auto;
+        margin-left: 90px;
+        margin-right: 25px;
+    }
+
+    .col-4 {
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+    }
+
+    .col-4 img {
+        width: 100%;
+
+    }
+
+    .title {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+
+    .title::after {
+        content: '';
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h4 {
+        color: #555;
+        font-weight: normal;
+    }
+
+    .col-4 p {
+        font-size: 14px;
+    }
+
+    .rating,
+    .fa {
+        color: #ff523b;
+    }
+
+    .col-4:hover {
+        transform: translateY(-5px);
+    }
+    .row{
+        margin-left: 50px;
+    }
+    .row img{
+        width: 110%;
+        margin-left: 50px;
+    }
+     .offer{
+      background:   radial-gradient(#fff, #e28181) ;
+      margin-top: 80px;
+      padding: 30px 0;
+     
+    }
+    /* testimonail */
+    .testimonail{
+        padding-top: 100px;
+
+    }
+    .testimonail .col-3{
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 0  20px 0px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    .testimonail .col-3 img{
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    .testimonail .col-3:hover{
+        transform: translateY(-10px);
+    }
+    .col-3 p{
+        font-size: 12px;
+        margin: 12px 0;
+        color: #777;
+    }
+    .testimonail .col-3 h3{
+        justify-content: center;
+        font-weight: 600;
+        color: #555;
+        font-size: 16px;
+    }
+    /* footer */
+    .footer{
+        background: #000;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 60px 0 20px;
+    }
+    .footer p{
+        color: #8a8a8a;
+    }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-col-1,.footer-col-2 , .footer-col-3 ,.footer-col-4{
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+        flex-basis: 30%;
+    }
+    .footer-col-2{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer-col-2 img{
+        width: 180px;
+        margin-bottom: 4px;
+        margin-left: -135px;
+    }
+    ul{
+        list-style: none;
+    }
+    .app-logo{
+        margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+        margin-left: 5px;
+    }
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/10/10/Orange-Logo-3D-Gradation-Illustration-Graphics-5972010-2-580x387.png"
+                        width="200px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href=""> Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href=""> About</a></li>
+                        <li><a href=""> Contacts</a></li>
+                        <li><a href="account.html"> account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://cdn1.iconfinder.com/data/icons/e-commerce-320/512/bag-512.png" width="30px" height="30px">
+                <img src="https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png" width="30px" height="30px" class="menu-icon">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>welcome to our<br> fruit shop!</h1>
+                    <p>there are many variations of passages of lorem ipsum available.but <br>the majority have suffered
+                        alterations in
+                        some form<br> by injected humor or randomised which don'nt look even slightly <br>believable</p>
+                    <a href="" class="btn">Explore now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="https://freepngimg.com/save/175401-basket-mix-fruits-png-free-photo/555x384">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--- featured category -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="https://5.imimg.com/data5/AK/RA/MY-68428614/apple-1000x1000.jpg">
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://media.istockphoto.com/photos/whole-and-half-of-ripe-papaya-fruit-with-seeds-isolated-on-white-picture-id864053288">
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://rukminim1.flixcart.com/image/416/416/kt0enww0/plant-seed/n/y/b/20-dg-203-paudha-original-imag6fgumgtqmz2f.jpeg?q=70">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--- featured product -->
+    <div class="small-container">
+        <div class="title">
+            <h2>recently veiw </h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://www.collinsdictionary.com/images/full/apple_158989157.jpg">
+                <h4>Apple</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://cdn.shopify.com/s/files/1/0262/4359/6351/products/2290480.jpg?v=1641378324">
+                <h4>dragon fruit</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://media.istockphoto.com/photos/ripe-pomegranate-fruit-and-one-cut-in-half-with-leaf-picture-id940118920">
+                <h4>pomegranate</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://5.imimg.com/data5/IP/BO/MY-40565349/litchi-fruit-500x500.jpg">
+                <h4>litchi</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+        <h2 class="title"> fresh fruit</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://www.freepnglogos.com/uploads/dates-png/dates-mabroom-labanh-factory-31.png">
+                <h4>dates</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://cdn.shopify.com/s/files/1/0262/4359/6351/products/2290480.jpg?v=1641378324">
+                <h4>dragon fruit</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://media.istockphoto.com/photos/ripe-pomegranate-fruit-and-one-cut-in-half-with-leaf-picture-id940118920">
+                <h4>pomegranate</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://5.imimg.com/data5/IP/BO/MY-40565349/litchi-fruit-500x500.jpg">
+                <h4>litchi</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://image.shutterstock.com/image-photo/pair-purple-plums-leaf-isolated-260nw-2030688533.jpg">
+                <h4>plum</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://www.collinsdictionary.com/images/full/strawberry_227472010.jpg">
+                <h4>strawberry</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://www.plantgrower.org/uploads/6/5/5/4/65545169/published/coconut-white-balsamic-condimento.jpg?1515168579">
+                <h4>coconut</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/51AV3hMvYSL._SL1000_.jpg">
+                <h4>Musk melon</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://www.gardeningknowhow.com/wp-content/uploads/2021/05/whole-and-slices-watermelon.jpg">
+                <h4>water melon<h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://frugivore-storage.s3.amazonaws.com/media/package/img_one/2020-12-03/Fresh_Blueberry.jpg">
+                <h4>blue berry</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://www.bigbasket.com/media/uploads/p/l/30001779_3-fresho-cherry-imported.jpg">
+                <h4>cherry</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://galafruit.net/wp-content/uploads/galafruit_pere.jpg">
+                <h4>pear</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6CZpEw1z_3EbTV1uIybZonTIPfGZtyEuHg&usqp=CAU">
+                <h4>grapes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://2.wlimg.com/product_images/bc-full/2021/10/8803553/fresh-papaya-1633417807-6023270.jpeg">
+                <h4>papaya</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://5.imimg.com/data5/IW/CY/MY-46595757/fresh-orange-281kg-29-500x500.png">
+                <h4>orange</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg/800px-Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg">
+                <h4>kiwi</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://img3.exportersindia.com/product_images/bc-full/2020/12/7164059/fresh-green-guava-1608372236-5661885.jpeg">
+                <h4>Guava</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000">
+                <h4>Mango</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0076/4339/8233/products/fresh-pineapple.png?v=1609235554">
+                <h4>pine apple</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+            <div class="col-4">
+                <img src="https://previews.123rf.com/images/kulyk/kulyk1507/kulyk150700013/43279121-banana-fruit-close-up-bunch-of-bananas-isolated-on-white-background-qualitative-vector-illustration-.jpg">
+                <h4>banana</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>100kG</p>
+            </div>
+        </div>
+    </div>
+    <!---offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                    <img src="https://i0.wp.com/wholesaledryfruits.in/wp-content/uploads/2022/08/Website-dryfruits-11-Oct-2.jpg?fit=1920%2C800&ssl=1" >
+                
+            
+            </div>
+        </div>
+    </div>
+    <!----testimonial-->
+<div class="testimonail">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere, sequi magni quisquam maxime vitae neque quaerat vero molestias nemo, dignissimos voluptatibus expedita iure eius! Minus dolor veniam molestias culpa.</p>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="E:\UI-classes\images\emp4.png">
+                <h3>Crystal</h3>
+            </div>
+      
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere, sequi magni quisquam maxime vitae neque quaerat vero molestias nemo, dignissimos voluptatibus expedita iure eius! Minus dolor veniam molestias culpa.</p>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div> 
+                <img src="E:\UI-classes\images\emp1.png">  
+                <h3>Jackline</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere, sequi magni quisquam maxime vitae neque quaerat vero molestias nemo, dignissimos voluptatibus expedita iure eius! Minus dolor veniam molestias culpa.</p>
+                <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="E:\UI-classes\images\emp3.png">
+                <h3>lorem sean</h3>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> download Our app</h3>
+                    <p>Download app for andriod and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png">
+                        
+                        <img src="https://indusfood.co.in/wp-content/uploads/2019/11/iphone-app-store-google-play-store-png-download-44911552-png-app-store-900_320.jpg">
+                    </div>
+                    .
+                </div>
+                <div class="footer-col-2">
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/10/10/Orange-Logo-3D-Gradation-Illustration-Graphics-5972010-2-580x387.png">
+                    <p>our purpose is to sustainbly make <br> the pleasure and benefit to our customer suitable</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>twitter</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>youtube/li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">copyright 2022 - delnaz</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

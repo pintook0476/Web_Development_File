@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentProgress.css">
+    <title>Student Progress Card</title>
+</head>
+
+<body>
+    <h3>Student Details</h3>
+    <ul>
+        <li> <span class="inputname">Name:</span>
+            <input type="text" id="sName">
+        </li>
+        <li><span class="inputname">Age:</span>
+            <input type="text" id="sAge">
+        </li>
+        <li><span class="inputname">Gender:</span>
+            <input type="radio" name="gender" id="sGender" value="Male">Male
+            <input type="radio" name="gender" value="FeMale">Female
+        </li>
+        <li><span class="inputname">Class:</span>
+            <select name="class" id="sClass">
+                <option>class 1</option>
+                <option>class 2</option>
+                <option>class 3</option>
+                <option>class 4</option>
+                <option>class 5</option>       
+             </select>
+        </li>
+        <li id="marks"><span class="inputname">Marks:</span>
+            <input type="text" id="mark1">
+            <input type="text" id="mark2">
+            <input type="text" id="mark3">
+            <input type="text" id="mark4">
+            <input type="text" id="mark5">
+        </li>
+        <li>
+            <input type="button" value="Get Result" onclick="progressCard.readValues()">
+        </li>
+    </ul>
+
+
+    <div id="showconta">
+        <ul>
+            <li>Student Name: <span id="stname"></span></li>
+            <li>Student Age: <span id="stage"></span></li>
+            <li>Student Gender: <span id="stgender"></span></li>
+            <li>Student Class: <span id="stclass"></span></li>
+            <li>Average: <span id="stavg"></span></li>
+        </ul>
+    </div>
+    <script src="studentProgress.js"></script>
+
+</body>
+
+</html>

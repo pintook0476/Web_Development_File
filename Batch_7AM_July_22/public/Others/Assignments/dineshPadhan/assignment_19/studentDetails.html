@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+  </head>
+  <body>
+    <script>
+      var stdData = {
+        readStdData: function () {
+          this.sname = prompt("Enter The Name");
+          this.class = prompt("Enter The Class");
+          this.phy = parseInt(prompt("Enter The Physic Mark"));
+          this.che = parseInt(prompt("Enter The Chemistry Mark"));
+          this.mth = parseInt(prompt("Enter The Math Mark"));
+          this.it = parseInt(prompt("Enter The IT Mark"));
+          this.eng = parseInt(prompt("Enter The English Mark"));
+          this.getTotalAndAvg();
+        },
+        getTotalAndAvg: function () {
+          this.totalmark = stdData.che + stdData.phy + stdData.math + stdData.it + stdData.eng;
+          this.avgmark = this.totalmark / 5;
+          this.per = (this.totalmark * 100) / 500;
+          this.outputdisplay();
+        },
+        outputdisplay: function () {
+          console.log("Student Details");
+          console.log("Student Name: " + this.sname);
+          console.log("Student Class: " + this.class);
+          console.log("Student Physic: " + this.phy);
+          console.log("Student Chemistry: " + this.che);
+          console.log("Student Math: " + this.mth);
+          console.log("Student IT: " + this.it);
+          console.log("Student English: " + this.eng);
+          console.log("Student Total Mark:"+ this.totalmark);
+          console.log("Student Average Mark:"+ this.avgmark);
+          console.log("Student Total Percentage :"+ this.per +"%");          
+        },
+      };
+      stdData.readStdData();
+      console.log(stdData);
+    </script>
+  </body>
+</html>

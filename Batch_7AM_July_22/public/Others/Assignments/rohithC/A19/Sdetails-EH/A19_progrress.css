@@ -1,0 +1,94 @@
+body{
+    background-color: gold;
+}
+.header{
+    width: auto;
+    height: 40px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px, 15px;
+    padding:  10px;
+    border: 2px solid;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: antiquewhite;
+    color: brown;
+}
+.form{
+    border: 2px solid;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(155, 94, 212);
+    border-radius: 10px;
+    color: brown;
+    
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+.details li{
+    border: 1px solid;
+    margin: 10px auto;
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+}
+.markholder input{
+    width: 20px;
+    color: blue;
+}
+.button input{
+    width: 300px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(187, 220, 56);
+    font-size: 15px;
+    text-decoration: underline;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn{
+    text-align: center;
+}
+.container{
+    border: 2px solid;
+    width : 600px;
+    background-color: cadetblue;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.progress li{
+    border: 1px solid;
+    margin: 10px 40px;
+    padding: 10px 15px;
+    list-style: none;
+    font-size: 20px;
+    background-color: rgb(211, 205, 204);
+    
+}
+footer{
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    margin: 10px auto;
+    padding:  10px;
+    border: 2px solid;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(255, 192, 109);
+    color: rgba(198, 0, 0, 0.768);
+}
+img{
+    width: 1200px;
+    height: 100px;
+    margin: 5px auto;
+    padding: 5px;
+}

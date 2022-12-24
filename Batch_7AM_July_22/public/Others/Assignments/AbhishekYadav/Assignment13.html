@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switsh Case</title>
+</head>
+
+<body>
+    <h2>Switch Case Conditional Control Statement</h2>
+    <script>
+        var num = prompt("Enter Your Choice If You Want To Check Palindrome Number Press '1', If you want to check Armstrome Number Press '2', If you want to check Reverse of it Press '3', If you want to check total number of Zeros Press '4'");
+        switch (num) {
+            case '1':
+                var num = prompt("Enter The number to Know Wheather number is Pallindrome Or Not");
+                var orgnumber = num;
+                var reverse = 0;
+
+                while (num > 0) {
+                    reverse = (reverse * 10) + (num % 10);
+                    num = num / 10;
+                    num = parseInt(num);
+                }
+
+                if (reverse == orgnumber) {
+                    prompt("enter number is Pallindrome Number IF you Want to Choice Again Please Refresh a page");
+                } else {
+                    prompt("enter number is not a Pallindrome Number IF you Want to Choice Again Please Refresh a page");
+                }
+                break;
+
+            case '2':
+                var num = prompt("Enter a Number To Know Wheater a Number is Armstrome Or Not");
+                var orgnumber = num;
+                var sum = 0,
+                    multi = 1,
+                    count = num.length;
+                while (num > 0) {
+                    modolous = num % 10;
+                    multi = modolous ** count;
+                    sum = sum + multi;
+                    multi = 1;
+
+                    num = num / 10;
+                    num = parseInt(num);
+                }
+                if (sum == orgnumber) {
+                    prompt("Enter Number is Armstrome Number IF you Want to Choice Again Please Refresh a page")
+                } else {
+                    prompt("Enter Number is Not an Armstrome Number IF you Want to Choice Again Please Refresh a page")
+                }
+                break;
+
+            case '3':
+                var num = prompt("Enter The number to get reverse of it");
+                var reverse = 0;
+
+                while (num > 0) {
+                    reverse = (reverse * 10) + (num % 10);
+                    num = num / 10;
+                    num = parseInt(num);
+                }
+                prompt("Reverse of Number you Enter Before is => " + reverse + " IF you Want to Choice Again Please Refresh a page");
+                break;
+
+            case '4':
+                var num = prompt("Enter a Number To Know how many zero's Present in Number");
+                var count = 0,
+                    modolous;
+                while (num > 0) {
+                    modulous = num % 10;
+                    if (modulous == 0) {
+                        count++;
+                    }
+                    num = num / 10;
+                    num = parseInt(num);
+                }
+                prompt("Total Number of Zero's => " + count + " IF you Want to Choice Again Please Refresh a page");
+                break;
+
+
+            default:
+                prompt("You choice a Worng Option IF you Want to Choice Again Please Refresh a page");
+
+        }
+    </script>
+</body>
+
+</html>

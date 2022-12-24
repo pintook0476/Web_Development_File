@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+    //write a program wheather a given number is amstrong or not 153-> 1cube +5cube +3cube //
+
+    var num = prompt("Enter the number ");
+    var check = num ;
+    var a = 0 ;
+    var pow ;
+    var sum = 0;
+    var len = num. toString () .length;
+    while (num != 0) {
+         a = num % 10 ;
+         num = parseInt(num / 10 );
+         pow = Math.pow(a,len );
+         sum += pow ;        
+    }
+    if (check == sum ) {
+        console.log ("its a armstrong number");
+        
+    } else {
+        console.log ("its not a armstrong number ");
+    }
+
+   </script>
+    
+</body>
+</html>

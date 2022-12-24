@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> assignment 6</title>
+    </head>
+    <body>
+      <script>
+        var eName,eAge,eGender,eDept,basicSalary,pf,hra,totalSalary
+        function readEmployeeDeatils(){
+        var eName=prompt ("enter employee name");
+        var eAge=prompt ("enter employee age");
+        var eGender=prompt ("enter employee gender");
+        var eDept=prompt ("enter employee dept");
+        var basicSalary=prompt ("enter employee basicSalary");
+        basicSalary=parseInt(basicSalary);
+        }
+
+        function getPfandHra(){
+        var pf=basicSalary*(14/100);
+        var hra=basicSalary*(25/100);
+        var totalSalary=basicSalary+pf+hra;
+        }
+
+        function dispayEmployeeDetails(){
+        console.log("employee Genderis"+eGender);
+        console.log("employee pfis"+pf);
+        console.log("employee hrais"+hra);
+        console.log("totalSalaryis"+totalSalary);
+        }
+        function getTotalandAvg(){
+         if(eGender=="female"){
+         if(totalSalary>=200000)
+         console.log("tax percentageis"+(10/100)*totalSalary);
+        } else if(totalSalary>=100000){
+        console.log("tax percentageis"+(15/100)*totalSalary);
+        }
+    }
+    readEmployeeDeatils();
+    getPfandHra();
+    dispayEmployeeDetails();
+    getTotalandAvg();
+
+     </script>
+    
+   </body>
+
+</html>

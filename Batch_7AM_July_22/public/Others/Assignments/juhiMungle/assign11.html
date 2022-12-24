@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Condition Statement Assignment</title>
+</head>
+<body>
+    <script>
+        
+        var ename = prompt('Enter Employee Name ');
+        var eage = prompt('Enter Employee Age ');
+        var egender = prompt('Enter employee Gender in The form M & F');
+        var edepartment = prompt('Enter Employee Department ');
+        var bsal = prompt('Enter Basic Salary ');
+
+        bsal = parseInt(bsal);
+        var  tsal, pr, hra;
+
+        pr = bsal * 14 / 100;
+        hra = bsal * 25 / 100;
+        tsal = bsal + pr + hra;
+
+        console.log('Name of Employee : ' + ename);
+        console.log('Age of Employee : ' + eage);
+        console.log('Employee Gender : ' + egender);
+        console.log('Department of Employee : ' + edepartment);
+        console.log('Basic Salary of Employee : ' + bsal);
+        console.log('Total Salary of Employee : ' + tsal);
+
+        if (egender == 'M' || egender == 'm') {
+            if (tsal >= 200000) {
+                console.log('Tax Percentage is 15%');
+            } else if (tsal >= 100000) {
+                console.log('Tax Percentage is 10%');
+            } else if (tsal >= 50000) {
+                console.log('Tax Percentage is 5%');
+            } else if (tsal < 50000) {
+                console.log('No Need to Pay tax');
+            }
+
+        }
+
+        if (egender == 'F' || egender == 'f') {
+            if (tsal >= 200000) {
+                console.log('Tax Percentage is 10%');
+            } else if (tsal >= 100000) {
+                console.log('Tax Percentage is 5%');
+            } else if (tsal < 100000) {
+                console.log('No Need to Pay Tax')
+            }
+        }
+    </script>  
+</body>
+</html>

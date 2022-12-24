@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demontrating employee details</title>
+</head>
+<body>
+    
+    <script>
+        var name=prompt("Enter empoyee name: ");
+        var dep=prompt("Enter Employee Department:");
+
+        var loc=prompt("Enter employee Location:");
+
+        var bs=parseInt(prompt(" Enter Basic Salary:"));
+        var hra=bs*.14;
+        var pf=bs*.25;
+
+        var tot=bs+hra+pf;
+
+        console.log("Name:" + name);
+        console.log("Department:" +dep);
+        console.log("Location:" + loc);
+        console.log("Basic Salary:"+ bs);
+        console.log("Total Salary:"+tot);
+        
+    </script>
+</body>
+</html>

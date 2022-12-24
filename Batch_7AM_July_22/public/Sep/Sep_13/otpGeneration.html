@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            OTP Generator
+        </title>
+        <style>
+            .container{
+                border: 1px solid;
+                width: 100px;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <input type="button" onclick="generateOTP()" value="Generate OTP">
+        <input type="button" onclick="generateCapcha()" value="Generate CAPCHA">
+        <script>
+            var charsSet = ['A', 'B', 'C', 'D', 'E', 'F','G'];
+            var charsSet_lowerCase = ['a', 'b', 'c', 'd', 'e', 'f'];
+            var generateOTP = () => {
+                var otpValue = '';
+                for (var i = 0 ; i < 5; i++) {
+                    var randomNo = Math.random() * 10;
+                    randomNo = Math.floor(randomNo);
+                    otpValue = otpValue + randomNo;
+                }
+                document.querySelector(".container").innerHTML = otpValue;
+            }
+
+            var generateCapcha = () => {
+                var capcha = '';
+                capcha += getRandomNumber();
+                capcha += getRandomChar();
+                capcha += getRandomNumber();
+                capcha += getRandomChar_lowerCase();
+                capcha += getRandomChar();
+                capcha += getRandomNumber();
+                capcha += getRandomChar();
+                capcha += getRandomNumber();
+                capcha += getRandomChar_lowerCase();
+                capcha += getRandomChar();
+                document.querySelector(".container").innerHTML = capcha;
+
+            }
+
+            var getRandomNumber = () => {
+                var randomNo = Math.random() * 10;
+                randomNo = Math.floor(randomNo);
+                return randomNo;
+            }
+
+
+            var getRandomChar = () => {
+                var index = Math.floor(Math.random() * charsSet.length);
+                
+                console.log(index)
+                return charsSet[index];
+            }
+            var getRandomChar_lowerCase = () => {
+                var index = Math.floor(Math.random() * charsSet.length);
+                
+                console.log(index)
+                return charsSet_lowerCase[index];
+            }
+        </script>
+    </body>
+</html>

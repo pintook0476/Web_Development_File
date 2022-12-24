@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var userData = () => {
+            var data = [];
+            for (i = 0; i < 7; i++) {
+                data[i] = prompt('Enter a number ' + i)
+                data[i] = parseInt(data[i]);
+            }
+            getAscendingAndDescending(data)
+        }
+        
+        var getAscendingAndDescending = (data) => {
+            var getUserInput = prompt('Ascending / Descending')
+            switch (getUserInput) {
+                case "Ascending":
+                    for (i = 0; i < data.length; i++) {
+                        for (j = i + 1; j < data.length; j++) { // ascending order
+                            if (data[i] > data[j]) {
+                                var temp = data[i];
+                                data[i] = data[j];
+                                data[j] = temp;
+                            }
+                        }
+                    }
+                    console.log(data)
+                    break;
+                case "Descending":
+                    for (i = 0; i < data.length; i++) {   // for descending ordr
+                        for (j = i + 1; j < data.length; j++) {
+                            if (data[i] < data[j]) {
+                                var temp = data[i];
+                                data[i] = data[j];
+                                data[j] = temp;
+                            }
+                        }
+                    }
+                    console.log(data)
+                    break;
+                default :  console.log("Wrong Selection")
+            }
+                
+        }
+        userData()
+    </script>
+</body>
+
+</html>

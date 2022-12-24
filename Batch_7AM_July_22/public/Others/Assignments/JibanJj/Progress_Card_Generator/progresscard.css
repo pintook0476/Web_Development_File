@@ -1,0 +1,41 @@
+ul{
+    border: 1px solid;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+li{
+    list-style-type: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-color: green;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.marks input{
+    width: 20px;
+}
+.button{
+    margin-left: 143px;
+    background-color: orangered;
+    color: white;
+    border-style: none;
+    height: 25px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: green;
+    transition: 2s;
+    border-radius: 10px;
+}
+.ProgressCardBlock{
+    margin-top: 15px;
+    display: none;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating new input elements supported from html5
+        </title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: #fff;
+            }
+            ul {
+                width: 500px;
+                margin: 20px auto;
+                background-color: aquamarine;
+                padding: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter user name:
+                <input type="text">
+            </li>
+            <li>
+                Enter user age:
+                <input type="number" maxlength="3" min="10" max="100">
+            </li>
+            <li>
+                Fav color:
+                <input type="color">
+            </li>
+            <li>
+                Enter DOB: <input id="udob" type="date" onchange="getDateSelected()" >
+            </li>
+            <li>
+                Time : <input type="time">
+            </li>
+            <li>
+                From DAte: <input id="fdate" type="date" onchange="validateDate()">
+                To DAte: <input id="tdate" type="date" onchange="validateDate()">
+            </li>
+            <li>
+                Choose Picture: <input type="file">
+               
+            </li>
+            <li>
+                Choose Picture: <input type="image">
+            </li>
+            <li>
+                Choose the price range:
+                 <input id="pbar" type="range" min="100" max="10000" onchange="getPriceRange()">
+                 <span id="priceValue"></span>
+            </li>
+            <li>
+                Email:
+                <input type="email">
+            </li>
+            <li>
+                Phone no.:
+                <input type="phone">
+            </li>
+            <li>
+                <input type="hidden" value="testing">
+            </li>
+        </ul>
+        <script>
+
+            var getPriceRange = () => {
+                var price = document.querySelector("#pbar").value
+                document.querySelector("#priceValue").innerText = price;
+            }
+            var getDateSelected = () => {
+
+                var date = document.querySelector("#udob").value;
+                console.log(date)
+            }
+
+            var validateDate = () => {
+                var fromDate = document.querySelector("#fdate").value;
+                var toDate = document.querySelector("#tdate").value;
+                if (fromDate && toDate) {
+                    console.log(fromDate);
+                    console.log(toDate);
+                    var fromDate = new Date(fromDate);
+                    var toDate = new Date(toDate);
+                    
+                    console.log(fromDate.getTime());
+                    console.log(toDate.getTime());
+                    if (fromDate.getTime() > toDate.getTime()) {
+                        console.log("Invalid dates");
+                    } else {
+                        console.log("good dates selected")
+                    }
+                }
+                
+            }
+        </script>
+    </body>
+</html>

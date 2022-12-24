@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+</head>
+<body>
+    <script>
+        var ename = prompt("Enter employee name");
+        var eage = prompt("Enter employee age");
+        var dep = prompt("Enter Your Department name");
+        var basicSalary = prompt("Enter Your Basic Salary");
+        basicSalary = parseInt(basicSalary);
+
+        var pf = basicSalary * ( 14 / 100 );
+        var hra = basicSalary * ( 25 / 100);
+
+        var totalSalary = basicSalary + pf + hra;
+
+        console.log("Employee name is " + ename );
+        console.log("Employee age is " + eage );
+        console.log("Employee Department is " + dep );
+        console.log(" Basic Salary is " + basicSalary);
+        console.log("Total Salary is " +totalSalary );
+    </script>
+</body>
+</html>

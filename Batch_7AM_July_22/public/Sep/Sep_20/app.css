@@ -1,0 +1,22 @@
+.title {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: blueviolet;
+}
+
+.thxBlock, 
+.taskContainer {
+    border: 1px solid;
+    width: 500px;
+    padding: 70px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.thxBlock {
+    background-color: yellowgreen;
+    width: 600px;
+    display: none;
+}

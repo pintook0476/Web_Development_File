@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page Of University</title>
+    <style>
+        form {
+            color: navy;
+        }
+        .container {
+            width: 465px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            margin: auto;
+            background-color: beige;
+        }
+        h2 {
+            padding-left: 20px;
+            color: navy;
+        }
+        .div {
+            border: 1px solid gray;
+            width: 355px;
+            background-color: white;
+            padding-left: 3px;
+        }
+        .innerdiv {
+            /* border: 1px solid gray; */
+            width: 100px;
+            color: gray;
+            display: inline-block;
+            margin-left: 30px;
+        } 
+        label[for="myDate"], label[for="myGender"] {
+            color: gray;
+            padding-left: 3px;
+        }
+        input[name="myDate"] {
+            margin-left: 100px;
+        }
+        legend {
+            width: 120px !important;
+            height: auto !important;
+            padding: 3px;
+            padding-left: 15px;
+        }
+        #sh {
+            width: 135px !important;
+        }
+        #course {
+            width: 355px;
+        }
+        input[name="rbtn"]{
+          margin-left: 30px;  
+        }
+        input[name="sbtn"], input[name="rbtn"], legend {
+             width: 160px;
+             height: 25px;
+             border-radius: 5px;
+             margin-top: 10px;
+             border: none;
+             background-color: navy;
+            color: beige;
+        }
+        .fs {
+            width: 400px;
+            padding-left: 45px;
+        }
+        .field {
+            width: 350px;
+        }
+        #newContainer {
+            display: none;
+        }
+        #con {
+            display: inline;
+            float: left;
+            width: 220px;
+        }
+        #rate {
+            display: inline;
+            float: left;
+            width: 125px;
+            margin-left: 7px;
+        }
+        .left, .right {
+             width: 175px;
+             display: inline;
+            float: left;
+        }
+        .right {
+            margin-left: 6px;
+        }
+        .len {
+            width: 360px;
+        }
+        .mandate {
+        color : red;
+        font-size: 11px;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Nagpur University Students Registration</h2>
+    <form action="">
+        <fieldset class="fs">
+            <br>
+            <legend><b> Student Details</b></legend>
+                <input type="text" id="fname" name="fname" autocomplete="off" placeholder="First Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off"><br><br>
+                <div class="mandate nameMandate">Name Field Is Mandetory</div>
+                <input type="text" id="faname" name="faname" placeholder="Father Name" autocomplete="off">
+                <input type="text" id="mname" name="mname" placeholder="Mother Name" autocomplete="off"><br><br>
+                <div class="mandate pnameMandate">Parent Name Field Is Mandetory</div>
+                <select name="mycourse" id="course">
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Electronic Engineering">Electronic Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Information Technology Engineering">Information Technology Engineering</option>
+                    <option value="Communication Engineering">Communication Engineering</option>
+                    <option value="Instrumentation Engineering">Instrumentation Engineering</option>
+                </select><br><br>
+                <div class="div"><label for="myDate">Date Of Birth</label>
+                <input type="date" name="myDate" id="date"></div><br>
+                <div class="div"><label for="myGender">Gender</label>
+                <div class="innerdiv"><input type="radio" name="myGender" value="Male" checked>&nbsp;&nbsp; Male</div>
+                <div class="innerdiv"><input type="radio" name="myGender" value="Female">&nbsp;&nbsp; Female</div></div><br>
+                <input type="text" name="mystreet" id="street" placeholder="Street Address" autocomplete="off" class="field"><br><br>
+                <div class="mandate addressMandate">Address Field Is Mandetory</div>
+                <input type="text" name="mycity" id="city" placeholder="City" autocomplete="off">
+                <input type="text" name="mystate" id="state" placeholder="State" autocomplete="off"><br><br>
+                <div class="mandate saddMandate">Address Field Is Mandetory</div>
+                <input type="text" name="mycountry" id="country" placeholder="Country" autocomplete="off">
+                <input type="text" name="mystate" id="zc" placeholder="Zip Code" autocomplete="off"><br><br>
+                <input type="email" name="myEmail" id="email" placeholder="Email ID" class="field" autocomplete="off"><br><br>
+                <div class="mandate emailMandate">Email Field Is Mandetory</div>
+                <input type="number" name="mycontact" id="contact" placeholder="Mobile Number" class="field"><br><br>
+                <div class="mandate contactMandate">Contact Field Is Mandetory</div>
+                <input type="button" name="sbtn" value="Submit" onclick="registerStudent();">
+                <input type="reset" name="rbtn" value="Reset" >
+            </fieldset>
+        </form>
+    </div>
+    <div class="container" id="newContainer">
+        <h2>You've got Registered Successfully !</h2>
+        <form action="">
+            <fieldset class="fs">
+                <br>
+                <legend id="sh"><b> University Details</b></legend>
+                <div class="div" >University Name : <span id="duniName"></span></div><br>
+                <div class="div" >University Address : <span id="duniAddress"></span></div><br>
+                <div class="div" >Website : <span id="dwebsite"></span></div><br>
+                <div class="div" >Email : <span id="duemail"></span></div><br>
+                <div class="div" id="con">Contact : <span id="ducontact"></span></div>
+                <div class="div" id="rate">Rating : <span id="drating"></span></div><br>
+            </fieldset>
+        </form>
+        <br>
+        <form action="">
+                <fieldset class="fs">
+                    <br>
+                    <legend><b> Student Details</b></legend>
+                    <div class="div left">First Name: <span id="dFirstName"></span></div>
+                    <div class="div right">Last Name: <span id="dLastName"></span></div><br><br>
+                    <div class="div left">Father Name: <span id="dFatherName"></span></div>
+                    <div class="div right">Mother Name: <span id="dMotherName"></span></div><br><br>
+                    <div class="div left">Gender: <span id="dgender"></span></div>
+                    <div class="div right">DOB: <span id="dDob"></span></div><br><br>
+                    <div class="div len">Course: <span id="dcourse"></span></div><br>
+                    <div class="div len">Street Address: <span id="dstreet"></span></div><br>
+                    <div class="div left">City Name: <span id="dcity"></span></div>
+                    <div class="div right">State: <span id="dstate"></span></div><br><br>
+                    <div class="div left">Country: <span id="dcountry"></span></div>
+                    <div class="div right">Zip Code: <span id="dzc"></span></div><br><br>
+                    <div class="div len">Email ID: <span id="demail"></span></div><br>
+                    <div class="div len">Contact: <span id="dcontact"></span></div><br>
+                </fieldset>
+            </form>
+        </div>
+    <script>
+        
+        class University {
+            constructor() {
+                this.universityName = 'Nagpur University';
+                console.log(this.universityName  + "uni");
+                this.universityAddress = '42XQ+4RW, Amravati Rd, Gokulpeth, Nagpur, Maharashtra 440033';
+                this.universityWebsite = 'rtmnu.org.in';
+                this.universityEmail = 'Nagpuruniversity@gmail.com';
+                this.universityContact = ' 0712 252 5417';
+                this.universityRating = '4.5/5';
+            }
+        }
+        class Student extends University  {
+            constructor(obj) {
+                super();
+                this.firstName = obj.firstName;   
+                this.lastName = obj.lastName;
+                this.fatherName = obj.fatherName;
+                this.motherName = obj.motherName;
+                this.gender =  obj.gender; 
+                this.course =  obj.course;
+                this.dob =  obj.dob;
+                this.street =  obj.street;
+                this.city =  obj.city;
+                this.state =  obj.state;
+                this.country =  obj.country;
+                this.zipcode =  obj.zipcode;
+                this.email =  obj.email;
+                this.contact =  obj.contact;
+            }
+            displayDetails() {
+                document.querySelector("#duniName").innerHTML = this.universityName ;
+                document.querySelector("#duniAddress").innerHTML = this.universityAddress;
+                document.querySelector("#dwebsite").innerHTML = this.universityWebsite;
+                document.querySelector("#duemail").innerHTML = this.universityEmail;
+                document.querySelector("#ducontact").innerHTML = this.universityContact;
+                document.querySelector("#drating").innerHTML = this.universityRating;
+                document.querySelector("#dFirstName").innerHTML = this.firstName;
+                if (!this.firstName){
+                        document.querySelector(".nameMandate").style.display = "block";
+                        return;
+                }
+                else{
+                        document.querySelector(".nameMandate").style.display = "none";
+                    }
+                document.querySelector("#dLastName").innerHTML = this.lastName;
+                if (!this.lastName){
+                        document.querySelector(".nameMandate").style.display = "block";
+                        return;
+                } 
+                else{
+                        document.querySelector(".nameMandate").style.display = "none";
+                    }
+                document.querySelector("#dFatherName").innerHTML = this.fatherName;
+                if (!this.fatherName){
+                        document.querySelector(".pnameMandate").style.display = "block";
+                        return;
+                    }else{
+                        document.querySelector(".pnameMandate").style.display = "none";
+                    }
+                document.querySelector("#dMotherName").innerHTML = this.motherName;
+                
+                if (!this.motherName){
+                        document.querySelector(".pnameMandate").style.display = "block";
+                        return;
+                }else{
+                        document.querySelector(".pnameMandate").style.display = "none";
+                    }
+                document.querySelector("#dgender").innerHTML = this.gender;
+                document.querySelector("#dcourse").innerHTML = this.course;
+                document.querySelector("#dDob").innerHTML = this.dob ;
+                document.querySelector("#dstreet").innerHTML = this.street;
+                if (!this.street){
+                        document.querySelector(".addressMandate").style.display = "block";
+                        return;
+                }
+                else{
+                        document.querySelector(".addressMandate").style.display = "none";
+                    }
+                document.querySelector("#dcity").innerHTML = this.city;
+                if (!this.city){
+                    document.querySelector(".saddMandate").style.display = "block";
+                    return;
+                }
+                else{
+                    document.querySelector(".saddMandate").style.display = "none";
+                }
+                document.querySelector("#dstate").innerHTML = this.state;
+                if (!this.state){
+                        document.querySelector(".saddMandate").style.display = "block";
+                        return;
+                }
+                else{
+                        document.querySelector(".saddMandate").style.display = "none";
+                    }
+                document.querySelector("#dcountry").innerHTML = this.country;
+                document.querySelector("#dzc").innerHTML = this.zipcode;
+                document.querySelector("#demail").innerHTML = this.email;
+                if (!this.email){
+                        document.querySelector(".emailMandate").style.display = "block";
+                        return;
+                }
+                else{
+                        document.querySelector(".emailMandate").style.display = "none";
+                    }
+                document.querySelector("#dcontact").innerHTML = this.contact;
+                if (!this.contact){
+                        document.querySelector(".contactMandate").style.display = "block";
+                        return;
+                }
+                else{
+                        document.querySelector(".contactMandate").style.display = "none";
+                    }
+                document.querySelector(".container").style.display = "none";
+                document.querySelector("#newContainer").style.display = "block";
+            }
+        }
+        var registerStudent = () => {
+                var obj1 = {};
+                obj1.firstName = document.querySelector("#fname").value ;
+                obj1.lastName = document.querySelector("#lname").value ;
+                obj1.fatherName = document.querySelector("#faname").value ;
+                obj1.motherName = document.querySelector("#mname").value ;
+                obj1.gender = document.querySelector("input[name=myGender]:checked").value; 
+                obj1.course = document.querySelector("#course").value;
+                obj1.dob = document.querySelector("#date").value ;
+                obj1.street = document.querySelector("#street").value ;
+                obj1.city = document.querySelector("#city").value ;
+                obj1.state = document.querySelector("#state").value ;
+                obj1.country = document.querySelector("#country").value ;
+                obj1.zipcode = document.querySelector("#zc").value ;
+                obj1.email = document.querySelector("#email").value ;
+                obj1.contact = document.querySelector("#contact").value ;
+                var s1 = new Student(obj1);
+                s1.displayDetails();
+           }
+    </script>
+</body>
+</html>

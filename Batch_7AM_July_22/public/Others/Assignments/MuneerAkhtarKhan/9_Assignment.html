@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No.9</title>
+
+</head>
+<body>
+    <h3>Demonstrating Employee Details</h3>
+    <script>
+        var eName = prompt("Enter The Employee Name");
+        var eGender = prompt("Enter The Employee Gender");
+        var eDep = prompt("Enter The Employee Department");
+        var eAdress = prompt("Enter The Employee Adress");
+        var basicSal = prompt("Enter the Basic Salary ");
+        basicSal = parseInt(basicSal);
+        var pf = basicSal * (14/100);
+        var hra = basicSal * (24/100);
+        var total = basicSal + pf + hra;
+        console.log("-:Demonstrating Employee Details:-")
+        console.log("Name-" + eName);
+        console.log("Gender-" + eGender);
+        console.log("Department-" + eDep);
+        console.log("Adress-" + eAdress);
+        console.log("PF-" + pf);
+        console.log("HRA-" + hra);
+        console.log("Total Salary-" + total);
+    </script>
+    
+</body>
+</html>

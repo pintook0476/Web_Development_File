@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>
+            Student Registion Page
+        </title>
+        <style>
+            h2 {
+                border: 2px solid;
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+                background-color:darkcyan;
+            }
+            .block {
+                border: 2px solid;
+            }
+            .subblock1,
+            .subblock2,
+            .subblock3,
+            .subblock4 {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color:cadetblue;
+            }
+            li {
+                list-style: none;
+                margin: 5px;
+                padding: 5px;
+                font-weight: bold;
+            }
+            .top {
+                top: 58px;
+                left: 59px;
+                position: absolute;
+            }
+            .top2 {
+                position: absolute;
+                top: 221px;
+                left: 53px;
+            }
+            .top3 {
+                position: absolute;
+                top: 381px;
+                left: 60px;
+            }
+            .top4 {
+                position: absolute;
+                top: 575px;
+                left: 51px;
+            }
+            .bottom {
+                border: 2px solid;
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+                font-weight: bold;
+                background-color:skyblue;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Student Registion Page</h2>
+        <div class="block">
+            <div class="subblock1">
+                <li>
+                  <input type="text" class="top"requried>
+               </li>
+               <li style="float: right";>
+                Course Opted:
+                  <input type="text" name="username"> 
+               </li>
+               <li>
+                  Enter Student Name:
+                  <input type="text" name="studentname">
+               </li>
+               <li>
+                  Mail: 
+                  <input type="text" name="mail">
+               </li>
+               <li>
+                  Gender:
+                  <input type="radio" name="gender">Male
+                  <input type="radio" name="gender">Female
+               </li>
+
+            </div>
+            <div class="subblock2">
+                <li>
+                    <input type="text" class="top2">
+                </li>
+                <li>
+                    Qualification: 
+                    <input type="text" name="qualification">
+                </li>    
+                <li>
+                    Languages: 
+                    <input type="checkbox" name="languages">English
+                    <input type="checkbox" name="languages">Odia
+                    <input type="checkbox" name="languages">Telugu
+                    <input type="checkbox" name="languages">Hindi
+                </li>
+                <li>
+                    Avg Markes:
+                    <input type="text" name="markes">
+                </li>
+            </div>
+            <div class="subblock3">
+                <li>
+                    <input type="text" class="top3">
+                </li>
+                <li style="float: right";>
+                    Land Mark:
+                    <textarea maxlength="20" cols="20" rows="2"></textarea>
+                </li>
+                <li>
+                    Dno: 
+                    <input type="text" name="dno">
+                </li>
+
+                <li>
+                    Street Name:
+                    <input type="text" name="streetname">
+                </li>
+                <li>
+                    State: 
+                    <select name="state">
+                        <option value="OD" selected>Odisha</option>
+                        <option value="WB">Westbengal</option>
+                        <option value="AP">Andrapradesh</option>
+                        <option value="TL">Telangana</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="TN">Tamilnadu</option>
+                        <option value="KL">Karntak</option>
+                    </select>
+                </li>
+                <li>
+                    Contry: 
+                    <select name="contry">
+                        <option value="IND" selected>INDIA</option>
+                        <option value="NP">NEPAL</option>
+                        <option value="CH">CHIN</option>
+                        <option value="PAK">PAKISTAN</option>
+                        <option value="BAN">BANGLADASH</option>
+                    </select>
+                </li>
+            </div>
+            <div class="subblock4">
+                <li>
+                    <input type="text" class="top4" required>
+                </li>
+                <li>
+                Tell about your self:<textarea maxlength="100" cols="100" rows="8"></textarea>
+                </li>
+            </div>
+        </div>
+        <div class="bottom">@copy right 2022</div>
+    </body>
+</html>

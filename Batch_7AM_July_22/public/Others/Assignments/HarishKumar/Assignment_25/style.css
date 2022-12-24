@@ -1,0 +1,59 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collegeSection,
+.studentSection {
+    margin-left: 10px;
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+select {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background: crimson;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+legend {
+    color: crimson;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}

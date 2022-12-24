@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmStrong Number</title>
+</head>
+<body>
+    <script>
+        /* Write a program to check whether a given number is armstrong number or not*/
+
+        /* What is ArmStrong Number?
+           Armstrong number aka the narcissist number . It is of special interest to new programmers and those learning a new programming languages because of the way the number behaves in a given number base. The armstrong number definition is the number in any given number base, which forms the total of the same number, when each of its digits is raised to the power of the number of digits in the number..  ex: 153, 370,371,407,1634,8208,9474,54748*/
+
+           var num = prompt("Enter any number to check it's armstrong or not");
+           var temp;
+           temp = num;
+           console.log(num.length);
+           var totalDigits = num.length;
+           var rem;
+           var armStrongNo = 0;
+
+           while(num > 0){
+            rem = num % 10;
+            armStrongNo = armStrongNo + (rem**totalDigits);
+            num = num / 10;
+            num = parseInt(num);
+           }
+           console.log(armStrongNo);
+           if(armStrongNo == temp){
+            console.log("Given number is armStrong Number");
+           }else{
+            console.log("Given number is not armStrong Number");
+           }
+           
+    </script>
+</body>
+</html>

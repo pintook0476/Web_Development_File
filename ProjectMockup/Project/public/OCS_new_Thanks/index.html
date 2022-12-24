@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orderdata</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.8.2/angular-sanitize.min.js
+        "></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body class="container">
+        <div ng-app="app" ng-controller="appController"  >
+            <input type="button" value="toggle" ng-click="toggle()"> 
+            <div ng-if="!testToggle">
+                <div class="header" >
+                    <span class="itemCount">ITEMS: {{orderMetaData.totalOrderedItems}} </span>
+                    <span class="headerText">YOUR ORDER</span>
+                </div>           
+                <div ng-If="orderData.length > maxItems" class="mainApp">
+                    <div style="display: flex;">
+                        <div class="flexItem dataContainer">
+                            <div ng-repeat="data in getSubArray(0, orderData.length/2)" class="flexItemRow">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="itemQuantity">{{data.Itemquantity}}</div>
+                                            </td>
+                                            <td>{{data.description}}</td>
+                                            <td class="priceCell">{{data.Price}}</td>
+                                        </tr>  
+                                        <tr ng-repeat="subItem in data.items" ng-if="subItem.Price != null">
+                                            <td></td>
+                                            <td class="subItemDesc">{{subItem.Itemquantity}} {{subItem.description}}</td>
+                                            <td class="priceCell">{{subItem.Price}}</td>
+                                        </tr>  
+                                        <tr ng-if="data.subItemNamesList">
+                                            <td></td>
+                                            <td class="subItemDesc" ng-bind-html="data.subItemNamesList"></td>
+                                            <td></td>
+                                        </tr>                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="flexItem" >
+                            <div ng-repeat="data in getSubArray(orderData.length/2 + 1, orderData.length)" class="flexItemRow">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="itemQuantity">{{data.Itemquantity}}</div>
+                                            </td>
+                                            <td>{{data.description}}</td>
+                                            <td class="priceCell">{{data.Price}}</td>
+                                        </tr>  
+                                        <tr ng-repeat="subItem in data.items" ng-if="subItem.Price != null">
+                                            <td></td>
+                                            <td class="subItemDesc">{{subItem.Itemquantity}} {{subItem.description}}</td>
+                                            <td class="priceCell">{{subItem.Price}}</td>
+                                        </tr>  
+                                        <tr ng-if="data.subItemNamesList">
+                                            <td></td>
+                                            <td class="subItemDesc" ng-bind-html="data.subItemNamesList"></td>
+                                            <td></td>
+                                        </tr>                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rendering data in single column-->
+                <div class="flexItemSingle dataContainer" ng-If="orderData.length <= maxItems" >
+                        <div ng-repeat="data in orderData" class="flexItemRow">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="itemQuantity">{{data.Itemquantity}}</div>
+                                        </td>
+                                        <td>{{data.description}}</td>
+                                        <td class="priceCell">{{data.Price}}</td>
+                                    </tr>  
+                                    <tr ng-repeat="subItem in data.items" ng-if="subItem.Price != null">
+                                        <td></td>
+                                        <td class="subItemDesc">{{subItem.Itemquantity}} {{subItem.description}}</td>
+                                        <td class="priceCell">{{subItem.Price}}</td>
+                                    </tr>  
+                                    <tr ng-if="data.subItemNamesList">
+                                        <td></td>
+                                        <td class="subItemDesc" ng-bind-html="data.subItemNamesList"></td>
+                                        <td></td>
+                                    </tr>                       
+                                </tbody>
+                            </table>
+                        </div>
+
+                </div>
+
+                <div class="footer" >
+                    <div class="container">
+                        <span class="taxValue">Tax: ${{totalTaxValue}}</span>
+                        <span class="totalValue">TOTAL ${{totalPrice}}</span>
+                    </div>
+                </div>
+                <img ng-if="dayUpSellImage" src="{{dayUpSellImage}}" ng-If=""/>
+            </div>
+            <div class="container" ng-if="testToggle">
+                <table  class="table" cellspacing="0" cellpadding="0" id="thanksTable">
+                    <tr>
+                        <td class="thanksCell">
+                            THANK YOU!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="thanksTotalPrice">
+                            TOTAL ${{totalPrice}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="msgCell">
+                            Please pull forward
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilandrome_or_not</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Enter a Number");
+        var num = parseInt(num);
+        var ORGnum = num;
+        var rem;
+        var Rev = 0;
+        while( num > 0){
+            rem = num % 10;
+            Rev = (Rev * 10) + rem;
+            num = num /10;
+            num = parseInt(num)
+
+        }
+        if(ORGnum == Rev){
+            console.log("Number is Pilandrome");
+         } else{
+                console.log("Number is Not Pilandrome");
+            }
+        
+        console.log(num);
+        console.log(Rev);
+    </script>
+</body>
+</html>

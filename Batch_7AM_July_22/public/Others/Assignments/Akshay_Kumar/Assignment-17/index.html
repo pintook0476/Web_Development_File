@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-17</title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+                readingData(){
+                    this.eName = prompt("enter employee name");
+                    this.eDept = prompt("enter department name");
+                    this.age = prompt("enter employee age");
+                    this.gender = prompt("enter employee gender");
+                    this.basicSalary = prompt("enter employee basic salary");
+                    this.calculatingTotalSalary();
+                },
+
+                calculatingTotalSalary(){
+                    this.basicSalary = parseInt(this.basicSalary);
+                    this.pf = (14/100)*this.basicSalary;
+                    this.hra = (25/100)*this.basicSalary;
+                    this.totalSalary = this.basicSalary+this.pf+this.hra;
+                    this.displayData();
+                },
+
+                displayData(){
+                    console.log("employee pf is "+this.pf);
+                    console.log("employee hra is "+this.hra);
+                    console.log("toatl salary is "+this.totalSalary);
+                    this.calculatingTax();
+                    console.log("employee tax to be paid is "+this.tax);
+                    console.log(empDetails);
+                },
+
+                calculatingTax(){
+                    if(this.gender == "male"){
+                        if(this.totalSalary >= 200000){
+                            this.tax = ((15/100)*this.totalSalary);
+                        } else if(this.totalSalary >= 100000){
+                            this.tax = ((10/100)*this.totalSalary);
+                        } else if(this.totalSalary >= 50000){
+                            this.tax = ((5/100)*this.totalSalary);
+                        } else{
+                            this.tax = 0;
+                        }
+                    } else{
+                        if(this.totalSalary >= 200000){
+                            this.tax = ((10/100)*this.totalSalary);
+                        } else if(this.totalSalary >= 100000){
+                            this.tax = ((5/100)*this.totalSalary);
+                        }else{
+                            this.tax = 0;
+                        }
+                    }
+                }
+            }
+
+            empDetails.readingData();
+        </script>
+    </body>
+</html>

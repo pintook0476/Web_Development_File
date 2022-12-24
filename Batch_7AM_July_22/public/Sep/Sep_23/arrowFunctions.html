@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Arrow Functions
+        </title>
+    </head>
+    <body>
+        <script>
+            class MessageBlocks {
+                constructor() {
+                    this.msg = "Hello every one";
+                }
+                displayMsg(){
+                    console.log("The msg is " + this.msg);
+                    setTimeout(() => {
+                        console.log("The msg is " + this.msg);
+                    }, 3000)
+                    console.log("The msg is " + this.msg);
+                }
+            }
+
+            var obj1 = new  MessageBlocks();
+            obj1.displayMsg();
+
+
+            
+        </script>
+    </body>
+</html>

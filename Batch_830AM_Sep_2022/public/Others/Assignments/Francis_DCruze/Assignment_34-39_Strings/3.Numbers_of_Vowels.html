@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number of Vowels</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: rgb(95, 81, 81);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 8px 5px;
+            }
+            h1,h2{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var str = prompt("Enter a word");
+            var vowels = ["a", "e", "i", "o", "u"];
+            var vowelsCount = 0;
+
+            for(var i = 0; i < vowels.length; i++)
+            {
+                for(var j = 0; j < str.length; j++)
+                {
+                    if(vowels[i] == str[j])
+                    {
+                        vowelsCount++;
+                    }
+                }
+            }
+
+            console.log(str +" has " +vowelsCount +" vowels letters");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>student registration page</title>
+</head>
+<style>
+    .header,
+    .footer {
+        border: 2px solid;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(203, 244, 133);
+        text-transform: uppercase;
+
+    }
+
+    .container {
+        border: 2px solid;
+        margin: 20px auto;
+        padding: 10px;
+        height: 500px;
+        overflow: auto;
+        background-color: rgb(157, 220, 157);
+
+
+    }
+
+    .smallbox {
+        border: 2px solid;
+        width: 200px;
+        height: 30px;
+        margin: 10px;
+        position: relative;
+        left: 20px;
+        top: -22px;
+        z-index: 250;
+        text-align: center;
+        font-size: 20px;
+        background-color: coral;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+
+    .smallbox1 {
+        top: -20px;
+        position: relative;
+        background-color: coral;
+
+
+    }
+
+    .address {
+        position: relative;
+        background-color: coral;
+        top: -25px;
+    }
+
+    .aboutself {
+        position: relative;
+        background-color: coral;
+        top: -23px;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4 {
+        border: 2px solid;
+        margin: 10px auto;
+        width: 80%px;
+        height: 250px;
+        background-color: rgb(248, 199, 180);
+
+    }
+
+    .block2 {
+        margin: 20px auto;
+
+    }
+
+    .block3 {
+        margin: 30px auto;
+    }
+
+    .block4 {
+        margin: 40px auto;
+    }
+
+    li {
+        float: left;
+        clear: left;
+        list-style: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+    }
+
+    .lablecontrol {
+        width: 160px;
+        float: left;
+        margin: 25px;
+        margin-top: 10px;
+
+    }
+
+    .controll {
+        width: 160px;
+        float: left;
+
+    }
+
+    .course {
+        position: relative;
+        left: 700px;
+        top: -160px;
+
+    }
+
+    .lablecontrol1 {
+        width: 160px;
+        margin: 15px;
+        float: left;
+
+
+    }
+
+    .lable {
+
+        float: left;
+        margin: 10px;
+
+    }
+
+    .lablecontrol2 {
+        width: 160px;
+        margin: 15px;
+        float: left;
+    }
+
+    .lable2 {
+        float: left;
+        margin: 15px;
+    }
+
+    .about {
+       
+        margin: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+
+    .submit {
+
+        text-align: center;
+
+
+    }
+</style>
+
+<body>
+    <div class="header"> student Register</div>
+
+    <div class="container ">
+        <div class="block1 ">
+            <div class="smallbox"> personal details</div>
+            <ul>
+                <li>
+                    <div for="username" class="lablecontrol">student name</div>
+                    <div class="controll">
+                        <input type="text" name="username">
+                    </div>
+                </li>
+                <li>
+                    <div for="maleid" class="lablecontrol">Mail id: </div>
+                    <input type="text" name="maleid">
+                </li>
+                <li>
+
+                    <div class=" lablecontrol"> gender:</div>
+                    <div class="controll">
+
+                        <input type="radio" name="gender" value="male">male
+
+                        <input type="radio" name="gender" value="female">female
+                    </div>
+                </li>
+                <li class="course">
+                    <div class="lablecontrol"> course obted:</div>
+                    <div class="controll">
+
+                        <select>
+                            <option value="webdevelopment">webdevelopment</option>
+                            <option value="javadeveloper">javadeveloper</option>
+                            <option value=".netdeveloper">.netdeveloper</option>
+                            <option value="c++"> c++</option>
+                            <option value="c">c</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="block2">
+            <div class="smallbox smallbox1"> student details</div>
+            <ul>
+                <li>
+                    <div for="qualification" class="lablecontrol1 ">qualification </div>
+                    <div class="lable">
+                        <select>
+                            <option value="mca"> mca</option>
+                            <option value="bca"> bca</option>
+                            <option value="b.tech">b.tech</option>
+                            <option value="b.com"> b.com</option>
+                        </select>
+
+                    </div>
+
+                </li>
+                <li>
+                    <div class="lablecontrol1">Language known </div>
+                    <div class="lable">
+
+                        <input type="checkbox" value="english" name="enl-lang">english
+                        <input type="checkbox" value="hindi" name="hindi_lang">hindi
+                        <input type="checkbox" value="telugu" name="tel_lang"> telugu
+                        <input type="checkbox" value="urdu" name="urd_lang"> urdu
+                    </div>
+                </li>
+                <li>
+                    <div for="avgmarks" class="lablecontrol1 ">Average marks </div>
+                    <div class="lable">
+                        <input type="text" name="avgmarks lable">
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="block3 ">
+            <div class="smallbox address">
+                Address details
+            </div>
+            <ul>
+                <li>
+                    <div for="house no." class="lablecontrol2"> House no. </div>
+                    <div class="lable2">
+                        <input type="text" name="house no.">
+                    </div>
+
+                </li>
+                <li>
+                    <div for="street name" class="lablecontrol2"> street name</div>
+                    <div class="lable2">
+                        <input type="text" name="street name">
+                    </div>
+                </li>
+                <li>
+                    <div class="lablecontrol2">
+                        Country</div>
+                    <div class="lable2">
+                        <select>
+                            <option value="ind">india</option>
+                            <option value=""> japan</option>
+                            <option value="">china</option>
+                            <option value="">newyork</option>
+                            <option value="">london</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="block4">
+            <div class="smallbox aboutself ">About self</div>
+            <div class="about">
+                tell me about yourself
+
+
+                <textarea maxlength="100" cols="100" rows="10" name="aboutuser"></textarea>
+            </div>
+
+        </div>
+        <div class="submit">
+            <input type="submit" name="register student">
+        </div>
+    </div>
+    <div class="footer">copy@delnaz </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>conditional_statements</title>
+</head>
+
+<body>
+    <h1>go to console</h1>
+    <script>
+        var ename = prompt("Enter Employee Name");
+        var age = prompt("Enter Age");
+        var gender = prompt("Enter Gender");
+        var dept = prompt("Enter Department");
+        var basicSalary = prompt("Enter Salary");
+        basicSalary = parseInt(basicSalary);
+        var pf = basicSalary * (14 / 100);
+        var hra = basicSalary * (25 / 100);
+        var totalSalary = basicSalary + pf + hra;
+        console.log("Employee Name : " + ename);
+        console.log("Age : " + age);
+        console.log("Gender : " + gender);
+        console.log("Your Total Salary including pf and hra is : " + totalSalary);
+        if(gender == "male" && totalSalary >= 0){
+            if(totalSalary >= 50000){
+                if(totalSalary >= 100000){
+                    if(totalSalary >=200000){
+                        var tax = totalSalary * (15/100);
+                    } else{
+                    var tax = totalSalary * (10/100);
+                    }
+                } else{
+                    var tax = totalSalary * (5/100);
+                }
+            } else{
+                var tax = zero;
+            }
+        }
+        if(gender == "female" && totalSalary >= 0){
+            if(totalSalary >= 100000){
+                if(totalSalary >= 200000){
+                    var tax = totalSalary * (10/100);                   
+                } else{
+                    var tax = totalSalary * (5/100);
+                }
+            } else{
+                var tax = zero;
+            }
+        }
+        console.log("Your payable Tax is : " + tax);
+        console.log("done");
+    </script>
+</body>
+
+</html>

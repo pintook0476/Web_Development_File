@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*var contactDetails = {
+                name: 'Prasad',
+                firstName: 'First Prasad',
+                lastName: 'Last Prasad',
+                phoneNo: {
+                    persnlNo: [24242342,234234234],
+                    office: '040-23423423'
+                },
+                emailId: {
+                    persnlId: ['abc@gmail.com', 'sample@test.com'],
+                    ofc: 'office@office.com'
+                },
+                gender: 'MAle',
+                address: {
+                    persnl: {
+                        dno: 'a/123',
+                        pinCode: 23423,
+                        sateInfo: {
+                            sname: 'TElangana',
+                            scode: 'TS'
+                        }
+                    },
+                    office: {
+                        countryDetails: {
+                            code:'IND',
+                            countryName: 'India'
+                        },
+                        buildingNo: '5A',
+                        pincode: 424234
+                    }
+                },
+                profilePic: 'test.png',
+                relationShip: 'Friend',
+                socialId: {
+                    telID: 'prasad158',
+                    linkedInID: 'test158',
+                    fbid: 'sample123'
+                },
+                website: ['abc.com', 'sample.com', 'tst.com'],
+                dob: {
+                    month: 'Nov',
+                    year: 2022,
+                    day: 7
+                }
+            };
+
+            console.log(contactDetails)
+
+            for (var tempKey in contactDetails) {
+                console.log(tempKey);
+                console.log(contactDetails[tempKey])
+            }*/
+
+
+
+
+
+            var userData = {
+                name: 'Raj',
+                age: 20,
+                address: {
+                    dno: '34/Q',
+                    sateCode: 'ABC'
+                },
+                phonno: [3445, 35343]
+            };
+
+            /*console.log(Object.keys(userData))
+            console.log(Object.keys(userData.phonno))
+            console.log(userData.phonno.length)
+            console.log(userData.address.length)*/
+
+            for (var tempKey in userData) {
+                
+                /*if (tempKey == 'address') {
+                    for (var tempKey2 in userData.address) {
+                        console.log(tempKey2);
+                        console.log(userData.address[tempKey2]);
+                    }
+                } else {
+                    console.log(tempKey)
+                    console.log(userData[tempKey]);
+                }*/
+                
+                if (typeof(userData[tempKey]) == 'object' && userData[tempKey].length == undefined) { // object, not array
+                    for (var tempkey2 in userData[tempKey]) {
+                        console.log(tempkey2);
+                        console.log(userData[tempKey][tempkey2]);
+                    }
+                } else {
+                    console.log(tempKey)
+                    console.log(userData[tempKey]);
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

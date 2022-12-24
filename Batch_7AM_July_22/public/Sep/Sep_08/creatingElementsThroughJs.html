@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>Demonstrating creating elements through js</div>
+        <div id="container">
+            
+        </div>
+        <span id="sample">TESTING</span>
+        <script>
+            var tagname = prompt("enter which tag u want to create");
+            var colorName = prompt("enter color")
+            var spanElem = document.createElement(tagname);
+            spanElem.innerHTML = 'Hello every one';
+            spanElem.setAttribute("id", 'test');
+            spanElem.setAttribute("title", 'sample');
+            spanElem.setAttribute("class", 'testing');
+            spanElem.style.background = colorName;
+
+            document.querySelector("#container").before(spanElem);
+
+            //document.querySelector("#sample").remove();
+        </script>
+    </body>
+</html>

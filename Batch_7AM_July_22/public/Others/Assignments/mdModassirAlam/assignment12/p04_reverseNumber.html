@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <script>
+
+        /* Write a program to read a number from the user and find the sum of all the individuals values of it */
+        var num = prompt("Enter any number");
+        num = parseInt(num);
+        var rem;
+        var reverseNumber =0;
+        while(num > 0){
+            rem = num % 10;
+            console.log(rem);
+            reverseNumber = reverseNumber * 10 +rem;
+            num = parseInt(num/10);
+        }
+       console.log(reverseNumber);
+    </script>
+</body>
+</html>

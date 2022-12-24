@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Student Details with objects
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname = 'Teena';
+
+            var sDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'MAle',
+                marks: [34, 56, 78, 90, 88],
+                getTotalAndAvg: () => {
+                    sDetails.total = 0;
+                    for (var i = 0 ; i < sDetails.marks.length; i++) {
+                        sDetails.total += sDetails.marks[i];
+                    }
+                    sDetails.avg = sDetails.total / sDetails.marks.length;
+                    sDetails.getGrade();
+                },
+                getGrade: () => {
+                    if (sDetails.avg >= 40) {
+                        sDetails.grade = 'you are Passed';
+                    } else {
+                        sDetails.grade = 'You have a surprise';
+                    }
+                },
+                displayDetails: () => {
+                    sDetails.getTotalAndAvg();
+                    console.log("STudent name is " + sDetails.name);
+                    console.log("Age is " + sDetails.age);
+                    console.log("Gender is " + sDetails.gender);
+                    console.log("Totla is " + sDetails.total);
+                    console.log("Avg is " + sDetails.avg);
+                    console.log("Grade is " + sDetails.grade);
+                }
+            };
+
+            sDetails.displayDetails();
+        </script>
+    </body>
+</html>

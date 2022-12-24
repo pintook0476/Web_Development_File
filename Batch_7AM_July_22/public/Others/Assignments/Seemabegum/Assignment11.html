@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions operators</title>
+</head>
+<body>
+    <script>
+        var ename = prompt("Enter employee name ");
+        var gender = prompt("Enter employee gender ");
+        var edept = prompt("Enter department name ");
+        var basicpay = prompt("Enter basicpay ");
+        basicpay= parseInt(basicpay);
+        var pf = prompt("Enter Pf");
+        pf= basicpay *(15/ 100);
+        parseInt(pf);
+        var hra = prompt("Enter HRA");
+        hra= basicpay * (10/100);
+        parseInt(hra);
+        var total = pf+hra+basicpay;
+        parseInt(total);
+        var tax_5 = total * (5/100);
+        var tax_10 = total * (10/100);
+        var tax_15 = total * ( 15/100);
+
+        if(total >=50000  && total < 100000 && gender == "male")
+        {
+        document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX on total : " + tax_5 +"<br>" );
+        }
+        else if
+        (total >= 100000 && total < 200000 && gender == "male")
+         {
+            document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX on total : " + tax_10 +"<br>" );
+     }
+     else if (total >200000 && gender ==" male")
+     {
+        document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX on total : " + tax_15 +"<br>" );
+     }
+     else if (total >=100000 && total  < 200000  && gender == " female")
+     {
+     document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX on total : " + tax_5+"<br>" );
+     }
+     else if ( total > 200000 && gender == " female ")
+     {
+        document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX on total : " + tax_10 +"<br>" );
+     }
+     else{
+        
+        document.write  ("Employee  name : " + ename + "<br>");
+        document.write  ("Employee  gender: " + gender +"<br>" );
+        document.write  ("Employee  department : " + edept +"<br>" );
+        document.write  ("Employee  basicsalary: " + basicpay +"<br>" );
+        document.write  ("Employee  provident fund : " + pf +"<br>" );
+        document.write  ("Employee  HRA: " + hra+"<br>" );
+        document.write  ("Total  salary : " + total +"<br>" );
+        document.write  ("TaX is ZERO" +"<br>" );
+
+     }
+
+    
+    
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> finding palindrome </title>
+    </head>
+    <body>
+        <script>
+
+            var a = prompt(" Enter a num to check wether its a palindrome.")
+            var rem ;
+            var  rev = 0;
+            var ab = a ;
+            ab =parseInt(ab);
+
+            while( a > 0 ){
+                rem = a % 10 ;
+                rev = rev * 10 + rem ;
+                a = a / 10 ;
+                a = parseInt(a);
+
+            }
+                
+                console.log( rev );
+                console.log(ab);
+
+            if( rev == ab ) {
+                alert("its a palindrome")
+            }else ( alert("not a palindrome") );
+            
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>

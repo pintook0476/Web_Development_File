@@ -1,0 +1,54 @@
+.main-container{
+    
+    border: 1px solid;
+    text-align: center;
+
+    
+}
+.productdetails{
+    border: 1px solid;
+    position: absolute;
+    left: 10px;
+    right:10px;
+    bottom: 20px;
+    height: 600px;
+    overflow: auto;
+    
+}
+.pdetails{
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    float: left;
+    background-color: aqua;
+    box-shadow: 0 20px 20px 0;
+   
+}
+
+.pImage img{
+    width: 90px;
+    height: 90px;
+}
+.pdetails li{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: orange;
+    
+}
+.actualprize{
+    color: black;
+    font-weight: bold;
+
+}
+.afterdiscount{
+    color: green;
+    font-weight: bold;
+    
+}
+.ratingstar img{
+    width: 20px;
+    height: 20px;
+}

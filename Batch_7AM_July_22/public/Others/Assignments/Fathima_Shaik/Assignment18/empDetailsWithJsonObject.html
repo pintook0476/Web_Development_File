@@ -1,0 +1,84 @@
+<html>
+<head>
+     <title>Employee Details With Json Object</title>
+</head>
+<body>
+    <h3> Employee Details With Json Object</h3>
+    <script type="text/javascript">
+
+        var empDetails = {};
+        console.log(typeof(empDetails));
+        
+        empDetails.ename=prompt("Enter Employee name:");
+        empDetails.gen=prompt("Enetr Gender:");
+        empDetails.dept=prompt("Enetr Department:");
+        empDetails.basicSal=parseInt(prompt("Enetr Basic Salary:"));
+
+        //calculating pf,hra,total salry
+        empDetails.pf = empDetails.basicSal*(14/100);
+        empDetails.hra = empDetails.basicSal*(25/100);
+        empDetails.totSal= empDetails.pf + empDetails.hra + empDetails.basicSal;
+
+        //display employee details
+        console.log("Employee Details:")
+        console.log("Name:- " + empDetails.ename);
+        console.log("Gender:- " + empDetails.gen);
+        console.log("Department:- " + empDetails.dept);
+        console.log("Basic Salary:- " + empDetails.basicSal);
+        console.log("pf:- " + empDetails.pf);
+        console.log("hra:- " + empDetails.hra);
+        console.log("Total Salary:- " + empDetails.totSal);
+
+        //tax if gender is male
+        if (empDetails.gen == 'male')
+        {
+            if ( empDetails.totSal >= 200000)
+            {          
+                empDetails.tax = ( 15 / 100 ) * empDetails.totSal;
+                console.log("Tax: " + empDetails.tax);
+            } 
+            
+            else if( empDetails.totSal >= 100000)
+            {
+                empDetails.tax = ( 10 / 100 ) * empDetails.totSal;
+                console.log("Tax: " + empDetails.tax);
+            }
+            
+            else if ( empDetails.totSal >=50000 )
+            {
+                empDetails.tax = ( 5 / 100 ) * empDetails.totSal;
+                console.log("Tax: " + empDetails.tax);
+            }
+            
+            else {
+                console.log("Tax is Zero");
+            }
+         } 
+         
+         else if(empDetails.gen == 'female')
+         {
+            if( empDetails.totSal >= 200000)
+            {
+                empDetails.tax = ( 10 /100 ) * empDetails.totSal;
+                console.log("Tax: " + empDetails.tax);
+            }
+            
+            else if( empDetails.totSal >= 100000)
+            {
+                empDetails.tax = ( 5 / 100 ) * empDetails.totSal;
+                console.log("Tax: " + empDetails.tax);
+            }
+            
+            else
+            {
+                console.log("Tax is Zero");
+            }
+         }
+
+         else
+         {
+            console.log("Invalid Input");
+         }
+    </script>
+</body>
+</html>

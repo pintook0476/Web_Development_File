@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>palindrome between 1 to 1000</title>
+    </head>
+    <body>
+        <h3> Press F12 or go to console tab </h3>
+        <script type="text/javascript">
+            var a;
+            
+            for( var a = 1 ; a <= 1000 ; a++  ){
+                     var b = a;
+                    var rem;
+                    var rev = 0;
+                    var ab = b;
+                    while (  b > 0   ) {
+                        rem = b % 10 ;
+                        rev = rev * 10 + rem;
+                        b = b / 10 ;
+                        b = parseInt(b);
+
+                    }
+                    if( rev == ab ) {
+                        console.log("its a palindrome " + ab) ;
+                    } else {
+                        console.log("not a palindrome" + ab);
+                    }
+                       
+            }
+            
+        
+        
+        
+        </script>
+    </body>
+</html>

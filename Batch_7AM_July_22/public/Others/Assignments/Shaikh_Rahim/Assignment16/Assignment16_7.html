@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- wap to find out all the pallindrome number within given array-->
+    <script>
+        var array = [101, 102, 103, 201, 202, 301, 303];
+        var temp =[];
+        for (var i = 0; i < array.length; i++) {
+            temp[i]=array[i];
+        }
+        var pallindrome = "";
+        var rem = "";
+        for (var i = 0; i < array.length; i++) {
+
+            var n = i;
+            pallindrome = ""
+            while (array[n] > 0) {
+                rem = (array[n] % 10).toString();
+                pallindrome += rem;
+                array[n] = parseInt(array[n] / 10);
+            }
+            // console.log(pallindrome);
+            pallindrome = parseInt(pallindrome);
+
+            if (temp[i] == pallindrome) {
+                console.log("pallindrome number is " + temp[i]);
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Report Card</title>
+    <link rel="stylesheet" href="employeeReportcard.css">
+    <script src="employeeReportcard.js"></script>
+</head>
+<body>
+    <div class="wraper">
+        <div class="heading">Employee Card Generator</div>
+        <div class="hero">
+            <div class="leftBox">
+                <label for="text">Employee Name</label>
+                <input type="text" name="empName" id="empName" placeholder="ADAM SMITH">
+                <label for="text">Team</label>
+                <input type="text" name="team" id="team" placeholder="MIND BENDERS">
+                <label for="number">Phone Numer</label>
+                <input type="text" name="phone" id="phone" placeholder="1234567890">
+                <label for="number">Salary</label>
+                <input type="number" name="Salary" id="salary">
+                <label for="number">PF Percentage</label>
+                <input type="number" name="pf" id="pf">
+                <label for="number">HRA Percentage</label>
+                <input type="number" name="hra" id="hra">
+            </div>
+            <div class="leftBox">
+                <label for="text">Department</label>
+                <input type="text" name="Department" id="dept" placeholder="INFORMATION TECHLONOGY">
+                <label for="date">Date of Joining</label>
+                <input type="date" name="join" id="join">
+                <div class="innerBox">
+                    <span type="text" name="captcha" id="captcha" on="captchaGenerator()"></span>
+                    <label for="text">Enter the Captcha code</label>
+                    <input type="text" name="captchaInput" id="captchaInput">
+                    <div class="error">Enter the valid Input</div>
+                </div>
+                <input type="button" value="enter" onclick="employeedetails.inputData()">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="empcard">
+        <div class="card">Monthly Report</div>
+        <div class="data">
+            <div class="rightBox">
+                <div class="details"><span>Employee Name</span><span id="uname" class="userInput"></span></div>
+            <div class="details"><span>Team</span><span id="team" class="userInput"></span></div>
+            <div class="details"><span>Department</span><span id="dept" class="userInput"></span></div>
+            <div class="details"><span>Date of Joining</span><span id="doj" class="userInput"></span></div>
+            <div class="details"><span>Phone Numer</span><span id="phno" class="userInput"></span></div>
+            <div class="details"><span>Total Salary</span><span id="totalSalary" class="userInput"></span></div>
+            </div>
+            <img src="logo.png" alt="">
+        </div>
+        <input type="button" class="print" value="Print" onclick="window.print()">
+    </div>
+
+
+
+</body>
+</html>

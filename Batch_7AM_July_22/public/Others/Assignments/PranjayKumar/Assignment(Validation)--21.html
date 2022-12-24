@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate data</title>
+    <style>
+        ul
+        {
+            border:2px solid;
+            width: 350px;
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        li
+        {
+            margin: 15px;
+            padding: 15px;
+            list-style: none;
+            text-align: center;
+        }
+        .error
+        {
+            color: red;
+            font-family: cursive;
+            display: none;
+        }
+        .outputblock{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            First value: 
+            <input type="text" id="fval" onkeypress="return validation (event,'#fvalerr')">
+            <div class="error" id="fvalerr">only number allowed</div>
+
+        </li>
+        <li>
+            Second Value:
+            <input type="text" id="sval" onkeypress="return validation (event,'#svalerr')">
+            <div class="error" id="svalerr">only number allowed</div>
+        </li>
+        
+        <li>
+            <input type="button" value="Addition" onclick="sumAllNumber ()">
+        </li>
+        <li class="outputblock">
+            After Addition: <span></span>
+        </li>
+    </ul>
+    <script>
+        var sumAllNumber = () =>{
+            var a1 = document.querySelector('#fval').value;
+            a1 = parseInt(a1);
+
+            var a2 = document.querySelector('#sval').value;
+            a2 = parseInt(a2);
+
+            
+            var sum = a1+a2;
+
+            document.querySelector("span").innerText = sum;
+            document.querySelector(".outputblock").style.display = 'block';
+        }
+        
+        var validation = (event,elementId) =>{
+            if(event.keyCode >= 49 && event.keyCode <= 57)
+            {
+                document.querySelector(elementId).style.display = 'none';
+                return true;
+            }
+            else
+            {
+                document.querySelector(elementId).style.display = 'block';
+                return false;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of armstrong numbers </title>
+</head>
+<body>
+    <script>
+
+                //write a program to list out amstrong between 1 to 1000 //
+                var count = 0;
+               for ( var i = 1; i <= 1000 ; i ++ ){
+
+                 var num = i ; 
+                 var sum  = 0 ; 
+                 var armstrong = 0 ;
+                 var power ;
+                 var length = num.toString() .length; 
+
+                 while (num != 0 ) {
+
+                    armstrong = num % 10 ;
+                    num = parseInt(num / 10 );
+                    power = Math.pow (armstrong,length);
+                    sum += power; 
+                 }
+                 if (sum == i ) {
+                    console.log (i);
+                    count ++;
+                 }
+               }console .log ("list out total armstrong numbers " + count );
+
+    </script>
+    
+</body>
+</html>

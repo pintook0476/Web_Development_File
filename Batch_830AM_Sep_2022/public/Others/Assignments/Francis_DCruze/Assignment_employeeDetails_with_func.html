@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var empName = "Junior FrontDev", TotalSalary, PF, HRA, AnnualSalary, taxAmt, age, gender, department,basic_Salary ;
+
+            function EmployeeDetails()
+            {    
+                age = 28;
+                gender = "Male";
+                department = "Automation Support";
+                basic_Salary = 40500;
+            }
+
+            function CalcSalary()
+            {
+                PF = basic_Salary*0.12;
+                HRA = basic_Salary*0.24;
+                TotalSalary = basic_Salary + PF + HRA;
+                AnnualSalary = TotalSalary*12;
+            }
+
+            function displayDetails()
+            {
+                console.log("Employee Name : " + empName);
+                console.log("Age : " +age);
+                console.log("Gender : " +gender);
+                console.log("Department : " +department);
+                console.log("Total Salary : "+ TotalSalary);
+                console.log("Annual Salary : "+ AnnualSalary);
+            }
+
+            function CalcTax()
+            {
+                if (gender == "Male")
+                {
+                    if (AnnualSalary > 500000)
+                    {
+                        console.log("Tax is : " +AnnualSalary * 0.15);
+                    }
+                    else if (AnnualSalary >= 300000)
+                    {
+                        console.log("Tax is : " +AnnualSalary * 0.10);
+                    }
+                    else
+                    {
+                        console.log("Tax is : 0");
+                    }
+                }
+                else
+                {
+                    if (AnnualSalary > 500000)
+                    {
+                        console.log("Tax is : " +AnnualSalary * 0.10);
+                    }
+                    else
+                    {
+                        console.log("Tax is : 0");
+                    }
+                }
+            }
+
+            EmployeeDetails();
+            CalcSalary();
+            displayDetails();
+            displayDetails();
+        </script>
+    </body>
+</html>

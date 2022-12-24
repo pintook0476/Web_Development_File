@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee's Salary Details with tax</title>
+</head>
+
+<body>
+    <marquee behavior diretion>
+        <h2>If you want to see the salary slip of male and female
+            please go to in <u>inspect </u> and click
+            You see debbuging tool and click the<u> console </u> option
+            now you will be eligible to view salary slip detaits
+            thank you ......
+
+        </h2>
+    </marquee>
+    <script>var name, age, gender, department, basicsal, pf, hra, total;
+        function readEmpydata() {
+            name = prompt("enter your name");
+            age = prompt("enter your age");
+            gender = prompt("enter your gender");
+            department = prompt("enter your department");
+            basicsal = prompt("enter your basic salary");
+        }
+
+
+        function getTotalSalary() {
+            basicsal = parseFloat(basicsal);
+            pf = basicsal * (15 / 100);
+            hra = basicsal * (25 / 100);
+
+            total = (pf + hra + basicsal);
+            total = parseFloat(total);
+        }
+
+        function displayEmpyDetail() {
+
+            console.log("NAME " + name);
+            console.log("AGE " + age);
+            console.log("GENDER " + gender);
+            console.log("DEPARTMENT " + department);
+            console.log("BASIC SALARY " + basicsal);
+            basicsal = parseFloat(basicsal);
+            console.log("PF " + pf);
+            console.log("HRA " + hra);
+            console.log("TOTAL SALARY " + total);
+
+        }
+
+        function maleSalary() {
+
+            if (gender == "MALE" || gender == "male" || gender == "Male") {
+                if (basicsal >= 200000) {
+                    console.log("your tax percentage is 15%");
+                    var tax = basicsal * (15 / 100);
+                    console.log("you will give total tax is " + tax);
+                }
+                else if (basicsal >= 100000 && basicsal < 200000) {
+                    console.log("your tax percentage is 10%");
+                    var tax = basicsal * (10 / 100);
+                    console.log("you will give total tax is " + tax);
+                }
+                else if (basicsal >= 50000 && basicsal < 100000) {
+                    console.log("your tax percentage is 5%");
+                    var tax = basicsal * (5 / 100);
+
+                    console.log("you will give total tax is " + tax);
+                }
+
+                else {
+                    var tax = 0;
+                    console.log("tax = 0");
+                }
+
+            }
+
+        }
+        function femaleSalary() {
+            if (gender == "FEMALE" || gender == "female" || gender == "Female") {
+                if (basicsal >= 200000) {
+                    console.log("your tax percentage is 10%");
+                    var tax = basicsal * (10 / 100);
+                    console.log("you will give total tax is " + tax);
+                }
+                else if (basicsal >= 100000 && basicsal < 200000) {
+                    console.log("your tax percentage is 5%");
+                    var tax = basicsal * (5 / 100);
+                    console.log("you will give total tax " + tax);
+                }
+
+                else if (basicsal < 100000) {
+                    console.log("your tax percentage is 0%");
+                    var tax = 0
+                    console.log("you will not give any tax");
+                }
+
+            }
+        }
+        function growYour() {
+            if (basicsal >= 250000) {
+                console.log("you are a VIP");
+            }
+
+        }
+        readEmpydata();
+        getTotalSalary();
+        displayEmpyDetail();
+        maleSalary();
+        femaleSalary();
+        growYour();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Find prime numbers between 20 to 200
+    <script>
+        
+        for( var i = 20 ; i <=200 ; i++){
+            for( var j = 2; j < i ; j++){
+                if( i % j == 0){
+                    break;
+                }
+            }
+        
+        if( i == j){
+        
+            console.log("prime number" + i);
+            
+            
+        }  
+       
+    }
+    
+    </script>
+</body>
+</html>

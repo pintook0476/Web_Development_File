@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="schoolData">
+        <ul>
+            <li>
+                <h1>School Details</h1>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>School Name</legend>
+                    <input type="text" id="scName">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>School Code</legend>
+                    <input type="text" id="scCode">
+                </fieldset>
+            </li>
+            <li>
+                <input type="button" value="Next" onclick="return openstData();">
+            </li>
+        </ul>
+    </div>
+    <div class="stdData">
+        <ul>
+            <li>
+                <h1>Student Details</h1>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Student Name</legend>
+                    <input type="text" id="sName">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>School RollNo.</legend>
+                    <input type="text" id="sRoll">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Date Of Birth</legend>
+                    <input type="date" id="sDate">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Address</legend>
+                    <input type="text" id="sAdd">
+                </fieldset>
+            </li>
+            <li>
+                <input type="button" value="Sumbit" onclick="return sumbitData();">
+            </li>
+        </ul>
+    </div>
+    <div class="details">
+        <ul>
+            <li></li>
+            <li>
+                <fieldset>
+                    <label>School Name: </label>
+                    <span class="schoolname"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>School Code: </label>
+                    <span class="schoolcode"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>Student Name: </label>
+                    <span class="stdname"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>School RollNo: </label>
+                    <span class="stdroll"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>Date Of Birth: </label>
+                    <span class="stddob"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>Gender: </label>
+                    <span class="stdgender"></span>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <label>Address: </label>
+                    <span class="stdaddress"></span>
+                </fieldset>
+            </li>
+            <li>
+                <input type="button" value="Print" onclick="window.print();">
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

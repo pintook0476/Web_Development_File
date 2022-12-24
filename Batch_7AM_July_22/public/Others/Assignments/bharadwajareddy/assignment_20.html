@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            none
+        </title>
+        <style>
+            .container{
+                border:2px solid;
+                width:100px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <span id="rblock"></span>
+        </div>
+        <input type="button" value="getOtp" onclick="getotp()">
+        <input type="button" value="get capche" onclick="getCapche()">
+        <script>
+            getotp=()=>{
+                var res=" ";
+                for(var i=0;i<6;i++){
+                    var randomno=Math.random()*10;
+                    randomno=Math.floor(randomno);
+                    res=res+randomno;
+                }
+                document.querySelector("#rblock").innerHTML=res;
+            }
+            getCapche=()=>{
+                var upper=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+                var lower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+                res=Math.floor(Math.random()*10)+upper[Math.floor(Math.random()*26)]+Math.floor(Math.random()*10)+upper[Math.floor(Math.random()*26)]+lower[Math.floor(Math.random()*26)]+upper[Math.floor(Math.random()*26)]
+                document.querySelector("#rblock").innerHTML=res;
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESS CARD GENERATION</title>
+    <link rel="stylesheet" href="sprogress_style.css">
+    
+</head>
+<body>
+    <div class="takinginput"> PROGRESS CARD GENERATION</div>
+    <ul>
+        <li>
+            <div for="studentname" class="class1">
+                Student Name:
+            </div>
+            <div class="class2">
+                <input type="text" id="sname">
+            </div>
+        </li>
+        <li>
+            <div for="studentage" class="class1">  
+                 Student Age:
+            </div>
+            <div class="class2">
+                <input type="text" id="sage">
+            </div>
+        </li>
+        <li>
+            <div for="studentgender" class="class1">
+                Student Gender:
+            </div> 
+            <div class="class2">
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </div>    
+        </li>
+        <li>
+            <div for="studentclass" class="class1">
+                Student Class:
+            </div>
+            <div class="class2">
+                <select name="" id="sclass">
+                    <option>None</option>
+                    <option> I</option>
+                    <option> II</option>
+                    <option> III</option>
+                    <option> IV</option>
+                    <option> V</option>
+                </select>
+            </div>
+        </li>
+        <li class="smarks">
+            <div for="studentmarks" class="class1">
+                Student Marks:
+            </div>
+            <div class="class2">
+                <input type="text" id="marks1">
+                <input type="text" id="marks2">
+                <input type="text" id="marks3">
+                <input type="text" id="marks4">
+                <input type="text" id="marks5">
+                <input type="text" id="marks6">
+            </div>
+        </li>
+        <li>
+            <div for="cardGeneration" class="class1">
+            <input type="button" value="GENERATE YOUR PROGRESS CARD" onclick="object.readStudentdetails();">  
+            </div>
+        </li>
+    </ul>
+
+    <div class="class3">
+    <ul>
+        <div class="dtitle"> Student Progress Card</div>
+        <li>
+            <div for="displayname" class="class1">
+                 Student Name: 
+            </div>
+            <div class="class2">
+                <span id="dname"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayage" class="class1">
+                Student Age: 
+            </div>    
+            <div class="class2">
+                <span id="dage"></span>
+            </div>
+        </li>
+        <li>
+            <div for="dispalygender" class="class1">
+                Student Gender:
+            </div>
+            <div class="class2">
+                <span id="dgender"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayclass" class="class1">
+                Student Class: 
+            </div>
+            <div class="class2">
+                <span id="dclass"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaymarks" class="class1">
+                Student Marks: 
+            </div>
+            <div class="class2">
+                <span id="dmarks1"></span>
+                <span id="dmarks2"></span>
+                <span id="dmarks3"></span>
+                <span id="dmarks4"></span>
+                <span id="dmarks5"></span>
+                <span id="dmarks6"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaytotal" class="class1">
+                Total Obtained:
+            </div>    
+            <div class="class2">
+                <span id="dtotal"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaypercent" class="class1">
+                Percentage:
+            </div> 
+            <div class="class2">
+                <span id="dpercent"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayavg" class="class1">
+                Average:
+            </div>
+            <div class="class2">
+                <span id="davg"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayresult" class="class1">
+                Result:
+            </div>
+            <div class="class2">
+                <span id="dgrade"></span>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+    <script src="sprogress_javascriptfile.js"></script> 
+       
+</body>
+</html>

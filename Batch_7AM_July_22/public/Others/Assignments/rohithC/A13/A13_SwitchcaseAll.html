@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> switch case all examples</title>
+    </head>
+    <body>
+        press F12 or go to console tab 
+        <script> 
+
+            var a = prompt("Enter a number");
+                a = parseInt(a);
+
+            var result;
+
+            var Choice = prompt("Enter: count/reverse/palindrome/additional/armstrong/even");
+
+            switch ( Choice ) {
+
+                case "count" :
+                    var  rem ;
+                    var count = 0;
+                    while (a > 0 ) {
+                        rem = a % 10 ;
+                         count++;
+                        a = a / 10;
+                        a = parseInt(a);   
+                    }
+                    console.log(count); 
+                            break;
+                case "reverse" :
+                    var rem ;
+                    var count = 0; 
+                    var rev = 0 ;
+                    while (a > 0) {
+                        rem = a % 10 ;
+                        rev = rev * 10 + rem;
+                        a = a / 10 ;
+                        a = parseInt(a);
+                    }
+                    console.log(rev);
+                        break;
+                case "palindrome" :
+                    var  rem;
+                    var temp = a ;
+                    var count = 0;
+                    var rev = 0 ;
+                    while (a > 0) {
+                        rem = a % 10 ;
+                        rev = rev * 10 + rem;
+                        a = a / 10 ;
+                        a = parseInt(a);
+                    } if ( temp == rev) {
+                            console.log("its a palindrome" + rev)
+                         } else {
+                            console.log("not a palindrome" + rev)
+                         };
+                         break ;
+                case "additional" :
+                    var rem;
+                    var count = 0;
+                    while ( a > 0) {
+                        rem = a % 10 ;
+                        count = count + rem;
+                        a = a / 10;
+                        a = parseInt(a);
+                    }
+                        console.log(count);
+                        break;
+                case "armstrong" :
+                     a = a.toString();
+                     var ttld = a.length;
+                     a = parseInt(a);
+                     var temp = a ; 
+                    var armstrong = 0;
+                    var rem ;
+                    while ( a > 0 ) {
+                        rem = a % 10 ;
+                        armstrong = armstrong + (rem ** ttld);
+                        a = a / 10 ;
+                        a = parseInt(a);
+                    }
+                        if (temp == armstrong) {
+                            console.log("its a armstrong" + armstrong);
+                        } else {
+                            console.log("not a armstrong" + armstrong)
+                        }
+                        break;
+                case "even" :
+                    var rem;
+                    while (a > 0) {
+                        rem = a % 10 ;
+                        a = a / 10;
+                        a = parseInt(a);
+
+                        if (rem % 2 == 0) {
+                         console.log(rem);
+                        } 
+                    }
+                        break;
+
+                default : 
+                        console.log("wrong entry");
+                        
+           }
+                  
+                   
+        </script>
+    </body>
+</html>

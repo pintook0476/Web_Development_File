@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("enter a number");
+            n = parseInt(n);
+            var count = 0;
+            for (var i = 2; i < n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    count++;
+                }
+
+                if (count > 0) {
+                    break;
+                }
+            }
+            if (count == 0 ) { // u got only twice as zero reminder
+                console.log("number is a prime number");
+            }  else {
+                console.log("Its not a prime number");
+            }
+            
+        </script>
+    </body>
+</html>

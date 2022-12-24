@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ename = prompt('enter employe name');
+        var age = prompt('enter age');
+        var gender = prompt('enter gender') ;
+        var dep = prompt('enter dep');
+        var salary = prompt('enter salary');
+        salary = parseInt(salary);
+        var pf = salary * (14 / 100);
+        var hra = salary * (24 / 100);
+        var totalsalaryary = pf + hra + salary;
+
+        console.log('enter ename' + ename);
+        console.log('age' + age);
+        console.log('gender' + gender) ;
+        console.log('dep' + dep);
+        console.log('salary' + salary);
+        console.log('pf' + pf);
+        console.log('hra' + hra);
+        console.log('totalsalaryary' + totalsalaryary);
+
+        if(gender == 'Male' || gender == 'male'){
+            if(totalsalaryary >= 200000){
+                console.log('Your Tax percentage is 15%');
+               var tax = totalsalaryary * (15 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);
+            }
+            else if ( totalsalary >= 100000 && totalsalary < 200000) {
+            console.log('Your Tax percentage is 10%');
+               var tax = totalsalary * (10 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          } 
+          else if (totalsalary >= 50000 && totalsalary < 100000) {
+            console.log('Your Tax percentage is 5%');
+               var tax = totalsalary * (5 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          }
+          else {
+            var tax = 0;
+            console.log('Tax = 0'); 
+          }
+       }
+       else if (gender == "Female" || gender == "female" ) {
+        if (totalsalaryary >= 200000) {
+               console.log('Your Tax percentage is 10%');
+               var tax = totalsalary * (10 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);
+          }
+          else if (totalsalary >= 100000 && totalsalary < 200000) {
+            console.log('Your Tax percentage is 5%');
+               var tax = totalsalary * (5 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          } 
+          else if (totalsalary >= 50000 && totalsalary < 100000) {
+             console.log('Tax = 0'); 
+          }
+          else {
+            var tax = 0;
+            console.log('Tax = 0'); 
+          }
+       }
+       else {
+         console.log("Invalid Gender");
+         console.log("Please! Enter the Valid gender.");
+       }
+    var inHandsalary = totalsalary - tax ;   
+    console.log('Total In Hand Salary After Tax-Deduction: ₹' + inHandsalary); 
+        
+    </script>
+</body>
+
+</html>

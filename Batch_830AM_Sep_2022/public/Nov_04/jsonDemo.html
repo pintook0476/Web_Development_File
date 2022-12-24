@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JSON
+        </title>
+    </head>
+    <body>
+        <script>
+            var name = 'Teena';
+            var age = 10;
+            var gender = 'Female';
+            var isFeepaid = true;
+
+
+            var data1 = ["Teena", 10, 'Female', true];
+            console.log(data1)
+
+            var data2 = {
+                name : "Teena",
+                age : 10,
+                "gender" : "Female",
+                'isFeepaid' : true
+            };
+
+            console.log(typeof(data2))
+
+            console.log(data2);
+
+            console.log("Student name " + data1[0]);
+            console.log("Student name " + data2.name);
+            
+        </script>
+    </body>
+</html>

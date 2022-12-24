@@ -1,0 +1,31 @@
+ul {
+    border: 1px solid;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+.rblock {
+    display: none;
+}
+
+.marksBlock input {
+    width: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.progressCardBlock {
+    border-color: blue;
+    display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky Number</title>
+    </head>
+<body>
+    <script>
+        /* Write a program to read a number from a user and find the lucky number of it. ?
+        the concept of lucky number is sum of all digits and what we get again sum of its digits and what we get sum of it at last we get number between 1 to 9 
+        for example n= 991
+        9+9+1=19
+        1+9=10
+        1+0 = 1
+        so our lucky number is 1 here in 991*/
+
+        var num = prompt("Enter any number");
+        num = parseInt(num);
+        var temp = num;
+        var rem;
+        var sum = 0;
+
+       
+        while(num > 0){
+        var rem = num % 10;
+        var sum = sum + rem;
+        var num = num / 10 ;
+        num = parseInt(num);
+        if(num == 0 && sum > 9){
+            num = sum;
+            sum = 0;
+        }
+        }
+        console.log("Lucky number of "+temp+" is "+sum);
+          
+    </script>
+</body>
+</html>

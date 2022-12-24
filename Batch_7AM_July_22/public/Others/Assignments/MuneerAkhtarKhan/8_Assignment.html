@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment No.8</title>
+        <style>
+            body{
+                background-color: goldenrod;
+            }
+            h2{
+                border: 2px solid;
+                border-radius: 20px;
+                height: 30px;
+                text-align: center;
+                width: 1320px;
+                background-color:#39a73c;
+            }
+            .foot{
+                border: 2px solid ;
+                border-radius: 20px;
+                position: absolute;
+                left:14px ;
+                top: 1077px;
+                width:1312px ;
+                padding: 5px;
+                height: 30px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #b7ac32;
+            }
+            .container{
+                border: 2px solid;
+                border-radius: 20px;
+                position: absolute;
+                top: 80px;
+                left: 14px;
+                width: 1320px;
+                height: 980px;
+                background-color: darkgoldenrod;
+
+            }
+            .small1{
+                height: 20px;
+                border: 2px solid ;
+                border-radius: 5px;
+                width: 150px;
+                position: absolute;
+                top: 15px;
+                left: 70px;
+                z-index: 2;
+                background-color: rgb(231, 162, 73);
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+            .main1{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                border: 2px solid;
+                border-radius: 20px;
+                height: 150px;
+                width: 1280px; 
+                margin: 20px; 
+                z-index: 1;  
+                background-color: #b9a726;
+                font-size: 13px;  
+                font-weight: bold;     
+             }
+             .main1 li{
+                display: inline-block;
+                margin: 5px;
+             }
+             #name{
+                position: absolute;
+                top: 15px;
+                left: 35px;
+             }
+             #mail{
+                position: absolute;
+                top: 50px;
+                left: 35px;
+             }
+             #gender{
+                position: absolute;
+                top: 85px;
+                left: 35px;
+             }
+             #course{
+                position: absolute;
+                top: 15px;
+                left: 720px;
+             }
+             .small2{
+                height: 20px;
+                border: 2px solid ;
+                border-radius: 5px;
+                width: 150px;
+                position: absolute;
+                top: 210px;
+                left: 70px;
+                z-index: 2;
+                background-color: rgb(231, 162, 73);
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+            .main2{
+                position: absolute;
+                top: 200px;
+                left: 5px;
+                border: 2px solid;
+                border-radius: 20px;
+                height: 150px;
+                width: 1280px; 
+                margin: 20px; 
+                z-index: 1;  
+                background-color: #b9a726;
+                font-size: 13px;  
+                font-weight: bold;  
+             
+            }
+            .main2 li{
+                display: inline-block;
+            }
+            #qualify{
+                position: absolute;
+                top: 25px;
+                left:35px ;
+
+            }
+            #lang{
+                position: absolute;
+                top: 60px;
+                left:35px ;
+
+            }
+            #avemark{
+                position: absolute;
+                top: 105px;
+                left:35px ;
+
+            }
+            .small3{
+                height: 20px;
+                border: 2px solid ;
+                border-radius: 5px;
+                width: 150px;
+                position: absolute;
+                top: 400px;
+                left: 70px;
+                z-index: 2;
+                background-color: rgb(231, 162, 73);
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main3{
+                position: absolute;
+                top: 390px;
+                left: 5px;
+                border: 2px solid;
+                border-radius: 20px;
+                height: 150px;
+                width: 1280px; 
+                margin: 20px; 
+                z-index: 1;  
+                background-color: #b9a726;
+                font-size: 13px;  
+                font-weight: bold;   
+            }
+            .main3 li{
+                display: inline-block;
+            }
+            #hno{
+                position: absolute;
+                top: 15px;
+                left:35px ;
+
+            }
+            #stname{
+                position: absolute;
+                top: 50px;
+                left:35px ;
+
+            }
+            #state{
+                position: absolute;
+                top: 90px;
+                left:35px ;
+            }
+            #country{
+                position: absolute;
+                top: 125px;
+                left:35px ;
+            }
+            #landmark{
+                position: absolute;
+                top: 15px;
+                left:700px ;
+            }
+            .small4{
+                height: 20px;
+                border: 2px solid ;
+                border-radius: 5px;
+                width: 150px;
+                position: absolute;
+                top: 590px;
+                left: 70px;
+                z-index: 2;
+                background-color: rgb(231, 162, 73);
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main4{
+                position: absolute;
+                top: 580px;
+                left: 5px;
+                border: 2px solid;
+                border-radius: 20px;
+                height: 250px;
+                width: 1280px; 
+                margin: 20px; 
+                z-index: 1;  
+                background-color: #b9a726;
+                font-size: 13px;  
+                font-weight: bold;   
+            }
+            .main4 li{
+                display: inline-block;
+            }
+            #subject{
+                position: absolute;
+                top: 90px;
+                left:35px ;
+                font-weight: bold;
+
+            }
+            #space{
+                position: absolute;
+                top: 20px;
+                left:300px ;
+
+            }
+            .submit{
+                position: absolute;
+                top: 847px;
+                left: 5px;
+                border: 2px solid;
+                border-radius: 20px;
+                height: 90px;
+                width: 1280px; 
+                margin: 20px; 
+                z-index: 1;  
+                background-color: #b9a726;
+                
+            }
+            .submit li{
+                display: inline-block;
+                 ;
+            }
+            .submit input{
+                font-size: 16px;
+                font-weight: bold;
+                border-radius:7px;
+                background-color: crimson;
+               
+            }
+            #sub input{
+                position: absolute;
+                top: 30px;
+                left: 160px;
+            }
+            #res input{
+                position: absolute;
+                top: 30px;
+                left: 330px;
+            }
+
+            #sub input:hover{
+                background-color: #23c15f;
+                cursor: pointer;
+            }
+            #res input:hover{
+                background-color: #cced29;
+                cursor: pointer;
+            }
+
+            #stuname{
+                position: absolute;
+                left: 300px;
+            }
+            #mailid{
+                position: absolute;
+                left: 300px;
+            }
+            #g1{
+                position: absolute;
+                left: 300px;
+            }
+            #male{
+                position: absolute;
+                left: 330px;
+            }
+            #g2{
+                position: absolute;
+                left: 460px;
+            }
+            #female{
+                position: absolute;
+                left:520px ;
+            }
+            #corse{
+                position: absolute;
+                left:900px ;
+            }
+            #qual{
+                position: absolute;
+                left: 300px;
+            }
+            #eng{
+                position: absolute;
+                left: 300px;
+            }
+            .eng{
+                position: absolute;
+                left: 350px;
+            }
+            #tel{
+                position: absolute;
+                left: 500px;
+            }
+            .tel{
+                position: absolute;
+                left: 550px;
+            }
+           
+            #hind{
+                position: absolute;
+                left: 700px;
+            }
+            .hind{
+                position: absolute;
+                left: 750px;
+            }
+            #urdu{
+                position: absolute;
+                left: 900px;
+            }
+            .urdu{
+                position: absolute;
+                left: 950px;
+            }
+            #average{
+                position: absolute;
+                left: 300px;
+            }
+            #house{
+                position: absolute;
+                left: 265px;
+            }
+            #gali{
+                position: absolute;
+                left: 265px;
+            }
+            #rajya{
+                position: absolute;
+                top: 90px;
+                left: 300px;
+            }
+            #desh{
+                position: absolute;
+                top: 125px;
+                left: 300px;
+            }
+            #landmark1{
+                position: absolute;
+                top: 15px;
+                left: 930px;
+            }
+
+
+           
+
+        </style>
+    </head>
+    <body>
+        <h2>Student Ragistration Page  </h2>
+        <form action="">
+            <div class="container">
+                <div class="small1">Personal Details</div>
+                <div class="main1">
+                    <ul>
+                        <li id="name">
+                            Student Name:<input type="text" name="name" id="stuname" >
+                        </li>
+                        <li id="mail">
+                            Mail Id:<input type="email" name="mail id" id="mailid" >
+                        </li>
+                        <li id="gender">
+                            Gender:<input type="radio" name="gender" id="g1" ><span id="male"> Male</span><input type="radio" name="gender" id="g2"><span id="female">Female</span>
+                        </li>
+                        <li id="course">
+                            Course Opted: </li>
+                            <div id="corse"><select name="course opted" >
+                                <option value="b.tech">B.tech</option>
+                                <option value="D.Pharma">D.Pharma</option>
+                                <option value="bsc it">Bsc. Cs </option>
+                                <option value="bums">BUMS</option>
+                                <option value="nursing">Nursing</option>
+                                <option value="agriculture">Bsc.Agriculture</option>
+                            </select></div>
+                        
+                    </ul>
+                </div>
+                <div class="small2">Education Details</div>
+                <div class="main2">
+                        <ul>
+                            <li id="qualify">
+                                Qualification:<input type="text" name="qualification" id="qual">
+                            </li>
+                            <li id="lang">
+                                Language Known:<input type="checkbox" name="english" id="eng"><span class="eng">English</span><input type="checkbox" name="telugu" id="tel"><span class="tel">Telugu</span><input type="checkbox" name="hindi" id="hind"><span class="hind">Hindi</span><input type="checkbox" name="urdu" id="urdu"><span class="urdu">Urdu</span>
+                            </li>
+                            <li id="avemark">
+                                Average Marks:<input type="number" name="average marks" id="average">
+                            </li>
+                        </ul>
+                    
+    
+                </div>
+                <div class="small3">Adress</div>
+                <div class="main3">
+                    <ul>
+                        <li id="hno">
+                           House No.: <input type="text" name="house no." id="house">
+                        </li>
+                        <li id="stname">
+                           Street Name: <input type="text" name="streetname" id="gali">
+                        </li>
+                        <li id="state">
+                            State:
+                        </li>
+                        <div id="rajya">
+                            <select name="state" id="">
+                                 <option value="up">Uttar Pradesh</option>
+                                <option value="uk">Uttar Khand</option>
+                                <option value="mp">Madhya Pradesh</option>
+                                <option value="ts">Telangana State</option>
+                                <option value="ap">Andhra Pradesh</option>
+                                <option value="bihar">Bihar</option>
+                                <option value="od">Odissa</option>
+                                <option value="tn">Tamil Nadu</option>
+                                <option value="mh">Maharashtra</option>
+                            </select>
+                        </div>
+                        
+                        <li id="country">
+                            State:
+                        </li>
+                        <div id="desh">
+                            <select name="country" id="">
+                                <option value="usa">USA</option>
+                                <option value="Cnd">Canada</option>
+                                <option value="ger">Germany</option>
+                                <option value="Ind">India</option>
+                                <option value="rus">Russia</option>
+                                <option value="sa">Saudi Arab</option>
+                                <option value="pt">Pakistan</option>
+                                <option value="ch">China</option>
+                                <option value="sri">Srilanka</option>
+                            </select>
+                        </div>
+                        
+                        <li id="landmark">
+                            Landmark:
+                        </li>
+                        <div id="landmark1"><input type="text" name="landmark" ></div>
+                    </ul>
+                </div>
+                <div class="small4">About Yourself</div>
+                <div class="main4">
+                    <ul>
+                   <li id="subject"> About Yourself:</li>
+                   <li id="space"><textarea name="textarea" id="" cols="60" rows="10"></textarea></li>
+                </ul>  
+                </div>
+                <div class="submit">
+                    <ul>
+                        <li id="sub" ><input type="submit" value="Ragister Student"></li>
+                        <li id="res"><input type="reset" value="Reset"></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </form>
+        <div class="foot">
+            &copy;copyright 2022
+        </div>
+       
+
+        
+    </body>
+</html>

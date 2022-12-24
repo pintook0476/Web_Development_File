@@ -1,0 +1,101 @@
+body{
+    background-color: gold;
+}
+.header{
+    border : 2px solid;
+    width : auto;
+    height : 40px;
+    font-size: 30px;
+    color: brown;
+    background-color: bisque;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px;
+    
+}
+h3{
+    text-decoration: underline;
+    color: #000;
+    background-color: aquamarine;
+    text-align: center;
+}
+.container{
+    border: 2px solid;
+    width: 800px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 30px;
+    text-align: left;
+
+}
+.innerbox div{
+    padding: 10px;
+    margin: 5px;
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+
+}
+.gender{
+    width: 20px;
+    padding: 10px;
+    margin: 5px auto ;
+}
+#role{
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+}
+#btn{
+    width: 700px;
+    margin-left: 20px;
+    background-color: rgb(221, 212, 204);
+    border-radius: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* payslip */
+
+.payslip{
+    width: 900px;
+    border: 2px solid bisque;
+    margin: 5px auto;
+    padding : 10px;
+    background-color: rgb(140, 49, 152);
+    color: aliceblue;
+    font-size: 30px;
+    display: none;
+}
+.heads li{
+    width: 600px;
+    list-style: none;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: darkslategrey;
+}
+.heads span{
+    color: lightcoral;
+}
+
+footer{
+    border : 2px solid;
+    width : 1000px;
+    height : 40px;
+    font-size: 22px;
+    color: rgb(243, 243, 243);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px auto;
+    padding: 10px;
+}

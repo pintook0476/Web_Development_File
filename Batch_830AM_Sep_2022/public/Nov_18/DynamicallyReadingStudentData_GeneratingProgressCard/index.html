@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="javascript/studentApp.js"></script>
+</head>
+<body>
+    <div class="title">
+        Demonstrating - Dynamically Reading Student Details & Displaying back the progress card
+    </div>
+    <ul id="readBlock">
+        <li>
+            <input type="text" id="uname" placeholder="Enter student name">
+        </li>
+        <li>
+            <input type="text" id="uage" placeholder="Enter student Age">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </li>
+        <li class="language">
+            Languages Opted:
+            <input type="checkbox" value="Eng"> English
+            <input type="checkbox" value="Tel"> Telugu
+            <input type="checkbox" value="Hin"> Hindi
+        </li>
+        <li class="marksContainer">
+            Subject Marks:
+            <input type="text" id="m1" placeholder="Maths" maxlength="3">
+            <input type="text" id="m2" placeholder="Science">
+            <input type="text" id="m3" placeholder="Social">
+            <input type="text" id="m4" placeholder="Language">
+            <input type="text" id="m5" placeholder="Computers/UI">
+        </li>
+        <li>
+            <select name="" id="studentClass">
+                <option value="">Select Class</option>
+                <option value="Class I">Class I</option>
+                <option value="Class II">Class II</option>
+                <option value="Class III">Class III</option>
+                <option value="Class IV">Class IV</option>
+                <option value="Class V">Class V</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" value="Generate Progress Card" onclick="studentDetails.generateProgressCard()">
+        </li>
+    </ul>
+
+    <ul class="displayBlock">
+        <li>
+            Student Name: <span id="d_name"></span>
+        </li>
+        <li>
+            Student Gender: <span id="d_gender"></span>
+        </li>
+        <li>
+            Student Class: <span id="d_class"></span>
+        </li>
+        <li>
+            Student Age: <span id="d_age"></span>
+        </li>
+        <li>
+            Student Total Marks: <span id="d_total"></span>
+        </li>
+        <li>
+            Student Avg: <span id="d_avg"></span>
+        </li>
+        <li>
+            Student Grade: <span id="d_grade"></span>
+        </li>
+    </ul>
+</body>
+</html>

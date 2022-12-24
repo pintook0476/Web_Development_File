@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> student registation</title>
+    <style>
+        .maincon {
+            background: #000;
+            border: 6px double red;
+            color: white;
+
+        }
+
+        hr {
+            color: red;
+        }
+
+        input[type=text]:hover {
+            background: gray;
+
+        }
+
+        input[type=text]:focus {
+            background-color: gray;
+            text-decoration: underline;
+            outline: none;
+        }
+textarea{box-shadow: 10px 5px 5px black;}
+
+        input[type=text] {
+ box-shadow:7px 3px 3px black ;
+            margin-left: 150px;
+            outline: none;
+
+        }
+
+        select {
+            margin-left: 40px;
+        }
+
+        input {
+            margin-left: 50px;
+        }
+
+        h1 {
+            position: sticky;
+            top: 0px;
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+            border-radius: 5px;
+            text-decoration: underline;
+            border: 4px double red;
+        }
+
+        H2 {
+            text-decoration: underline;
+            position: sticky;
+            top: 0PX;
+            left: 40PX;
+            margin-top: -10px;
+            width: 300PX;
+            background-color: RED;
+            border-radius: 5px;
+            box-shadow: 10px 5px 5px black;
+            color: black;
+        }
+
+        ul {
+            border: 2PX solid RED;
+            background-color: whitesmoke;
+            margin: 20px;
+            color: black;
+            height: 180px;
+        }
+
+        /* input text{margin-left: 1000px;}  */
+        li {
+            font-size: larger;
+            font-weight: bolder;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.sample.com" method="get">
+        <div class="maincon">
+            <div>
+                <h1> --STUDENT REGISTRATION FORM--</h1>
+            </div>
+            <UL>
+                <H2>PERSONAL DETAILS...</H2>
+                <li style="float: right;">
+                    COURSE OPTED. : <select name="course">
+                        <option value="java">java</option>
+                        <option value="py">python</option>
+                        <option value="js">java script</option>
+                        <option value=".net">.net</option>
+                    </select>
+                </li>
+                <LI><label>STUDENT NAME : </label>
+                    <input type="text" required name="stName">
+                </li>
+                <li> MAIL ID. :
+                    <input type="text" name="mail_id" required>
+                </li>
+                <li>
+                    GENDER. :
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </li>
+                <hr>
+            </ul>
+            <ul>
+                <h2>EDUCATION DETAILS...</h2>
+                <li>QUALIFICATIONS. :
+                    <input type="text" name="qual">
+                </li>
+                <li>
+                    LANGUAGES KNOWN. :
+                    <input type="checkbox" name="eng">English
+                    <input type="checkbox" name="hindi">Hindi
+                    <input type="checkbox" name="telugu">Telugu
+                    <input type="checkbox" name="bengali">Bengali
+                </li>
+                <li>
+                    AVG. MARKS. :
+                    <input type="text" name="marks">
+                </li>
+                <hr>
+            </ul>
+            <ul>
+                <li style="float: right" ;>
+                    LAND MARK.:
+                    <textarea name="lmark" cols="30" rows="5"></textarea>
+                </li>
+                <h2>ADDRESS ...</h2>
+                <LI>
+                    D.NO .. :
+                    <input type="text" name="d.no">
+                </LI>
+                <li>
+                    STREET NAME.:
+                    <input type="text" name="s.name">
+                </li>
+                <li>
+                    STATE.:
+                    <select name="state" >
+                        <option value="mh">Maharashtra</option>
+                        <option value="ch" selected>Chhattisgarh </option>
+                        <option value="mp">Madhya pradesh</option>
+                        <option value="ts">Telangana</option>
+                        <option value="ap">Andhra pradesh</option>
+                    </select>
+                </li>
+                <li >
+                    COUNTRY. :
+                    <select name="country">
+                        <option value="usa"> U.S.A</option>
+                        <option value="ind" selected> India</option>
+                        <option value="Rus"> Russia</option>
+                        <option value="chin"> China</option>
+                    </select>
+                    <hr>
+                </li>
+            </ul>
+            <ul>
+                <h2>ABOUT YOURSEIF...</h2>
+                <LI>
+                    ABOUT YOURSELF .:
+                    <textarea name="aboutu" cols="40" rows="5" maxlength="350"></textarea></YOURSELF>
+                </LI>
+                <input style="float: right; background-color: gray;" type="reset" value="reset">
+                <input style="float: right;background-color: gray;" type="submit" value="submit">
+                <hr>
+            </ul>
+            <hr>
+    </form>
+</body>
+
+</html>

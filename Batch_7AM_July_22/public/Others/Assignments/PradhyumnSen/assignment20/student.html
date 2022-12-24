@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student report card generator</title>
+    <link rel="stylesheet" href="./studentreportcard.css">
+</head>
+
+<body>
+    <div class="block1">
+        <div class="sec1">
+            Student Report Card Generator
+        </div>
+        <div class="sec2">
+            <div>
+                <div class="sub">
+                    Student Name :
+                </div>
+                <input type="text" id="sname" placeholder="Enter Name">
+            </div>
+            <div>
+                <div class="sub">
+                    Student age :
+                </div>
+                <input type="text" id="sage" placeholder="Enter age">
+            </div>
+            <div>
+                <div class="sub">
+                    Gender :
+                </div>
+                <input type="radio" name="Gender" id="sgender" value="Male">Male
+                <input type="radio" name="Gender" id="sgender" value="Female">Female
+            </div>
+            <div>
+                <div class="sub">
+                    student class :
+                </div>
+                <select name="" >
+                    <option value="11th" id="sclass">Eleventh</option>
+                    <option value="12th" id="sclass">Twelwth</option>
+                </select>
+            </div>
+            <div class="subject">
+                Marks :
+                <div>
+                    <div class="sub">
+                        Hindi :
+                    </div>
+                    <input type="text" id="hindi">
+                </div>
+                <div>
+                    <div class="sub">
+                        English :
+                    </div>
+                    <input type="text" id="english">
+                </div>
+                <div>
+                    <div class="sub">
+                        Maths :
+                    </div>
+                    <input type="text" id="maths">
+                </div>
+                <div>
+                    <div class="sub">
+                        Physics :
+                    </div>
+                    <input type="text" id="physics">
+                </div>
+                <div>
+                    <div class="sub">
+                        Chemistry :
+                    </div>
+                    <input type="text" id="chemistry">
+                </div>
+
+            </div>
+            <div class="submit">
+                <input type="button" value="Submit" onclick="readData();">
+            </div>
+        </div>
+    </div>
+    <div class="block2 hide">
+        <div class="sec1">
+            Student Report Card
+        </div>
+        <div class="sec2">
+            <div>
+                <div class="sub">
+                    Student Name :
+                </div>
+                <span id="nameout"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Student age :
+                </div>
+                <span id="ageout"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Gender :
+                </div>
+                <span id="genderout"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Class :
+                </div>
+                <span id="sclassout"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Total Marks :
+                </div>
+                <span id="total"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Average Marks :
+                </div>
+                <span id="avg"></span>
+            </div>
+            <div>
+                <div class="sub">
+                    Grade :
+                </div>
+                <span id="grade"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./reportcard.js"></script>
+</body>
+
+</html>

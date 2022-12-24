@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd number</title>
+</head>
+    <style>
+        h1{
+            text-align: center;
+            background-color: red;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+        }
+        body{
+            background-color: rgb(152, 229, 229);
+        }
+    </style>
+<body>
+    <h1> sum of odd number </h1>
+    <script>
+        var oddnumber = () =>
+{
+    var num  = [23 , 45 , 78 , 89 , 90 ,345 , 678 , 123 , 78 , 56]
+    console.log("no. of digit" +num.length);
+    var result = 0;
+    for (var i = 0 ; i < num . length ; i++)
+    {
+        if(num[i] % 2 != 0 )
+        {
+           result = result + num[i];
+           console.log(num[i]);
+        }
+    }
+    
+    console.log("sum of total number " +result);
+}
+ oddnumber();
+    </script>
+    
+</body>
+</html>

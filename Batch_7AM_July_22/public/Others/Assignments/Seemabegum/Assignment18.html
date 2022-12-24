@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details using json</title>
+</head>
+<body>
+    <script>
+        var jsonob = () =>{
+            var employdetails = {
+                name : "teena" ,
+                age : 27 ,
+                gender : "female ",
+                company  : "IT",
+                basicpay : 12000 ,
+                hra : 12000 * 10 /100 ,
+                 pf  : 12000 * 10 / 100 ,
+                total : 0 ,
+
+            }
+          employdetails.total=  employdetails.basicpay + employdetails.hra +employdetails.pf;
+            
+            console.log(employdetails);
+        }
+        jsonob();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating both passing params and returning values
+    </title>
+</head>
+<body>
+    <SCript>
+        
+        function getUserData() { // calling function
+            var m1, m2;
+            var sum;
+            m1 = prompt("Enter first value");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter Second value");
+            m2 = parseInt(m2);            
+            sum = getTotal(m1, m2);
+            console.log("The sum is " + sum);
+        }
+
+
+        function getTotal(p1, p2) {           
+            var result = 0;
+            result = p1 + p2;
+            return result;      // return 120;
+        }
+        getUserData();
+    </SCript>
+</body>
+</html>

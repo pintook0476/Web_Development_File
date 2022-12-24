@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest And Largest Values of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        var list = [100, 25, 4, 77, 88, 40, 50, 8, 11, 66];
+        console.log('Original Array:');
+        console.log(list);
+       var smallestValue = (list) => {
+        var smallest = list[2];
+       for (var i = 0; i < list.length; i++)
+       {
+        var num = list[i];
+         if (smallest == num)
+         {
+            var value = list[i];
+         }
+       }
+       console.log('Smallest Value of an array is: ' + value);
+    }
+   smallestValue(list);
+
+   var largestValue = (list) => {
+        var largest = list[0];
+       for (var i = 0; i < list.length; i++)
+       {
+        var num = list[i];
+         if (largest == num)
+         {
+            var value = list[i];
+         }
+       }
+       console.log('Largest Value of an array is: ' + value);
+    }
+   largestValue(list);
+    </script>
+</body>
+</html>

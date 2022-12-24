@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var num1 = parseInt(prompt("Enter The first Number"));
+var num2 = parseInt(prompt("Enter The second Number"));
+var input = prompt("Enter Oparator ( +, -, x, /, )");
+
+switch (input) {
+    case "+":
+        console.log("sum of", num1, "and", num2, "Is: = ", num1 + num2);
+        break;
+    case "-":
+        console.log("Substration of", num1, "and", num2, "Is: = ", num1 - num2);
+        break;
+    case "*":
+        console.log("Multiplicaton of", num1, "and", num2, "Is: = ", num1 * num2);
+        break;
+    case "/":
+        console.log("Division of", num1, "and", num2, "Is: = ", num1 / num2);
+        break;
+    default:
+        console.log("Sorry! Please Enter the valid Operator");
+        break;
+}
+    </script>
+</body>
+</html>

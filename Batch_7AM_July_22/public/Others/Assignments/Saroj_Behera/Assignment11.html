@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Employ Selary Details</title>
+
+    </head>
+    <body>
+        <script>
+            alert("Employ Salary Tax");
+            var empName = prompt('Employ Name');
+            var empAge = prompt('Employ Age');
+            var empGender = prompt('Employ Gender');
+            var empLocation = prompt('Employ Location');
+            var empCompany = prompt('Employ  Company Name');
+            var empSalary = prompt("Enter Employee Basic salary");
+            var empSalary = parseInt(empSalary);
+            //Salary Details
+            var pf = 12 / 100* empSalary;
+            var hra = 15 / 100* empSalary;
+            var Totalsalary = empSalary + pf +hra;
+            //Employ Data
+            document.write('Enter Emp Name: ' + empName + "<br>");
+            document.write('Enter Emp Age: ' + empAge + "<br>");
+            document.write('Enter Emp Gender: ' + empGender + "<br>");
+            document.write('Enter Emp Location: ' + empLocation + "<br>");
+            document.write('Enter Emp company: ' + empCompany + "<br>");
+            document.write('Employ salary: ' + empSalary + "<br>");
+            document.write('Employ pf: ' + pf + "<br>");
+            document.write('Employ hra: ' + hra + "<br>");
+            document.write('Employ Totalsalary: ' + Totalsalary +"<br>");
+            //if condition
+            if(empGender == 'male'){
+              if(Totalsalary >= 200000){
+                document.write("Tax percentage is: " + (15 / 100) *Totalsalary);
+              }  
+              else if(Totalsalary >= 100000){
+                document.write("Tax percentage is: " + (10 / 100) *Totalsalary);
+              } 
+              else if(Totalsalary >= 50000){
+                document.write("Tax percentage is: " + (5 / 100) *Totalsalary);
+              } 
+              else{
+                document.write("Tax is 0");
+              }
+            }
+              if(empGender == 'female'){
+              if(Totalsalary >= 200000){
+                document.write("Tax percentage is: " + (10 / 100) *Totalsalary);
+              }  
+              else if(Totalsalary >= 100000){
+                document.write("Tax percentage is: " + (5 / 100) *Totalsalary);
+              } 
+              else if(Totalsalary >= 50000){
+                document.write("Tax percentage is: " + (0 / 100) *Totalsasslary);
+              } 
+              else{
+                document.write("Tax is 0");
+              }
+            }
+
+        </script>
+
+    </body>
+</html>

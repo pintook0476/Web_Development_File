@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta htt
+    p-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment11</title>
+</head>
+<body>
+    <script>
+        var eName = prompt('Enter Employee Name ');
+        var eAge = prompt('Enter Employee Age ');
+        var eGen = prompt('Enter Gender ');
+        var eDept = prompt('Enter Dept Name  ');
+        var basicSalary = prompt ('Enter Basic Salary ');
+        basicSalary= parseInt(basicSalary);
+        var pf = (14*basicSalary)/100 ;
+        var hra = (25*basicSalary)/100 ;
+
+        var totalSalary = (pf+hra+basicSalary);
+
+        console.log("Employee Name " + eName );
+        console.log("Employee Age " + eAge);
+        console.log ("Employee Gender "  +eGen);
+        console.log("Dept Name " + eDept) ;
+        console.log("Basic Salary  " + basicSalary);
+        console.log("pf " + pf);
+        console.log("hra " + hra);
+        console.log("totalSalary " + totalSalary);
+        if (eGen == 'Male' || eGen == 'male') 
+            if (totalSalary >= 200000) {
+                console.log('Tax Percentage is 15%');
+            } else if (totalSalary >= 100000) {
+                console.log('Tax Percentage is 10%');
+            } else if (totalSalary >= 50000) {
+                console.log('Tax Percentage is 5%');
+            } else if (totalSalary < 50000) {
+                console.log('No Need to Pay tax');
+            }
+            if (eGen == 'Female' || eGen == 'female') 
+            if (totalSalary >= 200000) {
+                console.log('Tax Percentage is 10%');
+            } else if (totalSalary >= 100000) {
+                console.log('Tax Percentage is 5%');
+            } else if (totalSalary >= 50000) {
+                console.log('No Need to Pay Tax')
+            }
+     </script>
+    
+   </body>
+</html>

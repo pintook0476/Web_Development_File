@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background: #027CD5;
+    width: 100%;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 33334;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav .nav-items {
+    display: flex;
+    padding: 0px 0px 0px 20px;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav .nav-items li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu-list a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.menu-list a .bi {
+    margin-right: 5px;
+}
+
+nav form {
+    display: flex;
+    height: 35px;
+    padding: 2px;
+    background: #fff;
+    min-width: 45% !important;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 0px 10px;
+}
+
+nav form .search-data {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #333;
+    font-size: 17px;
+    border: 0;
+    font-weight: 500;
+    background: none;
+    outline: none;
+}
+
+nav form button {
+    padding: 0 15px;
+    color: #797979;
+    font-size: 17px;
+    background: none;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav .cancel-icon {
+    position: absolute;
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+nav .menu-icon {
+    width: 40px;
+    text-align: center;
+    margin: 0 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav .menu-icon span,
+nav .cancel-icon {
+    display: none;
+}
+
+/* drop down menu */
+
+.dropbtn {
+    margin: 0px 10px;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.dropdown .bi {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    height: 285px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    right: 60px;
+    left: -100px;
+    top: 50px;
+    border-radius: 2px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+.header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px 5px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #027CD5;
+    font-size: 15px;
+}
+
+.profile ul {
+    list-style: none;
+
+}
+
+.profile ul li {
+    border-top: 1px solid #cacaca;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.profile ul li:hover {
+    background: #f9f9f9;
+}
+
+.profile ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.profile ul li a .bi {
+    color: #027CD5;
+}
+
+.dropdown-content::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -8px;
+    right: 50%;
+    background: #fff;
+    transform: rotate(-45deg);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* container */
+.container{
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+/* footer */
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+    width: 100%;
+    background: #00193b;
+}
+.section {
+    margin: 30px;
+}
+.section h2{
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    margin: 5px 0px;
+}
+.section a .bi{
+    margin-right: 5px;
+}
+.policy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00193b;
+    border-top: 1px solid #f9f9f9;
+    padding: 10px 0px;
+}
+.policy h3{
+    font-weight: normal;
+    font-size: 13px;
+    color: #fff;
+    margin: 0px 20px;
+}
+.policy .more a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 30px;
+}
+.policy .more a .bi,
+.policy .more a .fa{
+    color: #ffe600;
+    margin-left: 5px;
+}
+/* media Query */
+@media (max-width: 1245px) {
+    nav {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1140px) {
+    nav {
+        padding: 0px;
+    }
+
+    nav .nav-items {
+        position: fixed;
+        z-index: 99;
+        top: 50px;
+        width: 60%;
+        left: -100%;
+        height: 100%;
+        padding: 10px 50px 0 50px;
+        text-align: left;
+        background: #14181f;
+        display: inline-block;
+        transition: left 0.3s ease;
+    }
+
+    nav .nav-items.active {
+        left: 0px;
+    }
+
+    nav .nav-items li {
+        line-height: 40px;
+        margin: 30px 0;
+    }
+
+    nav .nav-items li a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    nav .menu-icon {
+        display: block;
+        margin: 0 10px;
+    }
+
+    nav .menu-icon span {
+        display: block;
+    }
+
+    nav .menu-icon span.hide {
+        display: none;
+    }
+
+    nav .cancel-icon.show {
+        display: block;
+    }
+
+    .dropdown-content {
+        right: 60px;
+        left: -100px;
+        top: 50px;
+        border-radius: 2px;
+    }
+
+
+}
+
+@media (max-width: 980px) {
+    nav .logo {
+        flex: 1;
+    }
+
+    nav .cancel-icon {
+        left:5px;
+    }
+
+    nav form {
+        min-width: 50% !important;
+    }
+
+    nav .menu-icon {
+        margin: 0 10px;
+    }
+
+    nav .cancel-icon {
+        margin: 0px 10px;
+    }
+    .policy{
+        display: block;
+        padding: 10px 20px;
+    }
+    .policy h3{
+        margin: 10px 10px;
+    }
+
+    .policy .more a{
+        padding: 0px 6px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .menu-list a p {
+        display: none;
+    }
+
+    .menu-list a .bi {
+        font-size: 25px;
+    }
+
+    .dropdown p {
+        display: none;
+    }
+
+    .dropdown .bi {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    nav form {
+        min-width: 35% !important;
+    }
+
+    .dropdown-content {
+        right: 60px;
+        left: -130px;
+        top: 60px;
+        border-radius: 2px;
+    }
+
+    .profile ul li a .bi {
+        font-size: 16px;
+    }
+
+    .dropdown-content::before {
+        left: 155px;
+    }
+    .policy .more a{
+        display: flex;
+        padding: 5px 0px;
+    }
+    .policy .more a .bi,
+    .policy .more a .fa{
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    nav .logo a{
+
+       font-size:20px ;
+    }
+    .drop-down {
+        display: none;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    nav .menu-icon{
+            margin: 0 10px;
+            font-size: 16px;
+    }
+    nav .cancel-icon {
+        margin: 0 10px;
+        font-size: 16px;
+        
+    }
+
+}

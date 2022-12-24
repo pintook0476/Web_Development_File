@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating - Accessing Closure data outside</title>
+    </head>
+    <body>
+        <script>
+            var userData = (() => {
+                var userAge = 10;
+                var userName = "Raj";
+                function sample() {
+                    console.log("sample called");
+                }
+                
+
+                return {
+                    user_name: userName,
+                    getSample() {
+                        sample();
+                    },
+                    displayData() {
+                        console.log("am frm display dtaa");
+                    },
+                    getUsername() {
+                        return userName;
+                    }
+                };
+            })();
+
+            console.log("User name " + userData.user_name);
+
+            userData.getSample();
+
+            userData.displayData();
+        </script>
+    </body>
+</html>

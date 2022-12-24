@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffceb5;
+        }
+
+        h1 {
+            text-align: center;
+            border: 2px solid;
+            background-color: black;
+            color: white;
+            margin: 0;
+        }
+        h3{
+            position: absolute;
+            text-align: center;
+            left: 39%;
+            top: 20%;
+            font-size: 35px;
+            font-family:'Courier New', Courier, monospace;
+            text-shadow: 4px 2px 3px white;
+        }
+        .container {
+            border: 2px solid;
+            background-color: rgb(67, 167, 67);
+            height: 86vh;
+            padding-top: 15px;
+        }
+
+        .card {
+            width: 70px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url("https://www.pngfind.com/pngs/m/39-390506_halloween-playing-cards-printed-by-uspcc-natalia-silva.png");
+            background-size: 76px 104px;
+            background-position: -3px -2px;
+            color: white;
+            border-radius: 7px;
+        }
+
+        footer {
+            border: 2px solid;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* positioning the cards */
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            float: left;
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            position: relative;
+            /* right: 30px; */
+        }
+
+        .card5,
+        .card6,
+        .card7,
+        .card8 {
+            position: relative;
+            float: right;
+        }
+
+        .card9 {
+            clear: both;
+        }
+
+        .card9,
+        .card10,
+        .card11,
+        .card12 {
+            float: left;
+            position: relative;
+            top: 300px;
+        }
+
+        .card13 {
+            clear: both;
+        }
+
+        .card13,
+        .card14,
+        .card15,
+        .card16 {
+            float: right;
+            position: relative;
+            top: 200px;
+        }
+
+        .card17 {
+            clear: both;
+        }
+
+        .card17,
+        .card18,
+        .card19,
+        .card20,
+        .card21 {
+            position: absolute;
+            top: 45%;
+        }
+
+        footer {
+            position: relative;
+
+        }
+
+        /* coloring the cards */
+
+        .card1,
+        .card5,
+        .card9,
+        .card13,
+        .card17 {
+            background-color: red;
+        }
+
+        .card2,
+        .card6,
+        .card10,
+        .card14,
+        .card18 {
+            background-color: yellow;
+        }
+
+        .card3,
+        .card7,
+        .card11,
+        .card15,
+        .card19 {
+            background-color: blue;
+        }
+
+        .card4,
+        .card8,
+        .card12,
+        .card16,
+        .card20 {
+            background-color: greenyellow;
+        }
+
+        /* overlaping the cards */
+
+        .card3,
+        .card11 {
+            left: 2%;
+        }
+
+        .card2,
+        .card10 {
+            left: 4%;
+        }
+
+        .card1,
+        .card9 {
+            left: 6%;
+        }
+
+        .card7,
+        .card15 {
+            right: 2%;
+        }
+
+        .card6,
+        .card14 {
+            right: 4%;
+        }
+
+        .card5,
+        .card13 {
+            right: 6%;
+        }
+
+        .card17 {
+            right: 40%;
+        }
+
+        .card18 {
+            right: 43%;
+        }
+
+        .card19 {
+            right: 46%;
+        }
+
+        .card20 {
+            right: 49%;
+        }
+
+        .card21 {
+            right: 52%;
+            background-color: aqua;
+        }
+
+        /* movement of the cards */
+
+        .card::after {
+            display: block;
+            color: rgb(24, 5, 5);
+            width: 70px;
+            height: 100px;
+            background-color: aliceblue;
+            font-size: 25px;
+            border: 4px double;
+            bottom: 2px;
+            right: 2px;
+            position: relative;
+            border-radius: 7px;
+        }
+
+        .card::before {
+            display: block;
+            color: rgb(24, 5, 5);
+            width: 70px;
+            height: 70px;
+            background-color: aliceblue;
+            font-size: 25px;
+            border: 4px double;
+            bottom: 2px;
+            right: 2px;
+            position: relative;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .card1:hover::after,
+        .card2:hover::after,
+        .card3:hover::after,
+        .card4:hover::after,
+        .card5:hover::after,
+        .card6:hover::after,
+        .card7:hover::after,
+        .card8:hover::after,
+        .card9:hover::after,
+        .card10:hover::after,
+        .card11:hover::after,
+        .card12:hover::after,
+        .card13:hover::after,
+        .card14:hover::after,
+        .card15:hover::after,
+        .card16:hover::after,
+        .card17:hover::after,
+        .card18:hover::after,
+        .card19:hover::after,
+        .card20:hover::after,
+        .card21:hover::after {
+            display: block;
+            width: 70px;
+            height: 30px;
+            border-top: 0;
+            text-align: end;
+            border-radius: 0 0 7px 7px;
+            z-index: 1;
+        }
+
+        .card1:hover::after {
+            content: "1";
+        }
+
+        .card2:hover::after {
+            content: "2";
+        }
+
+        .card3:hover::after {
+            content: "3";
+        }
+
+        .card4:hover::after {
+            content: "4";
+        }
+
+        .card5:hover::after {
+            content: "5";
+        }
+
+        .card6:hover::after {
+            content: "6";
+        }
+
+        .card7:hover::after {
+            content: "7";
+        }
+
+        .card8:hover::after {
+            content: "8";
+        }
+
+        .card9:hover::after {
+            content: "9";
+        }
+
+        .card10:hover::after {
+            content: "10";
+        }
+
+        .card11:hover::after {
+            content: "11";
+        }
+
+        .card12:hover::after {
+            content: "12";
+        }
+
+        .card13:hover::after {
+            content: "13";
+        }
+
+        .card14:hover::after {
+            content: "14";
+        }
+
+        .card15:hover::after {
+            content: "15";
+        }
+
+        .card16:hover::after {
+            content: "16";
+        }
+
+        .card17:hover::after {
+            content: "17";
+        }
+
+        .card18:hover::after {
+            content: "18";
+        }
+
+        .card19:hover::after {
+            content: "19";
+        }
+
+        .card20:hover::after {
+            content: "20";
+        }
+
+        .card21:hover::after {
+            content: "21";
+        }
+
+        .card1:hover::before,
+        .card2:hover::before,
+        .card3:hover::before,
+        .card4:hover::before,
+        .card5:hover::before,
+        .card6:hover::before,
+        .card7:hover::before,
+        .card8:hover::before,
+        .card9:hover::before,
+        .card10:hover::before,
+        .card11:hover::before,
+        .card12:hover::before,
+        .card13:hover::before,
+        .card14:hover::before,
+        .card15:hover::before,
+        .card16:hover::before,
+        .card17:hover::before,
+        .card18:hover::before,
+        .card19:hover::before,
+        .card20:hover::before,
+        .card21:hover::before {
+            display: block;
+            border-bottom: 0;
+            z-index: 1;
+        }
+
+        .card1:hover::before {
+            content: "1";
+        }
+
+        .card2:hover::before {
+            content: "2";
+        }
+
+        .card3:hover::before {
+            content: "3";
+        }
+
+        .card4:hover::before {
+            content: "4";
+        }
+
+        .card5:hover::before {
+            content: "5";
+        }
+
+        .card6:hover::before {
+            content: "6";
+        }
+
+        .card7:hover::before {
+            content: "7";
+        }
+
+        .card8:hover::before {
+            content: "8";
+        }
+
+        .card9:hover::before {
+            content: "9";
+        }
+
+        .card10:hover::before {
+            content: "10";
+        }
+
+        .card11:hover::before {
+            content: "11";
+        }
+
+        .card12:hover::before {
+            content: "12";
+        }
+
+        .card13:hover::before {
+            content: "13";
+        }
+
+        .card14:hover::before {
+            content: "14";
+        }
+
+        .card15:hover::before {
+            content: "15";
+        }
+
+        .card16:hover::before {
+            content: "16";
+        }
+
+        .card17:hover::before {
+            content: "17";
+        }
+
+        .card18:hover::before {
+            content: "18";
+        }
+
+        .card19:hover::before {
+            content: "19";
+        }
+
+        .card20:hover::before {
+            content: "20";
+        }
+
+        .card21:hover::before {
+            content: "21";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Card Game</h1>
+    <div class="container">
+        <h3>HOVER THE CARDS</h3>
+        <div class="card card1"></div>
+        <div class="card card2"></div>
+        <div class="card card3"></div>
+        <div class="card card4"></div>
+        <div class="card card5"></div>
+        <div class="card card6"></div>
+        <div class="card card7"></div>
+        <div class="card card8"></div>
+        <div class="card card9"></div>
+        <div class="card card10"></div>
+        <div class="card card11"></div>
+        <div class="card card12"></div>
+        <div class="card card13"></div>
+        <div class="card card14"></div>
+        <div class="card card15"></div>
+        <div class="card card16"></div>
+        <div class="card card17"></div>
+        <div class="card card18"></div>
+        <div class="card card19"></div>
+        <div class="card card20"></div>
+        <div class="card card21"></div>
+    </div>
+    <footer>
+        Copyrights @ 2022 FD (Front_Dev)
+    </footer>
+</body>
+
+</html>

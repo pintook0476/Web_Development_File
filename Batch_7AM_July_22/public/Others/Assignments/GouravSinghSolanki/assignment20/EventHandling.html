@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>
+            Evet Handling and Reading data from dom element
+        </title>
+        <link rel="stylesheet" href="EventHandling.css">
+    </head>
+    <body>
+        <div class="section1">
+            <h1 class="headding">Student Report Card Generator</h1>
+            <div>
+                <div class="sdetail">Student Name : </div>
+                <input type="text" id="sName" class="input">
+            </div>
+            <div>
+                <div class="sdetail">Age : </div>
+                <input type="text" id="sAge"  class="input">
+            </div>
+            <div>
+                <div class="sdetail">Gender : </div>
+                <input type="radio" id="sGender" name="gender" value="Male">Male
+                <input type="radio" id="sGender" name="gender" value="Female">Female
+            </div>
+            <div>
+                <div class="sdetail">Class : </div>
+                <select name="" id="sClass"  class="input">
+                    <option value="1">First</option>
+                    <option value="2">Second</option>
+                    <option value="3">Third</option>
+                    <option value="4">Fourth</option>
+                    <option value="5">Fifth</option>
+                    <option value="6">Sixth</option>
+                    <option value="7">Seventh</option>
+                    <option value="8">Eigth</option>
+                    <option value="9">Nineth</option>
+                    <option value="10">Tenth</option>
+                    <option value="11">Eleventh</option>
+                    <option value="12">Twelveth</option>
+                </select>
+            </div>
+            <div class="sdetail">
+                marks : 
+            </div>
+            <div class="subjects">
+                <div>
+                    <div class="sdetail">Hindi :</div>
+                    <input type="text" id="hindi" class="marks">
+                </div>
+
+                <div>
+                    <div class="sdetail">English :</div>
+                    <input type="text" id="english" class="marks">
+                </div>
+
+                <div>
+                    <div class="sdetail">Maths :</div>
+                    <input type="text" id="maths" class="marks">
+                </div>
+
+                <div>
+                    <div class="sdetail">Science :</div>
+                    <input type="text" id="science" class="marks">
+                </div>
+
+                <div>
+                    <div class="sdetail">Social Science :</div>
+                    <input type="text" id="social" class="marks">
+                </div>
+
+                <div>
+                    <div class="sdetail">Sanskrit :</div>
+                    <input type="text" id="Sanskrit" class="marks">
+                </div>
+            </div>
+            <input type="button" value="Submit" id="submit" class="button" onclick="sdetails('#submit');" >
+        </div>
+        <div class="section2">
+            <h1 class="headding">Student Report Card </h1>
+            <div class="detailOut">
+                <div class="sdetail">Student Name : </div>
+                <span class="sdetail" id="name">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Student Age : </div>
+                <span class="sdetail" id="age">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Student Gender : </div>
+                <span class="sdetail" id="gender">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Student Class : </div>
+                <span class="sdetail" id="class">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Total marks : </div>
+                <span class="sdetail" id="marks">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Average : </div>
+                <span class="sdetail" id="avg">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Grade : </div>
+                <span class="sdetail" id="grade">Student</span>
+            </div>
+            <div class="detailOut">
+                <div class="sdetail">Remarks : </div>
+                <span class="sdetail remarks" id="remarks">can do better</span>
+            </div>
+            <input type="button" value="Back" id="back" class="button" onclick="sdetails('#back');">
+        </div>
+        <script src="EventHandling.js"></script>
+    </body>
+</html>

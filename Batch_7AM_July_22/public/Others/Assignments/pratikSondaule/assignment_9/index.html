@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Control Structure</title>
+</head>
+<body>
+    
+    <script>
+        var maths = prompt("Enter student marks in Maths");
+        var sci = prompt("Enter student marks in Science");
+        var eng = prompt("Enter student marks in English");
+
+        maths = parseInt(maths);
+        sci = parseInt(sci);
+        eng = parseInt(eng);
+
+        var avgMarks = (maths + sci + eng)/ 3
+
+
+        if (avgMarks < 40) {
+        
+            console.log("Your average marks is ", +avgMarks);
+            console.log("You Faied");
+        }
+        if (avgMarks >= 40) {
+        
+            console.log("Your average marks is ", +avgMarks);
+            console.log("You Passed");
+        }
+    </script>
+</body>
+</html>

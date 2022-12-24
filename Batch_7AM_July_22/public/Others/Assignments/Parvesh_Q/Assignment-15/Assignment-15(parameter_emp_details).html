@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_15(using function parameter ))</title>
+</head>
+<body>  <h1>  To Check Output of Employee Sal & Tax, goto Console Window</h1>
+        <script>
+                
+
+                    function employee_input_deatils()
+                    {
+                        var emp_name, emp_gender, emp_dept, emp_basicsal, pf, hra, total_sal, tax;
+                         emp_name= prompt("Enter Employee Name ");
+                         emp_gender= prompt(" Enter Employee Gender");
+                         emp_dept= prompt("Enter Emplyoee Department");
+                         emp_basicsal= prompt("Enter Employee Basic Salary in Rs");
+                         emp_basicsal= parseInt(emp_basicsal); 
+
+                         total_sal = employee_salary_calculation( emp_basicsal);   
+                         employee_display_details(emp_name, emp_gender, emp_dept, emp_basicsal , total_sal)                   
+                    }                   
+                            
+                    function  employee_salary_calculation(emp_basicsal)
+                    {                            
+                         var pf = emp_basicsal* (14/100);
+                         var hra = emp_basicsal * (24/100);
+                         var total_sal= pf + hra + emp_basicsal; 
+                         //employee_display_details();     
+                         return total_sal;                 
+                    }
+
+                    function employee_display_details(emp_name, emp_gender, emp_dept, emp_basicsal, total_sal)
+                    {
+                        console.log("Employee name is "+emp_name);
+                        console.log("Employee Gender is "+emp_gender);
+                        console.log("Employee Department is "+emp_dept);                        
+                        console.log("Employee Basic Salary is "+emp_basicsal);
+                        gender_condition(total_sal, emp_gender);
+                    }                  
+                            
+                    function gender_condition (total_sal, emp_gender)
+                    {
+                        if(emp_gender == "male" || emp_gender == "Male")
+                        {                           
+                            if ( total_sal>=200000)
+                           {
+                                 console.log("Your Total Salary after adding all Perks is Rs "+total_sal);
+                                 var tax = (15/100) * total_sal;
+                                 var new_sal = total_sal - tax ;
+                                 console.log("Your Salary after tax deduction is Rs "+ new_sal);
+                            }
+                            else if( total_sal>= 100000 && total_sal<200000)
+                            {
+                                 console.log("Your Total Salary after adding all Perks is Rs "+total_sal);
+                                 tax = (10/100)* total_sal;
+                                 new_sal= total_sal - tax ;
+                                 console.log("Your salary after tax dedcution is Rs "+new_sal);
+                            }
+                            else if( total_sal>=50000 && total_sal < 100000)
+                            {
+                                 console.log("Your Total Salary after adding all Perks is Rs "+total_sal);
+                                 tax = (5/100) * total_sal;
+                                 new_sal = total_sal - tax;
+                                 console.log("Your Salary after tax deduction is Rs "+ new_sal);
+                            }
+                            else
+                            {
+                                console.log("Your don't need to pay tax because your salary is less than 50k");
+                                console.log("Your Salary after adding allowances is Rs "+total_sal);
+                            }
+                        } 
+                        else if( emp_gender== "female" || emp_gender== "Female")
+                            {
+                                if ( total_sal>= 200000)
+                                {
+                                    console.log("Your Total Salary is Rs "+total_sal);
+                                     tax = (10/100) * total_sal;
+                                     new_sal= total_sal - tax;
+                                    console.log("Your salary after tax deduction is Rs"+ new_sal);
+                                }
+                                else if( total_sal>=100000 && total_sal<200000)
+                                {
+                                    console.log("Your Total Salary is Rs "+total_sal);
+                                     tax = (5/100) * total_sal;
+                                     new_sal= total_sal - tax;
+                                    console.log("Your salary after tax deduction is Rs"+ new_sal);
+                                }
+                                else  //( total_sal <100000)
+                                {
+                                    console.log("Your don't need to pay tax because your Total Salary after adding allowances is less than 1 lacs");
+                                    console.log("Your Net Salary is Rs"+total_sal);
+                                }
+                            }  
+                        else 
+                            {
+                                console.log("  INVALID GENDER ");
+                                console.log(" Type Either Male/male or female/Female");
+                                console.log(" Type correct gender to see the Net Salary ");
+                            }
+                    }
+                    employee_input_deatils();
+                    
+                                       
+                   
+                    
+                    
+                                     
+        </script>
+    
+</body>
+</html>

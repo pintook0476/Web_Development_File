@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17 </title>
+</head>
+<body>
+    <script>
+         var dateMonths =['Jan', 'Feb', 'Mar', 'Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'];
+         var dateMonths1 =['January', 'February', 'March', 'April','May','June','July','August','September','October','November','December'];
+         var daysList = ['Mon','Tue','Wed','Thurs','Fri','Sat','Sun'];
+         var daysList1 = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+        
+
+        var myCurrentDate = new Date();
+       var dateFormat1 = myCurrentDate.getMonth()+ '-' + myCurrentDate.getDate() + '-' + myCurrentDate.getFullYear();
+       console.log(dateFormat1);
+
+       var dateFormat2 = dateMonths[myCurrentDate.getMonth()] + ',' + ' ' + myCurrentDate.getDate() + 'th' + ' ' + myCurrentDate.getFullYear();
+       console.log(dateFormat2);
+
+       var dateFormat3 = dateMonths1[myCurrentDate.getMonth()] + ','+' ' + myCurrentDate.getDate() + 'th' + ' ' + myCurrentDate.getFullYear();
+       console.log(dateFormat3);
+
+       var dateFormat4 = daysList [myCurrentDate.getDay()] + ','+ ' ' + dateMonths[myCurrentDate.getMonth()]+' ' + myCurrentDate.getDate() + 'th'+' '+ myCurrentDate.getFullYear();
+       console.log(dateFormat4);
+
+
+       var dateFormat5 =  daysList1[myCurrentDate.getDay()] + ','+ ' '+dateMonths1[myCurrentDate.getMonth()] +' ' + myCurrentDate.getDate() + 'th' +' '+myCurrentDate.getFullYear();
+       console.log(dateFormat5);
+
+       var dateFormat6 = myCurrentDate.getDate() + '/' + myCurrentDate.getMonth() + '/' + myCurrentDate.getFullYear();
+       console.log(dateFormat6);
+
+       var dateFormat7 = myCurrentDate.getDate() + 'th' + ' '+ dateMonths[myCurrentDate.getMonth()] + ',' +' ' +myCurrentDate.getFullYear();
+       console.log(dateFormat7); 
+
+       var dateFormat8 = myCurrentDate.getDate() + 'th' + ' ' + dateMonths[myCurrentDate.getMonth()] + ',' +' '+ myCurrentDate.getFullYear()+' '+myCurrentDate.getHours() +':' +myCurrentDate.getMinutes()+ ':' + myCurrentDate.getSeconds();
+       console.log(dateFormat8);
+
+       var dateFormat9 = dateMonths[myCurrentDate.getMonth()] + '/' + myCurrentDate.getDate() + '/' + myCurrentDate.getFullYear()+ ' '+ myCurrentDate.getHours()+ ':' + myCurrentDate.getMinutes();
+       console.log(dateFormat9);
+
+       var dateFormat10 = myCurrentDate.getDate() + '-' + dateMonths[myCurrentDate.getMonth()]+ '-' + myCurrentDate.getFullYear()+ ' '+ myCurrentDate.getHours()+
+       ':' + myCurrentDate.getMinutes() + ':' + myCurrentDate.getSeconds();
+       console.log(dateFormat10);
+    </script>
+    
+</body>
+</html>

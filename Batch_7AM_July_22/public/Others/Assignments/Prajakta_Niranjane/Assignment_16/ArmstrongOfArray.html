@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Numbers Of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        var list = [1, 7, 21, 153, 369, 370, 371, 245, 242, 734, 407, 408];
+        console.log('Original Array:');
+        console.log(list);
+        console.log('Armstrong Numbers Of an Array:');
+        var armstrong = (list) => 
+        {
+            for (var n = 0; n < list.length; n++) 
+            { 
+                var totalDigit = list[n].toString();
+                totalDigit = totalDigit.length;
+                var num = list[n];
+                var enteredNum = list[n] ;
+                var mul = 0;
+                var armstrong = 0;
+                 while (num > 0) 
+                {
+                    var rem = num % 10;
+                    armstrong = armstrong + (rem ** totalDigit);
+                    num = num / 10;
+                    num = parseInt(num);
+                }
+                        if (enteredNum == armstrong) 
+                        {
+                            console.log(enteredNum + " is an Armstrong Number");
+                        }
+            }
+        } 
+        armstrong(list);       
+    </script>
+</body>
+</html>

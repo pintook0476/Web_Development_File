@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment_8</title>
+        <style>
+            body {
+                background-color: rgb(189 189 189)
+            }
+            .heading{
+                border: 2px solid;
+                text-align: center;
+                text-decoration: underline;
+                padding: 5px;
+                background-color: cadetblue;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                border: 1px solid black;
+                height: 500px;
+                width: 100%;
+                overflow: auto;
+                background-color: cadetblue;
+            }
+
+            .image{
+                background-image: url(images/Untitled.png);
+                width: 170px;
+                height: 150px;
+            }
+
+            .img1 {
+                
+                background-position: -12px -2px;
+            }
+
+            .img2 {
+               
+                background-position: -202px -2px;
+            }
+
+            .img3 {
+
+                background-position: -375px -2px;
+            }
+
+            .img4 {
+                
+                background-position: -575px -2px;
+            }
+
+            .img5 {
+               
+                background-position: -762px -2px;
+            }
+
+            .img6 {
+               
+                background-position: -12px -2px;
+            }
+
+            .img7 {
+                
+                background-position: -202px -2px;
+            }
+
+            .img8 {
+                
+                background-position: -375px -2px;
+            }
+
+            .img9 {
+                
+                background-position: -575px -2px;
+            }
+
+            .img10 {
+
+                background-position: -762px -2px;
+            }
+            table,
+            tr,
+            th,
+            td {
+                border: 1px solid;
+                border-collapse: collapse;
+
+            }
+
+            .sNumber {
+                margin: 0px;
+                height: 28px;
+                width: 42px;
+                display: inline-block;
+            }
+
+            .name {
+                height: 28px;
+                display: inline-block;
+                width: 170px;
+
+            }
+
+            .gender {
+                width: 170px;
+                display: inline-block;
+                height: 28px;
+            }
+
+            .picture {
+                display: inline-block;
+                height: 28px;
+                width: 170px;
+
+            }
+
+            .Sclass {
+                display: inline-block;
+                height: 28px;
+                width: 170px;
+            }
+
+            .marks {
+                display: inline-block;
+                height: 28px;
+                width: 607px;
+
+            }
+
+            .num1 {
+                display: inline-block;
+                width: 42px;
+                height: 150px;
+                text-align: center;
+                padding-top: 57px;
+               
+            }
+
+            .name1 {
+                display: inline-block;
+                width: 170px;
+
+                height: 150px;
+                text-align: center;
+                padding-top: 57px;
+                
+            }
+
+            .gender1 {
+                display: inline-block;
+                height: 150px;
+                width: 170px;
+                text-align: center;
+                padding-top: 57px;
+                
+            }
+
+            .pic1 {
+                width: 170px;
+                height: 150px;
+                display: inline-block;
+
+                text-align: center;
+                
+            
+            }
+
+            .class1 {
+                display: inline-block;
+                height: 150px;
+                width: 170px;
+                text-align: center;
+                padding-top: 57px;
+                
+            }
+
+            .marks1 {
+                width: 607px;
+
+                display: inline-block;
+                height: 150px;
+                text-align: center;
+            }
+
+            .subject {
+                display: inline-block;
+                width: 112px;
+                height: 28px;
+            }
+
+            .maxmarks {
+                display: inline-block;
+                width: 120px;
+                height: 28px;
+
+            }
+
+            .minmarks {
+                display: inline-block;
+                width: 120px;
+                height: 28px;
+            }
+
+            .obtainmarks {
+                display: inline-block;
+                width: 249px;
+                height: 28px;
+
+            }
+
+            .subject1 {
+                display: inline-block;
+                width: 112px;
+                height: 28px;
+            }
+
+            .maxmarks1 {
+                display: inline-block;
+                width: 120px;
+                height: 28px;
+
+            }
+
+            .minmarks1 {
+                display: inline-block;
+                width: 120px;
+                height: 28px
+            }
+
+            .obtainmarks1 {
+
+                display: inline-block;
+                width: 249px;
+                height: 28px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h2 class="heading">Students Details - Progess Card</h2>
+        </div>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sNumber">S.No</th>
+                        <th class="name">Name</th>
+                        <th class="gender">Gender</th>
+                        <th class="picture">Picture</th>
+                        <th class="Sclass">Class</th>
+                        <th class="marks">Marks</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num1">1</td>
+                        <td class="name1">Gaurav</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img1"></div>
+                        </td>
+                        <td class="class1">10th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">2</td>
+                        <td class="name1">Riya</td>
+                        <td class="gender1">Female</td>
+                        <td class="pic1">
+                            <div class="image img2"></div>
+                        </td>
+                        <td class="class1">11th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">80</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">75</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">78</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">3</td>
+                        <td class="name1">Ahatsham</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img3"></div>
+                        </td>
+                        <td class="class1">12th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">91</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">96</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">4</td>
+                        <td class="name1">Priya</td>
+                        <td class="gender1">Female</td>
+                        <td class="pic1">
+                            <div class="image img4"></div>
+                        </td>
+                        <td class="class1">10th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">92</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">88</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">81</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">5</td>
+                        <td class="name1">Muneer</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img5"></div>
+                        </td>
+                        <td class="class1">12th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">99</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">97</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">6</td>
+                        <td class="name1">Gaurav</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img6"></div>
+                        </td>
+                        <td class="class1">10th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">7</td>
+                        <td class="name1">Riya</td>
+                        <td class="gender1">Female</td>
+                        <td class="pic1">
+                            <div class="image img7"></div>
+                        </td>
+                        <td class="class1">12th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">8</td>
+                        <td class="name1">Ahatsham</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img8"></div>
+                        </td>
+                        <td class="class1">9th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">9</td>
+                        <td class="name1">Priya</td>
+                        <td class="gender1">Female</td>
+                        <td class="pic1">
+                            <div class="image img9"></div>
+                        </td>
+                        <td class="class1">11th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num1">10</td>
+                        <td class="name1">Muneer</td>
+                        <td class="gender1">Male</td>
+                        <td class="pic1">
+                            <div class="image img10"></div>
+                        </td>
+                        <td class="class1">12th</td>
+                        <td class="marks1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="subject">Subject</th>
+                                        <th class="maxmarks">Max Marks</th>
+                                        <th class="minmarks">Min Marks</th>
+                                        <th class="obtainmarks">Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="subject1">Maths</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">90</td>
+                                        <td class="subject1">Science</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">95</td>
+                                        <td class="subject1">English</td>
+                                        <td class="maxmarks1">100</td>
+                                        <td class="minmarks1">33</td>
+                                        <td class="obtainmarks1">98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <h3 class="heading">@ Copy Right 2022</h3>
+        </div>
+    </body>
+
+</html>

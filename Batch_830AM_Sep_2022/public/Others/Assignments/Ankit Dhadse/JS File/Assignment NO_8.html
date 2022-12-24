@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME NUMBER</title>
+    <style>
+        .Div{
+            border: 3px solid;
+            text-align: center;
+            text-decoration-color: aliceblue red;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 6px;
+            position: relative;
+            padding: 6px;
+            font-size: 25pt;
+            background-position: center;
+
+        }
+        .Div1{
+            text-align:center;
+            text-decoration: underline blue;
+            font-size: 30px;
+            font-style: oblique;
+            border: 4px solid;
+            margin: auto;
+            padding: 100px;
+            border-radius: 30px;
+            position: center;
+            background-color:whitesmoke;
+
+        }
+        .div2{
+            border: auto;
+            margin: auto;
+            
+        }
+        .img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <Div class="Div">CHECK A PRIME NUMBER</Div>
+    <div class="div2">Prime Numbers: The Sieve of Eratosthenes</div>
+    <div class="Div1"> 
+        <img src="https://web.nmsu.edu/~pbaggett/Lessons/primeNumbers/images/sieve.jpg" alt="">
+        
+    </div>
+    <script>
+        var num = prompt("enter a number");
+        num = parseInt(0);
+        var count = 0;
+        for( var i=2; i <= num; i++ )
+        {
+            var rem = num % i;
+            if(num == 0)
+            {
+                count++;
+            }
+            if(count>0)
+            {
+                break;
+            }
+        }
+        if(count>0){
+            console.log("number is a prime number");
+        }
+        else
+        {
+            console.log("it is not a prime number");
+        }
+        
+    </script>
+    
+</body>
+</html>

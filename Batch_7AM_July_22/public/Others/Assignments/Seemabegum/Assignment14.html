@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var sname,  Age , gender , location , m1 , m2 ,m3 , total , avg ;
+        function StudentDetails(){ 
+        sname = prompt("Enter the name ");
+        Age = prompt("Enter the Age ");
+        gender = prompt("Enter the gender ");
+        loc = prompt("Enter the location ");
+        m1 = prompt("enter marks m1");
+        m1 = parseInt(m1);
+        m2 = prompt("Enter the m2 ");
+        m2 = parseInt(m2);
+        m3 = prompt("Enter the m3 ");
+        m3 = parseInt(m3);
+        Studenttotalmarks();
+       
+    }
+    function Studenttotalmarks() {
+        total = m1 + m2 + m3 ;
+        avg = total/3 ;
+        
+    }
+    function readStudentData() {
+        StudentDetails();
+    console.log("Name of the student " + sname);
+    console.log("age of the student " + Age);
+    console.log("Gender of the student " + gender);
+    console.log("location of the student " + loc);
+    console.log("avg  marks of the student " + avg);
+    console.log("total marks  of the student " + total);
+    Studenttotalmarks();
+
+    }
+    readStudentData();
+    if (total >= 80 ) {
+        console.log("superb your passed ");
+        
+    } else {
+        console.log ("passed");
+        
+    }
+    
+    
+    
+    </script>
+</body>
+</html>

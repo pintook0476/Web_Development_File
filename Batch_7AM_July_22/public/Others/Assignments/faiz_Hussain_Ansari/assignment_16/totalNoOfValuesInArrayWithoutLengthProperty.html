@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           var userData = () => {
+                var n = [12,0,13,34,454,23,334,5645,23,34,55,324,423,];
+                displayData (n)
+           }
+           var displayData = (n) => {
+                var numOfDigits = 0;
+                for (i = 0; i <n.length; i++) {
+                    var count = 0;
+                    while (n[i] >0) {
+                        count = count + n[i];
+                        n[i] = n[i] / 10;
+                        n[i] = parseInt(n[i]);
+                    
+                        
+                    }
+                    if (count >= 0) {
+                        numOfDigits++;
+                    }
+                } console.log('Num of digits in Array : ' + numOfDigits);
+           }
+           userData()
+
+           
+        </script>
+    </body>
+</html>

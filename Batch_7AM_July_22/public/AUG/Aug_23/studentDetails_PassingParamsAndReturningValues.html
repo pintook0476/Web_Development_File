@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student details using functions with passing params & returning values.
+        </title>
+    </head>
+    <body>
+        <h3>
+            Student Details 
+        </h3>
+        <script>            
+
+            function readStudentData() {
+                var sname, age, gender, loc, avg, total, m1, m2, m3;
+                sname = prompt("Enter Student name");
+                age = prompt("Enter age");
+                gender = prompt("enter Gender");
+                loc = prompt("Enter locaiton");
+
+                m1 = prompt("Enter sub 1 marks");
+                m1 = parseInt(m1);
+                m2 = prompt("Enter sub 2 marks");
+                m2 = parseInt(m2);
+                m3 = prompt("Enter sub 3 marks");
+                m3= parseInt(m3);
+                avg = getTotalAndAvg(m1, m2, m3);
+                displayStudentDetails(sname, gender, avg);
+            }
+
+            function getTotalAndAvg(m1, m2, m3) {
+                // Caluculating total and avg.
+                var total = m1 + m2 + m3;
+                var avg = total / 3;
+                return avg;
+            }
+
+            // display the values back to user
+
+            function displayStudentDetails(sname, gender, avg) {
+                
+                console.log("Student details");
+                console.log("Name " + sname);
+                console.log("Gender " + gender);
+                console.log("Avg is " + avg);
+                getSudentGrade(avg);
+            }
+
+            function getSudentGrade(avg) {
+                if (avg >= 40) {
+                    console.log("Student Got Passed");
+                } else {
+                    console.log("You got Surprise");
+                }
+            }
+            
+            readStudentData();
+            
+        </script>
+    </body>
+</html>

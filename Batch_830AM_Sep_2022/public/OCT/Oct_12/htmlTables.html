@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Tables
+        </title>
+        <style>
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+            }
+            td:empty {
+                background-color: red;
+            }
+            .tableBlock {
+                border: 1px solid;
+                width: 650px;
+                height: 500px;
+            }
+            .row div {
+                border: 1px solid;
+                width: 100px;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                display: inline-block;
+            }
+            .header div{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Demonstrating Tables
+        </h3>
+        <table border="1px solid" cellspacing="10px" cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>USer Name</th>
+                    <th>AGe</th>
+                    <th>Current Location</th>
+                    <th>Prmnt Location</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Krish</td>
+                    <td>10</td>
+                    <td>Hyderabad</td>
+                    <td>Vizag</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Raj</td>
+                    <td>10</td>
+                    <td colspan="2">Chennai</td>
+                    
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>10</td>
+                    <td rowspan="3">Delhi</td>
+                    <td>Mumbai</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>10</td>
+                    
+                    <td>Pune</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>10</td>
+                    
+                    <td>Mumbai</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        <div class="tableBlock">
+            <div class="row header">
+                <div>Sno</div>
+                <div>User name</div>
+                <div>Age</div>
+                <div>Location</div>
+                <div>Marks</div>
+            </div>
+            <div class="row header">
+                <div>1</div>
+                <div>Raj</div>
+                <div>10</div>
+                <div>Hyd</div>
+                <div>100</div>
+            </div>
+            <div class="row header">
+                <div>1</div>
+                <div>Raj</div>
+                <div>10</div>
+                <div>Hyd</div>
+                <div>100</div>
+            </div>
+            <div class="row header">
+                <div>1</div>
+                <div>Raj</div>
+                <div>10</div>
+                <div>Hyd</div>
+                <div>100</div>
+            </div>
+            <div class="row header">
+                <div>1</div>
+                <div>Raj</div>
+                <div>10</div>
+                <div>Hyd</div>
+                <div>100</div>
+            </div>
+        </div>
+    </body>
+</html>

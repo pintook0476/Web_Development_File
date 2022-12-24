@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong btwn 1 to 1000 </title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        for ( var a = 1 ; a<=1000 ;  a++){
+            var b = a ;
+            b = b.toString();
+            var ttld = b.length;  
+             b = parseInt(b);
+             var temp = b ;
+            var armstrong = 0;
+            while ( b > 0 ) {
+                var  rem = b % 10 ;
+                armstrong = armstrong + ( rem ** ttld);
+                b = b / 10 ;
+                b = parseInt(b);
+              
+            } 
+            if (temp == armstrong){
+                console.log( armstrong );
+            }
+           /* if(temp == armstrong) {
+                    console.log( "its a armstrong ");
+                } else {
+                    console.log( "not a armstrong");
+                }*/
+            
+             
+        }
+        
+           
+        
+    </script>
+</body>
+</html>

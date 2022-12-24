@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var userData = () => {
+                var n = [];
+                for (i = 0; i < 3; i++) {
+                    n[i] = prompt('Enter no.' + i);
+                    n[i] = parseInt(n[i]);
+                }
+                displayData(n)
+            }
+            var displayData = (n) => {
+                var count = 0;
+                for (j = 0; j < n.length; j++) {
+                    console.log(n[j])
+                    for (i = 2; i <= n[j] - 1; i++) {
+                        var rem = n[j] % i;
+                        if (rem == 0) {
+                            count = count + 1;
+                        }
+
+                    } if (count == 0) {
+                        console.log('It is a prime num')
+
+                    } else {
+                        console.log('Not prime')
+                    }
+                }
+            }
+            userData()
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>

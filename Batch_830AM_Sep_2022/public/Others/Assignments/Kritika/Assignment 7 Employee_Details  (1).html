@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div> Employee_Details</div>
+<body>
+    <script>
+        var empName = prompt('Enter Employee Name'), pf,hra,total;
+        var empAge = prompt('Enter Employee Age');
+        var empGender = prompt('Enter Employee Gender');
+        var empDepartment = prompt('Enter Employee Department');
+        var empSalary = prompt('Enter the Salary');
+        empSalary = parseInt(empSalary);
+        
+        hra = (24/100)*empSalary;
+        pf = (12/100)*empSalary;
+        total = pf+hra+empSalary;
+
+        console.log('empName' + empName);
+        console.log('empAge' + empAge);
+        console.log('empGender' + empGender);
+        console.log('empDepartment' + empDepartment);
+        console.log('empSalary' + empSalary);
+        console.log('pf' + pf);
+        console.log('hra' + hra);
+        console.log('total' + total);
+
+
+    </script> 
+    
+</body>
+</html>

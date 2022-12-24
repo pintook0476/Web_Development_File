@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Assignment 24</title>
+    </head>
+    <body>
+        <h3>Finding all the prime number inside an array</h3>
+        <script>
+            var dataInput=() =>{
+                var data=[1,2,3,4,5,6,7,11,35,78,21,90,97];
+                findingPrime(data);
+            }
+            var findingPrime=(data) =>{
+                for(var i=0;i<data.length;i++){
+                    var prim=data[i];
+                    var c=0;
+                    for(var j=2;j<prim;j++){
+                        if(prim%j==0){
+                            c++;
+                        }
+                    }
+                    if(c==0){
+                        console.log(prim);
+                    }
+                }
+            }
+            dataInput();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("enter first no.");
+        a = parseInt(a);
+        var o = prompt("enter operator sign ");
+        var b = prompt("enter second no.");
+        b = parseInt(b);
+        var result;
+
+        switch (o) {
+            case "+":
+                result = a + b;
+                console.log("the sum is " + result);
+                break;
+            case "-":
+                result = a - b;
+                console.log("the substract is " + result);
+                break;
+            case "*":
+                result = a * b;
+                console.log("the Multiplication is " + result);
+                break;
+            case "/":
+                result = a / b;
+                console.log("the divison is " + result);
+                break;
+            default:
+                console.log("bad experience");
+        } 
+    </script>
+</body>
+
+</html>

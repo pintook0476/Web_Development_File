@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+        function inputDetails(){
+            var empName,gender,age,dept,bSalary, pf,hra,totalSalary;
+            empName=prompt("enter employ name");
+            gender=prompt("enter gender");
+            age=prompt("enter age");
+            dept=prompt("enter department");
+            bSalary=parseInt(prompt("enter basic salary"))
+            totalSalary= calculation(bSalary)
+            display(empName,gender,age,dept,bSalary,totalSalary)
+            condition(gender);
+        }
+        function calculation(bSalary){
+            pf=bSalary*14/100;
+            hra=bSalary*20/100;
+            totalSalary=bSalary+pf+hra;
+            return totalSalary;
+        }
+        function display(empName,gender,age,dept,bSalary,totalSalary){
+            console.log("name is "+empName);
+            console.log("gender is "+gender)
+            console.log("age is "+age);
+            console.log("department is "+dept);
+            console.log("basic salary is " +bSalary);
+            console.log("total salary is "+totalSalary);
+            
+        }
+        function condition(gender){
+            if(gender=="male"){
+                if(totalSalary>=200000){
+                    console.log("tax is 15%")
+                }
+                else if(totalSalary>=100000){
+                    console.log("tax is 10%")
+                }
+                else if(totalSalary>=50000){
+                    console.log("tax is 5%")
+                }
+                else{
+                    console.log("0")
+                }
+            }
+            else{
+                if(totalSalary>=200000){
+                    console.log("tax is 10%")
+                }
+               else if(totalSalary>=100000){
+                    console.log("tax is 5%")
+                }
+                else if(totalSalary>=50000){
+                    console.log("0")
+                }
+                else{
+                    console.log("done");
+                }
+            }
+        }
+        inputDetails()
+
+    </script>
+</body>
+</html>+

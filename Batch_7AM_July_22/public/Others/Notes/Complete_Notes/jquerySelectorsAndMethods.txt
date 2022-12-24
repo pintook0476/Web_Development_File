@@ -1,0 +1,85 @@
+$("*") - To get any element with the dom
+
+$("#abc") - Returns the reference of element with id abc
+
+$(".abc") - Returns the reference of element with class abc
+
+$("div.abc") -> Returns the reference of all div tags having the class as abc
+
+$("li:first") -> Returns the reference of li tag which is in first child position
+
+$("input[type=text]") -> Returns reference of all input elements having type as text
+
+$("a[target!="_blank"]") -> Returns reference of all "a" tags which are not having target as "_blank"
+
+$("tr:even") -> Returns reference of all "tr" tags which are in even position
+
+$("div:odd") -> Returns reference of all "div" tags which are in odd position
+
+$("div > span") -> Returns reference of all span tags which all are direct childrens of div tag
+
+$("li:eq(2)") -> Returns reference of li tag which is in second position
+
+$("span:first-of-type") -> selects all elements that are the first among siblings of the same element name
+
+$("div:gt(3)") -> selects elements at an index greater than index within the matched set
+
+$("div:has(p)") -> REturns div tag which as atleast one p tag
+
+$("div:hidden") -> Returns reference of div tag which is in hidden state
+
+$("span:last-of-type") -> Returns span which is last sbling
+
+$("div, .abc, span, #pqr") -> Returns multipel selectrs
+
+$("input:disabled") -> Returns input element with disabled state
+
+$("input:checked") -> Returns check box element which is in checked state.
+
+etc..
+
+
+Jquery Predefined methods:
+
+	Following are list of predefined methods been supported in jquery can be applied on dom elements.
+
+.addClass() - to add single or multiple classes to an element
+
+.removeClass("classname") - To remove a classname
+
+.hasClass("classname") - REturns true /false based on, if element is having the provided class or not.
+
+.after() -> To add an element as siblint after the existing element
+	eg:
+		$("div").after("<p>test</p>");
+
+.before() -> To add an element before the existing element
+	eg:
+		$("div").before("<p>test</p>");
+
+.append() -> to append an element to existing element
+
+.attr() - To set or get any attribute of an element
+
+.css() - > To set single or multiple css properties to elements
+
+	eg:
+		$("#abc").css("color", "green");
+		$(".container").css({
+			color: 'blue',
+			'font-size': '20px'
+		})
+.val() -> To get or set value from input elements
+
+.removeAttr() -> To remove and existing attribute from element
+
+.toggleClass() -> to toggle class from existing element
+
+.html("html text") -> adds required content as html content with in an element
+
+.text("text content") -> adds required content as text content with in an element
+
+.show() -> to show an hidden element
+
+.hide() -> To hide an visible element
+etc.

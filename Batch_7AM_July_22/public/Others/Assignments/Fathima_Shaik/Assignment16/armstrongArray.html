@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out Armstrong numbers in an array</title>
+</head>
+<body>
+    <h3> Armstrong numbers in an array </h3>
+    <script>
+        /* Enter Array Dynamically
+        var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);*/
+
+        //Enter an array statically
+        
+        var a = [100,1,153,407,373,370,371]
+        console.log("Given array:" + a);
+
+        
+        //find out armstrong numbers
+        for(var i=0; i<a.length; i++){ 
+            var temp = a[i];
+            var num = 0 ;
+            while(temp > 0){
+                var rem = temp % 10 ;  
+                num = num + (rem * rem *rem) ;
+                temp = parseInt(temp / 10) ;
+            }
+            if(num == a[i]){
+                console.log(a[i] + " is an armstrong number");
+            }
+        }       
+    </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Details</title>
+    <style>
+        .header, .footer{
+            border: 2px solid;
+            text-align: center;
+            text-decoration: underline;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .mainContainer{
+            border: 2px solid;
+            margin: 10px;
+            height: 600px;
+            padding: 10px;
+        }
+        .leftBlock, .rightBlock{
+            border: 2px solid;
+            float: left;
+            height: 570px;
+            padding: 10px;
+        }
+        .leftBlock{
+            width: 33%;
+        }
+        a{
+            text-decoration: none;
+        }
+        .rightBlock{
+            width: 63%;
+            margin-left: 10px;
+            overflow: auto;
+        }
+        .leftBlock li{
+            border: 2px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style-position: inside;
+            width: 260px;
+        }
+        .leftBlock li:hover{
+            background-color: yellowgreen;
+            color: rgb(52, 13, 229);
+        }
+        .detailsContainer > li{
+            border: 2px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+            height: 120px;
+        }
+        ul{
+            margin: 5px;
+            padding: 5px;
+        }
+        /*.imgBlock{
+            border: 2px solid;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+        }*/
+        img{
+            border: 2px solid;
+            height: 100px;
+            width: 100px;
+           
+        }
+        
+        .addressBlock, .imgBlock {
+            float: left;
+            list-style-type: none;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .footer{
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Players Details</div>
+    <div class="mainContainer"> 
+        <div class="leftBlock">
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Rohit_Sharma">Rohit Sharma</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/MS_Dhoni">MS Dhoni</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Virat_Kohli">Virat kohli</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Shikhar_Dhawan">Shikhar Dhawan</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/KL_Rahul">KL Rahul</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hardik_Pandya">Hardik Pandya</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Dinesh_Karthik">Dinesh Karthik</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ravindra_Jadeja">Ravindra Jadeja</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Mohammed_Shami">Mohammed Shami</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Jasprit_Bumrah">Jasprit Bumrah</a></li>
+            </ol> 
+        </div>
+        <div class="rightBlock">
+            <ul class="detailsContainer">
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170658/rohit-sharma.jpg" alt="Rohit Sharma">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Rohit Sharma</li>
+                        <li>Age: 35 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.png" alt="MS Dhoni">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: MS Dhoni</li>
+                        <li>Age: 41 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Ranchi</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://www.cricbuzz.com/a/img/v1/152x152/i1/c170661/virat-kohli.jpg" alt="Virat kohli">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Virat kohli</li>
+                        <li>Age: 33 years</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170660/shikhar-dhawan.jpg" alt="Shikhar Dhawan">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Shikhar Dhawan</li>
+                        <li>Age: 36 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170673/kl-rahul.jpg" alt="KL Rahul">                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: KL Rahul</li>
+                        <li>Age: 30 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Bangalore</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170666/hardik-pandya.jpg" alt="Hardik Pandya">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Hardik Pandya</li>
+                        <li>Age: 28 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170680/dinesh-karthik.jpg" alt="Dinesh Karthik">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Dinesh Karthik</li>
+                        <li>Age: 37 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: West Bengal</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170670/ravindra-jadeja.jpg" alt="Ravindra Jadeja">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Ravindra Jadeja</li>
+                        <li>Age: 33 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Hyderabad</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170684/mohammed-shami.jpg" alt="Mohammed Shami">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Mohammed Shami</li>
+                        <li>Age: 31 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Amroha</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="imgBlock">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSSkywdgVmdc09ittXnW7zjD8x9nO5mo8kC9paXHhT4gNZpbJ1Uc-q-2sIJSuPGJRvM8s&usqp=CAU" alt="Jasprit Bumrah">
+                    </div>
+                    <ul class="addressBlock">
+                        <li>Name: Jasprit Bumrah</li>
+                        <li>Age: 28 years</li>
+                        <li> Gender: Male</li>
+                        <li>Location: Ahmedabad</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &#169 copy rights 2022
+    </div>
+    
+</body>
+</html>

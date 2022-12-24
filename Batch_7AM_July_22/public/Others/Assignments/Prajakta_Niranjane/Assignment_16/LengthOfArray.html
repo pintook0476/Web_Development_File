@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        var takeArray = function()
+        { 
+        var list = [];
+        for (var n = 0; n < 10; n++)
+        {
+            list[n] = prompt('Enter Number Of an Array ' + n );
+            list[n] = parseInt(list[n]);  
+        }
+        console.log('Array : ' + '[' + list.join(',') + ']');
+        arrayLength();
+       }
+       
+       var arrayLength = function()
+       {
+        var count = 0;
+        for (var i = 0; i < 10; i++)
+        {
+          count = i;
+        }
+        console.log('Length Of an Array Is : ' + i);
+       }
+       
+       takeArray();
+    </script>
+</body>
+</html>

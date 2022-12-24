@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Canvas Tag
+        </title>
+        <style>
+            canvas {
+                border: 1px solid;
+                width: 600px;
+                height: 600px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Demonstrating Canvas tag
+        </h3>
+        <canvas id="container"></canvas>
+
+        <script>
+            var ctx = document.querySelector("#container").getContext("2d");
+
+           /* ctx.moveTo(0, 0);
+            ctx.lineTo(80, 90);
+            ctx.lineTo(350, 220);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.fillStyle = 'red'; 
+            ctx.arc(95, 50, 20, 0, 2 * Math.PI);
+            ctx.stroke();
+                        
+            ctx.fillStyle = 'red'; //background color
+            ctx.fillRect(20, 20, 100, 120); 
+
+            ctx.fillStyle = 'green'; //background color
+            ctx.font = "30px Arial";
+            //ctx.fillText("Hello World", 10, 50);
+            ctx.strokeText("Hello World", 10, 50); */
+
+            var grd = ctx.createRadialGradient(100, 100, 5, 100, 100, 100);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "green");
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 200, 200);
+        </script>
+    </body>
+</html>

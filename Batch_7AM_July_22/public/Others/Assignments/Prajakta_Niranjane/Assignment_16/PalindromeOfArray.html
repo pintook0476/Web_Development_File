@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Numbers Of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+        var list = [21, 212, 123, 131, 245, 242, 734, 737, 919, 920, 292, 197];
+        console.log('Original Array:');
+        console.log(list);
+        console.log('Palindrome Numbers Of an Array:');
+        var palindrome = (list) => 
+        {
+                 for (var i = 0; i < list.length; i++)
+                {
+                var num = list[i];
+                var originalNum = list[i];
+                var rev = 0;
+                while (num > 0) 
+                {
+                    rev = (rev * 10) + (num % 10);
+                    num = parseInt(num / 10);
+                }
+                
+                if (originalNum == rev) 
+                {
+                    console.log(originalNum);
+                }
+                }
+    }
+    palindrome(list); 
+    </script>
+</body>
+</html>

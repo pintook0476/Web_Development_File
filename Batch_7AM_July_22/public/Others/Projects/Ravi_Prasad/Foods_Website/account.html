@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Account Information</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:@300;400;500;600;700&display=swap">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Legend Choice</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Account</a></li>
+
+
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="" width="30px" height="30px">
+                <img src="images/menu.png" class="menu_icon" onclick="Menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Page -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-contaner">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn"><a href="index.html" style="color: white;">Login Now </a></button>
+                            <a href="forget_password.html">Forgot Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn"><a href="index.html" style="color: white;"> Register </a></button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-----------------Footer------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app_logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="">
+                    <p>Our Purpose is to sustainably make the Plaeasure and Benifits of Recepy Items to the best Recipy.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Retun policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us:</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright"> Copyright &#169; 2022 - For Best Food Service</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function Menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!----------JS for toggle form--------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)"
+            LoginForm.style.transform = "translateX(0px)"
+            Indicator.style.transform = "translateX(100px)"
+
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)"
+            LoginForm.style.transform = "translateX(300px)"
+            Indicator.style.transform = "translateX(0px)"
+
+        }
+
+
+    </script>
+</body>
+
+</html>

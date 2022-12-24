@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [ 34, 56, 121, 343, 151, 953];
+
+        for (var i = 0 ; i < data.length; i++) {
+            n = data[i];
+            var temp = n;
+            var revNum = 0;
+                
+        while ( n > 0) {
+            rem = n % 10;
+            n = n / 10;
+            n = parseInt(n);
+            revNum = revNum * 10 + rem;
+        }
+
+        if (temp == revNum) {
+            console.log("Its pallindrome " + data[i]);
+        } else {
+            console.log("Not pallindrome " + data[i]);
+        }
+}
+    </script>
+</body>
+</html>

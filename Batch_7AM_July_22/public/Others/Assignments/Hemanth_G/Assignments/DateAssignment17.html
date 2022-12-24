@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateAssignment</title>
+</head>
+
+<body>
+
+    <script>
+        var myCurrentDate = new Date();
+        
+        var dateMonths1 = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'Aug', 'sept', 'oct', 'nov', 'dec'];
+        // Aug,30th 2022
+        var dateformat1 = dateMonths1[myCurrentDate.getMonth()] + ', '+ myCurrentDate.getDate() + 'th '+ myCurrentDate.getFullYear();
+        console.log(dateformat1);
+
+        //Augest,30th 2022
+        var dateMonths2 = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'August', 'sept', 'oct', 'nov', 'dec'];
+        var dateformat2 = dateMonths2[myCurrentDate.getMonth()] + ', '+ myCurrentDate.getDate() + 'th '+ myCurrentDate.getFullYear();
+        console.log(dateformat2);
+
+        //Tue,Aug 30th 2022
+            var daysList1 = ['sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+            
+        var daysformat1 = daysList1[(myCurrentDate.getDay())] + ', '+ dateMonths1[myCurrentDate.getMonth()] + ' '+ myCurrentDate.getDate() + 'th '+ myCurrentDate.getFullYear();
+        console.log(daysformat1);
+
+        //Tuesday,August 30th 2022
+
+        var daysList2 = ['sun','Mon','Tue','Wednesday','Thu','Fri','Sat'];
+        var dayformat2 = daysList2[(myCurrentDate.getDay())] + ', '+ dateMonths2[myCurrentDate.getMonth()] + ' '+ myCurrentDate.getDate() + 'th '+ myCurrentDate.getFullYear();
+        console.log(dayformat2);
+
+        //31/08/2022
+
+        console.log(myCurrentDate.getDate() + '/0'+ myCurrentDate.getMonth() + '/'+ myCurrentDate.getFullYear());
+ 
+        // 30th Aug , 2022
+
+        var dateformat1 = myCurrentDate.getDate() + 'th '+ dateMonths1[myCurrentDate.getMonth()] + ', '+  myCurrentDate.getFullYear();
+        console.log(dateformat1);
+
+        // 30th Aug , 2022 7:50:10
+        var dateformat1 = myCurrentDate.getDate() + 'th '+ dateMonths1[myCurrentDate.getMonth()] + ', '+  myCurrentDate.getFullYear() +' ' + myCurrentDate.getHours() + ':'+ myCurrentDate.getMinutes() + ':'+ myCurrentDate.getSeconds();
+        console.log(dateformat1);
+        
+        //Aug/30/2022 10:22
+        var dateformat1 =  dateMonths1[myCurrentDate.getMonth()]  + ' '+ myCurrentDate.getDate()+ ', '+  myCurrentDate.getFullYear() +' ' + myCurrentDate.getHours() + ':'+ myCurrentDate.getMinutes();
+        console.log(dateformat1);
+        
+
+        //30-Aug-2022 20:30:10
+        var dateformat1 = myCurrentDate.getDate() + '- '+ dateMonths1[myCurrentDate.getMonth()] + '- '+  myCurrentDate.getFullYear() +' ' + myCurrentDate.getHours() + ':'+ myCurrentDate.getMinutes() + ':'+ myCurrentDate.getSeconds();
+        console.log(dateformat1);
+
+    </script>
+
+</body>
+
+</html>

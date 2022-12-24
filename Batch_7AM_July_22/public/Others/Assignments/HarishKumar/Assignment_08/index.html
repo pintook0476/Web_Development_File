@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <!-- Main Section content -->
+
+    <div class="mani_section">
+
+        <!-- Form Section -->
+        <form action="#" method="post">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="formItems">
+                    <div class="formrow">
+                        <label for="name"> Student Name : </label>
+                        <input type="text" placeholder="Enter Full Name" name="stdName" required>
+                        <label for="language"> Programming Language : </label>
+                        <select id="language-select">
+                            <option value="" hidden> Please choose an option </option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">Web Development</option>
+                            <option value="C#">C#</option>
+                            <option value="c/c++">C / C++</option>
+                            <option value=".Net">.Net</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <label for="email"> Student mail : </label>
+                    <input type="text" placeholder="E-mail" name="email" required>
+                    <label for="gender"> Gender : </label>
+                    <input type="radio" name="gender" id="Male" value="Male">
+                    <label for="gender"> Male </label>
+                    <input type="radio" name="gender" id="Female" value="Female">
+                    <label for="gender"> Female </label>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- Educational Details -->
+
+            <fieldset>
+                <legend>Educational Details</legend>
+                <div class="formItems">
+                    <div class="formrow">
+                        <label for="Education"> Qualification : </label>
+                        <input type="text" placeholder="Qualification" name="qualification" required>
+                    </div>
+                </div>
+
+                <div class="formrow">
+
+                    <label for="language"> Language Known : </label>
+
+                    <input type="checkbox" id="Hindi" name="Language">
+                    <label for="Hindi">Hindi</label>
+
+                    <input type="checkbox" id="English" name="Language">
+                    <label for="English">English</label>
+
+                    <input type="checkbox" id="Telugu" name="Language">
+                    <label for="Telugu">Telugu</label>
+
+                    <input type="checkbox" id="Urdu" name="Language">
+                    <label for="Urdu">Urdu</label>
+
+                </div>
+
+                <div class="formrow">
+                    <label for="email"> Age : </label>
+                    <input type="text" placeholder="Age" name="Age" required>
+                </div>
+
+            </fieldset>
+
+
+            <!-- Address Details -->
+
+
+            <fieldset>
+                <legend>Address Details</legend>
+
+                <div class="formItems">
+                    <div class="formrow">
+                        <label for="dno"> House Number : </label>
+                        <input type="text" placeholder="House Number" name="dno" required>
+
+                        <label for="Landmark"> Landmark : </label>
+                        <input type="text" placeholder="Landmark" name="msg" required>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <label for="street"> Street : </label>
+                    <input type="text" placeholder="Street" name="street" required>
+                </div>
+
+                <div class="formrow">
+                    <label for="State"> State : </label>
+                    <select id="State-select">
+                        <option value="" hidden> Please choose an option </option>
+                        <option value="Odisa">Odisa</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                    </select>
+
+                </div>
+
+                <div class="formrow">
+                    <label for="District"> District : </label>
+                    <select id="District-select">
+                        <option value="" hidden> Please choose an option </option>
+                        <option value="kurnool">kurnool</option>
+                        <option value="hyderabad">hyderabad</option>
+                        <option value="KarimNagar">KarimNagar</option>
+                        <option value="Raipur">Raipur</option>
+                        <option value="Khurda">Khurda</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+
+            <!-- About yourself -->
+
+
+            <fieldset>
+                <legend>About Yourself</legend>
+                <div class="formrow">
+                    <label for="about"> About Yourself : </label>
+                    <input type="text" placeholder="say something aobut yourself" name="about" required>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p> &copy; Copyrights 2022 All right Resolved || HK Solution </p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Passing Params And Returning Values | by Dinesh</title>
+</head>
+<body>
+    <script>
+        function getDetails() {
+            var name, age, dept, sal, pf, hra, total;
+            name=prompt("Enter the Employee name")
+            age=prompt("Enter the Employee Age")
+            dept=prompt("Enter the Employee\'s Depatment")
+            sal=parseInt(prompt("Enter the Employee\'s Basic Salary"))
+            total= getCalculation(sal)
+            output(name, age, dept, total)
+        }
+        function getCalculation(sal) {
+            pf=sal*(5/100)
+            hra=sal*(15/100)
+            total=sal+pf+hra
+            return total
+        }
+        function output(name, age, dept, total) {
+            alert("Employee Name is "+name+"\nEmployee Age is "+age+"\nEmployee\'s Depatment "+dept+"\nEmployee\'s total Salary "+total)
+        }
+        getDetails()
+    </script>
+</body>
+</html>

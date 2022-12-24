@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local & Sesional Storage</title>
+    <script src='https://code.jquery.com/jquery-3.6.1.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 350px; */
+            height: 120px;
+            border: 1px solid;
+            padding: 20px 25px;
+            background: #577a8f;
+        }
+
+        h1 {
+            color: red;
+            padding-bottom: 10px;
+            user-select: none;
+        }
+
+        .form {
+            display: flex;
+        }
+
+        input[type=text] {
+            height: 40px;
+            width: 100%;
+            border: 1px solid green;
+            outline: none;
+            padding: 0 15px;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input[type=submit] {
+            height: 40px;
+            width: 90px;
+            background: green;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            font-weight: 550;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Background is <span class="innerText"></span></h1>
+        <div class="form">
+            <input type="text" placeholder="Enter Color">
+            <input type="submit" value="Sumbit" onclick="saveName()">
+        </div>
+    </div>
+    <script>
+        let nameDisplay = (uname) => {
+            $('.innerText').text(uname);
+            $('body').css("background", uname);
+        }
+
+        $(document).ready(function () {
+            if (localStorage.getItem('userName') != null) {
+                nameDisplay(localStorage.getItem("userName"));
+            }
+        });
+        let saveName = () => {
+            let name = $("input[type = text]").val();
+            localStorage.setItem("userName", name);
+            $('input[type=text]').val("");
+            $('body').css("background", name);
+            nameDisplay(name);
+        }
+    </script>
+</body>
+
+</html>

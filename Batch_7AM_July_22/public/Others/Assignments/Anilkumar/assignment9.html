@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .footer {
+            border: 3px solid goldenrod;
+            text-align: center;
+            font-size: 35px;
+            margin: 2px;
+            padding: 3px;
+            color: red;
+            background-color: rgb(10,30,50);
+        }
+
+        .footer {
+            font-size: 30px;
+        }
+
+        .maincontainer {
+            border: 3px solid;
+            width: auto;
+            height: auto;
+            margin: 2px;
+            overflow: auto;
+            background-color: gray;
+        }
+
+        .container {
+            border: 2px solid;
+            width: auto;
+            height: 200px;
+            margin: 25px;
+            padding: 2px;
+            background-color: aqua;
+        }
+
+        .block {
+            border: 2px solid;
+            width: 300px;
+            height: 40px;
+            margin: 5px;
+            position: relative;
+            left: 100px;
+            top: -20px;
+            background-color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 2px;
+            background-color: yellow;
+        }
+
+        li {
+            list-style: none;
+            margin: 2px 25px;
+            font-size: 25px;
+        }
+
+        .lablecontent {
+            width: 200px;
+            float: left;
+            padding: 4px;
+
+        }
+
+        .controller {
+            float: left;
+            width: 420px;
+            padding: 4px;
+        }
+
+        .lablecontent1 {
+            width: 200px;
+            float: left;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"> Student Registration Page</div>
+    <div class="maincontainer">
+        <div class="container">
+            <div class="block">
+                Personal Deatails
+            </div>
+            <li>
+                <div for="username" class="lablecontent">
+                    Student Name:
+                </div>
+                <div class="controller">
+                    <input type="text" name="username">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent">
+                    Course Opted:
+                </div>
+                <div class="controller">
+                    <select name="" id="">
+                        <option value="">Bcom</option>
+                        <option value="">Bsc</option>
+                        <option value="">Btech</option>
+                        <option value="">MBA</option>
+                        <option value="">MCA</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent">
+                    Mail Id:
+                </div>
+                <div class="controller">
+                    <input type="text" name="username">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent1">
+                    Gender:
+                </div>
+                <div class="controller">
+                    <input type="radio" name="username"> Male
+                    <input type="radio" name="username"> Female
+                </div>
+            </li>
+        </div>
+        <div class="container">
+            <div class="block">
+                Education Details
+            </div>
+            <li>
+                <div for="username" class="lablecontent">
+                    Qualification:
+                </div>
+                <div class="controller">
+                    <input type="text" name="username">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent" style="float:left; clear:both;">
+                    Languages Known:
+                </div>
+                <div class="controller">
+                    <input type="checkbox" name="username">Telugu
+                    <input type="checkbox" name="username">English
+                    <input type="checkbox" name="username">Urdu
+                    <input type="checkbox" name="username">Hindi
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent" style="float:left; clear:both">
+                    Avg Marks:
+                </div>
+                <div class="controller">
+                    <input type="text" name="username">
+                </div>
+            </li>
+
+        </div>
+        <div class="container">
+            <div class="block">
+                Address
+            </div>
+            <li>
+                <div for="username" class="lablecontent">
+                    D.NO:
+                </div>
+                <div class="controller">
+                    <input type="text" name="username">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent">
+                    Land Mark:
+                </div>
+                <div class="controller">
+                    <input type="text" name="">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent">
+                    Street Name:
+                </div>
+                <div class="controller">
+                    <input type="text" name="">
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent" style="float:left ; clear:both">
+                    State:
+                </div>
+                <div class="controller" style="float:left ; ">
+                    <select name="" id="">
+                        <option value="">Andrapradesh</option>
+                        <option value="">Telangana</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Tamilnadu</option>
+                        <option value="">Gujarath</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div for="username" class="lablecontent1">
+                    Country:
+                </div>
+                <div class="controller">
+                    <select name="" id="">
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">Japan</option>
+                        <option value="">China</option>
+                        <option value="">Dubai</option>
+                    </select>
+                </div>
+            </li>
+        </div>
+        <div class="container">
+            <div class="block">
+                About Your Self
+            </div>
+            <li>
+            <div for="username" class="lablecontent1">
+                About Your Self:
+            </div>
+            <textarea name="" id="" cols="50" rows="8"></textarea>
+        </li>
+        </div>
+    </div>
+    <div class="footer">
+        &#169;Copyrights2022
+    </div>
+</body>
+
+</html>

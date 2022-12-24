@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            validate Input (Dhtml Concept)
+        </title>
+        <link rel="stylesheet" href="./validate.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="section section1">
+                <h1></h1>
+                <div class="msg">Enter Password : </div>
+                <input type="text" id="password" placeholder="Mahak#23" onkeyup="validate(event);" onkeypress="lastChar(event);">
+                <div><input type="button" id="button" class="button" value="Enter"></div>
+            </div>
+            <div class="section section2">
+                <div class="" id="passwrdLength">Should be Total 8 Characters</div>
+                <div class="" id="uppercase">Should start with Upper case</div>
+                <div class="" id="symbol">Should have only one symbol</div>
+                <div class="" id="num">Should minimum have one number</div>
+                <div class="" id="endsWith">Should always end with a number</div>
+            </div>
+        </div>
+        <script src="./validate.js"></script>
+    </body>
+</html>

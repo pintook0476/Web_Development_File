@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var temp;
+            var data = [73, 30, 22,95, 31, 26, 89, 12];
+            var firstLargest = data[0];
+            var secondLargest = data[0];
+            for (var i = 1 ; i < data.length; i++) {
+                if (firstLargest < data[i]) {
+                    secondLargest = firstLargest;
+                    firstLargest = data[i];
+                }
+            }
+            console.log("firstLargest => " + firstLargest)
+            console.log("secondLargest - > " + secondLargest)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>employee Detail and tax calculation</title>
+    </head>
+    <body>
+        <h1>employee Detail and Tax Calculation Based on Gender</h1>
+        <h2>To Understand the consept of function</h2>
+        <script>
+            var name, age, gender, basicSal , totalSal ,tax;
+            function employeeDetails() {
+                name = prompt("Enter Employee Name :");
+                age = prompt("Enter Age :");
+                gender = prompt("Enter Gender :");
+                basicSal = prompt("Enter Salry :");
+                basicSal = parseInt(basicSal);
+            } 
+            function calculatingTotalSalary(){
+                var pf = basicSal * (14/100);
+                var hra = basicSal * (25/100);
+                totalSal = basicSal + pf + hra ;
+            }
+        function taxOnFemale() {
+            if( totalSal >= 200000){
+                tax = totalSal * 10/100 ;
+            } else if ( totalSal >= 100000){
+                tax = totalSal * 5/100 ;
+            } else {
+                tax = 0;
+            }
+        }
+        function taxOnMale() {
+            if( totalSal >= 200000){
+                tax = totalSal * 15/100 ;
+            } else if ( totalSal >= 100000){
+                tax = totalSal * 10/100 ;
+            } else if( totalSal >= 50000){
+                tax = totalSal * 5/100 ;
+            } else {
+                tax = 0;
+            }
+        }
+        function tax () {
+            if (gender == "male"){
+                taxOnMale();
+            } else {
+                taxOnFemale();
+            }
+        }
+        function output(){
+            employeeDetails() ;
+            console.log("Employee Name : " + name) ;
+            console.log("Employee Age : " + age) ;
+            console.log("Employee Gender : " + gender) ;
+            calculatingTotalSalary();
+            console.log("Employee Total Salary : " + totalSal) ;
+            tax();
+            console.log("Employee Payable Tax : " + tax) ;
+        }
+        output();
+        </script>
+    </body>
+</html>

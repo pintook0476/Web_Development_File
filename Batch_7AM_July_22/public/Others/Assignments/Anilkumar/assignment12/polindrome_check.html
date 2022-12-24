@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    polindrome number checking
+    <script type="text/javascript">
+        var n = prompt('enter a number');
+            n = parseInt(n);
+        var reverse = 0 ;
+        temp =n ;
+        while( n > 0){
+            var rem = n % 10 ;
+            reverse = reverse * 10 + rem;
+            var n = n / 10 ;
+                n = parseInt(n);
+        }   
+        n = temp ;
+        if( n == reverse){
+            console.log('the number polindrome' + n);
+        }else{
+            console.log('not polindrome' + n);
+        }
+
+    </script>
+</body>
+</html>

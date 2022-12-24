@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="title">
+        DEmonstrating - dynamically Reading Student Details & Displaying Back the progress card
+    </div>
+    <ul id="readBlock">
+        <li>
+            <input type="text" id="uname" placeholder="Enter employe name">
+        </li>
+        <li>
+            <input type="text" id="uage" placeholder="Enter employe Age">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </li>
+        <li>
+            <input type="text" id="udepartment" placeholder="Enter employe deparment">
+        </li>
+        <li>
+            Basic Salary:
+            <input type="text" id="basicsalary" placeholder="Enter basicsalary" maxlength="6">
+        </li>
+        <li>
+            <input type="button" value="GenarateProgressCard" onclick="empDetails.generateProgressCard()">
+        </li>
+    </ul>
+    <script>
+        var employeDetails = {
+            generateProgressCard() {
+                this.empName = document.querySelector("#uname").value;
+                this.empAge = document.querySelector('#uage').value;
+                this.empDepartment = document.querySelector('#udepartment').value;
+                this.gender = document.querySelector('input[name=gender]:checked').value;
+                this.basicSalary = document.querySelector('#basicsalary').value;
+                this.gettotalSal();
+            },
+            gettotalSal(basicSalary) {
+                this.totalSal = 0;
+                this.pf = 12 / 100 * this.basicSalary;
+                this.hra = 24 / 100 * this.basicSalary;
+                this.totalSal = this.pf + this.hra + this.basicSalary;
+                this.getTaxValue();
+            },
+            getTaxValue = () => {
+                this.TaxValue = 0;
+                if (this.gender == 'Male'){
+                    if (this.totalSal >= 500000) {
+                        this.TaxValue = this.totalSal * (15 / 100);
+                    } elseif (this.totalSal >= 300000) {
+                        this.TaxValue = this.totalSal * (10 / 100);
+                    } elseif (this.totalSal >= 100000) {
+                        this.TaxValue = 0;
+                    }
+                } elseif (this.gender == Female) {
+                    if (this.totalSal >= 500000) {
+                        this.TaxValue = this.totalSal * (10 / 100);
+                    } else (this.totalSal >= 300000) {
+                        this.TaxValue = 0;
+                    }
+                }
+                this.displayEmployeProgressCard();       
+            },
+            displayEmployeProgressCard() {
+                console.log(employeDetails)
+                document.querySelector("#d_name").innerHTML = this.empName;
+                document.querySelector("#d_age").innerHTML = this.empAge;
+                document.querySelector("#d_gender").innerHTML = this.gender;
+                document.querySelector("#d_department").innerHTML = this.empDepartment;
+                document.querySelector("#d_basic").innerHTML = this.basicSalary;
+                document.querySelector("#d_total").innerHTML = this.totalSal;
+                document.querySelector("#d_tax").innerHTML = this.TaxValue;
+            }
+        };
+    </script>
+</body>
+</html>

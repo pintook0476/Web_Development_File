@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Result is displayed in the Console window.</h3>
+    <h3>Please! check out Employee Details in the Console window. </h3>  
+    <script>
+        var ename = prompt('Enter Employee Name') ;
+         var age = prompt('Enter Employee Age') ;
+         var gender = prompt('Enter Employee Gender') ;
+         var dept = prompt('Enter Department') ;
+         var sal = prompt('Enter Salary') ;
+         sal = parseInt(sal);
+         var pf = sal * (14 /100);
+         var hra = sal * (24 /100);
+         var tsal = pf + hra + sal ;
+
+         console.log('Employee Name: '+ ename);
+         console.log('Employee Age: '+ age);
+         console.log('Employee Gender: '+ gender);
+         console.log('Employee Department: '+ dept);
+         console.log('Employee Salary: ' + sal);
+         console.log('PF: ' + pf);
+         console.log('HRA: ' + hra);
+         console.log('Total Salary: ' + tsal);
+    </script>
+</body>
+</html>

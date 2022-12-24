@@ -1,0 +1,292 @@
+/* .item,
+.left,
+.right {
+    padding: 10px;
+    background: orange;
+    border: 1px solid #000;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 200px);
+}
+*/
+
+
+/* ### Layout  -  02 */
+/* .container {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.box-a {
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.box-b {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.box-e {
+    grid-column: 1/span 3;
+    grid-row: span 3;
+} */
+
+/* ### Layout  -  03 */
+/*
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 80px 120px 400px 100px;
+    grid-gap: 20px;
+}
+
+.header {
+    grid-column: 1/-1;
+    grid-row: 1;
+    background: royalblue;
+}
+
+.menu {
+    grid-column: 1/-1;
+    grid-row: 2;
+    background: #111;
+    color: #fff;
+}
+
+.box {
+    background: orange;
+}
+
+.sidebar {
+    grid-column: 3/-1;
+    grid-row: 3/5;
+    background: yellow;
+}
+
+.content {
+    grid-column: 1/3;
+    grid-row: 4;
+    background: gray;
+}
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 5;
+    background: royalblue;
+}
+*/
+
+
+/* ### Layout  -  04 */
+
+/*
+.container {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 200px);
+}
+
+.item {
+    border: 1px solid #000;
+}
+
+.one {
+    background: red;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.two {
+    background: red;
+    grid-column: 3/-1;
+    grid-row: 1;
+}
+
+.three {
+    background: green;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.four {
+    background: green;
+    grid-column: 2/-1;
+    grid-row: 2;
+}
+
+.five {
+    background: royalblue;
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+*/
+
+/* ### Layout  -  05 */
+/* .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 150px);
+}
+
+.item {
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #000;
+}
+
+.item:nth-child(odd) {
+    background: gray;
+}
+
+.item:nth-child(even) {
+    background: green;
+} */
+
+
+/* ### Layout  -  06 
+
+.container {
+    padding: 15px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.item {
+    background: orange;
+}
+
+.one {
+    background: red;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.seven {
+    background: transparent;
+    border: 1px solid #000;
+    grid-column: 4/-1;
+    grid-row: 2;
+}
+
+.eight {
+    background: green;
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.twelve {
+    background: transparent;
+    border: 1px solid #000;
+    grid-column: 4/-1;
+    grid-row: 4;
+}
+
+.thirteen {
+    background: royalblue;
+    grid-column: 1/4;
+    grid-row: 5;
+}
+*/
+
+/* ### Layout  -  07 */
+/*
+.container {
+    padding: 15px;
+    display: grid;
+    grid-gap: 10px 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 400px;
+}
+
+.item {
+    background: orange;
+}
+
+.box {
+    background: gray;
+}
+
+.inner_item {
+    padding: 10px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item_1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+*/
+
+/* ### Layout  -  08 */
+/*
+
+.container {
+    padding: 15px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 200px);
+}
+
+.item {
+    background: orangered;
+}
+
+.box8 {
+    grid-column: 3/-1;
+    grid-row: 2;
+    background: green;
+}
+
+.box9 {
+    grid-column: 1/-1;
+    grid-row: 3;
+    background: lightseagreen;
+}
+*/
+
+
+/* ### Layout  -  09 */
+.container {
+    padding: 15px;
+    display: grid;
+    grid-gap: 10px 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.item {
+    background: orange;
+}
+
+.box1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    background: lightseagreen;
+}
+
+.box2 {
+    grid-row: 2/-1;
+    grid-column: 1;
+}
+
+.box3 {
+    grid-column: 2/-1;
+    grid-row: 2;
+    background: royalblue;
+}

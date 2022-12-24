@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assingment-9</title>
+    <style>
+        h3 {
+            border: 2px solid;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            border: 2px solid;
+            margin: auto;
+        }
+        
+        .description {
+            display: inline-block;
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 90px;
+            width: 200px;
+        }
+        
+        .input {
+            padding: 8px 4px;
+            width: 300px;
+            margin: 10px;
+        }
+        
+        form {
+            border: 2px solid;
+            margin: 30px;
+        }
+        
+        .personal {
+            position: absolute;
+            border: 2px solid;
+            width: 200px;
+            padding: 4px;
+            font-size: 20px;
+            left: 106px;
+            top: 153px;
+            background-color: #fff;
+        }
+        
+        .education {
+            position: absolute;
+            border: 2px solid;
+            width: 200px;
+            padding: 4px;
+            font-size: 20px;
+            left: 106px;
+            top: 375px;
+            background-color: #fff;
+        }
+        
+        .address {
+            position: absolute;
+            border: 2px solid;
+            width: 200px;
+            padding: 4px;
+            font-size: 20px;
+            left: 106px;
+            top: 593px;
+            background-color: #fff;
+        }
+        
+        .about {
+            position: absolute;
+            border: 2px solid;
+            width: 200px;
+            padding: 4px;
+            font-size: 20px;
+            left: 106px;
+            top: 890px;
+            background-color: #fff;
+        }
+        
+        .textarea {
+            margin-left: -80px;
+        }
+        
+        .aboutyourselfcontainer {
+            padding: 20px;
+        }
+        
+        .aboutyourselfdescription {
+            font-size: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            position: relative;
+            top: -155px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Student Registration Form</h3>
+    <span class="personal">Personal Details</span>
+    <span class="education">Education Details</span>
+    <span class="address">Address</span>
+    <span class="about">About Yourself</span>
+    <div class="container">
+        <form>
+            <ul>
+                <li>
+                    <span class="description"> Student Name: </span>
+                    <span><input class="input" type="text" name="name"></span>
+                    <span class="description cource"> Cource Option: </span>
+                    <span><input class="input" type="text" name="name" list="courceOption"></span>
+                </li>
+                <datalist id="courceOption">
+                    <option>Full Stack Python</option>
+                    <option>Full Stack UI</option>
+                    <option>Full Stack Java</option>
+                    <option>Full Stack .net</option>
+                </datalist>
+                <li>
+                    <span class="description">Email ID:</span>
+                    <span><input class="input" type="email" name="email"> </span>
+                </li>
+                <li>
+                    <span class="description">Gender:</span>
+                    <span><input type="radio" value="Male" name="gender">Male </span>
+                    <span><input type="radio" value="female" name="gender">Female </span>
+                </li>
+            </ul>
+
+        </form>
+        <form>
+            <ul>
+                <li>
+                    <span class="description"> Qualification: </span>
+                    <span><input class="input" type="text" name="qualification"></span>
+                </li>
+                <li>
+                    <span class="description">Languages Known:</span>
+                    <span><input type="checkbox" name="qualification" value="english">English</span>
+                    <span><input type="checkbox" name="qualification" value="hindi">Hindi</span>
+                    <span><input type="checkbox" name="qualification" value="telugu">Telugu</span>
+                </li>
+                <li>
+                    <span class="description">Average Marks:</span>
+                    <span><input class="input" type="number" name="marks"> </span>
+                </li>
+            </ul>
+        </form>
+        <form>
+            <ul>
+                <li>
+                    <span class="description"> Dno: </span>
+                    <span><input class="input" type="text" name="dno."></span>
+                    <span class="description"> LandMark: </span>
+                    <span class="textarea"><textarea  name="textarea" rows="2" cols="40"></textarea></span>
+                </li>
+                <li>
+                    <span class="description">Street Name:</span>
+                    <span><input class="input" type="text" name="streetname"></span>
+                </li>
+                <li>
+                    <span class="description">State:</span>
+                    <span><input class="input" type="text" name="state" list="states"> </span>
+                </li>
+                <datalist id="states">
+                    <option>Andra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option>Gujrat</option>
+                    <option>Telengana</option>
+                    <option>Delhi</option>
+                    <option>Punjab</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Goa</option>
+                    <option>Jammu & Kashmir</option>
+                    <option>Kerala</option>
+                    <option>Odisa</option>
+                </datalist>
+                <li>
+                    <span class="description">Country:</span>
+                    <span><input class="input" type="text" name="country" list="country"> </span>
+                </li>
+                <datalist id="country">
+                    <option>India</option>
+                    <option>Russia</option>
+                    <option>China</option>
+                    <option>Indonesia</option>
+                    <option>Sri Lanka</option>
+                    <option>Thailand</option>
+                    <option>Spain</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                </datalist>
+            </ul>
+        </form>
+        <form class="aboutyourselfcontainer">
+            <span class="aboutyourselfdescription">About Your self:</span>
+            <span><textarea name="aboutyourself" class="aboutyourself" cols="120" rows="20"></textarea></span>
+        </form>
+    </div>
+</body>
+
+</html>

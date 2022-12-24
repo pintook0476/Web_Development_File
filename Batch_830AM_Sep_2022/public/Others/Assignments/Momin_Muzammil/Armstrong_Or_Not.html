@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong or not</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Enter any number");
+        
+        var sum=0,r;
+        var temp=num;
+        while(num !=0){
+            r=num%10;
+            sum=sum+(r*r*r);
+            num = num/10;
+            num = parseInt(num);
+        }
+        if(sum==temp){
+            console.log(temp+" = The Number is Armstrong ");
+        }
+        else{
+            console.log(temp+" = The Number is not Armstrong ");
+        }
+    </script>
+</body>
+</html>

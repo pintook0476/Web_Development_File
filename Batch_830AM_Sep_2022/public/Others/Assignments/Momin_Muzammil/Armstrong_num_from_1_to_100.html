@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong or not</title>
+</head>
+
+<body>
+    <script>
+        for (var num = 1; num <= 1000; num++) {
+
+            var digit = num.toString().length;
+            var sum = 0;
+            var temp = num;
+            while (temp > 0) {
+
+                var remainder = temp % 10;
+                sum += remainder ** digit;
+                temp = parseInt(temp / 10);
+            }
+
+            if (sum == num) {
+                console.log(num+" = is armstrong");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

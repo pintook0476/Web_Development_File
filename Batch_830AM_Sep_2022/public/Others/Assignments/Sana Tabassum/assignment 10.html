@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<title> 20 assignments in one html</title>
+<head>
+<style>
+    body{
+        background-image: linear-gradient(black,rgb(192, 160, 66));
+    }
+    #container{
+    position:relative;
+    height:40rem;
+    width:45rem;
+    left:40rem;
+    top:2rem;
+    text-align: center;
+    border-radius: 4px;
+    background-image:linear-gradient(rgb(121, 80, 8),rgb(237, 188, 121));
+
+  }
+  .content{
+    position:relative;
+    height:40rem;
+    width:38rem;
+    bottom:38rem;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(239, 192, 121);
+    border: 2px solid orange;
+    z-index:1;
+  }
+  #content1{
+    position:absolute;
+    height:70%;
+    width: 30%;
+    left:30%;
+    bottom:20%;
+    display:none;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(221, 85, 52);
+    border: 2px solid orange;
+    z-index:100;
+  }
+  #content2{
+  position: relative;
+  height:8.5rem;
+    width:32rem;
+    display: none;
+    left:3rem;
+    bottom:13rem;
+    border-radius: 4px;
+    background-color: rgb(210, 237, 147);
+    border: 2px solid rgb(6, 73, 30)5
+  }
+    button{
+    
+    height: 7%;
+    width:20%;
+    background-color: rgb(12, 10, 10)234, 226, 226;
+    border:none;
+    font-size:1.5rem;
+    position: relative;
+    top:10%;
+    cursor:pointer;
+    }
+    #reset2{
+    
+    height: 7%;
+    width:20%;
+
+    border:none;
+    font-size:1.5rem;
+    position: absolute;
+    top:90%;
+    
+    cursor:pointer;
+    }
+    #close{
+      position: absolute;
+      height: 7%;
+      width:50%;
+      right:6rem;
+      top:90%;
+     
+    border:none;
+    font-size:1.5rem;
+    cursor:pointer;
+    }
+    #close:active{
+      background-color: rgb(134, 128, 128);
+    }
+    h1{
+      position: relative;
+      top:2rem;
+      color:white;
+    }
+    h2{
+      position: relative;
+      top:4rem;
+      color:white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    
+    h2 input{
+        height: 1.8rem;
+        color:black;
+        font-size: 20px;
+    }
+    h3{
+        position: relative;
+      
+      color:white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    h3 input{
+        height: 2rem;
+        color:black;
+    }
+    
+    #text4{
+      width:20%;
+      height:10%;
+      background-color: aliceblue;
+      font-size:36px;
+      position: relative;
+      left:4rem;
+      top:5px;
+    }
+    #text3{
+      position: relative;
+      font-size:20px;
+    }
+     
+   h5{
+    color:white;
+    position: relative;
+    top:1rem;
+    right:2rem;
+    font-size: 29px;
+   }
+   p{
+    position: relative;
+    top:4rem;
+    font-size: 20px;
+    color:white;
+
+   }
+   #head{
+    position:relative;
+    bottom:0;
+    top:3rem;
+    height:100%;
+    font-size:30px;
+    color:black;
+    text-align: center;
+
+   }
+   h1{
+    position: relative;
+    color:white;
+    text-align: center;
+   }
+   li{
+    position: relative;
+    right: 3px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+   }
+   
+   ol{
+    font-size: 36px;
+    
+   }
+   ol :active{
+    background-color: rgb(236, 77, 14);
+   }
+   #single{
+    position: relative;
+    color:white;
+    font-size: 28px;
+    text-align: left;
+   }
+   #double{
+    position: absolute;
+    color:white;
+    font-size: 28px;
+    left:50%;
+    
+   }
+   #one{
+position: relative;
+color:black;
+font-size: 26px;
+bottom:1rem;
+   }
+   #andtag{
+  position: absolute;
+   top: 5px;
+   left:78%;
+   top:77%;
+   color:grey;
+   font-size:26px;
+  
+   
+
+   }
+   span{
+   position:absolute;
+   left:90%;
+   bottom:4.2rem;
+   font-weight: bold;
+   font-size: 2.2rem;
+   color: black;
+   cursor:pointer;
+   }
+   #para1{
+    position: relative;
+    color:black;
+  top:2rem;
+  
+    font-size: 32px;
+   }
+    </style>
+    </head>
+    <body>
+      <h1 id="single">Click the questions for a single input</h1>
+      <h1 id="double">click  for a double inputs</h1>
+   <div id ="container">
+    <h1>Simple Calculator</h1>
+    <h2 id="xvlaue">Press the number :&nbsp;<input type="text" id="text1" value="" name="tag" ></h2>
+    <h2 id="yvlaue">Press the number :&nbsp;<input type="text" id="text2" value=""  name="tag"></h2>
+    <p id="options">Press  +/LCM/GCD :&nbsp;<input type="text" id="text3" value="" name="tag" ></p>
+    
+
+    
+    <button id="submit" onclick="mySub()" >Submit</button>&nbsp;<button id="reset" onclick="myReset()">Reset</button><br>
+    <h5>Result :<input id="text4" type="text" value=""  name="tag"></h5>
+  <ol>
+    <li id="list13">check the vowels and consonants with array and length of a string?</li>
+    <li id="list14">find the ascending and descending order in array?</li>
+"{P:>.......
+  "
+
+  </ol>
+</div>
+<div id="content1">
+  <div id ="head">hello</div>
+  <pi id="foot"></p>
+  <button id="close">close</button>
+</div>
+<div class="content"id ="container2">
+    
+    <ol>
+   <li id="list1">Check whether the number is even or odd?</li>
+   <li id="list2">find the largest number among them?</li>
+   <li id="list3">check whether a number is position or negative?</li>
+  <li id="list4">check whether the number is prime or not ?</li>
+<li id="list5"> check Armstrong number?</li>
+<li id="list6"> Find the Factors of a given number?</li>
+<li id="list7"> Find the Factorial of a number?</li>
+<li id="list8"> Find the Fabonacci sequence?</li>
+<li id="list9"> Find the roots of a quadratic equation?</li>
+<li id="list10">find the multiplication of a table?</li>
+<li id="list11">display Alphabets A-Z using loop?</li>
+<li id="list12">display the array of first letter value in uppercase?</li>
+
+
+
+
+
+
+    </ol>
+   
+    <h3 id="one">Enter the number:&nbsp;<input type="text" id="text10" value="" name="tag" ></h3>
+    <span id="andtag">&times;</span>
+    <div id="content2">
+      
+     <p id="para1">enter the number </p>
+     <span id="and">&times;</span>
+    </div>
+    
+</div>
+<script type="text/javascript">
+ function mySub(){
+
+  var x=parseFloat(document.getElementById("text1").value);
+  var y=parseFloat(document.getElementById("text2").value);
+  var o=document.getElementById("text3").value;
+  
+  
+    
+  switch(o){
+  case "+":
+    var result=x+y;
+  document.getElementById("text4").value=parseFloat(result);
+  break;
+  case "-":
+    var result=x-y;
+  document.getElementById("text4").value=result;
+  break;
+  case "/":
+    var result=x/y;
+  document.getElementById("text4").value=result;
+  break;
+  case "*":
+    var result=parseInt(x)*parseInt(y);
+    document.getElementById("text4").value=result; 
+  break;
+  case "LCM":
+    var max=(x>y) ? x : y;
+    var lcm=max;
+    while(true){
+      if(lcm%x==0 && lcm%y==0){
+        break;
+      }
+      lcm++;
+    }
+    document.getElementById("text4").value=lcm; 
+    break;
+  
+  case "GCD":
+    var min=(x<y) ? x : y;
+    var gcd;
+    for( var i=1;i<=min;i++){
+    if(x%i==0 && y%i==0){
+      gcd=i;
+    }
+    }
+    document.getElementById("text4").value=gcd; 
+    break;
+  }
+};
+
+
+function myReset(){
+ document.getElementById("text1").value="";
+  document.getElementById("text2").value="";
+  document.getElementById("text3").value="";
+  document.getElementById("text4").value="";
+  document.getElementById("text5").innerHTML="";
+  document.getElementById("text6").innerHTML="";
+  document.getElementById("text7").innerHTML="";
+  document.getElementById("text8").innerHTML="";
+  document.getElementById("text9").innerHTML="";
+  document.getElementById("text10").value="";
+}
+
+
+//ecma 6//
+const li1=document.getElementById("list1");
+const li2=document.getElementById("list2");
+const li3=document.getElementById("list3");
+const li4=document.getElementById("list4");
+const li5=document.getElementById("list5");
+const li6=document.getElementById("list6");
+const li7=document.getElementById("list7");
+const li8=document.getElementById("list8");
+const li9=document.getElementById("list9");
+const li10=document.getElementById("list10");
+const li11=document.getElementById("list11");
+const li12=document.getElementById("list12");
+const li13=document.getElementById("list13");
+const li14=document.getElementById("list14");
+const para=document.getElementById("para1");
+const and=document.getElementById("and");
+const antag=document.getElementById("andtag");
+const closed=document.getElementById("close");
+const cont=document.getElementById("content2");
+const cont1=document.getElementById("content1");
+const button=document.getElementById("reset");
+const text=document.getElementById("text10");
+
+li1.addEventListener("click",()=>{
+  
+let display= document.getElementById("content2").style.display="block";
+let user=document.getElementById("text10").value;
+
+count =0;
+    if(user %2==0){
+    
+        document.getElementById("para1").innerHTML=user+"&nbsp&nbsp"+"its a even number";
+    }else{
+        document.getElementById("para1").innerHTML=user+"&nbsp&nbsp"+"its a odd number";
+    }
+});
+li2.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  var num1,arr;
+  num1=document.getElementById("text10").value;
+   arr=num1.toString().split("");
+   if(num1>0){
+    document.getElementById("para1").innerHTML=Math.max(...arr)+" : is a largest number";
+   }
+   else{
+    document.getElementById("para1").innerHTML="its an smallest ";
+   }
+  });
+  li3.addEventListener("click",()=>{
+    let display= document.getElementById("content2").style.display="block";
+   var num2;
+   num2=parseInt(document.getElementById("text10").value);
+   if(Math.sign(num2)===1){
+    document.getElementById("para1").innerHTML=num2+":  is  a positive number(+)";
+   }
+   else if(Math.sign(num2)===-1){
+    document.getElementById("para1").innerHTML=num2+":  is a negative number(-)";
+   }
+});
+li4.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  var num,i,count=0;
+    num=document.getElementById("text10").value;
+  for (i=2;i<num;i++){
+    if(num%2==0){
+        count++;
+        break;
+    }
+  }
+  if(count==0){
+    document.getElementById("para1").innerHTML=num+"&nbsp&nbsp"+": is a prime number";
+  }else{
+    document.getElementById("para1").innerHTML=num+"&nbsp&nbsp"+": is not a prime number";
+  }
+});
+li5.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  var num3;
+   num3=document.getElementById("text10").value;
+   n=num3.length;
+   sum=0;
+   
+   for(i=0;i<n;i++){
+    let digit =num3[i]-0;
+    sum=(sum+Math.pow(digit,n));
+
+   }
+   if(sum == num3){
+    document.getElementById("para1").innerHTML=num3+" : is a Armstrong number";
+   } else{
+    document.getElementById("para1").innerHTML="its not a Armstrong number";
+   }
+
+});
+li6.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  let num3=document.getElementById("text10").value;
+  for (i=1;i<=num3;i++){
+    if(num3%i==0){
+      document.getElementById("para1").innerHTML="factor of "+num3+"is :"+"<br>"+i;
+    }
+   
+   } 
+  
+
+});
+li7.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  let num3=document.getElementById("text10").value;
+ if(num3<0){
+  document.getElementById("para1").innerHTML="factorial of negative does not exist";
+    }
+    else if(num3==0){
+      document.getElementById("para1").innerHTML=1;
+    }else{
+      var num=1;
+      for(i=1;i<=num3;i++){
+      num=num*i
+      }
+      document.getElementById("para1").innerHTML="factorial number is:"+"<br>"+num;
+    }
+    });
+    li8.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  let num=document.getElementById("text10").value;
+  let n1=0,n2=1,n3;
+  
+  for( let i=1;i<=num;i++){
+    document.getElementById("para1").innerHTML="sequence of"+num+"is: "+n1;
+    n3=n1+n2;
+    n1=n2;
+    n2=n3; 
+   
+  }
+  
+    });
+    li9.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  let num=document.getElementById("text10").value;
+   let ans =Math.sqrt(num);
+
+ document.getElementById("para1").innerHTML="sqrt of"+num+"is: "+ans;
+    });
+  li10.addEventListener("click",()=>{
+  let display= document.getElementById("content1").style.display="block";
+  let num=document.getElementById("text10").value;
+  let result="";
+  for( let i=1;i<=10;i++){
+    result=result+"<p>"+num+"*"+i+"="+num*i+"<p>";
+  }
+  document.getElementById("head").innerHTML=result ;
+    });
+    li11.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  para1.innerHTML="check in console";
+
+  var first="A",last="Z";
+  var str;
+for (var i=first.charCodeAt(0);i<=last.charCodeAt(0);i++){
+ str=(eval("String.fromCharCode("+i+")"));
+ console.log(str);
+};
+
+});
+li12.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+  let num=document.getElementById("text10").value;
+  
+  const Names=[num];
+ const cap=Names.map(Element=>{
+  return Element.charAt(0).toUpperCase()+Element.substr(1);
+ });
+ document.getElementById("para1").innerHTM="uppercase of first alphabet is ;"+"<br>"+cap;
+});
+li13.addEventListener("click",()=>{
+  let display= document.getElementById("content2").style.display="block";
+
+  let num3=document.getElementById("text10").value;
+
+  let count=0;
+  let vowels=["a","e","i","o","u"];
+  for(i=0;i<num3.length;i++){
+  let letter=num3[i].toLowerCase();
+  if(vowels.includes(letter)){
+    count++;
+  }
+  
+  }
+  document.getElementById("para1").innerHTML="vowels is:"+count+"<br>"+"consonants is:"+(display.length-count)+"<br>"+"length :"+
+  num3.length;
+ 
+});
+li14.addEventListener("click",()=>{
+  var display= document.getElementById("content2").style.display="block";
+
+  var num3=document.getElementById("text10").value;
+  var array=num3.split("");
+  document.getElementById("para1").innerHTML="Ascending order"+array.sort()+"<br>"+"Descending order"+array.reverse();
+});
+
+and.addEventListener("click",()=>{
+cont.style.display="none";
+});
+antag.addEventListener("click",()=>{
+  text.value="";
+})
+closed.addEventListener("click",()=>{
+cont1.style.display="none";
+});
+
+  
+  
+ 
+
+
+
+</script>
+    </body>
+</html>

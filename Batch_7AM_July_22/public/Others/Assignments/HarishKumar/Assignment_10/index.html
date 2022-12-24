@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate The total salary of Software Engineer</title>
+</head>
+
+<h1>Calculate The total salary of Software Engineer</h1>
+
+<body>
+
+    <script type="text/javascript">
+
+        // Taking Input from User (Dynamically)
+        var ename = prompt("Enter The Employee Name");
+        var age = prompt("Enter The Employee Age");
+        var Gender = prompt("Enter The Employee Gender");
+        var bSalary = prompt("Enter The Employee Salary");
+        bSalary = parseInt(bSalary);
+
+        // Calculating The pf + hra + basic Salary 
+        var pf = bSalary * (14 / 100);
+        var hra = bSalary * (25 / 100);
+        var totalSalary = pf + hra + bSalary;
+        console.log(totalSalary);
+
+        // Income Tax Slab For indian Citizen
+        var tax_15 = totalSalary * (15 / 100);
+        var tax_10 = totalSalary * (10 / 100);
+        var tax_5 = totalSalary * (5 / 100);
+
+        // Income Tax Slab For Male
+        if (Gender == "Male" || Gender == "male") {
+            if (totalSalary >= 200000) {
+                console.log('Mr.', ename, 'you have to pay ', tax_15, 'Rupees of your total salary.');
+            }
+            else if (totalSalary >= 100000) {
+                console.log('Mr.', ename, 'you have to pay ', tax_10, 'Rupees of your total salary.');
+            }
+            else if (totalSalary >= 50000) {
+                console.log('Mr.', ename, 'you have to pay ', tax_5, 'Rupees of your total salary.');
+            }
+            else {
+                console.log(ename, "You Are not able to pay Tax -> Pls Increse you salary");
+            }
+        }
+        // Income Tax Slab For Female
+        else {
+            if (totalSalary >= 200000) {
+                console.log('Mrs.', ename, 'you have to pay ', tax_10, 'Rupees of your total salary.');
+            }
+            else if (totalSalary >= 100000) {
+                console.log('Mrs.', ename, 'you have to pay ', tax_5, 'Rupees of your total salary.');
+            }
+            else if (totalSalary >= 50000) {
+
+                console.log(ename, "You don't need to pay Tax");
+            }
+            else {
+                console.log("You Are not able to pay Tax -> Pls Increse you salary");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Assignment 9</title>
+
+
+
+    <style>
+        H3 {
+            width: 550px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+
+        .main {
+            border: 1px solid;
+            background-color: rgb(148, 148, 141);
+            width:550px;
+            margin: auto;
+            margin-top: 15px;
+            position: relative;
+        }
+
+        .PersonalDetails {
+            width: 500px;
+            height: 150px;
+            border: 1px solid;
+            margin-top: 50px !important;
+            margin: 5px auto;
+            padding-top: 20px;
+            padding-left: 15px;
+            border-radius: 20px;
+            background-color: rgb(206, 199, 199);
+
+        }
+
+        .EducationDetails {
+            width: 500px;
+            height: 108px;
+            border: 1px solid;
+            margin-top: 10px !important;
+            margin: 5px auto;
+            padding-top: 20px;
+            padding-left: 15px;
+            border-radius: 20px;
+            background-color: rgb(206, 199, 199);
+
+
+        }
+
+        .Address {
+            width: 500px;
+            height: 210px;
+            border: 1px solid;
+            margin-top: 10px !important;
+            margin: 5px auto;
+            padding-top: 20px;
+            padding-left: 15px;
+            border-radius: 20px;
+            background-color: rgb(206, 199, 199);
+
+        }
+
+        .AboutYourself {
+            width: 500px;
+            height: 210px;
+            border: 1px solid;
+            margin-top: 10px !important;
+            margin: 5px auto;
+            padding-top: 20px;
+            padding-left: 15px;
+            border-radius: 20px;
+            background-color: rgb(206, 199, 199);
+
+        }
+
+
+        .FloatDivs1 {
+            border: 1px solid;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(9, 9, 248, 1);
+            position: absolute;
+            left: 27%;
+            top: 39px;
+
+        }
+
+        .FloatDivs2 {
+            border: 1px solid;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(9, 9, 248, 1);
+            position: absolute;
+            left: 27%;
+            top: 225px;
+
+        }
+
+        .FloatDivs3 {
+            border: 1px solid;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(9, 9, 248, 1);
+            position: absolute;
+            left: 27%;
+            top: 365px;
+
+        }
+
+        .FloatDivs4 {
+            border: 1px solid;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(9, 9, 248, 1);
+            position: absolute;
+            left: 27%;
+            top: 607px;
+
+        }
+
+        /* #StudentName {
+            margin-top: 50px !important;
+            padding: 20px;
+            border: 1px solid red;
+        } */
+        .emailId {
+            width: 122px;
+        }
+
+
+        .emailId {
+            margin-right: 36px;
+        }
+
+        .star {
+            font-size: 10px;
+            color: red;
+        }
+
+        #gender {
+            padding-right: 44px;
+        }
+
+
+
+        .qualification {
+            padding-right: 29px;
+        }
+
+        .Language {
+            margin-left: 29px;
+        }
+
+        .avgMarks {
+            padding-right: 44px;
+        }
+
+        .d_no {
+            padding-right: 58px;
+        }
+
+        .street {
+            padding-right: 36px;
+        }
+
+        .LandMark {
+            padding-right: 42px;
+        }
+
+        .country {
+            padding-right: 63px;
+        }
+
+        .State {
+            padding-right: 82px;
+        }
+
+        textarea {
+            margin: 10%;
+            margin-top: 10px;
+        }
+        footer{
+            /* border: 1px solid rgb(206, 199, 199); */
+            height: 30px;
+            width: 500px;
+            padding: 20px;
+            padding-left: 207px;
+            margin: auto;
+        }
+        /* .footerInput{
+            margin: 10px;
+        } */
+    </style>
+</head>
+
+<body style="background-color: rgba(0, 0, 0, 0.197);">
+    <h3>
+        STUDENT REGISTRATION PAGE
+    </h3>
+    <div class="main">
+        <div class="FloatDivs1">Personal Details</div>
+
+        <div class="FloatDivs2">Educational Details</div>
+
+        <div class="FloatDivs3">Address Details</div>
+
+        <div class="FloatDivs4">About Yourself</div>
+
+
+        <form action="https//:www.googgle12.com" method="get">
+            <div class="PersonalDetails">
+                <label for="PersonalDetails" id="StudentName">
+                    Student Name
+                </label>
+                <span class="star">
+                    *
+                </span>
+                <input type="text" class="emailId" required >
+                <br>
+                <br>
+                <label for="emailId" class="emailId" >Email Id
+
+
+                </label>
+                <span class="star">
+                    *
+                </span>
+                <input type="email" name="Email" class="emailId" required placeholder="Email">
+                <br>
+                <br>
+                <label for="Gender" id="gender">Gender</label>
+                <span class="star">
+                    *
+                </span>
+                <input type="radio" name="Gender" value="Female" id="" required>Female
+                <input type="radio" name="Gender" id="" value="Male" required>Male
+                <br>
+                <br>
+                <label for="Courses">
+                    Courses Opted
+                </label>
+                <span class="star">
+                    *
+                </span>
+                <input type="text" class="emailId" required>
+
+            </div>
+
+
+            <div class="EducationDetails">
+                <label for="qualification" class="qualification">
+                    Qualification
+                </label>
+                <input type="text" class="emailId" required>
+                <br><br>
+                <label for="language" class="languageKnown">
+                    Language Known
+                </label>
+                <input type="checkbox" value="Eng" name="English" class="Language">English
+                <input type="checkbox" value="Hin" name="Hindi" class="Language">Hindi
+                <input type="checkbox" value="Tel" name="Telugu" class="Language">Telugu
+                <input type="checkbox" value="other" name="Other" class="Language">Other
+                <br><br>
+                <label for="avgMarks" class="avgMarks">
+                    Avg Marks
+                </label>
+                <input type="number" class="emailId" name="avgMarks">
+            </div>
+
+
+            <div class="Address">
+                <label for="dno" class="d_no">
+                    Door No
+                </label>
+                <input type="text" class="emailId" name="dno">
+                <br><br>
+                <label for="street" class="street">
+                    Street Name
+                </label>
+                <input type="text" class="emailId" name="StreetName" >
+                <br><br>
+
+                <label for="LandMark"  class="LandMark">
+                    Land Mark
+                </label>
+                <input type="text" class="emailId"name="LandMark">
+                <br><br>
+
+
+                <label for="State" class="State">State</label>
+                <select name="state" id="state" class="form-control">
+                    <option value="none">Select</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman Ni</option>
+                    <option value="Arunachal Pradesh">Arunachal P</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal P</option>
+                    <option value="Jammu and Kashmir">Jammu Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya P</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar P</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+
+                <br><br>
+                <label for="country" class="country">Country</label>
+                <select name="country" id="101">
+                    <option value="none">Select</option>
+                    <option value="India">India</option>
+                    <option value="Usa">Usa</option>
+                    <option value="Japane">Japane</option>
+                    <option value="China">China</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Thiland">Thiland</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                </select>
+
+
+            </div>
+
+
+            <div class="AboutYourself">
+                <label for="aboutYourself">
+                    Write about Yourself
+                </label>
+                <br>
+                <textarea name="aboutUser" id="" cols="50" rows="10" >
+
+                </textarea>
+
+            </div>
+            <footer>
+<input type="submit" class="footerInput">
+<input type="reset"class="footerInput">
+            </footer>
+            <div style="color:blue; font-style: italic; font-size: small; text-align:center;">
+                @copyright2022
+            </div>
+    </div>
+    </form>
+
+</body>
+
+</html>

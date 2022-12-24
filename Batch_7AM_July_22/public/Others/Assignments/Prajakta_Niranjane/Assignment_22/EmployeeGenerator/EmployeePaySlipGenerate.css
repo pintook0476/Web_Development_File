@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   .mainContainer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(9, 80, 172);
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgb(233, 231, 231);
+   }
+   div .heading {
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgb(9, 80, 172);
+    color: rgb(248, 244, 244);
+    border-radius: 5px; 
+   }
+   #logoContainer {
+    height: 38px;
+    width: 45px;
+    margin-left: 55px;
+    float: left;
+   }
+   #headingContainer {
+    height: 50px;
+    width: 330px;
+    display: inline;
+    float: right;
+    margin-right: 60px;
+   }
+   #logoContainer img {
+    width: 40px;
+    border-radius: 40px;
+   }
+  .readStuData{
+   list-style: none;
+   width: 80%;
+   margin: 10px auto;
+  }
+   input {
+     color: rgb(9, 80, 172);  
+   }
+  .input{
+   height: 25px;
+   width: 425px;
+   border: 1px solid rgb(9, 80, 172);
+   margin: 5px auto;
+   padding: 5px;
+   border-radius: 5px;
+  }
+  .gen {
+   border: 1px solid rgb(9, 80, 172);
+   margin: 10px auto;
+   padding: 5px;
+   color: rgb(9, 80, 172);
+   border-radius: 5px;
+  }
+  #gen1{
+   font-size: 14px;
+   color: rgb(9, 80, 172);
+  }
+  .btn {
+   margin: 10px auto;
+   padding: 5px 5px 5px 30px;
+   width: 45%;
+  }
+  #mainbutton {
+   height: 30px;
+   font-weight: bold;
+   color: aliceblue;
+   background-color: rgb(9, 80, 172);
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   padding: 0px 20px 5px 20px;
+  }
+  .displayBlock {
+   display: none;
+  }
+  /* Display Block */
+  .displayBlock {
+    width: 50%;
+    margin: 10px auto; 
+}
+.innertable {
+    width: 75%;
+    margin: 20px auto; 
+}
+table, tr, th, td {
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 2px;
+}
+.logo1 {
+    height: 50px;
+    width: 70px;
+}
+.smallheading {
+    color:  #f0e7cf !important;
+    background-color: rgb(10, 10, 109) !important;
+    text-align: center !important;
+    font-size: 13px;
+    font-weight: bold;
+}
+.content {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    background-color:  #eee4c7 !important;
+    color: rgb(10, 10, 109) !important;
+}
+tfoot {
+    font-size: 14px;
+    color:  #ece7d7 ;
+    background-color: rgb(10, 10, 109);
+}
+.inertable table, tr, td, th {
+    border: 0.3px solid #6f6fa5;
+    border-collapse: collapse;
+}
+#id{
+    background-color:  rgb(253, 246, 246);
+    color: rgb(10, 10, 109);
+}
+.block {
+    height: 40px;
+    width: 320px;
+    float: right;
+    font-size: 18px;
+    padding: 5px 30px 5px 0px;
+}          
+.innertable tbody tr:nth-child(even) {
+background-color: #b0b0d4;
+color: #515157;
+}
+.innertable tbody tr:nth-child(odd) {
+background-color: rgb(209, 209, 209);
+color: rgb(43, 43, 105);
+}
+.text {
+    font-size: 15px;
+}
+tbody .box th {
+    text-align: left;
+}
+tbody .box td {
+    text-align: right;
+}
+table {
+    height: 350px;
+    width: 600px;
+}
+#clogoContainer {
+    width: 95px;
+    display: inline;
+}
+#headngContainer {
+    width: 355px;
+}

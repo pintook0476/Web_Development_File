@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+         
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 10px 90px ;
+        box-sizing: border-box;
+        background:rgba(0, 0, 0, 0.6) ;
+        border-bottom: 1px solid #fff;
+    }
+    nav .logo{
+        padding: 22px 20px;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;      
+        color:pink;
+        
+       
+    }
+    nav ul{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+    }
+    nav ul li a{
+        line-height: 80px;
+        color: #fff;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 6px;
+
+    }    .clk1{
+        background-color: lightblue;
+        border-radius: 5px;
+        margin: 3px;
+    }
+    .clk{
+        background: pink;
+        border-radius: 5px;
+        margin: 3px;
+    }
+    .clk2{
+        background:white;
+        border-radius: 5px;
+        margin: 3px;
+        color: black;
+        
+    }
+    .clk2:hover{
+        background-color:pink;
+    }
+    .clk3{
+        background: lightblue;
+        border-radius: 5px;
+        margin: 3px;
+    }.clk4{
+        background: rgb(255, 192, 203);
+        border-radius: 5px;
+        margin: 3px;
+    }.clk5{
+        background: lightgreen;
+        border-radius: 5px;
+        margin: 3px;
+    }
+    body{
+            background: rgba(0, 0, 0, 0.6) url(IMG_3075.jpg);
+            background-repeat: no-repeat;
+            background-size: cover ;
+            background-blend-mode: darken;
+            background-position: left;
+            
+        }
+        .mainbox{
+            background-color:white;
+            height: 440px;
+            position: absolute;
+            right : 444px;
+           background: rgba(0, 0, 0, 0.4);
+            top: 19%;
+           width: 500px;
+           border-radius: 10px;
+        }
+        input{
+            border-radius: 24px;
+            border: 0;
+            text-align: center;
+            margin: 10px auto;
+            background: none;
+            border: 2px solid #3498db;
+            padding: 10px 10px;
+            outline: none;
+            color:white;
+            font-weight: bold;
+        }
+        input:focus{
+            width: 240px;
+            border-color:pink;
+        }
+        label{
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            text-align: center ;
+
+        }
+        button{
+            border-radius: 15px;
+            position: relative;
+            right: -213px;
+            margin: 10px;
+            padding: 10px 10px;
+            width: 144px;
+            font-weight: bold;
+            background-color:pink;
+            border: 0;
+        }
+        button:hover{
+            background-color:lightgreen;
+            cursor: pointer;
+        }
+        #position{
+            position: relative;
+            right: -64px;
+        }
+        #po1{
+            position: relative;
+            right: -75px;
+
+        }
+        #po2{
+            position: relative;
+            right: 7px;
+            
+        }
+        #po3{
+            position: relative;
+            right: -21px;
+            
+        }
+        #po4{
+            position: relative;
+            right: -86px;
+            
+        }
+        h1{
+            text-transform: uppercase;
+            color: aliceblue;
+            font-weight: 500;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">KYLIE COSMETICS</div>
+        <ul>
+            <li> <a href="mainpage.html" class="clk1">KYLIE</a></li>
+            <li><a href="#" class="clk">KYLIE COSMETICS</a> </li>
+            <li><a href="#" class="clk2">KYLIESKIN</a></li>
+            <li><a href="#" class="clk3"> KYLIEBABY </a></li>
+            <li><a href="#" class="clk4">KYLIECLOTHES</a></li>
+            <li> <a href="homepage.html" class="clk5">LOGIN </a></li>
+            
+        </ul>
+    </nav>
+    <div class="mainbox">
+        <h1>Sign up</h1>
+        <form>
+           <label>USER NAME:</label> <input type="text" id ="position" placeholder="Username"><br>
+           <label>PASSWORD:</label><input type="password"id="po1" placeholder="Password"><br>
+           <label>CONFIRM-PASSWORD: </label><input type="password" id="po2"  placeholder=" confirm password"><br>
+           <label>MOBILE NUMBER :</label><input type=""  id="po3" placeholder="mobile number "><br>
+           <label>EMAIL ID :</label><input type="email"  id="po4" placeholder="email"><br>
+           <button > <a href="mainpage.html" > Submit </a></button>
+             </form>
+
+    </div>
+</body>
+</html>

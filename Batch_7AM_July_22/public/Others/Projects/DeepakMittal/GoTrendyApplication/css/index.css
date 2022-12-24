@@ -1,0 +1,760 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+  
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: #fff;
+}
+main{
+    position: absolute;
+    bottom: -4049px;
+    left: 0px;
+    right: 0px;
+    top: 9%;
+    background-color: #eee;
+}
+.footContainer {
+    bottom: -4398px;
+}
+
+.links {
+    float: right;
+}
+
+.links span {
+    color: blue;
+    cursor: pointer;
+}
+.links span:hover {
+    text-decoration: underline;
+}
+
+.loginBlock {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+}
+
+
+.loginContent {
+    width: 400px;
+}
+
+.loginContent li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Header Part And Login Page */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+.topNavBar{
+    border: 1px solid;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(26, 26, 26);
+}
+.goLogo{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    cursor: pointer;
+}
+.goLogo img{
+    width: 34%;
+    height: 32px;
+}
+.goLogo span{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 3px;
+    font-family: 'Play', sans-serif;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+    top: 7px;
+}
+.categoryBrands{
+    position: absolute;
+    left: 19%;
+    top: 44%;
+    
+}
+.categoryLink{
+    float: left;
+}
+.categoryBrands li{
+    list-style: none;
+    
+    margin-left: 35px;
+    margin-top: -4px;
+}
+.categoryBrands li a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(239, 239, 239);
+    transition: 0.3s ease-in-out;
+}
+.categoryBrands li a:hover{
+    color: #fff;
+}
+.searchBar{
+    position: absolute;
+    left: 45%;
+    top: 8%;
+}
+.searchBar input{
+    width: 25rem;
+    height: 40px;
+    padding-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+}
+.searchBar input::placeholder{
+    color: rgb(61, 61, 61);
+}
+.searchBar input:focus{
+    outline: none;
+}
+.searchBar span{
+    position: relative;
+    top: 6px;
+    left: 5px;
+    border: 1px solid none;
+    width: 7%;
+    height: 40px;
+    background-color: rgb(239, 239, 239);
+    padding-left: 7px;
+    padding-top: 7px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: rgb(28, 28, 28) !important;
+}
+.rightSideButton{
+    position: absolute;
+    right: 18%;
+    top: 30%;
+}
+.loginButton{
+    position: absolute;
+    right: 6%;
+    top: 20%;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+    color: rgb(238, 238, 238);
+}
+#expandMore{
+    position: relative;
+    top: 8px;
+    left: -3px;
+}
+#hoverCategory{
+    margin-top: -10px;
+}
+#hoverCategory:hover #expandMore{
+    transition: 0.5s ease-in-out;
+    transform: rotate(180deg);
+}
+/* User Profile Details*/
+.rightSideProfileBtn{
+    display: none !important;
+}
+#displayBlockProperty{
+    display: block !important;
+}
+.dropdown-menu li{
+    margin-top: 5px;
+}
+.dropdown-menu span{
+    margin-right: 12px;
+}
+
+/* login Page */
+#exampleModal{
+    top: 35px !important;
+}
+.btn-primary{
+    border: none !important;
+    background: none !important;
+    color: rgb(227, 227, 227) !important;
+    font-family: 'Play', sans-serif !important;
+}
+.modal-content{
+    height: 500px;
+    
+}
+.modal-header{
+    font-family: 'Play', sans-serif !important;
+}
+.modal-body h5{
+    margin-left: 205px !important;
+    margin-top: -10px;
+}
+.inputElements{
+    position: absolute;
+    top: 9%;
+    left: 112px;
+}
+.inputElements li{
+    list-style: none;
+    margin-top: 15px;
+}
+.inputElements li input{
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    padding-left: 10px;
+    background-color: rgb(249, 249, 249) !important;
+    border: 1px solid rgb(143, 143, 143)
+}
+.inputElements li input:focus{
+    outline: #fadd1e solid 2px;
+}
+#loginBtn{
+    position: absolute;
+    top: 66%;
+    left: 141px;
+    width: 47%;
+    height: 45px;
+    background-color: #f8df28;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+#loginBtn:hover{
+    background-color: #ffcc00;
+}
+.forgotpwd{
+    position: absolute;
+    bottom: 16%;
+    left: 186px;
+}
+.forgotpwd a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.forgotpwd a:hover{
+    color: #000;
+}
+.donthaveAnAccount{
+    position: absolute;
+    bottom: 8%;
+    left: 150px;
+}
+.donthaveAnAccount span {
+    font-family: 'Play', sans-serif;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+#loginRedirecttoMain{
+    margin-left: 130px;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+}
+#inValidateName{
+    color: red;
+    display: none;
+}
+#invalidPwd{
+    color: red;
+    display: none;
+}
+
+
+
+/* Forgot Password */
+.forgetpwdContainer{
+    display: none;
+}
+.forgetpwdContainer{
+    position: absolute;
+    top: 8%;
+}
+.forgetpwdContainer h5{
+    margin-left: 155px !important;
+}
+.forgetpwdContainer h6{
+    margin-top: 26px;
+    margin-left: 70px;
+}
+.forgotInput{
+    position: absolute;
+    left: 23%;
+    right: 0%;
+    top: 75%;
+}
+.forgotInput li{
+    list-style: none;
+    margin-top: 20px;
+}
+.forgotInput li input{
+    width: 130%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid rgb(106, 106, 106);
+    border-radius: 7px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.forgotInput li input:focus{
+    outline: rgb(249, 221, 14) 1px;
+}
+#recapchaContainer{
+    border: 1px solid;
+    width: 130%;
+    height: 70px;
+    border-radius: 5px;
+}
+#forgotSentOtpBtn{
+    background-color: #f8df28;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    transition: 0.3s ease-in-out;
+}
+#forgotSentOtpBtn:hover{
+    background-color: #ffc21c;
+}
+#checkBoxImg{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #555;
+}
+#checkedDoneImg{
+    margin-left: 10px;
+    margin-top: 8px;
+    display: none;
+}
+#recapchaLogo{
+    width: 31%;
+    height: 22%;
+    position: absolute;
+    right: -25%;
+}
+#recapchaVerified{
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+    color: green;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.forgotOtpVerification{
+    display: none;
+    position: absolute;
+    left: 93px;
+    top: 72px;
+}
+.forgotOtpVerification div{
+    margin-top: 15px;
+    margin-left: 48px;
+}
+.otpSendInfo{
+    color: green;
+    font-family: 'Play', sans-serif;
+}
+#gotOtpValue{
+    width: 200px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#submitOtpForgot{
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: #fadd1e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+.refreshForgotOtp{
+    font-weight: bold;
+    cursor: pointer;
+}
+.temporaryOtpBox{
+    border: 1px solid;
+    width: 100px;
+    height: 29px;
+    text-align: center;
+
+}
+/* Capcha Verification */
+.capchaVerification{
+    position: absolute;
+    top: 44%;
+    left: 120px;
+}
+.capchaVerification input{
+    margin-top: 12px;
+    width: 49%;
+    height: 35px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 4px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+#capchaContainer{
+    border: 1px solid;
+    width: 49%;
+    height: 40px;
+    margin-top: -28px;
+    margin-left: 105px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    padding-top: 7px;
+}
+.refreshCapcha{
+    position: absolute;
+    top: 7px;
+    right: -28px;
+}
+.rotateRefreshCaphca{
+    transition: 0.5s ease-in;
+    transform: rotate(180deg);
+}
+.refreshCapcha img{
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+/* SignUpPage Style */
+.signUpInputDetails{
+    display: none;
+}
+.signUpInput{
+    position: absolute;
+    left: 23%;
+    right: 0%;
+}
+.signUpInput li{
+    margin-top: 10px;
+    list-style: none;
+}
+.signUpInput li input{
+    width: 73%;
+    height: 45px;
+    border-radius: 7px;
+    padding-left: 10px;
+    border: 1px solid rgb(165, 164, 164);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#signUpButton input{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #f8df28;
+    border: none;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+#signUpButton input:hover{
+    background-color: #ffc21c;
+}
+.signUpInput li input:focus{
+    outline: #fadd1e solid 2px;
+    border: none;
+}
+#signupWith{
+    margin-top: 20px;
+    margin-left: 85px;
+    font-family: 'Play', sans-serif;
+}
+.socialIcons{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.socialIcons img{
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin-left: 5px;
+}
+#loginRedirect{
+    margin-left: 110px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Mini Pictures */
+.miniPics{
+    border: 1px solid none;
+    position: absolute;
+    top: 10%;
+    left: 3px;
+    right:4px;
+}
+.miniPics img{
+    width: 9.6%;
+    height: 130px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.miniPics img:hover{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.105);
+}
+/* Deals Corner */
+
+.todayDeals{
+    position: absolute;
+    left: 270px;
+    right: 345px;
+    display: grid;
+    justify-content: center;
+}
+.dealsCorner{
+    top: 14%;
+}
+.todayDeals button{
+    width: 140%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(255, 148, 112, 0.97);
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease-in;
+    
+}
+.todayDeals button:hover{
+    background-color: rgba(249, 132, 92, 0.97);
+}
+.todayDeals div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    top: 5px;
+    left: 45px;
+}
+
+/* Square Images */
+.squareImages{
+    position: absolute;
+    top: 17%;
+    left: 1px;
+    right: 1px;
+}
+.squareImages a img{
+    width: 16.3%;
+    height: 265px;
+    transition: 0.3s ease-in-out
+}
+.squareImages a img:hover{
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.105);
+}
+/* Featured Images */
+.featuredImg{
+    top: 24%;
+}
+
+
+/* Bestseller Pictures */
+.bestSellerPic{
+    position: absolute;
+    top: 26.5%;
+    left: 100px;
+}
+
+.bestSellerPic a img{
+    margin-top: 0.6%;
+    width: 18%;
+    height: 290px;
+}
+.bestSellerPic a img:hover{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.105);
+}
+/* Brand New Shoes */
+.allAboutShoes{
+    top: 41.6%;
+}
+
+/* Featured Images */
+.allaboutImg{
+    position: absolute;
+    top: 44%;
+    left: 100px;
+    right: 100px;
+}
+.allaboutImg img{
+    width: 100%;
+    height: 365px;
+    border-radius: 4px;
+    box-shadow: 0 0.2rem 1rem hsl(0 0% 0% / 20%);
+}
+
+/* Advertisement Img */
+.advertiseImg{
+    position: absolute;
+    top: 53%;
+    left: 1px;
+    right: 1px;
+}
+.advertiseImg img{
+    width: 100%;
+}
+
+/* Shoes Container */
+.shoesContainer{
+    position: absolute;
+    top: 63%;
+    left: 115px;
+    right: 45px;
+}
+.shoesContainer a img{
+    width: 23%;
+}
+.shoesContainer div{
+    position: relative;
+    top: 50px;
+}
+
+/* Audio Test */
+.audioTest{
+    top: 90.6%;
+}
+
+/* Audio Images */
+.audioImg{
+    border: 1px solid none;
+    position: absolute;
+    top: 93%;
+    left: 10px;
+    right: 8px;
+}
+.audioImg a img{
+    width: 16.3%;
+}
+
+/* Category Hover Container */
+#hoverCategory:hover #containerCategory{
+    display: block;
+    transition: 0.3s ease-in;
+}
+#containerCategory{
+    display: none;
+    position: absolute;
+    border: 1px solid none;
+    width: 335%;
+    height: 665px;
+    top: 117%;
+    left: -30%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0.2rem 1rem hsl(0 0% 0% / 20%);
+    border-radius: 4px;
+}
+.womenContainer{
+    margin-top: 80px;
+    border-right: 1px solid rgb(151, 151, 151);
+    border-left: 1px solid rgb(151, 151, 151);
+    width: 350px;
+    height: 550px;
+    margin-left: 365px;
+}
+#containerCategory h4{
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menContainer h4{
+    top: 12px;
+    left: 95px;
+    font-family: 'Play', sans-serif;
+}
+.womenContainer h4{
+    top: 12px;
+    left: 424px;
+    font-family: 'Play', sans-serif;
+}
+.childContainer h4{
+    top: 12px;
+    right: 100px;
+    font-family: 'Play', sans-serif;
+}
+
+#menTopWearContainer{
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    clear: both;
+}
+
+#menBottomwears{
+    left: 65px;
+}
+#womenTopWearContainer{
+    top: 50px;
+    left: 392px;
+}
+#womenBottomwears{
+    left: 392px;
+}
+#childTopWearContainer{
+    top: 50px;
+    left: 758px;
+}
+#childBottomwears{
+    left: 758px;
+}
+.positionAbsolute h5{
+    font-family: 'Play', sans-serif;
+}
+.positionAbsolute{
+    position: absolute;
+    top: 358px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.positionAbsolute li{
+    list-style: none;
+    margin-top: 4px;
+}
+.positionAbsolute li a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    transition: 0.s ease-in-out;
+}
+.positionAbsolute li a:hover{
+    color: rgb(29, 28, 28);
+    text-decoration: underline;
+}
+

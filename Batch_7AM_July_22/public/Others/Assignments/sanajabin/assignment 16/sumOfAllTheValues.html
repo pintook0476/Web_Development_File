@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 16.sum of all the values within the given array</title>
+</head>
+<body>
+    <script>
+        var dataInput=() =>{
+                var data=[2,5,7,8,10,15,18];
+                var sum=calculatingSum(data);
+                console.log("Sum of all the no inside an array=   "  +sum);
+            }
+            var calculatingSum=(data) =>{
+                var sum=0;
+                for(var i=0;i<data.length;i++){
+                    sum+=data[i];
+                }
+                return sum;
+            }
+            dataInput();
+        
+     </script>
+    
+</body>
+</html>

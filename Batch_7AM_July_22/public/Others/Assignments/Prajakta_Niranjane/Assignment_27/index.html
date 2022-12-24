@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down disable</title>
+    <link rel="stylesheet" href="dropdownSelection.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+        <ul>
+            <h2 class="heading">Student Registration Page</h2>
+            <li>
+                <div class="label">Student Name</div>
+                <input type="text">
+            </li>
+            <li>
+                <div class="label">Student Age</div>
+                <input type="number">
+            </li>
+            <li>
+                <div class="label">Gender</div>
+                <input type="radio" name="gender" value="Male" checked> Male
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Female"> Female
+            </li>
+            <li>
+                <div class="label">Country</div>
+                <div>
+                    <select name="country" id ="country" onchange="setCountry();">
+                    
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="label">State</div>
+                <div>
+                    <select name="state" id="state" onchange="setState();" disabled>
+                    
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="label">District</div>
+                <div>
+                    <select name="district" id="district" disabled>
+                    
+                    </select>
+                </div>
+            </li>
+            
+        <input type="submit" value="Submit" id="btn1">
+        <input type="reset" value="Reset" id="btn2">
+        </ul>
+    </form>
+    </div>    
+   <script src="dropdownSelection.js"></script>
+</body>
+</html>

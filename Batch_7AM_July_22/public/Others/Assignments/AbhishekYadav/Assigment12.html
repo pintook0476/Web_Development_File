@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenOddGame</title>
+</head>
+
+<body>
+    <h2>Even Odd Number Game</h2>
+    <script>
+        var getDataFromUser = () => {
+            var num = prompt("Enter any Number If you enter Even Number Score Become +10 and if You enter Odd Number score Become -10 you can play Until Your Score is greater than 0 ");
+
+            calculateTotalScore(num);
+        }
+
+        var calculateTotalScore = (num) => {
+            var totalscore = 0;
+            do {
+                if (num % 2 == 0) {
+                    totalscore = totalscore + 10;
+                    num = prompt("You Enter even Number Your Current Score is " + totalscore + " Enter Again");
+                } else if (num % 2 != 0) {
+                    totalscore = totalscore - 10;
+                    if (totalscore == 0) {
+
+                    } else {
+                        num = prompt("You Enter Odd Number Your Current Score is " + totalscore + " Enter Again")
+                    }
+
+                }
+            } while (totalscore >= 10)
+
+            giveDataTOUser();
+        }
+
+        var giveDataTOUser = () => {
+            prompt("Your Total score is 0 If you want to play Again Please Restart The File");
+        }
+
+        getDataFromUser();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var rev = 0;
+        var b = 0;
+        var a = prompt("enter a no");
+        a = parseInt(a);
+        while (a != 0) {
+
+            b = a % 10;
+            rev = rev * 10 + b;
+
+            a = a / 10;
+            a = parseInt(a);
+        }
+        document.write("rev no of digit " + rev);
+    </script>
+</body>
+
+</html>

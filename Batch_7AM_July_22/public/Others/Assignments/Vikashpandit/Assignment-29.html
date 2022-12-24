@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment-29</title>
+        <style>
+            .container{
+                border: 2px solid;
+                width: 500px;
+                height: 500px;
+                background-color: rgb(255, 210, 217);
+                margin-left: 400px;
+                margin-top: 50px;
+                border-radius: 40px;
+            }
+            .block{
+                border: 1px solid;
+                border-radius: 40px;
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                animation: mystyle 6s infinite;
+
+            }
+            @keyframes mystyle{
+                12%{
+                    margin: 220px 220px;
+                }
+                24%{
+                   margin-left: 450px;
+                   margin-top: 0px;
+                }
+                36%{
+                    margin: 220px 220px;
+                }
+                48%{
+                    margin-top: 450px;
+                    margin-left: 450px;
+                }
+                60%{
+                    margin: 220px 220px;
+                }
+                72%{
+                    margin-top: 450px;
+                    margin-left: 0px;
+                }
+                84%{
+                    margin: 220px 220px;
+                }
+                100%{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+            }
+        </style>
+        <body>
+            <div class="container">
+                 <div class="block"></div>
+            </div>
+        </body>
+    </head>
+</html>

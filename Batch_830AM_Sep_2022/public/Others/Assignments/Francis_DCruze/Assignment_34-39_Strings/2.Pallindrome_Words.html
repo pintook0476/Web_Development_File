@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pallindrome Words</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: white;
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var str = "level";
+            var revStr = "";
+
+            for (var i = str.length-1; i >= 0; i--)
+            {
+                revStr = revStr + str[i];
+            }
+
+            console.log("str : " +str + " and " + "revStr : " + revStr);
+
+            if (str == revStr)
+            {
+                console.log(str + " is a Pallindrome");
+            }
+            else
+            {
+                console.log(str + " is not a Pallindrome");
+            }
+            
+        </script>
+    </body>
+</html>

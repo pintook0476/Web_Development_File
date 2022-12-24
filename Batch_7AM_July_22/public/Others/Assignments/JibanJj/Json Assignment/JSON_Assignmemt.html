@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Assignment</title>
+</head>
+
+<body>
+    <script>
+        var empDetails = {
+            readEmpData: function () {
+                this.empname = prompt('Enter Employee Name');
+                this.age = prompt('Enter Employee Age');
+                this.gender = prompt('Enter Employee Gender');
+                this.basicSal = prompt('Emter Your Basic Salary');
+                this.basicSal = parseInt(this.basicSal);
+                this.getPfAndHra();
+            },
+            getPfAndHra: function () {
+                this.pf =(14 * this.basicSal) / 100
+                this.hra = (25 * this.basicSal) / 100
+                this.totalSal = this.pf + this.hra + empDetails.basicSal;
+                this.getTotalTax();
+            },
+            getTotalTax: function () {
+                this.taxpercent = 0;
+                if (this.empgender == "male") {
+                    if (this.totalSal >= 200000) {
+                        this.taxpercent = 15
+                    } else if (this.totalSal >= 100000) {
+                        this.taxpercent = 10
+                    } else if (this.totalSal >= 50000) {
+                        this.taxpercent = 5
+                    }
+                } else {
+                    if (this.totalSal >= 200000) {
+                        this.taxpercent = 10;
+                    } else if (this.totalSal >= 100000) {
+                        this.taxpercent = 5;
+                    }
+                }
+                this.taxTobePaid = (this.taxpercent * this.totalSal) / 100;
+                this.totalSal = this.totalSal - this.taxTobePaid;
+                this.displayEmployeeDetails();
+            },
+            displayEmployeeDetails: function(){
+                console.log("Employee Details");
+                console.log("Employee Name is " + this.empname);
+                console.log("Gender " + this.gender);
+                console.log("Total sal " + this.totalSal);
+            }
+        }
+        empDetails.readEmpData();
+    </script>
+</body>
+
+</html>

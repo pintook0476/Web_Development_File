@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8</title>
+    <style>
+        .header,
+        .footer{
+            border: 2px solid;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            background-color: aqua;
+            color: crimson;
+        }
+        .footer{
+            background-color: blueviolet;
+            color: goldenrod;
+            font-size: 15px;
+        }
+        table,
+        th,
+        td{
+            border: 2px solid;
+            padding: 15px;
+            margin: 15px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table{
+            width: 98%;
+        }
+        td{
+            
+            width: 200px;
+        }
+        .a{
+            width: 3%;
+            }
+        .b{
+            width: 8%;
+        }
+        .c{
+            width: 10%;
+            
+        }
+        .d{
+            width: 5%;
+        }
+         .e{
+            width: 15%;
+            }
+        
+        .subtable{
+            border: 2px solid;
+            padding: 3px;
+            margin: 2px;
+            text-align: center;
+            border-collapse: collapse;
+            height: 200px;
+        }
+        .img{
+            border: 1px solid;
+            margin: 10px;
+            background-image: url("images/capture.PNG");
+            margin: 5px auto;
+            height: 200px;
+            width: 200px;
+        }
+       .img1{
+        background-position: -10px -22px;
+        }
+        .img2{
+            background-position: -285px -16px;
+        }
+        .img3{
+            background-position: -544px -15px;
+        }
+        .img4{
+            background-position: -811px -16px;
+        }
+        .img5{
+            background-position: -1073px -14px;
+        }
+        .img6{
+            background-position: -12px -339px;
+        }
+        .img7{
+            background-position: -284px -331px;
+        }
+        .img8{
+            background-position: -544px -335px;
+        }
+        .img9{
+            background-position: -808px -335px;
+        }
+        .img10{
+            background-position: -1076px -336px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        Student Details
+    </div>
+    <table>
+        <tr>
+            <th class="a">S No.</th>
+            <th class="e">Name</th>
+            <th class="b">Gender</th>
+            <th class="c">Picture</th>
+            <th class="d">Class</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bikash Dey</td>
+            <td>Male</td>
+            <td >
+            <div class="img img1">
+            </div>
+            </td>
+            <td>10<sup>th</sup>
+            </td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>37</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+            </td>
+ </tr>
+ <tr>
+            <td>2</td>
+            <td>Akash Dey</td>
+            <td>Male</td>
+            <td>
+                <div class="img img2"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>87</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>56</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Subham Panda</td>
+            <td>Male</td>
+            <td>
+                <div class="img img3"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>60</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>63</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Siddhu Swain</td>
+            <td>Male</td>
+            <td>
+                <div class="img img4"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>42</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Mantu Behera</td>
+            <td>Male</td>
+            <td>
+                <div class="img img5"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>98</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>76</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Manish Jena</td>
+            <td>Male</td>
+            <td>
+                <div class="img img6"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="">30</td>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>76</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>89</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Nimai Pradhan</td>
+            <td>Male</td>
+            <td>
+                <div class="img img7"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>39</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>58</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Bikash</td>
+            <td>Male</td>
+            <td>
+                <div class="img img8"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>69</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>71</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>49</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Laxmidhar Pradhan</td>
+            <td>Male</td>
+            <td>
+                <div class="img img9"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>71</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>75</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>88</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Bikash</td>
+            <td>Male</td>
+            <td>
+                <div class="img img10"></div>
+            </td>
+            <td>10<sup>th</sup></td>
+            <td>
+                <table class="subtable">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Min Marks</th>
+                        <th>Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">100</td>
+                        <td rowspan="3">30</td>
+                        <td>76</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>39</td>  
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>57</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+        &#169 copy right 2022
+    </div>
+</body>
+</html>

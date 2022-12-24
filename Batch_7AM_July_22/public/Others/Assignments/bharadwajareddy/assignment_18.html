@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            assignment_19
+        </title>
+    </head>
+    <body>
+        <script>
+            var empdetails={
+                readingdata:()=>{
+                    empdetails.name=prompt("enter your name");
+                    empdetails.age=prompt("enter your age");
+                    empdetails.gender=prompt("enter your gender");
+                    empdetails.department=prompt("enter your department");
+                    empdetails.basic_sal=parseFloat(prompt("enter your basic salary"));
+                },
+                getPfHraandTotal_sal:function(){
+                    this.pf=this.basic_sal*(14/100);
+                    this.hra=this.basic_sal*(25/100);
+                    this.total_sal=this.basic_sal+this.pf+this.hra;
+                    this.getTax();
+                },
+                getTax:function(){
+                    if(this.gender=="male")
+                    {
+                        if(this.total_sal>=200000)
+                        {
+                            this.tax=this.total_sal*(15/100);
+                            this.total_sal=this.total_sal-this.tax;
+                            console.log("your tax cutted is"+this.tax);
+                            console.log("your total salary after tax cutted is"+this.total_sal);
+                        }
+                        else if(this.total_sal>=100000)
+                        {
+                            this.tax=this.total_sal*(10/100);
+                            this.total_sal=this.total_sal-this.tax;
+                            console.log("your tax cutted is"+this.tax);
+                            console.log("your total salary after tax cutted is"+this.total_sal);
+                        }
+                        else if(this.total_sal>=50000)
+                        {
+                            this.tax=this.total_sal*(5/100);
+                            this.total_sal=this.total_sal-this.tax;
+                            console.log("your tax cutted is"+this.tax);
+                            console.log("your total salary after tax cutted is"+this.total_sal);
+                        }
+                        else{
+                            console.log("no tax cutted and your total salary is"+this.total_sal);
+                        }
+                    }
+                    else if(this.gender=="female")
+                    {
+                        if(this.total_sal>=200000)
+                        {
+                            this.tax=this.total_sal*(10/100);
+                            this.total_sal=this.total_sal-this.tax;
+                            console.log("your tax cutted is"+this.tax);
+                            console.log("your total salary after tax cutted is"+this.total_sal);
+                        }
+                        else if(this.total_sal>=100000)
+                        {
+                            this.tax=this.total_sal*(5/100);
+                            this.total_sal=this.total_sal-this.tax;
+                            console.log("your tax cutted is"+this.tax);
+                            console.log("your total salary after tax cutted is"+this.total_sal);
+                        }
+                        else{
+                            console.log("no tax cutted and your total salary is"+this.total_sal);
+                        }
+                    }
+                    else{
+                        console.log("no tax");
+                    }
+                },
+                display:function(){
+                    this.readingdata();
+                    console.log("Name is "+this.name);
+                    console.log("your age is "+this.age);
+                    console.log("gender is "+this.gender);
+                    console.log("department is "+this.department);
+                    console.log("your basic salary is "+this.basic_sal);
+                    this.getPfHraandTotal_sal();
+            }
+        };
+        empdetails.display()
+        </script>
+    </body>
+</html>

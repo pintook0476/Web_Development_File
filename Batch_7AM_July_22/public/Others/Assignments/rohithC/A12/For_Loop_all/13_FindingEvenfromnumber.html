@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>finding even s from the number</title>
+    </head>
+    <body>
+        <h3>  Press F12 or go to console tab </h3>
+        <script>
+            var a =  prompt( " enter a number to find a Evens feom it");
+            var Rem;
+            while ( a > 0 ){
+                Rem = a % 10 ;
+                a = a / 10;
+                a = parseInt(a);
+                
+                if ( Rem % 2 == 0 ) {
+
+                    console.log (Rem);
+                }
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>

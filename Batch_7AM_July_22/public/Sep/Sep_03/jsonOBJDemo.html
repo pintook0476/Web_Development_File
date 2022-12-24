@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating json
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [34, "raj", 'Male', true];
+
+            var sData = {
+                "age" : 34,
+                gender : "Male",
+                "name" : "Raj",
+                'isFeePaid': true,
+                marks: [34, 45, 67, 89]
+            };
+
+            console.log(data);
+            console.log(sData);
+            console.log("USer name from array is " + data[1]);
+            console.log("USer name from obj is  " + sData.name);
+            console.log("USer Age from obj is  " + sData.age);
+            console.log(sData.marks)
+            console.log("USer Age from obj is  " + sData.marks[2]);
+
+            console.log(typeof(sData.gender));
+        </script>
+    </body>
+</html>

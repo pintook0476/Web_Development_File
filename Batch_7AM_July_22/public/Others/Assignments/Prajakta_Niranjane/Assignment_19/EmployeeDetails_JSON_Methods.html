@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON with Function Employee Details</title>
+</head>
+<body>
+    <h3>JSON with Function Employee Details</h3>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+         var empData = {
+            readEmployeeData : function()
+                {
+                    this.name = prompt('Enter Employee Name');
+                    this.age = prompt('Enter Your Age');
+                    this.gender = prompt('Enter Gender');
+                    this.dept = prompt('Enter Department');
+                    this.sal = prompt('Enter Your Basic salary');
+                    this.sal = parseFloat(this.sal);
+                    this.tax = parseFloat(this.tax);
+                    this.displayEmployeeDetails();
+                },
+            PfAndHraCalculation : function()
+                {        
+                    this.pf = this.sal * (14 / 100);
+                    this.hra = this.sal * (24 / 100);
+                    this.totalsal = this.pf + this.hra + this.sal ;
+                    console.log('PF: ₹' + this.pf);
+                    console.log('HRA: ₹' + this.hra);
+                    console.log('Total Salary: ₹' + this.totalsal);
+                    this.taxCalculation();
+                },                     
+            displayEmployeeDetails : function()
+                { 
+                    console.log('JSON Of Employee Details')
+                    console.log('Employee Name: '+ this.name);
+                    console.log('Employee Age: '+ this.age);
+                    console.log('Employee Gender: '+ this.gender);
+                    console.log('Employee Department: '+ this.dept);
+                    console.log('Employee Salary: ₹' + this.sal);
+                    this.PfAndHraCalculation();        
+                },
+            taxCalculation  :  function()
+               {
+                if (this.gender == "Male" || this.gender == "male" ) {
+                if (this.totalsal >= 200000) {
+                    console.log('Your Tax percentage is 15%');
+                    this.tax = this.totalsal * (15 / 100);
+                    console.log('Total Tax to be paid: ₹' + this.tax);
+                }
+                else if ( this.totalsal >= 100000 && this.totalsal < 200000) {
+                    console.log('Your Tax percentage is 10%');
+                    this.tax = this.totalsal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + this.tax);  
+                } 
+                else if (this.totalsal >= 50000 && this.totalsal < 100000) {
+                    console.log('Your Tax percentage is 5%');
+                    this.tax = this.totalsal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + this.tax);  
+                }
+                else {
+                    this.tax = 0;
+                    console.log('Tax = 0'); 
+                }
+                }
+                else if (this.gender == "Female" || this.gender == "female" ) {
+                if (this.totalsal >= 200000) {
+                    console.log('Your Tax percentage is 10%');
+                this.tax = this.totalsal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + this.tax);
+                }
+                else if (this.totalsal >= 100000 && this.totalsal < 200000) {
+                    console.log('Your Tax percentage is 5%');
+                    this.tax = this.totalsal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + this.tax);  
+                } 
+                else if (this.totalsal >= 50000 && this.totalsal < 100000) {
+                    this.tax = 0;
+                    console.log('Tax = 0'); 
+                }
+                else {
+                    this.tax = 0;
+                    console.log('Tax = 0'); 
+                }
+                }
+                else {
+                console.log("Invalid Gender");
+                console.log("Please! Enter the Valid gender.");
+                }
+                    this.inHandsalary = this.totalsal - this.tax ;   
+                    console.log('Total In Hand Salary After Tax-Deduction: ₹' + this.inHandsalary); 
+                }
+         };
+        empData.readEmployeeData();
+        console.log(empData);
+    </script>
+</body>
+</html>

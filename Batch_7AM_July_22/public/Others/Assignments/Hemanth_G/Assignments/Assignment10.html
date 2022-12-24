@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Details</title>
+</head>
+<body>
+    <script>
+        var empname = prompt("enter Ename");
+        var age = prompt("enter age");
+        var gender = prompt("enter gender");
+        var department = prompt("enter your department");
+        var basicsal = prompt("enter basicsal");
+       basicsal = parseInt(basicsal);
+        //calculate 
+       
+        var pf = basicsal*(14/100);
+    
+        var hra = basicsal*(24/100);
+        
+        var totalsal = basicsal + pf + hra;
+        totalsal = parseInt(totalsal);
+
+        console.log("Employe Details");
+        console.log("empname is " + empname);
+        console.log("age is " + age );
+        console.log("gender is " + gender);
+        console.log("department is " + department);
+        console.log("basicsal is " + basicsal );
+        console.log("total is " + totalsal);
+
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Local variables and Global Variables
+    </title>
+</head>
+<body>
+    <SCript>
+        // Calling function && Called function
+
+
+        function getUserData() { // calling function
+            var m1, m2;
+            m1 = prompt("Enter first value");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter Second value");
+            m2 = parseInt(m2);            
+            getTotal(m1, m2); // getTotal(20, 30); // actual parameters
+
+        }
+
+
+        function getTotal(m1, m2) { // getTotal(p1= 20, p2 = 30) , p1 and p2 formal params
+            var total = m1 + m2; 
+            console.log("The sum is " + total);
+        }
+        getUserData(); 
+    </SCript>
+</body>
+</html>

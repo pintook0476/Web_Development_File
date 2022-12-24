@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Format</title>
+  </head>
+  <body>
+    <script>
+      var myCurrentDate = new Date();
+
+      //   console.log(myCurrentDate);
+
+      //===========Variable Declaration=============//
+      var dateMonthsNumber = [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+      ];
+      var dateMonths = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "June",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var dateMonthsFull = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var dateDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var dateDayFull = [
+        "SunDay",
+        "MonDay",
+        "TuesDay",
+        "WednesDay",
+        "ThursDay",
+        "FriDay",
+        "SaturDay",
+      ];
+
+      //============Question And Answer===========//
+
+      //1. mm-dd-yyyy
+      var dateFormat1 =
+        myCurrentDate.getMonth() +
+        "-" +
+        myCurrentDate.getDate() +
+        "-" +
+        myCurrentDate.getFullYear();
+      console.log("1. " + dateFormat1);
+
+      // 2. Aug, 30th 2022
+
+      var dateFormat2 =
+        dateMonths[myCurrentDate.getMonth()] +
+        ", " +
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        myCurrentDate.getFullYear();
+      console.log("2. " + dateFormat2);
+
+      // 3. Auguest, 30th 2022
+
+      var dateFormat3 =
+        dateMonthsFull[myCurrentDate.getMonth()] +
+        ", " +
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        myCurrentDate.getFullYear();
+      console.log("3. " + dateFormat3);
+      // 4. Tue, Aug 30th 2022
+
+      var dateFormat4 =
+        dateDay[myCurrentDate.getDay()] +
+        ", " +
+        dateMonths[myCurrentDate.getMonth()] +
+        " " +
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        myCurrentDate.getFullYear();
+      console.log("4. " + dateFormat4);
+
+      // 5. Tuesday, Auguest 30th 2022
+
+      var dateFormat5 =
+        dateDayFull[myCurrentDate.getDay()] +
+        ", " +
+        dateMonthsFull[myCurrentDate.getMonth()] +
+        " " +
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        myCurrentDate.getFullYear();
+      console.log("5. " + dateFormat5);
+
+      // 6. 30/08/2022
+
+      var dateFormat6 =
+        myCurrentDate.getDate() +
+        "/" +
+        dateMonthsNumber[myCurrentDate.getMonth()] +
+        "/" +
+        myCurrentDate.getFullYear();
+      console.log("6. " + dateFormat6);
+
+      // 7. 30th Aug, 2022
+
+      var dateFormat7 =
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        dateMonths[myCurrentDate.getMonth()] +
+        ", " +
+        myCurrentDate.getFullYear();
+      console.log("7. " + dateFormat7);
+
+      // 8. 30th Aug, 2022 09:30:10
+
+      var hour = myCurrentDate.getHours();
+      var hours = [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+      ];
+      if (hour > 12) {
+        var rem = hour - 13;
+        var data = "PM";
+      } else {
+        console.log(hour);
+        var data = "AM";
+      }
+
+      var dateFormat8 =
+        myCurrentDate.getDate() +
+        "th" +
+        " " +
+        dateMonths[myCurrentDate.getMonth()] +
+        ", " +
+        myCurrentDate.getFullYear() +
+        " " +
+        hours[rem] +
+        ":" +
+        myCurrentDate.getMinutes() +
+        ":" +
+        myCurrentDate.getSeconds() +
+        " " +
+        data;
+
+      console.log("8. " + dateFormat8);
+
+      // 9. Aug/30/2022 10:20
+
+      var dateFormat9 =
+        myCurrentDate.getDate() +
+        "/" +
+        dateMonthsNumber[myCurrentDate.getMonth()] +
+        "/" +
+        myCurrentDate.getFullYear() +
+        " " +
+        hours[rem] +
+        ":" +
+        myCurrentDate.getMinutes() +
+        " " +
+        data;
+      console.log("9. " + dateFormat9);
+
+      // 10. 30-Aug-2022 20:30:10
+
+      var dateFormat10 =
+        myCurrentDate.getDate() +
+        "-" +
+        dateMonths[myCurrentDate.getMonth()] +
+        "-" +
+        myCurrentDate.getFullYear() +
+        " " +
+        myCurrentDate.getHours() +
+        ":" +
+        myCurrentDate.getMinutes() +
+        ":" +
+        myCurrentDate.getSeconds();
+      console.log("10. " + dateFormat10);
+    </script>
+  </body>
+</html>

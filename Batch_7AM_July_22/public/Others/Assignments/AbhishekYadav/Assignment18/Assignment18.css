@@ -1,0 +1,51 @@
+#mainhead {
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#econtainer ul {
+    padding: 0px;
+    border: 1px solid;
+    width: 400px;
+    margin: 10px auto;
+}
+
+#econtainer ul label {
+    display: inline-block;
+    width: 140px;
+}
+
+#econtainer ul li {
+    margin: 10px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#fcontainer {
+    width: 500px;
+    border: 1px solid;
+    margin: 10px auto;
+    display: none;
+}
+
+#fcontainer div {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+#fDetails {
+    text-align: center;
+}
+
+#label {
+    width: 150px;
+}
+
+#button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}

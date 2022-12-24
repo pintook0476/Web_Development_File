@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var reverse = 0;
+        //read number from user
+        var num = prompt("Enter the number"); // 786
+        num = parseInt(num);
+     
+        
+        // determine if number is negative
+        var isNegative = false;
+        if(num < 0){
+            num = num * -1;
+            isNegative = true;
+        }
+
+        // generate reverse number
+        while(num > 0){
+
+        
+            // find the remainder
+            var rem = num % 10; // 6
+            //get dividend
+            var div = Math.floor(num/10); // 78
+            num = div;
+            reverse = reverse * 10 + rem;
+
+        }
+
+        // change the sign if the input is negative
+        if(isNegative == true){
+            reverse = -1 * reverse;
+        }
+
+        console.log("Reverse number is " + reverse);
+
+    </script>
+</body>
+</html>

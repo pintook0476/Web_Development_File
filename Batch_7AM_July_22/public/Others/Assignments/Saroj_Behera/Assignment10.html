@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Student Progress Report</title>
+    </head>
+    <body>
+        <script>
+            alert("Student Progress Report");
+            var sName = prompt("Enter a Student Name");
+            var sAge = prompt("Enter a Student Age");
+            var sGender = prompt("Enter a Student Gender");
+            var sLoc = prompt("Enter a Student Location");
+            var Math = 80;
+            var English = 70;
+            var Physics = 90;
+            var Chemasti = 70;
+            var Mil = 60;
+            var It = 70;
+            //Student total Mark
+            var Totalmark = Math + English + Physics + Chemasti + Mil + It ;
+            var Avg = Totalmark / 6 ;
+            //Student Mark Details
+            document.write("Enter a Student Name " + sName + "<br>");
+            document.write("Enter a Student Age " + sAge + "<br>");
+            document.write("Enter a Student Gender " + sGender + "<br>");
+            document.write("Enter a Student Location " + sLoc + "<br>");
+            document.write(" Student TotalMark " + Totalmark + "<br>");
+            document.write(" Student Mark Avg " + Avg + "<br>");
+            //Student first , second , third division show
+            if(Avg >= 60){
+                document.write('First Division');
+            }
+            if(Avg < 50){
+            document.write('Second Division');
+            }
+            if(Avg < 40){
+                document.write('Third Divsion')
+            }
+            
+
+        </script>
+    </body>
+</html>

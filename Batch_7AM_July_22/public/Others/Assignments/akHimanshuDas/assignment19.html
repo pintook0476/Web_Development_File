@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Assignment 19</title>
+    </head>
+    <body>
+        <h3>Addition of all even number iside a array</h3>
+        <script>
+            //Taking Input 
+            var takeInput=() =>{
+                var num=[1,2,3,4,5,6,8,6];
+                var sum=calculatingAdd(num);
+                console.log("Sum of numbers= "+sum);
+            }
+            //Calculating even numbers
+            var calculatingAdd=(data) =>{
+                console.log(data);
+                var sum=0;
+                for(var i=0;i<data.length;i++){
+                    if(data[i]%2==0){
+                        sum+=data[i];
+                    }
+                }
+                return sum;
+            }
+            takeInput();
+        </script>
+    </body>
+</html>

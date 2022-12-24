@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration of Reading Data from user</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- input Details from Use Student -->
+
+    <div class="wrapper">
+        <h1>Student Details </h1>
+
+        <label for="name">Student Name</label>
+        <input type="text" id="sName" placeholder="Harish Kumar">
+
+        <!-- input[type="date"] -->
+        <label for="Dob">Date of Birth</label>
+        <input type="date" name="date" id="myDate" min="2000-01-01" max="2030-01-01">
+
+        <label for="age">Gender : </label>
+        <input type="radio" name="gender" id="gender" value="male"> Male
+        <input type="radio" name="gender" id="gender" value="female"> Female
+        <input type="radio" name="gender" id="gender" value="other"> Other
+        <br>
+
+        <label for="operation">Class</label>
+        <select name="class" id="class">
+            <option>Select Class...</option>
+            <option value="class-I">Class I</option>
+            <option value="class-II">Class II</option>
+            <option value="class-III">Class III</option>
+            <option value="class-IV">Class IV</option>
+            <option value="class-V">Class V</option>
+        </select>
+
+        <label for="marks">Marks</label>
+        <div class="sMarks">
+            <input type="text" class="marks" id="m1">
+            <input type="text" class="marks" id="m2">
+            <input type="text" class="marks" id="m3">
+            <input type="text" class="marks" id="m4">
+            <input type="text" class="marks" id="m5">
+        </div>
+
+        <input type="button" id="btn" onclick="getDetails();" value="Get Progress Card">
+
+    </div>
+
+    <!-- Progress Card  -->
+    <div class="container">
+        <input type="button" onclick="location.reload();" value="Back">
+        <h1>Student Progress Card</h1>
+    </div>
+
+    <script src="Assignment_20.js"></script>
+</body>
+
+<script>
+
+
+
+</script>
+
+</html>

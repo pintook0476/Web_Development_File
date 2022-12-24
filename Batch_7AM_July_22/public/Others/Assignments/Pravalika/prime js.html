@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PRIME NUMBERS
+        </title>
+        <body>
+            <script>
+                var i,k;
+                for(i=2;i<=100;i++){
+                    var count=0;
+                    for(j=2;j<i;j++){
+                        if(i%j==0){
+                            count++;
+                            break;
+                        }
+                    }
+                    if(count==0){
+                        console.log("prime number is:"+ i +"\n");
+                    }
+                
+                else {
+                    console.log("its not a prime number");
+                    console.log("its a prime number");
+                } 
+                }
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JS inheritance on Classes
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="title">
+            University Sports Meet  - Registration
+        </div>
+        <ul class="collegeContainer">
+            <li class="stitle">College Registration</li>
+            <li>Enter Collage Name: <input type="text" id="cName"></li>
+            <li>Enter Collage Code: <input type="text" id="cCode"></li>
+            <li>
+                <input type="button"  value="Register College" onclick="registerCollege()">
+            </li>
+        </ul>
+        <ul class="Student Sport Registration">
+            <li class="stitle">Student Sport Registration</li>
+            <li>Enter Student Name: <input type="text" id="sName"></li>
+            <li>Age: <input type="text" id="sAge"></li>
+            <li>Gender: <input type="text" id="sGender"></li>
+            <li>
+                Select Sport to Participate:
+                <select name="" id="sSport">
+                    <option >Cricket</option>
+                    <option >Football</option>
+                    <option >Tennis</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Register Student" onclick="registerStudent()">
+            </li>
+        </ul>
+        <div class="successflyRegistered">
+            STudent got registered Successfly
+        </div>
+    </body>
+</html>

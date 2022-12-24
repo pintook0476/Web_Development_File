@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Prorgess Card </title>
+        <link rel="stylesheet" href="./A19_progrress.css">
+    </head>
+    <body>
+        <div class="header"> Naresh IT Student Cirucullam</div>
+        <div class="form"> 
+            <h2>Enter Details for Prorgess Card</h2>
+            <ul class="details"> 
+                <li> 
+                    <label for="name"> Name : </label>
+                    <input type="text" placeholder="Enter name" id="name">
+                </li>
+                <li>
+                    <label for="age"> Age : </label>
+                    <input type="text" placeholder="Enter Age" id="age">
+                </li>
+                <li>
+                    <label for="gender" > gender : </label>
+                    <input checked type="radio" name="gender" value="male" class="gender"> Male </input>
+                    <input type="radio" name="gender" value="female" class="gender"> Female </input>
+                </li>
+                <li>    
+                    <label for="Class"> Class :</label>
+                    <select class="classes">
+                        <option>Class I</option>
+                        <option>Class II</option>
+                        <option>Class III</option>
+                        <option>Class IV</option>
+                        <option>Class v</option>
+                    </select>
+                </li>
+                <li class="markholder"> 
+                    <label for="marks"> Enter Marks : </label>
+                    <input type="text" id="m1">
+                    <input type="text" id="m2">
+                    <input type="text" id="m3">
+                    <input type="text" id="m4">
+                    <input type="text" id="m5">
+                </li>
+                <div class="button" id="btn" onclick="loaddetails();"> 
+                    <input type="button" value="Generate Progress card">
+                </div>
+            </ul>
+        </div>
+        <div class="container" id="cont"> 
+            <h2> Progress card</h2>
+            <ul class="progress"> 
+                <li id="displayname"> 
+                    Name :
+                </li>
+                <li id="displayage"> 
+                    Age :
+                </li>
+                <li id="displaygender"> 
+                    gender :
+                </li>
+                <li id="displayclass"> 
+                    Class :
+                </li>
+                <li id="displaytotal"> 
+                    total :
+                </li>
+                <li id="displayavg"> 
+                    Avg :
+                </li>
+                <li id="displaygrade"> 
+                    grade :
+                </li>
+            </ul>
+        </div>
+        <div> 
+            <img src="./sbiCard.jpg">
+        </div>
+        <script src="./A19_progress.js"> </script>
+    </body>
+    <footer > 
+        copyright© 2022 - Developed by: Rohith (NareshIT)
+    </footer>
+</html>

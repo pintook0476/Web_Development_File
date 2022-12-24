@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating sessin and local storage objects
+        </title>
+        <script src="../../../jquery.js"></script>
+        <script src="app.js"></script>
+        <style>
+            .welcomeBlock {
+                display: none;
+                border: 1px solid greenyellow;
+                width: 300px;
+                text-align: center;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            .themeContainer {
+                text-align: right;
+                padding: 20px;
+            }
+            body{
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="themeContainer">
+           
+
+            <input type="color" id="themeChooser" onchange="getUserChoosenTheme()">
+        </div>
+        <div>
+            <input type="text" id="uname" placeholder="Enter User Name">
+            <input type="button" value="Save Name" onclick="saveUserName()">
+        </div>
+        <div class="welcomeBlock"></div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag and Drop event handling
+        </title>
+        <style>
+            img {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+            }
+            .container {
+                border: 1px solid;
+                width: 500px;
+                height: 500px;
+                margin: 10px auto;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ondrop="elementGotDroppped(event)"  ondragover="dargIsOver(event)"></div>
+        <img src="images/car1.jpg" alt="" ondragstart="dragIsStarted(event)" id="product_1" draggable="true">
+        <img src="images/car1.jpg" alt="" ondragstart="dragIsStarted(event)" id="product_2">
+        <img src="images/car1.jpg" alt="" ondragstart="dragIsStarted(event)" id="product_3">
+        <img src="images/car1.jpg" alt="" ondragstart="dragIsStarted(event)" id="product_4">
+
+        <script>
+            var left;
+            var ptop;
+            var productId = '';
+            var elementGotDroppped = (event) => {
+                event.preventDefault();
+                console.log("got dropped");
+                event.target.append(document.querySelector(productId));
+                document.querySelector(productId).style.left = left + 'px';
+                
+                document.querySelector(productId).style.top = ptop + 'px';
+            }
+
+            var dargIsOver = (event) => {
+                console.log(event);
+                event.preventDefault();
+                
+                left = event.pageX;
+                ptop = event.pageY;
+                console.log("Dar is over " + ptop)
+                
+            }
+
+            var dragIsStarted = (event) => {
+                
+                productId = '#' +  event.target.getAttribute("id");
+                console.log("drag is stared " + productId);
+            }
+        </script>
+    </body>
+</html>

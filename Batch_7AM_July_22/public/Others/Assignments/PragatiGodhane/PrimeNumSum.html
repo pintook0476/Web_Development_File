@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Sum</title>
+   
+</head>
+<body>
+
+    <h1>Prime Number sum between 1 to 100</h1>
+
+<script>
+var count=0;
+var sum=0;
+var check=0;
+for(var i=1; i<=100; i++)
+{
+for(var j=1; j<=i;j++)
+{
+    if(i%j==0){
+        
+    count ++;
+    check = count;
+    }
+    
+}
+count = 0;
+
+if(check == 2)
+{
+    
+    sum = sum + i;
+    
+}
+
+}
+console.log(`sum of all prime numbers between 1 to 100 is : ${sum}`);
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ename = prompt("Enter your name");
+
+        var address = prompt("Entere your address");
+
+        var gender = prompt("Enter gender ");
+
+        var bSalary = prompt("Enter your basic salary");
+
+        bSalary = parseInt(bSalary);
+        var pf = (bSalary * 14) / 100;
+        var hra = (bSalary * 25) / 100;
+        var tSalary = bSalary + pf + hra;
+        console.log("Name : " + ename);
+      //  console.log("Age : " + age);
+        console.log("Address : " + address);
+        console.log("Total Salary : " + tSalary);
+
+
+        if (gender == "MALE" || gender == "Male" || gender == "male") {
+            if (tSalary >= 200000) {
+                console.log("Your payable tax is : " + (tSalary * 15) / 100);
+            }
+            else if (tSalary >= 100000) {
+                console.log("Your payable tax is : " + (tSalary * 10) / 100);
+            }
+            else if (tSalary >= 50000) {
+                console.log("Your payable tax is : " + (tSalary * 5) / 100);
+            }
+            else{
+                console.log("You are not eligible for tax paying");
+            }
+
+        }
+
+        if (gender == "FEMALE" || gender == "Female" || gender == "female") {
+            if (tSalary >= 200000) {
+                console.log("Your payable tax is : " + (tSalary * 10) / 100);
+            }
+            else if (tSalary >= 100000) {
+                console.log("Your payable tax is : " + (tSalary * 5) / 100);
+            }
+            else{
+                console.log("You are not eligible for tax paying");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

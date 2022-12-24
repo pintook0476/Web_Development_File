@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating - Creating product details dynamically
+        </title>
+        <style>
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                list-style: none;
+                padding: 5px;
+                margin: 5px;
+            }
+            .productDetails {
+                border: 1px solid;
+                margin: 10px;
+                padding: 0;
+                width: 300px;
+                float: left;
+            }
+            .productDetails li {
+                border: 1px solid #ccc;
+            }
+
+            img {
+                width: 150px;
+                height: 140px;
+            }
+            .actualPrice {
+                font-weight: bold;
+                font-size: 20px;
+                color: orange;
+                text-decoration: underline;
+                text-decoration-line: line-through;
+            }
+            .discountedPrice {
+                font-weight: bold;
+                font-size: 20px;
+                color: green;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="productDetailsContainer"></ul>
+        <script>
+            var pDeails = {
+                name: 'Laptop',
+                price: 480,
+                discountPercent: 5,
+                sellerName: 'Indian Electronics',
+                manu: 'Sony',
+                image: 'https://m.media-amazon.com/images/I/71Ff0Ap49HS._SX425_.jpg'
+            }
+            var loadProductData = () => {
+                var liTag = document.createElement('li');
+                liTag.setAttribute("class", "productDetails");
+
+                var ulTag = document.createElement("ul");
+
+                var li1 = document.createElement("li");
+                li1.innerHTML = 'Product Name : ' + pDeails.name;
+                ulTag.append(li1);
+
+                var li2 = document.createElement("li");
+                li2.innerHTML = 'Prodcut MAnufacturer : ' + pDeails.manu;
+                ulTag.append(li2);
+
+                var li3 = document.createElement("li");
+                li3.innerHTML = "Product Price : ";
+                    var span1 = document.createElement("span");
+                    span1.setAttribute("class", 'actualPrice');
+                    span1.innerHTML = '$' + pDeails.price;
+                    li3.append(span1);
+
+                    var span2 = document.createElement("span");
+                    span2.setAttribute("class", 'discountedPrice');
+                    span2.innerHTML = '$' + (pDeails.price - (pDeails.price * pDeails.discountPercent ) / 100);
+                    li3.append(span2);
+                ulTag.append(li3);
+
+                var li4 = document.createElement("li");
+                li4.innerHTML = 'Seller Name : ' + pDeails.sellerName;
+                ulTag.append(li4);
+
+                var li5 = document.createElement('li');
+                var imgTag = document.createElement("img");
+                imgTag.setAttribute("src", pDeails.image);
+                li5.append(imgTag);
+                ulTag.append(li5);
+
+                liTag.append(ulTag);
+                console.log(ulTag);
+
+                document.querySelector(".productDetailsContainer").append(liTag);
+
+            }
+            loadProductData();
+        </script>
+    </body>
+</html>

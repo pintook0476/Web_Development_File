@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Assignment 17</title>
+    </head>
+    <body>
+        <h3>Employee Salary calculator by using function</h3>
+        <script>
+            var ename,egen,edept,basic,pf,hra,tax,total;
+            function dataInput(){
+                ename=prompt("Enter the employee name");
+                egen=prompt("Enter your gender");
+                edept=prompt("Enter your department");
+                basic=prompt("Enter your basic");
+                basic=parseInt(basic);
+            }
+            function salaryCalculation(){
+                pf=basic*(14/100);
+                hra=basic*(25/100);
+            }
+            function taxCalculation(){
+                if(egen=='male'){
+                    if(basic>200000)
+                    tax=basic*(15/100);
+                    else if(basic>100000)
+                    tax=basic*(10/100);
+                    else if(basic>50000)
+                    tax=basic*(5/100);
+                    else
+                    tax=basic*0;
+                }
+                else if(egen=='female'){
+                    if(basic>200000)
+                    tax=basic*(10/100);
+                    else if(basic>100000)
+                    tax=basic*(5/100);
+                    else 
+                    tax=basic*0;
+                }
+                else
+                console.log("Enter correct gender male/female");
+            }
+            function oputputEmp(){
+                console.log("Name= "+ename);
+                console.log("Gender= "+egen);
+                console.log("Department= "+edept);
+                console.log("Basic= "+basic);
+                console.log("PF= "+pf);
+                console.log("HRA= "+hra);
+                console.log("Tax= "+tax);
+            }
+            function totalSal(){
+                total=basic+pf+hra-tax;
+                console.log("Salary of the employee= "+total);
+            }
+
+            dataInput();
+            salaryCalculation();
+            taxCalculation();
+            oputputEmp();
+            totalSal();
+        </script>
+    </body>
+</html>

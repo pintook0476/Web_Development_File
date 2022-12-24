@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .menuIcon {
+                float: right;
+                clear: both;
+                display: none;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            .navBar div {
+                border: 1px solid;
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+                min-width: 120px;
+                cursor: pointer;
+                
+            }
+            .navBar div:hover {
+                background-color: aquamarine;
+            }
+            .navBar {
+                display: flex;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 250px) and (max-width: 350px) {
+                .navBar {
+                    flex-direction: column;
+                    display: none;
+                    position: absolute;
+                    width: 95%;
+                    top: 32px;
+                }
+
+                .menuIcon {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        </style>
+        <script src="../../jquery.js"></script>
+    </head>
+    <body>
+        <div class="menuIcon" onclick="toggleMenu()">
+            <img src="images/menu.png" alt="">
+        </div>
+        <div class="navBar">
+            <div>Home</div>
+            <div>Careers</div>
+            <div>Our Clients</div>
+            <div>Services</div>
+            <div>Contact US</div>
+            <div>Address</div>
+        </div>
+        <script>
+            var toggleMenu = () => {
+                $(".navBar").slideToggle(500);
+            }
+        </script>
+    </body>
+</html>

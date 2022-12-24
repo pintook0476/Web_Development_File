@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+<style>
+    h2{
+        border: 1px solid black;
+        text-align: center;
+        background-color: #8caede
+    }
+    .container{
+        border: 1px solid;
+        width: 70%;
+        margin: 20px auto;
+        padding: 9px;
+        background-color: #ccc;
+    }
+    .personalblock,
+    .educationblock,
+    .addressblock,
+    .abouturselfbblock{
+        border: 1px solid;
+        height: 160px;
+        padding: 15px;
+        margin: 42px auto;
+        background-color: #fff;
+}
+
+    .heading1{
+        border: 1px solid black;
+        text-align: center;
+        width: 180px;
+        padding: 3px;
+        position: absolute;
+        top: 111px;
+        left: 265px;
+        background-color: green;
+        color: floralwhite
+    }
+    .heading2{
+        border: 1px solid black;
+        text-align: center;
+        width: 180px;
+        padding: 3px;
+        position: absolute;
+        top: 345px;
+        left: 265px;
+        background-color: green;
+        color: floralwhite
+    }
+    .heading3{
+        border: 1px solid black;
+        text-align: center;
+        width: 180px;
+        padding: 3px;
+        position: absolute;
+        top: 580px;
+        left: 265px;
+        background-color: green;
+        color: floralwhite
+
+    }
+    .heading4{
+        border: 1px solid black;
+        text-align: center;
+        width: 180px;
+        padding: 3px;
+        position: absolute;
+        top: 814px;
+        left: 265px;
+        background-color: green;
+        color: floralwhite
+    }
+   .details{
+        margin: 13px;
+        padding: 10px; 
+   }
+   .about{
+    margin: 3px;
+    margin-left: 25px;
+    padding: 3px;
+}
+   label {
+        padding: 0px 34px;
+        }
+    li{
+        padding: 13px;
+        list-style: none;
+    }
+    .button{
+    margin: 6px;
+    padding: 6px;
+    border-radius: 7px;
+    position: relative;
+    left: 335px;
+    top: -18px;
+    color: white;
+    background-color: orangered;
+}
+.button:hover{
+    cursor: pointer;
+}
+.footer{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #8caede
+    
+
+}
+
+</style>
+<body>
+    <h2>Students Registration Form</h2>
+   <form action="">
+        <div class="container">
+            <div class="personalblock">
+                <div class="heading1">Personal Details</div>
+                <ul class="details">
+                    <li>
+                    <label for="Name">Student Name</label>
+                    <input type="text" placeholder="Enter Your Name">
+                    <label for="obt course">Obtain Course</label>
+                    <select name="courses" id="">
+                        <option value="none">Select</option>
+                        <option value="UI">UI Full Stack</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="C/C++">C/C++</option>
+                        <option value="C#">C#</option>
+                    </select>
+                    </li>
+                    <li>
+                        <label for="Email">E-mail Address</label>
+                        <input type="text" placeholder="Enter Your E-mail">
+                    </li>
+                    <li>
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </li>
+                </ul>
+            </div>
+            <div class="educationblock">
+                <div class="heading2">Education Details</div>
+                <ul class="details">
+                    <li>
+                        <label for="qualification">Qualification</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="lang"> Langauges Known</label>
+                        <input type="checkbox" value="Urdu" name="lang_urdu">Urdu
+                        <input type="checkbox" value="Hindi" name="lang_hin"> Hindi
+                        <input type="checkbox" value="Telugu" name="lang_tel"> Telugu
+                        <input type="checkbox" value="English" name="lang_eng"> English
+                       
+                    </li>
+                    <li>
+                        <label for="marks">Avg Marks</label>
+                        <input type="text">
+                    </li>
+                </ul>
+            </div>
+            <div class="addressblock">
+                <div class="heading3">Address</div>
+                <ul class="details">
+                    <li>
+                        <label for="house no.">House No</label>
+                        <input type="text">
+                        <label for="landmark">Landmark</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="street"> Street Name</label>
+                    <input type="text" placeholder="Street Name/Area Name">
+                    <label for="states">State</label>
+                    <select name="states" id="">
+                        <option value="none">Select</option>
+                        <option value="MS">Maharashtra</option>
+                        <option value="TS">Telengana</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="GOA">Goa</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="DELHI">Delhi</option>
+                    </select>
+                    </li>
+                    <li><label for="country">Country</label>
+                    <select name="states" id="">
+                        <option value="none">Select</option>
+                        <option value="IN">India</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="KZ">Kazakistan</option>
+                        <option value="CHN">China</option>
+                        <option value="JP">Japan</option>
+                        <option value="TR">Turkey</option>
+                    </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="abouturselfbblock">
+                <div class="heading4">About Yourself</div>
+                
+                <li>
+                <label for="about">About Yourself</label>
+                </li>
+                <li class="about">
+                <textarea maxlength="100" cols="30" rows="6" name="aboutUser"></textarea>
+            </li>
+            </div>
+            <div>
+                <input class="button" type="submit" value="Register Student">
+                <input class="button" type="reset" value="Reset Values">
+            </div>
+         </div>
+         <footer class="footer">
+            @copyright 2022
+         </footer>
+   </form>
+
+</body>
+</html>

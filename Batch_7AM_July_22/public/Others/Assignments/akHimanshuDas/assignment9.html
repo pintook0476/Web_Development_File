@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>Assignment 9</title>
+        <style>
+            .header{
+                border: 1px solid;
+                text-align: center;
+                margin-bottom: 5px;
+                padding: 5px;
+                font-weight: bold;
+                font-size: large;
+                color: blueviolet;
+                background-color: antiquewhite;
+            }
+            .container{
+                border: 1px solid;
+                margin-top: 5px;
+                height: 900px;
+                background-color: antiquewhite;
+            }
+            .footer{
+                border: 1px solid;
+                text-align: center;
+                margin-top: 5px;
+                padding: 5px;
+                font-weight: bold;
+                color: blueviolet;
+                background-color: antiquewhite;
+            }
+            .formContainer{
+                border: 1px solid;
+                margin: 10px;
+                height: 23.5%;
+            }
+            .containerHeading{
+                border: 1px solid;
+                width: 200px;
+                margin: 2px;
+                padding: 5px;
+                background-color: cadetblue;
+            }
+            .box1{
+                position: absolute;
+                top: 45px;
+                left: 37px;
+            }
+            .box2{
+                position: absolute;
+                top: 270px;
+                left: 38px;
+            }
+            .box3{
+                position: absolute;
+                top: 495px;
+                left: 38px;
+            }
+            .box4{
+                position: absolute;
+                top: 718px;
+                left: 38px;
+            }
+            .formDetail{
+                margin: 25px 0px 5px 20px;
+                width: 200px;
+                color: blueviolet;
+            }
+            .formDetail1{
+                float: left;
+            }
+            .formFill1{  
+                margin: 25px;
+                float: left;
+                width: 200px;
+            }
+            .formDetail2{
+                clear: both;
+                float: left;
+            }
+            .formFill2{
+                margin: 21px 0px 0px 25px;
+                float: left;
+                width: 300px;
+            }
+            .formDetail3{
+                clear: both;
+                float: left;
+            }
+            .formFill3{
+                margin: 21px 0px 0px 25px;
+                float: left;
+                width: 200px;
+            }
+            .formDetail5{
+                clear: both;
+                float: left;
+            }
+            .formFill5{
+                margin: 20px 0px 0px 25px;
+                float: left;
+                width: 200px;
+            }
+            .formDetail4{
+                clear: both;
+                position: absolute;
+                top: 58px;
+                left: 503px;
+            }
+            .formFill4{
+                margin: 25px;
+                width: 200px;
+                position: absolute;
+                top: 59px;
+                left: 603px;
+            }
+            .formDetail6{
+                position: absolute;
+                top: 530px;
+                left: 503px;
+            }
+            .formFill6{
+                margin: 25px;
+                width: 200px;
+                position: absolute;
+                top: 510px;
+                left: 603px;
+            }
+            .aboutCont{
+                margin-top: 90px;
+                width: 300px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Student Registration Page</div>
+        <div class="container">
+            <div class="formContainer">
+                <div class="containerHeading box1 "> Personal Details </div>
+
+                <div class="formDetail formDetail1">Student Name:</div>
+                <div class="formFill1"> 
+                    <input type="text"> 
+                </div>
+                <div class="formDetail formDetail2">Mail ID:</div>
+                <div class="formFill2"> 
+                    <input type="text"> 
+                </div>
+                <div class="formDetail formDetail3">Gender</div>
+                <div class="formFill3"> 
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female 
+                </div>
+                <div class="formDetail formDetail4">Course Optd:</div>
+                <div class="formFill4"> 
+                    <select name="" id="">
+                        <option value="selected"> Select a Course</option>
+                        <option value="c">C Langauge</option>
+                        <option value="c#">C Sharp</option>
+                        <option value="Java">Java </option>
+                        <option value="Web">Web Technology</option>
+                        <option value="Framework">Angular and Node Js</option>
+                        <option value="webSer">Web Service</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="containerHeading box2">Educational Details</div>
+                <div class="formDetail formDetail1">Qualification:</div>
+                <div class="formFill1"> 
+                    <input type="text"> 
+                </div>
+                <div class="formDetail formDetail2">Languages Known:</div>
+                <div class="formFill2"> 
+                    <input type="checkbox">English
+                    <input type="checkbox">Odia
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Telgue
+                </div>
+                <div class="formDetail formDetail3">Avg Mark:</div>
+                <div class="formFill3"> 
+                    <input type="text"> 
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="containerHeading box3">Adress</div>
+                <div class="formDetail formDetail1">Dno:</div>
+                <div class="formFill1"> 
+                    <input type="text"> 
+                </div>
+                <div class="formDetail formDetail2">Street Name:</div>
+                <div class="formFill2"> 
+                    <input type="text"> 
+                </div>
+                <div class="formDetail formDetail3">State:</div>
+                <div class="formFill3"> 
+                    <select name="states" id="">
+                        <option value="selectState">Select State</option>
+                        <option value="o">Odisha</option>
+                        <option value="B#">Bihar</option>
+                        <option value="T">Telengana</option>
+                        <option value="Ap">Andhrapradesh</option>
+                        <option value="Up">Uttarpradesh</option>
+                        <option value="K">Karnatak</option>
+                        <option value="Ke">Kerla</option>
+                        <option value="Tn">TamilNadu</option>
+                    </select> 
+                </div>
+                <div class="formDetail formDetail5">Country:</div>
+                <div class="formFill5"> 
+                    <select name="country" id="">
+                        <option value="sc">Select Country</option>
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                        <option value="BHU">Bhutan</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="au">Australia</option>
+                        <option value="sa">South Affrica</option>
+                        <option value="ru">Russia</option>
+                        <option value="ja">Japan</option>
+                    </select> 
+                </div>
+                <div class="formDetail formDetail6">Land Mark:</div>
+                <div class="formFill6"> 
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="containerHeading box4">About YourSelf</div>
+                <div class="formDetail formDetail1 aboutCont">About YourSelf:</div>
+                <div class="formFill1"> 
+                    <textarea name="AboutMyself" id="" cols="50" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer">@copy right 2022</div>
+    </body>
+</html>

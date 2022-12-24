@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-11</title>
+    </head>
+    <body>
+        <script>
+            var eName = 'surya';
+            var eDept = 'it';
+            var age = 22;
+            var gender = prompt("enter employee gender");
+            var basicSalary = prompt("enter employee basic salary");
+            basicSalary = parseInt(basicSalary);
+            var pf = (14/100)*basicSalary;
+            var hra = (25/100)*basicSalary;
+            var totalSalary = basicSalary+pf+hra;
+            console.log("employee name is :"+ eName);
+            console.log("employee department is :"+ eDept);
+            console.log("employee age is :"+ age);
+            console.log("employee pf is :"+pf);
+            console.log("employee hra is :" + hra);
+            console.log("toatl salary is :"+ totalSalary);
+            if(gender == "male"){
+                if(totalSalary >= 200000){
+                    console.log("tax percentage is "+ (15/100)*totalSalary);
+                } else if(totalSalary >= 100000){
+                    console.log("tax percentage is "+(10/100)*totalSalary);
+                } else if(totalSalary >= 50000){
+                    console.log("tax percentage is "+(5/100)*totalSalary);
+                } else{
+                    console.log("tax is 0");
+                }
+            } else{
+                if(totalSalary >= 200000){
+                    console.log("tax percentage is "+(10/100)*totalSalary);
+                } else if(totalSalary >= 100000){
+                    console.log("tax percentage is "+(5/100)*totalSalary);
+                }else{
+                    console.log("tax is 0");
+                }
+            }
+
+        </script>
+    </body>
+</html>

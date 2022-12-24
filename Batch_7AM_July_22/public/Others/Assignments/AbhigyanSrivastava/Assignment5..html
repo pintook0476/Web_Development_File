@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           Assignment5
+        </title>
+        <style>
+            .footer,
+            .header {
+                border: 2px solid;
+                text-align: center;
+                text-decoration: underline;
+                padding: 10px;
+                margin: 10px;
+                background-color: aqua;
+            }
+            .Container {
+                border: 2px solid;
+                padding: 10px;
+                margin: 10px;
+                height: 500px;
+                background-color: aquamarine;
+            }
+            
+            .leftBlock,
+            .rightBlock {
+                border: 2px solid;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                height: 460px;
+                overflow: auto;
+                background-color: bisque;
+            }
+            .leftBlock {
+                width: 30%;
+            }
+            .rightBlock {
+                width: 55%;
+            }
+            .leftBlock li {
+                border: 2px solid;
+                margin: 10px;
+                padding: 10px;
+                list-style-position: inside;
+            }
+            .leftBlock li:hover {
+                 background-color: #ccc;
+            }
+            .detailsContainer > li {
+                list-style: none;
+                height: 100px;
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock,
+            .detailsBlock {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock {
+                border: 2px solid;
+                width: 150px;
+            }
+            .imgBlock img {
+                width: 140px;
+                height: 80px;
+            }           
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            Student Details
+        </div>
+        <div class="Container">
+            <div class="leftBlock">
+                <ol>
+                    <li>Abhinav</li>
+                    <li>
+                        <a href="#ShubhamDetails">Shubham</a>
+                    </li>
+                    <li>Abhigyan</li>
+                    <li>Ajay</li>
+                    <li>Divyansh</li>
+                    <li>Priya</li>
+                    <li>Sumit</li>
+                    <li>Vneet</li>
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <ul class="detailsContainer">
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Abhigyan</li>
+                                <li>Age: 20</li>
+                                <li>Gender: Male</li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu2.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Shweta</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Female</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu6.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Rina</li>
+                                <li>Age: 25</li>
+                                <li>Gender: Female</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu7.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Rishu</li>
+                                <li>Age: 19</li>
+                                <li>Gender: Male</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Abhi</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Male</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu2.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Shakshi</li>
+                                <li>Age: 29</li>
+                                <li>Gender: Female</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="ShubhamDetails">
+                        <div class="imgBlock">
+                            <img src="stu1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Shubham</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Male</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="stu7.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Binku</li>
+                                <li>Age: 20</li>
+                                <li>Gender: Male</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            copyrights 2022
+        </div>
+    </body>
+</html>

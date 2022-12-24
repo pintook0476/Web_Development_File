@@ -1,0 +1,35 @@
+ul {
+    border: 1px solid;
+    margin: 10px auto;
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+#marks input {
+    width: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.inputname {
+    display: inline-block;
+    width: 100px;
+}
+
+#showconta ul {
+    display: none;
+}
+
+#showconta ul li {
+    border: 1px solid #ccc;
+}

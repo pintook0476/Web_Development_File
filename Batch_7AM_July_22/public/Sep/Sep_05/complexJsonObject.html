@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var contactDetail = {
+                firstName: 'Anandh',
+                lastName: 'bedi',
+                nickName: 'Anandhu',
+                phonNo: {
+                    office: '040-123456',
+                    personal: [23423423, 22342342, 23423423]
+                },
+                address: {
+                    office: {
+                        stateName: 'Telangana',
+                        pinCode: 23423,
+                        countryDetails: {
+                            name: 'India',
+                            code: 'C_02'
+                        }
+                    },
+                    home: {
+                        streetName: 'Abc Line',
+                        dno: '2/3/45',
+                        stateInfo: {
+                            stateName: 'Goa',
+                            stateCode: 'G_01'
+                        }
+                    }
+                },
+                emailId: {
+                    office: 'abc@company.com',
+                    personal: ['abc@gmail.com', 'test@yahoo.com']
+                },
+                gender: 'Male',
+                birthDate: {
+                    month: 'JAn',
+                    year: 2022,
+                    day: 9
+                },
+                profilePic: 'image url/abc.jpg',
+                languages: ['Hindi', 'Telugu', 'Urdu'],
+                socialId: {
+                    linkedIn: 'abc',
+                    twitter: 'test'
+                }
+            }
+
+            
+
+            var showValuesFromObject = (paramObj) => {
+                for (var temp in paramObj) {
+                    if (typeof(paramObj[temp]) == 'object') {
+                        showValuesFromObject(paramObj[temp]);
+                    } else {
+                        console.log(temp);
+                        console.log(paramObj[temp]);
+                    }
+                }
+            }
+
+            showValuesFromObject(contactDetail);
+        </script>
+    </body>
+</html>

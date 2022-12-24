@@ -1,0 +1,80 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #0015ff;
+    position: absolute;
+    animation: bo1 10s linear infinite;
+}
+
+@keyframes bo1 {
+    0% {
+        top: 5%;
+        left: 5%;
+    }
+
+    8% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    16% {
+        top: 6%;
+        left: 6%;
+    }
+
+    24% {
+        left: 100%;
+        top: 7%;
+    }
+
+    32% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    40% {
+        left: 100%;
+        top: 5%;
+    }
+
+    48% {
+        top: 100%;
+        left: 95%;
+    }
+
+
+    56% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    64% {
+        left: 96%;
+        top: 96%;
+    }
+
+    72% {
+        top: 95%;
+        left: 5%;
+    }
+
+
+    80% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    88% {
+        top: 95%;
+        left: 5%;
+    }
+
+    100% {
+        bottom: 96%;
+        top: 4%;
+    }
+}

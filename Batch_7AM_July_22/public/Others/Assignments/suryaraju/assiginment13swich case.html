@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Switch case
+        </title>
+    </head>
+    <body>
+        <div>
+            <div>Accept one number from user, give options to user like 1,2,3...</div>
+            <div>and 1.Total number of digits in the number</div>
+            <div> 2. Reverse of the given number </div>
+            <div>3. Lucky number of the given number</div>
+            <div>4. Whether the number is palindrome or not</div>
+            <div>5. whether the number is prime or not</div>
+            <div>6. whether the number is armstrong or not</div>
+        </div>
+
+        <script>
+            var num = prompt ('Enter the number');
+            num = parseInt(num);
+
+            var userOption = prompt('choose option number between: 1. number of digits 2. reverse 3. lucky number 4. palindrome or not 5. prime or not 6. armstrong or not');
+            userOption = parseInt(userOption);
+
+            switch(userOption) {
+
+                case 1 : 
+                    count = 0;
+
+                    while(num > 0){
+                        var remainder = num % 10; /* 1234 -- > 4 here getting digits so added count++ after this*/
+                        count++; /* 1 */
+
+                        num = num / 10; /*123.4*/
+                        num = parseInt(num); /*123*/
+                    }
+                    console.log('Total digits in number are:'+count);
+
+                    break; 
+                case 2 :
+                    
+                    var reverse = 0;
+                    
+                    while( num > 0){ 
+                        var remainder = num % 10;
+                        reverse = (reverse*10) + remainder ; /* 0+4 = 4*...40+3-->43... 43*10+2=432 *  432*10+1=4321*/
+                        
+                        num = num /10;
+                        num = parseInt(num); 
+                    }
+                    console.log('The reverse of given number is: '+reverse );
+
+                    break;
+
+                case 3 :
+
+                    var sum = 0;
+                    var remainder;
+                   // var sum2 = 0;
+
+                    while (num > 0){ /* 697989...69798..6979..697..69..6*/
+                                        /* 48 > 0 .. 4>0..*/
+                                        /* 12 > 0.. 1>0 */
+                        remainder = num %10; /*9..8..9..7..9..6*/
+                                                /* 8.. 4*/
+                                                /* 2.. 1*/
+                        sum = sum+remainder; /*9..17..26..33..42..48*/
+                                                /* here initial sum is 0 ... so sum = 8..12*/
+                                                /* here third time initial sum is 0,  sum = 2..3*/
+                        num = num / 10;
+                        num = parseInt(num);/* 69798..6979..697..69..6..0*/
+                                            /* 4   0*/
+                                            /* 1.. 0*/
+                        /*once final sum comes in one digit ie < 9, will not enter in if*/
+                        if(num == 0 && sum >9 ){ /* sum ie 48 > 9*/
+                                                /* again sum is 12 ie greater than 9*/
+                            num = sum; /* so num becomes 48 */
+                                        /* so num becomes 12*/
+                            sum = 0;
+
+                        }
+                    }
+                        console.log('lucky number of given number is'+sum);
+                      
+                        /* below logic will not work for all numbers
+                        if (sum <10)
+                        {
+                            cosole.log('lucy number of given number si:' + sum);
+                        }
+                   else{
+                                
+                        while (sum > 0){
+                            var remainder = sum % 10;
+                            sum2 = sum2+remainder;
+
+                            sum = sum/10;
+                            sum = parseInt(sum);
+                        }
+                    console.log('Lucky number of given number is: '+ sum2);
+                    }  */ 
+
+                    break;
+
+                case 4: 
+
+                    temp = num;
+                    var reverse = 0;
+
+                        while(num > 0){ /* 121 */
+                            
+                            remainder = num % 10; /* 1*/
+                            reverse = (10*reverse)+remainder;
+
+                            num = num /10; /* 12.1*/
+                            num = parseInt(num); /* 12*/     
+                        }
+
+                    if (temp == reverse)
+                    {
+                        console.log('Number is palindrome');
+                    }
+
+                    else {
+                        console.log('Number is not palindrome');
+                    }
+
+                    break;
+     
+                case 5: 
+
+                    var tracker = 0;
+
+                    for (var i = 1; i <= num; i++){  /*to divide the given number, from 1 to that number. 
+                                                        if that number is divided only by 1 and 
+                                                        that number then it will be prime number. to track that tracker variable*/
+                         if (num % i == 0){
+                         tracker++;
+                         }
+                    }
+
+                    if (tracker == 2) {
+                        console.log('is a prime number')
+                    }
+                    else {
+                        console.log('not a prime number')
+                    }
+
+                    break;
+
+                case 6: 
+                    var temp = num;
+                    count = 0;
+                        while (num > 0){ 
+                            var remainder = num % 10; 
+                            count++;
+                            num = num/10; 
+                            num = parseInt (num);
+                        }
+
+                        num = temp; /*since in above loop num value is changed to 0 . need original num, so used temp*/
+                        var sum = 0;
+
+                        while(num > 0){ 
+                            var remainder = num % 10;
+                            num = num/10;
+                            num = parseInt (num); 
+  
+                            var mul = 1;
+
+                            for (var i = 1; i <= count; i++){
+                                    mul = mul * remainder; /*here each digit is multipied by itself, 
+                                                            3 times since count is 3 since number has 3 digits*/                                    
+                                }
+                            sum = sum + mul; 
+                        }
+
+                        if (sum == temp){
+                            console.log('number is armstrong');
+                        }
+                        else {
+                            console.log('number is not armstrong');
+                        }
+
+                        break; /* though break is not compulsory for last case. no next case to execute*/
+                } /*this is for switch*/
+        </script>
+    </body>
+</html>pp

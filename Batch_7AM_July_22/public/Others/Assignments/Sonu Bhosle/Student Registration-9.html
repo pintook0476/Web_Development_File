@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading {
+            background-color: #06102b;
+            height: 40px;
+            margin: auto;
+            width: 90%;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            line-height: 40px;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .form_content {
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            width: 90%;
+            height: 1120px;
+        }
+
+        .inner_content {
+            margin: auto;
+            width: 95%;
+            height: 220px;
+            border: 1px solid black;
+            margin-top: 30px;
+            border-radius: 3px;
+        }
+
+        .inner_content1 {
+            margin: auto;
+            width: 95%;
+            height: 240px;
+            border: 1px solid black;
+            margin-top: 30px;
+            border-radius: 3px;
+        }
+
+        .inner_content2 {
+            margin: auto;
+            width: 95%;
+            height: 260px;
+            border: 1px solid black;
+            margin-top: 30px;
+            border-radius: 3px;
+        }
+
+        .inner_content3 {
+            margin: auto;
+            width: 100%;
+            height: 250px;
+            border: 1px solid black;
+            margin-top: 50px;
+            border-radius: 3px;
+        }
+
+        .head-title {
+            border: 1px solid black;
+            width: 170px;
+            font-size: 17px;
+            text-align: center;
+            height: 25px;
+            margin-top: -15px;
+            margin-left: 40px;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .input-box {
+            padding: 0 150px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .input-box input {
+            width: 250px;
+            height: 25px;
+            outline: none;
+
+        }
+
+        #box1 {
+            float: right;
+            font-size: 20px;
+        }
+
+        #box4 {
+            font-size: 20px;
+            display: flex;
+            margin-top: 30px;
+            margin-left: 9px;
+        }
+
+        #box5 {
+            font-size: 20px;
+            display: flex;
+            margin-top: 30px;
+            margin-left: -16px;
+        }
+
+
+        #lang {
+            width: 250px;
+            height: 30px;
+        }
+
+        #box2 {
+            margin-top: 40px;
+            margin-left: -22px;
+
+        }
+
+        #box2 input {
+
+            width: 150px;
+        }
+
+
+        .form1 {
+            margin-left: 140px;
+            margin-top: 40px;
+        }
+
+        .form1 label {
+            font-size: 20px;
+        }
+
+        #lang1 {
+            margin: 0 20px;
+        }
+
+        .form1 span {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .box2 {
+            margin-left: -40px;
+        }
+
+        #text {
+            align-items: center;
+            display: flex;
+            justify-content: left;
+            margin-left: -50px;
+            margin-top: 100px;
+        }
+
+        #text_area {
+            float: right;
+            margin-top: -110px;
+            margin-right: 10px;
+
+        }
+
+        #text_area1 {
+
+            float: right;
+            margin-top: 5px;
+            margin-right: -45px;
+        }
+
+        #text1 {
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        
+       
+        footer{
+            width: 100%;
+           height: 40px;
+           text-align: center;
+           background-color: #d3d3d3;
+        }
+        footer a{
+            color: rgb(0, 0, 0);
+            line-height: 40px;
+            text-decoration: none;
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div id="heading">
+        <h3>Student Registration Page</h3>
+    </div>
+    <div class="form_content">
+        <!-- Personal Details -->
+        <div class="inner_content">
+            <div class="head-title">Personal Details</div>
+            <div class="input-box">
+                Name : <input type="text">
+                <div id="box1">
+                    Course Opted : <select name="languages" id="lang">
+                        <option value="">Select Course</option>
+                        <option value="">JAVA SCRIPT</option>
+                        <option value="">PHP</option>
+                        <option value="">SQL</option>
+                        <option value="">REACT JS</option>
+                        <option value="">HTML-5</option>
+                        <option value="">CSS-3</option>
+                    </select>
+                </div><br>
+                <div id="box2">Email Id : <input type="text"></div>
+            </div>
+            <form class="form1">
+                <label>Gender : </label>
+                <span>Male</span> <input type="radio" id="Gender" name="gender" value="male" />
+                <span> Female</span> <input type="radio" id="Gender" name="gender" value="female" />
+            </form>
+        </div>
+        <!-- Educational details -->
+        <div class="inner_content1">
+            <div class="head-title">Educational Details</div>
+            <div class="input-box">
+                <div class="box2">Qualification: <input type="text"></div>
+                <div id="box2">Avg Marks: <input type="text"></div>
+            </div>
+            <form class="form1">
+                <label>languages : </label>
+                <span>English</span> <input type="checkbox" id="lang1" name="eng" value="English" />
+                <span> Hindi</span> <input type="checkbox" id="lang1" name="hin" value="Hindi" />
+                <span>Marathi</span> <input type="checkbox" id="lang1" name="ma" value="Marathi" />
+                <span> Telgu</span> <input type="checkbox" id="lang1" name="te" value="Telgu" />
+            </form>
+        </div>
+        <!--Address  -->
+        <div class="inner_content2">
+            <div class="head-title">Address</div>
+            <div class="input-box">
+                &nbsp; Dno : <input type="text">
+                <label id="text1">Landmark :</label>
+
+                <textarea name="text1" id="text_area1" cols="40" rows="10"></textarea>
+                <br><br>
+                Street : <input type="text">
+                <br>
+                <div id="box4">
+                    State :&nbsp; <select name="languages" id="lang">
+                        <option value="">Select State</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Gujrat</option>
+                        <option value="">Panjab</option>
+                        <option value="">Karnatka</option>
+                        <option value="">Utterpradesh</option>
+                        <option value="">Bihar</option>
+                    </select>
+                </div>
+                <div id="box5">
+                    Country :&nbsp;<select name="languages" id="lang">
+                        <option value="">Select Country</option>
+                        <option value="">India</option>
+                        <option value="">America</option>
+                        <option value="">Japan</option>
+                        <option value="">indoneshia</option>
+                        <option value="">Chaina</option>
+                        <option value="">Rusiya</option>
+                    </select>
+                </div>
+
+            </div>
+            <!-- about yourself -->
+            <div class="inner_content3">
+                <div class="head-title">About Yourself</div>
+                <div class="input-box">
+                    <label id="text">About Yourself</label>
+                    <textarea name="" id="text_area" cols="80" rows="13"></textarea>
+                </div>
+            </div>
+        </div>
+       
+      
+    </div>
+    <br>
+    <footer>
+        <a href="#">&copy;Copyright-2022</a>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Prompt assignment</title>
+    
+</head>
+<body>
+    <script>
+
+        var ename = prompt("Enter Employee Name");
+        var eage = prompt("Enter Employee Age");
+        var edepartment = prompt("Enter Employee Department");
+        var bsal = prompt("Enter Basic Salary of Employee");
+
+        var  pf, hra, tsal;
+        bsal = parseInt(bsal);
+
+        pf = bsal * (14 / 100);
+        hra = bsal * (25 / 100);
+
+        tsal = bsal + pf + hra;
+
+        console.log('Name of Employee : ' + ename);
+        console.log('Age of Employee : ' + eage);
+        console.log('Department of Employee : ' + edepartment);
+        console.log('Basic Salary of Employee : ' + bsal);
+        console.log('Total Salary of EMployee : ' + tsal);
+    </script>
+</body>
+</html>

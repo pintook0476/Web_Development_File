@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <title>
+        form
+    </title>
+    <style>
+        .header,
+        .footer {
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+
+        form {
+            border: 1px solid;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .header {
+            font-size: 20px;
+        }
+
+        .name div {
+            display: inline-block;
+        }
+
+        form .block {
+            border: 1px solid;
+            padding: 25px 5px;
+            margin: 20px;
+        }
+
+        .attribute {
+            border: 1px solid;
+            padding: 5px;
+            width: 141px;
+            text-align: center;
+            position: absolute;
+            background-color: white;
+            z-index: 1;
+            left: 66px;
+        }
+
+        .attribute1 {
+
+            top: 74px;
+        }
+
+        .attribute2 {
+            top: 256px;
+        }
+        .attribute3{
+            top: 434px;
+        }
+        .attribute4{
+            top: 649px;
+        }
+
+        .details {
+
+            width: 292px;
+
+        }
+
+        .name {
+            margin: 10px;
+        }
+
+        .course {
+            position: absolute;
+            top: 106px;
+            right: 197px;
+        }
+
+        .values {
+            width: 296px;
+            height: 23px;
+        }
+        .floatElement{
+            position: absolute;
+            top: 474px;
+            right: 197px;
+        }
+        .floatElement input{
+            height: 30px;
+        }
+        .landmark{
+            position: relative;
+            top: -83px;
+            left: 115px;
+        }
+        .about{
+            position: relative;
+            top: -178px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"> Student Registration Page</div>
+    <form action="" method="get">
+        <div class="attribute attribute1">Personal Details</div>
+        <div class="block">
+            <div class="name">
+                <div class="details">student Name :</div>
+                <div><input type="name" class="values"></div>
+            </div>
+            <div class="name">
+                <div class="details">Mail ID :</div>
+                <div><input type="email" class="values"></div>
+            </div>
+            <div class="name">
+                <div class="details">Gender :</div>
+                <div class="values">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </div>
+            </div>
+            <div class="name course">
+                <div class="details ">Course Opted :</div>
+                <div>
+                    <select class="values">
+                        <option value="">UI Full Stack</option>
+                        <option value="">JAVA Full Stack</option>
+                        <option value="">Python Full Stack</option>
+                        <option value="">Data Structure</option>
+
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="attribute attribute2">
+            Education Details
+        </div>
+        <div class="block">
+            <div class="name">
+                <div class="details">
+                    Qualification :
+                </div>
+                <div>
+                    <input type="text" class="values">
+                </div>
+            </div>
+            <div class="name">
+                <div class="details">
+                    Languages Known
+                </div>
+                <div>
+                    <input type="checkbox" class="">
+                    Hindi
+                    <input type="checkbox" class="">
+                    English
+                    <input type="checkbox" class="">
+                    Urdu
+                    <input type="checkbox" class="">
+                    Telgu
+                </div>
+            </div>
+            <div class="name">
+                <div class="details">
+                    Avg. Marks
+                </div>
+                <div>
+                    <input type="text" class="values">
+                </div>
+            </div>
+        </div>
+        <div class="attribute attribute3">
+            Address
+        </div>
+        <div class="block">
+            <div class="name">
+                <div class="details">
+                    Dno :
+                </div>
+                <div><input type="text" class="values"></div>
+            </div>
+            <div class="name">
+                <div class="details">
+                    Street :
+                </div>
+                <div><input type="text" class="values"></div>
+            </div>
+            <div class="name">
+                <div class="details">
+                    State :
+                </div>
+                <div>
+                    <select class="values">
+                        <option value="">
+                            Madhyapradesh
+                        </option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Telangana</option>
+                        <option value="">Assam</option>
+                    </select>
+                </div>
+            </div>
+            <div class="name">
+                <div class="details">
+                    Country :
+                </div>
+                <div>
+                    <select class="values">
+                        <option value="">India</option>
+                        <option value="">UK</option>
+                        <option value="">Itly</option>
+                        <option value="">China</option>
+                    </select>
+                </div>
+            </div>
+            <div class="name floatElement">
+                <div class="details Landmark ">
+                    Landmark :
+                </div>
+                <div>
+                    <textarea name="" id="" cols="40" rows="6"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="attribute attribute4">
+            About Yourself
+        </div>
+        <div class="block">
+            <div class="name">
+                <div class="details about">
+                  About Yourself  :
+                </div>
+                <div>
+                    <textarea name="" id="" cols="100" rows="20"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer">
+        @Copy Right 2022
+    </div>
+</body>
+
+</html>

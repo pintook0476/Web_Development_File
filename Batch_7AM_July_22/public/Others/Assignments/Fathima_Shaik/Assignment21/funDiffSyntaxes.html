@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <div onclick="msg();"> Click to do this </div> 
+        <script>
+            var jsobj = {
+                readMsg(){
+                    console.log("inside json: readMsg(){}");
+                    this.readMsg1();
+                },
+                readMsg1: function(){
+                    console.log("inside json: readMsg1: function(){}");
+                }
+            };
+            jsobj.readMsg();
+
+            var displayMsg = () => {
+                console.log("Clicked");
+            }
+            function msg(){
+                console.log("hai");
+            }
+            var msg1 = function(){
+                console.log("hello");
+            }
+            displayMsg(); // manually calling
+            msg();
+            msg1();
+        </script>
+    </body>
+</html>

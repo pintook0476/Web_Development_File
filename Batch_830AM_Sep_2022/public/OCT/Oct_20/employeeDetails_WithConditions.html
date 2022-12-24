@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname, empdep, empbasicSal;
+            empname = prompt("Enter Emp name");
+            empDep = prompt("Enter employee Department");
+            var empGender = prompt("Enter employee Gender")
+            empbasicSal = prompt("Enter Employee Basic sal");
+            empbasicSal = parseInt(empbasicSal);
+
+            var pf = (12 / 100 ) * empbasicSal;
+            var hra = (24 / 100 ) * empbasicSal;
+
+            var totalSal = pf + hra + empbasicSal;
+
+            var taxValue;
+
+            if (empGender == 'Male') {
+                if (totalSal >= 500000) {
+                    taxValue = totalSal * (15 / 100);
+                } else if (totalSal >= 30000) {
+                    taxValue = totalSal * (10 / 100);
+                }  else {
+                    taxValue = 0;
+                }
+            } else { // Female
+                if (totalSal >= 500000) {
+                    taxValue = totalSal * (10 / 100);
+                } else {
+                    taxValue = 0;
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>

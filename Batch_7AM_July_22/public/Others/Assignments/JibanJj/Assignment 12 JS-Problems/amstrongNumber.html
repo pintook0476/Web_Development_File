@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amstrong Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*var n = prompt("Emter a number")
+        var temp;
+        var armStrongNo = 0;
+        var totalDigit = n.length;
+        n = parseInt(n);
+        temp = n;
+        console.log(totalDigit);
+
+        while(n > 0){
+            var rem = n % 10 ;
+            armStrongNo = armStrongNo + (rem ** totalDigit);
+            n = n / 10;
+            n = parseInt(n);
+        }
+        if ( temp == armStrongNo){
+            console.log("It is  a Armstrong Number")
+        } else {
+            console.log("It is not a Armstrong Number")
+        }*/
+
+        for ( var i = 1; i <= 1000; i ++){
+        var n = i;
+        var armStrongNo = 0;
+        var totalDigit = i.toString().length;
+
+        while(n > 0){
+            var rem = n % 10 ;
+            armStrongNo = armStrongNo + (rem ** totalDigit);
+            n = n / 10;
+            n = parseInt(n);
+        }
+        if (armStrongNo == i){
+            console.log(i);
+        }
+    }
+    </script>
+</body>
+</html>

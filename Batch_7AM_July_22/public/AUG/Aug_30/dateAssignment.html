@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var myCurrentDate = new Date();
+            // mm-dd-yyyy
+            var dateFormat1 = myCurrentDate.getMonth() + '-' + myCurrentDate.getDate() + '-' + myCurrentDate.getFullYear();
+            console.log(dateFormat1);
+
+            var dateMonths = ['Jan', 'Feb', 'MAr', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep'];
+
+            // 1. Aug, 30th 2022
+
+            var dateFormat2 = dateMonths[myCurrentDate.getMonth()] + ', ' + myCurrentDate.getDate() + 'th' + ' ' + myCurrentDate.getFullYear();
+            console.log(dateFormat2)
+
+            // 2. Auguest, 30th 2022
+
+            // 3. Tue, Aug 30th 2022
+
+            // 4. Tuesday, Auguest 30th 2022
+
+            // 5. 30/08/2022
+            
+            // 6. 30th Aug, 2022
+
+            // 7. 30th Aug, 2022 09:30:10
+
+            // 8. Aug/30/2022 10:20
+
+            // 9. 30-Aug-2022 20:30:10
+
+        </script>
+    </body>
+</html>

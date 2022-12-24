@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student deteils</title>
+  </head>
+  <body>
+    <script>
+        alert("emp salary text");
+        var empname=prompt("enter the name");
+        var empage=prompt("enter the age");
+        var empgender=prompt("enter the gander");
+        var emploc=prompt("enter the location");
+        var empcompany=prompt("enter the company");
+        var empsalary=prompt("enter the basice salary");
+        var empsalary=parseInt(empsalary);
+
+
+        //salery deteils;
+        var pf=12 /100* empsalary;
+        var hra=15 /100* empsalary;
+        var Totalsalary=empsalary+pf+hra;
+        
+        //emp data;
+        console.log('enter emp name:' + empname );
+        console.log('enter emp age:' + empage );
+        console.log('enter emp gander:' + empgender);
+        console.log('enter emp location:' + emploc);
+        console.log('enter emp company:' + empcompany);
+        console.log('enter emp salary' + empsalary);
+        console.log('enter emp pf:' +pf);
+        console.log('enter emp hra:' +hra);
+        console.log('enter emp totalsalary:' + Totalsalary);
+        //if condition
+        if(empgender=='male')
+        {
+         if (Totalsalary >= 200000){
+         console.log("Tex percentage is:" + (15/100) *Totalsalary);
+        }
+          else if(Totalsalary >=100000){
+          console.log("tex percentage is:" +(10/100) *Totalsalary);  
+        }  
+          else if(Totalsalary >=50000){
+            console.log("tex percentage is:" +(5/100) *Totalasalary);
+        } 
+         else{
+            console.log("tex is 0");
+        }
+      }
+        
+         if(empgender=='female'){
+         
+         if (Totalsalary >= 250000){
+         console.log("tex percentage is:" + (10/100) *Totalsalary);
+        }
+          else if(Totalsalary >=150000){
+          console.log("tex percentage is:" +(5/100) *Totalsalary);  
+        }  
+          else if(Totalsalary >=100000){
+            console.log("tex percentage is:" +(0/100) *Totalsalary);
+        } 
+         else{
+            console.log("tex is 0");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Reading data dynamically by prompt
+        </title>
+    </head>
+    <body style="background-color:bisque">
+        <h1 style="font-style:italic;">
+            Reading the data from the user by prompt method by dynamically.
+        </h1>
+        <script>
+            var
+             empName = prompt('enter the name');
+             empGender  = prompt('enter the age');
+             deptWorking = prompt('enter the dept name');
+             basicSalary = prompt ('enter the salary');
+             basicSalary = parseInt(basicSalary);
+             pf = .12*basicSalary;
+             hra = .24*basicSalary;
+             totalsal = pf+hra+basicSalary;
+             console.log('emp Name ' + empName)
+             console.log('emp Gender ' + empGender)
+             console.log(' dept Working ' + deptWorking)
+             console.log('totalsal is ' + totalsal)
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: crimson pro;
+
+}
+/*logo image style*/
+.logoImg {
+    height: 200px;
+    margin: -35px 0px;
+
+}
+
+.navbar{
+    border: 2px solid white;
+    /* border-radius: 2px; */
+    box-shadow: 2px 2px 15px black;
+    height: 120px;
+    font-size: 17px;
+    position: sticky;
+    
+}
+.navbar .search, .navbar .navItems, .navbar .navItems li{
+    display: inline-block;
+}
+
+.allElement{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    
+}
+
+.search input{
+    width: 400px;
+    padding: 10px 10px;
+    
+    border: 2px solid #4287f5;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search button{
+    position: relative;
+    right: 45px;
+    background-color: #4287f5;
+    border: 2px solid #4287f5;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+.navItems{
+    margin-left: 50px;
+}
+
+.navItems li{
+    margin-left: 15px;
+}
+
+.navItems li a{
+    text-decoration: none;
+    color: #4287f5;
+}
+.navItems .menu li a:hover{
+    background-color: #4287f5;
+    border: 2px solid #4287f5;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 10px;
+}
+
+.navItems .profile{
+    position: relative;
+    top: -30px;
+    right: -250px; 
+    float: right;
+    text-align: center;
+}
+.navItems .profile p{
+    margin-top: 5px;
+}
+
+.productDetails .productRows {
+    display: flex;
+    flex-flow: row;
+    margin: 20px 10px;
+}
+
+.productDetails  h4{
+    margin:20px 100px;
+    color: #4287f5;
+}
+
+
+
+.productDetails .productRows .productBox{
+    margin: 20px 50px;
+    border: 2px solid #4287f5;
+    width: 345px;
+    display: flex;
+    flex-flow: row;
+}
+.productDetails .productRows .productBox img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #4287f5;
+    border-radius: 3px;
+    margin: 10px 10px;
+    padding: 10px;
+    /* background-color: #4287f5; */
+    
+}
+
+.productDetails .productRows .productBox h5{
+    text-align: center;
+    color: #4287f5;
+    margin-bottom: 5px;
+}
+
+/*styling footer*/
+
+
+.foot .footerAboutUs {
+    background-color: #4287f5;
+    color: white;
+
+
+    padding: 40px 100px;
+    margin-top: 20px;
+
+
+}
+
+.foot .footerAboutUs li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.foot .footerAboutUs li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.foot .socialFooter {
+    position: absolute;
+    left: 400px;
+
+    top: 3328px;
+}
+
+.foot .socialFooter i {
+    padding-top: 10px;
+}
+
+.foot .socialFooter a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.foot .makeMoney {
+    position: absolute;
+    top: 3328px;
+    right: 500px;
+}
+
+.foot .help {
+    position: absolute;
+    top: 3328px;
+    right: 150px;
+}
+
+.foot .footerAboutUs li a:hover,
+.foot .socialFooter a:hover {
+    text-decoration: underline;
+}
+
+
+.foot .footerAboutUs .copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*styling footer ends*/

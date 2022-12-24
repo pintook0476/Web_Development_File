@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Assignment on Demonstrating Employee Details With the help of Json Object</h3>
+    <script>
+        var employee = {
+            readDataFromUser: function() {
+                this.ename = prompt("Enter Employee Name "),
+                    this.egender = prompt("Enter Employee Gender in the Form of 'M' and 'F'"),
+                    this.eDepartment = prompt("Enter Employee Deparment"),
+                    this.eBasicSlr = prompt("Enter Employee Basic Salary"),
+                    this.eBasicSlr = parseInt(this.eBasicSlr),
+                    this.calculateTotalSlr()
+            },
+
+            calculateTotalSlr: function() {
+                this.pf = this.eBasicSlr * 25 / 100,
+                    this.hra = this.eBasicSlr * 12 / 100,
+                    this.totalSlr = this.eBasicSlr + this.pf + this.hra,
+                    this.calculateTaxPrc()
+            },
+
+            calculateTaxPrc: function() {
+                if (this.egender == 'M' || this.egender == 'm') {
+                    this.taxPercent = 0;
+                    if (this.totalSlr >= 500000) {
+                        this.taxPercent = 15;
+                    } else if (this.totalSlr >= 300000) {
+                        this.taxPercent = 10;
+                    } else if (this.totalSlr >= 100000) {
+                        this.taxPercent = 5;
+                    }
+                } else { // Female emp
+                    if (this.totalSlr >= 500000) {
+                        this.taxPercent = 10;
+                    } else if (this.totalSlr >= 300000) {
+                        this.taxPercent = 5;
+                    }
+                };
+                this.taxtobePaid = (this.taxPercent * this.totalSlr) / 100;
+                this.showDataToUser();
+            },
+
+            showDataToUser: function() {
+                console.log("Employee details");
+                console.log("Employee name  " + this.ename);
+                console.log("Gender " + employee.egender);
+                console.log("Total Sal " + this.totalSlr);
+                console.log("Total Tax to be Paid " + this.taxtobePaid);
+            }
+
+        }
+        employee.readDataFromUser();
+    </script>
+</body>
+
+</html>

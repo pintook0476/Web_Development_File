@@ -1,0 +1,24 @@
+
+<!--useful code-->
+
+commenting any code
+        <!--
+        <h2>Hello</h2>
+        -->
+1. identifier attribute
+        <script>
+                document.querySelector("#item_2").style.color ="red";
+        </script>
+
+2. name attribute highlighter(only single news item)
+    <script>
+        document.querySelector("[name=newsHeading]").style.backgroundColor ="yellow";
+    </script>
+
+    name attribute highlighter(for multiple news item)
+    <script>
+       var list = document.querySelectorAll("[name=newsHeading]")
+       for(i=0; i<list.length; i++){
+          list[i].style.backgroundColor ="yellow";
+      }
+    </script>

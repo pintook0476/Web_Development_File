@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pallindrome Numbers</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: white;
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Pallindrome Numbers</h2>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h3>THANK YOU !</h3>
+        </div>
+
+        <script>
+            for(var userNum = 2; userNum < 1000; userNum++)
+            { 
+                var storeNum = userNum;
+                var PallindromeNum = 0;
+
+                while(storeNum > 0)
+                {
+                    var digit = storeNum % 10;      //1 , 2 , 1...
+                    PallindromeNum = (PallindromeNum * 10) + digit;     //0 * 10 + 1 = 1...
+                    storeNum = storeNum /10;
+                    storeNum = parseInt(storeNum);
+                }
+                if (userNum == PallindromeNum)
+                {
+                    console.log(userNum + " is a Pallindrome");
+                }
+                else
+                {
+                    console.log(userNum + " is not a Pallindrome");
+                }
+            }
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Employee Details</title>
+        <link rel="stylesheet" href="employDetails.css">
+    </head>
+
+    <body>
+        <ul class="eDetails">
+            <li class="cardHeading">Fill Employee Details</li>
+            <li>
+                Employee Name:<input type="text" id="eName" onkeypress="return nameValidation(event)">
+                <div class="nameMandatErr">Name is Mandatory</div>
+                <div class="charMandate">Only Character Allow</div>
+            </li>
+            <li>
+                Employee Age:<input type="text" id="eAge" onkeypress="return ageValidation(event)">
+                <div class="ageMandatErr">Age is Mandatory</div>
+                <div class="ageNumMandate">Only Numbers Allow</div>
+            </li>
+            <li>
+                Employee Gender:
+                <input type="radio" checked name="gender" id="mGender" value="male"> Male
+                <input type="radio" name="gender" id="fGender" value="female"> Female
+            </li>
+            <li>
+                Employee Location:<input type="text" id="eLocation">
+            </li>
+            <li>
+                Employee Department:<select id="eDep">
+                    <option value="IT">IT</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Chemical">Chemical</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Electrical">Electrical</option>
+                </select>
+            </li>
+            <li>
+                Employee Basic Salary: <input type="text" name="" id="eBasicSal" onkeypress="return salaryValidation(event)">
+                <div class="salMandatErr">Salary is Mandatory</div>
+                <div class="salNumMandate">Only Numbers Allow</div>
+                
+            </li>
+            <li>
+                <input type="button" value="Generate Pay Slip" onclick=" eDetails.getEmployeeDetails(); ">
+            </li>
+        </ul>
+        <div>
+            <ul class="showingData">
+                <li class="cardHeading">Employee Pay Slip</li>
+                <li>Employee Name: <span id="displayName"></span></li>
+                <li>Employee Age: <span id="displayAge"></span></li>
+                <li> Employee Gender: <span id="displayGender"></span></li>
+                <li>Employee Location: <span id="displayLoc"></span></li>
+                <li>Employee Department: <span id="displayDep"></span></li>
+                <li>Employee Total Salary: <span id="displayTotalSalary"></span> </li>
+                <li> Tax to Paid: <span id="displayTax"></span></li>
+                <li>Employee In Hand Salary: <span id="displayInHandSalary"></span></li>
+            </ul>
+         </div>
+         <script src="employeDetails.js"></script>
+    </body>
+</html>

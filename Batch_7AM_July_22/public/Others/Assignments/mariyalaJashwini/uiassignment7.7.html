@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible"content="Ie-edge=1.0">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title> Demonstrating Armstong Numbers</title>
+    </head>
+            <body>
+            <script>
+                var n="153";
+                var temp;
+                var totalDigits=(n.length);
+                var armstrongNumber=0;
+                var temp=n;
+                n=parseInt(n);
+                console.log("totalDigits");
+                while(n>0){
+                    rem=n%10;
+                    armStrongNumber=armStrongNumber*(rem**totalDigits);
+                    n=n/10;
+                    n=parseInt(n);
+                }
+                if(temp==armStrongNumber){
+                    console.log("its a armStrongNumber"+temp);
+                }else{
+                    console.log("not a armStrongNumber"+temp);
+                }
+                </script>
+                </body>
+                </html>

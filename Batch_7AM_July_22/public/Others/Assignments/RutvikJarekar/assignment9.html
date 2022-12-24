@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML Input elements.
+        </title>
+        <style>
+            .main{
+                height: 750px;
+                width: 800px;
+                left: 300px;
+                right: -300px;
+                border: 1px solid;
+                margin: 20px auto;
+                background-color: rgba(160, 157, 157, 0.693);
+            }
+            h3{
+                text-align: center;
+                width: 800px;
+                border: 1px solid;
+                left: 300px;
+                right: -300px;
+                margin: 20px auto;
+
+            }
+            li {
+                list-style:none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 20px;
+                background-color: #fff;
+                height: 100px;
+            }
+            .block1{
+				border: 1px solid;
+                width:fit-content;
+                position: relative;
+                top:30px;
+                background-color: #fff;
+                left:30px;
+			}
+            .block2{
+				border: 1px solid;
+                width:fit-content;
+                position: relative;
+                top:30px;
+                background-color: #fff;
+                left:30px;
+			}
+            .block3{
+				border: 1px solid;
+                width:fit-content;
+                position: relative;
+                top:30px;
+                background-color: #fff;
+                left:30px;
+			}
+            .block4{
+				border: 1px solid;
+                width:fit-content;
+                position: relative;
+                top:30px;
+                background-color: #fff;
+                left:30px;
+			}
+            .a{
+                height: 100px;
+            }
+            .footer{
+				border: 1px solid;
+			    padding: 7px;
+			    text-align: center;
+                width: 800px; 
+                left: 300px;
+                right: -300px;  
+                margin: auto    ;
+			}
+        </style>
+    </head>
+    <body>
+        <h3>Student Registration Page</h3>
+        
+        <form action="http://sample1231.com/data/userdetalis" method="POST">
+        <ul class="main">
+            <div class="block1">Personal Details</div>
+            <li>
+                Student Name:       
+                    <input type="text" name="studentname" >
+                Courses :
+                    <select name="" id="">
+                        <option value="">C++</option>
+                        <option value="">Python</option>
+                        <option value="">Web development</option>
+                        <option value="">Dango</option>    
+                    </select><br><br>
+                Email ID: 
+                    <input type="text" name="EmailID"><br><br>
+    
+                Gender:
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+            </li>
+            <div class="block2">Education Details</div>
+            <li>
+                Qualification:
+                    <input type="text"  name="qualification"><br><br>
+                Language Known:
+                <input type="checkbox" value="English" name="language_eng"> English
+                <input type="checkbox" value="Telugu" name="language_tel"> Telugu
+                <input type="checkbox" value="Hindi" name="language_hin"> Hindi 
+                <br><br>
+                AVG Marks:
+                 <input type="text" name="avgmarks">
+            </li>
+            <div class="block3">Address</div>
+            <li>
+                House no.:
+                <input type="text" >
+                landmark :
+                <input type="text" name="landmark"><br><br>
+                State :
+                <select name="" id="">
+                    <option value="mah">Maharastra</option>
+                    <option value="wes">west bengal</option>
+                    <option value="de">delhi</option>
+                    <option value="tel" >telangana</option>    
+                </select><br><br>
+                Country : 
+                <select name="" id="">
+                    <option value="Ind">India</option>
+                    <option value="">USA</option>
+                    <option value="">Japan</option>
+                    <option value="" >Kenya</option>
+                </select>
+            </li>
+            <div class="block4">About Yourself</div>
+            <li class="a">
+                Tell about yourself: <textarea maxlength="100" cols="50" rows="5" name="aboutUser"></textarea>
+            </li>
+        </ul> 
+        </form>
+    </body>
+    <div class="footer">@rutvik's Web <i><u></div>
+</html>
+

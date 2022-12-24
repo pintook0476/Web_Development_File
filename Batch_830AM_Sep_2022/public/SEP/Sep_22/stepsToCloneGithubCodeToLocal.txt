@@ -1,0 +1,10 @@
+step 1: get register with github personal id
+step 2: install github desktop software (link https://desktop.github.com/)
+step 3: login from github desktop to github account
+step 4: need to collaborator access
+step 5: accept the invitation mail
+step 6: clone github code into local machine from github repository
+        click on file option > choose clone repository >
+        choose the repo location which u want to clone, choose the local location
+        where u want to >
+        click on clone 

@@ -1,0 +1,156 @@
+.header {
+    background-color: #222831;
+    padding: 20px 15px;
+    margin-bottom: 0%;
+}
+
+.logoImageContainer {
+    position: absolute;
+    float: left;
+    margin: -19px 24px;
+}
+
+.logoImg {
+    height: 37px;
+    width: 37px;
+}
+
+.logoTextContainer {
+    position: absolute;
+    font-weight: bold;
+    font-size:23px;
+    margin: -15px 60px;
+    color: aliceblue;
+}
+
+.logoColor {
+    color: orange;
+}
+
+.mainContainer {
+    position: absolute;
+    background-color: #222831;
+    border: 1px solid black;
+    height: 460px;
+    width: 600px;
+    margin: 4% 50%;
+
+}
+
+.text1 {
+    font-size: larger;
+    margin-top: 70px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    /* float: left; */
+}
+
+.text2 {
+    font-size: larger;
+    margin-top: 118px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    /* float: left; */
+}
+
+.text3 {
+    font-size: larger;
+    margin-top: 161px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.text4 {
+    font-size: larger;
+    margin-top: 209px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.text5 {
+    font-size: larger;
+    margin-top: 256px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.textBox1 {
+    position: absolute;
+    color: white;
+    margin: 70px 320px;
+    height: fit-content;
+
+}
+
+.textBox2 {
+    position: absolute;
+    margin: 118px 320px;
+
+}
+
+.textBox3 {
+    position: absolute;
+    margin: 161px 320px;
+
+}
+
+.textBox4 {
+    position: absolute;
+    margin: 210px 320px;
+
+}
+
+.textBox5 {
+    position: absolute;
+    margin: 257px 320px;
+
+}
+
+.signupHead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.submitButton {
+    background-color: orange;
+    color: white;
+    position: absolute;
+    margin: 309px 255px;
+    padding: 5px 25px;
+}
+
+.footer {
+    background-color: #222831;
+    padding: 15px 15px;
+}
+
+.bg1 {
+    position: absolute;
+    margin: 83px 88px;
+}
+
+.body {
+    background-color: #E1FFEE;
+    clear: both;
+    background-position: 1px 5px;
+    height: 600px;
+}
+
+.copyright {
+    font-size: small;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: rgba(243, 250, 140, 0.849);
+                color: rgb(91, 65, 138);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 10px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var arrNum = [121, 151, 14, 878];
+
+            for (var i = 0; i < arrNum.length; i++)
+            {
+                // var userNum = prompt("Enter any digit number");
+                userNum = arrNum[i];
+                var storeNum = userNum;
+                var PallindromeNum = 0;
+
+                while(storeNum > 0)
+                {
+                    var digit = storeNum % 10;      //1 , 2 , 1...
+                    PallindromeNum = (PallindromeNum * 10) + digit;     //0 * 10 + 1 = 1...
+                    storeNum = storeNum /10;
+                    storeNum = parseInt(storeNum);
+                }
+                if (userNum == PallindromeNum)
+                {
+                    console.log(userNum + " is a Pallindrome");
+                }
+                else
+                {
+                    console.log(userNum + " is not a Pallindrome");
+                }
+            }
+        </script>
+    </body>
+</html>

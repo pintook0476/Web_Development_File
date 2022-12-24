@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Mathematical Operations
+        </title>
+        <script src="lib/mathematicalOperationsUtil.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter First number" id="fValue">
+            </li>
+            <li>
+                <input type="text" placeholder="Enter Second number" id="sValue">
+            </li>
+            <li>
+                <input type="button" value="Do Addition" onclick="doOperation('add')">
+                <input type="button" value="Do Substraction" onclick="doOperation('sub')">
+                <input type="button" value="Do Multiplication" onclick="doOperation('mul')">
+                <input type="button" value="Do Division" onclick="doOperation('div')">
+            </li>
+            <li class="rBlock">
+                The <span id="opr"></span> of vlues is <span id="res"></span>
+            </li>
+            <li>Button clicked for <span id="counter"></span> No. of times</li>
+        </ul>
+    </body>
+</html>

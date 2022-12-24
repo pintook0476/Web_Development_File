@@ -1,0 +1,51 @@
+nav{
+    background: #cae5ff;
+}
+.nav-link{
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+}
+.search-bar{
+    left: 73%;
+}
+.form-control{
+    width: 300px !important;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.form-control:focus,
+.btn:focus{
+    box-shadow: none !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: none;
+}
+.btn:focus{
+    background-color: #acedff !important;
+    scale: .91;
+}
+.user-access{
+    margin-right: -40px !important;
+}
+.fa-solid{
+    font-size: 22px;
+}
+.card{
+    background-color: #cae5ff !important;
+}
+.fa-brands{
+    font-size: 25px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    background-color: #121212;
+    color: #f5f5dc;
+}

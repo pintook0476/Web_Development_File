@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var date = new Date();
+        var Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var Months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        var year = date.getFullYear();
+        var monthNum = date.getMonth();
+        var monthName = Months[date.getMonth()]
+        var dt = date.getDate();
+        var day = Days[date.getDay()];
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+       
+        //////// if date, hour, min, sec < 10 ////////////
+
+        if (dt < 10)
+        {
+            dt = "0" + dt;
+        }
+
+        if (hour < 10)
+        {
+            hour = "0" + hour;
+        }
+
+        if (min < 10)
+        {
+            min = "0" + min;
+        }
+        
+        if (sec < 10)
+        {
+            sec = "0" + sec;
+        }
+
+
+        //////// select st, nd, rd, th  ////////
+
+        if (dt % 10 == 1)
+        {
+            var dt2 = "st";
+        }
+        else if (dt % 10 == 2)
+        {
+            var dt2 = "nd";
+        }
+        else if (dt % 10 == 3)
+        {
+            var dt2 = "rd";
+        }
+        else
+        {
+            var dt2 = "th";
+        }
+
+
+        ////// select AM or PM //////////
+
+        if (hour <= 11 && min <= 59)
+        {
+            var amPm = "A.M.";
+        }
+        else
+        {
+            var amPm = "P.M.";
+        }
+
+
+        //////////// switch task begins from here /////////////////////
+        var user_Select = false;
+
+        while (user_Select == false)
+        {
+            var userDate = prompt("Please Select the Date to Show \n1.  Mon, 31st Oct 2022 \n2.  Monday, 31st Oct 2022 \n3.  Monday, October 31st 2022 \n4.  10/31/2022, 10:30 A.M. \n5.  31st/Oct/2022 \n6.  31st October, 2022 10:30:25 \n7.  Mon 31st Oct \n8.  Monday, October 31st");
+
+            switch (userDate)
+            {
+                case '1' :
+                    console.log(day.substr(0, 3) + ", " +dt+dt2 + " " + monthName.substr(0, 3) + " " + year);
+                    user_Select = true;
+                    break;
+                
+                case '2':
+                    console.log(day + ", " +dt+dt2 + " " + monthName.substr(0, 3) + " " + year);
+                    user_Select = true;
+                    break;
+
+                case '3':
+                    console.log(day + ", " + monthName + " " +dt+dt2 + " " + year);
+                    user_Select = true;
+                    break;
+
+                case '4':
+                    console.log(monthNum + "/" + dt + "/" + year + ", " + hour + ":" + min + " " + amPm);
+                    user_Select = true;
+                    break;
+
+                case '5':
+                    console.log(dt+dt2 + "/" + monthName.substr(0, 3) + "/" + year);
+                    user_Select = true;
+                    break;
+
+                case '6':
+                    console.log(dt+dt2 + " " + monthName + ", " + year + " " + hour + ":" + min + ":" + sec);
+                    user_Select = true;
+                    break;
+
+                case '7':
+                    console.log(day.substr(0, 3) + " " +dt+dt2 + " " + monthName.substr(0, 3));
+                    user_Select = true;
+                    break;
+
+                case '8':
+                    console.log(day + ", " + monthName+ " " +dt+dt2);
+                    user_Select = true;
+                    break;
+
+                default:
+                    alert("Please Select Number 1-8");
+            }
+        }
+
+        // Mon, 31st Oct 2022
+        // Monday, 31st Oct 2022
+        // Monday, October 31st 2022
+        // 10/31/2022, 10:30 A.M.
+        // 31st/Oct/2022
+        // 31st October, 2022 10:30:25
+        // Mon 31st Oct
+        // Monday, October 31st
+
+    </script>
+</html>

@@ -1,0 +1,32 @@
+h3 div{
+    text-align: center;
+}
+h3{
+    border: 1px solid;
+    padding: 10px;
+    background-color: #2874f0;
+    color: #fff;
+}
+
+ul{
+    border: 1px solid;
+    padding: 10px;
+    width: 500px;
+    margin-left: 400px;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    
+    
+}
+#studentMarks input{
+    height: 20px;
+    width: 60px;
+}
+.displayDetailsHere{
+    display: none;
+}

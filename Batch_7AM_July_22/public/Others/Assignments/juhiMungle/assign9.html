@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <center><i><b><u><h1> Student Registration Form </h1></u></b></i></center>
+    <style>
+        h1{
+            border: 2px solid;
+            background-color: azure;
+            font-size: 40px;
+
+        }
+        .main{
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 1500px;
+            background-color:powderblue;
+
+        }
+        .footer{
+
+            border: 2px solid;
+            background-color: azure;
+            font-size: 20px;
+            text-align: center;
+        }
+        .personal form{
+            font-size: 20px;
+            border: 2px solid;
+            height: 200px;
+            margin: 20px;
+            padding: 40px;
+        }
+
+        li {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                background-color: #fff;
+                height: 30px;
+                width: 45%;
+                text-decoration: bold;
+            }
+        .select, .land{
+
+            float: right;
+
+           
+        }
+        .first{
+            background-color: skyblue;
+            position: absolute;
+            left: 70px;
+            top: 114px;
+            width: 200px;
+            height: 15px;
+            text-align: center ;
+            font-size: 20px;
+        }
+        .second{
+            background-color: skyblue;
+            position: absolute;
+            left: 70px;
+            top: 443px;
+            width: 200px;
+            height: 15px;
+            text-align: center ;
+
+        }
+
+        input, select, option{
+            width: 180px;
+            border: 2px solid;
+            height: 25px;
+
+        }
+
+        .educ {
+            font-size: 20px;
+            border: 2px solid;
+            height: 250px;
+            margin: 20px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .lang{
+            width: 95%;         
+          border: 2px solid;
+            height: 50px;
+        }
+        .third{
+
+            background-color: skyblue;
+            position: absolute;
+            left: 70px;
+            top: 825px;
+            width: 200px;
+            height: 15px;
+            text-align: center ;
+
+        }
+        .add {
+            font-size: 20px;
+            border: 2px solid;
+            height: 250px;
+            margin: 20px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .four{
+
+        background-color: skyblue;
+        position: absolute;
+        left: 70px;
+        top: 1211px;
+        width: 200px;
+        height: 15px;
+        text-align: center ;
+
+        }
+        .about {
+        font-size: 20px;
+        border: 2px solid;
+        height: 250px;
+        margin: 20px;
+        padding: 40px;
+        margin-top: 50px;
+        
+        }
+        .aboutUrself textarea {
+                
+                height: 159px;
+                width: 725px;
+                
+            }
+        
+    </style>
+</head>
+<body>
+        <div class="main">
+           
+            <div class="personal">
+                <li class="first">Personal Details </li>    
+                <form action="#">
+                    <li class="select">
+                        Course Opted :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <select name="course" id="">
+                            <option value="comp">Computer Science</option>
+                            <option value="bot">Botany</option>
+                            <option value="Chem">Chemistry</option>
+                            <option value="hist">History</option>
+                            <option value="math">Mathematics</option>
+                        </select>
+                    </li>
+                    <li>
+                        Student Name :-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;              
+                        <input type="text" name="username" placeholder="Enter Student Name" autofocus >
+                    </li>
+                    
+                    <li>
+                        Mail Id :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="email" name=" mail" placeholder="Enter Mail Id" autofocus>
+                   </li>
+                    <li>
+                        Gender :-
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </li>
+                   
+                </form>
+            </div>
+
+            <div class="educ">
+                <li class="second">Education Details </li>
+                <form action="#">
+                    <li class="lang">
+                        Qualification :-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;               
+                        <input type="text" name="quali" placeholder="Enter Qualification" autofocus >
+                    </li>
+                    <li class="lang">
+                       Languages Known:-
+                        <input type="checkbox" name="lang" value="marathi"> Marathi
+                        <input type="checkbox" name="lang" value="hindi"> Hindi
+                        <input type="checkbox" name="lang" value="english"> English
+                        <input type="checkbox" name="lang" value="tamil"> Tamil
+                        
+                    </li>
+                    <li class="lang">
+                        Average Marks :-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;              
+                        <input type="text" name="avg" placeholder="Enter Average Marks" autofocus >
+                    </li>
+
+                </form>
+
+
+            </div>
+
+            <div class="add">
+                <li class="third">Address Details </li>
+
+                <form action="#">
+                    <li class="land">
+                        LandMark :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" name="LandMark" placeholder="Enter Your LandMark" autofocus>
+                   </li>
+                    <li>
+                        Dno. :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" name="dno" placeholder="Enter Your Dno" autofocus>
+                   </li>
+                   <li>
+                        Street Name :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" name="street" placeholder="Enter Street Name" autofocus>
+                    </li>
+                    <li >
+                        State :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <select name="State" id="">
+                            <option value="maharastra">Maharastra</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="tamil">Tamil Nadu</option>
+                            <option value="bihal">Bihar</option>
+                        </select>
+                    </li>
+                    <li >
+                        Country :- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <select name="Country" id="">
+                            <option value="india">India</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="canada">Canada</option>
+                            
+                        </select>
+                    </li>
+                    
+                </form>
+
+            </div>
+
+            <div class="about">
+                <li class="four">About Your Self </li>
+                <li class="aboutUrself">
+                    Tell about yourself:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <textarea  cols="50" rows="5" name="aboutUser"></textarea>
+                </li>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer"> &#169; CopyRight 2022</div>
+</body>
+</html>

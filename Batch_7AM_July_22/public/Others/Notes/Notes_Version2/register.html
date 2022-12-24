@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Registration Form
+	</title>
+	<style>
+		form div {
+			margin-bottom: 1em;
+		}
+		div.submit input {
+			margin-left: 165px
+		}
+		label.field {
+			display: block;
+			float: left;
+			margin-right: 15px;
+			width: 150px;
+			text-align: right;
+		}
+		input[type="text"], select, textarea {
+			width: 300px;
+			font: 18px Century Gothic;
+			border: solid 2px #666;
+			background-color: #ada;
+		}
+		div.required input, div.required select {
+			background-color: #6a6;
+			border: solid 2px #000;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>REGISTRATION FORM</h1>
+	<form action="/register" method="post"
+	enctype="multipart/form-data">
+	<div class="required">
+		<label class="field" for="name">NAME</label>
+		<label><input type="radio" name="gender" value="male">MALE</label>
+		<label><input type="radio" name="gender" value="female">FEMALE</label>
+	</div>
+	<div class="required">
+		<label class="field">OPERATING SYSTEM</label>
+		<select id="os">
+			<option value="windows">Windows</option>
+			<option value="macos">Mac Os</option>
+			<option value="linux">Linux</option>
+			<option value="other">Other.........</option>
+		</select>
+	</div>
+	<div>
+		<label class="field">TOYS</label>
+		<label><input type="checkbox" name="toy" value="digicam">Digital Camera</label>
+		<label><input type="checkbox" name="toy" value="digicam">SmartPhone</label>
+		<label><input type="checkbox" name="toy" value="digicam">Tablet</label>
+	</div>
+	<div>
+		<label class="field" for="potrait">POTRAIT</label>
+		<input type="field" id="potrait">
+	</div>
+	<div>
+		<label class="field" for="bio">MINI BIOGRAPHY</label>
+		<textarea id="bio" rows="6" cols="40"></textarea>
+	</div>
+	<div class="submit">
+		<input type="submit" value="register">
+	</div>
+</form>
+</body>
+</html>

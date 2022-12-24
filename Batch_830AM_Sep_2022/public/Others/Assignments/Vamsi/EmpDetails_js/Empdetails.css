@@ -1,0 +1,27 @@
+.title1 {
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid green;
+    text-align: center;
+    background-color: aqua;
+    color: brown;
+}
+
+/*.empcontainer {
+    border: 2px solid burlywood;
+    margin: 2px;
+    padding: 2px;
+}*/
+
+ul {
+    border: 2px solid blue;
+    margin: 2px;
+    padding: 2px;
+}
+
+li {
+    list-style: none;
+    border: 2px solid beige;
+    margin: 2px;
+    padding: 2px;
+}

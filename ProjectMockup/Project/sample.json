@@ -1,0 +1,68 @@
+{
+    "orderDetails": [
+        {
+            "modifier":"0",
+            "beverage":"0",
+            "food":"1",
+            "Entrée":"1",
+            "Serialnumber":"0001",
+            "Sequencenumber":"0001",
+            "Parentserialnumber":"0001",
+            "Discount":"0000",
+            "Itemquantity":"03",
+            "Price":"8.79",
+            "positive":"001",
+            "description":"Jack'sspicychicken",
+            "Ordertax":null,
+            "Ordertotal":null,
+            "items":[
+                {
+                    "Itemquantity":null,
+                    "Price":".25",
+                    "positive":null,
+                    "description":"SourCream",
+                    "Ordertax":null,
+                    "Ordertotal":null
+                },
+                {
+                    "Itemquantity":null,
+                    "Price":".25",
+                    "positive":null,
+                    "description":"SourCream",
+                    "Ordertax":null,
+                    "Ordertotal":null
+                }
+            ]
+        },
+        {
+            "modifier":"0",
+            "beverage":"0",
+            "food":"1",
+            "Entrée":"1",
+            "Serialnumber":"0001",
+            "Sequencenumber":"0001",
+            "Parentserialnumber":"0001",
+            "Discount":"0000",
+            "Itemquantity":"03",
+            "Price":"99.79",
+            "positive":"001",
+            "description":"Jack'sspicychicken",
+            "Ordertax":null,
+            "Ordertotal":null,
+            "items":[
+                "Itemquantity":null,
+                "Price":".25",
+                "positive":null,
+                "description":"SourCream",
+                "Ordertax":null,
+                "Ordertotal":null
+            ]
+        }  
+    ],
+    "metaInfo": {
+        "Ordertax": 45.9,
+        "Ordertotal": 234.2,
+        "suggestedFood": "/data/sample/suggestedimage.png",
+        "totalOrderedItems": 3
+    }
+}

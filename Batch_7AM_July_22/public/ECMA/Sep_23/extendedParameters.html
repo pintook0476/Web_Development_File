@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Extended Parameters / REST PArams
+        </title>
+    </head>
+    <body>
+        <script>
+            function addValues(a, b, c) {
+                console.log(arguments);
+                var result;
+                result = a + b + c;
+                console.log("The sum is " + result);
+            }
+
+            var addValues1 =  (a, b, ...temp) => {
+                console.log(temp);
+                var result;
+                result = a + b + c;
+                console.log("The sum is " + result);
+            }
+
+
+            addValues(20, 10, 20, 10, 22, 22);
+
+            addValues1(20, 10, 21, 10, 22, 22);
+        </script>
+    </body>
+</html>!

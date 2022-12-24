@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-13(Switch case)</title>
+</head>
+
+<body>
+    <script>
+        document.write("Question : Find the type of number?<br><br>");
+
+        var input = parseInt(prompt("please enter your number"));
+        var type = prompt("Please enter type of number you want to check natural/whole/odd/even");
+        switch (type) {
+            case 'natural':
+                if (input >= 1) {
+                    document.write(input + " is a natural number.");
+                } else {
+                    document.write(input + " is not a natural number.");
+                }
+                break;
+
+            case 'whole':
+                if (input >= 0) {
+                    document.write(input + " is a whole number.");
+                } else {
+                    document.write(input + " is not a whole number.");
+                }
+                break;
+
+            case 'odd':
+                if (input % 2 != 0) {
+                    document.write(input + " is an odd number.");
+                } else {
+                    document.write(input + " is not an odd number.");
+                }
+                break;
+
+            case 'even':
+                if (input % 2 == 0) {
+                    document.write(input + " is an even number.");
+                } else {
+                    document.write(input + " is not an even number.");
+                }
+                break;
+
+            default:
+                document.write("Please enter proper input.")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment-12 using Switch Case</title>
+</head>
+<body> <h1> To Check output of your Wish, goto Console Window </h1>
+    
+        <script>
+                    var n = prompt(" Enter your number ");
+                    n = parseInt(n);
+
+                    var user_action = prompt(` Enter what you want to check. 
+                    Press 1 for Prime Num,
+                    Press 2 for Lucky Num, 
+                    Press 3 for Palindrome Num,
+                    Press 4 for Reverse of a Num, 
+                    Press 5 for Armstrong Num `);
+
+                    switch(user_action)
+                    {
+                        case  '1':   // prime number  
+                                         console.log(" Your entered number is "+n);
+                                        var remainder;
+                                        var i=1;
+                                        var count=0;
+                                        while(i<=n)
+                                        {
+                                            remainder=n % i;
+                                            i++;
+                                            if( remainder==0 )
+                                                count++;
+                                                
+                                        }
+                                        if (count == 2)
+                                        {
+                                            console.log("It's a Prime Number "+ n);
+                                        }
+                                        else
+                                        {
+                                            console.log(" It's a Composite Number "+n);
+                                        }
+                                        break;
+
+                        case '2':      // lucky number 
+                                         var count = 0;
+                                        var r;
+                                        console.log(" Your entered number is "+n);
+                                        while (n!=0)
+                                        {
+                                            r = n % 10;
+                                            n = n / 10;
+                                            n = parseInt(n);
+                                            count = count + r;
+
+                                            if ( n==0 && count > 9)
+                                            {
+                                                n = count;
+                                                count = 0 ;
+
+                                                r= n % 10;
+                                                n = n / 10;
+                                                n = parseInt(n);
+                                                count = count + r;
+                                            }
+                                        }             
+                                        console.log(" Your lucky number is "+count);
+                                        break;
+                                    
+                        case '3': // Palindrome 
+                                        var rev = 0;
+                                        var remainder;
+                                        temp = n;   // to store the original value of n or entered num so that we can comp with reverse num later
+                                        console.log (" Your Entered Number is "+n);  
+
+                                        while (n!=0)   // or n>0
+                                        {
+                                            remainder = n % 10;
+                                            rev = (rev * 10)+ remainder;
+                                            n = n/10;
+                                            n = parseInt(n);
+                                        }                
+                                        if ( temp == rev )
+                                            {
+                                                console.log (" It's a Pallindrome Number");                        
+                                            }
+                                        else
+                                            {
+                                                console.log (" Not a Pallindrome Number");
+                                            }
+                                        break;
+
+                        case '4': // Reverse of a number
+                                       
+                                        var rev= " ";
+                                        var remainder;
+                                        console.log("Your Entered number is "+n);
+
+                                        while (n!=0)
+                                        {
+                                                remainder= n % 10;
+                                                //rev= (rev * 10) + remainder;
+                                                rev = rev + remainder;
+                                                n = n/10;
+                                                n = parseInt(n);
+                                        }
+                                        console.log(" Reverse of a number is "+ rev);
+                                        break;
+
+                        case '5': // Armstrong 
+                                        n= n.toString()
+                                        var armstrong_num=0;
+                                        var remainder;           
+                                        var total_digits= n.length; 
+                                        n = parseInt(n);   // why we are writing here bcoz length func is for string and not number.
+                                        var temp = n;                     
+                                        //console.log(total_digits);
+                                        console.log(" Your Entered Number is "+n);
+
+                                        while (n>0)
+                                        {
+                                            remainder = n % 10;
+                                            armstrong_num = armstrong_num + (remainder ** total_digits);
+                                            n = n/10;     
+                                            n = parseInt(n);         
+                                        }
+                                        if ( temp == armstrong_num)
+                                            {
+                                            console.log(" It's an Armstrong Number");
+                                            }
+                                        else
+                                            {
+                                            console.log(" No, It's not an Armstrong Number");
+                                            }
+                                        break;
+                                        
+                        default: console.log (` Enter Valid Number from 1 to 5`);
+                     }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16.Sorting Array Values</title>
+</head>
+<body>
+    <script>
+        var a =[20,34,5,4,56,78,9];
+        for (var i=0 ; i<a.length; i++){
+            for (var j=i+1;  j< a.length; j++){
+                if(a [i] > a[j]){
+                    var temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+          console.log(a);
+    </script>
+    
+</body>
+</html>

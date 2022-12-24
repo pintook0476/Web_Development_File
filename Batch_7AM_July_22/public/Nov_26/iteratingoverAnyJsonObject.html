@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = {
+                name: 'RAj',
+                age: 20,
+                gender: 'male',
+                address: {
+                    pinCode: 23456,
+                    stateInfo: {
+                        stateName: 'AP',
+                        code: 'AP_345'
+                    }
+                }
+            }
+            var iterateObject = (data) => {
+                for (var temp in data) {
+                    if (typeof(data[temp]) == 'object') {
+                        iterateObject(data[temp]);
+                    } else {
+                        console.log(temp + ' -> ' + data[temp]);
+                    }
+                }
+            }
+            iterateObject(data);
+        </script>
+    </body>
+</html>

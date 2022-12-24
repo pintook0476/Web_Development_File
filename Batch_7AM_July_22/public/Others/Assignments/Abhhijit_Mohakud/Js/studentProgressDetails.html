@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Details</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        .mainContainer{
+            border: 2px solid red;
+            width: 50%;
+            position: relative;
+            padding: 10px;
+            margin: 50px auto;
+            background-color: rgba(127, 255, 212, 0.829);
+            border-radius: 20px;
+        }
+        ul, li{
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+            list-style-type: none;
+            position: relative;
+            border-radius: 20px;
+        }
+        #name, #age{
+            width: 30%;
+        }
+       .mrk{
+        width: 10%;
+        margin: 1%;
+       }
+       .secContainer{
+        border: 2px sold green;
+        width: 50%;
+        margin: 2% auto;background-color: rgba(255, 255, 0, 0.473) ;
+        border-radius: 20px;
+       }
+       #secUl{
+        border: 2px solid Green;
+       }
+       .secContainer{
+        display: none;
+       }
+    </style>
+<body>
+    <div class="mainContainer">
+        <h3>Enter Student Details</h3>
+        <ul>
+            <li>
+               Enter Student Name: <input id="name" type="text">
+            </li>
+            <li>
+                Enter Student Age: <input id="age" type="text">
+            </li>
+            <li>
+                Gender: 
+                <input checked type="radio" name="Gender" value="Male"> Male
+                <input type="radio" name="Gender" value="Female"> Female
+            </li>
+            <li>
+                Class:
+                <select name="" id="stuClass">
+                    <option>5th</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                    <option>9th</option>
+                    <option>10th</option>
+                </select>
+            </li>
+            <li>
+                Marks:
+                Math: <input class="mrk" type="text"  id="a1">
+                English: <input class="mrk" type="text"  id="a2">
+                Odia: <input class="mrk" type="text"  id="a3">
+                Physics: <input class="mrk" type="text"  id="a4">
+                Chemistry: <input class="mrk" type="text"  id="a5">
+            </li>
+            <li>
+                <input type="button" value="Genetare Card" class="button" onclick="studentDetails.readStudentData()"
+            </li>
+        </ul>
+
+    </div>
+    <div class="secContainer">
+        <h3>Report Card</h3>
+        <ul id="secUl">
+            <li>
+                Name: <span id="dName"></span>
+            </li>
+            <li>
+                Age: <span id="dAge"></span>
+            </li>
+            <li>
+                Gender: <span id="dGender"></span>
+            </li>
+            <li>
+                Class: <span id="dClass"></span>
+            </li>
+            <li>
+                Total Mark: <span id="dTotal"></span>
+            </li>
+            <li>
+                AVG Mark: <span id="dAvg"></span>
+            </li>
+            <li>
+                Grade: <span id="dGrade"></span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var studentDetails = {
+            getTotalAndAvg(){
+                this.total = 0;
+                for (var i=0; i<this.marks.length; i++){
+                    this.total += this.marks[i];
+            }
+            this.avg = this.total/this.marks.length;
+        },
+        getGrade(){
+            if (this.avg >= 60){
+                this.grade ="You Are Passed";
+            }else{
+                this.grade = "You got Fail";
+            }
+        },
+            readStudentData() {
+            this.name = document.querySelector("#name").value;
+            this.age = document.querySelector("#age").value;
+            this.gender = document.querySelector("input[name = Gender]:checked").value;
+            this.class = document.querySelector("#stuClass").value;
+            this.marks = [];
+            for (var i = 0; i < 5; i++) {
+                var value = document.querySelector("#a" + (i + 1)).value;
+                this.marks.push(parseInt(value));
+            }
+            this.getTotalAndAvg();
+            this.getGrade();
+            console.log(this)
+            this.displayDetails();
+        },
+    displayDetails(){
+        document.querySelector(".secContainer").style.display="block";
+        document.querySelector("#dName").innerText = this.name;
+        document.querySelector("#dAge").innerText = this.age;
+        document.querySelector("#dGender").innerText = this.gender;
+        document.querySelector("#dClass").innerText = this.class;
+        document.querySelector("#dTotal").innerText = this.total;
+        document.querySelector("#dAvg").innerText = this.avg;
+        document.querySelector("#dGrade").innerText = this.grade;
+    }
+};
+        
+
+    </script>
+</body>
+</html>

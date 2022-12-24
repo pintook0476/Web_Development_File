@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Image Spriting</title>
+    <style>
+        h3{
+            
+            border:1px solid red;
+            text-align: center;
+            padding:10px;
+        }
+        .employeeDetails{
+            border:1px solid;
+            margin:10px;
+            padding:10px;
+        }
+        .empImage{
+            border:1px solid;
+            height:200px;
+            width: 300px;
+            background-image: url("images/spriteimage.png");
+        }
+        .emp2{
+            background-position: -120px 10px;
+        }
+        .emp3{
+            background-position: -271px 10px;
+        }
+        .emp4{
+            background-position: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <div class="employeeDetails">
+        <div> Name: Raj</div>
+        <div>Age:20</div>
+        <div> Gender: Male</div>
+        <div>Address: Hyderabad</div>
+        <div class="empImage"></div>
+       
+
+    </div>
+    <div class="employeeDetails">
+        <div> Name: Raj</div>
+        <div>Age:20</div>
+        <div> Gender: Male</div>
+        <div>Address: Hyderabad</div>
+        <div class="empImage emp2"></div>
+
+    </div>
+    <div class="employeeDetails">
+        <div> Name: Raj</div>
+        <div>Age:20</div>
+        <div> Gender: Male</div>
+        <div>Address: Hyderabad</div>
+        <div class="empImage emp3"></div>
+
+    </div>
+    <div class="employeeDetails">
+        <div> Name: Raj</div>
+        <div>Age:20</div>
+        <div> Gender: Male</div>
+        <div>Address: Hyderabad</div>
+        <div class="empImage emp4">
+
+    </div>
+</div>
+
+</body>
+</html>

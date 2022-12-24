@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of Individual digits</title>
+        <style>
+            body{
+                background-color: rgb(230, 129, 255);
+            }
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: rgb(247, 245, 148);
+                color: rgb(67, 26, 134);
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Sum of Individual Digit</h2>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h3>THANK YOU !</h3>
+        </div>
+
+        <script>
+            var userNum = prompt("Enter any digit number");
+            userNum = parseInt(userNum);
+            var sum = 0;
+
+            while(userNum > 0)
+            {
+                var digit = userNum % 10;
+                sum += digit;
+                userNum = userNum / 10;
+                userNum = parseInt(userNum);
+            }
+            console.log(sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details with arrays
+        </title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("Enter s name");
+            var age = prompt("Enter s age");
+            var gender = prompt("Enter gender");
+            var marks = []; // var marks = [66, 90, 89, 78, 99];
+            /*marks[0] = prompt("Enter sub 1");
+            marks[0] = parseInt(marks[0]);
+            marks[1] = prompt("Enter sub 2");
+            marks[1] = parseInt(marks[1]);
+            marks[2] = prompt("Enter sub 3");
+            marks[2] = parseInt(marks[2]);
+            marks[3] = prompt("Enter sub 4");
+            marks[3] = parseInt(marks[3]);
+
+            // var total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4]; */
+
+            for (var i = 0 ; i < 5; i++) {
+
+                marks[i] = prompt("Ener value for sub " + (i + 1));
+                marks[i] = parseInt(marks[i]);
+            }
+
+            var total = 0;
+            for (var i = 0; i < marks.length; i++) {
+                total += marks[i];
+            }
+
+            var avg = total / marks.length;
+
+            console.log("Student Details");
+            console.log("NAme is " + name);
+            console.log("AGe is " + age);
+            console.log("Gender is " + gender);
+            console.log("Total is " + total);
+            console.log("AVg is " + avg);
+
+
+        </script>
+    </body>
+</html>

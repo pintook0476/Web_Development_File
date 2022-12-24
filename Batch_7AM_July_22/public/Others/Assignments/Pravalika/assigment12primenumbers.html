@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PRIME NUMBERS
+        </title>
+        <body>
+            <script>
+                var n=prompt("enter the number");
+                n= parseInt(n);
+                var count=20;
+                for(var i= 20; i<=200;i++){
+                    var rem = n % i;
+                    if ( rem==0){
+                        count++;
+                        break;
+                    }
+                } 
+                console.log("total no itaration" + (i-1));
+                if(count==0){
+                    console.log("its a prime number");
+                } else {
+                    console.log("its not prime");
+                }
+
+            </script>
+        </body>
+    </head>
+</html>

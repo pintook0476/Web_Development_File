@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating variable hoisting
+        </title>
+    </head>
+    <body>
+        <script>            
+            var a = 90;
+            console.log("vaalue of a is " + a);
+                        console.log("vaalue of z is " + z);
+            var z = 100;
+            console.log("vaalue of z is " + z);
+            
+            console.log("value of b is " + b);
+            var b = 900; 
+        </script>
+
+<script>
+    var a, b , z;
+            
+    a = 90;
+    console.log("vaalue of a is " + a);
+    var z;
+    console.log("vaalue of z is " + z);
+    z = 100;
+    console.log("vaalue of z is " + z);
+    
+    console.log("value of b is " + b);
+    b = 900; 
+    console.log("value of b is " + b);
+</script>
+    </body>
+</html>

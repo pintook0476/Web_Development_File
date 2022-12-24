@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to list out the prime no. between 20 to 200 
+        for(var i = 20 ; i <= 200 ; i ++)
+        {
+        var n = i ;
+        n = parseInt(n);
+        var temp = n ;
+        var rem ;
+        var rev = 0 ;
+        while(n > 0){
+            rem = n % 10 ;
+            n = n/10 ;
+            n = parseInt(n);
+            rev = (rev * 10 )+ rem ;
+        
+        }
+        
+    
+    if(temp == rev){
+        console.log("its a prime = " +temp);
+    }
+    else{
+        console.log(" not prime =" +temp);
+    }
+}    
+    </script>
+</body>
+</html>

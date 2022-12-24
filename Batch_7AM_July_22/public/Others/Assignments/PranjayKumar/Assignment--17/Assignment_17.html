@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_17(Date Object)</title>
+</head>
+<body>
+    <script>
+        var myDate = new Date();
+        var monthShort = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'jul', 'Aug', 'Sep','Oct','Nov'];
+        
+        var dateFormat1 = monthShort[myDate.getMonth()]+', '+ myDate.getDate() +'th'+' ' + myDate.getFullYear();
+        console.log("Format-1 =>  " +dateFormat1);
+        
+//----------------------------------------------------------------------------------------------
+        
+        var monthFull = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','Septmber','Ocober','November']
+
+        var dateFormat2 = monthFull[myDate.getMonth()] +' ,' + myDate.getDate() + ' ' + myDate.getFullYear();
+
+        console.log("Format-2 =>  " +dateFormat2);
+
+//-------------------------------------------------------------------------------------------------
+
+
+        var dayValue = ['Sun', 'Mon', 'Tue', 'Wed','Thu','Fri','Sat' ];
+
+        var dateFormat3 = dayValue[myDate.getDay()]+' ,' + monthShort[myDate.getMonth()] +' '+ 
+
+        myDate.getDate()+ 'th ' + myDate.getFullYear();
+
+        console.log("Format-3 =>  " +dateFormat3);
+
+//-----------------------------------------------------------------------------------------------
+
+        var fullDayName = ['Sunday', 'Monday','Tuesday', 'Wednesday' ,'Thursday','Friday','Saturday'];
+
+        var dateFormat4 = fullDayName[myDate.getDay()] +' ,'+monthFull[myDate.getMonth()] +' '+
+
+        myDate.getDate()+'th'+ myDate.getFullYear();
+
+        console.log("Format-4 =>  " +dateFormat4);
+
+//------------------------------------------------------------------------------------------------
+
+        var dateFormat5 = myDate.getDate() +'/'+ myDate.getMonth()+'/'+myDate.getFullYear();
+
+        console.log("Format5- =>  " +dateFormat5);
+
+//-----------------------------------------------------------------------------------------------
+
+        var dateFormat6 = myDate.getDate()+'th '+monthShort[myDate.getMonth()] +' '+myDate.getFullYear()+' , '+ myDate.getHours()+':'+myDate.getMinutes()+':'+ myDate.getSeconds();
+
+
+        console.log("Format-6 =>  " +dateFormat6);
+
+//-----------------------------------------------------------------------------------------------
+
+        var dateFormat7 = monthShort[myDate.getMonth()]+ '/'+ myDate.getDate()+'/'+ myDate.getFullYear();
+
+
+        console.log("Format-7 =>  " +dateFormat7);
+
+//-----------------------------------------------------------------------------------------------
+
+        var dateFormat8 = myDate.getDate()+'-'+monthShort[myDate.getMonth()]+'-'+myDate.getFullYear()+'  '+ myDate.getHours()+':'+myDate.getMinutes()+':'+myDate.getSeconds();
+
+        console.log("Format-8 =>  " +dateFormat8);
+    </script>
+</body>
+</html>

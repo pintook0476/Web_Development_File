@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project - 1</title>
+    <style>
+         
+         body{
+            background-image: url("india.png");
+            background-repeat: no-repeat;
+            background-size: auto;
+           background-position: 100px 110px;
+         }
+
+         h3{
+            color: rgb(246, 13, 176);
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 800px;
+          }
+
+         .container{
+            border: 2PX solid blue;
+            border-radius: 10px;
+            height: 250px;
+            width: 500px;
+            margin-top: 0px;
+            margin-left: 600px;
+            padding: 10px;
+          }
+
+          li{
+            text-align: center;
+            list-style: none;
+            border: none;
+            margin-left: 30px;
+            color: blue;
+          }
+          .li2{
+            margin-left:25px;
+          }
+
+          .li1,
+          .li2{
+            font-size: 21px; 
+            font-weight: bolder; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+
+          .header1{
+            border: none;
+            background-color:rgb(71, 234, 21);
+            padding: 15px;
+          }
+          
+          .header2{
+            font-size: 30px;
+            margin-left: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: blue;
+            font-weight: bolder;
+          }
+          
+          .header3{
+            font-size: 50px;
+            
+            color: orangered;
+            font-family: fantasy;
+            margin-left: 500px;
+          }
+
+          .inputStyle{
+            border: 2px solid blue;
+            height: 20px;
+            border-radius: 6px;
+            text-align: center;
+          }
+
+          .inputStyle:focus{
+            outline:0;
+            border-color: rgb(248, 36, 36);
+          }
+          
+          .button1{
+            border: 2px solid blue;
+            background-color: rgba(184, 248, 242, 0.98);
+            border-radius:10px;
+            width:50px; 
+            height:30px;
+            padding: 5px;
+            color: blue;
+            font-weight:bolder;
+          }
+
+          .button1:hover{
+            background-color: chartreuse;
+            color: rgb(248, 36, 36);
+            cursor: pointer;
+          }
+
+          .button2{
+            border: 2px solid blue;
+            background-color: rgba(250, 102, 206, 0.98);
+            
+            border-radius:10px;
+            width:90px; 
+            height:25px;
+            padding: 4px;
+            color: blue;
+            font-weight:bolder;
+          }
+
+          .button2:hover{
+            background-color:rgb(29, 254, 209);
+            
+            cursor: pointer;
+          }
+
+          .button3{
+          border: 2px solid blue;
+          background-color: rgba(215, 164, 251, 0.98);
+          border-radius:10px;
+          width:70px;
+          height:25px;
+          padding: 3px;
+          color: blue;
+          font-weight:bolder;
+          }
+
+          .button3:hover{
+            background-color: tomato;
+            color: rgb(252, 240, 116);
+            cursor: pointer;
+          }
+
+          .footer{
+            margin-top: 125px;
+            background-color: tomato;
+            padding: 1px;
+            text-align: center;
+            font-family: 'times new roman';
+          }
+          
+
+    </style>
+
+</head>
+<body>
+
+    <div class="header1">
+        <span class="header2">WELCOME! to online shopping....</span>
+        <span class="header3">MEE SHOW</span>
+    </div>
+   <br>
+   <br>
+
+   <h3> User Login </h3>
+   <form action="https://sample.com" method="get">
+    <ul class="container">
+     
+        <li>
+           <label for="userName" class="li1">User Name :</label>
+           <input type="text" name="userName" class="inputStyle" placeholder="Enter User Name" required>  
+        </li>
+        <br>
+        <br>
+        <li>
+           <label for="password" class="li2">Password :</label>
+           <input type="text" name="userPassword" class="inputStyle" placeholder="Enter Password" required> 
+        </li>
+        <br>
+        <li>
+          <input type="submit" name="Login" value="Login" class="button1">
+        </li>
+        <br>
+        <li>
+          <label for="createAccount" style="font-weight: bolder; color: red;">Don't have an account??</label>
+          <a href="signUpPage.html">
+            <input type="button" name="createAccount" value="Sign Up" class="button3">
+          </a>
+        </li>
+        <br>
+        <br>
+        <li>
+          <label for="forgotPassword" style="font-weight: bolder; color:red;">Forgot Your Password?</label>
+          <a href="forgotPwdPage.html">
+            <input type="button" name="forgotPassword" value="Click Here" class="button2">
+          </a>
+        </li>
+      </ul>
+    </form>
+    <div class="footer">
+    <footer>copyright@2022 all rights reserved</footer>
+    </div>
+</body>
+</html>

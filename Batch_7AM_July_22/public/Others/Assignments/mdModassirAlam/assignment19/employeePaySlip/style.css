@@ -1,0 +1,31 @@
+ul{
+    border: 1px solid;
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    /* margin-top: 10%; */
+}
+li{
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+#age{
+    position: absolute;
+    left: 728px;
+}
+.marksContainer input{
+    width: 20px;
+}
+.heading{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 50px;
+    color: red;
+}
+.displaydata{
+    color: blueviolet;
+    display: none;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title> finding the size of int ,float ,double and char</title>
+<head>
+<style>
+    body{
+        background-image: linear-gradient(black,rgb(192, 160, 66));
+    }
+    #container{
+    position:relative;
+    height:40rem;
+    width:45rem;
+    left:28rem;
+    top:5rem;
+    text-align: center;
+    border-radius: 4px;
+    background-image:linear-gradient(black,rgb(122, 75, 8));
+
+  }
+    button{
+    
+    height: 7%;
+    width:20%;
+    background-color: rgb(12, 10, 10)234, 226, 226;
+    border:none;
+    font-size:1.5rem;
+    position: relative;
+    top:10%;
+    cursor:pointer;
+    }
+    h1{
+      position: relative;
+      top:2rem;
+      color:white;
+    }
+    h2{
+      position: relative;
+      top:4rem;
+      color:white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    
+    h2 input{
+        height: 1.8rem;
+        color:black;
+        font-size: 20px;
+    }
+    h3{
+        position: relative;
+      
+      color:white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    h3 input{
+        height: 2rem;
+        color:black;
+    }
+    
+    #text4{
+      width:20%;
+      height:10%;
+      background-color: aliceblue;
+      font-size:36px;
+      position: relative;
+      left:4rem;
+      top:5px;
+    }
+    #text3{
+      position: relative;
+      font-size:20px;
+    }
+     #text5{
+        position: relative;
+        top:1px;
+        font-size: 23px;
+     }
+     #text6{
+        position: relative;
+      bottom:15px;
+        font-size: 23px;
+        color:aliceblue;
+     }
+     #text7{
+        position: relative;
+   bottom:2rem;
+        font-size: 23px;
+        color:aliceblue;
+     }
+     #text8{
+        position: relative;
+   bottom:3rem;
+        font-size: 23px;
+        color:aliceblue;
+     }
+     #text9{
+        position: relative;
+   bottom:3rem;
+        font-size: 23px;
+        color:aliceblue;
+     }
+     #spa{
+      color:rgb(232, 219, 219);
+      position: relative;
+     
+      
+      text-align: center;
+      font-size:29px;
+      left:2rem;
+      padding: 10px;
+     }
+   h5{
+    color:white;
+    position: relative;
+    top:1rem;
+    right:2rem;
+    font-size: 29px;
+   }
+   p{
+    position: relative;
+    top:4rem;
+    font-size: 20px;
+    color:white;
+
+   }
+    </style>
+    </head>
+    <body>
+   <div id ="container">
+    <h1>Size of int ,float,double and char</h1>
+    <h2 id="xvlaue">Press the number :&nbsp;<input type="text" id="text1" value="" name="tag" ></h2>
+    <h2 id="yvlaue">Press the number :&nbsp;<input type="text" id="text2" value=""  name="tag"></h2>
+    <p id="options">Press  +/mult/sub/div :&nbsp;<input type="text" id="text3" value="" name="tag" ></p>
+
+    
+    <button id="submit" onclick="mySub()" >Submit</button>&nbsp;<button id="reset" onclick="myReset()">Reset</button><br>
+    <h5>res :<input id="text4" type="text" value=""  name="tag"></h5>
+   
+    <h3  name="tag"id="text5"></h3>
+    <h3  name="tag"id="text6"></h3>
+    <h3  name="tag"id="text7"></h3>
+    <h3 id="text8"></h3>
+    <h3 id="text9"></h3>
+</div>
+<script type="text/javascript">
+ function mySub(){
+
+  var x=parseFloat(document.getElementById("text1").value);
+  var y=parseFloat(document.getElementById("text2").value);
+  var o=document.getElementById("text3").value;
+  
+  
+    
+  switch(o){
+  case "+":
+    var result=x+y;
+  document.getElementById("text4").value=parseFloat(result);
+  break;
+  case "-":
+    var result=x-y;
+  document.getElementById("text4").value=result;
+  break;
+  case "/":
+    var result=x/y;
+  document.getElementById("text4").value=result;
+  break;
+  case "*":
+    var result=parseInt(x)*parseInt(y);
+    document.getElementById("text4").value=result; 
+  break;
+  default :NaN;
+  }
+  
+  if(result >0){
+    
+    document.getElementById("text5").innerHTML="Size of int :"+result.toString().length+"<br>"+"Float no : "+result.toPrecision()+"<br>"+"Double no :"+result.toFixed(2)+"<br>"+"Char no:"+String.fromCharCode(result);
+    } else {
+      document.getElementById("text5").innerHTML="its a string";
+    } 
+   var user=document.getElementById("text4").value;
+   user=parseInt(user);
+   var sum=0;
+   var reverseNum=0;
+   
+    while(user > 0){
+      
+   var num=user%10;
+   sum+=num;
+   user=user/10;
+   user=parseInt(user);
+   if(user ==0 && sum>=10){
+
+    user=sum;
+    sum=0;
+   }
+    }
+    document.getElementById("text6").innerHTML="lucky no is :"+sum;
+    var usernum=document.getElementById("text4").value;
+   usernum=parseInt(usernum);
+   var reverseNum=0;
+   while(usernum>0){
+   var num=usernum%10;
+   reverseNum=(reverseNum*10)+num;
+   usernum=usernum/10;
+   usernum=parseInt(usernum);
+
+   }
+    document.getElementById("text7").innerHTML="reverseNum is "+reverseNum;
+    var answer=document.getElementById("text4").value;
+    var storenum=answer;
+   storenum=parseInt(storenum);
+
+  paralleldrome=0;
+  while(storenum>0){
+    var num=storenum%10;
+    paralleldrome=(paralleldrome*10)+num;
+    storenum=storenum/10;
+    storenum=parseInt(storenum);
+
+  }
+  if(answer==paralleldrome){
+    document.getElementById("text8").innerHTML="its a paralleldrome";
+  }
+  else{
+    document.getElementById("text8").innerHTML=" its not a paralleldrome number";
+  }
+  
+};
+
+
+function myReset(){
+ document.getElementById("text1").value="";
+  document.getElementById("text2").value="";
+  document.getElementById("text3").value="";
+  document.getElementById("text4").value="";
+  document.getElementById("text5").innerHTML="";
+  document.getElementById("text6").innerHTML="";
+  document.getElementById("text7").innerHTML="";
+  document.getElementById("text8").innerHTML="";
+  document.getElementById("text9").innerHTML="";
+}
+
+
+  
+  
+  
+  
+ 
+
+
+
+</script>
+    </body>
+</html>

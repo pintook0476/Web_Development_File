@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            // 1. Aug, 30th 2022
+
+            var myCurrentDate = new Date("Aug 30 2022");
+
+            var monthList = ['Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep' , 'Oct' , 'Nov' , 'Dec'];
+
+            var dateFormat1 = monthList[myCurrentDate.getMonth()] + ', ' + myCurrentDate.getDate() + 'th' + ' ' + myCurrentDate.getFullYear();
+            console.log("dateFormat1:- " + dateFormat1)
+
+            // 2. August, 30th 2022
+
+            var monthList = ['January' , 'February' , 'March' , 'April' , 'May' , 'june' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+
+            var myCurrentDate = new Date("Aug 30 2022");
+            var dateFormat2 = monthList[myCurrentDate.getMonth()] + ', ' + myCurrentDate.getDate() + 'th ' + myCurrentDate.getFullYear();
+            console.log("dateFormat2:- " + dateFormat2);
+
+            // 3. Tue, Aug 30th 2022
+
+            var dayList = ['Sun' , 'Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat'];
+          
+            var monthList = ['Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep' , 'Oct' , 'Nov' , 'Dec'];
+            var myCurrentDate = new Date("Tue Aug 30 2022");
+            var dateFormat3 = dayList[myCurrentDate.getDay()] + ', ' + monthList[myCurrentDate.getMonth()] + ' ' +  myCurrentDate.getDate() + 'th ' + myCurrentDate.getFullYear();
+            console.log("dateFormat3:- " + dateFormat3);
+
+            // 4. Tuesday, Auguest 30th 2022
+
+            var dayList = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday'];
+            
+            var monthList = ['January' , 'February' , 'March' , 'April' , 'May' , 'june' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+            
+
+            var dateFormat4 = dayList[myCurrentDate.getDay()] + ', ' + monthList[myCurrentDate.getMonth()] + ' ' + myCurrentDate.getDate() + 'th ' + myCurrentDate.getFullYear();
+            console.log("dateFormat4:- " + dateFormat4);
+
+            // 5. 30/08/2022
+
+            var myCurrentDate = new Date("30 Aug 2022");
+            var month = myCurrentDate.getMonth() + 1 ;
+            console.log("dateFormat5:- " + myCurrentDate.getDate() + '/0' + month + '/' + myCurrentDate.getFullYear());
+            
+            // 6. 30th Aug, 2022
+
+            var monthList = ['Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep' , 'Oct' , 'Nov' , 'Dec'];
+
+            console.log("dateFormat6:- " + myCurrentDate.getDate() + 'th ' + monthList[myCurrentDate.getMonth()] + ' ' + myCurrentDate.getFullYear());
+
+            // 7. 30th Aug, 2022 09:30:10
+
+            var myCurrentDate = new Date("30 Aug 2022 09:30:10");
+
+            console.log("dateFormat7:- " + myCurrentDate.getDate() + 'th ' + monthList[myCurrentDate.getMonth()] + ', ' + myCurrentDate.getFullYear() + ' 0' + myCurrentDate.getHours() + ':' + myCurrentDate.getMinutes() + ':' + myCurrentDate.getSeconds());
+           
+            // 8. Aug/30/2022 10:20
+
+            var myCurrentDate = new Date("Aug 30 2022 10:20");
+
+            console.log("dateFormat8:- " + monthList[myCurrentDate.getMonth()] + '/' + myCurrentDate.getDate() + '/' + myCurrentDate.getFullYear() + ' ' + myCurrentDate.getHours() + ':' + myCurrentDate.getMinutes());
+            
+            // 9. 30-Aug-2022 20:30:10 
+
+            var myCurrentDate = new Date("30 Aug 2022 20:30:10");
+
+            console.log("dateFormat9:- " + myCurrentDate.getDate() + '-' + monthList[myCurrentDate.getMonth()] + '-' + myCurrentDate.getFullYear() + " " + myCurrentDate.getHours() + ':' + myCurrentDate.getMinutes() + ':' + myCurrentDate.getSeconds());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <script>
+            var eName = prompt("Enter Employee Name");
+            var dept = prompt("Enter Department");
+            var age = prompt("Enter Age");
+            var basicSalary = prompt("Enter Basic Salary");
+            basicSalary = parseInt(basicSalary);
+            var pf = basicSalary * (14/100);
+            var hrf = basicSalary * (12/100);
+            var total = basicSalary + pf + hrf;
+            console.log("Employee Name " + eName);
+            console.log("Depatment " + dept);
+            console.log("Basic Salary " + basicSalary);
+            console.log("Total Salary incuding Pf and Hrf " + total);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+.maincontainer{
+    border: 1px solid;
+    margin: 10px;
+    width: 500px;
+    position: relative;
+    top: 13px;
+    left: 30%
+
+}
+.sContainer{
+    border: 1px solid;
+    margin: 10px;
+    width: 500px;
+    position: relative;
+    top: 13px;
+    left: 30%;
+    display: none;
+}
+.showSdetails{
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+
+}
+.showcontainer{
+    border: 1px solid;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+    top: 13px;
+    left: 30%;
+    display: none;
+}
+.sdetails,.cdetails{
+    border: 1px solid;
+    margin: 5px;
+    text-align: center;
+    padding: 18px;
+}
+.inputName,.inputage,.inputGender,.inputAddress,.inputeno{
+    float: left;
+    margin-left: 31px;
+    width: 200px; 
+}
+.inputbranch{
+    margin-left: 31px;
+    width: 250px; 
+}
+#Submit,#outputgender{
+    margin: 3px 12px 12px 27px;
+    padding: 12px;
+    border: none;
+    border-radius: 11px;
+    background-color: teal;
+}
+#selectioninput{
+    margin-left: 140px;
+}
+.sname,.cinput{
+    margin: 5px;
+    
+}
+.cname,.cAddress,.cCode{
+    float: left;
+    margin-left: 31px;
+    width: 200px;
+}
+#outputcollegename,#outputcollegeaddress,#outputcollegecode,#outputstudentname,#outputstudentage,#outputstudentaddress,#outputstudentenrollment{
+    border-radius: 15px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

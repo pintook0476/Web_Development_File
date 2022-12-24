@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empdetails = {
+            name : "rushi",
+            department : "cse",
+            gender : "male",
+            basicSal : 500000,
+            pf : 0,
+            hra : 0,
+            totalSal : 0,
+            taxValue :0
+         }
+        empdetails.pf = (12 / 100 ) * empdetails.basicSal;
+        empdetails.hra = (24 / 100 ) *empdetails.basicSal;
+        empdetails.totalSal = empdetails.pf + empdetails.hra + empdetails.basicSal;
+
+        if (empdetails.gender == 'Male') {
+                    if (empdetails.totalSal >= 500000) {
+                        empdetails.taxValue = empdetails.totalSal * (10 / 100);
+                    } else if (empdetails.totalSal >= 30000) {
+                        empdetails.taxValue = empdetails.totalSal * (10 / 100);
+                    }  else {
+                        empdetails.taxValue = 0;
+                    }
+                } else { // Female
+                    if (empdetails.totalSal >= 500000) {
+                        empdetails.taxValue = empdetails.totalSal * (10 / 100);
+                    } else {
+                        empdetails.taxValue = 0;
+                    }
+                }
+
+
+        console.log("Employee details");
+        console.log("empname " + empdetails.name);
+        console.log("Gender " + empdetails.gender);
+        console.log("Department " +empdetails.department);
+        console.log("BAsic sal " + empdetails.basicSal);
+        console.log("Total Sal " + empdetails.totalSal);
+        console.log("Tax value is " + empdetails.taxValue);
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Assignment 10</title>
+        <style>
+            h3{
+                color:red;
+                background-color: rgb(127, 148, 255);
+                border: 1px solid black;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+                text-align: center;
+                text-decoration: underline;
+                font-size: 150%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Tax Calculation</h3>
+        <script type="text/javascript">
+            //Taking input of Employee
+            var ename=prompt("Enter employee Name");
+            var eage=prompt("Enter your Age");
+            var gender=prompt("Enter your Gender");
+            if(gender=='m'||gender=='male'||gender=='Male'||gender=='MALE'||gender=='M'||gender=='f'||gender=='female'||gender=='Female'||gender=='FEMALE'||gender=='F'){
+            var eloc=prompt("Enter your Location");
+            var basic=prompt("Enter your basic salary");
+            basic=parseInt(basic);
+            //Calculating salary of That Employee
+            var pf=basic*(14/100);
+            var hra=basic*(25/100);
+            var total=basic+pf+hra;
+            //Showing the Personal info and basic of the employe
+            console.log("Employe Name= "+ename);
+            console.log("Employee Age= "+eage);
+            console.log("Employe Location= "+eloc);
+            console.log("Employee Basic Salary= "+basic);
+            console.log(" Employe total salary= "+total);
+            //Checking the Condition for Tax Calculation
+            if(gender=='m'||gender=='male'||gender=='Male'||gender=='MALE'||gender=='M'){
+                gender="Male";
+                if(total>=200000) {
+                        var etax=total*(15/100);
+                        total=total-etax;
+                }
+                else if(total>=100000) {
+                        var etax=total*(10/100);
+                        total=total-etax;
+                }
+                else if(total>=50000) {
+                        var etax=total*(5/100);
+                        total=total-etax;
+                }
+                else {
+                        var etax=total*(0/100);
+                        total=total-etax;
+                }
+            }
+            else{
+                gender="Female";
+                if(total>=200000) {
+                        var etax=total*(10/100);
+                        total=total-etax;
+                }
+                else if(total>=100000) {
+                        var etax=total*(5/100);
+                        total=total-etax;
+                }
+                else {
+                        var etax=total*(0/100);
+                        total=total-etax;
+                }
+            }
+            //Showing the Tax and In Hand of employe 
+            console.log("Employe Gender= "+gender);
+            console.log("Employee PF= "+pf);
+            console.log("Employee HRA= "+hra);
+            console.log("Employee Tax= "+etax);
+            console.log("Employee In Hand salary= "+total);
+        }
+        else{
+                console.log("Enter a valid gender");
+                console.log("For Male= m/male/Male/MALE/M")
+                console.log("For Male= f/female/Female/FEMALE/F")
+            }
+        </script>
+    </body>

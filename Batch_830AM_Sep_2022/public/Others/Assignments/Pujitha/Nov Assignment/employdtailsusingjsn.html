@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Employe Details using Json object </title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+                name : 'Siva',
+                age : 43,
+                gender : 'Male',
+                dept : 'Software',
+                basicSalary : 90000,
+                gettotalSal: (basicSalary) => {
+                    empDetails.totalSal = 0;
+                    empDetails.pf = 12 / 100 * empDetails.basicSalary;
+                    empDetails.hra = 24 / 100 * empDetails.basicSalary;
+                    empDetails.totalSal = empDetails.pf + empDetails.hra + empDetails.basicSalary;
+                    empDetails.getTaxValue();
+                },
+                getTaxValue: () => {
+                    empDetails.TaxValue = 0;
+                    if (empDetails.gender == 'Male'){
+                        if (empDetails.totalSal >= 500000) {
+                            empDetails.TaxValue = empDetails.totalSal * (15 / 100);
+                        } else if (empDetails.totalSal >= 300000) {
+                            empDetails.TaxValue = empDetails.totalSal * (10 / 100);
+                        } else {
+                            empDetails.TaxValue = 0;
+                        }
+                    } else { // Female
+                        if (empDetails.totalSal >= 500000) {
+                            empDetails.TaxValue = empDetails.totalSal * (10 / 100);
+                        } else {
+                            empDetails.TaxValue =0;
+                        }
+                    }
+                },
+                displayDetails : () => {
+                    empDetails.gettotalSal();
+                    console.log("Employ name" + empDetails.name);
+                    console.log("Employ age" + empDetails.age);
+                    console.log("Employ Gender" + empDetails.gender);
+                    console.log("Employ dept" + empDetails.dept);
+                    console.log("Employ pf" + empDetails.pf);
+                    console.log("Employ hra" + empDetails.hra);
+                    console.log("Employ total salary" + empDetails.totalSal);
+                    console.log("tax value" + empDetails.TaxValue)
+                },
+            };
+            empDetails.displayDetails();
+        </script>
+    </body>
+</html>

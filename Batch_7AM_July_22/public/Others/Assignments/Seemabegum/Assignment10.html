@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <script>
+      var sname = prompt("Enter employee name");
+      var age = prompt("Enter employee  Age");
+      var gender = prompt("Enter employee Gender");
+      var Depname = prompt("Enter the Departmentname");
+      var basicpay = prompt("Enter the basicpay");
+      var pf = prompt("Enter the pf");
+      pf= basicpay *( 15/100);
+      parseInt(pf);
+      var hra = prompt("Enter the hra");
+      hra= basicpay*(14/100);
+      parseInt(hra);
+      var total = pf+hra+basicpay;
+      parseInt(total);
+
+
+      document.write("Enter the Name"  +  sname + "<br> ");
+      document.write("Enter the Age of employee"   +  age  +"<br> ") ;
+      document.write("Enter the Gender of employee"  +  gender + "<br> ");
+      document.write("Enter the Department" +  Depname + "<br> ");
+      document.write("Enter the basicsalary" +  basicpay + "<br> ");
+      document.write("Enter the provident fund " +  pf + "<br> ");
+      document.write("Enter the house rent allowance " +  hra + "<br> ");
+      document.write("Enter the totalpay" +  total + "<br> ");
+      
+
+    </script>
+    
+</body>
+</html>

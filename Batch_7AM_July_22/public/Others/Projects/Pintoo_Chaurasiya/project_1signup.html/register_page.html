@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body style="background: radial-gradient(#970909, #08f3c8); ">
+    <form class="main">
+        <li>
+            <h2 class="head">Registration Page</h2>
+        </li>
+        <div>
+            <li>
+                <input type="username" placeholder="username" onfocus="field_focus(this,'userName'); "
+                    onblur="field_blur" class="simple" required>
+            </li>
+            <li><input class="simple" type="password" placeholder="passward" onfocus="field_focus(this,'passWard');"
+                    onblur="field_blur" required></li>
+            <li><input class="simple" type="password" placeholder="confirm_passward"
+                    onfocus="field_focus(this,'confirm_passward')" onblur="field_blur" required></li>
+            <li><input class="simple" type="number" placeholder="mobile_no." onfocus="field_focus(this,'mobile_no.')"
+                    onblur="field_blur" required></li>
+            <li><input type="email" placeholder="Email_Id" class="simple"></li><br>
+            <a href="home_page.html" class="complete"><b>submit</b></a>
+        </div>
+    </form>
+</body>
+
+</html>

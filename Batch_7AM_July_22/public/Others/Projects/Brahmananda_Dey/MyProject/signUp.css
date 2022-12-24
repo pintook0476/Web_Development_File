@@ -1,0 +1,97 @@
+.full{
+    background-image: url("http://chitrahandicraft.com/wp-content/uploads/2019/02/login-page-background-images-hd-10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.background{
+    background-image: url("http://chitrahandicraft.com/wp-content/uploads/2019/02/login-page-background-images-hd-10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+}
+.header{
+color: rgb(85, 240, 240);
+  font-size: 35px;
+font-weight: bold;
+    text-align: center;
+     box-shadow: 50px 10px 50px #000;
+}
+.footer{
+    font-size: 15px;
+    font-weight: bold;
+        text-align: center;
+         box-shadow: 50px 10px 50px #000;
+}
+.heading{
+    color: red;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+/* .subBorder{
+    border-radius: 50px;
+    background-color: rgb(73, 120, 122);
+    margin: 10px auto;
+    pasdding: 10px;
+    height: 550px;
+    width: 600px;
+                                                                             
+} */
+.subBorder{
+    height: 550px;
+    width: 600px;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    padding: 10px 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  border-radius: 30px;
+    box-shadow: 10px 10px 50px #000;
+}
+label{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+
+    width: 200px;
+    float: left;
+    margin-left: 35px;
+    
+    
+}
+
+aa{
+    width: 280px;
+    float: left;
+    margin: 10px;
+}
+.cc{
+    padding: 10px;
+    background-color: aqua;
+
+    width: 250px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 15px;
+    border-radius: 20px;
+    
+}
+.dd{
+
+position: relative;
+top: 11px;
+left: 190px;
+padding: 5px;
+font-size: 25px;
+margin: 5px;
+background-color: darkcyan;
+width: 200px;
+text-align: center;
+border-radius: 20px;
+}
+
+

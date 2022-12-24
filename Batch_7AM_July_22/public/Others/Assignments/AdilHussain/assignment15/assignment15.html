@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 - Employee Details - using conditions</title>
+</head>
+
+<body>
+    <script>
+        function userData() {
+            var eName, eDept, gender, basicSalary, pf, hra, total
+            eName = prompt("Enter Employee Name");
+            eDept = prompt("Enter Employee Department");
+            gender = prompt("Enter Your gender");
+            basicSalary = prompt("Enter your basic Salary");
+            basicSalary = parseInt(basicSalary);
+            total = calculateUserData(basicSalary);
+            getUserdetails(eName, eDept,gender,basicSalary, pf, hra, total);
+        }
+
+        function calculateUserData(basicSalary) {             
+            var pf = 14 / 100 * basicSalary;
+            var hra = 25 / 100 * basicSalary;
+            var totalSal = basicSalary + pf + hra;
+            return totalSal;
+        }
+
+        function getUserdetails(eName, eDept,gender,basicSalary,pf, hra, total) {
+            document.write("Employee name is " + eName + "<br>");
+            document.write("Employee Department is " + eDept + "<br>");
+            document.write("Employee gender is " + gender + "<br>");
+            document.write("Employee basic salary is " + basicSalary + "<br>");
+            document.write("Employee pf is " + pf + "<br>");
+            document.write("Employee hra is " + hra + "<br>");
+            document.write("Employee total Salary is " + total + "<br>");
+            
+        }
+
+        userData();
+
+    </script>
+
+</body>
+
+</html>

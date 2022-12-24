@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all Odd number with in a given array</title>
+</head>
+<body>
+    <h1>To see the result go to console</h1>
+
+    <script>
+        var list = [12, 21, 34, 23, 42, 31, 33, 11, 50];
+        var sum = 0;
+
+        for(var i = 0; i < list.length; i++){
+            
+            if (list[i]%2 != 0) {
+                console.log(list[i]);
+                sum = sum + list[i];
+            }
+        }
+        console.log("The sum of all the odd number in an array is "+sum);
+    </script>
+</body>
+</html>

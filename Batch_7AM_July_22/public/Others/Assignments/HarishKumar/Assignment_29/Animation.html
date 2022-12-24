@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe in CSS3</title>
+    <style>
+        body {
+            background: #aaa;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #0015ff;
+            position: absolute;
+            border-radius: 5px;
+        }
+
+        .ani_1 {
+            animation: animate1 3s;
+        }
+
+        .ani_2 {
+            animation: animate2 3s;
+        }
+
+        .ani_3 {
+            animation: animate3 3s;
+        }
+
+        .ani_4 {
+            animation: animate4 3s;
+        }
+
+        /* Top Left side */
+        @keyframes animate1 {
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            100% {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: blue;
+                border: 2px solid #000;
+                transform: rotate(90deg);
+            }
+        }
+
+        /* Top right side */
+        @keyframes animate2 {
+            0% {
+                left: 99%;
+                top: 1px;
+
+            }
+
+            100% {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: blue;
+                border: 2px solid #000;
+                transform: rotate(45deg);
+            }
+        }
+
+        /* bottom right side */
+        @keyframes animate3 {
+            0% {
+                left: 99%;
+                top: 98%;
+            }
+
+            100% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: blue;
+                border: 2px solid #000;
+                transform: rotate(90deg);
+            }
+        }
+
+        /* bottom left side */
+        @keyframes animate4 {
+            0% {
+                left: 1%;
+                top: 90%;
+            }
+
+            100% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: blue;
+                border: 2px solid #000;
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box ani_1"></div>
+        <div class="box ani_2"></div>
+        <div class="box ani_3"></div>
+        <div class="box ani_4"></div>
+    </div>
+</body>
+
+</html>

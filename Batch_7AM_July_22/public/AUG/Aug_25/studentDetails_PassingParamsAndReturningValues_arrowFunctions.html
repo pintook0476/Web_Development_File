@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student details using functions with passing params & returning values.
+        </title>
+    </head>
+    <body>
+        <h3>
+            Student Details 
+        </h3>
+        <script>            
+
+            var readStudentData = () => {
+                var sname, age, gender, loc, avg, total, marks;
+                marks = [];
+                sname = prompt("Enter Student name");
+                age = prompt("Enter age");
+                gender = prompt("enter Gender");
+                loc = prompt("Enter locaiton");
+
+                for (var i = 0 ; i < 5; i++) {
+                    marks[i] = prompt("Enter sub  marks " + i);
+                    marks[i] = parseInt(marks[i]);
+                }
+                var temp = getTotalAndAvg(marks); // temp = [56.7, 200];
+                total = temp[1];
+                avg = temp[0];
+                displayStudentDetails(sname, gender, total, avg);
+            }
+
+            var getTotalAndAvg = (marks) => {
+                // Caluculating total and avg.
+                var total = 0;
+                for (var i = 0 ; i < marks.length; i++) {
+                    total += marks[i];
+                }
+                var avg = total / marks.length;
+                return [avg, total];
+            }
+
+            // display the values back to user
+
+            var displayStudentDetails  = (sname, gender, total, avg) => {
+                
+                console.log("Student details");
+                console.log("Name " + sname);
+                console.log("Gender " + gender);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg);
+                getSudentGrade(avg);
+            }
+
+            var getSudentGrade = (avg) => {
+                if (avg >= 40) {
+                    console.log("Student Got Passed");
+                } else {
+                    console.log("You got Surprise");
+                }
+            }
+            
+            readStudentData();
+            
+        </script>
+    </body>
+</html>

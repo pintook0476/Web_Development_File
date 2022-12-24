@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Practice
+        </title>
+    </head>
+    <body>
+        <h3>1 tp 100 amstrong number</h3>
+        <script>
+            for(i=1;i<=10000;i++){
+                var a=i;
+                a=a.toString();
+                var c=a.length;
+                a=parseInt(a);
+                var b=a;
+                var rem;
+                var sum=0;
+                while(a>0){
+                    rem=a%10;
+                    sum=sum+(rem ** c);
+                    a=parseInt(a/10);
+                }
+                if(b==sum){
+                    console.log(b);
+                }
+            }
+        </script>
+    </body>
+</html>

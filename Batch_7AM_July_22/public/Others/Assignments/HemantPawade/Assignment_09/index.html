@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .header,.footer{
+            border: 2px solid;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            width: auto;
+            background-color: goldenrod;
+        }
+        .main_container{
+            border: 2px solid gray;
+            height: 600px;
+            margin: 10px 0px;
+            overflow:auto ;
+            
+            
+            
+        }
+        .personal_detailes_container,.eduction_detailes_container,.address_container,.about_container{
+            border: 2px solid;
+            height: auto;
+            margin: 30px;
+            border-radius: 10px;
+        }
+        .personl_detailes,.education_detailes,.address,.about {
+            border: 2px solid red;
+            background-color: red;
+            border-radius: 3px;
+            color: #fff;
+            margin: 20px 80px;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: -35px;
+        }
+        label {
+            padding: 10px;
+        }
+
+        .inside input,
+        .inside select,
+        textarea {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid gold;
+        }
+
+        textarea {
+            width: 500px;
+            height: 300px;
+            resize: none;
+        }
+
+        .inside input:focus,
+        .inside select:focus {
+            outline: none;
+        }
+
+        .inside input[type=email] {
+            margin-left: 55px;
+        }
+
+        .inside input[type=phone] {
+            margin-left: 32px;
+            width: 280px;
+        }
+
+        .inside input[type=radio],
+        .inside input[type=checkbox] {
+            width: 50px;
+        }
+
+        .inside label[for=male] {
+            margin-left: 40px;
+        }
+        .submit {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            position: relative;
+            left: 40%;
+            background-color:green;
+            color: #fff;
+            border: 2px solid green;
+            border-radius: 3px;
+        }
+
+        .submit:hover {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            position: relative;
+            left: 40%;
+            background-color: green;
+            color: #fff;
+            border: 2px solid red;
+            border-radius: 3px;
+        }
+
+
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="header">Student Registration Page</div>
+<form action="">
+    <div class="main_container">
+        <div class="personal_detailes_container">
+            <div class="personl_detailes">Personal Detiles</div>
+            <div class="inside">
+                <div>
+                    <label for="student_name">Student Name:</label>
+                    <input id="student_name" name="student_name" placeholder="Enter Student Name">
+
+                    <label for="course">Opted Course:</label>
+                        <select name="course" id="course">
+                            <option value="">Select Job Role</option>
+                            <option value="frontend">FrontEnd Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full_stack">Full Stack Developer</option>
+                            <option value="ui_ux">UI Developer</option>
+                        </select>    
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="mail" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female">
+                </div>
+            </div>
+            
+        </div>
+        <div class="eduction_detailes_container">
+            <div class="education_detailes">Education Detailes</div>
+            <div class="inside">
+                <div>
+                    <label for="Qualification">Qualification</label>
+                    <select name="" id="">
+                        <option value="none">Select</option>
+                        <option value="Bachlor">Bachlor</option>
+                        <option value="Master">Master</option>
+                        <option value="High School">High School</option>
+                    </select>
+                    <label for="course">Specialised in</label>
+                    <select name="" id="">
+                        <option value="none">Select</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value=" BCA">BCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="MCA">MCA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Language">Language Known</label>
+                    <label for="English">English</label>
+                    <input type="checkbox" value="English">
+                    <label for="Hindi">Hindi</label>
+                    <input type="checkbox" value="Hindi">
+                    <label for="Telugu">Telugu</label>
+                    <input type="checkbox" value="Telugu">
+                    <label for="Urdu">Urdu</label>
+                    <input type="checkbox" value="Urdu">
+                </div>
+                <div>
+                    <label for="Average Marks.">Average Marks</label>
+                    <input type="text" placeholder="Enter your Average Marks">
+                    <label for="All Over Marks">All Over Marks</label>
+                    <input type="text" placeholder="Enter your All Over Marks">
+                </div>
+            </div>
+        </div>
+        <div class="address_container">
+            <div class="address">Address</div>
+            <div class="inside">
+                <div>
+                    <label for="house">House No.</label>
+                    <input type="text" placeholder="House No.">
+                    <label for="Landmark">Landmark</label>
+                    <input type="text" placeholder="Landmark">
+                </div>
+                <div>
+                    <label for="street">Street Name</label>
+                    <input type="text" placeholder="Street Name">
+                    <label for="Pin Code">Pin Code</label>
+                    <input type="text" placeholder="Pin Code">
+                </div>
+                <label for="Country">Country</label>
+                <select name="" id="">
+                    <option value="none">Select</option>
+                    <option value="india">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="New Zeland">New Zeland</option>
+                </select>
+                <label for="Country">State</label>
+                <select name="" id="">
+                    <option value="none">Select</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+            </div>
+        </div>
+        <div class="about_container">
+            <div class="about">About Yourself</div>
+            <div class="inside">
+                <label for="textarea" class="about">About Yourself</label>
+                <textarea></textarea>
+
+
+            </div>
+        </div>
+        <input type="submit" class="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+</form>
+    <div class="footer">@ Copy right 2022</div>
+    
+</body>
+</html>

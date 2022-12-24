@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <body>
+            <center>
+                <h3>Employee Details</h3>
+            </center>
+            <script>
+            var Ename = prompt("Enter employee name");
+            var Department = prompt("Enter department name");
+            var Basicsalary = prompt("Enter Basicsalary");
+            var Basicsalary = parseInt(Basicsalary)
+            var pf = 14 / 100 * Basicsalary;
+            var hra = 25 / 100 * Basicsalary;
+            var total =  Basicsalary + pf + hra ;
+             
+            document.write("Employee name is  " + Ename + "<br>");
+            document.write("Employee Department is  " +Department + "<br>");
+            document.write("Basicsalary is  " +Basicsalary + "<br>");
+            document.write("PF is  " + pf + "<br>");
+            document.write("Hra is  " + hra + "<br>");
+            document.write("Totalsalary is  " + total + "<br>");
+             </script>
+        </body>
+    </head>
+</html>

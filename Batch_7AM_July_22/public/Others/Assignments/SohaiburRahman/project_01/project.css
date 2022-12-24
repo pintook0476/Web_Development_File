@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://cdn.bigboytoyz.com/new-version/products/product/lambo-lambo-svj-2.jpg);
+    background-size: 100% 185%;
+    background-repeat: no-repeat;
+}
+img {
+    width: 225px;
+    height: 175px;
+    border-radius: 10px;
+}
+.pdetails {
+    border-radius: 25px;
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    width: 278px;
+    height: 360px;
+    float: left;
+}
+.pdetails li {
+    list-style: none;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 7px;
+    margin: 5px;
+}
+.actualPrice {
+    font-weight: bold;
+}
+.discountedPrice {
+    color: green;
+    font-weight: bold;
+}

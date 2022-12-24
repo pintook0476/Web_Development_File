@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating reading data from user
+        </title>
+        <style>
+            ul {
+                border: 1px solid;
+                width: 400px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 10px;
+            }
+            .rblock {
+                display: none;
+            }
+            .error {
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter First Value: <input type="text" id="fVal" onkeypress="return validateData(event, '#fvalErr')" maxlength="3" placeholder="Enter only numbers">
+                <div class="error" id="fvalErr">Only numbers allowed</div>
+            </li>
+            <li>
+                Enter Second Value: <input type="text" id="sVal" onkeypress="return validateData(event, '#svalErr')">
+                <div class="error" id="svalErr">Only numbers allowed</div>
+            </li>
+            <li>
+                <input type="button" value="Do Addtion" onclick="doSum();">
+            </li>
+            <li class="rblock">
+                The sum of values is <span></span>
+            </li>
+        </ul>
+        <script>
+            var doSum = () => {
+                var a1 = document.querySelector("#fVal").value;
+                a1 = parseInt(a1)
+                var a2 = document.querySelector("#sVal").value;
+                a2 = parseInt(a2)
+                var result = a1 + a2;
+
+                document.querySelector("span").innerText = result;
+                document.querySelector(".rblock").style.display = 'block';
+
+                // clean up text
+                document.querySelector("#fVal").value = '';
+                
+            }
+
+            var validateData = (event, elementId) => {
+                if (event.keyCode >= 48 && event.keyCode <= 57) {
+                    document.querySelector(elementId).style.display = 'none';
+                    return true; 
+                } else {
+                    document.querySelector(elementId).style.display = 'block';
+                    return false; 
+
+                }
+            }
+
+        </script>
+    </body>
+</html>

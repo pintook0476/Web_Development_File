@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all Prime numbers</title>
+</head>
+<body>
+
+    <script>
+
+       var sum = 0;
+       for(var i = 2; i <= 100; i++){
+
+        //if num divisible its not Prime
+        var isPrime = true;
+        for(var j = 2 ; j < i; j++){
+            //check if its divisible
+
+            if(i % j == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        //  console.log("is prime before sum " + isPrime);
+        if(isPrime == true){
+            sum = sum + i;
+        }
+
+        // console.log("is prime after sum " + isPrime);
+        // var count = 0; // how many times its completely divisible rem is 0
+        
+        // //divisibility by no other num
+        // for(var j = 1; j <= i; j++){
+        //     // console.log("hello");
+        //     if( i % j == 0 ){
+        //         // console.log("hi")
+        //         count++;
+        //     }
+            
+        // }// 2nd for loop
+
+        // // console.log("count is " + count + " for " + i);
+        // if(count == 2){
+        //     sum = sum + i;
+        //     }
+       
+        } //end of father loop
+
+       console.log("sum of prime numbers from one to hundred is " + sum);
+
+    </script>
+    
+</body>
+</html>

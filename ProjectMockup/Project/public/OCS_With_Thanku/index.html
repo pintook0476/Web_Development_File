@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orderdata</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <div ng-app="app" ng-controller="appController">
+            <input type="button" value="toggle" ng-click="toggle()"> 
+            <div class="container" ng-if="testToggle">
+                <table id='table' class="table" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr class="orderDatapage" >
+                            <th style="width:80px">Items: {{orderMetaData.totalOrderedItems}}</th>
+                            <th class="theader">YOUR ORDER</th>
+                            <th></th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in orderData">
+                            <td class="itemsCount">
+                                {{data.Itemquantity}}                            
+                            </td>
+                            <td  >
+                                <div class="itemDesc">
+                                    <div>{{data.description}}</div>
+                                    <div ng-repeat="subItem in data.items" class="subItems">
+                                        <div ng-if="subItem.Price != null">{{subItem.Itemquantity}} &nbsp {{subItem.description}}</div>
+                                    </div>
+                                    <div class="subItems">
+                                        {{data.subItemNamesList}}
+                                    </div>   
+
+                                </div>                                               
+                            </td>
+                            <td>    
+                                <div class="priceDetails">                       
+                                    <div  style="text-align: right;">{{data.Price}}</div>
+                                    <div ng-repeat="subItem in data.items">
+                                        <div style="text-align: right;">{{subItem.Price}}</div>
+                                    </div>
+                                    <div ng-if="data.subItemNamesList">&nbsp;</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="tableFooter">
+                            <td></td>
+                            <td colspan="2" class="taxAndTotal">
+                                <span class="tax">Tax: ${{totalTaxValue}}</span>
+                                <span class="total">TOTAL ${{totalPrice}}</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <img src="{{dayUpSellImage}}" />
+            </div>
+            <div class="container" ng-if="!testToggle">
+                <table  class="table" cellspacing="0" cellpadding="0" id="thanksTable">
+                    <tr>
+                        <td class="msgCell">
+                            THANK YOU!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="thanksTotalPrice">
+                            TOTAL ${{totalPrice}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="msgCell">
+                            Please pull forward
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

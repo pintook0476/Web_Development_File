@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration of inheritance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="collegeSection">
+            <h1>College Details</h1>
+            <div class="form">
+                <fieldset>
+                    <legend>College Name :</legend>
+                    <input type="text" id="clgName">
+                </fieldset>
+
+                <fieldset>
+                    <legend>College Code :</legend>
+                    <input type="text" id="clgCode">
+                </fieldset>
+
+                <fieldset>
+                    <legend>College Address :</legend>
+                    <input type="text" id="clgAdd">
+                </fieldset>
+                <input type="button" onclick="getClgDetails()" value="Submit">
+            </div>
+            <div id="clgMsg" class="message">Data Inserted Successfully</div>
+        </div>
+
+        <div class="studentSection">
+            <h1>Student Details</h1>
+            <div class="form">
+                <fieldset>
+                    <legend>Student Name * :</legend>
+                    <input type="text" id="stdName">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Student Age * :</legend>
+                    <input type="text" id="stdAge">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Student Gender * :</legend>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </fieldset>
+
+                <fieldset>
+                    <legend>Student Address :</legend>
+                    <select name="course" id="course">
+                        <option>Select Course***</option>
+                        <option value="B Tech">B Tech</option>
+                        <option value="B Com">B Com</option>
+                        <option value="Bsc CS">Bsc CS</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Bsc IT">Bsc IT</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Student Address :</legend>
+                    <input type="text" id="stdAdd">
+                </fieldset>
+                <input type="button" onclick="getStdDetails();" value="Submit">
+            </div>
+            <div id="stdMsg" class="message">Data Inserted Successfully</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

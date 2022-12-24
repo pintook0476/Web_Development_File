@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Name, Age, Gender, Department, Basic_salary, tax, pf, hra, total;
+        function empDetailsReading(){
+        Name = prompt("enter the name of the employee");
+        Age = prompt("enter the age of the emp");
+        Age = parseInt(Age);
+        Gender = prompt("enter the gender of emp");
+        Department = prompt("enter the department");
+        Basic_salary = prompt("enter the basic sslary");
+        Basic_salary = parseInt(Basic_salary);
+        tax;
+        totalSalary();
+        }
+
+
+        function totalSalary(){
+         pf = (Basic_salary / 100) * 14;
+         hra = (Basic_salary / 100) * 24;
+         total = Basic_salary + pf + hra;
+
+        }
+
+        function displayData(){
+            empDetailsReading();
+         console.log(" name " + Name);
+         console.log(" Age " + Age);
+         console.log(" gender " + Gender);
+         console.log(" department " + Department);
+         console.log(" basic salary " + Basic_salary);
+
+         console.log(Basic_salary + " + " + pf + " + " + hra + " = " + total);
+         ifCondition();
+        }
+        function ifCondition(){
+         if ( Gender == 'male' ) {
+
+            if (total >= 200000) {
+                tax = (total /100) * 15;
+                console.log("tax is " + tax);
+            }
+            else if(total >= 100000) {
+                tax = (total / 100) * 10;
+                console.log("tax is " + tax);
+            }
+            else if( total >= 50000){
+                tax = (total / 100) * 5;
+                console.log("tax is " + tax);
+            }
+            else{
+                console.log("Best of luck for your hike");
+            }
+         }
+         else{
+            if (total >= 200000) {
+                tax = (total /100) * 10;
+                console.log("tax is " + tax);
+            }
+            else if(total >= 100000) {
+                tax = (total / 100) * 5;
+                console.log("tax is " + tax);
+            }
+            else if( total >= 50000){
+                tax = (total / 100) * 0;
+                console.log("tax is " + tax);
+
+
+            }
+            else{
+                console.log("Best of luck for your hike");
+            }
+         }
+         
+        } displayData();
+    </script>
+</body>
+</html>

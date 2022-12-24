@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 11</title>
+</head>
+
+<body>
+	<script>
+		var EmpName = prompt("Enter Employee Name");
+		var EmpDept = prompt("Enter Employee Department");
+		var basicSalary = prompt("Enter Basic Salary");
+
+		BasicSalary = parseInt(BasicSalary);
+		var pf = BasicSalary * (14 / 100);
+		var hra = BasicSalary * (25 / 100);
+		var totalSalary = basicSalary + pf + hra;
+
+		console.log("Employee Name:  " + EmpName);
+		console.log("Employee Dept: " + EmpDept);
+		console.log("Basic Salary: " + BasicSalary);
+		console.log("PF Amount:" + pf);
+		console.log("HRA Amount: " + hra);
+		console.log("Total Salary: " + totalSalary);
+	</script>
+</body>
+</html>

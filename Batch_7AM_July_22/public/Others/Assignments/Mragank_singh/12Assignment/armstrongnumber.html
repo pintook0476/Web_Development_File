@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Armstrong Number</title>
+    </head>
+    <body>
+        <h1>Armstrong Number</h1>
+        <script>
+            var str = prompt("enter number");
+            
+            n = parseInt(str);
+            var temp = n; 
+            var armstrong = 0;
+            while(n>0){
+                var rem = n%10;
+                n = n/10;
+                n = parseInt(n);
+                armstrong = armstrong + rem ** str.toString().length;
+            }
+            if (armstrong == temp ){
+                console.log(temp + " ,It is a armstrong no.");
+            } else {
+                console.log(temp + " ,It is not a armstrong no.");
+                
+            }
+        </script>
+    </body>
+</html>

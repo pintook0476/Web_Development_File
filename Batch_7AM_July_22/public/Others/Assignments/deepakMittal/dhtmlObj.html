@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            h3{
+                color: blue;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+            div {
+                background-color: green;
+                color: #fff;
+                font-family: sans-serif;
+            }
+            div span{
+                font-weight: bold;
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+        <h3>Practice With DHTMl <br>
+            Testing With Student Details
+        </h3>
+        <div>Student Name : <span id="StuName"></span></div>
+        <div>Student Age : <span id="StuAge"></span></div>
+        <div>Student Gender : <span id="StuGender"></span></div>
+        <div>Student Location : <span id="StuLocation"></span></div>
+        <div>Student Total Marks : <span id="StuTotal"></span></div>
+        <div>Student Percentage : <span id="Stuavg"></span></div>
+
+        <script>
+            var sdetails = {
+                getStuDetails : function(){
+                    this.name = prompt("Enter Your Name");
+                    this.gender = prompt("Enter Your Gender");
+                    this.age = prompt("Enter Your Age");
+                    this.location = prompt("Enter Your Location");
+                    this.marks = [];
+                    
+                    for(var play = 0; play < 5; play++){
+                        this.marks[play] = prompt("Enter Your Mark " + [play + 1]);
+                        this.marks[play] = parseInt(this.marks[play]);
+                    }
+
+                    this.calTotalMarks();
+                    
+                },
+
+                calTotalMarks : function(){
+                    this.totalMarks = 0;
+                    for(var i = 0; i < this.marks.length; i ++){
+                        this.totalMarks += this.marks[i];
+                    };
+                    this.avgMarks = this.totalMarks / this.marks.length;
+                    this.displayDetails();
+                },
+
+                displayDetails : function(){
+                    document.querySelector("#StuName").innerHTML = this.name;
+                    document.querySelector("#StuAge").innerHTML = this.age;
+                    document.querySelector("#StuGender").innerHTML = this.gender;
+                    document.querySelector("#StuLocation").innerHTML = this.location;
+                    document.querySelector("#StuTotal").innerHTML = this.totalMarks;
+                    document.querySelector("#Stuavg").innerHTML = this.avgMarks + "%";
+                }
+
+            };
+
+             sdetails.getStuDetails();
+
+
+        </script>
+        
+    </body>
+</html>

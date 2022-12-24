@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var readData = () =>
+            {
+
+                var empname = prompt("Enter Emp name");
+                var empDep = prompt("Enter employee Department");
+                var empGender = prompt("Enter employee Gender")
+                var empbasicSal = prompt("Enter Employee Basic sal");
+                    empbasicSal = parseInt(empbasicSal);
+                
+                    return [empname,empDep,empGender,empbasicSal];
+                }
+
+            var calculate = (empbasicSal, empGender) =>
+            {
+        
+                var pf = (12 / 100 ) * empbasicSal;
+                var hra = (24 / 100 ) * empbasicSal;
+                
+                var totalSal = pf + hra + empbasicSal;
+                var totalTax = calTax(totalSal,empGender);
+
+                return [totalSal, totalTax];
+            }   
+            
+            var calTax = (totalSal,empGender) =>{
+
+                var taxValue;
+                
+                if (empGender == 'Male') {
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (15 / 100);
+                    } else if (totalSal >= 30000) {
+                        taxValue = totalSal * (10 / 100);
+                    }  else {
+                        taxValue = 0;
+                    }
+                } else { // Female
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (10 / 100);
+                    } else {
+                        taxValue = 0;
+                    }
+                }
+                return taxValue;
+            }
+            var displayDetails = () =>{
+                
+                var data = readData();
+                var data1 = calculate(data[3], data[2]);
+                
+                
+                    console.log(`Employee name: ${data[0]}`);
+                    console.log(`Employee Department: ${data[1]}`);
+                    console.log(`Employee Gender: ${data[2]}`);
+                    console.log(`Basic Salary: ${data[3]}`);
+                    console.log(`Total Salary: ${data1[0]}`);
+                    console.log(`Tax Value: ${data1[1]}`);
+                }                
+                // calculate();
+                // calTax();
+                displayDetails();
+        </script>
+    </body>
+</html>

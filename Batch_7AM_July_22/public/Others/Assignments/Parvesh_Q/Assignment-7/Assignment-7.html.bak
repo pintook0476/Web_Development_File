@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	  <meta charset="UTF-8">
+	  <meta name="Generator" content="EditPlus®">
+	  <meta name="Author" content="">
+	  <meta name="Keywords" content="">
+	  <meta name="Description" content="">
+	  <title>Assignment-7</title>
+			  <style>
+			  				.header{
+								border:4px ridge ;
+								text-align:center;
+								margin:auto;
+								border-radius:10px;	
+								width:500px;
+								color:#cc0000;
+								font-style:italic;
+								}
+							.container{
+								border:1px solid none;
+								background-image:url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700335398.jpg");
+								}
+
+			  			.block{
+								border:1px solid ;
+								border-radius:10px;	
+								width:120px;
+								height:120px;
+								text-align:center;
+								}
+						.block1{
+								background:red;	
+								margin-left:15px;
+								margin-top:15px;
+								}
+						.block2{
+								background:orange;
+								position:absolute;
+								left:63px;
+								top:105px;
+								}
+						.block3{
+								background:green;
+								position:absolute;
+								left:1105px;
+								top:65px;
+								
+								}
+						.block4{
+								background:yellow;
+								position:absolute;
+								left:1045px;
+								top:105px;	
+								}
+						.block5{
+								background:blue;							
+								width:175px;
+								height:175px;
+								position:relative;
+								left:500px;
+								top:50px;
+								line-height:166px;
+								}
+						.block6{
+								background:purple;
+								position:absolute;
+								left:450px;
+								top:170px;
+							}
+						.block7{
+								background:#ff00ff;
+								position:absolute;
+								left:633px;
+								top:170px;
+								}
+						.block8{
+								background:#ff00ff;
+								position:relative;
+								left:442px;
+								top:-2px;
+								}
+						.block9{
+								background:purple;
+								position:relative;
+								left:633px;
+								top:-126px;
+								}
+						.block10{
+								background:#003300;
+								position:relative;
+								margin-left:15px;
+								z-index:1;
+								}
+						.block11{
+								background:lightgreen;
+								position:absolute;
+								left:67px;
+								top:546px;
+								z-index:0;
+								
+								}
+						.block12{
+								background:#cc0033;
+								position:absolute;
+								left:1105px;
+								bottom:-85px;
+								z-index:0;
+							}
+						.block13{
+								background:#cc66cc;
+								position:relative;
+								left:1096px;
+								bottom:126px;
+								z-index:1;
+							}
+							
+					
+
+			</style>
+
+ </head>
+ <body>
+						<h3 class="header">Block Games</h3>
+
+						<div class="container">
+
+							<div class="block block1">BLOCK1</div>	
+							<div class="block block2">BLOCK2</div>
+							<div class="block block3">BLOCK3</div>
+							<div class="block block4">BLOCK4</div>
+							<div class="block block5">BLOCK5</div>
+							<div class="block block6">BLOCK6</div>
+							<div class="block block7">BLOCK7</div>     
+							<div class="block block8">BLOCK8</div>  
+							<div class="block block9">BLOCK9</div>  
+							<div class="block block10">BLOCK10</div>  
+							<div class="block block11">BLOCK11</div>  
+							<div class="block block12">BLOCK12</div>
+							<div class="block block13">BLOCK13</div>  
+						</div>
+
+  
+ </body>
+</html>

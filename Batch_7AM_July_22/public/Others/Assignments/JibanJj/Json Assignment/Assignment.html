@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment JSON Object</title>
+</head>
+<body>
+    <script>
+        var empDetails = {
+            readEmpData: function () {
+                empDetails.name = prompt("Enter Employee Name");
+                empDetails.age = prompt("Employee Age");
+                empDetails.gender = prompt("Employee Gender");
+                empDetails.basicSal = prompt("Enter Your Basic Salary");
+                empDetails.basicSal = parseInt(empDetails.basicSal);
+                empDetails.pf;
+                empDetails.hra;
+                empDetails.totalSalary;
+                empDetails.avgAndTotal();
+            },
+            avgAndTotal: function () {
+                
+                empDetails.pf = empDetails.basicSal * ( 14 / 100);
+                empDetails.hra = empDetails.basicSal * ( 25 / 100);
+                empDetails.totalSalary = empDetails.pf + empDetails.hra + empDetails.basicSal;
+                empDetails.getTotaltax();
+            },
+            getTotaltax: function(){
+                if (empDetails.gender == "male")
+                {
+                    if (empDetails.totalSalary >= 200000)
+                    {
+                        console.log("Your tax is" + (15 / 100) * empDetails.totalSalary);
+                    } else if (empDetails.totalSalary >= 100000){
+                        console.log("Your tax is" + (10 / 100) * empDetails.totalSalary);
+                    } else if (empDetails.totalSalary >= 50000) {
+                        console.log("Your tax is" + (5 / 100) * empDetails.totalSalary);
+                    }
+                } else 
+                {
+                    if (empDetails.totalSalary >= 200000){
+                        console.log("Your tax is" + (10 / 100) * empDetails.totalSalary);
+                    } else if (empDetails.totalSalary >= 100000) {
+                        console.log("Your tax is" + (5 / 100) * empDetails.totalSalary);
+                    } else {
+                        console.log("You no need to pay any tax")
+                    }
+                }empDetails.displayEmpdetails();
+            },
+            displayEmpdetails: function () {
+                console.log("Employee Name is " + empDetails.name);
+                console.log("Employee age is " + empDetails.age);
+                console.log("Employee Gender is " + empDetails.gender);
+                console.log("Employee Basic Salary " + empDetails.basicSal);
+                console.log("Employee Total salary is " + empDetails.totalSalary);
+                console.log("Employee Pf Charge is " + empDetails.pf);
+                console.log("Employee hra Charge is " + empDetails.hra);
+            }
+        }
+        empDetails.readEmpData();
+    </script>
+</body>
+</html>

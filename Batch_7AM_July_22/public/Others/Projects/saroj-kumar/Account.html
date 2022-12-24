@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    ><meta name="viewport" content="width=device=width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Productes - RedStore </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+</head>
+<body>
+ 
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/gt.png" width="120px">
+        </div>
+        <nav>
+            <ul id="menuItem">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contatct</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart2.png" width="30px" height="30px">
+        <img src="images/menu1.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<!--------Accoutn-Page-------->
+  <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/sm2.jpg" width="100%">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indecater">
+                </div>
+                <form id="loginForm">
+                    <input type="text" placeholder="user-name">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="" >forget-password</a>
+                </form>
+
+                <form id="registerform">
+                    <input type="text" placeholder="user-name">
+                    <input type="email" placeholder="enter-email">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Register</button>
+                  
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+   <!-----------Footer---------->
+   <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Downlod Our App</h3>
+                <p>
+                    Downlod For Androin and Ios Mobile Phone.
+                </p>
+                <div class="app-logo">
+                    <img src="images/store.jpg" height="120px" width="250px">
+                </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/gt.png" height="100px" width="320px">
+                <p>
+                  Our Perpose Is To Sustainablity Make The pleasure 
+                  and Benifit of Sports Accessbile to the Many 
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>UseFull Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affileate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Teligram</li>
+                <li>Twitter</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrifght">CopyRight-2022-kumarapps</p>
+    </div>
+   </div>
+   <!-----------JS-Toggle-Menue-->
+   <script>
+    var menuItem= document.getElementById("menuItem");
+
+    menuItem.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if( menuItem.style.maxHeight == "0px")
+        {
+            menuItem.style.maxHeight = "200px"
+        }
+        else{
+            menuItem.style.maxHeight = "0px"
+        }
+    }
+   </script>
+     <!----------js--toggle-form---->
+  <script>
+    var loginForm = document.getElementById("loginForm");
+    var registerform = document.getElementById("registerform");
+    var indecater = document.getElementById("indecater");
+
+     function register(){
+        registerform.style.transform = "translateX(0px)";
+        loginForm.style.transform = "translateX(0px)";
+        indecater.style.transform = "translateX(100px)";
+     }
+     function login(){
+        registerform.style.transform = "translateX(300px)";
+        loginForm.style.transform = "translateX(300px)";
+        indecater.style.transform = "translateX(0px)";
+     }
+
+
+  </script>
+
+
+</body>
+</html>

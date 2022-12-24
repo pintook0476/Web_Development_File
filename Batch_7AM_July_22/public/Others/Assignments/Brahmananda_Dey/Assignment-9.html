@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_9</title>
+    <style>
+        .header,
+        .footer{
+            border: 2px solid;
+            margin: 15px;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .footer{
+            font-size: 15px;
+        }
+        .border{
+            border: 2px solid;
+            margin: 20px;
+            padding: 15px;
+            
+            
+        }
+        ul{
+            border: 2px solid;
+            padding: 10px;
+            margin: 20px;
+        
+        }
+        li{
+            list-style-type: none;
+            margin: 20 px;
+            padding: 15px;
+        }
+        .placed{
+            border: 2px solid;
+            width: 100px;
+        }
+        .details,
+        .edu,
+        .add,
+        .abo{
+            position: absolute;
+            text-align: center;
+        }
+        .details{
+            top: 113px;
+            left: 99px;
+        }
+        .edu{
+            top: 312px;
+            left: 100px;
+              }
+        .add
+        {
+             top: 510px;
+            left: 100px;
+             }
+        .abo{
+            top: 757px;
+            left: 100px;
+        }
+          .abc{
+            position: absolute;
+            left: 721px;
+            top: 127px;
+               }
+        .bcd{
+            position: absolute;
+            left: 721px;
+            top: 520px;
+        }
+        .aa{
+            width: 160px;
+            float: left;
+        }
+        .bb{
+                width:130px ;
+                float: left;
+        }
+        .cc{
+            width: 90px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Student Registration
+    </div>
+    <form action="" method="" class="border">
+
+    <ul>
+        <input type="text" class="details"  value="Personal Details">
+        
+        <li>
+           <label for="sname" class="aa">Student Name :</label>
+           <input type="text" name="sname"> 
+        </li>
+        <li >
+            <label for="mail" class="aa">Email Id :</label>
+            <input type="text" name="mail" >
+        </li>
+         <li>
+            <label for="gender" class="aa">Gender :</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Others
+        </li>
+        <li class="abc">
+            <label for="course">Course : </label>
+            <select name="course" id="studing">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option valuE="ui">UI fullstack</option>
+                <option value="php" selected>PHP</option>
+                <option value="Selinium">Selinium</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <input type="text"  class= "edu" value="Education Details">
+        <li>
+            <label for="qualification" class="aa">Qualification : </label>
+            <input type="text" name="qualification">
+        </li>
+        <li>
+        <label for="language" class="aa">Language : </label>
+        <input type="checkbox" name="language" value="eng">English
+        <input type="checkbox" name="language" value="eng">Hindi
+        <input type="checkbox" name="language" value="eng">Odia
+        </li>
+        <li>
+            <label for="marks" class="aa">Average Marks : </label>
+            <input type="special character/text" name="marks">
+        </li>
+    </ul>
+    <ul>
+        <input type="text"  class="add" value="Address">
+        <li class="bcd">
+            <label for="land" class="cc">Landmark : </label>
+            <textarea name="land" id="area" cols="40" rows="7"></textarea>
+        </li>
+        <li>
+            <label for="dno" class="aa">D. No. : </label>
+            <input type="text" name="dno">
+        </li>
+        <li>
+            <label for="street" class="aa"> Street Name</label>
+            <input type="text" name="street">
+        </li>
+        <li>
+            <label for="state" class="cc">State : </label>
+            <select name="state" id="location">
+                <option value="oa">Odisha</option>
+                <option value="wb">West Bengal</option>
+                <option value="ta">Telangana</option>
+                <option value="ap">Andhrapradesh</option>
+                <option value="ma">Maharastra</option>
+                <option value="pb">Punjab</option>
+                <option value="ha">Hariyana</option>
+
+            </select>
+        </li>
+        <li>
+            <label for="country" class="cc">country : </label>
+            <select name="country" id="">
+                <option value="usa">USA</option>
+                <option value="ind">India</option>
+                <option value="china">China</option>
+                <option value="banla">Bangladesh</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="aus">Australia</option>
+                <option value="coria">South Coria</option>
+                <option value="nepal">Nepal</option>
+                <option value="turkey">Turkey</option>
+                <option value="pak">Pakistan</option>
+                <option value="eng">England</option>
+                <option value="italy">Italy</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <input type="text" value="About Yourself" class="abo">
+        <li>
+            <label for="about" class="bb"> About Yourself : </label>
+            <textarea name="" id="" cols="80" rows="10"></textarea>
+        </li>
+    </ul>
+    </form>
+    <div class="footer">
+        &#169;copy right
+    </div>
+</body>
+</html>

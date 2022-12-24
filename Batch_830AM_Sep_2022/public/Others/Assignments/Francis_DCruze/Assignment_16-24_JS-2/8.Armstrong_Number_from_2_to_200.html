@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong Numbers</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: rgba(168, 156, 156, 0.87);
+                color: rgb(41, 252, 41);
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Armstrong Numbers</h2>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h3>THANK YOU !</h3>
+        </div>
+
+        <script>
+            for(var userNum = 2; userNum <= 200; userNum++)
+            {
+                console.log(userNum);
+                
+                var storeNum = userNum;
+                var userNum2 = userNum;
+                var numLength = 0, armstrongNum = 0;;
+
+                while(storeNum > 0)
+                {
+                    storeNum = storeNum / 10;
+                    storeNum = parseInt(storeNum);
+                    numLength++;
+                }
+
+                while(userNum2 > 0)
+                {   
+                    var digit = userNum2 % 10;
+                    userNum2 = userNum2 / 10;
+                    userNum2 = parseInt(userNum2);
+                    var multi_digit = 1;
+
+                    for (var i = 0; i < numLength; i++)
+                    {
+                    multi_digit  = multi_digit * digit;
+                    }
+                    armstrongNum = armstrongNum + multi_digit;
+                }
+                
+                if (userNum == armstrongNum)
+                {
+                    console.log(userNum + " is an Armstrong Number");
+                }
+                else
+                {
+                    console.log(userNum + " is not an Armstrong Number");
+                }
+            }
+        </script>
+    </body>
+</html>

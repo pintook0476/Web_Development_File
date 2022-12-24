@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong No between 1 to 1000</title>
+</head>
+
+<body>
+    <script>
+        for (var i=1; i<=1000; i++) {
+            var n = i;
+            var amstrongNo = 0;
+            var j = i.toString().length;
+            while (n>0) {       
+                amstrongNo+= ( n % 10)** j;
+                n = parseInt(n/10);
+            }
+            if (amstrongNo == i) {
+                console.log(i);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

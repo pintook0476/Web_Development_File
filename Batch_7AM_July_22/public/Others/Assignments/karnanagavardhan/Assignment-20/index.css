@@ -1,0 +1,22 @@
+
+.box1{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+
+}
+li{
+    list-style: none;
+}
+
+.ps{
+    font-size: small;
+    opacity: 0.3;
+}
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}

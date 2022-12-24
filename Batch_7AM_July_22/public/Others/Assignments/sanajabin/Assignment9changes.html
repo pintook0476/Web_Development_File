@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>
+            Assignment 9
+        </title>
+        <style>
+            h3,
+            h2{
+                border: 2px solid darkcyan;
+                text-align: center;
+                margin: 5px ;
+                padding: 5px;
+                background-color: darkcyan;
+            }
+            .container {
+
+                border:2px solid ;
+                width: 950px;
+                margin:  20px auto;
+                padding: 10px;
+                height: 825px;
+                background-color:mediumaquamarine;
+
+            }
+            .personal,
+            .educational,
+            .address,
+            .urself {
+                border: 2px solid;
+                margin: auto;
+                font-weight: bold;
+                width: 900px;
+                height: 165px;
+                background-color: lightgray;
+
+            }
+            .box4,
+            .box3,
+            .box2,
+            .box1{
+                border: 2px solid;
+                margin: 1px;
+                width: 150px;
+                text-align: center;
+                font-weight: bold;
+                position: relative;
+                top: 10px;
+                left: 40px;
+                background-color: mediumseagreen;
+            }
+            li{
+                list-style: none;
+                margin: 20px;
+                
+            }
+            .sidebox{
+                float: right;
+            }
+        </style>
+    </head>
+    <h2>Students Registration Page</h2>
+    <ul class="container">
+        <div class="box1">Personal Details</div>
+
+            <div class="Personal">
+                <li>
+                    <div class="sidebox">
+                        Course Opted
+                        <select name="" id="">
+                            <option value="">Java</option>
+                            <option value="">Python</option>
+                            <option value="">UI FullStack</option>
+                            <option value="">Data Science</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                <label for="userName"> Enter Student Name:</label>
+                <input type="text" placeholder="username">
+                </li>
+                <li>
+                <label for="emailid">Mail id:</label>
+                <input type="text" placeholder="www.gmail.com">
+            </li>
+            <li>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                </li>
+            </div>
+            <div class="box2">Education Details</div>
+            <div class="educational">
+                <li>
+                    <label for="qualification">Qualification:</label>
+                    <input type="text" name="qualification">
+                </li>
+                <li>
+                    <label for="languageknown">Language Known:</label>
+                    <input type="checkbox"  name="language_english"> English
+                    <input type="checkbox"  name="language_hindi"> Hindi
+                    <input type="checkbox"  name="language_urdu"> Urdu
+                    <input type="checkbox"  name="language_telugu"> Telugu
+               </li>
+                <li>
+                    <label for="averageMarks">Average Marks :</label>
+                    <input type="text" name="Average Marks">
+                </li>
+            </div>
+            <div class="box3">Address</div>
+            <div class="address">
+            <li>
+                <div class="sidebox">
+                    Landmark:
+                    <input type="text" name="landmark">
+            </li>
+          <li>
+            <label for="dno">Dno:</label>
+            <input type="text" name="dno">
+          </li>
+          <li>
+            <label for="state">State:</label>
+               <select name="" id="">
+                    <option value="">Bihar</option>
+                    <option value="">Chattisgarh</option>
+                    <option value="">Kerala</option>
+                    <option value="" selected>Select</option>
+                </select>
+          </li>
+          <li>
+            <label for="street">Street:</label>
+            <input type="text" name="street">
+          </li>
+          <li>
+            <label for="country">Country: </label>
+            <select name="" id="">
+                <option value="">India</option>
+                <option value="">Srilanka</option>
+                <option value="">USA</option>
+                <option value="" selected>Select </option>
+            </select>
+          </li>
+            </div>
+            <div class="box4">About Urself</div>
+            <div class="urself">
+                <li>
+                    <textarea maxlength="110" cols="110" rows="5" name="aboutUser"></textarea>
+         </li>
+            </div>
+            <li>
+                <input type="submit" value="Register Student">
+                <input type="reset" value="Reset values">
+            </li>
+    </ul>
+    <h3>@copyrights 2022</h3>
+</body>
+</html>

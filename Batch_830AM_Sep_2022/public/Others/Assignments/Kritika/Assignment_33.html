@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname, empdep, empbasicSal, empGender, pf, hra, totalSal, taxValue;
+            var readEmpDetails = () => {
+                empname = prompt("Enter Emp name");
+                empDep = prompt("Enter employee Department");
+                empGender = prompt("Enter employee Gender")
+                empbasicSal = prompt("Enter Employee Basic sal");
+                empbasicSal = parseInt(empbasicSal);
+    
+            }
+
+            var readPfHraAndTotalSal = () => {
+                pf = (12 / 100 ) * empbasicSal;
+                hra = (24 / 100 ) * empbasicSal;
+                totalSal = pf + hra + empbasicSal;
+            }
+
+            function readTotalTax() {
+                if (empGender == 'Male') {
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (15 / 100);
+                    } else if (totalSal >= 30000) {
+                        taxValue = totalSal * (10 / 100);
+                    }  else {
+                        taxValue = 0;
+                    }
+                } else { // Female
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (10 / 100);
+                    } else {
+                        taxValue = 0;
+                    }
+                }
+            }
+
+            function displayEmpDetails() {
+                console.log("Employee details")   ;
+                console.log("empname " + empname);
+                console.log("Gender " + empGender);
+                console.log("Department " + empdep);
+                console.log("BAsic sal " + empbasicSal);
+                console.log("Total Sal " + totalSal);
+                console.log("Tax vlaue is " + taxValue);
+            }
+            
+            readEmpDetails();
+            readPfHraAndTotalSal();
+            readTotalTax();
+            displayEmpDetails();
+            
+        </script>
+    </body>
+</html>

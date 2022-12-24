@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Between Static and Dynamic Objects</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="heading">
+        Employee Pay Slip
+    </div>
+
+    <!-- For reading the data -->
+    <ul class="readdata">
+        <li>
+            Employee Name: <input type="text" id="name">
+        </li>
+        <li>
+            Employee Age: <input type="text" id="age">
+        </li>
+        <li>
+            Employee Gender: <input type="text" id="gender">
+        </li>
+        <li>
+            Employee Location: <input type="text" id="location">
+        </li>
+        <li>
+            Employee Pf: <input type="text" id="pf">
+        </li>
+        <li>
+            Employee Hra: <input type="text" id="hra">
+        </li>
+        <li>
+            Employee Basic Salary: <input type="text" id="basicSalary">
+        </li>
+        <li>
+            <input type="button" value="Generate Pay Slip" onclick="generateProductDetails();">
+        </li>
+    </ul>
+
+    <!-- for displaying the data on the webpage.. -->
+    <ul class="displaydata">
+        <li>Employee Name: <span id="dname"></span></li>
+        <li>Employee Age: <span id="dage"></span></li>
+        <li>Employee Gender: <span id="dgender"></span></li>
+        <li>Employee Location: <span id="dlocation"></span></li>
+        <li>Employee Pf: <span id="dpf"></span></li>
+        <li>Employee Hra: <span id="dhra"></span></li>
+        <li>Employee Basic Salary: <span id="dbasicSalary"></span></li>
+        <li>Employee Total Salary: <span id="dtotalSalary"></span></li>
+        <li>Salary After Tax Paid: <span id="dtotalSalaryAfterTax"></span></li>
+    </ul>
+</body>
+<script src="app.js"></script>
+</html>

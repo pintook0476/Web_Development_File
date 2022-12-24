@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details 
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var empDetails = {
+                data: function() {
+                    this.empName = prompt("Enter employee name");
+                    this.empGender = prompt("Enter employee Gender");
+                    this.basicSal = prompt("enter basic salary");
+                    this.basicSal = parseInt(this.basicSal);
+                    this.calculation();
+                    this.displayDetails();
+                },
+                calculation: function() {
+                    this.pf = (12 * this.basicSal) / 100;
+                    this.hra = (15 * this.basicSal) / 100;
+                    this.totalSal = this.pf + this.hra + empDetails.basicSal;
+                   this.taxCondition();
+                },
+                taxCondition: function() {
+                    this.taxPercent = 0;
+                    if (this.empGender == 'male') { // Male emp
+                        if (this.totalSal >= 200000) {
+                            this.taxPercent = 15;
+                        } else if (this.totalSal >= 100000){
+                            this.taxPercent = 10;
+                        } else if (this.totalSal >= 50000){
+                            this.taxPercent = 5;
+                        }
+                    } else { 
+                        if (this.totalSal >= 200000) {
+                            this.taxPercent = 10;
+                        } else if (this.totalSal >= 100000){
+                            this.taxPercent = 5;
+                        }
+                        else if(this.totalSal>=50000){
+                            this.taxPercent=0
+                        }
+                    }
+                },
+               displayDetails: function() {
+                    /*console.log("Employee details");
+                    console.log("Employee name  " + this.empName);
+                    console.log("Gender " + empData.empGender);
+                    console.log("Total Sal " + this.totalSal);
+                    console.log("total tax is "+this.taxPercent)*/
+
+                    for(var tempKey in empDetails){
+                        if(typeof(empDetails[tempKey]) !='function'){
+                            console.log(tempKey+ ":"+empDetails[tempKey])
+                        }
+                    }
+                }
+            };
+
+            empDetails.data();
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration Form Table</title>
+</head>
+<style>
+    body{
+        background-image: url(image/mybackground.jpg);
+        background-position: center;
+        color:red;
+    }
+    .header , .footer{
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+    background-color: brown;
+    color: aliceblue;
+    font-weight: bold;
+}
+    .container{
+    border: 1px solid black;
+    height:950px; 
+    width: 100%;
+    margin: 20px;
+    
+
+}
+
+.box1{
+    border: 1px solid;
+    height: 200px;
+    margin: 20px;
+}
+.box2{
+    border:1px solid;
+    height: 220px;
+    margin: 20px;
+}
+.innerbox{
+    margin:20px;
+    padding:5px
+
+}
+.innerbox label{
+    width: 150px;
+    float: left;
+}
+.course, .landmark{
+    position: absolute;
+
+}
+.course{
+   
+    right:80px;
+    top: 60px;
+
+}
+.landmark{
+    top:500px;
+    right:80px;
+}
+.pd , .ed ,.ad , .userself{
+    border: 1px solid;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    background-color:white;
+    position: absolute;
+   
+}
+.pd{
+    top:60px;
+    left:100px;
+
+}
+.ed{
+    width: 200px;
+    top:283px;
+    left:120px
+}
+.ad{
+    top:505px;
+    left:120px;
+
+}
+.userself{
+    top:750px;
+    left: 100px;
+}
+
+
+</style>
+<body>
+    <div class="header"> Student Registration Form</div>
+    <div class="container">
+        <div class="box1">
+            <div class="innerbox">
+                <label for="studentName">Student Name</label>
+                <input type="text">
+            </div>
+            <div class="innerbox">
+                <label for="email">Email Id</label>
+                <input type="text">
+            </div>
+            <div class="innerbox">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+
+            </div>
+            <div class="innerbox course">
+                <label for="course">Course Opted</label>
+                <select>
+                    <option value="course">B tech</option>
+                    <option value="course">UG</option>
+                    <option value="course">PG</option>
+                    <option value="course">Others</option>
+
+                </select>
+
+            </div>
+            <div class="pd">Personol Details</div>
+        
+        </div>
+        <div class="box1">
+            <div class="innerbox">
+                <label for="qualification">Qualification:</label>
+                <input type="text">
+            </div>
+            <div class="innerbox">
+                <label for="language">Languages Known</label>
+                <input type="checkbox" name="language">English
+                <input type="checkbox"  name="language" >Telugu
+                <input type="checkbox"  name="language" >Hindi
+            </div>
+            <div class="innerbox">
+                <label for="avgmarks">Avg Marks</label>
+                <input type="number">
+        
+            </div>
+            
+            <div class="ed">Educational Details</div>
+        
+        </div>
+        <div class="box2">
+            <div class="innerbox">
+                <label for="dno">D No.</label>
+                <input type="text" name="dno" required>
+            </div>
+            <div class="innerbox">
+                <label for="streetname" >Street Name</label>
+                <input type="text" name="streetname" required>
+            </div>
+            <div class="innerbox">
+                <label for="state">State</label>
+                <select>
+                    <option  value="state">Andhra Pradesh</option>
+                    <option value="state">Hyderabad</option>
+                    <option  value="state">Bangalore</option>
+                    <option   value="state">Kerala</option>
+                </select>
+            
+            </div>
+            <div class="innerbox landmark">
+                <label for="landmark">Land Mark</label>
+                <textarea name="landmark" cols="40" rows="3"></textarea>
+            </div>
+            <div class="ad"> Adress</div>
+
+        </div>
+        <div class="box1">
+            <div class="innerbox">
+                <label for="aYourself">About Yourself :</label>
+                <textarea class="textbox" name="aYourself" id="" cols="50" rows="8" ></textarea>
+
+            </div>
+            <div class="userself">About Userself </div>
+
+        </div>
+        
+
+    </div>
+    <div class="footer">@Copy Rights</div>
+
+    
+ </body>
+</html>

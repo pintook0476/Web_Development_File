@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demnstrating For Loop
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Start of Execution");
+            var n = ("enter a number"), totalEven, totalOdd, totalPrime;
+            for (var i = 1; i <= 100; i++) {
+                if (i % 2 !== 0) {
+                    totalOdd += i;
+                    console.log(i);
+                }
+            } 
+            for (var i = 1; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    console.log(i);
+                    totalEven += i;
+                }
+            }
+            for (var i = 1; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    console.log(i);
+                    totalPrime += i;
+                }
+            }
+            console.log("the total no of odd " + totalOdd);
+            console.log("the total no of even " + totalEven); 
+            console.log("the total no of prime number " + totalPrime);
+
+            console.log("End");
+        </script>
+    </body>
+</html>

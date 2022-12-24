@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iterating OVer json object</title>
+    </head>
+    <body>
+        <script>
+           /* var sdetails = [
+                "Raj",
+                20,
+                'Male',
+                'Hyderabad'
+            ];
+
+
+            for (var i = 0 ; i < sdetails.length; i++) {
+                console.log(sdetails[i])
+            }*/
+
+            var sdetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                location: 'Hyderabad',
+                marks: [34, 45, 67, 89]
+            };
+
+            
+            
+            for (var tempKey in sdetails) {
+                console.log(tempKey + " " + sdetails[tempKey]);
+                
+            }
+        </script>
+    </body>
+</html>

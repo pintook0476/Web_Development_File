@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dataInput=() =>{
+            var data=[1,2,3,4,5,78,64,153,89];
+            findingAmstrong(data);
+        }
+        var findingAmstrong=(data) =>{
+            for(var i=0;i<data.length;i++){
+                    var a=data[i];
+                    a=a.toString();
+                    var c=a.length;
+                    a=parseInt(a);
+                    var b=a;
+                    var sum=0;
+                    while(a>0){
+                        var rem=a%10;
+                        sum=sum+(rem ** c);
+                        a=parseInt(a/10);
+                    }
+                    if(b==sum){
+                        console.log(b);
+                    }
+            }
+        }
+
+        dataInput();
+    </script>
+</body>
+</html>

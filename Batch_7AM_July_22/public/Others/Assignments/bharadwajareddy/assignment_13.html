@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            assignment_13
+        </title>
+    </head>
+    <body>
+        <script>
+            var  a = [1,27,38,90,51,2,6,9,73,56,28];
+            var count=0;
+            var i;
+            var j;
+            for(i=0;i<a.length;i++)
+            { 
+                if(a[i]>2)
+                {
+                    for(j=2;j<a[i];j++)
+                    {
+                        var rem=a[i]%j;
+                        if(rem==0)
+                        {
+                            count=count+1;
+                            break;
+                        }
+                    }
+                    if(count==0)
+                    {
+                        console.log("prime number "+a[i])
+                    }
+                    else{
+                        console.log("not prime");
+                    }
+                }
+                else if(a[i]==2)
+                {
+                    console.log("prime number "+a[i]);
+                }
+                else{
+                    console.log("neither prime nor composite "+a[i]);
+                }
+            }
+        </script>
+    </body>
+</html>

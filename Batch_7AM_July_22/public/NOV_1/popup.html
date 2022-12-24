@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .popupContainer {
+                position: absolute;
+                background-color: #ccc;
+                width: 500px;
+                height: 250px;
+                border: 2px solid;
+                border-radius: 10px;
+                top: 30%;
+                left: 25%;
+                display: none;
+            }
+
+            .headerBar {
+                padding: 5px;
+                border-bottom: 1px solid;
+            }
+
+            .closeBtn {
+                font-weight: bold;
+                float: right;
+                cursor: pointer;
+            }
+            .closeBtn:hover {
+                color: #fff;
+            }
+            .maskContainer {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                background-color: red;
+                display: none;
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maskContainer"></div>
+        <div class="popupContainer">
+            <div class="headerBar">
+                Save details ?
+                <span class="closeBtn" onclick="hidePopup()">X</span>
+            </div>
+            <div class="popupContent"> popup content</div>
+        </div>
+        click to save details <input type="button" value="Save" onclick="showPopup()">
+        <script>
+            var showPopup = () => {
+                document.querySelector(".popupContainer").style.display = 'block';
+                document.querySelector(".maskContainer").style.display = 'block';
+            }
+
+            var hidePopup = () => {
+                document.querySelector(".popupContainer").style.display = 'none';
+                document.querySelector(".maskContainer").style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

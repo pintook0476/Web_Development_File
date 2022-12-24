@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            background-color: rgb(218, 233, 233);
+        }
+
+        .logo {
+            position: fixed;
+            width: 83px;
+            height: 27px;
+            top: 0px;
+            z-index: 3;
+        }
+
+        .Headings {
+            position: sticky;
+            top: 0px;
+            color: rgba(172, 120, 41, 0.918);
+            background-color: rgba(171, 229, 229, 0.734);
+            padding: 5px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .HeadButtons {
+
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+
+        .HeadButtons:hover {
+            background-color: rgb(171, 229, 229)
+        }
+
+        h2 {
+            margin-top: 13px;
+        }
+
+        .UserInformation {
+            width: 350px;
+            height: 186px;
+            border: 1px solid;
+            margin: 40px auto;
+            background-color: rgb(225, 244, 244);
+            margin-bottom: 400px;
+        }
+
+        .InputInfo {
+            margin: 10px 20px;
+        }
+
+        #UserName {
+            margin-right: 35px;
+        }
+
+        #password {
+            margin-right: 42px;
+        }
+
+        input {
+            width: 110px;
+        }
+
+        #LogIn {
+            border: 1px solid;
+            padding: 2px 5px;
+        }
+
+        #LogIn:hover {
+            background-color: rgb(44, 78, 148);
+            cursor: pointer;
+            /* padding: 2px 5px;
+            border-radius: 5px; */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .SignUp:hover {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .Forgote:hover {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer {
+            color: blue;
+            font-size: small;
+        }
+    </style>
+    <title>MobileShopee</title>
+</head>
+
+<body>
+    <img src="logo/MobileShopeeLogo.PNG" alt="" class="logo">
+    
+    <div class="Headings">
+        <span class="HeadButtons">
+            Home
+        </span>
+        <span class="HeadButtons">
+            Galary
+        </span>
+        <span class="HeadButtons">
+            AboutUs
+        </span>
+        <span class="HeadButtons">
+            ContactUs
+        </span>
+        <span class="HeadButtons">
+            Offers
+        </span>
+    </div>
+    
+    <center>
+        <h2>Welcome to MobileShopee</h2>
+    </center>
+    <div class="UserInformation">
+        <form action="MobilePage.html" method="get">
+            <div class="InputInfo">
+                <label id="UserName" for="UserName">UserName:</label>
+                <input type="email" name="UserName" required>
+                <br>
+                <br>
+                <label id="password" for="UserPassword">Password:</label>
+                <input type="password" name="Password" required>
+                <br>
+                <br>
+                <center>
+                    <button id="LogIn">LogIn</button>
+                    <!-- <input type="submit"> -->
+                </center>
+                <br>
+
+                <center><a href="SignUpPage.html">
+                        <span class="SignUp">SignUp</span>
+                    </a>
+                </center>
+                <br>
+                <center>
+                    <a href="ForgoteMailId.html">
+                        <span class="Forgote">Forgote Password?</span>
+                    </a>
+                </center>
+        </form>
+    </div>
+    </div>
+    <footer>
+        @copyright2022 all rights riserved
+    </footer>
+</body>
+
+</html>

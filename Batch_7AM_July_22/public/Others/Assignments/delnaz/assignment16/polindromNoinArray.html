@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polindrome Number </title>
+</head>
+<body>
+    <h1> find the polindrome no .</h1>
+    <script>
+        // W.A.P to find out polindrome number within the given array
+        var displaypolindrome = () => {
+            var num = [56 ,78 ,89 ,121 ,456 ,344 , 789 ,787 ,456 ,890 ,676 ,123 ,456 ,678, 789 ,]
+            console.log("total digit = " +num)
+
+            for(var i = 0 ; i < num.length ; i ++)
+            {
+                var temp = num[i];
+                var rev = 0 ;
+                 while(temp > 0){
+                    rem = temp % 10 ;
+                    rev = (rev * 10 ) + rem ;
+                    temp = temp/10 ;
+                    temp = parseInt(temp);
+                 }
+                 if ( rev == num[i])
+                 {
+                    console.log("its a polindrome = " +num[i]);
+                 }
+            }
+        }
+        displaypolindrome();
+      
+    </script>
+    
+</body>
+</html>

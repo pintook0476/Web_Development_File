@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lucky Number </title>
+</head>
+<body> <h1> To see lucky Number, goto Console Window</h1>
+        <script>
+             var n= prompt(" Enter your number ");
+             n = parseInt(n);
+             var count = 0;
+             var r;
+             console.log(" Your entered number is "+n);
+             while (n!=0)
+             {
+                r = n % 10;
+                n = n / 10;
+                n = parseInt(n);
+                count = count + r;
+
+                if ( n==0 && count > 9)
+                {
+                    n = count;
+                    count = 0 ;
+
+                    r= n % 10;
+                    n = n / 10;
+                    n = parseInt(n);
+                    count = count + r;
+                }
+             }             
+             console.log(" Your lucky number is "+count);
+
+
+
+        </script>
+    
+</body>
+</html>

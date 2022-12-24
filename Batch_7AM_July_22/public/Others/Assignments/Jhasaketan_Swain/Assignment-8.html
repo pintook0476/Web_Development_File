@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details - Progress Card</title>
+</head>
+<style>
+    header{
+        border: 2px solid;
+        text-align: center;
+        font-weight: bold;
+        margin: 15px;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+    table{
+        width: 98%;
+    }
+    table, th, td{
+        border: 2px solid;
+        margin: 15px;
+        padding: 5px;
+        
+        border-collapse: collapse;
+    }
+    table thead th {
+        text-align: center;
+    }
+    table tbody td{
+        text-align: center;
+    }
+    .img{
+        width: 130px;
+        height: 130px;
+    }
+    .serialno{
+        width: 34px;
+    }
+    .name{
+        width: 142px;
+    }
+    .gender{
+        width: 70px;
+    }
+    .picture{
+        width: 180px;
+    }
+    .class{
+        width: 55px;
+    }
+    .secondTable{
+        margin: 5px;
+    }
+    footer{
+        border: 2px solid;
+        text-align: center;
+        font-weight: bold;
+        margin: 15px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <header>
+        Student Details - Progress Card        
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th class="serialno">Sl. No</th>
+                <th class="name">Name</th>
+                <th class="gender">Gender</th>
+                <th class="picture">Picture</th>
+                <th class="class">Class</th>
+                <th>Marks</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Babul Sahoo</td>
+                <td>Male</td>
+                <td><img  class="img" src="https://previews.123rf.com/images/kadettmann/kadettmann1503/kadettmann150300046/37499851-passport-picture-of-a-guy-in-a-checked-shirt.jpg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>                              
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>                             
+                                <td>61</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Suraj Deshmukh</td>
+                <td>Male</td>
+                <td><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoecQc39fg_FRohw5xON1bZny_pwMx9JPorww0bSAeOH5KgPqbaGUxvfPvAgaVHCg0cw&usqp=CAU"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>67</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bikash Muduli</td>
+                <td>Male</td>
+                <td><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJO5RbLMqQhllFyhS5RAwjHGpqB-6m7y367ekC0d3tOOzuKBnzxhRv5gwTe1R15BQqbPA&usqp=CAU"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>63</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rani Sahu</td>
+                <td>Female</td>
+                <td><img class="img" src="https://play-lh.googleusercontent.com/UHhUtvrLMheJFA1xPm8ZZt4qVjygbb2D1fi9MIbkfHb1bHtcDX9JeAgqmysK9qoHNM9a"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>77</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>79</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>83</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Brahma Dey</td>
+                <td>Male</td>
+                <td><img class="img" src="https://thumbs.dreamstime.com/b/handsome-young-man-serious-portrait-handsome-young-man-serious-portrait-white-background-111594200.jpg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>66</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>81</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Suni Pradhan</td>
+                <td>Female</td>
+                <td><img class="img" src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>74</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Chandan Mahakud</td>
+                <td>Male</td>
+                <td><img class="img" src="https://as1.ftcdn.net/v2/jpg/01/77/67/14/1000_F_177671473_MWrjGMgWptnTSBSPjc7wNALjBoNwSGTf.jpg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>77</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>81</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Sipa Pradhan</td>
+                <td>Female</td>
+                <td><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMGjtz16WkXXOi8at0dpj_Ja4BZWdT8BI-sVgpROK50x6lLwrZo4HtkLCAXSiSOTBGjBM&usqp=CAU"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Runi Biswal</td>
+                <td>Female</td>
+                <td><img class="img" src="https://viralfeedbee.com/wp-content/uploads/2021/12/Shirley-Setia.jpeg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Aman Gupta</td>
+                <td>Male</td>
+                <td><img class="img" src="https://www.top10about.com/wp-content/uploads/2017/12/Chris-Evans.jpg"></td>
+                <td>10<sup>th</sup></td>
+                <td>
+                    <table class="secondTable">
+                        <thead>
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Max. Marks</th>
+                                <th>Min. Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td rowspan="3">100</td>
+                                <td rowspan="3">30</td>
+                                <td>63</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>66</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>  
+       </tbody>
+    </table>
+    <footer>
+        &#169;Copyright 2022
+    </footer> 
+</body>
+</html>

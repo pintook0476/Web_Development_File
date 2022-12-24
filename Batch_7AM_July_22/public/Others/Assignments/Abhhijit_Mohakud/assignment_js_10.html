@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Programme</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter Employee First Name:- ");
+        var b = prompt("Enter Employee Second Name:- ");
+        var basic = prompt("Enter Basic Salary:-");
+        var pf = prompt("Enter PF - Calculate in percent:-");
+        var hra = prompt("Enter HRA - Calculate in percent:-");
+        basic = parseInt(basic);
+        pf = parseInt(pf);
+        hra = parseInt(hra);
+        var pff = basic * (pf/100);
+        var hraa = basic * (hra/100);
+        var total = basic + pff + hraa;
+        var name = (a + b);
+        console.log("Name:  " + name);
+        console.log("Basic Salary is:  " + basic);
+        console.log("PF is:  " + pf);
+        console.log("hra is  " + hra);
+        console.log("The Total Salary is:  " + total);
+    </script>
+</body>
+</html>

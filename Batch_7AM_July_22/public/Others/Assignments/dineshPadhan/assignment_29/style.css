@@ -1,0 +1,74 @@
+.container {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: #7a7f7a;
+    position: absolute;
+    display: grid;
+    top: 10px;
+    left: 10px;
+    animation: style 10s infinite ease;
+}
+
+@keyframes style {
+    0% {
+        top: 5%;
+        left: 5%;
+    }
+
+    8.4% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    16.8% {
+        top: 10%;
+        left: 5%;
+    }
+
+    25.2% {
+        left: 95%;
+        top: 10%;
+    }
+
+    33.6% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    42% {
+        left: 95%;
+        top: 10%;
+    }
+
+    50.4% {
+        top: 90%;
+        left: 95%;
+    }
+
+    58.8% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    67.2% {
+        top: 87%;
+        left: 95%;
+    }
+    75.6%{
+        top: 88%;
+        left: 5%;
+    }
+    84%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    92.4%{
+        top: 81%;
+        left: 2%;
+    }
+}

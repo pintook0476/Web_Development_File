@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var userData = () => {
+                var n = [];
+                for (i = 0; i < 3; i++) {
+                    n[i] = prompt('Enter no.' + i);
+                    n[i] = parseInt(n[i]);
+                }
+                displayData(n)
+            }
+            var displayData = (n) => {
+                for (i = 0; i < n.length; i++) {
+
+                    var rev = 0;
+                    var temp = n[i]
+                    while (n[i] > 0) {
+                        var rem = (n[i] % 10);
+                        rev = (rev * 10) + rem;
+                        n[i] = (n[i] / 10);
+                        n[i] = parseInt(n[i])
+
+                    } if (temp == rev) {
+                        console.log(temp + ' It is a pallindrome no ')
+                    } else {
+                        console.log(temp + ' Not a pallindrome no ')
+                    }
+                }
+            }
+            userData()
+
+
+
+        </script>
+    </body>
+
+</html>

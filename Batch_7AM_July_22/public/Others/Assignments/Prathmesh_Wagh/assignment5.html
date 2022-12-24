@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment No 5</title>
+        <style>
+            .Heading ,
+            .footer {
+                border: 2px solid;
+                text-align: center;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            .mainblock {
+                margin: 5px;
+                border: 2px solid;
+                height: 500px;
+            }
+            .leftblock,
+            .rightblock {
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+                height: 460px;
+                float: left;
+            }
+            .leftblock {
+                width: 30%;
+            }
+            .rightblock {
+                width: 65%;
+                overflow: auto;
+            }
+            
+            .leftblock li {
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style-position: inside;
+            }
+            .leftblock li:hover {
+                background-color: #ccc;
+            }
+            .detailscontainer > li {
+                list-style: none;
+                height: 180px;
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgblock,
+            .detailsblock {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .imgblock {
+                border: 2px solid;
+                width: 150px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="Heading">Student Details</div> 
+    <div class="mainblock">
+        <div class="leftblock">
+            <ol>
+                <li>Prathmesh</li>
+                <li>Tejas</li>
+                <li>Harshal</li>
+                <li>Shubham</li>
+                <li>
+                    <a href="#Nikhil">Nikhil</a>
+                </li>
+            </ol>
+        </div>
+        <div class="rightblock">
+            <ul class="detailscontainer">
+                <li>
+                    <div class="imgblock">
+                        <img src="emp1.PNG" alt="">
+                    </div>
+                    <div class="detailsblock">
+                        <ul>
+                            <li>Name:Prathmesh</li>
+                            <li>Age:21 Years</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Amravati</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock">
+                        <img src="emp1.PNG" alt="">
+                    </div>
+                    <div class="detailsblock">
+                        <ul>
+                            <li>Name:Tejas</li>
+                            <li>Age:20 Years</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Akola</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock">
+                        <img src="emp1.PNG" alt="">
+                    </div>
+                    <div class="detailsblock">
+                        <ul>
+                            <li>Name:Harshal</li>
+                            <li>Age:21 Years</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Akot</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgblock">
+                        <img src="emp1.PNG" alt="">
+                    </div>
+                    <div class="detailsblock">
+                        <ul>
+                            <li>Name:Shubham</li>
+                            <li>Age:25 Years</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Mumbai</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="Nikhil">
+                    <div class="imgblock">
+                        <img src="emp1.PNG" alt="">
+                    </div>
+                    <div class="detailsblock ">
+                        <ul>
+                            <li>Name:Nikhil</li>
+                            <li>Age:22 Years</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Amravati</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">@ Copy Right2022</div>
+    </body>
+    </html>

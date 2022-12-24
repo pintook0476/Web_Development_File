@@ -1,0 +1,18 @@
+CACHE:
+        
+        pagedetails.js
+        images/*.*
+        abc.html
+        data/books/pages/*.js
+
+
+
+    NETWORK:
+
+        http://abc.com/page/login.html
+        login/data/*.js
+        paymentgateway/files/*.*
+
+
+    FALLBACK:
+        custompagenotfound.html

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string = prompt("Enter a string");
+            var lowerCase = 0, upperCase = 0;
+            for (var i = 0; i < string.length; i++)
+            {
+                if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
+                    upperCase++;
+                }
+                else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+                    lowerCase++;
+                }
+            }
+
+            console.log("Upper Case str : " +upperCase);
+            console.log("Lower Case str : " +lowerCase);
+    </script>
+</body>
+</html>

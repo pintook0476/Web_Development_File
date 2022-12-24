@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out all primes in an array</title>
+</head>
+<body>
+    <h3> all prime numbers in an array </h3>
+    <script>
+        /* Enter Array Dynamically
+        var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);*/
+
+        //Enter an array statically
+        var a = [1,2,3,4,5,6,7,8,9,10]
+        console.log("Given array:" + a);
+
+        
+        //find out prime number
+        for(var i=0; i<a.length; i++){
+            var temp = 0;
+            for(var j=1; j<=a[i]; j++){
+            if(a[i] % j == 0){
+            temp++;
+            }
+            }
+            if(temp == 2){
+                console.log(a[i] + " is a prime");
+            }
+            
+           }       
+    </script>
+</body>
+</html>

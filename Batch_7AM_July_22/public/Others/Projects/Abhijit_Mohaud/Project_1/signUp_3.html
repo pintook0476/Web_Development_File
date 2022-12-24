@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px ;
+        }
+        body{
+            background-image: url(img/img_9.jpg);
+            background-size: 99% 800px;
+        }
+        .reg  input{
+            /* border: 5px solid rgb(0, 255, 179); */
+            margin: 2% 38%;
+            text-align: center;
+            /* outline: auto; */
+            border-radius: 20%;
+            height: 55%;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 5px 5px;
+
+            border-radius: 20px;
+            outline: none;
+            color: rgb(255, 145, 0);
+            font-size: 120%;
+            background-color: black; 
+        }
+        h2{
+            color: aliceblue;
+            text-align: center;
+        }
+        .btn{
+            width: 15%;
+            height: 5%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            /* outline: none; */
+            color: rgb(0, 255, 13);
+            font-size: 120%;
+            background-color: black; 
+            margin: 2% 43%;
+        }
+    </style>
+</head>
+<body>
+    <form action="login_page.html">
+    <div class="reg">
+            <h2>Register Here</h2>
+    <div class="reg1">
+        <label for="Name"></label>
+        <input type="text" placeholder="Enter Your Name" required >
+    </div>
+    <div class="reg1">
+        <input type="Email" placeholder="Enter Your Email" required>
+    </div>
+    <div class="reg1">
+        <input type="password" placeholder="Password" required> 
+    </div>
+    <div class="reg1">
+        <input type="password" name="" id="password" placeholder="Confirm Password" required>
+    </div>
+    <a href="login_page.html"><button class="btn">Submit</button></a>
+    </div>
+</form>
+</body>
+</html>

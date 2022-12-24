@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="abc"></div>
+        <script>
+            try {
+                console.log("Step 1");
+                return;
+                document.querySelector("#abc1").innerHTML = "HEllo";
+                console.log("Step 2");
+                console.log("Value is " + data[2]);
+                console.log("Step 3");
+            } catch(err) {
+                if (err.message == 'data is not defined') {
+                    console.log("DAta error got raised")
+                } else {
+                    console.log("Element not found");
+                }
+                
+            } finally {
+                console.log("Finally got executed");
+            }
+        </script>
+    </body>
+</html>

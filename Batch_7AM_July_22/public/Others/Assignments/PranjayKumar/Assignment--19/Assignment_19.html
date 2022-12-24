@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card - 2022</title>
+    <link rel="stylesheet" href="Assignment_19.css">
+</head>
+<body>
+    <div class="head">
+        <h2>Student Progress Report-2022</h2>
+    </div>
+    <div class="reportContainer">
+        <ul>
+            <li>
+                Student Name: 
+                <input type="text" id="sName">
+            </li>
+            <li>
+                Student Age: 
+                <input type="text" id="sAge">
+            </li>
+            <li>
+                Select Gender:
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female">Female
+            </li>
+            <li>
+                Streem:
+                <select name="Streem" id="course">
+                    <option >Choose Streem</option>
+                    <option >BCA</option>
+                    <option >B.tech</option>
+                    <option >B.sc IT</option>
+                    <option >MCA</option>
+                    <option >CSE</option>
+                </select>
+            </li>
+            <li class="marksBlock">
+                Marks:
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+
+            </li>
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="reportData.readStuData()">
+            </li>
+
+        </ul>
+    </div>
+    <div class="display">
+        <h4 style="text-align:center;color:blueviolet">Final Exam Report Card- 2022</h4>
+        <ul class="progressCardBlock">
+            <li>
+                Student Name: <span id="dname"></span>
+            </li>
+            <li>
+                Student Age: <span id="dage"></span>
+            </li>
+            <li>
+                Student Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                Student Class: <span id="dcourse"></span>
+            </li>
+            
+            <li>
+                Student Total: <span id="dtotal"></span>
+            </li>
+            <li>
+                Student AVG: <span id="davg"></span>
+            </li>
+            <li>
+                Student Grade: <span id="dgrade"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="Assignment_19.js"></script> 
+</body>
+</html>

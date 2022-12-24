@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Switch case
+        </title>
+    </head>
+    <body>
+        <script>
+            var a1 = prompt("Enter a value for a1");
+            var a2 = prompt("Enter a value for a2");
+
+            a1 = parseInt(a1);
+            a2 = parseInt(a2);
+
+            var userOption = prompt("Choose add/div/mul/sub")
+
+            /*// Addition
+            if (userOption == 'add') {
+                var result;
+                result = a1 + a2;
+                console.log("The sum is " + result);
+            } else if (userOption == 'sub') {
+                //substraction
+                result = a1 - a2;
+                console.log("The substraction is " + result);
+            } else if (userOption == 'div') {
+
+                //Division
+                result = a1 / a2;
+                console.log("The Division is " + result);
+            } else if (userOption == 'mul') {
+
+                //Multiplicaiton
+                result = a1 * a2;
+                console.log("The Multiplicaiton is " + result);
+            } else {
+                console.log("Wron option choosen")
+            }*/ 
+            var result;
+            switch (userOption) {
+                case 'add':
+                    result = a1 + a2;
+                    console.log("The sum is " + result);
+                    break;
+                case 'sub':
+                    result = a1 - a2;
+                    console.log("The Substraction is " + result);
+                    break;
+                case 'div':
+                    result = a1 / a2;
+                    console.log("The Division is " + result);
+                    break; 
+                case 'mul': 
+                    result = a1 * a2;
+                    console.log("The Multplicaiton is " + result);
+                    break;
+                default:    
+                    console.log("Wrong option choosen")
+            }
+
+        </script>
+    </body>
+</html>

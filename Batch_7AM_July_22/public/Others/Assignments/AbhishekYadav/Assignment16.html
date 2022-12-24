@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Demonstrating Built-in Date Object</h3>
+
+    <script>
+        var swt, currentDate;
+        swt = prompt("Enter your choice In which form you want Date \n 1. Month, DD*th YYYY \n 2. Day, Month-DD*th-YYYY \n 3.DD/MM/YYYY \n 4. DD*th Month, YYYY \n 5. DD*th Month, YYYY HH:mm:ss \n 6. Month/DD/YYYY HH:mm \n 7.DD-Month-YYYY HH:mm:ss");
+        currentDate = new Date();
+        var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+
+        switch (swt) {
+            case "1":
+                console.log(month[currentDate.getMonth()] + ", " + currentDate.getDate() + "th " + currentDate.getFullYear());
+                break;
+
+            case "2":
+                console.log(days[currentDate.getDay()] + ', ' + month[currentDate.getMonth()] + "-" + currentDate.getDate() + "th-" + currentDate.getFullYear());
+                break;
+
+            case "3":
+                console.log(currentDate.getDate() + "/" + currentDate.getMonth() + "/" + currentDate.getFullYear());
+                break;
+
+            case "4":
+                console.log(currentDate.getDate() + "th " + month[currentDate.getMonth()] + ", " + currentDate.getFullYear());
+                break;
+
+            case "5":
+                console.log(currentDate.getDate() + "th " + month[currentDate.getMonth()] + ", " + currentDate.getFullYear() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds());
+                break;
+
+            case "6":
+                console.log(month[currentDate.getMonth()] + "/" + currentDate.getDate() + "/" + currentDate.getFullYear() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds());
+                break;
+
+            case "7":
+                console.log(currentDate.getDate() + '-' + month[currentDate.getMonth()] + "-" + currentDate.getFullYear() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds());
+                break;
+
+        }
+    </script>
+</body>
+
+</html>

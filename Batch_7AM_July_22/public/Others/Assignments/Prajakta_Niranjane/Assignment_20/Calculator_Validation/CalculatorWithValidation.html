@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From User Using DHTML</title>
+    <style>
+        .mainContainer {
+            border: 1px solid rgb(68, 122, 184);
+            border-radius: 5px;
+           width: 32%;
+           margin: 0px auto;
+           background-color: rgb(233, 231, 231);
+        }
+        .heading {
+            width: 90%;
+            margin: 10px auto;
+            background-color: rgb(68, 122, 184);
+            color: rgb(233, 231, 231);
+            border-radius: 5px; 
+        }
+        .actualContainer {
+            list-style: none;
+        }
+        .input {
+            width: 340px;
+            height: 25px;
+            margin: 5px 0px;
+            color: rgb(38, 96, 161);
+        }
+        .btn input {
+            background-color: rgb(185, 42, 32);
+            color: rgb(233, 231, 231);
+            border: none;
+            width: 54px;
+            height: 25px;
+            margin: 5px 0px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .resultDisplay {
+            height: 25px;
+            width: 340px;
+            font-weight: bold;
+            margin: 5px 0px;
+            padding: 5px 0px 0px 10px;
+            background-color: rgb(68, 122, 184);
+            color: rgb(233, 231, 231);
+            border-radius: 5px;
+            display: none;
+        }
+        #headline {
+            height: 50px;
+            width: 500px;
+            display: inline;
+            margin-left: 22px;
+        }
+        #headline h2 {
+            display: inline;
+            line-height: 45px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #logocontainer {
+            height: 38px;
+            width: 50px;
+            float: right;
+           padding: 5px;
+           margin-right: -5px;
+        }
+      .error {
+        color: red;
+        font-size: 10px;
+        display: none;
+      }  
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            <div id="headline"><h2>Calculator</h2></div>
+            <div id="logocontainer"><img src="CalLogo.PNG" alt="Logo"></div>
+        </div>
+        <ul class="actualContainer">
+            <li>
+                <input type="text" id="fval" class="input" placeholder="Enter First Number" maxlength="2" onkeypress="return validateData(event, '#fvalerror');">
+                <div class="error" id="fvalerror">Only Numbers Allowed</div>
+            </li>
+            <li>
+                <input type="text" id="sval" class="input" placeholder="Enter Second Number" maxlength="2" onkeypress="return validateData(event, '#svalerror');">
+                <div class="error" id="svalerror">Only Numbers Allowed</div>
+            </li>
+           <li class="btn">
+               <input type="button" id="addition" value="+" onclick="readData('addition');">
+               <input type="button" id="subtraction" value="-" onclick="readData('subtraction');">
+               <input type="button" id="multiplication" value="x" onclick="readData('multiplication');">
+               <input type="button" id="division" value="/" onclick="readData('division');">
+               <input type="button" id="modulus" value="%" onclick="readData('modulus');">
+               <input type="button" id="power" value="e" onclick="readData('power');">
+           </li>
+           <div class="resultDisplay">Result: <span id="resDisplay"></span></div>
+        </ul>
+    </div>
+
+    <script>
+         var readData = (userOption) => {
+                var a1 = parseInt(document.querySelector("#fval").value);
+                var a2 = parseInt(document.querySelector("#sval").value);
+                
+                switch (userOption) {
+                    case 'addition' : 
+                        var result = a1 + a2;
+                        break;
+
+                    case 'subtraction' : 
+                        var result = a1 - a2;
+                        break;
+
+                    case 'multiplication' : 
+                        var result = a1 * a2;
+                        break;
+
+                    case 'division' : 
+                        var result = a1 / a2;
+                        break;
+
+                    case 'modulus' : 
+                    var result = a1 % a2;
+                    break;
+
+                    case 'power' : 
+                    var result = a1 ** a2;
+                    break;    
+                }
+                document.querySelector("#resDisplay").innerHTML = result;
+                document.querySelector(".resultDisplay").style.display = "block";
+            }
+
+            var validateData = (event, elementId) => {
+                //    return false;       pressed key will not work and doesnt give charecters
+                if (event.charCode >= 48 && event.charCode <= 57)  {
+                    document.querySelector(elementId).style.display = "none";
+                    return true;
+                }
+                else {
+                    document.querySelector(elementId).style.display = "block";
+                    return false;
+                }
+            }
+    </script>
+</body>
+</html>

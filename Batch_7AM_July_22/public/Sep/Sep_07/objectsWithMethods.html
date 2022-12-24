@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JSON object with methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+                empname: 'Teena',
+                displayEmpDetails: function() {
+                    console.log("emp name is  " + this.empname)
+                }
+            }
+
+            var sdetails = {
+                name: 'yashwanth',
+                age: 10,
+                gender: 'Male',
+                marks: [91, 76, 87, 100],
+                readStudentData() {
+
+                },
+                getTotalAndAvg: function() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += this.marks[i];
+                    }
+                    this.avg = sdetails.total / this.marks.length;
+                    this.getGrade();
+                },
+                getGrade: function() {
+                    if (sdetails.avg >= 40) {
+                    sdetails.grade = 'You Got passed';
+                    } else {
+                        this.grade = 'You have a surprise';
+                    }
+                },
+                displayStudentDetails: function() {
+                    this.getTotalAndAvg();
+                    /*console.log("Student Details");
+                    console.log("STudent name  " + sdetails.name);
+                    console.log("STudent Age  " + this.age);
+                    console.log("STudent Gender  " + sdetails.gender);
+                    console.log("STudent Total  " + this.total);
+                    console.log("STudent Avg  " + this.avg);*/
+                    for (var tempKey in sdetails) {
+                        if (typeof(sdetails[tempKey]) != 'function') {
+                            console.log("value for " + tempKey + ' is : ' + sdetails[tempKey]);
+                        }
+                    }
+                }
+            };
+            sdetails.displayStudentDetails();
+        </script>
+    </body>
+</html>

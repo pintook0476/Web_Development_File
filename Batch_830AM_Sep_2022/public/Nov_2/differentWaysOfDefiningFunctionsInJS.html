@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating js functions
+        </title>
+    </head>
+    <body>
+        <script>.
+            // showMsg(); // will throw error as showMsg is undefined at this line.
+            // Type 2
+            /*var showMsg = function () {
+                console.log("Hello every one");
+            }; */
+
+            showMsg();
+
+            // Type 1
+            /*function showMsg() {
+                console.log("Hello every one");
+            }*/
+
+            //showMsg();
+
+            //Type 3
+            var showMsg = () => {
+                console.log("Hello every one");
+            };
+
+        </script>
+    </body>
+</html>

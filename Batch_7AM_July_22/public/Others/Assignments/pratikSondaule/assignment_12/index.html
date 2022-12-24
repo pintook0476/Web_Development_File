@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details using function</title>
+</head>
+
+<body>
+    <h1>To see the result go to console</h1>
+    <script>
+        var eName, eAge, eGender, eDept, basicSal, totalSal, pf, hra, tax, salaryInHand;
+        function readEmpDetails() {
+            eName = prompt("Enter the name:");
+            eAge = prompt("Enter the age:");
+            eGender = prompt("Enter the gender:");
+            eDept = prompt("Enter the department:");
+            basicSal = prompt("Enter the basic salary");
+            basicSal = parseInt(basicSal);
+        }
+        readEmpDetails();
+        function pfAndHra() {
+            pf = basicSal * (14 / 100);
+            hra = basicSal * (24 / 100);
+            totalSal = pf + hra + basicSal;
+            console.log("P.F. is " + pf + "/-");
+            console.log("H.R.A is " + hra + "/-");
+        }
+
+        displayEmpDetails();
+
+        function displayEmpDetails() {
+            console.log('Employee Name: ' + eName);
+            console.log('Employee Age: ' + eAge);
+            console.log('Employee Gender: ' + eGender);
+            console.log('Employee Department: ' + eDept);
+            console.log('Employee Basic Salary: ' + basicSal);
+        }
+
+        pfAndHra();
+
+        function taxCalculation() {
+            if (eGender == "Male" || eGender == "male") {
+                if (totalSal >= 200000) {
+                    console.log('Your Tax percentage is 15%');
+                    var tax = totalSal * (15 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                }
+                else if (totalSal >= 100000 && totalSal < 200000) {
+                    console.log('Your Tax percentage is 10%');
+                    var tax = totalSal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                }
+                else if (totalSal >= 50000 && totalSal < 100000) {
+                    console.log('Your Tax percentage is 5%');
+                    var tax = totalSal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                }
+                else {
+                    var tax = 0;
+                    console.log('Tax = 0');
+                }
+            }
+            else if (eGender == "Female" || eGender == "female") {
+                if (totalSal >= 200000) {
+                    console.log('Your Tax percentage is 10%');
+                    var tax = totalSal * (10 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                }
+                else if (totalSal >= 100000 && totalSal < 200000) {
+                    console.log('Your Tax percentage is 5%');
+                    var tax = totalSal * (5 / 100);
+                    console.log('Total Tax to be paid: ₹' + tax);
+                }
+                else if (totalSal >= 50000 && totalSal < 100000) {
+                    var tax = 0;
+                    console.log('Tax = 0');
+                }
+                else {
+                    var tax = 0;
+                    console.log('Tax = 0');
+                }
+            }
+            else {
+                console.log("Invalid Gender");
+                console.log("Please! Enter the Valid gender.");
+            }
+            salaryInHand = totalSal - tax;
+            console.log('Total In Hand Salary After Tax-Deduction: ₹' + salaryInHand);
+        }
+
+        taxCalculation();
+
+    </script>
+</body>
+
+</html>

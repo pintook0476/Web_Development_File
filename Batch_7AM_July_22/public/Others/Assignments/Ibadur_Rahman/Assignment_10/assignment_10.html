@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+</head>
+<body>
+    <script>
+        var studentName = prompt("Enter Student Name");
+        console.log("Student Name : " + studentName);
+        var Age = prompt("Enter Your Age");
+        console.log("Student Age : " + Age);
+        var Gender = prompt("Gender");
+        console.log("Gender : " + Gender);
+        var m1 = prompt("Enter 1st Subject Marks");
+        m1 = parseInt(m1);
+        console.log("Marks in Subject 1 : " + m1);
+        var m2 = prompt("Enter 2nd Subject Marks");
+        m2 = parseInt(m2);
+        console.log("Marks in Subject 2 : " + m2);
+        var m3 = prompt("Enter 3rd Subject Marks");
+        m3 = parseInt(m3);
+        console.log("Marks in Subject 3 : " + m3);
+        var total = m1 + m2 + m3;
+        console.log("Total Marks : " + total);
+        var percent = parseInt(total/3);
+        console.log("Your Percentage is : " + percent);
+        if(percent < 40){
+            console.log("Better Luck Next Time");
+        }
+        else{
+          console.log("You Got Passed");
+        }
+    </script>
+    
+</body>
+</html>

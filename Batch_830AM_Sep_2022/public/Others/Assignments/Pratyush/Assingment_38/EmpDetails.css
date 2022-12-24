@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 200px;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid;
+    font-weight: bolder;
+    width: 200px;
+
+}
+ul{
+    float: left;
+}

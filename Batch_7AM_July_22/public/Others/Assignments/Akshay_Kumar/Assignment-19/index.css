@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 30px;
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+ul{
+    border: 1px solid;
+    width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+}
+.fcon{
+    display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total number of digits</title>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            margin: 30px auto;
+            text-decoration: underline;
+        }
+
+        body{
+            background-color: rgb(52, 26, 77);
+        }
+    </style>
+</head>
+<body>
+    <h1>Total number of digits</h1>
+    <script>
+var num = parseInt(prompt("Enter any number"));
+        var sum=0;
+        var count=0;
+        while(num>0)
+        {
+        var rem = num % 10;
+        count++;
+        console.log(rem);
+        num = parseInt(num /10);
+        
+        
+        
+        }
+        console.log(`Total number of digits : ${count}`);
+        
+
+    </script>
+    
+</body>
+</html>

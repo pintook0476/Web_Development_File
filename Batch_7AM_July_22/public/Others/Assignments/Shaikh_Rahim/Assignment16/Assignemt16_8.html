@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <!--wap to find out the Amstrong numbers of given array-->
+    <script>
+        var rem = 0, Amstrong = 0, nextArray = [];
+        var array = [101, 153, 1, 13, 1321, 104];
+        var temp =[];
+        for (var i = 0; i < array.length; i++) {
+            nextArray[i] = array[i].toString();
+        }
+        for (var i = 0; i < array.length; i++) {
+            temp[i] = array[i];
+        }
+        // console.log(typeof(array[0]));
+        for (var i = 0; i < array.length; i++) {
+            var n = i;
+            Amstrong = 0;
+            while (array[n] > 0) {
+
+                rem = array[n] % 10;
+                Amstrong += rem ** (nextArray[n].length);
+                array[n] = parseInt(array[n] / 10);
+
+            }
+            
+            var name = temp[i];
+            if (name == Amstrong) {
+                console.log(Amstrong);
+            }
+        }
+    </script>
+</body>
+
+</html>

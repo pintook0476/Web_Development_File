@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment@11</title>
+</head>
+<body>
+    <script>
+        var employeeName = prompt("Enter Employee name");
+        var gender = prompt("Enter gender");
+        var totalSal = prompt("Enter your salary");
+
+        console.log("Employee Name is "  + employeeName);
+        console.log("Employee Gender is "  + gender);
+        console.log("Employee Total salary is "  + totalSal);
+
+        if(gender == "male")
+        {
+             if(totalSal >= 200000)
+            {
+                console.log(" Employee tax percentage is 15%");
+            }
+            else if (totalSal >= 100000 )
+            {
+                console.log("Employee tax percentage is 10%");
+            }
+            else if (totalSal >= 50000 )
+            {
+                console.log("Employee tax percentage is 5%");
+            }
+            else  
+            {
+                console.log("Employee tax is 0");
+            } 
+        }
+            
+            
+        else if(gender == "female")
+        {
+
+                if(totalSal >= 200000)
+            {
+                console.log("Employee tax percentage is 10%");
+            }
+            else if (totalSal >= 100000 )
+            {
+                console.log("Employee tax percentage is 5%");
+            }
+            else  
+             {
+                console.log("Employee tax is 0");
+            } 
+        } 
+
+        else
+        {
+            console.log("Check the gender");
+        }   
+          
+    </script>
+</body>
+</html>

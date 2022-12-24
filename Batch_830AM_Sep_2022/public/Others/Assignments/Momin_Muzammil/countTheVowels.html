@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count the vowels</title>
+</head>
+<body>
+    <script>
+        var str=prompt("Enter any string");
+        var vowels = ['a','e','i','o','u'];
+        var count=0;
+        for(var i=0 ; i<vowels.length ;i++){
+            for(var j=0; j<str.length ; j++){
+                if(vowels[i]==str[j]){
+                    count++;
+                }
+            }
+        }
+        console.log(str+ "  has " + count+"  vowels")
+
+    </script>
+</body>
+</html>

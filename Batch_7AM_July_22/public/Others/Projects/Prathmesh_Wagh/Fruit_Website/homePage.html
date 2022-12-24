@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <style>
+            .main {
+                background-image: url(https://i.pinimg.com/originals/9b/d7/21/9bd721984cbec79e5a2405d1894d036e.jpg);
+                background-repeat: no-repeat;
+                border: 1px solid;
+                width: 100%;
+                height: 600px;
+                font-size: bold;
+            }
+            .formbox {
+                background-color: burlywood;
+                border: 1px solid;
+                margin: 20px auto;
+                height: 480px;
+                width: 550px;
+                
+            }
+            ul , li{
+                list-style-type: none;
+                padding: 15px;
+            }
+            .labelcontent {
+                
+                padding: 10px;
+            }
+            
+            .inputbox {
+                float: right;
+                width: 290px;
+                color: beige;
+            }
+            h2 {
+                text-align: center;
+                text-decoration: underline;
+            }
+            #s:hover {
+                cursor: pointer;
+                color: rgb(237, 100, 14);
+                
+            }
+            span {
+                position: absolute;
+                left: 55px;
+            }
+            a {
+                color: rgb(16, 122, 235);
+            }
+            .or {
+                padding-top: 15px;
+            }
+            #s {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="formbox"><h2>Home Page</h2> 
+                <form action="file:///E:/Development_course_with_nodejs/UI%20Class_test/webapplication/public/Project/Fruit_Website/productPage.html" method="get">
+                    <ul>
+                        <li>
+                            <div class="labelcontent">
+                                <label for="username"><b>Enter User Name: </b></label>
+                                <div class="inputbox">
+                                    <input type="text" name="username">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="labelcontent">
+                                <label for="password"><b>Enter User Password: </b></label>
+                                <div class="inputbox">
+                                    <input type="password" name="userpassword">
+                                </div>
+                            <div>
+                        </li>
+                        <li>
+                            <div class="labelcontent">
+                                <div class="inputbox">
+                                    <input type="submit" value="Login" id="s">
+                                    <div class="or"><h3>OR</h3></div>
+                                    <a href="file:///E:/Development_course_with_nodejs/UI%20Class_test/webapplication/public/Project/Fruit_Website/signup.html"><h3>Sign Up</h3></a>
+                                    <a href="file:///E:/Development_course_with_nodejs/UI%20Class_test/webapplication/public/Project/Fruit_Website/forgotpassPage.html"><h3>Forgot Password</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

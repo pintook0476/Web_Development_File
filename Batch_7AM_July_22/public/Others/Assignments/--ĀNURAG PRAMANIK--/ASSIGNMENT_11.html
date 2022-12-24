@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tax details</title>
+</head>
+
+<body>
+    <H1>..TAX_DETAILS..</H1>
+    <H2>FOR DETAILS PLS OVER CONSOLE.. </H2>
+    <script>
+        var eName = prompt('ENTER NAME');
+        var age = prompt('ENTER AGE');
+        var gender = prompt('enter gender male/female');
+        var loc = prompt('ENTER LOCATION');
+        var bsalary = prompt('enter salary');
+        bsalary = parseInt(bsalary);
+        var pf = bsalary * 14 / 100;
+        var hra = bsalary * 25 / 100;
+        var total = bsalary + pf + hra;
+        console.log('EMPLOYEE NAME is :' + eName);
+        console.log('AGE is :' + age);
+        console.log('GENDER is :' + gender);
+        console.log('LOCATION is :' + loc);
+        console.log('BASIC SALARY is :' + bsalary);
+        console.log('PF is ' + pf);
+        console.log('HRA is ' + hra);
+        console.log('TOTAL IS ' + total);
+
+        if (gender == 'male' || gender == 'Male') {
+            if (total >= 200000) {
+                console.log('TAX PERCENTAGE is 15%');
+                var tax = bsalary * (15 / 100);
+                console.log('They have to pay RS. ' + tax + " as tax");
+            }
+            else if (total >= 100000) {
+                console.log('TAX PERCENTAGE is 10%');
+                var tax = bsalary * (10 / 100);
+                console.log('They have to pay RS.' + tax + " as tax");
+            }
+            else if (total >= 50000) {
+                console.log('TAX PERCENTAGE is 5%');
+                var tax = bsalary * (5 / 100);
+                console.log('They hve to pay RS.' + tax + " as tax")
+            }
+            else { console.log('NO NEED TO PAY TAX'); }
+        }
+        else if (gender == "female" || gender == "Female") {
+            if (total >= 200000) {
+                console.log('TAX PERCENTAGE is 10%');
+                var tax = bsalary * 10 / 100;
+                console.log('They hve to pay RS. ' + tax + " as tax");
+            } else if (total >= 100000) {
+                console.log('TAX PERCENTAGE is 5% ');
+                var tax = bsalary * 5 / 100;
+                consol.log('They hve to pay RS. ' + tax + " as tax");
+            }
+            else { console.log('NO NEED TO PAY TAX'); }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> the number palindrome or not</title>
+</head>
+<body>
+    <script>
+        var number=prompt("Enter a number");
+        var temp=number;
+        var rev=0;
+        while(number!=0){
+            var rem = number%10;
+            rev = rev*10+rem;
+            number = number/10;
+            number=parseInt(number);
+        }
+        if(temp==rev){
+            console.log("number is palindrome")
+        }
+        else
+        {
+            console.log("number is not palindrome")
+        }
+        
+    </script>
+</body>
+</html>

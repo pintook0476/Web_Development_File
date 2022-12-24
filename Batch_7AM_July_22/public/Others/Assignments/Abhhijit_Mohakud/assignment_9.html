@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        .mainContainer{
+            border: 2px solid chocolate;
+            width: 70%;
+            margin: 20px auto;
+            background-color: bisque;
+            padding: 10px;
+        }
+        h2{
+            border: 2px solid yellow;
+            background-color: rgba(247, 247, 7, 0.555);
+            text-align: center;
+            margin: 2%;
+            padding: 1%;
+        }
+        li{
+            list-style: none;
+            border: 5px solid rgb(15, 44, 99);
+            background-color: darkgoldenrod ;
+            width: 70% auto;
+            padding: 2%;
+            margin: 3%;
+        }
+        .astric{
+            color: red;
+        }
+        .googleCntrl{
+            color: rgb(223, 93, 18);
+            border: 5px solid gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Student Registration Form
+    </h2>
+    User College Name:
+    <input type="text" name="College Name">
+    <form action="http://example.com">
+    <ul class="mainContainer">
+        <li>
+            <div for="userName" class="lableContent">Enter Student Name:</div>
+            <div class="controller">
+                <span class="astric">*</span>
+                <input type="text" name="userName" placeholder="Enter User Name" class="googleCntrl" required>
+            </div>
+        </li>
+        <li>
+            <div for="AccountID" class="lableContent">Account ID:</div>
+            <div class="controller">
+                <span class="astric">*</span>
+                <input type="text" class="googleCntrl" placeholder="ID">
+            </div>
+        </li>
+        <li>
+            <div>Account Password:</div>
+            <div class="controller">
+                <input type="password" placeholder="Password" class="googleCntrl">
+            </div>    
+        </li>
+        <li>
+            <div for="Gender" class="lableContent">Gender:</div>
+            <div class="controller" >
+                <span class="astric">*</span>
+                <input type="radio" name="1">Male
+                <input type="radio" name="1" required>Female
+            </div>
+
+        </li>
+        <li>
+            Language:
+            <input type="checkbox" value="English" name="1"> English
+            <input type="checkbox" value="Hindi" name="2"> Hindi
+            <input type="checkbox" value="Odia" name="3"> Odia
+            <input type="checkbox" value="Telugu" name="4"> Telugu            
+        </li>
+        <li>
+            Country:
+            <select name="" id="">
+            <option value="Ind">India</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Jpan</option>
+            <option value="China">China</option>
+            <option value="German">German</option>
+        </select>
+        </li>
+        <li>
+            Tell About Your Self:
+            <textarea name="" id="" cols="30" rows="8"></textarea>
+        </li>
+        <li>
+            <input type="file">
+        </li>
+        <li>
+            <input type="reset" value="Reset Value"> <br>
+            <input type="submit" value="Submit Registration">
+        </li>
+
+    </ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Even numbers and sorting in ascending order</title>
+</head>
+<body>
+    <h3> Find out Even numbers and sorting in ascending order</h3>
+    <script>
+         // Enter Array by user
+         var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+        
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);
+        var temp = [];
+        var r ;
+        console.log("Even numbers within the given array:");
+        for(var i=0; i<a.length; i++){
+            if(a[i] % 2 == 0){
+                console.log(a[i]);
+                temp.push(a[i]);
+            }
+        }
+        
+         
+        for(i=0; i<temp.length; i++){
+            for(var j=i+1; j<temp.length; j++){
+            if (temp[i] > temp[j]){
+                //swapping
+                r = temp[i];
+                temp[i] = temp[j];
+                temp[j] = r ;
+            }
+            else
+            {
+                //no swapping
+            }
+            }
+        }
+
+        console.log("After sorting in Ascending order: " + temp);
+
+    </script>
+</body>
+</html>

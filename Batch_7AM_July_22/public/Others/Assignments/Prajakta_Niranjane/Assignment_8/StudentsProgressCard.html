@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+    <style>
+         .header, .footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(7, 55, 110);
+            color: #f53607;
+         }
+         .logo {
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background-image: url("sprite3.png");
+            background-position: -67px -336px;
+            position: absolute;
+            left: 465px;
+            top: 17px;
+         }
+         h1 {
+            text-align: center;
+            line-height: 10px;
+            position: absolute;
+            top: 10px;
+            left: 515px;
+         }
+         .container {
+            width: 100%;
+            height: 550px;
+            border: 1px solid #f53607;
+            overflow: auto;
+         }
+         .footer {
+            font-size: 15px;
+            text-align: center;
+            line-height: 50px;
+         } 
+         .inertable table, tr, td, th {
+            border: 0.3px solid #6f6fa5;
+            border-collapse: collapse;
+         }
+         #theading th {
+            font-size: 22px; 
+            height: 10px;
+            background-color: rgb(18, 79, 148);
+            color: #f3dfa8;
+            padding: 20px;
+         }
+         .img {
+            height: 140px;
+            width: 120px;
+            border: 2px solid rgb(6, 36, 61);
+            background-image: url("sprite3.png");
+            background-position: -286px -10px;
+            margin: 0px 20px 0px 20px ;
+            border-radius: 20px;
+         }
+          .img2 {background-position: -142px -181px;}
+          .img3 {background-position: -420px -27px;}
+          .img4 {background-position: -276px -185px;}
+          .img5 {background-position: -14px -20px;}
+          .img6 {background-position: -410px -187px;}
+          .img7 {background-position: -547px -13px;}
+          .img8 {background-position: -8px -181px;}
+          .img9 {background-position: -147px -27px;}
+          .img10 {background-position: -540px -193px;}
+         #id {
+            background-color:  rgb(238, 234, 234);
+            color: #0d57ac;
+         }
+         tfoot {
+            background-color: rgb(238, 234, 234);
+            color: #0d57ac;
+         }
+         .innertable {
+           padding: 5px;
+           margin: 10px 10px 10px 20px;
+         }
+         .innertable tbody th {
+            background-color: #126cb6;
+            color: #f53607;
+            padding: 10px;
+         }
+         .innertable tbody tr:nth-child(even) {
+            background-color: #b0b0d4;
+            color: #515157;
+         }
+         .innertable tbody tr:nth-child(odd) {
+            background-color: #798ff1;
+            color: rgb(43, 43, 105);
+         }
+         .logo1 {
+            height: 50px;
+            width: 50px;
+           border-radius: 50px;
+            background-image: url("sprite3.png");
+            background-position: -10px -327px;
+            float: left;
+         }
+        .block {
+           height: 40px;
+           width: 320px;
+           float: right;
+           font-size: 18px;
+            padding: 5px 30px 5px 0px;
+        
+         }
+         .outertable {
+            margin: 20px 0px 20px 50px ;
+            text-align: center;
+            width: 1220px;
+         }
+         .outertable >tbody> tr:nth-child(even) {
+            background-color: #f8ecca;
+            color: rgb(24, 84, 153);
+         }
+         .outertable >tbody >tr:nth-child(odd) {
+            background-color: rgb(209, 209, 209);
+            color: rgb(20, 83, 155);
+         }
+    </style>
+</head>
+<body>
+   <div class="header">
+      <div class="logo"></div>
+      <h1>Students Progress Card</h1>
+      </div>
+      
+       <div class="container">
+           <table class="outertable">
+            <tr id="theading">
+                <th>Sr.No.</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Result</th>
+                <th>Photo</th>
+                <th>Progress Card</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sophia Lee</td>
+                <td>Female</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>81</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>75</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>71</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>73</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>78</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">378</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">75.6%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>2</td>
+                <td>John Lorem</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img2"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>89</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>77</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>74</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>82</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>75</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">397</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">79.4%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nova Willmson</td>
+                <td>Female</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img3"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>81</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>85</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>83</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>79</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>78</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">406</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">81.2%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nick Smith</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img4"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>89</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>87</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>79</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>90</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>77</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">422</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">84.5%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>5</td>
+                <td>Elena Brown</td>
+                <td>Female</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img5"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>95</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>75</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>88</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>83</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>87</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">428</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">85.6%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>6</td>
+                <td>Alex Davis</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img6"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>98</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>85</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>92</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>83</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>88</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">446</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">89.2%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>7</td>
+                <td>Richal Miller</td>
+                <td>Female</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img7"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>93</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>98</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>81</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>86</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>78</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">436</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">87.2%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>8</td>
+                <td>Robert Garcia</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img8"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>87</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>95</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>85</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>73</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>88</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">428</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">85.6%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>9</td>
+                <td>Jessica Jorge</td>
+                <td>Female</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img9"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>80</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>91</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>77</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>87</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>78</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">413</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">82.6%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>10</td>
+                <td>James Daniel</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>Pass</td>
+                <td><div class="img img10"></div></td>
+                <td>
+                    <table class="innertable">
+                        <thead id="id">
+                         <tr>
+                             <th colspan="4"><div class="logo1"></div><div class="block">Central Board Of Secondary Education <br>
+                              <span style="font-size: 10px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <th>Subjects</th>
+                             <th>Max Marks</th>
+                             <th>Min Marks</th>
+                             <th>Obtained Marks</th>
+                         </tr>
+                         <tr>
+                             <td>English</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>88</td>
+                         </tr>
+                         <tr>
+                             <td>Mathematics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>97</td>
+                         </tr>
+                         <tr>
+                             <td>physics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>92</td>
+                         </tr>
+                         <tr>
+                             <td>Chemistry</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>89</td>
+                         </tr>
+                         <tr>
+                             <td>Economics</td>
+                             <td>100</td>
+                             <td>40</td>
+                             <td>90</td>
+                         </tr>
+                        </tbody>
+                        <tfoot style="text-align: left;">
+                         <tr>
+                             <th colspan="4">Total Marks: <span style="color: rgb(66, 66, 75); font-weight:lighter">456</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Percentage: <span style="color: rgb(66, 66, 75); font-weight:lighter">91.2%</span>
+                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grade: <span style="color: rgb(66, 66, 75); font-weight:lighter">A+</span></th>
+                         </tr>
+                        </tfoot>
+                     </table>
+                </td>
+            </tr>   
+           </table>
+       </div>
+
+    <div class="footer">
+        <span >&#169 Copy Rights 2022</span>
+    </div>
+</body>
+</html>

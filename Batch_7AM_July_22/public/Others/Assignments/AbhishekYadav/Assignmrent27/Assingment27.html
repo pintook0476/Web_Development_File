@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Input Tag</title>
+    <style>
+        #mainContainer {
+            text-align: center;
+            border: 2px solid #ccc;
+            width: 500px;
+            margin: 20px auto;
+        }
+        
+        .inputsHeads {
+            display: inline-block;
+            text-align: left;
+            font-size: 20px;
+            width: 40%;
+            padding: 10px;
+        }
+        
+        .inputElement {
+            display: inline-block;
+            width: 50%;
+        }
+        
+        .inputElement input {
+            font-size: 20px;
+        }
+        
+        .inputElement select {
+            font-size: 15px;
+            padding: 5px 10px;
+            width: 250px;
+        }
+    </style>
+    <script src="Assingnment27.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <h1>Student Regsitration</h1>
+        <span class="inputsHeads">
+            <label for="stdname">Student Name :</label>
+        </span>
+        <span class="inputElement">
+            <input type="text" id="stdname">
+        </span>
+
+        <span class="inputsHeads">
+            <label for="stdage">Student Age :</label>
+        </span>
+        <span class="inputElement">
+            <input type="text" id="stdage">
+        </span>
+
+        <span class="inputsHeads">
+            <label for="stdgen">Gender : </label>
+        </span>
+        <span class="inputElement">
+            <input type="radio" name="stdgen"> Male
+            <input type="radio" name="stdgen"> Female
+        </span>
+
+        <span class="inputsHeads">
+            <label for="stdname">Select Country : </label>
+        </span>
+        <span class="inputElement">
+            <select name="country" id="country" onchange="countryselect()">
+                <option value="">Select</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+        </select>
+        </span>
+
+        <span class="inputsHeads">
+            <label for="stdname">Select State : </label>
+        </span>
+        <span class="inputElement">
+            <select name="State" id="State" onchange="stateselect()" onclick="statemessage(), stateselect()">
+            </select>
+        </span>
+
+        <span class="inputsHeads">
+            <label for="stdname" >Select District : </label>
+        </span>
+        <span class="inputElement">
+            <select id="city" onclick="districtmessage()">
+            </select>
+        </span>
+
+</body>
+
+</html>

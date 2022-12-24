@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Odd Values Of an Array</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+       var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+       console.log('Original Array:');
+       console.log(list);
+       var oddArray = (list) => {
+       var sum = 0; 
+       for (var i = 0; i < list.length; i++)
+       {
+        var num = list[i];
+       if (num % 2 != 0)
+       {
+        var odd = list[i];
+        sum += odd;
+       }
+       }
+       console.log('Sum Of Odd Values of an array: ' + sum);
+    }
+    oddArray(list);
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object Assignments</title>
+</head>
+<body>
+    <script>
+
+        var todayDate = new Date();
+        var dateMonths =['Jan', 'feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var dateMonthsfull =['January', 'february', 'March', 'April', 'May', 'June', 'July', 'Auguest', 'September', 'October', 'November', 'December']
+        var fullDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sataurday']
+        var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+        // 1. Aug, 30th 2022
+
+        var dateFormat1 = dateMonths[todayDate.getMonth()] + ', ' + todayDate.getDate() + 'th ' + todayDate.getFullYear();
+
+        console.log(dateFormat1);
+
+        //2. August, 30th 2022
+
+        var dateFormat2 = dateMonthsfull[todayDate.getMonth()] + ', ' + todayDate.getDate() + 'th ' + todayDate.getFullYear();
+
+        console.log(dateFormat2);
+
+        //3. Tue, Aug 30th 2022
+
+        var dateFormat3 = day[todayDate.getDay()] + ', ' + dateMonths[todayDate.getMonth()] + ' ' + todayDate.getDate() + 'th ' + todayDate.getFullYear();
+        console.log(dateFormat3)
+
+        //4. Tuesday, August 30th 2022
+
+        var dateFormat4 = fullDay[todayDate.getDay()] + ', ' + dateMonthsfull[todayDate.getMonth()] + ' ' + todayDate.getDate() + 'th ' + todayDate.getFullYear();
+
+        console.log(dateFormat4)
+
+        //5. 30/08/2022
+
+        var dateFormat5 = todayDate.getDate() + '/' + todayDate.getMonth() + '/' + todayDate.getFullYear();
+
+        console.log(dateFormat5)
+
+        //6. 30th Aug, 2022
+
+        var dateFormat6 = todayDate.getDate() + 'th ' + dateMonths[todayDate.getMonth()] + ',' + todayDate.getFullYear();
+
+        console.log(dateFormat6)
+
+        //7. 30th Aug, 2022 09:30:10
+
+        var dateFormat7 = todayDate.getDate() + 'th ' + dateMonths[todayDate.getMonth()] + ',' + todayDate.getFullYear() + ' ' + todayDate.getHours() + ':' + todayDate.getMinutes() + ':' + todayDate.getSeconds();
+
+        console.log(dateFormat7)
+
+        //8. Aug/30/2022 10:20
+
+        var dateFormat8 = dateMonths[todayDate.getMonth()] + '/' + todayDate.getDate() + '/' + todayDate.getFullYear() + ' ' + todayDate.getHours() + ':' + todayDate.getMinutes();
+
+        console.log(dateFormat8);
+
+        // 9. 30-Aug-2022 20:30:10
+
+        var dateFormat9 = todayDate.getDate() + '-' + dateMonths[todayDate.getMonth()] + '-' + todayDate.getFullYear() + ' ' + todayDate.getHours() + ':' + todayDate.getMinutes() + ':' + todayDate.getSeconds();
+
+        console.log(dateFormat9)
+    </script>
+</body>
+</html>

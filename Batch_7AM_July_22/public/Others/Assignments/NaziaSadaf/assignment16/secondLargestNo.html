@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            second largest number
+        </title>
+    </head>
+    <body>
+        <script>
+            var num = [22, 33, 21, 43, 32, 54, 44];
+            console.log(num);
+            var firstlargest = 0;
+            var secondlargest = 0;
+            for (var i = 0; i < num.length; i++) {
+                if (num[i] > firstlargest) {
+                    secondlargest = firstlargest;
+                    firstlargest = num[i];
+                }
+            }
+            console.log("second largest no. is " + secondlargest);
+        </script>
+    </body>
+</html>

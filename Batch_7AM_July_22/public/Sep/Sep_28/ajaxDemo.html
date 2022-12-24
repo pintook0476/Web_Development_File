@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            AJAX Calls
+        </title>
+        <script src="../../jquery.js"></script>
+    </head>
+    <body>
+        <h3>
+            Employee details...
+        </h3>
+        <div id="userDetails"></div>
+        <script>
+            var webServUrl = 'https://gorest.co.in/public/v2/users';
+
+            var myurl = "http://sample.com/prasad/xyz/test/abc"
+
+
+            $.ajax({
+                url: webServUrl,
+                method: 'GET',
+                dataType: 'JSON',
+                data: {},
+                success: (response) => {
+                    console.log("Succfly communicated");
+                    console.log(response);
+                    $("#userDetails").text(JSON.stringify(response));
+                },
+                error: () => {
+                    console.log("error whiel communication");
+                }                
+            });
+
+            
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

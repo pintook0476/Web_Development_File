@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+        .header {
+            border: 1px solid;
+            background-color: antiquewhite;
+            margin-top: 2px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .border_1 {
+            border: 2px solid;
+            margin-left: 2px;
+            margin-right: 500px;
+            text-align: center;
+        }
+
+        #change {
+            margin-left: 25px;
+        }
+        .sizee{
+            font-size: 25px; background-color: rgb(73, 70, 67);color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Student Registraion Details</div>
+    <form action="">
+        <fieldset >
+            <legend class="sizee">Personal_Details</legend>
+
+            Student_Details: <input type="text" placeholder="UserName">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; Course Opted
+            <select name="">
+                <option value="">Ui full Stack</option>
+                <option value="">Python</option>
+                <option value="">Core Java</option>
+                <option value="">React</option>
+                <option value="">dot_Net</option>
+
+            </select>
+            <br><br>
+            Mail Id: <input type="text">
+            <br><br>
+            Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+
+        </fieldset>
+
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend class="sizee">Education Details</legend>
+
+            Qualificatio _Details: <input type="text" placeholder="10th /12th/ Greduation">
+            <br><br>
+            Language known:
+            <input type="checkbox" name="Language" value="lang_hin">Hindi
+            <input type="checkbox" name="Language" value="lang_eng">English
+            <input type="checkbox" name="Language" value="lang_tel">Telgu
+            <br><br>
+            Avg Mark: <input type="text">
+
+
+        </fieldset>
+
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend class="sizee">Write about self</legend>
+ 
+            Your Openion:<br>
+            <textarea type="text" rows="5" cols="50"></textarea>
+
+            <br><br>
+        <input type="submit" name="submit" value="Click here to Submit">
+        <input type="reset" name="reset " value="Clear All">
+        </fieldset>
+        
+
+    </form>
+    <br>
+
+
+</body>
+
+</html>

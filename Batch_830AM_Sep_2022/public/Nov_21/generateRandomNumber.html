@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How to generate random number</title>
+    </head>
+    <body>
+        <input type="button" onclick="resumePlay()" value="Resume">
+        <input type="button" onclick="stop()" value="Stop">
+        <script>
+            var max = 1000;
+            var myInterval;
+            var generateRandomValues = () => {
+                myInterval = setInterval(() => {
+                    var randomNumber = Math.random() * max;
+                    // console.log(randomNumber)
+                    console.log(Math.round(randomNumber))
+                }, 1000);
+            }
+
+            var resumePlay = () => {
+                generateRandomValues();
+            }
+
+            var stop = () => {
+                clearInterval(myInterval);
+            }
+            
+
+
+        </script>
+    </body>
+</html>

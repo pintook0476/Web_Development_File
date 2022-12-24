@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Assignment-11</title>
+</head>
+<body>
+    <h1>
+        Welcome to javaScript
+    </h1>
+
+    <script>
+        var empName =prompt("What is your name");
+var empDept = prompt("What is your dept. name");
+var gender = prompt("Enter your gender");
+var basicSalary = prompt("What is your basic salary");
+basicSalary = Number.parseInt(basicSalary)
+var pf = (14/100) * basicSalary;
+var hra = (25/100) * basicSalary;
+// calculate total salary
+var totalSalary = hra + pf + basicSalary
+//calculate the tax 
+
+var t1 = (5/100) * totalSalary;
+var t2 = (10/100) * totalSalary;
+var t3 = (15/100) * totalSalary;
+// what about the question
+
+if (gender == "Male"){
+  if (totalSalary >= 50000 && totalSalary < 100000){
+    console.log("Your pf is " + pf);
+    console.log("Your hra is " + hra)
+    console.log("your totalSalary is " + totalSalary)
+    console.log("Your tax is " + t1)
+  }
+  else if (totalSalary >=100000 && totalSalary < 200000){
+    console.log("your pf is " + pf);
+    console.log("your hra is " + hra);
+    console.log("your totalSalary is" + totalSalary);
+    console.log("your tax is " + t2)
+  }
+  else if  (totalSalary >= 200000){
+    console.log("Your pf is " + pf);
+    console.log("Your hra is " + hra);
+    console.log("Your totalSalary is " + totalSalary);
+    console.log("Your tax is " + t3)
+  } 
+
+// condition for a Female Employee
+  else if (totalSalary >= 100000 && totalSalary < 200000 && gender == "Female"){
+    console.log("Your name is " + empName);
+    console.log("your pf is " + pf);
+    console.log("your hra is " + hra)
+    console.log("your totalSalary is " + totalSalary);
+    console.log("your tax is " + t1)
+    
+  }
+  else if (totalSalary > 200000 && gender == "Female"){
+    console.log("Your name is " + empName);
+    console.log("Your pf is " + pf);
+    console.log("Your hra is " + hra);
+    console.log("your totalSalary is " + totalSalary);
+    console.log("Your tax is" + t2)
+  }
+  
+}
+else {
+    console.log("Your name is " + empName);
+    console.log("Your pf is " + pf);
+    console.log("Your hra is " + hra);
+    console.log("your totalSalary is " + totalSalary);
+    console.log("Your tax is zero" );
+  }
+console.log("Your Assignment_11 is done")
+    </script>
+</body>
+</html>

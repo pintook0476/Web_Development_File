@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            background-color: #ff5e4e;
+        }
+
+        .header {
+            height: 40px;
+            width: 100%;
+            border: 2px solid;
+            line-height: 40px;
+            margin: 0px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #dad870;
+        }
+
+        .box {
+            border: 2px solid;
+            height: 425px;
+            width: 100%;
+            margin: 10px 0px;
+            background-color: #ff9636;
+        }
+
+        .leftBox {
+            border: 2px solid;
+            height: 95%;
+            width: 30%;
+            margin: 10px;
+            float: left;
+            background-color: #ffcd58;
+        }
+        
+        .leftBox ol li {
+            margin: 5px auto;
+            font-size: 20px;
+            padding: 5px 0px;
+            font-weight: bold;
+        }
+        
+        .rightBox {
+            border: 2px solid;
+            height: 403px;
+            width: 62%;
+            float: right;
+            margin: 10px;
+            overflow-y: auto;
+            background-color: #ffcd58;
+        }
+
+        .card {
+            border: 2px solid;
+            height: 115px;
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        /* === Image ===*/
+        .img {
+            border: 2px solid;
+            height: 100px;
+            width: 90px;
+            margin: 5px;
+            float: left;
+            background-image: url(image/1.png);
+            background-size: 102%;
+            background-position: 4px -3px;
+        }
+
+        .img2 {
+            background-position: -1px -120px;
+            background-size: 112%;
+        }
+
+        .img3 {
+            background-position: -6px 371px;
+            background-size: 106px;
+        }
+
+        .img4 {
+            background-position: 0px 660px;
+            background-size: 106%;
+        }
+
+        .img5 {
+            background-position: -6px 118px;
+            background-size: 113%;
+        }
+
+        .img6 {
+            background-position: -5px 476px;
+            background-size: 113%;
+        }
+
+        .img7 {
+            background-position: -1px -226px;
+            background-size: 109%;
+        }
+
+        .img8 {
+            background-position: -4px 247px;
+            background-size: 115%;
+        }
+
+        .img9 {
+            background-position: -7px 612px;
+            background-size: 116%;
+        }
+
+        .img10 {
+            background-position: -3px -335px;
+            background-size: 112%;
+        }
+
+        /*=== Details ===*/
+        .details ul li {
+            list-style: none;
+            font-size: 17px;
+            margin: -8px 0px;
+            padding: 5px;
+        }
+
+        .details ul li span {
+            font-weight: bold;
+        }
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        * {
+            scrollbar-width: auto;
+            scrollbar-color: #bababa #ffcd58;
+        }
+
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #ffcd58;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #bababa;
+            border-radius: 10px;
+            border: 3px solid #bababa;
+        }
+        /* === Footer ===*/
+        .footer{
+            background-color: #ffbc7e;
+            border: 2px solid;
+            margin: -7px;
+            height: 40px;
+            width: 102%;
+            text-align: center;
+            line-height: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        .footer span {
+            position: absolute;
+            font-size: 1em;
+            transform: translateX(100%);
+            animation: scrolling 8s linear infinite;            
+        }
+        @keyframes scrolling {
+            0% {
+                transform: translateX(250%);
+            }
+            100% {
+                transform: translateX(-280%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Student Details</div>
+    <div class="box">
+        <div class="leftBox">
+            <ol>
+                <li><a href="#sravani">Sravani Rout</a></li>
+                <li><a>Manish Sahu</a></li>
+                <li><a>Manisha Karna</a></li>
+                <li><a>Adarha Dip</a></li>
+                <li><a>Shibani Sahu</a></li>
+                <li><a>Alok Sahu</a></li>
+                <li><a>Ranjan Raj</a></li>
+                <li><a>Barsha Patel</a></li>
+                <li><a>Alam Khan</a></li>
+                <li><a>Jitendra Kumar</a></li>
+            </ol>
+        </div>
+        <div class="rightBox">
+            <div class="card">
+                <div class="img img1" id="sravani"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Sravni Rout</li>
+                        <li><span>Age: </span>18</li>
+                        <li><span>Gender: </span>Female</li>
+                        <li><span>Location: </span>Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img2"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Manish Sahu</li>
+                        <li><span>Age: </span>15</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Bhubaneswar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img3"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Manisha Karna</li>
+                        <li><span>Age: </span>17</li>
+                        <li><span>Gender: </span>Female</li>
+                        <li><span>Location: </span>Bargarh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img4"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Adarha Dip</li>
+                        <li><span>Age: </span>17</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Kolkata</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img5"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Shibani Sahu</li>
+                        <li><span>Age: </span>18</li>
+                        <li><span>Gender: </span>Female</li>
+                        <li><span>Location: </span>Bargarh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img6"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Alok Padhan</li>
+                        <li><span>Age: </span>19</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Ahemdabad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img7"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Ranjan Raj</li>
+                        <li><span>Age: </span>18</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img8"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Barsha Patel</li>
+                        <li><span>Age: </span>17</li>
+                        <li><span>Gender: </span>Female</li>
+                        <li><span>Location: </span>Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img9"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Alam Khan</li>
+                        <li><span>Age: </span>16</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Hydrabad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img img10"></div>
+                <div class="details">
+                    <ul>
+                        <li><span>Name: </span>Jitendra Kumar</li>
+                        <li><span>Age: </span>22</li>
+                        <li><span>Gender: </span>Male</li>
+                        <li><span>Location: </span>Khairthal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><span>&copy; Copyright 2022 All Rights Resolved || <strong>DP Solution</strong></span></div>
+</body>
+</html>

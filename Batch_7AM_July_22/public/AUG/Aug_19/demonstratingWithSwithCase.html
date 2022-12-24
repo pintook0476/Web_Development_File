@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Without switch case
+        </title>
+    </head>
+    <body>
+        <script>
+            var result;
+            var a1 = prompt("Enter First no.");
+            a1 = parseInt(a1);
+
+            var a2 = prompt("Enter second no.");
+            a2 = parseInt(a2);
+
+            var userAction = prompt("Choose add/div/mul/sub");
+
+
+            switch (userAction) {
+                case 'add':
+                    result = a1 + a2;
+                    console.log("The sum is " + result);
+                    break;
+                case 'mul':
+                    result = a1 * a2;
+                    console.log("The multiplication is " + result);
+                    break;
+                case 'div':
+                    result = a1 / a2;
+                    console.log("The Division is " + result);
+                    break;
+                case 'sub':
+                    result = a1 - a2;
+                    console.log("The Substraction is " + result);
+                    break;
+                default:
+                    console.log("Wrong selection");
+            }
+        </script>
+    </body>
+</html>

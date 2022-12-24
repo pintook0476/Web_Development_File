@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating mathmatical Operation</title>
+
+    <script src="library/mathmaticlaOperationLibrary1.js"></script>
+
+    <link rel="stylesheet" href="mathmaticlaOperation.css">
+
+
+</head>
+
+<body>
+    <ul>
+        <li>
+            <input type="text" name="" placeholder="Enter First Value" id="fValue">
+        </li>
+        <li>
+            <input type="text" name="" placeholder="Enter Second Value" id="sValue">
+        </li>
+        <li>
+            <input type="button" value="Do Addition" id="addBtn">
+            <input type="button" value="Do Subtraction" onclick ="doOperation('sub')">
+            <input type="button" value="Do Multiplication" onclick ="doOperation('mul')">
+            <input type="button" value="Do Division" onclick ="doOperation('div')">
+        </li>
+        <li class="rBlock">
+            The <span id="opr"></span> of the value is <span id="res"></span>
+        </li>
+        <li>Button Clicked for <span id="counter"></span> No.of times </li>
+    </ul>
+    <script src="mathmaticlaOperation.js"></script>
+</body>
+
+</html>

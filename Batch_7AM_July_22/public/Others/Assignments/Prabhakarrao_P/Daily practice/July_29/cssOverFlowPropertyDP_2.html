@@ -1,0 +1,49 @@
+<html lang="en">
+    <title>
+        Demonstrating css overflow property
+    </title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 80%;
+            height: 50%;
+            overflow-x:auto;   
+            /*  overflow for adding the scroll bar */
+        }
+        .block{
+            border: 1px solid;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        .block1{
+            background-color: yellow;
+        }
+        .block2{
+            background-color: green;
+        }
+        .block3{
+            background-color: red;
+        }
+        .block4{
+            background-color:pink;
+        }
+
+    </style>
+    
+    <body>
+        <div class="container">
+            <div class="block">BLOCK</div>
+            <div class="block block1">BLOCK1</div>
+            <div class="block2 block">BLOCK2</div>
+            <div class="block block3">BLOCK3</div>
+
+        </div>
+        <div class="block block4">BLOCK4</div>
+
+    </body>
+
+</html>

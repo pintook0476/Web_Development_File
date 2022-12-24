@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out Palindromes in an array</title>
+</head>
+<body>
+    <h3> palindromes in an array </h3>
+    <script>
+        /* Enter Array Dynamically
+        var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);*/
+
+        //Enter an array statically
+        
+        var a = [100,121,33,24,252,1661]
+        console.log("Given array:" + a);
+
+        
+        //find out palindromes
+        for(var i=0; i<a.length; i++){ //i=0 i<10 i++
+            var temp = a[i];//temp=a[0]=1
+            var rev = 0 ;
+            while(temp > 0){//1>0
+                var rem = temp % 10 ;//rem=1%10=1
+                rev = (rev * 10 ) + rem ;//rev=1
+                temp = parseInt(temp / 10) ;//temp=0
+            }
+            if(rev == a[i]){//1=1
+                console.log(a[i] + "is a palindrome");
+            }
+        }       
+    </script>
+</body>
+</html>

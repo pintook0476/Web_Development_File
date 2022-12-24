@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Assignment 23</title>
+    </head>
+    <body>
+        <h3>Finding second largest number in array</h3>
+        <script>
+        var a=[1,2,3,4,6,7,5,8,8,9];
+        var first,second;
+        first=second=a[0];
+        for(var i=0;i<a.length;i++){
+            if(a[i]>first){
+                second=first;
+                first=a[i];
+            }
+        }
+        console.log(second);
+        </script>
+    </body>
+</html>

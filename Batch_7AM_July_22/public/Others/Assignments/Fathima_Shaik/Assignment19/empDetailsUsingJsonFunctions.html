@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details with object
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var empData = {
+                readEmpData: function() {
+                    this.empName = prompt("Enter employee name");
+                    this.empGender = prompt("Enter employee Gender");
+                    this.basicSal = prompt("enter basic salary");
+                    this.basicSal = parseInt(this.basicSal);
+                    this.getPfAndHra();
+                },
+                getPfAndHra: function() {
+                    this.pf = (12 * this.basicSal) / 100;
+                    this.hra = (25 * this.basicSal) / 100;
+                    this.totalSalWithTax = this.pf + this.hra + empData.basicSal;
+                    this.getTotalTax();
+                },
+                getTotalTax: function() {
+                    this.taxPercent = 0;
+                    if (this.empGender == 'male') { // Male emp
+                        if (this.totalSalWithTax >= 500000) {
+                            this.taxPercent = 15;
+                        } else if (this.totalSalWithTax >= 300000){
+                            this.taxPercent = 10;
+                        } else if (this.totalSalWithTax >= 100000){
+                            this.taxPercent = 5;
+                        } else {
+                            console.log("Tax is Zero");
+                        }
+                    } else if(this.empGender == 'female'){
+                        if (this.totalSalWithTax >= 500000) {
+                            this.taxPercent = 10;
+                        } else if (this.totalSalWithTax >= 300000){
+                            this.taxPercent = 5;
+                        } else{
+                            console.log("Tax is zero");
+                        }
+                    } else {
+                        console.log("Invalid Input");
+                    }
+                    this.taxTobePaid = (this.taxPercent * this.totalSalWithTax) / 100;
+
+                    this.totalSal = this.totalSalWithTax - this.taxTobePaid;
+                    this.displayEmployeeDetails();
+                },
+                displayEmployeeDetails: function() {
+                    console.log("Employee details");
+                    console.log("Employee name:  " + this.empName);
+                    console.log("Gender: " + empData.empGender);
+                    console.log("Basic Salary: " + this.basicSal);
+                    console.log("PF: " + this.pf);
+                    console.log("HRA: " + this.hra);
+                    console.log("Total Salary including tax amount: " + this.totalSalWithTax);
+                    console.log("Tax to be Paid: " + empData.taxTobePaid);
+                    console.log("Total Salary excluding tax amount:" + this.totalSal);
+                }
+            };
+
+            empData.readEmpData();
+            console.log(empData)
+        </script>
+    </body>
+</html>

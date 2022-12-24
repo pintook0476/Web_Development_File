@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Inheritance btwn Static and dynamic object
+        </title>
+        <link rel="stylesheet" href="studentApp.css">
+        <script src="studentApp.js"></script>
+    </head>
+    <body>
+        <div class="title">
+            ABC School Student Registeration Form
+        </div>
+        <div class="regBlock">
+            <ul>
+                <li>
+                    Student name: <input type="text" id="sname">
+                </li>
+                <li>
+                    Age: <input type="text" id="sage">
+                </li>
+                <li>
+                    Gender: 
+                    Male : <input type="radio" name="gender" value="Male" checked>
+                    Female : <input type="radio" name="gender" value="Female">
+                </li>
+                <li>
+                    Class to take Admission:
+                    <select name="" id="admissionClass">
+                        <option>Class I</option>
+                        <option>Class II</option>
+                        <option>Class III</option>
+                        <option>Class IV</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="button" value="Register Student" onclick="readStudentData()">
+                </li>
+            </ul>
+            
+        </div>
+    </body>
+</html>

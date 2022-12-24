@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <script>
+            var ename =prompt('Enter Employee name');
+            var eAge = prompt('Enter Employee age');
+            var dep = prompt(' Enter Employee Department');
+            var basicSal = prompt('Enter basic sallary');
+            basicSal = parseInt(basicSal);
+            // console.log(typeof(basicSal));
+
+            var pf = basicSal * (14 / 100);
+            var hra = basicSal * (24 / 100);
+
+            var totalSal = pf + hra + basicSal;
+
+           
+
+            console.log("Ename " + ename);
+            console.log(  "Basic sal of "  + basicSal);
+            console.log(   "Total sal "+ totalSal);
+        </script>
+    </body>
+</html>

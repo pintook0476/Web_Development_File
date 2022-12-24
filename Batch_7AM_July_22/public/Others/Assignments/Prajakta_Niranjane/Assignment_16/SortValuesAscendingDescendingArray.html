@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Values Ascending And Descending Order of an Array </title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script> 
+        var list = [];
+        for (var n = 0; n < 10; n++)
+        {
+            list[n] = prompt('Enter Number Of an Array ' + n );
+            list[n] = parseInt(list[n]);  
+        }
+        console.log('Array : ' + '[' + list.join(',') + ']');
+       var order = prompt("Enter Ascending Or Descending Order");
+       if ( order == "ascending" ||  order == "Ascending")
+       {
+                var ascendingOrder = (list) => 
+                {
+                    list.sort(function(a, b){return a - b});    
+                    console.log('Ascending Order Of an Array:');
+                    console.log(list);
+                }
+                ascendingOrder(list);
+       }
+       else if (order == "descending" || order == "Descending")
+       {
+                var descendingOrder = (list) => 
+                {
+                    list.sort(function(a, b){return b - a});    
+                    console.log('Descending Order Of an Array:');
+                    console.log(list);
+                }
+                descendingOrder(list);
+       }
+       else
+        {
+          console.log('Please Enter Valid Ascending / Descending Order');
+       }       
+ </script>
+</body>
+</html>

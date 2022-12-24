@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student details using HTML Table</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: royalblue;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 34px;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .main_content {
+            height: 600px;
+            margin: 15px 30px;
+            overflow: auto;
+        }
+
+        .main_content img {
+            width: auto;
+            height: 100px;
+            border: 3px solid;
+        }
+
+        table {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            border: none;
+        }
+
+        table thead {
+            background: #2e2e2e;
+            color: #fff;
+        }
+
+        tbody {
+            background: #eee;
+        }
+
+        tbody tbody {
+            background: #ddd;
+        }
+
+        footer {
+            padding: 10px 0px;
+            background: royalblue;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <div class="nav">
+        <h1>Student Details</h1>
+    </div>
+
+    <!-- main Section -->
+
+    <div class="main_content">
+        <table border="1px">
+            <!-- Table Heading -->
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Aayush</td>
+                    <td>Male</td>
+                    <td>12th</td>
+                    <td>
+                        <table border="1px">
+                            <thead>
+                                <tr>
+                                    <th>Sub</th>
+                                    <th>Min Marks</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtain Marks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>33</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>33</td>
+                                    <td>100</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>33</td>
+                                    <td>100</td>
+                                    <td>75</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>25</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td><img src="img/1.jpg" alt="std_photo" /></td>
+                </tr>
+            </tbody>
+            <!-- std 01 -->
+
+            <!-- std 02 -->
+
+            <tr>
+                <td>02</td>
+                <td>Rakesh</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>Sub</th>
+                                <th>Min Marks</th>
+                                <th>Max Marks</th>
+                                <th>Obtain Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>25</td>
+                                <td>100</td>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td><img src="img/2.jpg" alt="std_photo" /></td>
+            </tr>
+            <!-- std 03 -->
+
+            <tr>
+                <td>03</td>
+                <td>Pranay</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>Sub</th>
+                                <th>Min Marks</th>
+                                <th>Max Marks</th>
+                                <th>Obtain Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>25</td>
+                                <td>100</td>
+                                <td>62</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td><img src="img/3.jpeg" alt="std_photo" /></td>
+            </tr>
+            <!-- std 04 -->
+
+            <tr>
+                <td>04</td>
+                <td>Harish</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>Sub</th>
+                                <th>Min Marks</th>
+                                <th>Max Marks</th>
+                                <th>Obtain Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>25</td>
+                                <td>100</td>
+                                <td>73</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td><img src="img/4.jpg" alt="std_photo" /></td>
+            </tr>
+
+            <tr>
+                <td>05</td>
+                <td>Anmol</td>
+                <td>Male</td>
+                <td>12th</td>
+                <td>
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>Sub</th>
+                                <th>Min Marks</th>
+                                <th>Max Marks</th>
+                                <th>Obtain Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>33</td>
+                                <td>100</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>25</td>
+                                <td>100</td>
+                                <td>73</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td><img src="img/5.jpg" alt="std_photo" /></td>
+            </tr>
+
+        </table>
+    </div>
+    <footer>&copy; Copyright 2022 || HK Solution</footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            border: 1px solid;
+            width: 400px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        li {
+            list-style: none;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .rblock {
+            display: none;
+        }
+        .error {
+            color: red;
+            font-size: 10px;
+            display: none;
+        }
+        .errinputelement {
+            
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <input type="text" placeholder="Enter First value" id="fval" onkeypress="return validateData(event)">
+            <div class="fvalueErr error">First value is mandate</div>
+        </li>
+        <li>
+            <input type="text" placeholder="Enter Second value" id="sval" onkeypress="return validateData(event)">
+            <div class="svalueErr error">First value is mandate</div>
+        </li>
+        <li>
+            <input type="button" value="Do Sum" onclick="readValues(event);">
+        </li>
+        <li class="rblock">
+            The sum of numbers is <span id="rblock"></span>
+        </li>
+        <input type="button" value="Hello" id="hbtn">
+    </ul>
+    <script>
+        var doAddValues = (a1, a2) => {
+            var result;
+            result = a1 + a2;
+            document.querySelector("#rblock").innerHTML = '<b>' + result + '</b>';
+
+            document.querySelector(".rblock").style.display = 'block';
+        }
+
+        var readValues = (event) => {
+            
+            var p1 = document.querySelector("#fval").value;  // read value from first input element
+            var p2 = document.querySelector("#sval").value; 
+
+            if (p1 == '') {
+                // document.querySelector("#fval").setAttribute("class", 'errinputelement');
+                document.querySelector("#fval").classList.add('errinputelement');
+                document.querySelector(".fvalueErr").style.display = 'block';
+                return;
+            } else {
+                document.querySelector(".fvalueErr").style.display = 'none';
+            }
+
+            if (p2 == '') {
+                document.querySelector(".svalueErr").style.display = 'block';
+                return;
+            } else {
+                document.querySelector(".svalueErr").style.display = 'none';
+            }
+
+
+            p1 = parseInt(p1);
+            p2 = parseInt(p2);
+            doAddValues(p1, p2);
+
+            document.querySelector("#hbtn").setAttribute('disabled', '');
+
+            setTimeout(() => {
+                console.log("done");
+                document.querySelector("#hbtn").removeAttribute("disabled");
+            }, 5000)
+        }
+
+        var seconmethod = () => {
+            console.log("frm second method")
+        }
+        var validateData = (event) => {
+            seconmethod();
+
+            console.log(event);
+            console.log("key pressed");
+
+            /*if ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 65 && event.charCode <= 90)) { // a - z
+                return false;
+            } else {
+                return true;
+            }*/
+
+            if(event.charCode >= 47 && event.charCode <= 57) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        
+    </script>
+</body>
+</html>

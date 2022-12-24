@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Pseudo Elements
+        </title>
+        <style>
+            p::first-letter {
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;background-color: yellow;
+            }
+
+            p::first-line {
+                background-color: yellow;
+            }
+            p::selection {
+                background: green;
+                color: red;
+            }
+            p::after {
+                content: "Continue reading from main page..";
+                color: blue;
+            }
+
+            p[newsType=political]::before {
+                content: "Political related";
+                color: green;
+            }
+
+            p[name=test] {
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            News Item 1
+        </h3>
+        <p newsType="political" test="anc" pqr="sample"> 
+            Satire allows the satirist to criticize in the harshest of terms and critique actions of all, particularly of those in positions of power and/or authority and leadership. The intention of the satirist is to simultaneously highlight an action and its negative fallout, so that rectificatory action could be taken. It is never intended to disparage or harm reputation and thus is completely devoid of malice," the court added.
+        </p>
+        <h3>
+            News Item 1
+        </h3>
+        <p newsType="entertainment">
+            Satire allows the satirist to criticize in the harshest of terms and critique actions of all, particularly of those in positions of power and/or authority and leadership. The intention of the satirist is to simultaneously highlight an action and its negative fallout, so that rectificatory action could be taken. It is never intended to disparage or harm reputation and thus is completely devoid of malice," the court added.
+        </p>
+        <h3>
+            News Item 3
+        </h3>
+        <p newsType="political"> 
+            Satire allows the satirist to criticize in the harshest of terms and critique actions of all, particularly of those in positions of power and/or authority and leadership. The intention of the satirist is to simultaneously highlight an action and its negative fallout, so that rectificatory action could be taken. It is never intended to disparage or harm reputation and thus is completely devoid of malice," the court added.
+        </p>
+    </body>
+</html>

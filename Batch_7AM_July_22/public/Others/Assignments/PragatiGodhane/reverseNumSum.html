@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number and its sum</title>
+</head>
+<body>
+    <h1>Reverse Number and its sum</h1>
+
+    <script>
+        var num = parseInt(prompt("Enter any number"));
+        var sum=0;
+        while(num>0)
+        {
+        var rem = num % 10;
+        sum = sum+rem;
+        console.log(rem);
+        num = parseInt(num /10);
+        
+        
+        }
+        console.log(`sum of all digit: ${sum}`);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Trgistration Details</title>
+
+</head>
+<style>
+    h3{
+        border: 1px solid;
+        text-decoration: underline;
+        height: 29px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px;
+
+
+    }
+    .container{
+        border: 1px solid;
+        width: auto;
+        height: 600px;
+        margin: 10px;
+        overflow: auto;
+    }
+   
+    .footer{
+        border: 1px solid;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+       width: auto;
+       margin: 10px;
+    }
+    .block1,.block2, .block3, .block4 {
+        border:1px solid;
+        width: 150px;
+        position: relative;
+        top:-33px;
+        left: 20px;
+        padding: 3px;
+        background-color: lightgray;
+    }
+
+    
+    .box1{
+        margin: 20px;
+        padding: 5px;
+        border: 1px solid;
+        height: 200px;
+        
+    }
+
+    li{
+        list-style: none;
+        margin: 10px;
+        padding: 3px;
+        overflow: auto;
+        
+    }
+    
+    
+    .course{
+     top: 20px;
+     left: 200px;
+     
+    }
+
+   
+
+    .gen{
+        float: left;
+        clear: both;
+        top:100px;
+        
+    }
+
+    .abc{
+
+        top: px;
+        left: 400px;
+    }
+
+    
+
+    
+</style>
+<body>
+    <h3>Student Registration Page</h3>
+    <div class="container" >
+        <div class="box1">
+
+            <ul>
+                <div class="block1">Personal Details</div>
+                <li>
+                    <div for="userName" class="labelContent sname">Student Name:
+                        <input type="text" name="userName" placeholder="Enter Student Name" required></div>
+                </li>
+
+                <li>
+                    <div for="course" class="levelContent course">Course Opted:
+                        <select>
+                            <option>Physics</option>
+                            <option>Chemistry</option>
+                            <option>Biology</option>
+                        </select>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div for="emailId" class="lebelContent semail">Email ID:
+                    <input type="email" name="emailId" placeholder="Enter Email Id" required></div>
+                </li>
+
+                <li>
+                    <div for="gender" class="lebelContent gen">Gender:
+                        <input type="radio" name="gender" value="male">Male 
+                        <input type="radio" name="gender" value="female">Female 
+
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="box1">
+            <ul>
+                <div class="block2">Qualification Details</div>
+                <li>
+                    <div for="qualification" class="labelContent ">Qualification:
+                        <input type="text" name="userName"  required></div>
+                </li>
+
+                <li>
+                    <div for="checkboxName" class="levelContent langu me-3">Languages Known:
+                       <input type="checkbox" name="checkboxName" value="Eng">English
+                       <input type="checkbox" name="checkboxName" value="Hin">Hindi
+                       <input type="checkbox" name="checkboxName" value="Marathi">Marathi
+
+                    </div>
+                </li>
+
+                <li>
+                    <div for="avg" class="lebelContent amarks">Average Marks:
+                    <input type="text" name="avg"  required></div>
+                </li>
+
+                
+            </ul>
+
+        </div>
+
+        <div class="box1">
+            <ul>
+                <div class="block3 controle">Address</div>
+               
+                <div class="abc">landmark
+                    <input type="text" name="abc">
+                
+                    
+                </li>
+                <li>
+                
+                    Dno.
+                    <input type="text" name="landmark">
+                </li>
+
+                
+                <li>
+                    House No.: 
+                    <input type="text"><br>
+                    <br>
+
+                </li>
+
+                <li>
+                
+                    <div for="state" class="levelContent stat">State
+                        <select>
+                            <option>Maharashta</option>
+                            <option>Uttar Pardesh</option>
+                            <option>Madhya Pradesh</option>
+                            <option>West Bengal</option>
+                        </select>
+
+                    </div>
+                </li>
+
+                
+
+                
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="box1">
+            <ul>
+                <div class="block4 ">About Yourself</div>
+                <li>
+                   <div class="urself"> About Yourself:
+                    <textarea maxlength="100" cols="50" rows="5" name="aboutUser" placeholder="Tell about Yourself"></textarea>
+                </div></li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        &#169; copyright 2022
+
+    </div>
+
+   
+</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto';
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: crimson;
+}
+
+.wrapper {
+    width: 300px;
+    border: 1px solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+
+input[type=text],
+input[type=date],
+input[type=button],
+select {
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+.sMarks input[type=text] {
+    width: 15%;
+}
+
+input[type=button] {
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: crimson;
+}
+
+
+
+/* student Progress Card */
+
+.container {
+    width: 300px;
+    border: 2px solid crimson;
+    border-top: 20px solid crimson;
+    border-bottom: 10px solid crimson;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: royalblue;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Contact Details With Json Object</h3>
+
+        <script>
+            var contactDetails = {
+                firstname : "Deepak",
+                lastname : "Mittal",
+                nickname : "Deep",
+                phoneNo : {
+                    office : 8619378143,
+                    personal : 123456789
+                },
+                address : {
+                    office : {
+                        stateName : "Rajasthan",
+                        districtName : "Jaipur",
+                        pinCode : 302018,
+                        countryDetails : {
+                            code : +91,
+                            name : "India"
+                        }
+                    },
+                    home : {
+                        streetName : "Mahaveer Nagar",
+                        DistrictName : "Jaipur",
+                        stateInfo : {
+                            stateName : "Telangana",
+                            stateCode : "T_05"
+                        }
+                    }
+                },
+                emailId : {
+                    office : "xyz@gmail.com",
+                    personal : "abc@gmail.com"
+                },
+                gender : "Male",
+                birthDay : {
+                    date : 24,
+                    month : "Oct",
+                    year : 2000
+                },
+                languagesKnown : ['Hindi', 'English', 'Telugu'],
+                socialIds : { 
+                    linkedIn : "Deep@02",
+                    instagram : "thedeepg",
+                    fb : "Deepak Mittal"
+                }
+
+            }
+            console.log(contactDetails.firstname + " " + contactDetails.lastname);
+            console.log(contactDetails.nickname);
+            console.log(contactDetails.phoneNo.personal);
+            console.log(contactDetails.phoneNo.office);
+            console.log(contactDetails['phoneNo']['office']);
+
+            console.log(contactDetails.socialIds.linkedIn);
+            console.log(contactDetails['socialIds']['instagram']);
+            
+        </script>
+        
+    </body>
+</html>

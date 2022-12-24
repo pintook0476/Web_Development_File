@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<style>
+    .header, .footer{
+        border: 2px solid;
+        padding: 5px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: aqua;
+    }
+    .body{
+        border: 2px solid;
+        height: 500px;
+        margin: 5px;
+    }
+    .leftbox, .rightbox{
+        border: 2px solid;
+        margin: 5px;
+        padding: 5px;
+        height: 470px;
+        float: left;
+        overflow: auto;
+        background-color: #ccc;
+    }
+    .leftbox{
+        width: 30%;
+    }
+    .rightbox{
+        width: 65%;
+    }
+   .leftbox li{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        list-style-position: inside;
+    }
+    .leftbox li:hover{
+        background-color: rgb(207, 9, 241);
+    }
+    .detailscontainer > li{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        list-style-type: none;
+        height: 150px;
+        font-size: large;
+        font-weight: bold;
+        background-color: rgb(174, 44, 68);
+    }
+    ol{
+        margin: 5px;
+        padding: 5px;
+    }
+    .imgbox{
+        border: 1px solid;
+        margin: 10px;
+        height: 130px;
+        width: 130px;
+        background-color: violet;
+    }
+    .imgbox, .details{
+        float: left;
+    }
+</style>
+<body>
+    <div class="header">Student Details</div>
+    <div class="body">
+        <div class="leftbox">
+            <ol>
+                <li>Raj</li>
+                <li>Jitu</li>
+                <li>Malaya</li>
+                <li>
+                   <a href="#rajudetails">Raju</a> 
+                </li>
+                <li>
+                   <a href="#takuludetails"> Takulu </a>
+                </li>
+            </ol>
+        </div>
+        <div class="rightbox">
+            <ol class="detailscontainer">
+                <li>
+                    <div class="imgbox">
+                        <img src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" height="130px" width="130px" alt="">
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Name : Raj</li>
+                            <li>Age : 23</li>
+                            <li>Gender : Male</li>
+                            <li>location : Odisha</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="https://raaga.gumlet.io/raagaimg/r_img/catalog/s/%7B89340d98-bdf2-4211-9f89-5d965b87f693%7D.jpg?w=160&dpr=2.6" height="130px" width="130px" alt="">
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Name : Jitu</li>
+                            <li>Age : 32</li>
+                            <li>Gender : Male</li>
+                            <li>location : Hyderabad</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="https://nettv4u.com/fileman/Uploads/Top-10-Bollywood-Playback-Singers-of-the-New-Era/Arijit_Singh.jpg" height="130px" width="130px" alt="">
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Name : Malaya</li>
+                            <li>Age : 30</li>
+                            <li>Gender : Male</li>
+                            <li>location : Chennai</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="rajudetails">
+                    <div class="imgbox">
+                        <img src="https://dailymusicroll.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/28164905/9834-mumbai-has-been-very-kind-to-me-singer-jubin-nautiyal-1024x768.jpg" height="130px" width="130px" alt="">
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Name : Raju</li>
+                            <li>Age : 32</li>
+                            <li>Gender : Male</li>
+                            <li>location : Kolkata</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="takuludetails">
+                    <div class="imgbox">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/KK_%28125%29.jpg/1200px-KK_%28125%29.jpg" height="130px" width="130px" alt="">
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Name : Takulu</li>
+                            <li>Age : 14</li>
+                            <li>Gender : Male</li>
+                            <li>location : Khadipada</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer">@copyright 2022</div>
+    
+</body>
+</html>

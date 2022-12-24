@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Pallindrome No Between </h3>
+        <script>
+            var play = prompt("enter a no");
+            for(var i = 20; i <= play; i++){
+
+            
+           var n = i;
+           var rev = 0;
+           var rem;
+           var temp = n;
+           while(n > 0){
+            rem = n % 10;
+            rev = (rev * 10) + rem;
+            n = n / 10;
+            n = parseInt(n);
+           }
+           
+           if(temp == rev){
+
+            console.log("Pallindrome no." + temp);
+
+           }else{
+            document.write(" Not Pallindrome " + '<br>' +'<br>' + temp);
+           }
+        }
+        
+    
+
+
+        </script>
+        
+    </body>
+</html>

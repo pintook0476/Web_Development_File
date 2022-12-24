@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Your Prime Number</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: rgb(95, 81, 81);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 8px 5px;
+            }
+            h1,h2,h3{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+            <h3>PLEASE REFRESH THE PAGE TO CHECK MORE NUMBERS</h3>
+        </div>
+
+        <script>
+            var userNum = prompt("Enter a Number");
+            userNum = parseInt(userNum);
+            // var userNum = 0;
+            var countTracker=0;
+
+            if (userNum > 1)
+            {
+                for(var i = 2; i <= userNum; i++)
+                {
+                    if(userNum % i == 0)
+                    {
+                        countTracker++;
+                    }
+                }
+                if(countTracker > 1)
+                {
+                    console.log(`${userNum} is NOT a Prime Number`);
+                }
+                else
+                {
+                    console.log(`${userNum} is a Prime Number`);
+                }
+            }
+            else if(userNum == 1)
+            {
+                console.log(`${userNum} has only one positive factors so it is not a Prime Number`);
+            }
+            else
+            {
+                console.log(`${userNum} Zero is not a Prime or Prime Number, since it has more than 2 divisors`);
+            }
+        </script>
+    </body>
+</html>

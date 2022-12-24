@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating timeout and interval methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var showWelcomeMsg = () => {
+                console.log("Thanks for using our web page");
+            }
+
+            console.log("hello");
+            // showWelcomeMsg();
+
+            // setTimeout(showWelcomeMsg, 10000);
+
+            /*setTimeout(() => {
+                console.log("Thanks for using our web page");
+            }, 5000);*/
+            var count = 0;
+            var myintrvl = setInterval(() => {
+                count++;
+                console.log("Thanks for using our web page " + count);
+                if (count == 3) {
+                    clearInterval(myintrvl);
+                }
+            }, 3000);
+
+            console.log("Done")
+
+            
+        </script>
+    </body>
+</html>

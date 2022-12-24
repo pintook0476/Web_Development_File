@@ -1,0 +1,27 @@
+header{
+    background-color:lavenderblush;
+    color: rgb(113, 209, 39);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+ul{
+    border: 2px solid;
+    background-color: beige;
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+}
+li{
+    list-style: none;
+    background-color: aqua;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+.dBlock{
+    display: none;
+}

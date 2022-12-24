@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case use</title>
+  </head>
+  <body>
+    <script>
+      var firstNum = parseInt(prompt("Enter 1st Number For Calculator"));
+      var secondNum = parseInt(prompt("Enter 2nd Number For Calculator"));
+      var symbol = prompt("Select The symbol ( + , - , * , / )");
+      switch (symbol) {
+        case "+":
+          var result = firstNum + secondNum;
+          alert(firstNum + " + " + secondNum + " = " + result);
+          break;
+        case "-":
+          var result = firstNum - secondNum;
+          alert(firstNum + " - " + secondNum + " = " + result);
+          break;
+        case "*":
+          var result = firstNum * secondNum;
+          alert(firstNum + " * " + secondNum + " = " + result);
+          break;
+        case "/":
+          var result = firstNum / secondNum;
+          alert(firstNum + " / " + secondNum + " = " + result);
+          break;
+        default:
+          alert("Wrong input");
+          break;
+      }
+    </script>
+  </body>
+</html>

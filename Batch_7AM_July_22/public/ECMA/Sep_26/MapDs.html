@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Map DS
+        </title>
+    </head>
+    <body>
+        <script>
+            var m1 = new Map();
+            m1.set("name", "Raj");
+            m1.set("age", "10");
+            m1.set("gender", "male");
+            m1.set("location", "Hyd");
+
+           /* console.log(m1.get("name"));
+
+            m1.delete("age");
+            console.log(m1.size);
+            console.log(m1.has("name1"));
+
+            console.log(m1);*/
+
+            console.log(m1.entries());
+            console.log(m1);
+
+            for (let [key, value] of m1) {
+                console.log(`${key} : ${value}`)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>MARKS SHEET</title>
+    </head>
+    <body>
+        <script>
+            Name = prompt("Student name")
+            rollNo = prompt("Enter Rollno")
+            var m1 = prompt("Enter Maths marks")
+            m1 = parseInt(m1)
+            var m2 = prompt("Enter Science marks")
+            m2 = parseInt(m2)
+            var m3 = prompt("Enter social marks")
+            m3 = parseInt(m3)
+            var total = m1 + m2 + m3;
+            var Avg = total / 3
+            console.log("name " + Name);
+            console.log("rollno " + rollNo);
+            console.log("In Maths " + m1);
+            console.log("In Science " + m2);
+            console.log("In social " + m3);
+
+            console.log("total is " + total);
+            console.log("avg is " + Avg);
+            if(Avg >= 40){
+                console.log("pass");
+            }
+            if(Avg <= 39){
+                console.log("Fail");
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!-- Q. Write a program to work with employee details like name, age, gender, department and basic salary.
+        Calculate the basic salary where total salary is pf + hra + basicSalary.
+        Calculate the total tax to be paid with following conditions.
+
+        gender male ->
+                total sal >= 200000
+                    tax percentage is 15%
+                total sal >= 100000
+                    tax percentage is 10%
+                toatal sal >= 50000
+                    tax percetage is 5%
+                else
+                    tax is 0%
+                
+        gender female -> 
+                total sal >= 200000
+                    tax percentage is 10%
+                total sal >= 100000
+                    tax percentage is 5%
+                toatal sal >= 50000
+                    tax percetage is 0%     -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assgnment</title>
+</head>
+
+<body>
+
+    <script>
+        var eName = prompt("Enter employee name ");
+        var eAge = prompt("Enter employee age");
+        var eGender = prompt("Enter employee gender");
+        var eDepartment = prompt("Enter employee department");
+        var basicSal = prompt("Enter employee basic salary");
+        basicSal = parseInt(basicSal);
+
+        var pf = basicSal * (14 / 100);
+        var hra = basicSal * (24 / 100);
+        var totalSal = pf + hra + basicSal;
+
+        // console.log(eName);
+        // console.log(eAge);
+        // console.log(eGender);
+        // console.log(eDepartment);
+        // console.log(basicSal);
+        // console.log(pf);
+        // console.log(hra);
+        // console.log(totalSal);
+
+        if (eGender == "Male" || eGender == "male") {
+            console.log("Employee name is " + eName);
+            console.log("Employee age is " + eAge);
+            console.log("Employee gender is " + eGender);
+            console.log("Employee department is " + eDepartment);
+            console.log("Employee basic salary is " + basicSal);
+            console.log("Employee total salary is " + totalSal);
+
+            if (totalSal >= 200000) {
+                var tax = totalSal * (15/100);
+                console.log(tax);
+                var salaryInHand = totalSal - tax;
+                console.log("Your salary after applying tax is " + salaryInHand);
+            }
+            else if (totalSal >= 100000) {
+                var tax = totalSal * (10/100);
+                console.log(tax);
+                var salaryInHand = totalSal - tax;
+                console.log("Your salary after applying tax is " + salaryInHand);
+            }
+            else if (toatalSal >= 50000) {
+                var tax = totalSal * (5/100);
+                console.log(tax);
+                var salaryInHand = totalSal - tax;
+                console.log("Your salary after applying tax is " + salaryInHand);
+            }else{
+                console.log("Your tax percentage is 0");
+            }
+
+        }
+        else if(eGender == "Female" || eGender == "female"){
+
+            console.log("Employee name is " + eName);
+            console.log("Employee age is " + eAge);
+            console.log("Employee gender is " + eGender);
+            console.log("Employee department is " + eDepartment);
+            console.log("Employee basic salary is " + basicSal);
+            console.log("Employee total salary is " + totalSal);
+
+            if (totalSal >= 200000) {
+                var tax = totalSal * (10/100);
+                console.log(tax);
+                var salaryInHand = totalSal - tax;
+                console.log("Your salary after applying tax is " + salaryInHand);
+            }
+            else if (totalSal >= 100000) {
+                var tax = totalSal * (5/100);
+                console.log(tax);
+                var salaryInHand = totalSal - tax;
+                console.log("Your salary after applying tax is " + salaryInHand);
+            }
+            else{
+                console.log("Your tax percentage is 0");
+            }
+        }
+        else{
+            console.log("Please give the information correctly");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

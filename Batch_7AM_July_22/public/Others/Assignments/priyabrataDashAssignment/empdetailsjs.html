@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <script type="text/javascript">
+        var ename=prompt("Enter user name");
+        var gender=prompt("Enter gender");
+        var dept=prompt("Enter department");
+        var basicsal=prompt("enter basic sal");
+        basicsal=parseInt(basicsal);
+        var pf=basicsal*(0.2);
+        var hra=basicsal*(0.12);
+        var total=pf+hra+basicsal;
+         
+    /*display*/
+    console.log("Employee name:-" + ename);
+    console.log("Gender:-" + gender);
+    console.log("Department name:-" + dept);
+    console.log("Basic salary:-" + basicsal);
+    console.log("pf:-" + pf);
+    console.log("hra:-" + hra);
+    console.log("Total salary:-" + total);
+
+
+
+
+
+   /*if */
+   var b ="will not come";
+   if(b=="will come"){
+   console.log("he will be happy" );
+   console.log("he will be dancing" );
+   console.log("he will be cheerful" );
+   }
+   if(b=="will not come"){
+   console.log("he will not be happy" );
+   console.log("he will not be dancing" );
+   console.log("he will not be cheerful" );
+   }
+   /*switch*/
+   var a=prompt("Ente 1st no.");
+   var b=prompt("Enter 2nd no.");
+   var c=prompt("Enter operator +,-,*,/");
+   a=parseInt(a);
+   b=parseInt(b);
+   switch(c){ 
+    
+   case "+":
+    console.log("the result is" + (a+b));
+   
+   case "-":
+    console.log("the result is" + (a-b));
+   
+   case "*":
+    console.log("the result is" + (a*b));
+
+   case "/":
+    console.log("the result is" + (a/b));
+ 
+   }
+    </script>
+</body>
+</html>

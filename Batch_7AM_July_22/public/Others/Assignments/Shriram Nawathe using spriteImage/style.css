@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(99, 201, 214);
+}
+.title ,h4{
+    color: black ;
+    background-color: yellow;
+    text-align: center;
+    border: 1px solid;
+    height: auto;
+    width: auto;
+    style="scroll-behavior: smooth;"
+    
+}
+
+.crickter{
+    
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.playerImage{
+   border: 1px solid;
+   height: 170px;
+   width: 290px;
+   background-image: url(players.png);
+}
+
+.p1{
+    background-position: -123px -16px;
+
+}
+
+.p2{
+    background-position: -500px -17px;
+}
+
+#p3{
+        background-position: -900px -19px;
+}
+
+#p4{
+    background-position: -120px -260px;
+}
+
+.p5{
+    background-position: -498px -267px;
+}
+
+.crickter{
+    background-color: white;
+}

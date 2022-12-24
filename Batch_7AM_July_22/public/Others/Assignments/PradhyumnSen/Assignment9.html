@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+    <style>
+        .heading {
+            border: 1px solid;
+            text-align: center;
+        }
+
+        .secondbox {
+            border: 1px solid;
+            width: 1500px;
+            height: 1160px;
+            margin-top: 19px;
+        }
+
+        .personaldetails,
+        .educationdetails,
+        .Address,
+        .abouturself {
+            border: 1px solid;
+            width: 150px;
+            text-align: center;
+            position: absolute;
+            background-color: white;
+            left: 53px;
+            top: 94px;
+        }
+
+        .thirdbox,
+        .fifthbox,
+        .fourthbox,
+        .sixthbox {
+            border: 1px solid;
+            height: 150px;
+            margin-top: 15px;
+            width: 1470px;
+            margin-left: 13px;
+        }
+
+        .fifthbox {
+            height: 200px;
+        }
+
+        .sixthbox {
+            height: 500px;
+        }
+
+        .sec1 {
+            margin-top: 10px;
+            padding-left: 5px;
+
+
+        }
+
+        .studentname,
+        .qualification,
+        .Languages,
+        .avg,
+        .mail,
+        .gendar,
+        .dno,
+        .streetname,
+        .State,
+        .country,
+        .self {
+            margin-top: 24px;
+            padding-left: 19px;
+        }
+
+        .courseopted {
+            float: right;
+            margin-top: -18px;
+        }
+
+        .educationdetails {
+            top: 261px;
+        }
+
+        .Address {
+            top: 429px;
+        }
+
+        .abouturself {
+            top: 645px;
+        }
+
+        .studentname div,
+        .mail div,
+        .gendar div,
+        .courseopted div,
+        .Languages div,
+        .qualification div,
+        .avg div,
+        .dno div,
+        .streetname div,
+        .State div,
+        .country div {
+            display: inline-block;
+            width: 247px;
+
+        }
+
+        .self1 textarea {
+            position: absolute;
+            left: 296px;
+            top: 675px;
+        }
+
+        .self {
+            position: absolute;
+            bottom: -86px;
+        }
+
+        .footer {
+            border: 1px solid;
+            width: 98%;
+            margin-top: 19px;
+            text-align: center;
+            margin-left: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h3>Registration student form</h3>
+    </div>
+    <form action="" method="get">
+        <div class="secondbox">
+            <div class="thirdbox">
+                <div class="personaldetails">
+                    Personal Details
+                </div>
+                <div class="sec1">
+                    <div class="studentname">
+                        <div>
+                            <label for="Student Name">Student Name:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Enter student name" required>
+                        </div>
+                    </div>
+                    <div class="courseopted">
+                        <div><label for="">Course Opted:</label></div>
+                        <div><select name="" id="">
+                                <option value="">Java full stack</option>
+                                <option value="">Python full stack</option>
+                                <option value="">c++</option>
+                                <option value="">UI full stack</option>
+                                <option value="">Data Structure</option>
+                            </select></div>
+                    </div>
+                    <div class="mail">
+                        <div><label for="">Mail Id.:</label></div>
+                        <div><input type="email" placeholder="enter mail id"></div>
+                    </div>
+                    <div class="gendar">
+                        <div><label for="">Gendar:</label></div>
+                        <div class="gendarinput">
+                            <input type="radio" name="Gendar">Male
+                            <input type="radio" name="Gendar">Female
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="fourthbox">
+                <div class="educationdetails">
+                    Education Details
+                </div>
+                <div class="sec2">
+                    <div class="qualification">
+                        <div><label for="">Qualification:</label></div>
+                        <div><input type="text"></div>
+                    </div>
+                    <div class="Languages">
+                        <div><label for="">Languages Known:</label></div>
+                        <div><input type="checkbox" name="" id="">English
+                            <input type="checkbox" name="" id="">Telgu
+                            <input type="checkbox" name="" id="">Hindi
+                            <input type="checkbox" name="" id="">Urdu
+                        </div>
+                    </div>
+                    <div class="avg">
+                        <div><label for="">Avg Marks</label></div>
+                        <div><input type="text"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fifthbox">
+                <div class="Address">
+                    Address
+                </div>
+                <div class="sec3">
+                    <div class="dno">
+                        <div><label for="">D.No.:</label></div>
+                        <div><input type="text"></div>
+                    </div>
+
+                    <div class="streetname">
+                        <div>
+                            <label for="">Street Name:</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+
+                    </div>
+                    <div class="State">
+                        <div><label for="">State:</label></div>
+                        <div>
+                            <select name="" id="">
+                                <option value="">Madhya pradesh</option>
+                                <option value="">Telangana</option>
+                                <option value="">Maharastra</option>
+                                <option value="">Assam</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="country">
+                        <div>
+                            <label for="">Country:</label>
+                        </div>
+                        <div>
+                            <select name="" id="">
+                                <option value="">India</option>
+                                <option value="">Usa</option>
+                                <option value="">Japan</option>
+                                <option value="">China</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sixthbox">
+                <div class="abouturself">
+                    About yourself
+                </div>
+                <div class="self">
+                    <label for="">About your self:</label>
+                </div>
+                <div class="self1">
+                    <textarea name="" id="" cols="150" rows="30"></textarea>
+                </div>
+
+            </div>
+            <div class="footer">
+                <h4>@copy rights 2022</h4>
+
+            </div>
+
+
+        </div>
+        </div>
+
+    </form>
+</body>
+
+
+</html>

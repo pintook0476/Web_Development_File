@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>primeNumberSum</title>
+</head>
+<h1>Sum of all the prime numbers between 1 and 100</h1>
+<script>
+        var result = 0;
+    for (var i = 1; i <= 100; i++) {
+        var count = 0;
+
+        for (j = 2; j < i ; j++) {
+            if (i % j == 0) {
+                count++;
+                break;
+            }
+        }
+        if (count == 0) {
+            result = result + i;
+        }
+    }
+    console.log(result);
+</script>
+
+</html>

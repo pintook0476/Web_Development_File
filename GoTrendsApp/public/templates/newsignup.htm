@@ -1,0 +1,44 @@
+<div class="signupBlock">
+    <ul>
+        <li> 
+            <input type="text" placeholder="Enter Account ID / Emailid / Phone no" class="form-control" id="accntId">
+        </li>
+        <li>
+            <input type="password" placeholder="Password" class="form-control" id="acctPwd" maxlength="8">
+        </li>
+        <li>
+            <input type="password" placeholder="Reenter Password" class="form-control" id="acctPwdr" maxlength="8">
+        </li>
+        <li>
+            <input type="text" placeholder="Account Mail Id" class="form-control" id="acctMailId" maxlength="25">
+        </li>
+           <!-- Hide pass icon -->
+                <label for="viewPwd" class="hide-pass"><i class="fa fa-eye"></i></label>
+                <input class="hide" type="checkbox" onchange="changePasswrdContrller()" id="viewPwd">
+       
+        <li>
+            <span id="capchaText"></span> <span class="error capchaErr">Invalid Capcha Text</span>
+            
+            <svg id="reloadIcon" onclick="showCapchaText()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+                <img src="" id="captchaImage">
+        </li>
+        <li>
+            <input type="checkbox" onchange="changePasswrdContrller()" id="viewPwd"> View Password
+        </li>
+        <li>
+            <input type="text" placeholder="Enter Text as above " class="form-control" id="userCapcha" onkeyup="enableLogin(event)">
+        </li>
+        <li>
+            <input type="button" value="Signup" class="btn btn-primary" onclick="signupNewUser()" id="signupBtn">
+        </li>
+        <li class="signupMsgBlock"> 
+            <span id="msg"></span>
+            <span>
+                <a href="#login" onclick="showSelectedPage('login')">Back to login page</a>
+            </span>
+        </li>
+    </ul>
+</div>

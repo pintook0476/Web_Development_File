@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: rgb(2, 16, 6);
+
+
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        .container {
+            float: left;
+            padding: 10px;
+        }
+
+        .container>li {
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 35px;
+            border-radius: 10px;
+        }
+
+
+        .gender {
+            margin-top: 20px;
+        }
+
+        .edu>li {
+            margin-top: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+
+        input {
+
+            padding: 5px;
+
+        }
+
+        .edu3>li {
+            margin-top: 20px;
+            font-size: 20px;
+            /* padding: 5px; */
+
+        }
+        legend{
+            border: 2px solid ;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 15px;
+        }
+        legend:hover{
+            background-color: chartreuse;
+            transform:scaleX(2);
+        }
+        fieldset {
+            font-size: 25px;
+            border: 2px solid;
+            color: rgb(15, 15, 15);
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            background-color: aliceblue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: auto;
+            
+        }
+
+        .landmark {
+            margin-left: 50px;
+        }
+
+        .foot, header {
+            border: 1px solid aliceblue;
+            text-align: center;
+            font-size: 25px;
+            color: aliceblue;
+            width: 95%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: brown;
+        }
+
+        form {
+
+            margin-top: 20px;
+            width: 95%;
+            padding: 10px;
+            border: 2px double whitesmoke;
+            color: aliceblue;
+            border: 1px solid;
+            border-radius: 10px;
+            overflow: auto;
+
+
+        }
+
+        
+
+        .submit {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: yellow;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            position: relative;
+            left: 30%;
+            width: 30%;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .submit:hover {
+            background-color: whitesmoke;
+            transform: rotate(10deg);
+        }
+        
+        #text{
+            margin-top: 20px;
+            border-radius: 10px;
+            /* background-color: chartreuse; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>Student Registration form</header>
+
+    <form action="">
+        <fieldset>
+            <legend>Students personal details</legend>
+            <ul class="container">
+                <li>
+                    <label for="">Student Name:-</label>
+                    <input type="text" required placeholder="Enter the name" name="name">
+                    <label for="">Course opted:-</label>
+                    <input type="text" placeholder=" Select Couese " name="couese">
+
+                </li>
+
+                <li>
+                    Mail_id
+                    <input type="email" name="mail" id="mailid">
+                </li>
+                <li class="gender">
+                    Gender:-
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Education Details</legend>
+            <ul class="edu">
+                <li>
+                    Education:-
+                    <input type="text" name="education" class="education">
+                </li>
+                <li>
+                    Language Known :-
+                    <input type="checkbox" name="language" id="language1">English
+                    <input type="checkbox" name="language" id="language2">Hindi
+                    <input type="checkbox" name="language" id="language3">Marathi
+                    <input type="checkbox" name="language" id="language4">Telagu
+                </li>
+                <li>
+                    Average mark :-
+                    <input type="text">
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <ul class="edu3">
+                <li>
+                    <label for="door">Door Number</label>
+                    <input type="text" name="door">
+
+                    <label for="landmark">Landmark:-</label>
+                    <input type="text" name="landmark">
+                </li>
+                <li>
+
+
+                </li>
+                <li>
+                    Street name:-
+                    <input type="text" class="street">
+
+                </li>
+                <li>State :-
+                    <select name="state" id="state">
+
+                        <option value=”Andaman and Nicobar Islands”>Andaman and Nicobar Islands</option>
+                        <option value=”Andhra Pradesh”>Andhra Pradesh</option>
+                        <option value=”Arunachal Pradesh”>Arunachal Pradesh</option>
+                        <option value=”Assam”>Assam</option>
+                        <option value=”Bihar”>Bihar</option>
+                        <option value=”Chandigarh”>Chandigarh</option>
+                        <option value=”Chhattisgarh”>Chhattisgarh</option>
+                        <option value=”Dadra and Nagar Haveli”>Dadra and Nagar Haveli</option>
+                        <option value=”Daman and Diu”>Daman and Diu</option>
+                        <option value=”Delhi”>Delhi</option>
+                        <option value=”Goa”>Goa</option>
+                        <option value=”Gujarat”>Gujarat</option>
+                        <option value=”Haryana”>Haryana</option>
+                        <option value=”Himachal Pradesh”>Himachal Pradesh</option>
+                        <option value=”Jammu and Kashmir”>Jammu and Kashmir</option>
+                        <option value=”Jharkhand”>Jharkhand</option>
+                        <option value=”Karnataka”>Karnataka</option>
+                        <option value=”Kerala”>Kerala</option>
+                        <option value=”Lakshadweep”>Lakshadweep</option>
+                        <option value=”Madhya Pradesh”>Madhya Pradesh</option>
+                        <option value=”Maharashtra” selected>Maharashtra</option>
+                        <option value=”Manipur”>Manipur</option>
+                        <option value=”Meghalaya”>Meghalaya</option>
+                        <option value=”Mizoram”>Mizoram</option>
+                        <option value=”Nagaland”>Nagaland</option>
+                        <option value=”Orissa”>Orissa</option>
+                        <option value=”Pondicherry”>Pondicherry</option>
+                        <option value=”Punjab”>Punjab</option>
+                        <option value=”Rajasthan”>Rajasthan</option>
+                        <option value=”Sikkim”>Sikkim</option>
+                        <option value=”Tamil Nadu”>Tamil Nadu</option>
+                        <option value=”Tripura”>Tripura</option>
+                        <option value=”Uttaranchal”>Uttaranchal</option>
+                        <option value=”Uttar Pradesh”>Uttar Pradesh</option>
+                        <option value=”West Bengal”>West Bengal</option>
+                    </select>
+                </li>
+                <li>
+                    Country:-
+                    <select name="country" id="country">
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">America</option>
+                        <option value="">England</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>About Your self</legend>
+            <ul class="edu">
+                <li>
+                    <label for="" class="about">About your self </label>
+                    <textarea name="text" id="text" cols="80" rows="10">Hello...</textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Submit" class="submit">
+                </li>
+            </ul>
+
+
+
+        </fieldset>
+    </form>
+    <footer>
+        <div class="foot">@copy rights 2022</div>
+
+    </footer>
+</body>
+
+</html>

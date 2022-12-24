@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Control Structure</title>
+</head>
+
+<body>
+
+    <script>
+        var userInput = prompt(`To check the condition type the following
+        even: To check the number is even
+        odd: To check the number is odd
+        prime: To check the number is prime
+        armstrong: To check the number is armstrong
+        palindrome: To check the number is palindrome
+        `)
+        switch (userInput) {
+            case 'even': // Even number
+
+                var n = prompt("Enter number ");
+                n = parseInt(n);
+
+                if (n % 2 == 0) {
+                    console.log(n + " is a Even number");
+                } else {
+                    console.log(n + " is not a Even number");
+                }
+                break;
+
+            case 'odd': // Even number
+
+                var n = prompt("Enter number ");
+                n = parseInt(n);
+
+                if (n % 2 != 0) {
+                    console.log(n + " is a Odd number");
+                } else {
+                    console.log(n + " is not a Odd number");
+                }
+                break;
+
+            case 'even': // Even number
+
+                var n = prompt("Enter number ");
+                n = parseInt(n);
+
+                if (n % 2 == 0) {
+                    console.log(n + " is a Even number");
+                } else {
+                    console.log(n + " is not a Even number");
+                }
+                break;
+
+            case 'prime': // Prime number
+
+                var n = prompt("Enter number ");
+                n = parseInt(n);
+
+                var count = 0;
+
+                for (var i = 2; i <= n - 1; i++) {
+
+                    var rem = n % i;
+
+                    if (rem == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                console.log("The total no of iteration is " + (i - 1));
+                if (count == 0) {
+                    console.log("It is a prime number");
+
+                } else {
+                    console.log("It is not a prime number");
+                }
+                break;
+
+            case 'armstrong': // Armstrong number
+                var n = prompt("Enter the number: ");
+                var arm, rem, sum = 0;
+                var temp = n;
+
+                while (n > 0) {
+                    rem = n % 10;
+                    arm = rem * rem * rem;
+                    sum = sum + arm;
+                    n = parseInt(n / 10);
+                }
+                n = temp;
+                if (sum == n) {
+                    console.log(n + " is an armstrong number");
+                } else {
+                    console.log(n + " is not an armstrong number");
+                }
+                break;
+
+            case 'palindrome': // Palindrome number
+                var n = prompt("Enter a number: ");
+                n = parseInt(n);
+                var temp = n
+                var rev = 0;
+                var rem;
+
+                while (n > 0) {
+                    rem = n % 10;
+                    rev = (rev * 10) + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+
+                }
+
+
+                if (temp == rev) {
+                    console.log(temp + " is a Pallindrome number");
+                } else {
+                    console.log(temp + " is not a pallindrome number");
+                }
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Product Details
+        </title>
+        <script src="../../../jquery.js"></script>
+        <link rel="stylesheet" href="pageStyles.css">
+        <script src="productApp.js"></script>
+    </head>
+    <body>
+        <div class="loadingGif">
+            <img src="https://i.stack.imgur.com/hzk6C.gif" alt="">
+        </div>
+        <div class="errorBlock">
+            Error while hitting sever.. Please try after sometime
+        </div>
+        <div class="mainTitle">
+            Product Details
+        </div>
+        
+        <div class="pDetailsContainer">
+            <input type="button" value="Get Product Details" onclick="getProductDetails()">
+        </div>
+        
+    </body>
+</html>

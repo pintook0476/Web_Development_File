@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>use of position </title>
+        <style>
+            .block{
+                width: 130px;
+                height: 130px;
+                border: 1px solid;
+            }
+            .header{
+                height: 25px;
+                border: 1px solid;
+                text-align: center;
+            }
+            .block1{
+                background-color: aqua;
+            }
+            .block2{
+                position: absolute;
+                left:45px;
+                top:90px;
+                background-color: aquamarine;
+            }
+            .block3{
+                position: absolute;
+                left:450px;
+                top:184px;
+                background-color: plum;
+                z-index: 2;
+            }
+            .block4{
+                position: absolute;
+                left:691px;
+                top:184px;
+                background-color:seagreen;
+                z-index: 2;
+            }
+            .block5{
+                width: 150px !important;
+                height: 150px !important;
+                background-color: cornflowerblue;
+                position: absolute;
+                top: 295px;
+                left: 563px;
+                z-index: 5;
+            }
+            .block6{
+                position: absolute;
+                left:450px;
+                top:429px;
+                background-color: plum;
+                z-index: 2;
+            }
+            .block7{
+                position: absolute;
+                left:691px;
+                top: 429px;
+                background-color:seagreen;
+                z-index: 2;
+            }
+            .block8{
+                position: absolute;
+                left:45px;
+                bottom: 20px;
+                background-color: aquamarine;
+                z-index: 4;
+            }
+            .block9{
+                position: absolute;
+                left:0px;
+                bottom: 0px;
+                background-color: aqua;  
+                z-index: 2;
+            }
+            .block10{
+                position: absolute;
+                right: 0px;
+                top: 36px;
+                background-color: aqua;  
+
+            }
+            .block11{
+                position: absolute;
+                right: 45px;
+                top: 90px;
+                background-color: aquamarine;
+
+            }
+            .block12{
+                position: absolute;
+                right:45px;
+                bottom: 20px;
+                background-color: aquamarine;
+                z-index: 4;
+            }
+            .block13{
+                position: absolute;
+                right:0px;
+                bottom: 0px;
+                background-color: aqua;  
+                z-index: 2;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">BLOCK GAME</div>
+        <div class="block block1">Block1</div>
+        <div class="block block2">Block2</div>
+        <div class="block block3">Block3</div>
+        <div class="block block4">Block4</div>        
+        <div class="block block5">Block5</div>
+        <div class="block block6">Block6</div>
+        <div class="block block7">Block7</div>
+        <div class="block block8">Block8</div>
+        <div class="block block9">Block9</div>
+        <div class="block block10">Block10</div>
+        <div class="block block11">Block11</div>
+        <div class="block block12">Block12</div>
+        <div class="block block13">Block13</div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallindrome Number</title>
+</head>
+<body>
+    <script>
+        // WAP to find out the user given number is pallindrome or not ?
+        var n = parseInt(prompt("Enter a Number"));
+        var rem;
+        var rev = 0;
+        var temp = n ;
+        while (n > 0){
+            rem = n % 10;
+            rev = ( rev * 10) + rem ;
+            n = n / 10;
+            n = parseInt(n);
+        }
+        if ( temp == rev){
+            console.log("it is a pallindrome number " + temp);
+        } else {
+            console.log("it is not a pallindrome number " + temp);
+        }
+
+        
+// WAP to find out all the Pallindrome numbers btn 10 to 1000 ?
+
+    /*for ( var i = 10; i <= 1000; i++){
+        var n = i;
+        n = parseInt(n);
+        var rem;
+        var temp = n;
+        var rev = 0;
+        while (n > 0){
+            rem = n % 10;
+            rev = ( rev * 10) + rem;
+            n = n / 10;
+            n = parseInt(n);
+        } 
+        if ( temp == rev){
+            console.log("it is a pallindrome number " + temp);
+        } else {
+            console.log("it is not a pallindrome number " + temp);
+        }
+    }*/
+   
+    </script>
+</body>
+</html>

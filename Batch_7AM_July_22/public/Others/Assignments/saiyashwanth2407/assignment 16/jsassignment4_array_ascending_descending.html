@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascending and descending</title>
+</head>
+<body>
+    <div>to perform ascending and descending of given array</div>
+
+    <script type="text/javascript">
+
+        var n=prompt("Enter the value of n");
+        var a=[];
+        for (var i=0; i<n; i++) {
+            a[i]=prompt("Enter the value for array" + (i+1));
+            a[i]=parseInt(a[i]);
+            
+        }
+        for (var i=0; i<a.length; i++) {
+            for (var j=0; j<a.length-1-i; j++) {
+                if ( a[j] > a[j+1] ) {
+                    var temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                    
+                }
+            }
+        }
+        console.log("The ascending order of given array is" + a);
+        for (var i=0; i<a.length; i++) {    
+            for (var k=0; k<a.length-1-i; k++) {
+                if ( a[k] < a[k+1] ) {
+                    temp=a[k+1];
+                    a[k+1]=a[k];
+                    a[k]=temp;  
+                }
+            }   
+        }
+        
+        console.log("The descending order of the given array is" + a);
+    </script>
+</body>
+</html>

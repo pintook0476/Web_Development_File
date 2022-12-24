@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Trgistration Details</title>
+
+</head>
+<style>
+    h3{
+        text-align: center;
+        padding: ;
+    }
+    .container{
+        border: 1px solid;
+        background-color: lightgrey;
+        
+        width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    li{
+        list-style:  none ;
+        border: 1px solid;
+        padding: 10px;
+        margin: 5px;
+        background-color: #fff;
+        height: 30px;
+
+    }
+
+    .abouturself{
+        height: 100px;
+    }
+</style>
+<body>
+    <h3>Student Registration Page</h3>
+
+   <form action="https://www.google.com" method="GET">
+<ul class="container">
+    <li>
+        <div for="userName" class="labelContent">Enter Student Name:
+        <input type="text" name="userName" placeholder="Enter Student Name" required></div>
+    </li>
+
+    <li>
+        <div for="userId" class="labelContent">Account ID:
+        <input type="text" name="userId" required></div>
+    </li>
+
+    <li>
+        Password:
+        <input type="password" required>
+    </li>
+
+    <li>
+        Gender:
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        
+    </li>
+
+    <li>
+        Language You Know:
+        <input type="checkbox" value="english">English
+        <input type="checkbox" value="hindi">Hindi
+        <input type="checkbox" value="telgu">Telgu
+    </li>
+
+    <li>
+        Country:
+        <select name="" id="">
+        <option value="" selected>India</option>
+        <option value="">USA</option>
+        <option value="">UK</option>
+        <option value="" >Japan</option>
+
+        </select>       
+    </li>
+    <li>
+        DOB:
+        <input type="date" required>
+        
+    </li>
+
+    <li class="abouturself">
+        
+        Tell About Yourself:<textarea maxlength="100" cols="50" rows="5"></textarea>
+    </li>
+
+
+
+    <li>
+        <input type="submit" value="Register student">
+        <input type="reset" value="Reset value">
+    </li>
+
+</ul>
+</form>
+</body>
+</html>

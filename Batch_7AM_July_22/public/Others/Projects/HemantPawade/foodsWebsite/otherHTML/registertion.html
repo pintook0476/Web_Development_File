@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: url(https://i.gifer.com/BEpH.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      div.main {
+        width: 400px;
+        margin: 100px auto 0px auto;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+
+      div.register {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        color: #fff;
+      }
+
+      form#register {
+        margin: 40px;
+      }
+
+      label {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      input#name {
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 7px;
+        background-color: #fff;
+        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      input#submit {
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        background-color: rgba(250, 100, 0, 0.8);
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        margin: 10px 0;
+      }
+
+      label,
+      span,
+      h2 {
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="register">
+        <h2>Register Here</h2>
+        <form id="register" method="post">
+          <label for="">First Name : </label>
+          <br />
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter Your First Name"
+          />
+          <br /><br />
+          <label for="">Last Name : </label>
+          <br />
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter Your Last Name"
+          />
+          <br /><br />
+          <label for="">Your Age : </label>
+          <br />
+          <input
+            type="number"
+            name="age"
+            id="name"
+            placeholder="How old are You?"
+          />
+          <br /><br />
+          <label for="">Email : </label>
+          <br />
+          <input
+            type="email"
+            name="age"
+            id="name"
+            placeholder="Enter Your Valid Email"
+          />
+          <br /><br />
+          <label for="">Gender : </label>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" male />
+          &nbsp;
+          <span id="male">Male</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="female" />
+          &nbsp;
+          <span id="female">Female</span>
+          <br /><br />
+          <label for="">Known Language : </label>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="hindi" />
+          &nbsp;
+          <span id="hindi">Hindi</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="eng" />
+          &nbsp;
+          <span id="eng">English</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="marathi" />
+          &nbsp;
+          <span id="eng">Marathi</span>
+          <br /><br />
+          <input type="submit" value="Submit" name="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

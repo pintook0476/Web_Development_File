@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image: url(images/backGroundImg.png);
+                background-repeat: no-repeat;
+                background-size: 100%; 
+            }
+             .header{
+                border: 2px solid white;
+                background-color: white;
+                width: 100%;
+                height: 82px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+            }
+            .websiteLogo{
+                position: absolute;
+                top: 16px;
+                left: 88px;
+                font-size: xx-large;
+                font-family: 'Alumni Sans Collegiate One', sans-serif;
+                
+            }
+            .logoimage{     
+                width: 132px;
+                height: 50px;
+            }
+            .language{
+                position: absolute;
+                top: 10px;
+                left: 125px;
+                width: 120px;
+                height: 22px;
+            }
+            .search{
+                position: absolute;
+                top: 0px;
+                left: 320px;
+                width: 555px;
+                height: 45px;
+            }
+            .searchIcon{
+                position: absolute;
+                top: 13px;
+                left: 848px;
+                width: 18px;
+                height: 19px;
+            }
+            .headerRightLogoName{
+                position: absolute;
+                top: 50px;
+            }
+            .homeLogoName{
+                left: 1000px;
+            }
+            .homeAccountLogoImg{
+                position: absolute;
+                top: 17px;
+                width: 40px;
+                height: 36px;
+            }
+            .homeLogoImg{
+                left: 1000px;
+           }
+            .accountLogoName{
+                 left: 1090px;
+            }
+            .accountLogoImg{
+                left: 1096px;
+               
+            }
+            .logoLink{
+                text-decoration: none;
+                color: black;
+            }
+            .cartLogoName {
+                position: absolute;
+                top: 50px;
+                left: 1196px;
+            }
+            .cartLogoImg{
+                position: absolute;
+                top: 23px;
+                left: 1196px;
+                width: 28px;
+                height: 26px;
+            }
+            .errowLogoName{
+                position: absolute;
+                top: 50px;
+                left: 1270px;
+            }
+            .errowLogoImg{
+                position: absolute;
+                top: 23px;
+                left: 1288px;
+                width: 28px;
+                height: 26px;
+            }
+            .shpngCashSpprtPymntLogo{
+                position: absolute;
+                top: 159%;
+                width: 40px ;
+            }
+            .freeShippingLogo{
+                left: 2%;
+            }
+            .freeShipping{
+                position: absolute;
+                top: 156%;
+                left: 6%;
+            }
+            .cashOnDeliveyLogo{
+                left: 26%;
+            }
+            .cashOnDelivery{
+                position: absolute;
+                top: 156%;
+                left: 30%;
+            }
+            .onlinSupportLogo{
+                left: 54%;
+                
+            }
+            .onlineSupport{
+                position: absolute;
+                top: 156%;
+                left: 58%; 
+            }
+            .safePaymentLogo{
+                left: 80%;
+            }
+            .safePayments{
+                position: absolute;
+                top: 156%;
+                left: 84%;  
+            }
+            .footer{
+                border: 1px solid;
+                position: absolute;
+                top: 174%;
+                width: 100%;
+                margin-left: -10px;
+                background-color: #005226;
+                height: 75%;
+            }
+            .footerLink{
+                text-decoration: none;
+                color: #fbf208;
+            }
+            li{
+                list-style: none;
+                color: #fbf208;
+                padding: 5px;
+            }
+            .aboutUsHeading{
+                position: absolute;
+                top: -18%;
+            }
+            .aboutUs{
+                position: absolute;
+                top: 11%;
+                
+            }
+            .aboutUsFooter{
+                position: absolute;
+                top: 135%;
+            }
+            .footerContent{
+                position: absolute;
+                top: 2%;
+            }
+            .category{
+                left: 38%;
+            }
+            .moreInformation{
+                left: 58%;
+            }
+            
+            .information{
+                left: 79%;
+            }
+            .followUs{
+                position: absolute;
+                top: 202%; 
+
+            }
+            .footerLogo{
+                position: absolute;           
+                top: 88%;
+                width: 26px;
+                height: 26px;
+            }
+            .footerFbLogo{
+                left: 82%;
+            }
+            .footertwitterLogo{
+                left: 84%;
+                
+            }
+            .footerInstaLogo{
+                left: 86%;
+            }
+            .footerYoutubeLogo{
+                left: 88%;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            .messageButton {
+                position: absolute;           
+                top: 88%;
+                left: 88%;
+            }
+            
+             
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <img class="logoimage" src="images/logo1.png" alt="">
+            </div>
+            <div class="websiteLogo">
+                EasyCart
+                <select class="language" name="" id="">
+                    <option value="">
+                        English     
+                    </option>
+                    <option value="">
+                        Hindi    
+                    </option>
+                    <option value="">
+                        Telugu   
+                    </option>
+                    <option value="">
+                        Urdu    
+                    </option>
+                    <option value="">
+                        Arabic     
+                    </option>
+                </select>
+                <input class="search" type="search" name="" id="" placeholder="Search for product, brands and more ">
+                <div >
+                    <img class="searchIcon" src="images/Search.png" alt="">
+                </div>
+            </div>
+            <div class="homeLogoName headerRightLogoName">
+                <a class="logoLink" href="homePage.html">Home</a>
+            </div>
+            <div>
+                <img src="images/homeLogo.png" alt="" class="homeLogoImg homeAccountLogoImg">
+            </div>
+            <div class="accountLogoName headerRightLogoName">
+                <a class="logoLink" href="signInPage.html">Account</a>
+            </div>
+            <div>
+                <img class="accountLogoImg homeAccountLogoImg" src="images/accountIcon.jpg" alt="">
+            </div>
+            <div class="cartLogoName headerRightLogoName">
+                <a class="logoLink" href="mno.com" target="_blank">Cart</a>
+            </div>
+            <div>
+                <img class="cartLogoImg" src="images/cartIcon.png" alt="">
+            </div>
+            <div class="errowLogoName headerRightLogoName">
+                <a class="logoLink" href="mno.com" target="_blank">Check Out</a>
+            </div>
+            <div>
+                <img class="errowLogoImg" src="images/errowIcon.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="images/shippingLogo.PNG" alt="" class="freeShippingLogo shpngCashSpprtPymntLogo">
+            <div class="freeShipping">
+               <p>FREE SHIPPING</p>
+               <P>For All Prepaid Orders</P>
+            </div>
+            <img src="images/cashOnDLogo.PNG" alt="" class="cashOnDeliveyLogo shpngCashSpprtPymntLogo">
+            <div class="cashOnDelivery">
+               <p>CASH ON DELIVERY</p>
+               <P>Pay By Cash On Delivery</P>
+            </div>
+            <img src="images/onlineSupportLogo.PNG" alt="" class="onlinSupportLogo shpngCashSpprtPymntLogo">
+            <div class="onlineSupport">
+                <p>ONLINE SUPPORT</p>
+                <p>24 Hours Chat Support</p>
+            </div>
+            <img src="images/safePaymentsLogo.PNG" alt="" class="safePaymentLogo shpngCashSpprtPymntLogo">
+            <div class="safePayments">
+                <p>SAFE PAYMENTS</p>
+                <P>Secure Payment Methods</P>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ul class="aboutUs">
+                    <li class="aboutUsHeading">EasyCart</li>
+                    <li>EasyCart, established in 2010 is a pioneer in</li>
+                    <li>manufacturing of our traditional Items. Our products</li>
+                    <li>are manufactured using the fine artistry of our weavers</li>
+                    <li>who produce the most unique and majestic designs that</li>
+                    <li>are not available anywhere else. We continue to enjoy</li>
+                    <li>the support and loyalty of our customers due to our</li>
+                    <li>long standing commitment towards upholding our</li>
+                    <li>cherished traditions and values.</li>
+                    <li class="aboutUsFooter">© 2022 EasyCart</li>
+                </ul>
+                <ul class="category footerContent">
+                    <li><a href="mno.com" class="footerLink">Category</a></li>
+                    <li><a href="mno.com" class="footerLink">Men</a></li>
+                    <li><a href="mno.com" class="footerLink">Women</a></li>
+                    <li><a href="mno.com" class="footerLink">Kids</a></li>
+                    <li><a href="mno.com" class="footerLink">Accessories</a></li>
+                    <li><a href="mno.com" class="footerLink">New Arrivals</a></li>
+                </ul>
+                <ul class="moreInformation footerContent">
+                    <li><a href="mno.com" class="footerLink">Search</a></li>
+                    <li><a href="mno.com" class="footerLink">About Us</a></li>
+                    <li><a href="mno.com" class="footerLink">Order Look Up</a></li>
+                    <li><a href="mno.com" class="footerLink">Track Order</a></li>
+                    <li><a href="mno.com" class="footerLink">Return Centers</a></li>
+                    <li><a href="mno.com" class="footerLink">Carrers</a></li>
+                    <li><a href="mno.com" class="footerLink">Contact Us</a></li>
+                </ul>
+                <ul class="information footerContent">
+                    <li><a href="mno.com" class="footerLink">Privacy Policy</a></li>
+                    <li><a href="mno.com" class="footerLink">Disclamier</a></li>
+                    <li><a href="mno.com" class="footerLink">Terms and Condition</a></li>
+                    <li><a href="mno.com" class="footerLink">Shipping And Delivery</a></li>
+                    <li><a href="mno.com" class="footerLink">Refund / Return Policy</a></li>
+                    <li><a href="mno.com" class="footerLink">Blogs</a></li>
+                    <li class="followUs"><a href="mno.com" class="footerLink">Follow Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="footerFbLogo footerLogo" src="images/facebookLogo.PNG" alt="">
+            </div>
+            <div>
+                <img class="footertwitterLogo footerLogo" src="images/twitterLogo.PNG" alt="">
+            </div>
+            <div>
+                <img class="footerInstaLogo footerLogo" src="images/instaLogo.PNG" alt="">
+            </div>
+            <div>
+                <img class="footerYoutubeLogo footerLogo" src="images/youtubeLogo.PNG" alt="">
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="header">
+            Naresh IT University
+        </div>
+        <div class="cContainer"> 
+          College Details
+          <ul>
+                <li>
+                    College Name :
+                    <input type="text" class="cname">
+                </li>
+                <li>
+                    College Code :
+                    <input type="text" class="ccode">
+                </li>
+                <input type="button" value="Submit" onclick="collegedetailsdisplay();">
+          </ul>  
+        </div>
+        <div class="sContainer"> 
+            Student Details
+            <ul>
+              <li>
+                  Student Name :
+                  <input type="text" class="sname">
+              </li>
+              <li>
+                  Age :
+                  <input type="text" class="sage">
+              </li>
+              <li>
+                  Gender:
+                    Male<input type="radio" class="Gender" name="gender" value="male" checked>
+                    Female<input type="radio" class="Gender" name="gender" value="female">
+              </li>
+              <li>
+                    Class :
+                    <select class="classes">
+                        <option> Class 1 </option>
+                        <option> Class 2 </option>
+                        <option> Class 3 </option>
+                        <option> Class 4 </option>
+                        <option> Class 5 </option>
+                    </select>
+              </li>
+              <li>
+                   Sport :
+                    <select class="sport">
+                    <option> Cricket </option>
+                    <option> Football </option>
+                    <option> Tennis </option>
+                    </select>
+              </li>
+              <input type="button" value="Register" onclick="studentdetailsdisplay();">
+            </ul>  
+          </div>
+          <div class="displayDetails">
+            Successfully Registered!
+                <ul>
+                    <li>
+                        College Name : <span class="dclg"> </span>
+                    </li>
+                    <li>
+                        College Code : <span class="dclgcode"> </span>
+                    </li>
+                    <hr>
+                    <li>
+                        Name : <span class="dname"> </span>
+                    </li>
+                    <li>
+                        Age : <span class="dage"> </span>
+                    </li>
+                    <li>
+                        class : <span class="dclass"> </span>
+                    </li>
+                    <li>
+                        Gender : <span class="dgender"> </span>
+                    </li>
+                    <li>
+                        Sports Selected : <span class="dsports"> </span>
+                    </li>
+                        <input type="button" value="Print Document">
+                        <input type="button" value="Done">
+                </ul>
+          </div>
+          <div class="allContainer"> 
+            details:
+          </div>
+
+        
+          <script src="./app.js"></script>
+    </body>
+</html>

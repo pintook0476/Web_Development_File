@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Prime Number
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Start Of Execution");
+            var n = prompt("enter a number"), list;
+                n =parseInt(n);
+            for (var i = 1; i <= 100; i++) {
+                if (n % i == 0) {
+                list += i;
+                console.log(i);
+                }
+            }
+            if (list == 2) { // u got only twice as reminder
+                console.log("list of all prime numbers is" + n);
+            }
+            console.log("list of all prime numbers is" +n);
+            console.log("End")
+        </script>
+    </body>
+</html>

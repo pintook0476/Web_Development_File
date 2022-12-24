@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var name=prompt(" Enter Employee Name:");
+        var age=prompt("Enter Employee Age:");
+        var gender=prompt("Enter Employee gender:");
+        var dep=prompt("Enter Employee depatment:");
+        var bs=prompt("Enter basic salary:");
+        var tax;
+
+        if(gender=="male")
+        {
+                if(bs>=200000)
+                {
+                    var tax=bs*.15;
+
+                }
+
+                else if(bs>=100000 && bs<200000)
+                {
+                    var tax=bs*.1;
+                    
+                }
+
+                else 
+                {
+                    if(bs>=50000 && bs<100000)
+                {
+                    var tax=bs*.05;
+                    
+                }
+            }
+        }
+
+        if(gender=="female")
+        {
+                if(bs>=200000)
+                    {
+                        var tax=bs*.1;
+
+                    }
+
+                if(bs>=100000 && bs<200000)
+                    {
+                        var tax=bs*.05;
+                        
+                    }
+
+                if(bs>=50000 && bs<100000)
+                    {
+                        var tax=bs*.03;
+                        
+                    }
+
+        }
+
+        console.log(" Name: " +name);
+        console.log("age" +age);
+        console.log("Gender:" +gender);
+        console.log("Department:"+dep);
+        console.log("Basic Salary:"+ bs);
+        console.log("Total Tax Paid:"+ tax);
+
+
+    </script>
+</body>
+</html>

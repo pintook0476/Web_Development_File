@@ -1,0 +1,142 @@
+.header {
+    background-color: #222831;
+    padding: 20px 15px;
+    margin-bottom: 0%;
+}
+
+.logoImageContainer {
+    position: absolute;
+    float: left;
+    margin: -19px 24px;
+}
+
+.logoImg {
+    height: 37px;
+    width: 37px;
+}
+
+.logoTextContainer {
+    position: absolute;
+    font-weight: bold;
+    font-size:23px;
+    margin: -15px 60px;
+    color: aliceblue;
+}
+
+.logoColor {
+    color: orange;
+}
+
+.mainContainer {
+    position: absolute;
+    background-color: #222831;
+    border: 1px solid black;
+    height: 460px;
+    width: 600px;
+    margin: 4% 30%;
+
+}
+
+.text1 {
+    font-size: larger;
+    margin-top: 70px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.text2 {
+    font-size: larger;
+    margin-top: 140px;
+    margin-left: 145px;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.text3{
+    position: absolute;
+    margin-top: 212px;
+    margin-left: 261px;
+    color: rgba(255, 255, 255, 0.594);
+    font-size: large;
+    text-decoration: underline;
+}
+.text3:hover {
+    color: orange;
+}
+
+
+.text4 {
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 239px;
+    color: rgba(255, 255, 255, 0.594);
+
+    font-size: large;
+    text-decoration: underline;
+
+}
+
+.text4:hover {
+color: orange;
+}
+
+.textBox1 {
+    position: absolute;
+    color: white;
+    margin: 70px 283px;
+    height: fit-content;
+
+}
+
+.textBox2 {
+    position: absolute;
+    margin: 140px 283px;
+
+}
+
+.loginHead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.loginButton {
+    background-color: orange;
+    color: white;
+    position: absolute;
+    margin: 309px 255px;
+    padding: 5px 25px;
+}
+.footer {
+    background-color: #222831;
+    padding: 15px 15px;
+}
+
+.imgContainer {
+    position: absolute;
+    margin: 90px 519px;
+}
+
+.img1 {
+    height: 435px;
+}
+
+.body {
+    clear: both;
+    background-color: #E1FFEE;
+    height: 600px;
+}
+
+.copyright {
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+

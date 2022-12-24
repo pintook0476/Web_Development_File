@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log('Student details example')
+            var studentName = 'Teena', total, avg;
+            var sage = 10;
+            var sgender = 'Female';
+            var m1 = 12;
+            var m2 = 11;
+            var m3 = 10;
+            var m4 = 10;
+            var m5 = 78;
+
+            total = m1 + m2 + m3 + m4 + m5;
+            avg = total / 5;
+
+            console.log("Student name is " + studentName);
+            console.log("Age is " + sage);
+            console.log("Gender is " + sgender);
+            console.log("Total is " + total);
+            console.log("AVg is " + avg);
+
+            /*if ( avg >= 40) {
+                console.log("Student got passed");
+            }
+
+            if (avg < 40) {
+                console.log("Student got failed");
+            }*/
+
+            if (avg >= 40) {
+                console.log("passed");
+                if (avg >= 90) {
+                    console.log("Distiction");
+                } else if (avg >= 60) {
+                    console.log("first class");
+                } else {
+                    console.log("SEcond class");
+                }
+            } else {
+                console.log("Failed")
+            }
+        </script>
+    </body>
+</html>
+

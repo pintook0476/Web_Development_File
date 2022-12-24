@@ -1,0 +1,35 @@
+body{
+    background-color: red;
+}
+.heading,.footer{
+    border: 4px solid;
+    text-align: center;
+    font-size: 30px ;
+    font-weight: bold;
+    margin: 10px;
+    background-color: silver;
+    
+}
+.container{
+    border: 4px solid ;
+    height: 550px;
+    margin:10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+table,td,th{
+    text-align: center;
+    border-collapse: collapse;
+    width: 1173px;
+    font-weight: bolder;
+    border-color:burlywood;
+    
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+    
+    

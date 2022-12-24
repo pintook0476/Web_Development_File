@@ -1,0 +1,16 @@
+body{
+    background-image: url(images/john-lee-oMneOBYhJxY-unsplash.jpg); 
+    width: 800px;
+    height: 600px; 
+}
+
+
+.Home{
+    background-image: url(../images/john-lee-oMneOBYhJxY-unsplash.jpg);
+    width: 800px;
+    height: 600px;
+    border: 2px solid;
+}
+.Login{
+    display: flex;
+}

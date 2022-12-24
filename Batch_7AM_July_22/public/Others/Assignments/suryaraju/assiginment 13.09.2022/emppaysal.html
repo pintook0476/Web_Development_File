@@ -1,0 +1,75 @@
+<Doctype html>
+    <html>
+        <head>
+            <title>
+
+            </title>
+            <link rel="stylesheet" href="sss.css">
+        </head>
+        <body>
+            <div class="header">Empoloyee salary details</div>
+            <ul>
+                <li>
+                    Enter the name:
+                    <input type="text" id="ename">
+                </li>
+                <li>
+                    Enter the agre:
+                    <input type="text" id="eage">
+                </li>
+                <li>
+                    Gender:
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </li>
+                <li>
+                    Deportment:
+                    <select name="empdep" id="edep">
+                        <option value="">It</option>
+                        <option value="">networking</option>
+                        <option value="">sales</option>
+                        <option value="">hr</option>
+                    </select>
+                </li>
+                    <li>
+                        <label for="ebsal">enter the basicsalary: &nbsp;</label>
+                        <input type="text" name="ebsal" id="bascisalary">
+                    </li>
+                    <div class="button"><input type="button" value="getPayslip" id="submit" onclick="generatePayslip ();"></div>
+                
+            </ul>
+            <ul class="Payslip">
+                <li class="inner">
+                    <b>Empoloyee Name:</b> <span id="rname"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee Age:</b> <span id="rage"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee gender:</b> <span id="rgender"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee Deportment:</b> <span id="rdept"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee basic salary:</b> <span id="rbsal"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee pf:</b> <span id="rpf"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee hra:</b> <span id="rhra"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee total salary:</b> <span id="rtotalsal"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee tax:</b> <span id="etax"></span>
+                </li>
+                <li class="inner">
+                    <b>Empoloyee salary after tax duraction:</b> <span id="tsal"></span>
+                </li>
+            </ul>
+            <script src="employeeDetails.js"></script>
+        </body>
+    </html>

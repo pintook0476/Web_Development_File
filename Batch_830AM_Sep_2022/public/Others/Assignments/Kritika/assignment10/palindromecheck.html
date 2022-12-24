@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var n = prompt("Enter any digit number");
+            n= parseInt(n);
+            var num = n;
+            var pNum = 0;
+
+            while(num > 0)
+            {
+                var digit = num % 10;      //1 , 2 , 1...
+                pNum = (pNum * 10) + digit;     //0 * 10 + 1 = 1...
+                num = num /10;
+                num = parseInt(num);
+            }
+            if (n == pNum)
+            {
+                console.log(n + " is a Palindrome");
+            }
+            else
+            {
+                console.log(n+ " is not a Palindrome");
+            }
+    </script>
+</body>
+</html>

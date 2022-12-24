@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>
+            Emp Detials using JS
+        </title>
+        <style>
+            /*.header {
+                margin: 2px;
+                padding: 2px;
+                border: 2px solid black;
+            }*/
+            .empblock {
+                margin: 2px;
+                padding: 2px;
+                border: 2px solid blue;
+                height: 600px;
+                overflow: auto;
+            }
+           img {
+                margin: 5px;
+                padding: 5px;
+                height: 150px;
+                width: 100px;
+                float: left;
+            }
+            .empdetailscss { 
+                margin: 2px;
+                padding: 2px;
+                border: 2px solid yellow;
+            }
+
+            .eDtails1 {
+                border: 2px solid rgb(10, 111, 78);
+                margin: 2px;
+                padding: 2px;
+            }
+
+            .eDtails {
+                border: 2px solid aquamarine;
+                margin: 2px;
+                padding: 2px;
+            }
+            .empmain {
+                margin: 2px;
+                padding: 2px;
+            }
+
+           /* .imgcontainercss{
+                margin : 2px;
+                padding: 2px;
+                width: 150px;
+                height: 200px;
+                float: left;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class="header"> </div>
+        
+        <script>
+        var eDetails = [
+            {
+                name : 'Employee1',
+                age : 25,
+                gender : 'Male',
+                basicsal : 250000,
+                taotalsal : 280000,
+                pf : 18,
+                image : "file:///D:/UI%20Full%20stack/Node_js/public/Ex/JS/emp.png"
+            },
+
+            {
+                image : "https://cdn-icons-png.flaticon.com/512/1869/1869679.png",
+                name : 'Employee2',
+                age : 25,
+                gender : 'Female',
+                basicsal : 250000,
+                taotalsal : 280000,
+                pf : 18,
+            },
+
+            {
+                name : 'Employee3',
+                age : 25,
+                gender : 'Male',
+                basicsal : 250000,
+                taotalsal : 280000,
+                pf : 18,
+                image : "https://cdn-icons-png.flaticon.com/512/1869/1869679.png"
+            },
+
+            {
+                name : 'Employee4',
+                age : 35,
+                gender : 'Male',
+                basicsal : 550000,
+                taotalsal : 600000,
+                pf : 18,
+                image : "https://cdn-icons-png.flaticon.com/512/1869/1869679.png"
+            }
+
+        ]
+        var loadEmpDetials = (empDetails) => {
+            /*var emp1 = document.createElement('div');
+            emp1.setAttribute("class", "empdetailscss");
+            emp1.innerHTML = "hello";
+            document.querySelector(".header").append(emp1);*/
+
+            /*var img = document.createAttribute('div');
+            img.setAttribute("class", "empdetailscss");*/
+
+            
+            var empmain = document.createElement('div');
+            empmain.setAttribute('class', 'edtails1');
+            
+
+            var imgcontainer = document.createElement('div');
+            imgcontainer.setAttribute("class", 'imgcontainercss');
+                var empimg = document.createElement('img');
+                empimg.setAttribute("src", empDetails.image);
+                imgcontainer.append(empimg);
+                //img.append(empimg);
+            empcontainer.append(empmain);
+
+            var empcontainer = document.createElement('div');
+            empcontainer.setAttribute('class', "eDtails");
+            empmain.append(empcontainer);
+
+            
+            
+            
+
+
+
+            var empname = document.createElement('div');
+            empname.setAttribute("class", "empdetailscss");
+            empname.innerHTML ="Employee Name : " + empDetails.name;
+            empcontainer.append(empname); 
+            
+            var empage = document.createElement('div');
+            empage.setAttribute("class", "empdetailscss");
+            empage.innerHTML ="Employee Age : " + empDetails.age;
+            empcontainer.append(empage);
+
+            var empgender = document.createElement('div');
+            empgender.setAttribute("class", "empdetailscss");
+            empgender.innerHTML ="Employee Gender : " + empDetails.gender;
+            empcontainer.append(empgender);
+
+            var empbasicsal = document.createElement('div');
+            empbasicsal.setAttribute("class", "empdetailscss");
+            empbasicsal.innerHTML ="Employee Basic Salary : " + empDetails.basicsal;
+            empcontainer.append(empbasicsal);
+
+            var emptotalsal = document.createElement('div');
+            emptotalsal.setAttribute("class", "empdetailscss");
+            emptotalsal.innerHTML ="Employee Total Salary : " + empDetails.taotalsal;
+            empcontainer.append(emptotalsal);
+
+            var emppf = document.createElement('div');
+            emppf.setAttribute("class", "empdetailscss");
+            emppf.innerHTML ="Employee PF : " + empDetails.pf;
+            empcontainer.append(emppf);
+            
+            
+
+        document.querySelector(".header").append(empmain);
+
+        }
+        for (var i = 0 ; i < eDetails.length ; i++) {
+            loadEmpDetials(eDetails[i]);
+        }
+
+        //loadEmpDetials();
+        </script>
+    </body>
+</html>

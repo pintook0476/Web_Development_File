@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Assignment 25</title>
+    </head>
+    <body>
+        <h3>Finding palindrom number inside a array</h3>
+        <script>
+            var dataInput=() =>{
+                var data=[1,2,3,4,121,242,45,67,55,668,66];
+                findingPalindrom(data);
+            }
+            var findingPalindrom=(data) =>{
+                for(var i=0;i<data.length;i++){
+                    var a=data[i];
+                    var b=a;
+                    var pal=0;
+                    var rem;
+                    while(a>0){
+                        rem=a%10;
+                        pal=pal*10+rem;
+                        a=parseInt(a/10);
+                    }
+                    if(pal==b){
+                        console.log(pal);
+                    }
+                }
+            }
+            dataInput();
+        </script>
+    </body>
+</html>

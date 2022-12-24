@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details with JSON function</title>
+  </head>
+  <body>
+    <script>
+      var studentdetails = {};
+        
+          studentdetails.sname = prompt("Enter The Name");
+          studentdetails.sclass = prompt("Enter The Class");
+          studentdetails.subject1 = parseInt(prompt("Enter The subject1 Mark"));
+          studentdetails.subject2 = parseInt(prompt("Enter The subject2 Mark"));
+          studentdetails.subject3 = parseInt(prompt("Enter The subject3 Mark"));
+          studentdetails.subject4 = parseInt(prompt("Enter The subject4 Mark"));
+          studentdetails.subject5= parseInt(prompt("Enter The subject5 Mark"));
+        
+        
+        
+          studentdetails.totalmark = studentdetails.subject1 + studentdetails.subject2 + studentdetails.subject3 + studentdetails.subject4 + studentdetails.subject5;
+          studentdetails.avgmark = studentdetails.totalmark / 5;
+          studentdetails.percentage = (studentdetails.totalmark * 100) / 500;
+          
+      
+        
+          console.log("Student Details");
+          console.log("Student Name: " + studentdetails.sname);
+          console.log("Student Class: " + studentdetails.sclass);
+          console.log("Student subject1: " + studentdetails.subject1);
+          console.log("Student subject2: " + studentdetails.subject2);
+          console.log("Student subject3: " + studentdetails.subject3);
+          console.log("Student subject4: " + studentdetails.subject4);
+          console.log("Student subject5: " + studentdetails.subject5);
+          console.log("Student Total Mark:"+ studentdetails.totalmark);
+          console.log("Student Average Mark:"+ studentdetails.avgmark);
+          console.log("Student Total Percentage :"+ studentdetails.percentage +"%");          
+      
+    
+      
+      console.log(studentdetails);
+    </script>
+  </body>
+</html>

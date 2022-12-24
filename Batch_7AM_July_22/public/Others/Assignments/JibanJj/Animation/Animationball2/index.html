@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container{
+        border: 1px solid;
+        height: 500px;
+        width: 500px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: black;
+    }
+    .circle{
+        border: 1px solid;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-left: 5px;
+        animation: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        background-image: url(images/man1.jpg);
+        background-size: cover;
+    }
+    @keyframes rotation {
+        13% {
+        margin-top: 200px;
+        margin-left: 200px;
+        background-image: url(images/man2.jpg);
+        background-size: cover;
+        }
+        26% {
+        margin-top: 5px;
+        margin-left: 390px;
+        background-image: url(images/man3.jpg);
+        background-size: cover;
+        }
+        39% {
+        margin-top: 200px;
+        margin-left: 200px;
+        background-image: url(images/man2.jpg);
+        background-size: cover;
+        }
+        52%{
+        margin-top: 390px;
+        margin-left: 390px;
+        background-image: url(images/man4.jpg);
+        background-size: cover;
+        }
+        65% {
+        margin-top: 200px;
+        margin-left: 200px;
+        background-image: url(images/man2.jpg);
+        background-size: cover;
+        }
+        78% {
+        margin-top: 390px;
+        margin-left: 10px;
+        background-image: url(images/man5.jpg);
+        background-size: cover;
+        }
+        91% {
+        margin-top: 200px;
+        margin-left: 200px;
+        background-image: url(images/man2.jpg);
+        background-size: cover;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="circle">
+             
+        </div>
+    </div>
+</body>
+</html>

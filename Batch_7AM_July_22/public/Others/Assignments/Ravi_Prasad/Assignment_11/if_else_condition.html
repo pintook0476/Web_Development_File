@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="" direction="">
+    <H3 class="header">
+     This is Male and Female Salary Details using if and else conditon
+    </H3>
+</marquee>
+    <script>
+        var workername = prompt("Enter workername");
+        var gender = prompt("enter your gender");
+        var age = prompt("Enter your Age");
+        var dpt = prompt("Enter your Department");
+        var besicsal = prompt("Enter your Besic Salary");
+        besicsal = parseFloat(besicsal);
+       
+        var pf = besicsal * (15 / 100);
+        var hra = besicsal * (25 / 100);
+        var totalSal = pf + hra + besicsal;
+
+        console.log('Worker_Name ' + workername);
+        console.log('Gender ' + gender);
+        console.log('Age ' + age);
+        console.log('Department ' + dpt);
+        console.log("Besic Salary " + besicsal);
+        console.log("PF " + pf);
+        console.log("HRA " + hra);
+        console.log("Total salary " + totalSal);
+
+        if (gender == "Male" || gender == "male"){
+            if (totalSal >= 20000){
+                console.log("Your tax percentage is 15% ");
+                var tax = totalSal * (15 / 100);
+                console.log ('Total tax paid Rs. : ' + tax);
+            }
+            else if ( totalSal >= 10000 && totalSal <19000){
+                console.log ("Your tax percentage is 10%" );
+                var tax = totalSal *(10/100);
+                console.log ("Total tax paid Rs. " + tax);
+            }
+            else if (totalSal >= 5000 && totalSal <10000){
+                console.log ("Your tax percentage 5% ");
+                var tax = totalSal *(5 / 100);
+                console.log("Total tax paid Rs. " + tax); 
+            }
+            else{
+                console.log("Your tax percentage 0%")
+                var tax = 0;
+                console.log("Total paid tax Rs. "+ 0);
+            }
+        }
+
+        if (gender == "Female" || gender == "female"){
+            if (totalSal >= 20000){
+                console.log("Your tax percentage is 10% ");
+                var tax = totalSal * (10 / 100);
+                console.log ('Total tax paid Rs. : ' + tax);
+            }
+            else if ( totalSal >= 10000 && totalSal <19000){
+                console.log ("Your tax percentage is 5%" );
+                var tax = totalSal *(5 / 100);
+                console.log ("Total tax paid Rs. " + tax);
+            }
+            else if (totalSal >= 5000 && totalSal <10000){
+                console.log ("Your tax percentage 2% ");
+                var tax = totalSal *(2 / 100);
+                console.log("Total tax paid Rs. " + tax); 
+            }
+            else{
+                console.log("Your tax percentage 0%")
+                var tax = 0;
+                console.log("Total paid tax Rs. "+ 0);
+            }
+        }
+
+        /* Your are  */
+    </script>
+
+</body>
+
+</html>

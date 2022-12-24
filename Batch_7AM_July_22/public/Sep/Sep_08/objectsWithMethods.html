@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JSON object with methods
+        </title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                STudent name: <span id="sname"></span>
+            </li>
+            <li>
+                Age: <span class="sage"></span>
+            </li>
+            <li>
+                Gender: <span id="sgender"></span>
+            </li>
+            <li>
+                Total Marks : <span id="smarks"></span>
+            </li>
+            <li>
+                Avg : <span id="savg"></span>
+            </li>
+            <li>
+                Grade: <span id="sgrade"></span>
+            </li>
+        </ul>
+        <script>
+            var sdetails = {
+                name: 'yashwanth',
+                age: 10,
+                gender: 'Male',
+                marks: [91, 76, 87, 100],
+                readStudentData() {
+
+                },
+                getTotalAndAvg: function() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += this.marks[i];
+                    }
+                    this.avg = sdetails.total / this.marks.length;
+                    this.getGrade();
+                },
+                getGrade: function() {
+                    if (sdetails.avg >= 40) {
+                    sdetails.grade = 'You Got passed';
+                    } else {
+                        this.grade = 'You have a surprise';
+                    }
+                },
+                displayStudentDetails: function() {
+                    this.getTotalAndAvg();
+                    console.log("Student Details");
+
+                    document.getElementById("sname").innerText = sdetails.name;
+                    document.querySelector(".sage").innerHTML = sdetails.age;
+                    document.getElementById("sgender").innerHTML = sdetails.gender;
+                    document.getElementById("smarks").innerText = sdetails.total;
+                    document.querySelector("#savg").innerText = sdetails.avg;
+                    document.getElementById("sgrade").innerHTML = '<b>' + sdetails.grade + '</b>';
+                    
+                    
+                }
+            };
+            sdetails.displayStudentDetails();
+        </script>
+    </body>
+</html>

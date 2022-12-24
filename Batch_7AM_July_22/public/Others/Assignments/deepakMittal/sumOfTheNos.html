@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Sum Of The Individual Nos.</h3>
+
+        <script>
+           var n = prompt("Enter Any No.");
+           n = parseInt(n);
+           var rem;
+           var play = 0;
+           while(n > 0){
+            rem = n % 10;
+            play = rem + play;
+            n = n / 10;
+            n = parseInt(n);
+           }
+           console.log("The sum of No. is " + play);
+
+
+        </script>
+
+
+    </body>
+</html>

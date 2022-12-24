@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pay Slip Generate</title>
+    <link rel="stylesheet" href="EmployeePaySlipGenerate.css">
+    <script src="EmployeePaySlipGenerate.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            <div id="logoContainer"><img src="Empylogo.PNG" alt="logo"></div>
+            <div id="headingContainer"><h2>Employee Pay Slip Generator</h2></div>
+        </div>
+        <ul class="readStuData">
+            <li><input type="text" class="input" id="name" placeholder="Enter Employee Name" autocomplete="off"></li>
+            <div class="mandate nameMandate">Name Field Is Mandetory</div>
+            <li><input type="number" class="input" id="eid" placeholder="Enter Employee ID"></li>
+            <div class="mandate idMandate">Employee ID Field Is Mandetory</div>
+            <li><input type="number" class="input" id="age" placeholder="Enter Employee Age"></li>
+            <li class="gen" id="gen1"> Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input checked type="radio" name="gender" value="Male"> Male
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Female"> Female</li>
+            <li><input type="text" class="input" id="dept" placeholder="Enter Department" autocomplete="off"></li>
+            <li><input type="number" class="input" id="empsal" placeholder="Enter Basic salary"></li>
+            <div class="mandate salMandate">Basic Salary Field Is Mandetory</div>    
+            <li class="btn"><input id="mainbutton" type="button" value="Generate Pay Slip" 
+                onclick="generatePaySlip();"></li> 
+        </ul>
+    </div>
+
+    <div class="displayBlock">  
+        <table class="innertable">
+            <thead id="id">
+             <tr>
+                <th colspan="4"><img class="logo1" src="Reliancelogo.PNG"><div class="block">Reliance Anil Dhirubhai Ambani Group<br>
+                    <span style="font-size: 13px; color: #f53607;">Industries Limited Growth Is Life</span></div></th>
+             </tr>
+            </thead>
+            <tbody> 
+                    <tr class="smallheading">
+                        <td colspan="4">PAY SLIP FOR THE MONTH OF <span id="dDate"></span></td>
+                    </tr>
+                    <tr class="content">
+                        <td colspan="4">Employee Name : <span id="dName"></span></td>
+                    </tr> 
+                    <tr class="content">
+                        <td colspan="2">Employee ID : <span id="dEmpId"></span></td>
+                        <td colspan="2">Gender : <span id="dGender"></span></td>
+                    </tr> 
+                    <tr class="content">
+                        <td colspan="2">Department : <span id="dDepartment"></span></td>
+                        <td colspan="2">Age : <span id="dAge"></span></td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2" class="smallheading">PAY & ALLOWANCES</td>
+                        <td colspan="2" class="smallheading">DEDUCTIONS</td>
+                    </tr>
+                    <tr class="box">
+                        <th class="text">Basic Salary </th>
+                        <td><span id="dBasicSal"></span></td>
+                        <th>Provident Fund</th>
+                        <td><span id="dPF"></span></td>
+                    </tr>
+                    <tr class="box">
+                        <th class="text">Tax Percentage</th>
+                        <td><span id="dTaxPer"></span></td>
+                        <th>HRA</th>
+                        <td><span id="dHRA"></span></td>
+                    </tr>
+                    <tr class="box">
+                        <th class="text">Total Salary</th>
+                        <td><span id="dTotalSal"></span></td>
+                        <th>Tax Income</th>
+                        <td><span id="dTax"></span></td>
+                    </tr>
+            </tbody>
+            <tfoot style="text-align: left;">
+             <tr class="smallheading">
+                <th colspan="4">Total In Hand Salary After Tax-Deduction : <span id="dInHandSal"></span>
+                    <span style="color: rgb(66, 66, 75); font-weight:lighter"></span>
+                </th>
+             </tr>
+            </tfoot>
+         </table>
+        </div> 
+</body>
+</html>

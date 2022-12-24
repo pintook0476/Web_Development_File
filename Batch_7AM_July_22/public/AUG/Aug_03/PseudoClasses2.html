@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Pseudo Classes
+        </title>
+        <style>
+            .parentContainer div:first-child {
+                background-color: yellow;
+                text-decoration: underline;
+            }
+            .parentContainer div:last-child {
+                background-color: yellow;
+                text-decoration: underline;
+            }
+
+            .parentContainer div:nth-child(2) {
+                background-color: yellow;
+                text-decoration: underline;
+            }
+            span:first-of-type {
+                background-color: green;
+            }
+            a:visited {
+                background-color: yellow;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://shopclues.com">Shopclues</a>
+        <a href="http://google.com">Google</a>
+        <div class="parentContainer">
+
+            <div>5. Raj</div>
+            <div>2. Teena</div>
+            <div >1. Raj</div>
+            
+            <div>3. Krish</div>
+            <div>4. Suresh</div>
+            
+        </div>
+
+        <p>
+            <div>bigger child</div>
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+            <span>Item 5</span>
+        </p>
+        <span>Details</span>
+        <div>
+            <span>Details 1</span>
+            <span>Details 2</span>
+            <span>Details 3</span>
+        </div>
+    </body>
+</html>

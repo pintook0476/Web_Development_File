@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_6</title>
+    <style>
+        .heading{
+            border:2px solid yellowgreen;
+            height: 720px;
+        }
+        .block1{
+            border:2px solid gray;
+            height:40px;
+            margin:3px;
+            text-align: center;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        .block2{
+            border:2px solid;
+            height:120px;
+            width:120px;
+            text-align: center;
+        }
+        .block3{
+            border:2px solid;
+            height:120px;
+            width:120px;
+            text-align: center;
+            float: right;
+            position:relative;` 
+        }
+
+        .block4{
+            border:2px solid;
+            height:120px;
+            width:120px;
+
+        }
+        .child1{
+            background-color: rgb(197, 119, 119);
+            position: relative;
+            z-index: 1;
+        }
+        .child2{
+            background-color: rgb(132, 189, 239);
+            position: relative;
+            left: 50px;
+            bottom:35px;
+            z-index: 0;
+        }
+        .child3{
+            background-color: blueviolet;
+            position:relative;
+            bottom:250px;
+            right:5px;
+            z-index: 1;
+        }
+        .child4{
+            background-color: rgb(92, 162, 183);
+            position:relative;
+            bottom:170px;
+            left:50px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="block1">Block Arangement</div>
+            <div class="parent">
+                <div class="block2 child1">Child1</div>
+                <div class="block2 child2">Child2</div>
+            </div>
+
+            <div class="parent2">
+                <div class="block3 child3">Child3</div>
+                <div class="block3 child4">Child4</div>
+
+            </div>
+            <div class="parent3">
+                <div class="block4 child5">Child5</div>
+                <div class="block4 child6">Child6</div>
+                <div class="block4 child7">Child7</div>
+                <div class="block4 child8">Child8</div>
+                <div class="block4 child9">Child9</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

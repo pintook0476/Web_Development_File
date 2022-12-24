@@ -1,0 +1,38 @@
+Contact details: 
+    first name 
+    last name 
+    phone no 
+        office 
+            single vlaue 
+        personal 
+            multiple no.s 
+            
+    address
+        office 
+            state name 
+            pincode 
+            coutryDetails 
+                code 
+                name 
+        home
+            streetname 
+            dno 
+            stateinfo   
+                statename 
+                state code 
+    emailID 
+        office 
+        personal -> multple 
+    gender 
+    birthDay
+        month 
+        year
+        day 
+    profilePic
+    laguagesHeCanSpeak
+    socialIds
+        linkedin
+        twitter
+        fb 
+        
+    

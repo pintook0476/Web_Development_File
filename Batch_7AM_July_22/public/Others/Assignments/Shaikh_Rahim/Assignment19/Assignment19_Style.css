@@ -1,0 +1,48 @@
+.InputUl li{
+    margin:10px;
+    border:2px solid rgba(42, 40, 40, 0.7);
+    padding: 3px;
+}
+.main ul{
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    border:2px solid;
+    width:400px;
+}
+.name{
+    margin-left:70px;
+}
+.age{
+    margin-left:81px;
+}
+.gender{
+    margin-left:60px;
+}
+.department{
+    margin-left:30px;
+}
+.bsalary{
+    margin-left:30px;
+}
+.l6{
+    /* margin:auto; */
+    text-align: center;
+    border: none;
+}
+.displayDetails ul{
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    border:2px solid;
+    width:400px;
+    margin-top:10px !important;
+}
+.displayUl li{
+    margin:10px;
+    border:2px solid rgba(42, 40, 40, 0.7);
+    padding: 3px;
+}
+.displayDetails{
+    display:none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var empData = {};
+            var userData = () => {
+                empData.name = prompt('Enter name')
+                empData.age = prompt('Enter age')
+                empData.gender = prompt('Enter gender')
+                empData.dep = prompt('Enter dep')
+                empData.basicSal = prompt('Enter basicSal')
+                empData.basicSal = parseInt(empData.basicSal);
+                calculatingData()
+            }
+            var calculatingData = () => {
+             empData.pf = (empData.basicSal) * (15 / 100);
+             empData.hra = (empData.basicSal) * (25 / 100);
+             empData.totalSal = empData.basicSal + empData.pf + empData.hra;
+             empData.tax15 = empData.totalSal * (15 / 100);
+             empData.tax10 = empData.totalSal * (10 / 100);
+             empData.tax5 = empData.totalSal * (5 / 100);
+            displayData()
+            condition()
+            }
+            var displayData = () => {
+                console.log('Name ' + empData.name);
+                console.log('Age ' + empData.age);
+                console.log('Gender ' + empData.gender);
+                console.log('Department ' + empData.dep);
+                console.log('Basic Sal ' + empData.basicSal);
+                console.log('TotalSal ' + empData.totalSal);
+            }
+            var condition = () => {
+                if (empData.totalSal >= 200000 &&  empData.gender == "male") {
+                console.log('Tax to be paid ' + empData.tax15)
+                } else if (empData.totalSal >= 100000 &&  empData.gender== "male") {
+                    console.log('Tax to be paid ' + empData.tax10)
+                } else if (empData.totalSal >= 50000 &&  empData.gender == "male") {
+                    console.log('Tax to be paid ' + empData.tax5)
+                } else if (empData.totalSal < 50000 &&  empData.gender == "male") {
+                    console.log('Tax to be paid 0 ')
+                }
+                else {
+                    if (empData.totalSal >= 200000 &&  empData.gender == "female") {
+                        console.log('Tax to be paid ' + empData.tax10)
+                    } else if (empData.totalSal >= 100000 &&  empData.gender == "female") {
+                        console.log('Tax to be paid ' + empData.tax5)
+                    } else if (empData.totalSal >= 50000 &&  empData.gender == "male") {
+                        console.log('Tax to be paid 0 ')
+                    }
+                }
+            }
+            userData()
+           
+        </script>
+    </body>
+
+</html>

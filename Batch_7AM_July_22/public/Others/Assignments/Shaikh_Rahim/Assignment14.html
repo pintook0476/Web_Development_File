@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var employee, bSalary, tSalary, PF, HRA, tax;
+        function getEmpInf() {
+            employee = prompt("Enter Name");
+            bSalary = parseInt(prompt("Enter salary"));
+        }
+        function calculation() {
+            PF = bSalary * 15 / 100;
+            HRA = bSalary * 20 / 100;
+            tSalary = bSalary + PF + HRA;
+        }
+        function payAbleTax() {
+            var gender = prompt("Enter your gender");
+            if (gender == "male" || gender == "Male" || gender == "MALE") {
+                if (tSalary >= 200000) {
+                    tax = tSalary * 15 / 100;
+                }
+                else if (tSalary >= 100000) {
+                    tax = tSalary * 10 / 100;
+                }
+                else if (tSalary >= 50000) {
+                    tax = tSalary * 5 / 100;
+                }
+            }
+
+               else if (gender == "female" || gender == "Female" || gender == "FEMALE") {
+                    if (tSalary >= 200000) {
+                        tax = tSalary * 10 / 100;
+                    }
+                    else if (tSalary >= 100000) {
+                        tax = tSalary * 5 / 100;
+                    }
+                }
+
+            }
+        
+        function display() {
+            console.log("Your name is " + employee);
+            console.log("Your total salary is " + tSalary);
+            if (tax > 0) {
+                console.log("Your payable tax is " + tax);
+            } else {
+                console.log("Your tax is zero or You are not eligible for paying tax");
+            }
+        }
+        getEmpInf();
+        calculation();
+        payAbleTax();
+        display();
+    </script>
+</body>
+
+</html>

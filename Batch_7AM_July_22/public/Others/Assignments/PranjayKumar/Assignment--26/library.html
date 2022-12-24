@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Issu System</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <h3>UNIX BOOK LIBRARY</h3>
+        <form action="">
+        <div class="section">
+            <label for=" ">Student Name</label><br>
+            <input type="text" placeholder="Enter Name"><br><br>
+            <label for=""> Department </label><br>
+            <input type="text" placeholder="IT,Sci,Eng,Hin"><br><br>
+            <label for=""> Issue Book </label><br>
+            <input type="text" placeholder="Type Book Name" id="searchBook" autocomplete="off" onkeyup="searchBookName()"><br><br>
+            <ul class="autofillSection">
+
+            </ul>
+            <input type="submit" value="Issue-Book" id="button">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

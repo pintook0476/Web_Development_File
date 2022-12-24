@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <style>
+        .header,
+        .footer {
+            border: 1px solid;
+            text-align: center;
+            padding: 5px;
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+
+        }
+
+        .footer {
+            font-size: 19px;
+        }
+
+        .title1 {
+            width: 240px;
+            height: 28px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid;
+            position: relative;
+            top: 22px;
+            left: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .form1 {
+            border: 1px solid;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+
+        .name,
+        .mail,
+        .gender,
+        .course,
+        .location,
+        .avg,
+        .state,
+        .country,
+        .landmark {
+            padding: 10px;
+            font-size: 25px;
+
+        }
+
+        .course {
+            position: absolute;
+            right: 160px;
+            top: 160px;
+        }
+        .select {
+            padding: 5px 30px;
+            font-size: 18px;
+        }
+        .landmark {
+            position: absolute;
+            right: 160px;
+            top: 746px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Student Registration Page </div>
+
+    <form method="" action="GET">
+        <div class="title1">Personal Details</div>
+        <div class="form1">
+
+
+            <div class="name">
+                Student name : <input type="text" class="select">
+            </div>
+            <div class="course">
+                Course opted : <select name="" id="" class="select">
+                    <option value="1">Fullstack Java</option>
+                    <option value="2">UI Fullstack</option>
+                    <option value="3">Python</option>
+                    <option value="4">React Jsq</option>
+
+                </select>
+            </div>
+
+            <div class="mail">
+                E-mail : <input type="email" class="select">
+            </div>
+            <div class="gender">
+                Gender : Male<input type="radio" name="username">
+                Female<input type="radio" name="username">
+            </div>
+        </div>
+
+        <div class="title1">Education Details</div>
+        <div class="form1">
+
+
+            <div class="name">
+                Qualification : <input type="text" class="select">
+            </div>
+            <div class="location">
+                Languages known : <input type="checkbox" name="eng" id="">English
+                                 <input type="checkbox" name="mar" id="">Marathi
+                                 <input type="checkbox" name="hin" id="">Hindi
+                                 <input type="checkbox" name="urd" id="">Urdu
+            </div>
+
+            <div class="avg">
+                Average Marks : <input type="number" class="select">
+            </div>
+            
+        </div>
+
+        <div class="title1">Address</div>
+        <div class="form1">
+
+
+            <div class="name">
+                Dno. : <input type="text" class="select">
+            </div>
+            <div class="name">
+                Street name : <input type="text" class="select">
+            </div>
+            <div class="state">
+                State : <select name="" id="" class="select">
+                    <option value="1">Maharashtra</option>
+                    <option value="2">Telangana</option>
+                    <option value="3">Assam</option>
+                    <option value="4">Delhi</option>
+
+                </select>
+            </div>
+            <div class="country">
+                Country : <select name="" id="" class="select">
+                    <option value="1">India</option>
+                </select>
+            </div>
+            <div class="landmark">
+                Landmark : <input type="text" name="" id="" class="select">
+            </div>
+
+            
+        </div>
+
+        <div class="title1">About Yourself</div>
+        <div class="form1">
+
+
+            <div class="name">
+                About yourself : <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            
+
+            
+        </div>
+    </form>
+
+    <div class="footer">&copy; all rights reserved 2022</div>
+
+</body>
+
+</html>

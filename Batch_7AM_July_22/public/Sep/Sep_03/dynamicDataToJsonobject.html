@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating json object
+        </title>
+    </head>
+    <body>
+        <script>
+            var sdetails = {
+                total: 0,
+                name: ''
+            };
+
+            sdetails.name = prompt("Enter Student name");
+            sdetails.age = prompt("Enter Student AGe");
+            sdetails.gender = prompt("Enter Student Gender");
+            sdetails.marks = [];
+
+            for (var i = 0 ; i < 5; i++) {
+                sdetails.marks[i] = prompt("Enter marks for sub " + i);
+                sdetails.marks[i] = parseInt(sdetails.marks[i]);
+            }
+
+            sdetails.total = 0;
+            for (var i = 0 ; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }
+
+            sdetails.avg = sdetails.total / sdetails.marks.length;
+
+            console.log("Studetn Details");
+            console.log("STudent name " + sdetails.name);
+            console.log("STudent Age " + sdetails.age);
+            console.log("STudent Gender " + sdetails.gender);
+            console.log("STudent Total " + sdetails.total);
+            console.log("AVg " + sdetails.avg);
+
+
+        </script>
+    </body>
+</html>
+

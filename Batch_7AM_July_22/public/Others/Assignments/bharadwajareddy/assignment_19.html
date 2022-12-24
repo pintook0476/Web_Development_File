@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>
+            none
+        </title>
+        <style>
+            .container{
+                border:2px solid;
+                width:600px;
+                height:400px;
+                margin:10px auto;
+                padding:10px;
+            }
+            ul,li{
+                list-style-type:none;
+                margin:10px;
+                padding:10px;
+            }
+            .title{
+                text-align: center;
+                color:blue;
+            }
+            .marksBlock{
+                width:10px;
+            }
+            .cardgen{
+                border:2px solid blue;
+                width:600px;
+                height:400px;
+                margin:10px auto;
+                padding:10px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            student progress card
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    enter student name :<input type="text" id="sName">
+                </li>
+                <li>
+                    enter student age :<input type="text" id="sAge">
+                </li>
+                <li>
+                    class:<select id="sclass">
+                        <option>classI</option>
+                        <option>classII</option>
+                        <option>classIII</option>
+                        <option>classIV</option>
+                        <option>classV</option>
+                    </select>
+                </li>
+                <li class="marksBlock">
+                    Marks:
+                    <input type="text" id="m1">
+                    <input type="text" id="m2">
+                    <input type="text" id="m3">
+                    <input type="text" id="m4">
+                    <input type="text" id="m5">
+                </li>
+                <li>
+                    <input type="button" value="generate progress card" onclick="sdetails.readingdata()">
+                </li>
+            </ul>
+        </div>
+        <div class="cardgen" id="generator">
+            <ul>
+                <li>
+                    student name :<span id="dname"></span>
+                </li>
+                <li>
+                    student age :<span id="dage"></span>
+                </li>
+                <li>
+                    student class:<span id="dclass"></span>
+                </li>
+                <li>
+                    student total:<span id="dtotal"></span>
+                </li>
+                <li>
+                    student avg:<span id="davg"></span>
+                </li>
+                <li>
+                    student grade:<span id="dgrade"></span>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var sdetails={
+                readingdata(){
+                    this.name=document.querySelector("#sName").value
+                    this.age=document.querySelector("#sAge").value
+                    this.class=document.querySelector("#sclass").value
+                    this.marks=[];
+                    for(var i=0;i<5;i++){
+                        var value=document.querySelector("#m"+(i+1)).value
+                        this.marks.push(parseInt(value))
+                    }
+                    this.getTotalandAvg()
+                    this.display();
+                },
+                getTotalandAvg(){
+                    this.total=0;
+                    for(var i=0;i<this.marks.length;i++){
+                        this.total=this.total+this.marks[i];
+                    }
+                    this.avg=this.total/this.marks.length;
+                    this.getGrade()
+                },
+                getGrade(){
+                    if(this.total>=35){
+                        this.grade="you are passed"
+                    }
+                    else{
+                        this.grade="you are failed"
+                    }
+                },
+                display(){
+                    document.querySelector("#dname").innerHTML=this.name
+                    document.querySelector("#dage").innerHTML=this.age
+                    document.querySelector("#dclass").innerHTML=this.class
+                    document.querySelector("#dtotal").innerHTML=this.total
+                    document.querySelector("#davg").innerHTML=this.avg
+                    document.querySelector("#dgrade").innerHTML=this.grade
+                    document.querySelector("#generator").style.display="block"
+                }
+            }
+        </script>
+    </body>
+</html>

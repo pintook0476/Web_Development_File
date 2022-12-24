@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Return Value</h3>
+
+        <script>
+            var m1, m2;
+            function getUserDetails(){
+                
+                m1 = prompt("Enter First Value");
+                m1 = parseInt(m1);
+                m2 = prompt("Enter Second value");
+                m2 = parseInt(m2);
+                var play = getSumVaules();
+                console.log(play);
+
+            }
+
+            function getSumVaules (){
+                var result = 0;
+                result = m1 + m2;
+                return result;
+            }
+
+            getUserDetails();
+
+        </script>
+        
+    </body>
+</html>

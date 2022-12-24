@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Student Registration Page</title>
+            
+            <style>
+                
+.headingName{
+    text-align: center;
+    border: 1px solid;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    background-color: #2874f0;
+    margin-top: 0;
+}
+
+.personalDetail{
+border: 1px solid #2874f0;
+height: 250px;
+font-size: 20px;
+
+}
+
+.personal{
+    position: relative;
+    border: 1px solid;
+    padding: 10px;
+    left: 72px;
+    top: -20px;
+    background-color: #2874f0;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   
+}
+
+.stuDetails{
+   font-weight: bold;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.stuName{
+    position: relative;
+    left: 56px;
+    top: 16px;
+    
+    
+ }
+
+.stuMail{
+    position: relative;
+    left:117px;
+    top: 58px;
+
+}
+
+.stuGender{
+    position: relative;
+    left: 119px;
+    top: 80px;
+    
+}
+
+.stuCourse{
+    text-align: right;
+    position: relative;
+    right: 280px;
+    top: -50px;
+}
+#stuinfo{
+    width: 250px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid;
+    transition: 0.3s ease-in-out;
+}
+#stucourselist{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease;
+   
+}
+#stucourselist:hover{
+    background-color: rgb(213, 206, 206);
+}
+.stuDetails span{
+    position: relative;
+    left: 80px;
+}
+#stuinfo:hover{
+    background-color: rgb(209, 206, 206);
+}
+.stuLandmark{
+    float: right;
+    position: relative;
+    right: 70px;
+    top: -35px;
+}
+.stuLandmark input{
+    border: 1px solid;
+    width: 250px;
+    height: 90px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+#stuAbout{
+    width: 800px;
+    height: 150px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.stuName1{
+    font-weight: bold;
+    margin-left: 50px;
+}
+#submitDetails{
+    width: 180px;
+    height: 30px;
+    border: 1px solid #2874f0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    background-color: #2874f0;
+    position: relative;
+    left: 90px;
+    top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#submitDetails:hover{
+background-color: #145bcd;
+}
+            </style>
+           
+        </head>
+        <body>
+            <h2 class="headingName">
+                Student Registration Panel</h2>
+
+            <div class="personalDetail">
+                <div class="personal">Personal Details</div>
+                <form class="stuDetails">
+                    <div class="stuName">
+                        Student Name: <span><input type="text" id="stuinfo" ></span>
+                    </div>
+
+                    <div class="stuMail">
+                        Mail Id : <span><input type="text" id="stuinfo"></span>
+                    </div>
+
+                    <div class="stuGender">Gender:
+                        <span id="stuGen"><input type="radio" name="gender">Male
+                              <input type="radio" name="gender">Female</span>
+                    </div>
+                    <div class="stuCourse">Course Oped:
+                       <span> <select name="" id="stucourselist">
+                        <option value="">UI Full Stack</option>
+                        <option value="">Java Full Stack</option>
+                        <option value="">Python</option>
+                        <option value="">C Language</option>
+                        <option value="">Others</option>
+                    </select></span>
+                    </div>
+
+                </form>
+            </div><br><br>
+            
+
+<div class="personalDetail">
+    <div class="personal">Education Details</div>
+    <form class="stuDetails">
+        <div class="stuName">
+            Qualification Detail:<span><input type="text" id="stuinfo" ></span>
+        </div>
+
+        <div class="stuMail">
+            Avg. Marks : <span><input type="text" id="stuinfo"></span>
+        </div>
+
+        <div class="stuGender">Language:
+            <span id="stuGen"><input type="checkbox" name="gender">Hindi
+                    <input type="checkbox" name="gender">English
+                    <input type="checkbox" name="gender">Telugu</span>
+        </div>
+        <div class="stuCourse">Graduation Completed:
+            <span> <select name="" id="stucourselist">
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+        </select></span>
+        </div>
+
+    </form>
+</div><br><br>
+
+
+<div class="personalDetail">
+    <div class="personal">Address</div>
+    <form class="stuDetails">
+        <div class="stuName">
+            Flat Number:<span><input type="text" id="stuinfo" ></span>
+        </div>
+
+        <div class="stuMail">
+            Street Name: <span><input type="text" id="stuinfo"></span>
+        </div>
+
+        <div class="stuGender">State:
+            <span> <select name="" id="stucourselist">
+                <option value="">Rajasthan</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Telangana</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Uttar Pradesh</option>
+            </select></span>
+        </div>
+       
+        <div class="stuCourse">Country:
+           
+                <span> <select name="" id="stucourselist">
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">China</option>
+                    <option value="">Russia</option>
+                    <option value="">Japan</option>
+                </select></span>
+          
+        </div>
+        <div class="stuLandmark">
+            Landmark: <input type="text">
+        </div>
+
+    </form>
+</div><br><br>
+<form>
+<div class="personalDetail">
+    <div class="personal">About Yourself</div>
+   
+        <div class="stuName1">
+           Personal Something:<input type="text" id="stuAbout" >
+        </div>
+
+   
+</div>
+
+<button type="submit" id="submitDetails">Submit</button>
+            
+</body>
+</html>

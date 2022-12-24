@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function userdetails(){
+            var name, age , gender , salary , basicsalary, pf , hra , total ;
+            name = prompt("enter the name");
+            age = prompt("enter your age ");
+            age = parseInt(age);
+            gender = prompt("enter your gender ");
+            basicsalary = prompt(" enter your salary ");
+            basicsalary = parseInt(basicsalary);
+            
+            displayUserdetails(name, age, gender , basicsalary , pf , hra ,total );
+            
+        }
+        function displayUserdetails(name, age, gender , basicsalary , pf , hra , total  ){
+            console.log("student name :" +name);
+            console.log("age :" +age);
+            console.log("gender :" + gender);
+            console.log("basicsalary :" +basicsalary);
+            totalsal(basicsalary);
+            
+            }
+          function totalsal(basicsalary){
+            
+            pf  = 5/100 * basicsalary ;
+            hra = 10 / 100 * basicsalary ;
+            total =  pf + hra + basicsalary ;
+            total = parseInt(total);
+            console.log("total = " +total);
+            
+            
+            
+        }
+        userdetails();
+    </script>
+    
+</body>
+</html

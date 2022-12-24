@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding: 0 8%;
+    color: #fff;
+}
+nav img{
+    margin: 0 490px;
+    padding: 1px;
+    width: 25%;
+
+}
+.container {
+    position: relative;
+    margin: -70px;
+    height: 600px;
+    
+    
+}
+
+.block {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.block1 {
+    background-color: rgb(255, 85, 85);
+}
+
+.block2 {
+    background-color: rgb(229, 255, 85);
+    position: relative;
+    left: 49px;
+    top: -48px;
+}
+
+.block3 {
+    background-color: rgb(133, 255, 85);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.block4 {
+    background-color: rgb(85, 215, 255);
+    position: absolute;
+    right: 45px;
+    top: 55px;
+}
+
+.block5 {
+    background-color: rgb(93, 85, 255);
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+}
+
+.block6 {
+    background-color: rgb(255, 85, 249);
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+}
+
+.block7 {
+    background-color: rgb(238, 5, 5);
+    position: absolute;
+    left: 40%;
+    top: 58%;
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+}
+
+.block8 {
+    background-color: rgb(205, 250, 2);
+    position: absolute;
+    left: 53%;
+    top: 58%;
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+}
+
+.block9 {
+    background-color: rgb(6, 147, 25);
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    background:rgba(240, 227, 227, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+.centerspan {
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    
+}
+
+.block10 {
+    background-color: rgb(7, 11, 219);
+    position: absolute;
+    top: 88%;
+    left: 0px;
+}
+
+.block11 {
+    background-color: rgb(125, 4, 146);
+    position: absolute;
+    left: 45px;
+    top: 80%;
+}
+
+.block12 {
+    background-color: rgb(3, 119, 55);
+    position: absolute;
+    top: 88%;
+    right: 0%;
+}
+
+.block13 {
+    background-color: rgb(2, 64, 99);
+    position: absolute;
+    right: 45px;
+    top: 80%;
+}
+    

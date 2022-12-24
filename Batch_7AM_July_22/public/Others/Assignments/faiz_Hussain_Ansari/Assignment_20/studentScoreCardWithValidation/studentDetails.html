@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Reading Data And event Handling
+        </title>
+        <link rel="stylesheet" href="studentDetails.css">
+    </head>
+
+    <body>
+        <ul class="sDetails">
+            <li class="cardHeading">Fill Student Details</li>
+            <li>
+                Student Name:<input type="text" id="sName" onkeypress=" return nameValidation(event)">
+                <div class="nameMandateErr">This is a Mandate field <span>*</span></div>
+                <div class="nameCharMandate">Enter Character Only</div>
+                
+            </li>
+            <li>
+                Student Age:<input type="text" id="sAge" onkeypress=" return ageValidation(event) ">
+                <div class="ageMandateErr">This is a Mandate field <span>*</span></div>
+                <div class="ageNumMandate">Enter a Number</div>
+            </li>
+            <li>
+                Student Gender:
+                <input type="radio" checked name="gender" id="mGender" value="male"> Male
+                <input type="radio" name="gender" id="fGender" value="female"> Female
+                
+            </li>
+            <li>
+                Student Location:<input type="text" id="sLocation">
+            </li>
+            <li>
+                Student Class:<select id="sClass">
+                    <option value="Class I">Class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                    <option value="Class V">Class V</option>
+                </select>
+                <div class="classMandateErr">This is a Mandate field <span>*</span></div>
+            </li>
+            <li class="marksBlock">
+                Student Marks: <input type="text" name="" id="marks1" onkeypress=" return marksValidation(event)">
+                <input type="text" name="" id="marks2" onkeypress=" return marksValidation(event)">
+                <input type="text" name="" id="marks3"  onkeypress=" return marksValidation(event)">
+                <input type="text" name="" id="marks4"  onkeypress=" return marksValidation(event)">
+                <div class="marksMandateErr">This is a Mandate field <span>*</span></div>
+                <div class="marksNumMandate">Enter a Number</div>
+            </li>
+            <li>
+                <input type="button" value="Generate Progess Card" onclick=" sDetails.studentProgessDetails(); ">
+            </li>
+        </ul>
+        <div>
+            <ul class="showingData">
+                <li class="cardHeading">Student Score Card</li>
+                <li>Student Name: <span id="displayName"></span></li>
+                <li>Student Age: <span id="displayAge"></span></li>
+                <li> Student Gender: <span id="displayGender"></span></li>
+                <li>Student Location: <span id="displayLoc"></span></li>
+                <li>Student Class: <span id="displaycClass"></span></li>
+                <li>Student Total Marks: <span id="displayTotal"></span> </li>
+                <li> Student Average Marks: <span id="displayAvg"></span></li>
+                <li>Student Result: <span id="displayResult"></span></li>
+            </ul>
+         </div>
+        <script src="studentDetails.js"></script>
+    </body>
+
+</html>

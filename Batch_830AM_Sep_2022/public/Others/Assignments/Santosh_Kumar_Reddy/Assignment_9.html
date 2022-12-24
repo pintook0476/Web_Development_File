@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Structure</title>
+</head>
+<body>
+    <script>
+        var employeeName,empGender,bsallery,pf,hra,tsal,tax;
+        var employeeName = prompt("Enter your name");
+        var empGender = prompt("Enter your gender");
+        var bsallery = prompt("Enter your basic sallery");
+
+        bsallery = parseInt(bsallery)
+        pf = parseInt(pf)
+        hra = parseInt(hra)
+        tsal = parseInt(tsal)
+        tax = parseInt(tax)
+
+        pf = 12 * bsallery /100;
+        hra = 24 * bsallery /100;
+
+        tsal = pf+hra+bsallery;
+
+        if(empGender == "male"){
+            if(tsal >=500000){
+            tax = tsal*15/100;
+
+            }else if(tsal >=300000){
+                tax = tsal*10/100;
+
+            }else{
+                    tax = 0;
+                }
+        }else{ //female
+            if(tsal > 500000){
+                tax = tsal*10/100;
+            }else{
+                tax = 0;
+            }
+
+        }
+
+        console.log("Employee name is" + employeeName );
+        console.log("Gender is" + empGender);
+        console.log("your sallery is" + bsallery);
+        console.log("Your tax is" + tax);
+
+
+ 
+    </script>
+</body>
+</html>

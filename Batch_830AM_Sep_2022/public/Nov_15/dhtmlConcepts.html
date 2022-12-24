@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DEmonstrating dhtml concepts
+        </title>
+        <style>
+            .myblock {
+                color: orchid;
+                background-color: aquamarine;
+                font-size: 35px;
+            }
+
+            .mycontainer {
+                position: absolute;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <span>hello all</span>
+
+        <div id="test">
+            <span>ONE</span>
+        </div>
+        <div class="abc">
+            <span>TWO</span>
+        </div>
+        <div name="pqr">
+            <span>Three</span>
+        </div>
+        DEmonstrating DHTML concepts
+        <script>
+            var myTag = document.createElement("div"); // <div></div>
+            myTag.innerHTML = 'Hello every one'; //<div>Hello every one</div>
+            myTag.setAttribute("class", 'myblock'); //<div class="myblock">Hello every one</div>
+            /*myTag.style.color = 'blue'; 
+            myTag.style["font-size"] = '30px';
+            myTag.style["border"] = '2px solid';*/
+
+            document.querySelector("#container").append(myTag);
+
+            // document.querySelector("span").remove();
+            document.querySelector(".abc span").remove()
+
+        </script>
+    </body>
+</html>

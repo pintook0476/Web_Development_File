@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("enter emp name");
+        var age = prompt("enter age");
+        var gender = prompt("enter gender");
+        var bSalary = prompt("enter basic salary");
+        bSalary = parseInt(bSalary);
+        var pf = bSalary * (14/100);
+        var hra = bSalary * (24/100);
+        var totalSalary = pf+hra+bSalary;
+        console.log("name is : " + name);
+        console.log("age is : " + age);
+        console.log("gender is " +gender);
+        console.log("pf is : " + pf );
+        console.log("hra is : " + hra );
+        console.log("total salary is : " + totalSalary );
+      if(gender == "male"){
+        if(totalSalary>=200000)
+        {
+            console.log("tax percentage is 15%");
+        }
+       else if(totalSalary>=100000){
+            console.log("tax percentage is 10%");
+        }
+        else if(totalSalary>=50000){
+            console.log("tax percentage is 5%");
+        }
+        else{
+            console.log("tax is zero")
+        }
+      }
+    else{
+        if(totalSalary>=200000){
+            console.log("tax percentage is 10%");
+        }
+      else if(totalSalary>=100000){
+            console.log("tax percentage is 5%");
+        }
+        else if(totalSalary>=50000){
+         console.log("tax is 0")   
+        }
+        else{
+            console.log("Not to pay");
+        }
+    }
+    </script>
+</body>
+</html>

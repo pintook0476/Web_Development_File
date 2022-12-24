@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 09 students Registration form</title>
+        <style>
+            .header{
+                border: 1px solid gray;
+                height: 20px;
+                text-align: center;
+            }
+            .mainContainer{
+                border: 2px solid brown;
+                height: 1000px;
+                margin: 10px;
+                background-color:gray;
+            }
+            .innerBox{
+                padding: 15px;
+                margin: 6px;
+            }
+            .block1 ,.block2 ,.block3 ,.block4{
+                border: 2px solid palevioletred;
+                height: 200px;
+                margin: 20px;
+            }
+            .div1 {
+                padding: 2px;
+                margin: 2px;
+            }
+            .div1{
+                float: left;
+                width: 144px;
+            }
+            .course{
+                position: absolute;
+                top: 75px;
+                right: 500px;
+                
+            }
+            .pd , .qd , .ed ,.urSelf{
+                border: 1px solid;
+                height: 22px;
+                width: 150px;
+                text-align: center;
+                position: absolute;
+                top: 50px;
+                left: 60px;
+                background-color: aqua;
+            }
+            .qd{
+                top: 276px;
+            }
+            .block3{
+                overflow: auto;
+            }
+            .ed{
+                top: 498px;
+            }
+            .urSelf{
+                top: 722px;
+            }
+            .textArea{
+                margin: 20px;
+                width: 658px;
+                height: 154px;
+            }
+            .submitButton {
+                position: absolute;
+                left: 280px;
+            }
+            .resetButton{
+                position: absolute;
+                left:411px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Student Registration</div>
+        <form action="" method="post">
+        <div class="mainContainer">
+            <div class="block1">
+                <div class="innerBox">
+                    <div class="div1"><label for="studentName">Enter Student Name</label></div>
+                    <div class="div2"><input type="text" name="studentName" id=""></div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="mailId">Enter Mail ID</label></div>
+                    <div class="div2"><input type="text" name="mailId" id=""></div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="Gender">Enter Student Name</label></div>
+                    <div class="div2">
+                        <input type="radio" name="Gender" value="Mail" id="">Mail
+                        <input type="radio" name="Gender" value="Femail" id=""> Femail
+                    </div>
+                </div>
+                <div class="innerBox course">
+                    <div class="div1"><label for="dropDown"> Select Course</label>
+                    </div> 
+                    <select name="dropDown" id="">
+                        <option value="bca">BCA</option>
+                        <option value="bsc">Bsc</option>
+                        <option value="mca">MCA</option>
+                        <option value="msc">Msc</option>
+                    </select>    
+                </div>
+                <div class="pd">Personal Details</div>
+            </div>
+            <div class="block2">
+                <div class="innerBox">
+                    <div class="div1"><label for="Qualification">Qualification</label></div>
+                    <div class="div2"><input type="text" name="Qualification" id=""></div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="langKnown">Languages Knowns</label></div>
+                    <div class="div2">
+                        <input type="checkbox" name="Qualification" value="eng" id="">English
+                        <input type="checkbox" name="Qualification" value="hindi" id="">Hindi
+                        <input type="checkbox" name="Qualification" value="marathi" id="">Marathi
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="AvgMarks">Avg Marks</label></div>
+                    <div class="div2"><input type="text" name="AvgMarks" id=""></div>
+                </div>
+                <div class="qd">Qualification Details </div>
+            </div>
+            <div class="block3">
+                <div class="innerBox">
+                    <div class="div1"><label for="dNo">Plot No</label></div>
+                    <div class="div2"><input type="text" name="dNo" id=""></div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="streetNo">Street No</label></div>
+                    <div class="div2"><input type="text" name="streetNo" id=""></div>
+                </div>
+                <div class="innerBox">
+                    <div class="div1"><label for="dropDown"> State</label>
+                    </div> 
+                    <select name="dropDown" id="">
+                        <option value="maha">Maharashtra</option>
+                        <option value="mp">MP</option>
+                        <option value="up">UP</option>
+                        <option value="ap">AP</option>
+                    </select>    
+                </div>
+                <div class="innerBox ">
+                    <div class="div1"><label for="dropDown"> Country</label>
+                    </div> 
+                    <select name="dropDown" id="">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="germany">Germany</option>
+                    </select>    
+                </div>
+                <div class="ed">Education Details </div>
+            </div>
+            <div class="block4">
+                <div class="urSelf">About YourSelf</div>
+                <textarea class="textArea" name="urSelf" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="submitButton">
+            <input type="reset" name="resetButton" class="resetButton" id="">
+        </div>
+    </form>
+    </body>
+</html>

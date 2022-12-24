@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>var result;
+    var a = prompt("enter first no.");
+    a = parseInt(a);
+    var userAction = prompt("enter operator sign");
+    var b = prompt("enter second no.");
+    b = parseInt(b);
+    switch (userAction) {
+        case "+":
+            result = a + b;
+            console.log("the sum is " + result);
+            break;
+        case "-":
+            result = a - b;
+            console.log("the subtract is " + result);
+            break;
+        case "*":
+            result = a * b;
+            console.log("the multiplication is " + result);
+            break;
+        case "/":
+            result = a / b;
+            console.log("the divison  is " + result);
+            break;
+        default:
+            console.log("some error try again ");
+
+
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

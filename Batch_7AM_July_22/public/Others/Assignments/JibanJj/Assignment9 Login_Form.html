@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+</head>
+<style>
+    .header{
+        border: 1px solid;
+        text-align: center;
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: grey;
+    }
+    .footer{
+        border: 1px solid;
+        text-align: center;
+        padding: 10px;
+        margin: 40px;
+        font-size: small;
+        background-color: grey;
+    }
+    .maincontainer{
+        border: 1px solid;
+        margin: 10px;
+        height: 700px;
+        position: relative;
+    }
+    .box1, .box2, .box3, .box4{
+        border: 1px solid;
+        margin: 20px;
+        height: 150px;
+    }
+    .personaldetails{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        height: 10px;
+        width: 150px;
+        text-align: center;
+        position: absolute;
+        top: -5px;
+        background-color: green;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+    .sname{
+        margin: 35px;
+        font-weight: bold;
+        float: left;
+    }
+    .astric{
+        color: red;
+    }
+    .mailid{
+        position: absolute;
+        left: 55px;
+        top: 90px;
+        font-weight: bold;
+    }
+    .gender{
+        position: absolute;
+        left: 55px;
+        top: 125px;
+    }
+    .gen{
+        font-weight: bold;
+    }
+    .course{
+        float: left;
+        margin: 30px;
+        font-weight: bold;
+       
+    }
+    .educationaldetails{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        top: 168px;
+        background-color: green;
+        text-align: center;
+        font-weight: bold;
+    }
+    .qualification{
+        position: absolute;
+        margin: 15px;
+        top: 210px;
+        left: 38px;
+        font-weight: bold;
+    }
+    .language{
+        position: absolute;
+        top: 265px;
+        left: 55px;
+    }
+    .lang{
+        font-weight: bold;
+    }
+    .mark{
+        position: relative;
+        left: 31px;
+        bottom: -113px;
+        font-weight: bold;
+    }
+    .address{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        top: 340px;
+        background-color: green;
+        text-align: center;
+        font-weight: bold;
+    }
+    .dno{
+        position: absolute;
+        left: 55px;
+        top: 400px;
+        font-weight: bold;
+    }
+    .streetname{
+        position: absolute;
+        left: 55px;
+        top: 430px;
+        font-weight: bold;
+    }
+    .state{
+        position: absolute;
+        left: 55px;
+        top: 460px;
+        font-weight: bold;
+    }
+    .country{
+        position: absolute;
+        left: 55px;
+        top: 490px;
+        font-weight: bold;
+    }
+    .landmark{
+        position: absolute;
+        top: 400px;
+        left: 400px;
+        font-weight: bold;
+    }
+    .about{
+        border: 1px solid;
+        margin: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        bottom: 145px;
+        background-color: green;
+    }
+    .abturself{
+        font-weight: bold;
+        position: absolute;
+        bottom: 30px;
+        left: 55px;
+    }
+    .aboutbox{
+        position: absolute;
+        top: 1px;
+        left: 122px;
+    }
+</style>
+<body>
+    <div class="header">Student Registration Page</div>
+    <form action="">
+    <div class="maincontainer">
+        <div class="box1">
+            <div class="personaldetails">Personal Details</div>
+            <div class="sname">
+                <label for="username">Student Name:</label>
+                <span class="astric">*</span>
+                <input type="text" name="username" placeholder="Enter Student Name">
+            </div>
+            <div class="mailid">
+                <label for="mailid">Mail ID:</label>
+                <span class="astric">*</span> 
+                <input type="text" name="mailid" placeholder="abc@gmail.com">
+            </div>
+            <div class="gender">
+                <label for="gender"> <span class="gen">Gender</span></label>
+                <input type="radio" value="Male" name="gender">Male
+                <input type="radio" value="Female" name="gender">Female
+            </div>
+            <div class="course">
+                <label for="course">Course Opted:</label>
+                <select name="Course" id="Course">
+                <option value="">Select One</option>
+                <option value="java full stack">Java Full Stack</option>
+                <option value="Testing">Testing</option>
+                <option value="Python">Python</option>
+                <option value="uifullstack">Ui Full Stack</option>
+            </select>
+            </div>
+        </div>
+            <div class="box2">
+                <div class="educationaldetails">Educational Details</div>
+                <div class="qualification">
+                    <label for="">Qualification:</label>
+                    <select name="" id="">
+                        <option value="">Choose One</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                    </select>
+                </div>
+                <div class="language">
+                    <label for=""> <span class="lang">Language known:</span></label>
+                    <input type="checkbox" name="language">English
+                    <input type="checkbox" name="language">Oriya
+                    <input type="checkbox" name="language">Hindi
+                    <input type="checkbox" name="language">Telugu
+                    <input type="checkbox" name="language">Tamil
+                </div>
+                <div class="mark">
+                <label for="">Avg. Marks:</label> 
+                <input type="text">
+                </div>
+            </div>
+            <div class="box3">
+                <div class="address">Address</div>
+                <div class="dno">
+                <label for="dno">Dno:</label>
+                <input type="text">
+                </div>
+                <div class="streetname">
+                <label for="streetname">Street Name:</label>
+                <input type="text">
+                </div>
+                <div class="state">
+                    <label for="state">State:</label>
+                    <select name="" id="">
+                        <option value="">-Select Your State-</option>
+                        <option value="UP">Utarpradesh</option>
+                        <option value="mp">Madhya Pradesh</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                    </select>
+                </div>
+                <div class="country">
+                    <label for="state">Country:</label>
+                    <select name="" id="">
+                        <option value="">-Select Your Country-</option>
+                        <option value="UP">India</option>
+                        <option value="mp">Brazil</option>
+                        <option value="odisha">South Africa</option>
+                        <option value="Tamilnadu">England</option>
+                    </select>
+                </div>
+                <div class="landmark">
+                    <label for="landmark">Lankmark:</label>
+                    <input type="text">
+                    </div>
+            </div>
+            <div class="box4">
+                <div class="about">About Yourself</div>
+                <div class="abturself">
+                <label for="">About Yourself</label>
+                <textarea name="" id="101" cols="30" rows="4">Write about yourself</textarea>
+                </div>
+            </div>
+            <input type="submit" value="Register Student">
+            <input type="reset" value="Reset values">
+
+    </div>
+</form>
+<div class="footer">@copyright 2022</div>
+</body>
+</html>

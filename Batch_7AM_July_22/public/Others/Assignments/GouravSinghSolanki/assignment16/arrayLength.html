@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>array length without length property</title>
+    </head>
+    <body>
+        <h1>found length of array without using length property</h1>       
+        <script>
+           var arrayFormation = () => {
+                 var array =[1,2,3,4,5,6];
+                console.log(array);
+                 calculation(array);
+           }
+           var calculation = (array) => {
+                var temp = 0 ;
+                var count = -1;
+                while (temp != undefined){
+                    temp = array.pop();
+                    count++;
+                }
+                output(array,count)
+           }
+           var output = (array,count) => {
+                console.log("length of array is : " + count);
+           } 
+           arrayFormation();
+        </script>
+    </body>
+</html>

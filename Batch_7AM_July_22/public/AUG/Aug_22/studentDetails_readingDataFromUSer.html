@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Student Details 
+        </h3>
+        <script>
+            var sname, age, gender, loc, avg, total, m1, m2, m3;
+
+            function readStudentData(){
+                sname = prompt("Enter Student name");
+                age = prompt("Enter age");
+                gender = prompt("enter Gender");
+                loc = prompt("Enter locaiton");
+
+                m1 = prompt("Enter sub 1 marks");
+                m1 = parseInt(m1);
+                m2 = prompt("Enter sub 2 marks");
+                m2 = parseInt(m2);
+                m3 = prompt("Enter sub 3 marks");
+                m3= parseInt(m3);
+                getTotalAndAvg();
+            }
+
+            function getTotalAndAvg() {
+                // Caluculating total and avg.
+                total = m1 + m2 + m3;
+                avg = total / 3;
+            }
+
+            // display the values back to user
+
+            function displayStudentDetails() {
+                readStudentData();
+                console.log("Student details");
+                console.log("Name " + sname);
+                console.log("Gender " + gender);
+                console.log("Location is " + loc);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg);
+                getSudentGrade();
+            }
+
+            function getSudentGrade() {
+                if (avg >= 40) {
+                    console.log("Student Got Passed");
+                } else {
+                    console.log("You got Surprise");
+                }
+            }
+            for (var i = 0 ; i < 2; i++) {
+                displayStudentDetails();
+            }
+        </script>
+    </body>
+</html>

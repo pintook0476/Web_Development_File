@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumof_OddNumber</title>
+</head>
+<body>
+    <script> 
+         
+        var data = [2, 5, 7, 8, 12, 20, 24, 27, 29, 31, 35, 40];
+        var sum = 0;
+        console.log("Enter Length ->" + data.length);
+        for(var i = 0; i < data.length; i++){
+           if(data[i] % 2 != 0){
+           
+            console.log(data[i]);
+            sum = (sum + data[i]);
+            console.log("sum of OddNumber :" + sum);
+           }
+        }
+    </script>
+</body>
+</html>

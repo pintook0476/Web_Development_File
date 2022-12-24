@@ -1,0 +1,29 @@
+<div class="addNewProductBlock">
+    <ul>
+        <li>
+            <input id="pname" type="text" placeholder="Product Name" class="form-control">
+        </li>
+        <li>
+            <input id="pprice" type="number" placeholder="Actual Price" class="form-control">
+        </li>
+        <li>
+            <input id="discount" type="number" placeholder="Discount Percentage" class="form-control">
+        </li>
+        <li>
+            <input type="text" id="manufacturere" placeholder="Manufacturer" class="form-control">
+        </li>
+        <li>
+            <form method ="POST"  enctype="multipart/form-data">
+                <input type="file" name="prodImage">
+                <input type="button" value="Upload Image" onclick="uploadProductImage()">
+            </form>
+        </li>
+        <li> 
+            <input type="button" class="btn btn-primary" value="Add Product" onclick="addNewProductDetails()">
+        </li>
+    </ul>
+    
+</div>
+<div class="succssBlock">
+
+</div>

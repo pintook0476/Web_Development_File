@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+        border: 2px solid;
+        background-color: coral;
+        text-decoration: underline;
+        text-shadow: 0cm;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    body{
+        background-color: rgb(173, 249, 250);
+    }
+</style>
+<body>
+    <h2> prime number</h2>
+    <script>
+        // W.A.P to find the prime number within the given arrays
+        var primeNumber = () => {
+            var n = [23  , 78 , 90 , 12 ,12 ,78 ,90 ,11 ,5 , 121 , 56, 67 , 89 , 34 ]
+            console.log("total no. of digit " + n.length)
+            
+            
+            for(var i = 0 ; i < n.length ; i ++)
+            {
+              if(n[i] % 2 != 0)
+              {
+                console.log(n[i]);
+              }
+            }
+        
+        }
+        primeNumber();
+    </script>
+
+
+    
+</body>
+</html>

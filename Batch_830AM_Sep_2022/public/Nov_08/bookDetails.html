@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Iterating over book details obj
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var bookData = {
+                name: 'My Dearest Dreams',
+                price: '2000',
+                discount: '20%',
+                publisher: 'ABC books co.',
+                authors: ['test', 'ABC', 'Prasad']
+            };
+
+            for (var tempKey in bookData) {
+                console.log(tempKey)
+                console.log(bookData[tempKey])
+            }*/ 
+
+           /* var bookData = {
+            name: 'teena'
+            
+           };
+
+            
+
+            bookData.name = prompt("Enter name of book");
+            bookData['name'] = prompt("Enter name of book");
+            bookData.price = prompt("Enter Price of book");
+            bookData.discount = prompt("Enter discount of book");
+
+            console.log(bookData); */
+
+            var bookData = {
+                name: 'My Dearest Dreams',
+                price: '2000',
+                discount: '20%',
+                publisher: 'ABC books co.',
+                authors: ['test', 'ABC', 'Prasad']
+            };
+
+            bookData.price = 3000;
+            console.log(bookData);
+
+            delete bookData.publisher;
+            console.log(bookData);
+
+
+            var empData = {
+                empName: prompt("Enter emp name")
+            }
+
+            console.log(bookData.authors.join(', '))
+            console.log(empData)
+        </script>
+    </body>
+</html>

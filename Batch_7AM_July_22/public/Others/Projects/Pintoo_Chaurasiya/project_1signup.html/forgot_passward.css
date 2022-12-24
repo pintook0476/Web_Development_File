@@ -1,0 +1,58 @@
+body {
+    font-family: 'open Sans', sans-serif;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+.container {
+    border: 5px solid;
+   margin: 0 auto 0 auto;
+   margin-top: 140px;
+    background-color: hsl(0, 12%, 43%);
+    width: 324px;
+    opacity: 0.5;
+    border-color: rgb(76, 80, 63);
+    border-radius: 15px;
+    height: 210px;
+}
+
+.start {
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: darkblue;
+}
+
+.container .getting {
+
+    display: block;
+    margin: 25px;
+    border: 1px solid;
+    padding: 3px;
+    background-color: chartreuse;
+    width: 85px;
+    margin-left: 104px;
+
+
+}
+
+.start2 {
+    margin: -5px;
+    font-size: 20px;
+    text-align: center;
+    color: darkblue;
+}
+
+.getting2 {
+    display: block;
+    margin-top: 22px;
+    width: 60px;
+    margin-left: 116px;
+    border: 1px solid;
+    padding: 3px;
+    background-color: chartreuse;
+
+}

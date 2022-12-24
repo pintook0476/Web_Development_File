@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Employees Details</h3>
+    <script>
+        var ename, pf, hra, tsal;
+        var eage;
+        var edepartment;
+        var bsal;
+
+        ename = prompt('Enter Employee Name');
+        eage = prompt('Enter Employee Age');
+        edepartment = prompt('Enter Employee Department');
+        bsal = prompt('Enter Basic Salary of Employee');
+
+        bsal = parseInt(bsal);
+
+        pf = bsal * 14 / 100;
+        hra = bsal * 25 / 100;
+
+        tsal = bsal + pf + hra;
+
+        console.log('Name of Employee - ' + ename);
+        console.log('Age of Employee - ' + eage);
+        console.log('Department of Employee - ' + edepartment);
+        console.log('Basic Salary of Employee - ' + bsal);
+        console.log('Total Salary of EMployee - ' + tsal);
+    </script>
+</body>
+
+</html>

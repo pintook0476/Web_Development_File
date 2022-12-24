@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating modullar wise employee details</title>
+        <script>
+            var eName,eDept,age,gender,basicSalary,totalSalary,pf,hra,taxPercent ;
+
+            var getEmpdetails = ()=>{
+                eName = prompt("enter employee name");
+                eDept = prompt("enter department name");
+                age = prompt("enter employee age");
+                gender = prompt("enter employee gender");
+                basicSalary = prompt("enter employee basic salary");
+                basicSalary = parseInt(basicSalary);
+                findpfandhra();
+            }
+
+            var findpfandhra =()=>{
+                pf = (14/100)*basicSalary;
+                hra = (25/100)*basicSalary;
+                totalSalary = basicSalary+pf+hra;
+                findTaxpercent();
+            }
+
+            var findTaxpercent =()=>{
+                taxPercent =0;
+                if(gender == "male"){
+                    if(totalSalary >= 200000){
+                        taxPercent = (15/100)*totalSalary ;
+                    } else if(totalSalary >= 100000){
+                        taxPercent = (10/100)*totalSalary ;
+                    } else if(totalSalary >= 50000){
+                        taxPercent = (5/100)*totalSalary ;
+                    } else{
+                        taxPercent = 0;
+                    }
+                } else{
+                    if(totalSalary >= 200000){
+                        taxPercent = (10/100)*totalSalary ;
+                    } else if(totalSalary >= 100000){
+                        taxPercent = (5/100)*totalSalary ;
+                    }else{
+                        taxPercent =0;
+                    }
+                }
+                displayaDetails();
+            }
+
+            var displayaDetails =()=>{
+                console.log("empName " + eName);
+                console.log("Gender " + gender);
+                console.log("deptName " + eDept);
+                console.log("basicsalary " + basicSalary);
+                console.log("pf " + pf);
+                console.log("hra " + hra);
+                console.log("totalSalary " + totalSalary);
+                console.log(" tax percentage is " + taxPercent);
+            }
+            getEmpdetails();
+        </script>    
+    </head>
+    <body>
+    </body>
+</html>

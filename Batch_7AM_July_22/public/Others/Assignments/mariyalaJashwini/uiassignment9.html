@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-compatible"content="IE=edge">
+            <meta name="viewport"content="width=device-width,initialscale=1.0">
+        </head>
+        <body>
+        <script>
+            var empName=prompt("enter empName");
+            var empAge=prompt("enter empAge");
+            var empGender=prompt("enter empGender");
+            var empDepartment=prompt("enter empDepartment");
+            var basicSalary=prompt("enter basicSalary");
+
+            //calculation of pf and hra
+            var pf=basicSalary*(14/100);
+            var hra=basicSalary*(25/100);
+
+            var totalSalary=pf+hra+basicSalary;
+
+            //display the value back to the user
+            console.log("empName is"  + empName);
+            console.log("empaAge is" + empAge);
+            console.log("empGender is" + empGender);
+            console.log("empDepartment is" + empDepartment);
+            console.log("basicSalary is" + basicSalary);
+         </script>
+        </body>
+    </html>

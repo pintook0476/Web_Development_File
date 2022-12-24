@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second smallest number in an array</title>
+</head>
+<body>
+    <h3> second smallest number in an array </h3>
+    <script>
+        
+
+        //Enter an array statically
+        var a = [1,4,5,2,3]
+        console.log("Given array:" + a);
+
+        //find out second smallest number
+        for(i=0; i<2; i++){
+            for(j=i+1; j<a.length; j++){
+                if(a[i] > a[j]){
+                    temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        
+        console.log("The Second smallest number in the array: " + a[1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+            var readEmpDetails = () => {
+                var empname, empDep, empbasicSal, empGender, pf, hra, totalSal, taxValue;
+                empname = prompt("Enter Emp name");
+                empDep = prompt("Enter employee Department");
+                empGender = prompt("Enter employee Gender")
+                empbasicSal = prompt("Enter Employee Basic sal");
+                empbasicSal = parseInt(empbasicSal);
+
+                var data = readPfHraAndTotalSal(empbasicSal);
+                    pf = data[0];
+                    hra = data[1];
+                    totalSal = data[2];
+                    displayEmpDetails(empname, empDep, empbasicSal, empGender, pf, hra,totalSal,taxValue);
+
+              }
+
+                var readPfHraAndTotalSal = (empbasicSal) => {
+                var pf = (12 / 100 ) * empbasicSal;
+                 var hra = (24 / 100 ) * empbasicSal;
+                 var totalSal = pf + hra + empbasicSal;
+                return [pf,hra,totalSal];
+            }
+            var displayEmpDetails = (empname, empDep, empbasicSal, empGender, pf, hra,totalSal,taxValue) => {
+                console.log("Employee details");
+                console.log("empname " + empname);
+                console.log("Gender " + empGender);
+                console.log("Department " + empDep);
+                console.log("BAsic sal " + empbasicSal);
+                console.log("Total Sal " + totalSal);
+                console.log("Tax value is " + taxValue);
+                readTotalTax(taxValue,totalSal);
+                
+                
+            }
+                 
+
+            var readTotalTax = (taxValue,totalSal) => {
+                var empGender, empDep;
+                var taxValue ;
+                if (empGender == 'Male') {
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (10 / 100);
+                    } else if (totalSal >= 30000) {
+                        taxValue = totalSal * (10 / 100);
+                    }  else {
+                        taxValue = 0;
+                    }
+                } else { // Female
+                    if (totalSal >= 500000) {
+                        taxValue = totalSal * (10 / 100);
+                    } else {
+                        taxValue = 0;
+                    }
+                }
+                return taxValue;
+            }
+            
+            readEmpDetails();
+    </script>
+</body>
+</html>

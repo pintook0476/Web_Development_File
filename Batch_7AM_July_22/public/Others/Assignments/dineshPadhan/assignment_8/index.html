@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card - By Dinesh</title>
+    <style>
+        *{
+            margin: 0px;
+            border: 1px solid #974063;
+        }
+        body{
+           background-color: #ff9677;
+        }
+        h1 {
+            text-align: center;
+            background-color: #f54768;
+            padding: 10px;
+            font-size: 1.5em;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+        }
+        .tableData table{
+            border: none;
+            outline: none;
+        }
+        .tableData{
+            margin: 10px auto;
+            text-align: center;
+            width: fit-content;
+            height: 500px;
+            overflow: auto;
+        }
+        td:hover{
+            background-color: #ccc;
+            
+        }
+        table thead{
+            background-image: linear-gradient(to top, #f54768 , #41436a);
+        }
+        
+        table table td:hover{
+            background-color: #41436a;
+        }
+        img{
+            height: 100px;
+            width: auto;
+            transform: scale(1.12);
+            border: 2px solid rebeccapurple ;
+        }
+    </style>
+</head>
+<body>
+    <!-- headding -->
+    <h1>Student Progress Card</h1>
+    <!-- Table All Data -->
+    <div class="tableData">
+        <table border="1px solid"; cellpadding="10px" cellspacing="3px">
+            <thead>
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Gender</th>
+                    <th>Photo</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student No. 1 -->
+                <tr>
+                    <td>1</td>
+                    <td>Sravani Rout</td>
+                    <td>12th</td>
+                    <td>Female</td>
+                    <td><img src="images/s0.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>56</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 2 -->
+                <tr>
+                    <td>2</td>
+                    <td>Manish Sahu</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s1.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>92</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>76</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>82</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 3 -->
+                <tr>
+                    <td>3</td>
+                    <td>Manisha Karna</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s7.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>64</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>89</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 4 -->
+                <tr>
+                    <td>4</td>
+                    <td>Adarsh Dip</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s4.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>59</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>47</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 5 -->
+                <tr>
+                    <td>5</td>
+                    <td>Shibani Sahu</td>
+                    <td>12th</td>
+                    <td>Female</td>
+                    <td><img src="images/s9.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>52</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>84</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>68</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 6 -->
+                <tr>
+                    <td>6</td>
+                    <td>Alok Padhan</td>
+                    <td>12th</td>
+                    <td>Maleale</td>
+                    <td><img src="images/s6.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>92</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 7 -->
+                <tr>
+                    <td>7</td>
+                    <td>Ranjan Raj</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s2.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>61</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>41</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>39</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 8 -->
+                <tr>
+                    <td>8</td>
+                    <td>Barsha Patel</td>
+                    <td>12th</td>
+                    <td>Female</td>
+                    <td><img src="images/s8.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>88</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 9 -->
+                <tr>
+                    <td>9</td>
+                    <td>Alam Khan</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s5.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>68</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Student No. 10 -->
+                <tr>
+                    <td>10</td>
+                    <td>Jitendra Kumar</td>
+                    <td>12th</td>
+                    <td>Male</td>
+                    <td><img src="images/s3.jpg"></td>
+                    <td>
+                        <table border="1px solid"; cellpadding="5px" cellspacing="3px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Mark</th>
+                                    <th>Min Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>84</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>93</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>100</td>
+                                    <td>33</td>
+                                    <td>54</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

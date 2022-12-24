@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    
+<body>
+    <div class="box1">
+
+        Employe pay slip generator
+
+    </div>
+    <ul>
+        <li>enter employee name:
+            <input type="text" id="ename">
+        </li>
+        <li>enter employee age:
+            <input type="text" id="eage">
+        </li>
+        <li>enter employee gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </li>
+        <li>enter basic salary:
+            <input type="text" id="ebs">
+
+        </li>
+        <li>
+            <input type="submit" value="generate" onclick="employedetails.readEmpData();">
+        </li>
+    </ul>
+
+    <ul class="hide">
+        <li> employe name: <span id="dname"></span></li>
+        <li> employe age: <span id="dage" ></span></li>
+        <li> employe gender: <span id="dg"></span></li>
+        <li> employe basic salary: <span id="dbs"></span></li>
+        <li> employe  pf: <span id="dpf"></span></li>
+        <li> employe hra: <span id="dhra"></span></li>
+        <li> employe total salary: <span id="dts"></span></li>
+        <li> employe tax to be paid: <span id="dtax"></span></li>
+
+    
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <script src="index.js"> </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number of Upper and Lower Case Letter</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: rgba(243, 250, 140, 0.849);
+                color: rgb(91, 65, 138);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 10px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var str = prompt("Enter a word or sentence");
+            //lower  97 to 122
+            //upper  65 to 90
+
+            var lowerCase = 0, upperCase = 0;
+
+            for (var i = 0; i < str.length; i++)
+            {
+                if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90)
+                {
+                    upperCase++;
+                }
+                else if(str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122)
+                {
+                    lowerCase++;
+                }
+            }
+
+            console.log("Upper Case Letter :" +upperCase);
+            console.log("Lower Case Letter :" +lowerCase);
+
+        </script>
+    </body>
+</html>

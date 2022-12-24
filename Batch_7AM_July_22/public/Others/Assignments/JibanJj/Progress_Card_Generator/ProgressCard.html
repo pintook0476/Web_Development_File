@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="progresscard.css">
+    <script src="ProgressCard.js"></script>
+</head>
+<body>
+    <h2>Progress Card</h2>
+    <ul>
+        <li>
+            Enter Student Name :
+            <input type="text" id="sname">
+        </li>
+        <li>
+            Enter Student Age :
+            <input type="text" id="sage">
+        </li>
+        <li>
+            Gender :
+            <input type="radio" checked name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </li>
+        <li>
+            Course :
+            <select name="" id="class">
+                <option>Ui Full Stack</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>Testing</option>
+            </select>
+        </li>
+        <li class="marks">
+            Marks :
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+        </li>
+        
+            <input type="button" value="Generate Card" class="button" onclick="studentDetails.readStudentDetails()">
+        
+    </ul>
+    <ul class="ProgressCardBlock">
+        <li>
+            Student Name : <span id="dname"></span>
+        </li>
+        <li>
+            Student Age : <span id="dage"></span>
+        </li>
+        <li>
+            Gender : <span id="dgender"></span>
+        </li>
+        <li>
+            Class: <span id="dclass"></span>
+        </li>
+        <li>
+            Total Mark : <span id="dtotal"></span>
+        </li>
+        <li>
+            Avg Mark : <span id="davg"></span>
+        </li>
+        <li>
+            Grade : <span id="dgrade"></span>
+        </li>
+    </ul>
+</body>
+</html>

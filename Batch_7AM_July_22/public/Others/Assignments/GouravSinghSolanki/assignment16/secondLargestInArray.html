@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>second largest number in array</title>
+    </head>
+    <body>
+        <h1>second largest number in an array </h1>
+        <script>
+            var arrayFormation = () => {
+                var a = [5,2,6,51,2,55,14,56,82,59,70];
+                calculation(a);
+            }
+            var calculation = (a) => {
+                for (var i = 0 ; i < a.length ; i ++){
+                    for ( var j = 0 ; j < a.length ; j++){
+                        if (a[i] < a[j]){
+                            var temp = a[i];
+                            a[i] = a[j];
+                            a[j] = temp;
+                        }
+                    }
+                }
+                output(a);
+            }
+            var output = (a) => {
+                console.log(a);
+                console.log("second largest number in array is : " + a[a.length - 2]);
+            } 
+            arrayFormation();
+        </script>
+    </body>
+</html>

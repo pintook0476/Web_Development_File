@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Date object
+        </title>
+    </head>
+    <body>
+        <div id="userDate"></div>
+        <script>
+            var myDate = new Date();
+            // var myDate = new Date("Aug 1 2021 02:21:10 ");
+            // var myDate = new Date("10/08/2021");
+            var daysList = ['Sun', 'Monday', 'Tue', 'Wed']
+            var dateMonths = ['Jan', 'Feb', 'MAr', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep'];
+
+            console.log(myDate)
+
+            console.log(myDate.getDate());
+            console.log(myDate.getFullYear());
+            console.log(myDate.getMonth()); // -> 7
+            var monthIndex = myDate.getMonth();
+            console.log(dateMonths[monthIndex]);
+
+            console.log(myDate.getDay());
+            console.log(daysList[myDate.getDay()]);
+
+            /*setInterval(() => {
+                document.querySelector("#userDate").innerHTML = new Date().getDate() + '/' + new Date().getMonth() + '/' + new Date().getFullYear() + ' ' + new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
+            }, 1000) */
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            The sum of two numbers 40 and 50 is -> <span id="rblock"><b>hello</b>..</span>
+        </div>
+        <script>
+            
+            var getTotal = () => {
+                var a1= 40;
+                var a2 = 50;
+                var result = a1 + a2;
+                console.log(document.getElementById("rblock").innerHTML)
+                document.getElementById("rblock").innerHTML = result;
+                
+                // document.getElementById("rblock").append(result);
+            }
+
+            getTotal();
+
+
+            console.log(window);
+            console.log(document);
+        </script>
+    </body>
+</html>

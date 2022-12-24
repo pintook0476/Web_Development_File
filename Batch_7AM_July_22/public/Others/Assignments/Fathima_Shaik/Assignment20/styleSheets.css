@@ -1,0 +1,60 @@
+        .header{
+            border: 1px solid beige;
+            height: 40px;
+            width: 1300px;
+            margin: 10px auto;
+            background-color: rgb(85, 19, 76);
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            color:fuchsia;
+            padding: 10px;
+        }
+        .pContainer{
+            border: 1px solid rgb(235, 235, 235);
+            width: 1300px;
+            margin: 10px auto;
+            position:absolute;
+            left: 10px;
+            right: 10px;
+            background-color: black;
+           
+        }
+        .pdetails{
+            border: 1.5px solid rgb(116, 238, 249);
+            border-style: groove;
+            width: 260px;
+            margin: 27px 26px;
+            padding: 5px;
+            color:cyan;
+            font-size: large;
+            font-style: oblique;
+            float: left;
+        }
+        .valueStyles, .actualPrice, .discountedPrice{
+            font-style: italic;
+            font-weight: bold;
+            color: gold;
+            font-size: 20px;
+        }
+        .actualPrice{
+            text-decoration-line: line-through;
+        }
+        .discountedPrice{
+            color:chartreuse;
+        }
+        .pdetails li{
+            list-style: none;
+            border: 0.5px solid rgb(88, 87, 88);
+            margin: 5px;
+            padding: 5px;
+        }
+        .pdetails img{
+            margin:5px auto;
+            padding: 10px;
+            height: 110px;
+            width: 160px;
+        }
+    

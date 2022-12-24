@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5</title>
+    <style>
+        body {
+            background-color: #24455a;
+        }
+    .heading {
+        color:  #24455a;
+        background-color: #cdcec7;
+        border-radius: 10px;
+        text-align: center;
+        height: 50px;
+        margin: 25px 1px;
+    }
+    .container {
+        height: 455px;
+        width: 100%;
+    }
+    .block1 {
+        float: left;
+        border: 5px solid #cdcec7;
+        height: 455px;
+        width: 350px;
+        border-radius: 10px;
+        overflow: scroll;
+    }
+    .block2 {
+        float: right;
+        border: 5px solid #cdcec7;
+        height: 455px;
+        width: 950px;
+        border-radius: 10px;
+        overflow: scroll;
+    }
+    .sidebox {
+        margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #cdcec7;
+        color: #24455a;
+        line-height: 50px;
+        list-style-position: inside;
+    }
+    .div1 {
+        width: 400px;
+        height: 180px;
+        margin: 15px 0px 15px 15px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: #cdcec7;
+        color: #24455a;
+        float: left;
+    }
+    .div2 {
+        width: 400px;
+        height: 180px;
+        margin: 15px 15px 15px 0px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: #cdcec7;
+        color: #282A35;
+        float: right;
+    }
+    .s1 {
+        border: 1px solid; 
+        padding: 10px;
+        margin: 10px; 
+        height: 140px;
+        width: 97px;
+        float: left;
+        background-image: url("sprite1.png");
+        border-radius: 100px; 
+        background-position: -340px 0px;
+    }
+    .stu2 {
+        background-position: -138px -195px;
+    }
+    .stu3 {
+        background-position: -98px -1px;
+    }
+    .stu4 {
+        background-position: 4px -185px; 
+    }
+    .stu5 {
+        background-position: -222px -1px;
+    }
+    .stu6 {
+        background-position: -372px -194px;
+    }
+    .stu7 {
+        background-position: 13px -1px;
+    }
+    .stu8 {
+        background-position: -251px -192px;
+    }
+    .stu9 {
+        background-position: -458px -3px;
+    }
+    .stu10 {
+        background-position: -498px -184px;
+    }
+    .s1detail {
+        float: right;
+    }
+    .styl {
+        color: blue; 
+    }
+    .clr {
+        color: #0a1450;
+    }
+    .footer {
+        color: #0a1450; 
+        font-weight: bold;
+        clear: both;
+        text-decoration: underline;
+        margin-top: 35px;
+    } 
+    ol li:hover {
+      background-color: #7fa7c0;
+      font-size: larger; 
+    }
+    a {
+        text-decoration: none;
+        color: #0a1450;
+    }
+    a:active {
+        color: #9b0909;
+    }
+    ol li {
+        border: 2px solid  #cdcec7;
+        box-shadow: 0px 3px 3px 0px #24455a;
+        margin: 10px 30px 10px 0px;
+        
+    }
+     #cr {
+        line-height: 3;
+    }
+    #hd {
+        line-height: 1.5;
+    }
+
+
+</style>
+</head>
+<body> 
+
+<div class="heading"><h1 id="hd"><i style="color: #9b0909;">Student</i>  Details</h1></div>
+
+<div class="container" style="margin-bottom:15px;">
+   <div class="block1">
+    <div class="sidebox">
+        <h2 style="color:#9b0909; text-align: center; margin-bottom: 0px;"><i>Student List</i></h2>
+        <hr style="border: 0.5px solid #9b0909;">
+        <ol class="list">
+            <li><a href="#id1"><b>Sophia Lee </b></a></li>
+            <li><a href="#id2"><b>John Loren</b></a></li>
+            <li><a href="#id3"><b>Nova Willmson</b></a></li>
+            <li><a href="#id4"><b>Nick Smith</b></a></li>
+            <li><a href="#id5"><b>Elena Brown</b></a></li>
+            <li><a href="#id6"><b>Alex Davis</b></a></li>
+            <li><a href="#id7"><b>Lucy Miller</b></a></li>
+            <li><a href="#id8"><b>Robert Carla</b></a></li>
+            <li><a href="#id9"><b>Jessica Jorge</b></a></li>
+            <li><a href="#id10"><b>James Daniel</b></a></li>
+        </ol>
+    </div>
+   </div>
+   <div class="block2">
+      <div class="div1">
+         <div id="id1" class="s1"></div>
+          <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Sophia Lee </i></h2>
+           <hr style="border: 0.5px solid #9b0909;">
+           <ul type="none">
+            <li><b>Department:</b><span class="clr"> Engineering</span></li>
+            <li><b>Age:</b><span class="clr"> 19 </span></li>
+            <li><b>Location:</b><span class="clr"> New York </span></li>
+            <li><b>Email: </b><span class="styl"> sophia01@gmail.com</span></li>
+            <li><b>Contact: </b><span class="styl"> +91 9811111111</span></li>
+           </ul>
+         </div>
+      </div>
+       <div class="div2"> 
+        <div id="id2" class="s1 stu2"></div>
+        <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>John Loren</i></h2>
+            <hr style="border: 0.5px solid #9b0909;">
+           <ul type="none">
+            <li><b>Department:</b><span class="clr"> M.B.A</span></li>
+            <li><b>Age:</b><span class="clr"> 20 </span></li>
+            <li><b>Location:</b><span class="clr">Los Angeles </span></li>
+            <li><b>Email: </b><span class="styl"> john02@gmail.com</span></li>
+            <li><b>Contact: </b><span class="styl"> +91 9822222222</span></li>
+           </ul>
+        </div>
+        </div> 
+          
+        <div class="div1">
+            <div id="id3" class="s1 stu3"></div>
+             <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Nova Willmson</i></h2>
+              <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> B.B.A</span></li>
+               <li><b>Age:</b><span class="clr"> 19 </span></li>
+               <li><b>Location:</b><span class="clr"> Houston </span></li>
+               <li><b>Email: </b><span class="styl"> nova03@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9833333333</span></li>
+              </ul>
+            </div>
+         </div>
+          <div class="div2"> 
+           <div id="id4" class="s1 stu4"></div>
+           <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Nick Smith</i></h2>
+               <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> B.Sc</span></li>
+               <li><b>Age:</b><span class="clr"> 19 </span></li>
+               <li><b>Location:</b><span class="clr"> Chicago </span></li>
+               <li><b>Email: </b><span class="styl"> nick04@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9844444444</span></li>
+              </ul>
+           </div>
+           </div> 
+
+           <div class="div1">
+            <div id="id5" class="s1 stu5"></div>
+             <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Elena Brown</i></h2>
+              <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> Diploma</span></li>
+               <li><b>Age:</b><span class="clr"> 17 </span></li>
+               <li><b>Location:</b><span class="clr"> Portland </span></li>
+               <li><b>Email: </b><span class="styl"> elena05@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9855555555</span></li>
+              </ul>
+            </div>
+         </div>
+          <div class="div2"> 
+           <div id="id6" class="s1 stu6"></div>
+           <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Alex Davis</i></h2>
+               <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> B.Com</span></li>
+               <li><b>Age:</b><span class="clr"> 17 </span></li>
+               <li><b>Location:</b><span class="clr"> San Diego </span></li>
+               <li><b>Email: </b><span class="styl"> alex06@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9866666666</span></li>
+              </ul>
+           </div>
+           </div> 
+
+           <div class="div1">
+            <div id="id7" class="s1 stu7"></div>
+             <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Lucy Miller</i></h2>
+              <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> M. Com</span></li>
+               <li><b>Age:</b><span class="clr"> 19 </span></li>
+               <li><b>Location:</b><span class="clr"> Seattle </span></li>
+               <li><b>Email: </b><span class="styl"> lucy07@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9877777777</span></li>
+              </ul>
+            </div>
+         </div>
+          <div class="div2"> 
+           <div id="id8" class="s1 stu8"></div>
+           <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Robert Carla</i></h2>
+               <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> Medical</span></li>
+               <li><b>Age:</b><span class="clr"> 20 </span></li>
+               <li><b>Location:</b><span class="clr"> Denver </span></li>
+               <li><b>Email: </b><span class="styl"> robert08@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9888888888</span></li>
+              </ul>
+           </div>
+           </div> 
+
+           <div class="div1">
+            <div id="id9" class="s1 stu9"></div>
+             <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>Jessica Jorge</i></h2>
+              <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> Marketing</span></li>
+               <li><b>Age:</b><span class="clr"> 19 </span></li>
+               <li><b>Location:</b><span class="clr"> Atlanta </span></li>
+               <li><b>Email: </b><span class="styl"> jessica09@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9779999999</span></li>
+              </ul>
+            </div>
+         </div>
+          <div class="div2"> 
+           <div id="id10" class="s1 stu10"></div>
+           <div class="s1detail"><h2 style="margin-bottom: 0px; color: #9b0909;"><i>James Daniel</i></h2>
+               <hr style="border: 0.5px solid #9b0909;">
+              <ul type="none">
+               <li><b>Department:</b><span class="clr"> Economic</span></li>
+               <li><b>Age:</b><span class="clr"> 19 </span></li>
+               <li><b>Location:</b><span class="clr"> Las Vegas </span></li>
+               <li><b>Email: </b><span class="styl"> james10@gmail.com</span></li>
+               <li><b>Contact: </b><span class="styl"> +91 9771111111</span></li>
+              </ul>
+           </div>
+           </div> 
+
+   </div>
+</div>
+
+    <div class="heading footer"><span  style ="padding-top: 8px;"><i id="cr">@copy rights 2022</i></span></div>
+</body>
+</html>
+</body>
+</html>

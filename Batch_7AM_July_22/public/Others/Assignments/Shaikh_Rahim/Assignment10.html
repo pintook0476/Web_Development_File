@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>Assignment 10</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            var student_Name = prompt("Enter Student Name");
+            console.log("Student Name : " + student_Name);
+            var Age = prompt("Enter Age of Student");
+            console.log("Student Age : " + Age);
+            var Address = prompt("Student Address ");
+            console.log("Student Address : " + Address);
+            var m1 = prompt("Enter the marks in 1st subject");
+            m1 = parseInt(m1)
+            var m2 = prompt("Enter the marks in 2nd subject");
+            m2 = parseInt(m2)
+            var m3 = prompt("Enter the marks in 3rd subject");
+            m3 = parseInt(m3)
+            var result = m1 + m2 + m3;
+            console.log("Your Total marks is " + result);
+            var avg = parseInt(result/3);
+            console.log( "Your Average Marks are " + avg);
+
+            if(avg < 40){
+                console.log("Your are failed");
+            }
+            else{
+                console.log("Your are passed");
+            }
+
+
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Employee PaySlip</title>
+            <link rel="stylesheet" href="employeePayslip.css">
+            <script src="employeePayslip.js"></script>
+        </head>
+        <body>
+            <header>
+                Employee Pay Slip
+            </header>
+            <ul class="fullBorder">
+                <li>
+                    Emp Name : <input type="text" id="empName">
+                </li>
+                <li> 
+                    Emp Age : <input type="text" id="empAge">
+                </li>
+                <li>
+                    Emp Gender : 
+                    <input checked type="radio" value="Male" name="Gender">Male
+                    <input type="radio" value="Female" name="Gender">Female
+                </li>
+                <li>
+                    Emp Department : <input type="text" id="empDep">
+                </li>
+                <li>
+                    Basic salary : <input type="text" id="bSalary">
+                </li>
+                <!-- <li>
+                    pf : <input type="text" id="empPf">
+                </li>
+                <li>
+                    hra : <input type="text" id="empHra">
+                </li> -->
+                <li>
+                    <input type="button" value="Generate Payslip" onclick="empDetails.empdata()">
+                </li>
+            </ul>
+            <ul class="dBlock">
+                <li>
+                    Employee Name : <span id="eName"></span>
+                </li>
+                <li>
+                    Employee Age : <span id="eAge"></span>
+                </li>
+                <li>
+                    Employee Gender : <span id="eGender"></span>
+                </li>
+                <li>
+                    Employee Department : <span id="eDep"></span>
+                </li>
+                <li>
+                    Basic Salary : <span id="eSalary"></span>
+                </li>
+                <li>
+                   Total Salary : <span id="eTotalSalary"></span>
+                </li>
+                <li>
+                    Tax is : <span id="eTax"></span>
+                </li>
+            </ul>
+           
+        </body>
+</html>

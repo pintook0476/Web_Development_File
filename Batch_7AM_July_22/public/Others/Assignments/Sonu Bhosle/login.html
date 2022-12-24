@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<style>
+ .login-form{
+    width:50%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    display: flex;
+    height: 80vh;
+    position: relative;
+ }
+ .left-side{
+    width: 35%;
+    background: #027CD5;
+    position: relative;
+ }
+ .left-side h3{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 30px;
+    font-weight: normal;
+ }
+ .left-side p{
+    color: aliceblue;
+    padding: 0px 30px;
+ }
+ .left-side .img-vector{
+    position: absolute;
+    bottom: -10px;
+    left: -35px;
+ }
+ .left-side .img-vector img{
+    width:300px;
+ }
+ .right-side{
+    width: 70%;
+    background: #fff;
+ }
+.wrapper{
+  width: 100%;
+}
+
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgrey;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #027CD5;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #333;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+form .content .pass-link a{
+  color: "";
+ position: absolute;
+ right: 25px;
+ top: 115px;
+}
+form .submit input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: 40px;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  background:#027CD5;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+.wrapper .or{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0px;
+    color: #333;
+}
+.wrapper .request{
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+    transition: .3s linear;
+}
+.wrapper .request:hover{
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);  
+}
+.wrapper .request a{
+    text-decoration: none;
+    color: #027CD5;
+
+}
+
+form .signup-link{
+  color: #262626;
+  margin-top: 110px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+
+</style>
+<body>
+    <nav class="flex-nav">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">Example</a>
+        </div>
+    </nav>
+    <!-- login-section -->
+    <div class="login-form">
+        <div class="left-side">
+          <h3>Login</h3>
+          <p>Get access to your Orders, Wishlist and Recommendations</p>
+          <div class="img-vector">
+            <img src="https://i.postimg.cc/ZqQzKF9F/vecteezy-login-concept-with-security-username-and-password-people-removebg-preview.png" alt="">
+          </div>
+        </div>
+        <div class="right-side">
+                <div class="wrapper">
+                  <form action="#">
+                    <div class="field">
+                      <input type="text" required>
+                      <label>Enter Email/Mobile number</label>
+                    </div>
+                    <div class="field">
+                      <input type="password" required>
+                      <label> Enter Password</label>
+                    </div>
+                    <div class="content">
+                      <div class="pass-link"><a href="#">Forgot?</a></div>
+                    </div>
+                    <div class="submit">
+                      <input type="submit" value="Login">
+                    </div>
+                    <div class="or">OR</div>
+                    <div class="request"><a href="#">Request OTP</a></div>
+                    <div class="signup-link"> <a href="#">Not a member? Create an account</a></div>
+                  </form>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

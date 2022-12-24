@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkPalindrome</title>
+</head>
+<body>
+    <script>
+        for (var i = 1; i < 1000; i++) {
+            var temp = i;
+            var rev = 0;
+
+            while (temp > 0) {
+                var digit = temp % 10;      
+                rev = (rev * 10) + digit;
+                temp = temp / 10;
+                temp = parseInt(temp);
+            }
+            if (i == rev) {
+                console.log(i + " is a Palindrome");
+            }
+            else {
+                console.log(i + " is not a Palindrome");
+            }
+        }
+    </script>
+</body>
+</html>

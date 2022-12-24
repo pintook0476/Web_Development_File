@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>finding total number of zeros</title>
+    </head>
+    <body>
+        <script> 
+            var a = prompt( " enter a num to find zeros in it")
+            var Rem; 
+            var count = 0;
+            while ( a > 0 ) {
+                Rem = a % 10 ; 
+                a =  a / 10 ;
+                a = parseInt(a);
+                    if ( Rem == 0 ){
+                        console.log(Rem);
+                    }else ( "there are no zeros");
+                    
+
+            }
+        
+        
+        
+        </script>
+    </body>
+</html>

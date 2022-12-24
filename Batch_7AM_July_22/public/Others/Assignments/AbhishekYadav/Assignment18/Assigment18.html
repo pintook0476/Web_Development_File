@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment18.css">
+    <script src="Assignment18.js"></script>
+    <title>Employee Details</title>
+</head>
+
+<body>
+    <h3 id="mainhead">Employee Deatils</h3>
+    <div id="econtainer">
+        <ul>
+            <li>
+                <label for="ename">Name: </label>
+                <input type="text" id="ename" name="ename">
+            </li>
+            <li>
+                <label for="eage">Age: </label>
+                <input type="text" id="eage" name="eage">
+            </li>
+            <li>
+                <label for="egender">Gender: </label>
+                <input type="radio" id="egender" value="Male" name="egender"> Male
+                <input type="radio" id="egender" value="Female" name="egender"> Female
+            </li>
+            <li>
+                <label for="eexperience">Year Of Experience: </label>
+                <input type="text" id="eexperience" name="eexperience">
+            </li>
+            <li>
+                <label for="edepart">Department: </label>
+                <input type="text" id="edepart" name="edepart">
+            </li>
+            <li>
+                <label for="eBsal">Basic Salary: </label>
+                <input type="text" id="eBsal" name="eBsal">
+            </li>
+            <input type="button" name="" id="button" onclick="eDetails.getData();" value="Submit">
+        </ul>
+        <div id="fcontainer">
+            <div id="fDetails">Employee Details</div>
+            <div> <span id="label">Name: </span> <span id="fname"></span></div>
+            <div><span id="label">Age:</span><span id="fage"></span></div>
+            <div><span id="label">Years Of Experience:</span> <span id="fexperience"></span></div>
+            <div><span id="label">Gender: </span> <span id="fgender"></span></div>
+            <div><span id="label">Basic Salary:</span> <span id="fbsal"></span></div>
+            <div><span id="label">Total Salary:</span> <span id="ftsal"></span></div>
+            <div><span id="label">Tax to be paid:</span> <span id="etaxtobe"></span></div>
+        </div>
+    </div>
+</body>
+
+</html>

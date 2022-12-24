@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 - Employee Details - using conditions</title>
+</head>
+
+<body>
+    <script>
+       var eName, eDept, gender, basicSalary, pf, hra, total, tax_5, tax_10, tax_15;
+
+        function userData() {
+            eName = prompt("Enter Employee Name");
+            eDept = prompt("Enter Employee Department");
+            gender = prompt("Enter Your gender");
+            basicSalary = prompt("Enter your basic Salary");
+            basicSalary = parseInt(basicSalary);
+            calculateUserData();
+        }
+
+        function calculateUserData() {
+            pf = 14 / 100 * basicSalary;
+            hra = 25 / 100 * basicSalary;
+            total = basicSalary + pf + hra;
+            tax_5 = 5 / 100 * total;
+            tax_10 = 10 / 100 * total;
+            tax_15 = 15 / 100 * total;
+            getUserdetails();
+        }
+
+        function getUserdetails() {
+            document.write("Employee name is " + eName + "<br>");
+            document.write("Employee Department is " + eDept + "<br>");
+            document.write("Employee gender is " + gender + "<br>");
+            document.write("Employee basic salary is " + basicSalary + "<br>");
+            document.write("Employee pf is " + pf + "<br>");
+            document.write("Employee hra is " + hra + "<br>");
+            document.write("Employee total Salary is " + total + "<br>");
+            printUserDetails();
+        }
+
+        function printUserDetails() {
+
+            if (total >= 50000 && total < 100000 && gender == "male") {
+                document.write("Your tax is " + tax_5)
+            }
+
+            else if (total >= 100000 && total < 200000 && gender == "male") {
+                document.write("Your tax is " + tax_10);
+            }
+
+            else if (total > 200000 && gender == "male") {
+
+                document.write("Your tax is " + tax_15);
+            }
+
+            else if (total >= 100000 && total < 200000 && gender == "female") {
+
+                document.write("Your tax is " + tax_5);
+            }
+
+            else if (total > 200000 && gender == "female") {
+
+                document.write("Your tax is " + tax_10);
+            }
+
+            else {
+
+                document.write("Your tax is 0");
+            }
+        }
+
+        userData();
+
+    </script>
+
+</body>
+
+</html>

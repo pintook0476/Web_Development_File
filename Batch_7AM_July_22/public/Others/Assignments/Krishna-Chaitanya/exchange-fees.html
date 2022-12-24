@@ -1,0 +1,73 @@
+<html>
+<head>
+<title> calculating cheaper exchange</title>
+
+</head>
+<body>
+<script>
+
+    // write is a program to find out respective fees for exchange  based on your Investment amount 
+
+var broker, deposit, stake, hatch, purchase, total;
+
+function AskingUser(){
+broker = prompt("Enter Name of Broker- Hatch or Stake");
+deposit = prompt("Enter Amount of deposit");
+deposit = parseInt(deposit);
+} 
+function Exchangefees() {
+    AskingUser();
+stake = deposit * (1/100)+ 0;
+hatch = deposit * (0.50/100)+ 3; // There is $3 one off share buying price for hatch 
+}
+
+function concluding(){
+    Exchangefees();
+if (broker == 'Hatch' || broker == 'hatch'){
+    console.log("your Deposit  rate is 0.50% and one-off purchase fees for shares is $3");
+    console.log( "Your Total fees is $" + hatch );
+} else if (broker == 'Stake' || broker == 'stake') {
+    console.log("your Deposit  rate is 1% and one-off purchase fees for shares is $0");
+    console.log( "Your Total fees is $" + stake);
+    
+} 
+}
+
+concluding();
+
+
+
+// write a program to find out which one is cheaper exchange to use for investing .
+
+/*
+var deposit, stake, hatch;
+
+function AskingUser(){
+ deposit = prompt("Enter Amount of Investment");
+deposit = parseInt(deposit);
+}
+
+function Exchangefees() {
+    AskingUser();
+stake = deposit * (1/100)+ 0;
+hatch = deposit * (0.50/100)+ 3; // There is $3 one off share buying price for hatch 
+}
+ 
+function concluding() {
+    Exchangefees();
+if (stake > hatch) {
+    console.log("hatch Exchange is cheaper  and your total fees  is $" + hatch);
+    console.log(" your total fees if Stake is $" + stake);
+} else {
+    console.log("stake Exchange is cheaper and your total fees is $" + stake);
+    console.log("your total fees if Hatch is  $" + stake);
+}
+}
+
+concluding();
+
+*/
+
+</script>
+</body>
+</html>

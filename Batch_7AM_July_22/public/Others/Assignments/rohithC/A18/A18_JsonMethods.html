@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Json function </title>
+    </head>
+    <body>
+        <script>
+           var studentdetails = {
+                /*name : 'raj',
+                age : 20,
+                gender : 'male',
+                marks : [25 , 35 , 65, 50],*/
+                readStudentData : function () {
+                    studentdetails.name = prompt('name');
+                    studentdetails.age = prompt ('age');
+                    studentdetails.gender = prompt ("gender");
+                    studentdetails.marks = []
+                    for (var j = 0 ; j < 3 ; j++ ) {
+                        studentdetails.marks[j] = prompt("marks" + j);
+                        studentdetails.marks[j] = parseInt(studentdetails.marks[j])
+                    }
+                    studentdetails.getTotalAndAvg();
+                },
+                
+                getTotalAndAvg : function () {
+                    studentdetails.total = 0;
+                    for(var i = 0 ; i < studentdetails.marks.length ; i++) {
+                        studentdetails.total += studentdetails.marks[i];
+                    }
+                    studentdetails.avg = studentdetails.total/studentdetails.marks.length;
+                    studentdetails.getGrade();
+                },
+
+                getGrade : function () {
+                    if (studentdetails.avg >= 40) {
+                        studentdetails.grade = "ur passed"
+                    } else  {
+                        studentdetails.grade = "ur failed"
+                    }
+                    studentdetails.displayingvalues();
+                },
+                
+                displayingvalues : function () {
+                    console.log (studentdetails.name);
+                    console.log (studentdetails.age);
+                    console.log (studentdetails.gender);
+                    console.log (studentdetails.avg);
+                    console.log (studentdetails.grade)
+                }
+                
+            }
+            studentdetails.readStudentData();
+            
+
+            /*for(var tempkey in studentdetails){
+                console.log(tempkey + studentdetails[tempkey]);
+            }*/
+            
+            
+            
+        </script>
+    </body>
+</html>

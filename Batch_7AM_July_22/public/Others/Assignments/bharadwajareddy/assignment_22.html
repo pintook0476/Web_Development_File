@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            assignment_22
+        </title>
+    </head>
+    <body>
+        <script>
+            class Student{
+                constructor(name,age,gender,class_name,marks){
+                    this.name=name
+                    this.age=age
+                    this.gender=gender
+                    this.class_name=class_name
+                    this.marks=marks
+                }
+                getTotalandAvg(){
+                    this.total=0
+                    for(var i=0;i<this.marks.length;i++){
+                        this.total=this.total+this.marks[parseInt(i)]
+                    }
+                    this.avg=this.total/this.marks.length
+                }
+                getGrade(){
+                    if(this.total>=35){
+                        this.grade="\"you are passed\""
+                    }
+                    else{
+                        this.grade="\"you are failed\""
+                    }
+                }
+                display(){
+                    console.log("name is "+this.name)
+                    console.log("age is "+this.age)
+                    console.log("gender is "+this.gender)
+                    console.log("class name is "+this.class_name+"th class")
+                    console.log("total is "+this.total)
+                    console.log("average is "+this.avg)
+                    console.log("grade is "+this.grade)
+                }
+            }
+            var s1 = new Student("bharath",19,"male","IV",[12,34,56,78,90])
+            s1.getTotalandAvg()
+            s1.getGrade()
+            s1.display()
+        </script>
+    </body>
+</html>

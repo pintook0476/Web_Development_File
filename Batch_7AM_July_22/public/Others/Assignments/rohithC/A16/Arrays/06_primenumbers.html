@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> prime numbers from array </title>
+    </head>
+    <body>
+        <script> 
+            var data = [12,23,34,45,56,67,78,89,59];
+                console.log(data);
+          
+
+                
+                for( i = 0 ; i < data.length ; i++ ) {
+                   // console.log(data[i]);
+                    var prime = data[i];
+                    //console.log(prime);
+                     var rem;
+                     var count = 0 ;
+                     
+                    for ( j = 2 ; j < prime; j++){
+
+                        rem = prime % j ;
+
+                        if (rem == 0) {
+                            count++;
+                        }
+                        
+                    }
+                        if (count == 0) {
+                            console.log(prime);
+                        }
+                       
+                              
+                    /*if (count == 0) {
+                        console.log('prime');
+                    } else {
+                            console.log('not');
+                        }*/
+
+                }
+                
+            
+        
+        </script>
+    </body>
+</html>

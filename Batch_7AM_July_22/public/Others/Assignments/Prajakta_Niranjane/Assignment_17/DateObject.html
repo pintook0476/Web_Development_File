@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <h3>Date Object Printing Different Formates</h3>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+         // Aug 30th, 2022
+        var format1 = () => 
+        {
+            var myCurrentDate = new Date();
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myCurrentDate.getMonth();
+            var dateFormat1 = dateMonths[myCurrentDate.getMonth()] +' ' + myCurrentDate.getDate() + 'th' + ', ' + myCurrentDate.getFullYear();
+            console.log('Format-1 => ' + dateFormat1);
+       }
+       format1();
+
+        //August, 30th 2022
+        var format2 = () => 
+        {
+            var myCurrentDate = new Date();
+            var dateMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var index = myCurrentDate.getMonth();
+            var dateFormat2 = dateMonths[myCurrentDate.getMonth()] +', ' + myCurrentDate.getDate() + 'th ' + myCurrentDate.getFullYear();
+            console.log('Format-2 => ' + dateFormat2);
+       }
+       format2();
+
+        //Tue, Aug 30th 2022
+        var format3 = () => 
+        {
+            var myStaticDate = new Date('Aug 15 2021');
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myStaticDate.getMonth();
+            var dateDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thus', 'Fri', 'Sat'];
+            var indx = myStaticDate.getDay();
+            var dateFormat3 = dateDays[myStaticDate.getDay()] + ', ' + dateMonths[myStaticDate.getMonth()] +' ' + myStaticDate.getDate() + 'th ' + myStaticDate.getFullYear();
+            console.log('Format-3 => ' + dateFormat3); 
+        }
+       format3();
+
+        //Tuesday, August 30th 2022
+        var format4 = () => 
+        {
+            var myStaticDate = new Date('July 08 2018');
+            var dateMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var index = myStaticDate.getMonth();
+            var dateDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday'];
+            var indx = myStaticDate.getDay();
+            var dateFormat4 = dateDays[myStaticDate.getDay()] + ', ' + dateMonths[myStaticDate.getMonth()] +' ' + myStaticDate.getDate() + 'th ' + myStaticDate.getFullYear();
+            console.log('Format-4 => ' + dateFormat4);   
+        }
+        format4();
+
+        //30/08/2022
+        var format5 = () => 
+        {
+            var myStaticDate = new Date('11/02/2022');
+            var dateFormat5 = myStaticDate.getMonth()+'/' + myStaticDate.getDate() + '/' + myStaticDate.getFullYear();
+            console.log('Format-5 => ' + dateFormat5);   
+        }
+        format5();
+
+        //30th Aug, 2022
+        var format6 = () => 
+        {
+            var myStaticDate = new Date('11/02/2020');
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myStaticDate.getMonth();
+            var dateFormat6 = myStaticDate.getDate() + 'nd ' + dateMonths[myStaticDate.getMonth()] + ', ' + myStaticDate.getFullYear();
+            console.log('Format-6 => ' + dateFormat6);
+        }
+        format6();
+
+        //30th Aug, 2022 09:30:10
+        var format7 = () => 
+        { 
+            var myStaticDate = new Date('Dec 18 2018 10:30:10');
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myStaticDate.getMonth();
+            var dateFormat7 = myStaticDate.getDate() + 'th ' + dateMonths[myStaticDate.getMonth()] + ', ' + myStaticDate.getFullYear() + ' ' + myStaticDate.getHours() + ':' + myStaticDate.getMinutes() + ':' +myStaticDate.getSeconds();
+            console.log('Format-7 => ' + dateFormat7);
+        }
+        format7();
+
+        //Aug/30/2022 09:20
+        var format8 = () => 
+        {
+            var myStaticDate = new Date('Jan 26 2017 09:20');
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myStaticDate.getMonth();
+            var dateDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thus', 'Fri', 'Sat'];
+            var indx = myStaticDate.getDay();
+            var dateFormat8 = dateMonths[myStaticDate.getMonth()] +'/' + myStaticDate.getDate() + '/' + myStaticDate.getFullYear()+ ' ' + myStaticDate.getHours() + ':' + myStaticDate.getMinutes();
+            console.log('Format-8 => ' + dateFormat8); 
+        }
+        format8();
+
+        //30-Aug-2022 10:30:20
+        var format9 = () => 
+        {
+            var myStaticDate = new Date('30-Aug-2022 10:30:20');
+            var dateMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var index = myStaticDate.getMonth();
+            var dateFormat9 = myStaticDate.getDate() + '-' + dateMonths[myStaticDate.getMonth()] + '-' + myStaticDate.getFullYear() + ' ' + myStaticDate.getHours() + ':' + myStaticDate.getMinutes() + ':' +myStaticDate.getSeconds();
+            console.log('Format-9 => ' + dateFormat9);  
+        }
+        format9();
+       
+    </script>
+</body>
+</html>
+       

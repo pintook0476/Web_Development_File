@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Making Dynamically Tags</h3>
+
+        <div id="container"></div>
+
+        <script>
+            var newTag = prompt("Enter Any Tag Name");
+            var addStyle = prompt("Enter Color Name");
+            var makeTags = document.createElement(newTag);
+            makeTags.innerHTML = " Hello Every One ";
+            makeTags.setAttribute("id", 'play');
+            makeTags.setAttribute("class", 'detail');
+            makeTags.style.color = addStyle;
+            
+
+            document.querySelector("#container").append(makeTags);
+            
+
+
+        </script>
+        
+    </body>
+</html>

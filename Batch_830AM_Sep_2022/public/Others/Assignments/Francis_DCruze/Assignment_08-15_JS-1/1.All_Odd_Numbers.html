@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Odd Numbers</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: white;
+                padding: 25px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var lastNum = 220;
+            var startNum = 97;
+
+            console.log(`All odd Numbers between ${lastNum} to ${startNum} :`);
+
+            for (var i = lastNum; i >= startNum; i--)
+            {
+                if(i % 2 != 0)
+                {
+                    console.log(i);
+                }
+            }
+        </script>
+    </body>
+</html>

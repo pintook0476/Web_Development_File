@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML Tables
+        </title>
+        <style>
+            .heading {
+                font-weight: bold;
+                text-align: center;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            Demonstrating Table
+        </div>
+        <table border="1px solid" cellpadding="10px" cellspacing="10px">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>AGe</th>
+                    <th>Gender</th>
+                    <th>Present Location</th>
+                    <th>Prmnt Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td rowspan="3">Hyderabad</td>
+                    <td>Assam</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teena</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    
+                    <td>Delhi</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Meena</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Leesa</td>
+                    <td>15</td>
+                    <td>Female</td>
+                    <td>USA</td>
+                    <td>Russia</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Suresh</td>
+                    <td>10</td>
+                    <td>MAle</td>
+                    <td colspan="2">USA</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </body>
+</html>

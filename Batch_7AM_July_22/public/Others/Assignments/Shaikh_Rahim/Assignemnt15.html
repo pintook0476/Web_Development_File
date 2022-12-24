@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        function UseInput() {
+            var employee, age, gender, pf, hra, bSalary, tSalary, tsal,totalTax;
+            employee = prompt("Enter your name :");
+            age = prompt("Enter your age ");
+            gender = prompt("Enter your gender");
+            bSalary = parseInt(prompt("Enter your salary"));
+            tsal = Calculation(bSalary);
+            totalTax = taxcal(gender,tsal);
+            Display(employee, age, bSalary, tsal,totalTax);
+
+
+        }
+        function Calculation(basicSalary) {
+            var pf = (basicSalary * 15) / 100;
+            var hra = (basicSalary * 25) / 100;
+            var tSalary = basicSalary + pf + hra;
+            return tSalary;
+        }
+        function Display(employee, age, bSalary, tSalary,totalTax) {
+            console.log("Your name is " + employee);
+            console.log("your age is " + age);
+            console.log("Your salary is " + bSalary);
+            console.log("Your total salary is  " + tSalary);
+            console.log("Your total payabel tax is "+ totalTax)
+        }
+        function taxcal(gender,tsal) {
+            var tax;
+            if (gender = "male")
+             { 
+                if(tsal >= 200000){
+                    tax = tsal*15/100;
+                }
+                else if(tsal >= 100000){
+                    tax = tsal*10/100;
+                }
+                else if(tsal >= 50000){
+                    tax = tsal*5/100;
+                }
+            }
+            else if (gender = "female")
+             { 
+                if(tsal >= 200000){
+                    tax = tsal*10/100;
+                }
+                else if(tsal >= 100000){
+                    tax = tsal*5/100;
+                }
+                
+            }
+            return tax;
+        }
+        UseInput();
+    </script>
+</body>
+
+</html>

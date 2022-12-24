@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong No or Not</title>
+</head>
+
+<body>
+    <script>
+       
+        var n = prompt("enter a no");
+        var armstrongNo = 0;
+        var temp;
+        var totaldigits = n.length;
+        n = parseInt(n);
+        temp = n ;
+        console.log(totaldigits);
+        while (n > 0) {
+            var rem = n % 10;
+            armstrongNo = armstrongNo + (rem ** totaldigits);
+            n = n / 10;
+            n= parseInt(n);
+        }
+            if (temp == armstrongNo) {
+                console.log("Its armstrongNo. ");
+            } else {
+                console.log("Not a armstrongNo.");
+            }
+        
+            console.log(armstrongNo);
+        
+    </script>
+
+</body>
+
+</html>

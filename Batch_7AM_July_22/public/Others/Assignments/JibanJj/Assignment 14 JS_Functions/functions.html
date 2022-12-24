@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ename, age, gender, dep, basicSalary, pf, hra, totalSalary
+
+        function readUserData(){
+            ename = prompt("Enter Employee Name");
+            age = prompt("Enter Employee Age");
+            gender = prompt("Enter Gender");
+            dep = prompt("Enter Department name");
+            basicSalary = prompt("Enter Your Basic Salary")
+            basicSalary = parseInt(basicSalary);
+        }
+
+        function calculateData (){
+            readUserData();
+            pf = basicSalary * (14 /100 );
+            hra = basicSalary * (25 / 100);
+
+            totalSalary = basicSalary + pf + hra ;
+        }
+
+        function dispalyData(){
+            calculateData ();
+            console.log("Employee name is "  + ename );
+            console.log("Employee Age is " + age );
+            console.log("Employee Gender is " + gender );
+            console.log("Employee Department is " + dep );
+            console.log("Your Basic Salary is " + basicSalary);
+            console.log("Your pf is " + pf );
+            console.log("Your hra is " + hra);
+            console.log("Your Total Salary is " + totalSalary );
+        }
+
+        function displayTaxData(){
+            dispalyData();
+            if (gender == "male") {
+                if ( totalSalary >= 200000) {
+                    console.log("Your tax is " + totalSalary * (15/100));
+                } else if ( totalSalary >= 100000) {
+                    console.log("Your tax is " + totalSalary * (10/100));
+                } else if ( totalSalary >= 50000){
+                    console.log("Your tax is " + totalSalary * (5/100));
+                }
+                else {
+                    console.log("Your tax is Zero");
+                }
+            } else {
+                if ( totalSalary >= 200000){
+                    console.log("Your tax is " + totalSalary * (10/100));
+                } else if ( totalSalary >= 100000){
+                    console.log("Your tax is " + totalSalary * (5/100));
+                } else {
+                    console.log("Your tax is Zero");
+                }
+            }
+        }
+        displayTaxData();
+    </script>
+</body>
+</html>

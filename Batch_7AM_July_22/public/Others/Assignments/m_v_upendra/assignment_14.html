@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating private access employee details</title>
+    <script>
+        var getEmpdetails = ()=>{
+                var eName = prompt("enter employee name");
+                var eDept = prompt("enter department name");
+                var age = prompt("enter employee age");
+                var gender = prompt("enter employee gender");
+                var basicSalary = prompt("enter employee basic salary");
+                var basicSalary = parseInt(basicSalary);
+                findpfandhra(eName,eDept,age,gender,basicSalary);
+            }
+        
+        var findpfandhra =(eName,eDept,age,gender,basicSalary)=>{
+            var  pf = (14/100)*basicSalary;
+            var  hra = (25/100)*basicSalary;
+            var  totalSalary = basicSalary+pf+hra;
+            findTaxpercent(eName,eDept,age,gender,basicSalary,pf,hra,totalSalary);
+            } 
+        
+            var findTaxpercent =(eName,eDept,age,gender,basicSalary,pf,hra,totalSalary)=>{
+                var taxPercent =0;
+                if(gender == "male"){
+                    if(totalSalary >= 200000){
+                        taxPercent = (15/100)*totalSalary ;
+                    } else if(totalSalary >= 100000){
+                        taxPercent = (10/100)*totalSalary ;
+                    } else if(totalSalary >= 50000){
+                        taxPercent = (5/100)*totalSalary ;
+                    } else{
+                        taxPercent = 0;
+                    }
+                } else{
+                    if(totalSalary >= 200000){
+                        taxPercent = (10/100)*totalSalary ;
+                    } else if(totalSalary >= 100000){
+                        taxPercent = (5/100)*totalSalary ;
+                    }else{
+                        taxPercent =0;
+                    }
+                }
+                displayaDetails(eName,eDept,age,gender,basicSalary,pf,hra,totalSalary,taxPercent);
+            }
+
+            var displayaDetails =(eName,eDept,age,gender,basicSalary,pf,hra,totalSalary,taxPercent)=>{
+                console.log("empName " + eName);
+                console.log("Gender " + gender);
+                console.log("deptName " + eDept);
+                console.log("basicsalary " + basicSalary);
+                console.log("pf " + pf);
+                console.log("hra " + hra);
+                console.log("totalSalary " + totalSalary);
+                console.log(" tax percentage is " + taxPercent);
+            }
+            getEmpdetails();    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

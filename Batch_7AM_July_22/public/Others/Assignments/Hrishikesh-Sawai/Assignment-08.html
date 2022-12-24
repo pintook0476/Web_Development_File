@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment8</title>
+    <link rel="stylesheet" href="style8.css" />
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <!-- Main Section content -->
+
+    <div class="mani_section">
+
+        <!-- Form Section -->
+        <form action="#" method="post">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="formItems">
+                    <div class="formrow">
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="name"> Student Name : </label>
+                        <input type="text" placeholder="Enter Full Name" name="stdName" required>
+                        <div class="formrow">
+                            <span class="form-required" style="color:red">*</span>
+                            <label for="email"> Age : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" placeholder="Age" name="Age" required>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="email"> Student mail : </label>&nbsp;&nbsp;
+                    <input type="text" placeholder="E-mail" name="email" required><br>
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="email"> Mobile No. : </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="Mobile No." name="Mobile No." maxlength="10" required><br>
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="gender"> Gender : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="Male" value="Male">
+                    <label for="gender"> Male </label>
+                    <input type="radio" name="gender" id="Female" value="Female">
+                    <label for="gender"> Female </label>
+                    <input type="radio" name="gender" id="Other" value="Other">
+                    <label for="gender"> Other </label>
+                    <div class="formrow">
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="about"> Hobbies : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Your Hobbies" name="hobbies" required>
+                    </div>
+                    
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- Educational Details -->
+
+            <fieldset>
+                <legend>Educational Details</legend>
+                <div class="formItems">
+                    <div class="formrow">
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="Education"> Qualification : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Qualification" name="qualification" required><br>
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="Education"> University : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="University" name="University" required><br>
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="language"> Programming Language : </label>
+                        <select id="language-select">
+                            <option value="" hidden> Choose an option </option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">Web Development</option>
+                            <option value="C#">C#</option>
+                            <option value="c/c++">C / C++</option>
+                            <option value=".Net">.Net</option>
+                            <option value=".Net">SQL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="language"> Language Known : </label>
+
+                    <input type="checkbox" id="Marathi" name="Language">
+                    <label for="Hindi">Marathi</label>
+
+                    <input type="checkbox" id="Hindi" name="Language">
+                    <label for="Hindi">Hindi</label>
+
+                    <input type="checkbox" id="English" name="Language">
+                    <label for="English">English</label>
+
+                    <input type="checkbox" id="Telugu" name="Language">
+                    <label for="Telugu">Telugu</label>
+
+                    
+
+                </div>
+            </fieldset>
+
+
+            <!-- Address Details -->
+
+
+            <fieldset>
+                <legend>Address Details</legend>
+
+                <div class="formItems">
+                    <div class="formrow">
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="dno"> House Number : </label>
+                        <input type="text" placeholder="House Number" name="dno" required><br>
+                        
+                        <span class="form-required" style="color:red">*</span>
+                        <label for="Landmark"> Landmark : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Landmark" name="msg" required>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="street"> Street : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="Street" name="street" required>
+                </div>
+
+
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="District"> District : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="District-select">
+                        <option value="" hidden> Choose an option </option>
+                        <option value="kurnool">Akola</option>
+                        <option value="hyderabad">Amravati</option>
+                        <option value="hyderabad">Bhandara</option>
+                        <option value="KarimNagar">Chandrapur</option>
+                        <option value="Raipur">Nagpur</option>
+                        <option value="hyderabad">Nashik</option>
+                        <option value="hyderabad">Pune</option>
+                        <option value="hyderabad">Sangli</option>
+                        <option value="hyderabad">Thane</option>
+                        <option value="hyderabad">Wardha</option>
+                    </select>
+
+                </div>
+                
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="State"> State : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="State-select">
+                        <option value="" hidden> Choose an option </option>
+                        <option value="Odisa">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Assam">Maharashtra</option>
+                        <option value="Chhattisgarh">Karnataka</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+
+            <!-- About yourself -->
+
+
+            <fieldset>
+                <legend>About Yourself</legend>
+                <div class="formrow">
+                    <span class="form-required" style="color:red">*</span>
+                    <label for="about"> About Yourself : </label>
+                    <textarea type="text" placeholder="Something aobut yourself" name="about" cols="50" rows="2"></textarea>
+                </div>
+            </fieldset>
+
+            <button>Submit</button> &nbsp; <button>Reset</button>
+        </form>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p> &copy; Copyrights 2022</p>
+    </footer>
+
+</body>
+</html>

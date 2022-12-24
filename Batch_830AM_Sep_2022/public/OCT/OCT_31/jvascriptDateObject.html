@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Javascript Date Objects
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wed.'];
+
+            var monthNames = ['Jan', 'Feb', 'MAr', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+            var curentDate = new Date();
+            console.log(curentDate);
+
+            /*var myDob = new Date('Oct 05 2021');
+
+            console.log(myDob)*/
+
+            console.log(curentDate.getFullYear());
+            console.log(curentDate.getDate());
+            console.log(curentDate.getMonth());
+
+            console.log(curentDate.getDay());
+
+            var dayIndex = curentDate.getDay();
+            console.log(days[dayIndex])
+
+            var monthIndex = curentDate.getMonth();
+            console.log(monthNames[monthIndex]);
+
+            console.log(curentDate.getHours());
+            console.log(curentDate.getMinutes());
+            console.log(curentDate.getMilliseconds());
+
+            var myDateFormat = days[dayIndex] + ', ' + curentDate.getDate() + '/' + curentDate.getMonth() + '/' + curentDate.getFullYear();
+
+            console.log(myDateFormat)
+
+        </script>
+    </body>
+</html>

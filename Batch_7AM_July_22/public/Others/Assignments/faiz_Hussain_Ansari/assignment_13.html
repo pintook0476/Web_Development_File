@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var result;
+            var n = prompt ('Enter the first no');
+            n = parseInt(n);
+            var useraction = prompt('armstrng/pallendrome /lucky/reverse');
+
+            switch (useraction) {
+                case "armstrng" :
+                temp = n;
+                n = n.toString()
+                var armstrngnum = 0;
+                var totalDigits = n.length;
+                n = parseInt(n);
+                console.log(totalDigits)
+                while (n >0) {
+                    var rem = n % 10;
+                    var armstrngnum = armstrngnum + (rem ** totalDigits);
+                    n = n/10;
+                    n = parseInt(n);
+                    
+                }if (temp == armstrngnum) {
+                        console.log('The num is armstrng')
+                    } else {
+                        console.log('Not Armstrng')
+                    }
+                    break;
+                
+                case 'pallendrome':
+                var temp = n;
+                var rem;
+                var rev = 0;
+                while (n > 0) {
+                    rem = n % 10;
+                    rev = (rev * 10) + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                if(temp == rev) {
+                    console.log("pallindrome number");
+                }else{
+                    console.log("not a pallindrome");
+                }
+                    break;
+                case 'lucky':
+               
+                var count = 0;
+                var rem;
+                while (n >0){
+                    rem = n % 10;
+                    count = count + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                    if ( n ==0 && count > 9) {
+                        n = count;
+                        count = 0;
+                    }
+                }console.log(count);
+                    break;
+                case 'reverse':
+                temp = n;
+                var rev = ""
+                while (n >0){
+                    var rem = n % 10;
+                    // rev = rev *10 + rem ;
+                    rev = rev + rem
+                    n = n/10 ;
+                    n = parseInt(n);
+                    rem = n % 10;
+                }console.log("The Number is  " + temp);
+                console.log("The Reverse Number is  " + rev);       
+                
+            }
+            
+           
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+            var empname =prompt("Enter your name");
+            var gender =prompt("Gender");
+            var age =prompt("Age");
+            var dept =prompt("Department");
+            var BasicPay =prompt("Basic pay");
+            BasicPay = parseInt(BasicPay);
+            var PF = BasicPay * (10/100);
+            var HR = BasicPay * (20/100);
+            //calculating total..
+            var total = BasicPay + PF + HR;
+            console.log("Name: " + empname);
+            console.log("Gender is "+ gender);
+            console.log("Age is "+ age);
+            console.log("Department is " + dept);
+            console.log("salary is " + total);
+
+            if(gender == "male"){
+                if(total >= 50000){
+                    console.log("Taxable value is " + total * 5/100)
+                }else if(total >= 100000){
+                    console.log("Taxable value is " + total * 10/100)
+                }else if(total >= 200000){
+                    console.log("Taxable value is " + total * 15/100)
+                }
+                else(total < 50000)
+                console.log("Taxable value is Nill")
+            }else{
+                if(total >= 100000){
+                console.log("Taxable value is " + total * 5/100)
+                }else if(total >= 200000){
+                    console.log("Taxable value is " + total * 10/100)
+                }
+                else(total <= 50000)
+                console.log("Taxable value is Nill")
+                }
+            </script>
+    </body>
+</html>

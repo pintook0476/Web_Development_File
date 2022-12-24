@@ -1,0 +1,88 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.header{
+border: 2px solid;
+text-align: center;
+background-color: bisque;
+margin: 10px auto;
+padding: 5px;
+font-size: 30px;
+font-weight: bolder;
+}
+
+.cContainer{
+border: 2px solid black;
+width: 500px;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+margin: 10px;
+color: wheat;
+background-color: crimson;
+}
+
+.cContainer ul li{
+border: 1px solid black;
+border-radius: 50px;
+margin: 10px;
+padding: 10px;
+list-style-type: none;
+font-size: 20px;
+color: black;
+background-color: chartreuse;
+}
+
+.sContainer{
+border: 2px solid black;
+width: 500px;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+margin: 10px;
+color: wheat;
+background-color: crimson;
+}
+
+.sContainer ul li{
+border: 1px solid black;
+border-radius: 50px;
+margin: 10px;
+padding: 10px;
+list-style-type: none;
+font-size: 20px;
+color: black;
+background-color: chartreuse;
+text-align: left;
+
+}
+.displayDetails{
+border: 2px solid black;
+width: 500px;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+margin: 10px;
+color: rgb(22, 255, 22);
+background-color: crimson;
+position: absolute;
+left: 750px;
+top: 100px;
+display: none;
+
+}
+.displayDetails ul li{
+margin: 10px;
+padding: 10px;
+list-style-type: none;
+font-size: 20px;
+color: whitesmoke;
+background-color: rgb(0, 0, 0);
+text-align: left;
+}
+.allContainer{
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+}

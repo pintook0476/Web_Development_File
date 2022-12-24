@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Assignment - Layout
+        </title>
+        <style>
+            .footer,
+            .header {
+                border: 1px solid;
+                text-align: center;
+                text-decoration: underline;
+                padding: 5px;
+                margin: 5px;
+            }
+            .mainContainer {
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+                height: 500px;
+            }
+            .footer {
+                font-size: 10px;
+            }
+            .leftBlock,
+            .rightBlock {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                height: 460px;
+                overflow: auto;
+            }
+            .leftBlock {
+                width: 30%;
+            }
+            .rightBlock {
+                width: 55%;
+            }
+            .leftBlock li {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style-position: inside;
+            }
+            .leftBlock li:hover {
+                 background-color: #ccc;
+            }
+            .detailsContainer > li {
+                list-style: none;
+                height: 100px;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock,
+            .detailsBlock {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .imgBlock {
+                border: 1px solid;
+                width: 150px;
+            }
+            .imgBlock img {
+                width: 90px;
+                height: 70px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <span style="border: 1px solid">Student Details</span>
+        </div>
+        <div class="mainContainer">
+            <div class="leftBlock">
+                <ol>
+                    <li>Raj</li>
+                    <li>
+                        <a href="#teenaDetails">Teena</a>
+                    </li>
+                    <li>Krish</li>
+                    <li>PRasad</li>
+                    <li>ABC</li>
+                    <li>PQR</li>
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <ul class="detailsContainer">
+                    <li>
+                        <div class="imgBlock">
+                             <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="teenaDetails">
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp2.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Teena</li>
+                                <li>Age: 90</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBlock">
+                            <img src="../Aug_1/Images/emp1.png" alt="">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name : Raj</li>
+                                <li>Age: 20</li>
+                                <li>Gender: MAle</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            &#169; copyrights 2022
+        </div>
+    </body>
+</html>

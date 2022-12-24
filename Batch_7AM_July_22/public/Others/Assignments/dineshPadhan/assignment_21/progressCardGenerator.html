@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="style.js"></script>
+  </head>
+  <body>
+    <div class="formInput">
+      <div class="heading">Joseph Public School</div>
+      <div class="generateNote">Generate Your Report card online</div>
+      <form>
+        <div class="leftBox">
+          <label for="text">Student Name</label>
+          <input type="text" placeholder="John Nick" id="stdname" />
+          <label for="text">Class Adviser</label>
+          <input type="text" placeholder="Shehan Kaur" id="adviser" />
+          <h4>Marks</h4>
+          <div class="mark">
+            <div class="mark1">
+              <label for="text">Writting</label>
+              <input type="text" id="writting" />
+              <label for="text">Speaking</label>
+              <input type="text" id="speaking" />
+              <label for="text">Count./Numbering</label>
+              <input type="text" id="counting" />
+              <label for="text">Playing/Sharing</label>
+              <input type="text" id="playing" />
+            </div>
+            <div class="mark1">
+              <label for="text">Reading</label>
+              <input type="text" id="reading" />
+              <label for="text">Language</label>
+              <input type="text" id="langauage" />
+              <label for="text">Art and Craft</label>
+              <input type="text" id="art" />
+            </div>
+          </div>
+        </div>
+        <div class="leftBox">
+          <label for="text">Student Level</label>
+          <input type="text" placeholder="I / II / III / IV / V" id="level" />
+          <label for="text">Section</label>
+          <input type="text" placeholder="A / B / C / D" id="section" />
+          <label for="textarea">Feedback & Remarks</label>
+          <textarea
+            name="textarea"
+            id="remark"
+            cols="56"
+            rows="10"
+            maxlength="350"
+          ></textarea>
+          <input
+            type="button"
+            onclick="loadreport();"
+            value="Get Report Card"
+            class="LoadBtn"
+          />
+          <button type="reset" class="reload">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- report card -->
+    <div class="reportcard">
+      <img src="img/reportCard.png" alt="">
+      <span class="name"></span>
+      <span class="level"></span>
+      <span class="adviser"></span>
+      <span class="section"></span>
+      <span class="writting"></span>
+      <span class="reading"></span>
+      <span class="speaking"></span>
+      <span class="langauage"></span>
+      <span class="counting"></span>
+      <span class="art"></span>
+      <span class="playing"></span>
+      <span class="total"></span>
+      <span class="grade">A</span>
+      <div class="remark"></div>
+
+    </div>
+    <input type="button"onclick="window.print();"value="Print" class="report"/>
+  </body>
+</html>

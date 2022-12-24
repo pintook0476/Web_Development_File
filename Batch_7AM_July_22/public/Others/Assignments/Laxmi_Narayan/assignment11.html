@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <titile>
+            Employe Details
+        </titile>
+    </head>
+    <body>
+        <script>
+            var ename = prompt("Enter Employe Name");
+            var eage = prompt("Enter Employe Age");
+            var gender = prompt("Gender");
+            var dep = prompt("Department");
+            var basicsal = prompt("Basicsalray");
+            basicsal = parseInt(basicsal);
+            var pf = basicsal * (15 / 100);
+            var hra = basicsal * (25 / 100);
+            var totalsal = pf + hra + basicsal;
+            console.log("Employe Details");
+            console.log("Name " + ename);
+            console.log("Age " + eage);
+            console.log("Gender " + gender);
+            console.log("Department " + dep);
+            console.log("Basicsalry " + basicsal);
+            console.log("Total " + totalsal);
+            if ( gender == 'male' || gender == 'male') {
+                if ( totalsal >= 200000) {
+                    console.log(" tax percentage is  " + (15 / 100) * totalsal);
+                } else if (totalsal >= 100000) {
+                    console.log(" tax percentage is " + (10 / 100) * totalsal);
+                }else if (totalsal >=50000) {
+                    console.log(" tax percentage is " + (5 / 100));
+                } else {
+                    console.log("tax is 0");
+                }
+            }
+            if ( gender == 'female' || gender == 'female') {
+                if ( totalsal >= 200000) {
+                    console.log(" tax percentage is  " + (10 / 100) * totalsal);
+                } else if (totalsal >= 100000) {
+                    console.log(" tax percentage is " + (5 / 100) * totalsal);
+                }else { 
+                    console.log("tax is 0");
+                }
+            }
+            
+        </script>
+    </body>
+</html>

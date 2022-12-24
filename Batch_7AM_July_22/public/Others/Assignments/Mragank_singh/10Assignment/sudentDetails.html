@@ -1,0 +1,41 @@
+<html>
+<head>
+     <title>Student Details</title>
+</head>
+<body>
+    <h3> Student Details using if else</h3>
+    <script >
+        var studentname = prompt("enter student name: ");
+        var gen = prompt("enter gender: ");
+        var age = prompt("enter age: ");
+        var loc = prompt("enter location: ");
+        var subject1 = parseInt(prompt("enter subject1 marks: "));
+        var subject2 = parseInt(prompt("enter subject2 marks: "));
+        var subject3 = parseInt(prompt("enter subject3 marks: "));
+
+        //calculating total and average
+        var tot = subject1 + subject2 + subject3 ;
+        var avg = tot / 3 ;
+
+        //display student details
+        console.log("Student Details:");
+        console.log("Name: " + studentname);
+        console.log("Gender: " + gen);
+        console.log("Age: " + age);
+        console.log("Location: " + loc);
+        console.log("subject1: " + subject1);
+        console.log("subject2: " + subject2);
+        console.log("subject3: " + subject3);
+        console.log("Total: " + tot);
+        console.log("Average: " + avg);
+
+        //passed or failed using if else 
+        if(avg >=40){
+            console.log(studentname + " You passed. " );
+        }
+        else{
+            console.log(" you Failed. " );
+        }
+    </script>
+</body>
+</html>

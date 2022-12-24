@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            text-align:center;
+            border:1px solid;
+            background-color: rgb(216, 233, 244);
+        }
+
+        .container {
+            border: 1px solid;
+            height: 1012px;
+            width: 1390px;
+            padding:5px;
+            left:45%;
+            right:45%;
+                
+        } 
+
+        .containerOne {
+            border: 1px solid;
+            height:200px;
+            width: 1200px;
+            padding: 15px;
+            margin: 15px; 
+            left:45%;
+            right:45%;
+            
+        }
+
+        .containerTwo {
+            border:1px solid;
+            height:200px;
+            width: 1200px;
+            padding: 15px;
+            margin: 15px;
+            left:45%;
+            right:45%;
+        }
+
+        li {
+            padding: 5px;
+            list-style: none;
+            margin: 5px;
+            font-weight:bold;
+        }
+        
+        .posPersonal {
+            position:relative;
+
+        }
+
+        .personalP {
+            left: 3px;
+            top: -179px;
+        }
+
+        .eduPos {
+            left: 11px;
+            top: -181px;
+
+        }
+
+        .addPos {
+
+            left: 11px;
+            top: -181px;
+        }
+
+        .abtPos {
+
+            left: 26px;
+            top: -214px;
+        }
+
+        .land {
+
+            left: 455px;
+            top: -200px;    
+        }
+
+        .course {
+
+            left: 455px;
+            top: -100px; 
+
+        }
+
+        ::placeholder {
+            font-weight: bold;
+            background-color:rgb(216, 233, 244);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>Student Registration Page</h3>
+
+    <div class = "container">
+      <div class = containerOne>
+        <ul>
+            <li>  
+                <label for = "stuName">Student Name:</label>
+                <span style = color:red>*</span>
+                <input type = "text" name="stuName">
+                
+            </li> 
+            <li>
+                <label for = "gender">Gender</label>
+                <input type = "radio" name = "gender">Male
+                <input type = "radio" name = "gender">Female
+            </li>
+
+            <li> 
+              <label for = "eMail">Mail Id:</label>
+              <span style = color:red>*</span>
+              <input type = "text" name = "eMail">
+            </li>
+            
+            <li>
+
+                <div class = "posPersonal course">
+               
+                  <label for = "course">Course opted:</label>
+                  <select name = "" id = "">
+                    <option value = "">Computer Science</option>
+                    <option value = "">Mathematics</option>
+                    <option value = "">English</option>
+                    <option value = ""> Biology</option>
+                    <option value = "">Life Sciences</option>
+
+                  </select>
+                </div>
+            </li> 
+            <li>
+               <div class = "posPersonal personalP">
+                <label for = "personal"></label>
+                <input type = "text" name = "personal" placeholder = "Personal Details">
+               </div>
+            </li>  
+        </ul>
+      </div>
+
+      <div class = containerOne>
+        <ul>
+            <li>
+              <label for = "quali">Qualification:</label>
+              <input type = "text" name = "quali">
+            </li>  
+            <li>
+              <span> 
+                <label for = "language">Languages known</label>
+                <input type = "checkbox" name ="language"> English
+            </li> 
+            <li>
+              <span>  
+                <input type = "checkbox" name = "language">Hindi
+                <input type = "checkbox" name = "language">Urdu
+                <input type = "checkbox" name = "language">Telugu
+              </span>
+            </li>
+            
+            <li>
+              <label for = "marks">Avg Marks</label>
+              <input type = "text" name = "marks">
+            </li>  
+            <li>
+              <div class = "posPersonal eduPos"> 
+                <label for = "eduQual"></label>
+               <input type = "text" name = "eduQual" placeholder ="Education Details">
+              </div>  
+            </li>
+        </ul>
+      </div>
+      <div class = containerOne>
+        <ul>
+            <li>
+                <label for = "Dno">Dno:</label>
+                <input type = "text" name = "Dno">
+            </li>
+
+            <li>
+                <label for = "street">Street Name</label>
+                <input type = "text" name = "street">
+            </li>
+
+            <li>
+                <label for = "state"> State</label>
+                <select id = "" name = "">
+                    <option value = "" selected>Telangana</option>
+                    <option value = "">Andhra Pradesh</option>
+                    <option value = "">UttarPradesh</option>
+                    <option value = ""> Madhya Pradesh</option>
+                </select>
+                
+            </li>
+            <li>
+                <label for = "country">Country</label>
+                <select id="" name = "">
+                    <option value = "" selected>India</option>
+                    <option value = "">USA</option>
+                    <option value = "">UK</option>
+                    <option value = "">Germany</option>
+
+                </select>
+                
+            </li>
+
+            <li>
+                <div class = "posPersonal addPos">
+                  <label for = "address"></label>
+                  <input type = "text" name = "address" placeholder = "Address">
+                </div>
+            </li>
+            <li>
+                <div class = "posPersonal land">
+                 <label for = "landmark">Landmark</label>
+                 <textarea cols="20" rows="10"> </textarea>
+                </div>
+            </li>
+        </ul>
+
+      </div>
+      <div class = containerTwo>
+        <ul>
+          <li>
+            <span>
+             <label for = "yourself">About Yourself</label>
+            </span> 
+             <textarea cols =30px rows =10px></textarea>
+            
+         </li>
+         <li>
+            <div class = "posPersonal abtPos">
+              <label for = "About"></label>
+              <input type = "text" name = "about" placeholder = "About Yourself">
+            </div>  
+         </li>
+       </ul>
+
+      </div>
+    </div>
+    <h3>@copyright2022</h3>
+    
+    
+</body>
+</html>

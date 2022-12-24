@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .content {
+                border: 1px solid;
+                width: 130px;
+                height: 130px;
+                text-align: center;
+                margin: 40px;
+            }
+            .content:hover {
+                text-decoration: underline;
+                background-color: aqua;
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: green;
+            }
+
+            div:empty {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+            a:active {
+                color: red;
+            }
+            a:focus {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://www.abc.com">Sample</a>
+        <a href="http://www.abc.com">Sample</a>
+        <a href="http://www.abc.com">Sample</a>
+        <a href="http://www.abc.com">Sample</a>
+        <a href="http://www.abc.com">Sample</a>
+        <div class="content">
+            Content
+        </div>
+        <div>TEst 123</div>
+        <div></div><div></div><div></div><div></div><div></div>
+        <div>Sample</div>
+    </body>
+</html>

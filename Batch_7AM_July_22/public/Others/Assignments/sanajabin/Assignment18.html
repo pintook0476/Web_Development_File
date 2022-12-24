@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details with Object Assignment 18</title>
+</head>
+<body>
+    <script>
+        var empData = {
+                readEmpData: function() {
+                    this.empName = prompt("Enter employee name");
+                    this.empAge = prompt("Enter employee age");
+                    this.empGender = prompt("Enter employee Gender");
+                    this.empDept = prompt("Enter employee Dept");
+                    this.basicSal = prompt("enter basic salary");
+                    this.basicSal = parseInt(this.basicSal);
+                    this.getPfAndHra();
+                },
+                getPfAndHra: function() {
+                    this.pf = (14 * this.basicSal) / 100;
+                    this.hra = (25 * this.basicSal) / 100;
+                    this.totalSal = this.pf + this.hra + this.basicSal;
+                    this.getTotalTax();
+                },
+                getTotalTax: function() {
+                    this.taxPercent = 0;
+                    if (this.empGender == 'male') { 
+                        if (this.totalSal >= 200000) {
+                            this.taxPercent = 15;
+                        } else if (this.totalSal >= 100000){
+                            this.taxPercent = 10;
+                        } else if (this.totalSal >= 50000){
+                            this.taxPercent = 5;
+                        }
+                    } else { 
+                        if (this.totalSal >= 200000) {
+                            this.taxPercent = 10;
+                        } else if (this.totalSal >= 100000){
+                            this.taxPercent = 5;
+                        }
+                    }
+                    this.taxTobePaid = (this.taxPercent * this.totalSal) / 100;
+
+                    this.totalSal = this.totalSal - this.taxTobePaid;
+                    this.displayEmployeeDetails();
+                },
+                displayEmployeeDetails: function() {
+                    console.log("Employee details");
+                    console.log("Employee name  " + this.empName);
+                    console.log("Employee Age   "  + this.empAge);
+                    console.log("Employee Gender  " + this.empGender);
+                    console.log("Employee Dept   " + this.empDept);
+                    console.log("Total Sal " + this.totalSal);
+                }
+            };
+
+            empData.readEmpData();
+            console.log(empData)
+    </script>
+    
+</body>
+</html>

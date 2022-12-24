@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress card Generataion</title>
+    <link rel="stylesheet" href="studentProgress.css">
+    
+</head>
+<body>
+    <div class="title"> Progress Card Generataion</div>
+    <ul>
+        <li>
+            <div for="studentname" class="labelContainer">
+                Student Name:
+            </div>
+            <div class="inputController">
+                <input type="text" id="sname">
+            </div>
+        </li>
+        <li>
+            <div for="studentage" class="labelContainer">  
+                 Student Age:
+            </div>
+            <div class="inputController">
+                <input type="text" id="sage">
+            </div>
+        </li>
+        <li>
+            <div for="studentgender" class="labelContainer">
+                Student Gender:
+            </div> 
+            <div class="inputController">
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </div>    
+        </li>
+        <li>
+            <div for="studentclass" class="labelContainer">
+                Student Class:
+            </div>
+            <div class="inputController">
+                <select name="" id="sclass">
+                    <option>None</option>
+                    <option>Class I</option>
+                    <option>Class II</option>
+                    <option>Class III</option>
+                    <option>Class IV</option>
+                    <option>Class V</option>
+                </select>
+            </div>
+        </li>
+        <li class="smarks">
+            <div for="studentmarks" class="labelContainer">
+                Student Marks:
+            </div>
+            <div class="inputController">
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+                <input type="text" id="m6">
+            </div>
+        </li>
+        <li>
+            <div for="cardGeneration" class="labelContainer">
+            <input type="button" value="Generate Progress Card" onclick="sdetails.readSdetails();">  
+            </div>
+        </li>
+    </ul>
+
+    <div class="displayCard">
+    <ul>
+        <div class="dtitle"> Student Progress Card</div>
+        <li>
+            <div for="displayname" class="labelContainer">
+                 Student Name: 
+            </div>
+            <div class="inputController">
+                <span id="dname"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayage" class="labelContainer">
+                Student Age: 
+            </div>    
+            <div class="inputController">
+                <span id="dage"></span>
+            </div>
+        </li>
+        <li>
+            <div for="dispalygender" class="labelContainer">
+                Student Gender:
+            </div>
+            <div class="inputController">
+                <span id="dgender"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayclass" class="labelContainer">
+                Student Class: 
+            </div>
+            <div class="inputController">
+                <span id="dclass"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaymarks" class="labelContainer">
+                Student Marks: 
+            </div>
+            <div class="inputController">
+                <span id="dm1"></span>
+                <span id="dm2"></span>
+                <span id="dm3"></span>
+                <span id="dm4"></span>
+                <span id="dm5"></span>
+                <span id="dm6"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaytotal" class="labelContainer">
+                Total Obtained:
+            </div>    
+            <div class="inputController">
+                <span id="dtotal"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaypercent" class="labelContainer">
+                Percentage:
+            </div> 
+            <div class="inputController">
+                <span id="dpercent"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displayavg" class="labelContainer">
+                Average:
+            </div>
+            <div class="inputController">
+                <span id="davg"></span>
+            </div>
+        </li>
+        <li>
+            <div for="displaygrade" class="labelContainer">
+                Grade:
+            </div>
+            <div class="inputController">
+                <span id="dgrade"></span>
+            </div>
+        </li>
+    </ul>
+    <ul style="text-align: center;">
+        Thank You For Your Visit
+    </ul>
+</div>
+    <script src="studentProgress.js"></script> 
+       
+</body>
+</html>

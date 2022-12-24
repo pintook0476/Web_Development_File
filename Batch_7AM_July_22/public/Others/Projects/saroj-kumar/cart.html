@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    ><meta name="viewport" content="width=device=width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Productes - RedStore </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+</head>
+<body>
+ 
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/gt.png" width="120px">
+        </div>
+        <nav>
+            <ul id="menuItem">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contatct</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart2.png" width="30px" height="30px">
+        <img src="images/menu1.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<!-----------Cart-item-Details---------->
+  
+   <div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th> 
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/t1.png" height="200px" width="180px">
+                    <div>
+                        <p>Blue printed T-shart</p>
+                        <small>₹1200</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹1200</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/shoe1.jpg" height="200px" width="180px">
+                    <div>
+                        <p>Lofer-Shoes</p>
+                        <small>₹850</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹850</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/pant2.jpg" height="200px" width="180px">
+                    <div>
+                        <p>Formal-Pant</p>
+                        <small>₹1250</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹1250</td>
+        </tr>
+    </table>
+   
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                <td>₹1200</td>
+                
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹40</td>
+                
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹1240</td>
+                
+            </tr>
+        </table>
+    </div>
+
+
+
+
+   </div>
+  
+  
+   <!-----------Footer---------->
+   <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Downlod Our App</h3>
+                <p>
+                    Downlod For Androin and Ios Mobile Phone.
+                </p>
+                <div class="app-logo">
+                    <img src="images/store.jpg" height="120px" width="250px">
+                </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/gt.png" height="100px" width="320px">
+                <p>
+                  Our Perpose Is To Sustainablity Make The pleasure 
+                  and Benifit of Sports Accessbile to the Many 
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>UseFull Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affileate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Teligram</li>
+                <li>Twitter</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrifght">CopyRight-2022-kumarapps</p>
+    </div>
+   </div>
+   <!-----------JS-Toggle-Menue-->
+   <script>
+    var menuItem= document.getElementById("menuItem");
+
+    menuItem.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if( menuItem.style.maxHeight == "0px")
+        {
+            menuItem.style.maxHeight = "200px"
+        }
+        else{
+            menuItem.style.maxHeight = "0px"
+        }
+    }
+   </script>
+  
+</body>
+</html>

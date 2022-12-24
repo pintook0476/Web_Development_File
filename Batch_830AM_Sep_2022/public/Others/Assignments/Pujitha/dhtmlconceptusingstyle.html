@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Demonstrating DHTML concepts</title>
+    <style>
+        .ul {
+            padding: 0;
+            margin: 0;
+        }
+        .li {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+        }
+        .productDetails {
+            border: 2px solid;
+            margin: 10px;
+            padding: 4px;
+            width: 550px;
+            float: left;
+        }
+        .productDetails li {
+            border: 1px solid #ccc;
+        }
+        .img {
+            height: 150px;
+            width: 140px;
+        }
+        .actualPrice {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: underline;
+            color: darkorange;
+            text-decoration-line: line-through;
+        }
+        .discountedPrice {
+            font-weight: bold;
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+    <body>
+        <ul class="productDetailsContainer"></ul>
+        <script>
+            var pDetails = {
+                name: 'Laptop',
+                price: 480,
+                discountPercent: 5,
+                sellerName: 'Indian Electronics',
+                manu: 'Sony',
+                image: 'https://m.media-amazon.com/images/I/718trmhf6kL._AC_SX425_.jpg'
+            }
+            var loadProductData = () => {
+                var liTag = document.createElement('li');
+                liTag.setAttribute("class","productDetails");
+
+                var ulTag = document.createElement("li");
+
+                var li1 = document.createElement("li");
+                li1.innerHTML = 'Product Name : ' + pDetails.name;
+                ulTag.append(li1);
+
+                var li2 = document.createElement("li");
+                li2.innerHTML = 'Product Manufacturer : ' + pDetails.manu;
+                ulTag.append(li2);
+
+                var li3 = document.createElement("li");
+                li3.innerHTML = "Product Price : ";
+                    var span1 = document.createElement("span");
+                    span1.setAttribute("class", 'actualPrice');
+                    span1.innerHTML = '$' + pDetails.price;
+                    li3.append(span1);
+
+                    var span2 = document.createElement("span");
+                    span2.setAttribute("class", 'discountedPrice');
+                    span2.innerHTML = '$' + (pDetails.price - (pDetails.price * pDetails.price) / 100 );
+                    li3.append(span2);
+                ulTag.append(li3);
+
+                var li4 = document.createElement("li");
+                li4.innerHTML = 'Seller Name : ' + pDetails.sellerName;
+                ulTag.append(li4);
+
+                var li5 = document.createElement("li");
+                var imgTag = document.createElement("img");
+                imgTag.setAttribute("src", pDetails.image);
+                li5.append(imgTag)
+                ulTag.append(li5);
+
+                liTag.append(ulTag);
+                console.log(ulTag);
+                document.querySelector(".productDetailsContainer").append(liTag);
+
+            }
+            loadProductData();
+        </script>
+    </body>
+</html>

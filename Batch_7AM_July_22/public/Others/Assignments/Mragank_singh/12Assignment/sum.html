@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Sum of Individual values in a number
+        </title>
+    </head>
+    <body>
+        <h1>sum of individual values  </h1>
+        <script>
+            var n = prompt("enter number");
+            var result = 0;
+            while(n>0){
+                var rem = n%10;
+                n = parseInt(n/10);
+                result = result + rem;
+            }
+            console.log(result);
+        </script>
+    </body>
+</html>

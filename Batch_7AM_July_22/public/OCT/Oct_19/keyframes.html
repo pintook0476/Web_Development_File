@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Keyframes
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: yellow;
+                position: absolute;
+                right: 10px;
+                animation: mystyles 15s infinite;
+            }
+
+            @keyframes mystyles {
+                5% {
+                    background-color: green;
+                    width: 160px;
+                    height: 160px;
+                    bottom: 10px;
+                    left: 20px;
+                    background-image: url("https://images.unsplash.com/photo-1516617442634-75371039cb3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhbWxlc3MlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+                    background-size: 100% 100%;
+                    opacity: 0.3;
+                }
+
+                9% {
+                    background-color:aquamarine; 
+                    border-radius: 50% 50%; 
+                    top: 10px;
+                    opacity: 0.5;
+                }
+                15% {
+                    background-color: bisque;
+                    border-radius: 10px;
+                    top: 50px;
+                    left: 40px;
+                    background-image: url("https://wallpaperset.com/w/full/8/6/e/396482.jpg");
+                    background-size: 100% 100%;
+                    opacity: 0.1;
+                }
+                25% {
+                    background-color: goldenrod;
+                    border-radius: 50% 50%;
+                    top: 10px;
+                    left: 10px;
+                    opacity: 0.9;
+                }
+                37% {
+                    background-color: rgb(196, 255, 228);
+                    border-radius: 10px;
+                    top: 80px;
+                    left: 90px;
+                    background-image: url("https://i.pinimg.com/736x/c9/e2/3f/c9e23f340965f9f7637edf5426e5fd8d.jpg");
+                    background-size: 100% 100%;
+                    opacity: 0.1;
+                }
+                90% {
+                    border-radius: 50%;
+                    bottom: 20px;
+                    left: 300px;
+                    background-color: blueviolet;
+                    opacity: 0.6;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">BLOCK 1</div>
+    </body> 
+</html>

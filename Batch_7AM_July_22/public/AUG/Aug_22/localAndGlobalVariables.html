@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Local variables and Global Variables
+    </title>
+</head>
+<body>
+    <SCript>
+        // var m1, m2; // Gloabl /public
+        function getUserData() {
+            var m1, m2; // Private/local data
+            m1 = prompt("Enter first value");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter Second value");
+            m2 = parseInt(m2);            
+        }
+
+        function getTotal() {
+            getUserData();
+            var total = m1 + m2;
+            console.log("The sum is " + total);
+        }
+        
+        getTotal();
+
+        function thirdPartyCode() {
+            console.log("Hello");
+            console.log(m1);
+            console.log(total);
+            
+             
+        }
+        thirdPartyCode();
+
+    </SCript>
+</body>
+</html>

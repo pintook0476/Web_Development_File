@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>pallindrom number in given array</title>
+    </head>
+    <body>
+        <h1>list of pallindrom numbers within the given array</h1>
+        <script>
+            var arrayFormation = () => {
+                var nums = [5,7,11,65,9,181,54,20];
+                calculation(nums);
+            }
+            var calculation = (nums) => {
+                for ( i = 0 ; i < nums.length ; i++){
+                    var temp = nums[i] ;
+                    var pallindrom = "";
+                    while(temp > 0){
+                        var rem = temp % 10 ;
+                        temp = parseInt(temp/10) ;
+                        pallindrom += rem;
+                    }
+                }
+                output(nums , temp , pallindrom) ;
+            }
+            var output = (nums , temp , pallindrom) => {
+                if (temp == pallindrom)
+                    console
+            }
+        </script>
+    </body>    
+</html>

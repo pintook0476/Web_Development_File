@@ -1,0 +1,44 @@
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    border: 1px solid;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+li{
+    list-style-type: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-color: green;
+}
+#name{
+    margin-left: 45px;
+}
+#age{
+    margin-left: 59px;
+}
+.button{
+    border-style: none;
+    background-color: orangered;
+    color: white;
+    height: 25px;
+    width: 70px;
+    margin-left: 137px;
+}
+.button:hover{
+    background-color: green;
+    transition: 3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.displaybox{
+    margin-top: 20px;
+    display: none;
+}

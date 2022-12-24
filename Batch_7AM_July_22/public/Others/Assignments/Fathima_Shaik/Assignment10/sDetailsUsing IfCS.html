@@ -1,0 +1,41 @@
+<html>
+<head>
+     <title>Assignment-10(Student Details)</title>
+</head>
+<body>
+    <h3> Student Details using if c s</h3>
+    <script type="text/javascript">
+        var sname = prompt("enter student name: ");
+        var gen = prompt("enter gender: ");
+        var age = prompt("enter age: ");
+        var loc = prompt("enter location: ");
+        var mat = parseInt(prompt("enter maths marks: "));
+        var phy = parseInt(prompt("enter physics marks: "));
+        var che = parseInt(prompt("enter chemistry marks: "));
+
+        //calculating total and average
+        var tot = mat + phy + che ;
+        var avg = tot / 3 ;
+
+        //display student details
+        console.log("Student Details:");
+        console.log("Name: " + sname);
+        console.log("Gender: " + gen);
+        console.log("Age: " + age);
+        console.log("Location: " + loc);
+        console.log("Maths: " + mat);
+        console.log("Physics: " + phy);
+        console.log("Chemistry: " + che);
+        console.log("Total: " + tot);
+        console.log("Average: " + avg);
+
+        //passed or failed using if else c s
+        if(avg >=40){
+            console.log(sname + " Congratualations....! You are passed. " );
+        }
+        if(avg < 40){
+            console.log("Sorry...Failed. Hope You will pass next time." );
+        }
+    </script>
+</body>
+</html>

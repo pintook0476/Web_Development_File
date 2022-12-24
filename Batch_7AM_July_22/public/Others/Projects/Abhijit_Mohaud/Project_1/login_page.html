@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/98d1f53c33.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login Page</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background: url(img/img_1.jpg);
+        background-size: 100% 800px;
+      }
+
+      .container{
+        /* border: 5px solid black; */
+        border-radius: 10%;
+        position: absolute;
+        color: aliceblue;
+        top: 10%;
+        left: 10%;
+        /* background-color: rgba(47, 166, 202, 0.267); */
+      }
+      .container h1{
+        /* border-bottom: 5px solid khaki; */
+        font-size: 300%;
+        margin-bottom: 10%;
+        padding: 20px 0;
+        text-align: center;
+        
+      }
+      .box{
+        width: 100%;
+        border:none;
+      }
+      .box input{
+        width: auto;
+        border: 2px solid navy;
+        border-radius: 20px;
+        padding: 5px 10px;
+        outline: none;
+        color: rgb(255, 145, 0);
+        margin: 5px 0;
+        font-size: 120%;
+        background-color: black;
+      }
+      .btn{
+        cursor: pointer;
+        color: antiquewhite;
+        width: 20%;
+        margin: 12px 0;
+        padding: 6px;
+        /* border: 2px solid palegreen; */
+        border-radius: 20px;
+        margin-left: 40%;
+        background-color: rgba(153, 155, 18, 0.411);
+        border-color: navy;
+      }
+      .btn:hover{
+        background-color: navy;
+      }
+      .box i{
+        width: 55px;
+        margin:15px 0;
+        padding: 0 10px;
+        
+      }
+      .register{
+        cursor: pointer;
+        margin: 10%;
+        /* border: 2px solid red; */
+        /* border-radius: 45%; */
+        text-align: center;
+        font-size: 30px;
+        background-color: rgba(15, 17, 16, 0.404);
+        color: rgb(243, 239, 8);
+      }
+      a{
+        color: rgb(30, 245, 7);
+      }
+      a:hover{
+        color: aliceblue;
+
+      }
+    </style>
+  </head>
+  <body>
+    <form action="home_page.html">
+    <div class="container">
+      <h1>LogIn</h1>
+      <div class="box">
+        <i class="fa-solid fa-envelope"></i>
+        <label for="email"></label>
+       <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-unlock-keyhole"></i>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+      </div>
+    </form>
+      <a href="home_page.html" target="_blank"><button class="btn">Sign In</button></a>
+      <div class="register">
+      <h5>New User !</h5>
+      <div class="regis"><a href="signUp_3.html" target="_blank">
+        Rergister</a>
+        <div>
+          <a href="forgotPass.html">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

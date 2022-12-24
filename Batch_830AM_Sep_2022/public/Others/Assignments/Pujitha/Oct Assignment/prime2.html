@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Prime Number
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Start Of Execution");
+            var n = prompt("Enter a number"), sum;
+            n = parseInt(n);
+            for (var i = 100; i <= 1; i--) {
+                if (n % i == 0){ 
+                    sum -= i;
+                    console.log(i);
+                }
+            }  
+            if (sum == 2) {
+                console.log(" Tha sum of all prime numbers");
+            }  
+            console.log("The sum of prime number is" + n);
+            console.log("End")
+        </script>
+    </body>
+</html>

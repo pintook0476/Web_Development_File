@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Functions With Default params
+        </title>
+    </head>
+    <body>
+        <script>
+            function addValues(a, b = 11, c = 19) {
+                var result;
+                result = a + b + c;
+                console.log("The sum is " + result);
+            }
+
+            addValues(10, 20);
+
+
+            function conductUIClasses(sname, sage, sgender, isoptedforframework=false) {
+
+            }
+
+            conductUIClasses("raj", 10, 'male')
+            conductUIClasses("raj", 10, 'male')
+            conductUIClasses("raj", 10, 'male')
+            conductUIClasses("raj", 10, 'male')
+            conductUIClasses("raj", 10, 'male')
+            conductUIClasses("raj", 10, 'male', true)
+        </script>
+
+    </body>
+</html>

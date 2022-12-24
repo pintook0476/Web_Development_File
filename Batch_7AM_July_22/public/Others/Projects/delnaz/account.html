@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/91063dabde.js" crossorigin="anonymous"></script>
+    <title>website developing</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #ede0de;
+
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    p {
+        color: #555
+    }
+
+    .container {
+        max-width: 1800px;
+        margin: auto;
+        margin-top: ;
+       
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+
+    .col-2 img {
+        max-width: 100%;
+        padding: 50px 0;
+    }
+
+    .col-2 h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 25px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        color: #fff;
+        ;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border: 1px solid;
+        border-radius: 30px;
+        background-color: #ff523b;
+        transition: background 0.5s;
+    }
+
+    .btn:hover {
+        background: #563434;
+    }
+
+   
+    .header .row {
+        margin-top: 70px;
+    }
+
+    .col-3 {
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .col-3 img {
+        width: 110%;
+    }
+
+    .small-container {
+        max-width: 1080px;
+        margin: auto;
+        margin-left: 90px;
+        margin-right: 25px;
+    }
+
+    .col-4 {
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+    }
+
+    .col-4 img {
+        width: 100%;
+
+    }
+
+    .title {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+
+    .title::after {
+        content: '';
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h4 {
+        color: #555;
+        font-weight: normal;
+    }
+
+    .col-4 p {
+        font-size: 14px;
+    }
+
+    .rating,
+    .fa {
+        color: #ff523b;
+    }
+
+    .col-4:hover {
+        transform: translateY(-5px);
+    }
+    .row{
+        margin-left: 50px;
+    }
+    .row img{
+        width: 110%;
+        margin-left: 50px;
+    }
+     .offer{
+      background:   radial-gradient(#fff, #e28181) ;
+      margin-top: 80px;
+      padding: 30px 0;
+     
+    }
+    
+    /* footer */
+    .footer{
+        background: #000;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 20px 0 10px;
+    }
+    .footer p{
+        color: #8a8a8a;
+    }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-col-1,.footer-col-2 , .footer-col-3 ,.footer-col-4{
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+        flex-basis: 30%;
+    }
+    .footer-col-2{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer-col-2 img{
+        width: 180px;
+        margin-bottom: 4px;
+        margin-left: -135px;
+    }
+    ul{
+        list-style: none;
+    }
+    .app-logo{
+        margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+        margin-left: 5px;
+    }
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+    }
+    /*acccount page */
+    .account-page{
+        padding: 50px 0;
+        background:radial-gradient(#fff, #e28181) ;
+        width: 100%;
+    }
+    .form-container{
+        background: #fff;
+        width: 300px;
+        height: 400px;
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+        margin: auto;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .form-container span{
+        font-weight: bold;
+        padding: 0 10px;
+        color: #555;
+        cursor: pointer;
+        width: 100px;
+        display: inline-block;
+
+    }
+    .form-btn {
+        display: inline-block;
+    }
+    .form-container form{
+        max-width: 300px;
+        padding: 0 20px;
+        position: absolute;
+        top:130px;
+        transition: transform 1s;
+    }
+    form input{
+        width: 100%;
+        height: 30px;
+        margin: 10px 0;
+        padding: 0 10px;
+        border: 1px sollid #ccc;
+    }
+    form .btn{
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0;
+
+    }
+    form .btn :focus{
+        outline: none;
+
+    }
+    #loginpage{
+        left: -300px;
+
+    }
+   #register{
+    left: 0;
+   }
+   form a{
+    font-size: 16px;
+   }
+   #indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+   }
+</style>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/10/10/Orange-Logo-3D-Gradation-Illustration-Graphics-5972010-2-580x387.png"
+                        width="200px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href=""> About</a></li>
+                        <li><a href=""> Contact</a></li>
+                        <li><a href=""> Account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://cdn1.iconfinder.com/data/icons/e-commerce-320/512/bag-512.png" width="30px" height="30px">
+                <img src="https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png" width="30px" height="30px" class="menu-icon">
+            </div>
+            <!------account-page-->
+            <div class="account-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="https://freepngimg.com/save/175401-basket-mix-fruits-png-free-photo/555x384">
+                        </div>
+                        <div class="col-2">
+                            <div class="form-container">
+                                <div class="form-btn">
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="signup()">Signup</span>
+                                    <hr id="indicator">
+
+                                </div>
+                                <form id="loginpage">
+                                    <input type="text" placeholder="username">
+                                    <input type="passwrod" placeholder="password">
+                                    <button type="submit" class="btn" >login</button>
+                                    <a href="">Forget password</a>
+            
+                                </form>
+                                <form id="register">
+                                    <input type="text" placeholder="username">
+                                    <input type="email" placeholder="email">
+                                    <input type="password"placeholder="password">
+                                    <button type="submit" class="btn" >register</button>
+                       
+            
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    <!----footer--->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> download Our app</h3>
+                    <p>Download app for andriod and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png">
+                        
+                        <img src="https://indusfood.co.in/wp-content/uploads/2019/11/iphone-app-store-google-play-store-png-download-44911552-png-app-store-900_320.jpg">
+                    </div>
+                    .
+                </div>
+                <div class="footer-col-2">
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/10/10/Orange-Logo-3D-Gradation-Illustration-Graphics-5972010-2-580x387.png">
+                    <p>our purpose is to sustainbly make <br> the pleasure and benefit to our customer suitable</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>twitter</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>youtube/li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">copyright 2022 - delnaz</div>
+        </div>
+    </div>
+</div>
+<script>
+    var loginpage = document.getElementById("loginpage");
+    var register = document.getElementById("register");
+    var indicator = document.getElementById("indicator");
+    function signup(){
+        loginpage.style.transform = "translateX(0px)";
+        register.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        loginpage.style.transform = "translateX(300px)";
+        register.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+    }
+</script>
+</body>
+
+</html>

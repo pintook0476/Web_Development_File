@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>capcha code </title>
+        <link rel="stylesheet" href="./capcha.css">
+    </head>
+    <body>
+        <div class="block1">
+            <div  class="showdata">
+                <div id="capchagenerate">
+                
+                </div>
+            </div>
+            <div class="show">
+                <input type="text"  id="value">
+            </div>
+            <div>
+                <input type="button" value="Submit" id=" submit" onclick="readCapcha();">
+            </div>
+            <div>
+                <input type="button" value="Reload" id="reload" onclick="data();">
+            </div>
+
+        </div>
+        <div class="block2">
+            <div id="message">
+
+            </div>
+        </div>
+        <script src="./capcha.js"></script>
+    </body>
+</html>

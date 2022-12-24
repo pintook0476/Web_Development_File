@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="studentProgress.css">
+       
+        <title>
+            Student Progress Card Generation
+        </title>
+        <style>
+            .nameMandateErr {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            Student Progess Card Generator
+        </div>
+        <ul>
+            <li>
+                Enter student name: 
+                <input type="text" id="sname">
+                <div class="nameMandateErr">Name is mandate field</div>
+            </li>
+            <li>
+                Enter Student Age: 
+                <input type="text" id="sAge">
+            </li>
+            <li>
+                Gender:
+                <input checked type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </li>
+            <li>
+                Class:
+                <select name="" id="sClass">
+                    <option>Class I</option>
+                    <option>Class II</option>
+                    <option>Class III</option>
+                    <option>Class IV</option>
+                    <option>Class V</option>
+                </select>
+            </li>
+            <li class="marksBlock">
+                Marks:
+                <input type="text" id="m1" >
+                <input type="text" id="m2" >
+                <input type="text" id="m3" >
+                <input type="text" id="m4" >
+                <input type="text" id="m5" >
+            </li>
+            <LI>
+                <INPUt type="button" value="Generate Progress Card" onclick="generateProgressCard()">
+            </LI>
+        </ul>
+        <ul class="progressCardBlock">
+            <li>
+                Student Name: <span id="dname"></span>
+            </li>
+            <li>
+                Student Age: <span id="dage"></span>
+            </li>
+            <li>
+                Student Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                Student Class: <span id="dclass"></span>
+            </li>
+            <li>
+                Student Total: <span id="dtotal"></span>
+            </li>
+            <li>
+                Student AVG: <span id="davg"></span>
+            </li>
+            <li>
+                Student Grade: <span id="dgrade"></span>
+            </li>
+        </ul>
+        <script src="studentProgress.js"></script>
+    </body>
+</html>

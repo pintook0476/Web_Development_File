@@ -1,0 +1,234 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions</title>
+    <style>
+      .br {
+        border: 1px solid black;
+        height: 300px;
+        width: 50%;
+      }
+      .in1 {
+        border: 1px solid black;
+        height: 280px;
+        width: 25%;
+        margin-top: 9px;
+        margin-left: 9px;
+        float: left;
+      }
+      .in2 {
+        border: none;
+        height: 280px;
+        width: 70%;
+        margin: 9px 9px 0 0;
+        float: right;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="br">
+      <div class="in1"></div>
+      <div class="in2">
+        <ul>
+          <li>Name : Muzammil Ahmad</li>
+          <li>Age : 22</li>
+          <li>Gender : Male</li>
+          <li>Basic Salary : 50000</li>
+          <li>Total Salary : 60000</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vhsv</title>
+    <style>
+      .empDetailsContainer {
+        border: 3px solid black;
+        height: 220px;
+        width: 48%;
+        margin: 10px;
+        float: left;
+      }
+      .left {
+        border: 3px solid black;
+        height: 200px;
+        width: 27%;
+        margin-top: 7px;
+        margin-left: 9px;
+        float: left;
+      }
+      .right {
+        /* border: 3px solid black; */
+        height: 202px;
+        width: 67%;
+        margin: 7px 9px 0 0;
+        float: right;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        margin: 10px;
+      }
+      img {
+        height: 201px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+    <script>
+      var empDetails = [
+        {
+          Name: "Musharraf",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Raj",
+          Age: 22,
+          Gender: "Male",
+          BasicSalary: 40000,
+          TotalSalary: 45000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Musharraf",
+          Age: 26,
+          Gender: "Male",
+          BasicSalary: 80000,
+          TotalSalary: 85000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Muzammil",
+          Age: 27,
+          Gender: "Male",
+          BasicSalary: 60000,
+          TotalSalary: 65000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Musharraf",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 70000,
+          TotalSalary: 75000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Muzammil",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Musharraf",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Muzammil",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "Musharraf",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+        {
+          Name: "naeem",
+          Age: 23,
+          Gender: "Male",
+          BasicSalary: 50000,
+          TotalSalary: 55000,
+          image:
+            "https://thumbs.dreamstime.com/z/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+        },
+      ]
+      var empData = (param) => {
+        var container = document.querySelector(".main")
+        var divmain = document.createElement("div")
+        divmain.setAttribute("class", "empDetailsContainer")
+        container.append(divmain)
+        var divTag2 = document.createElement("div")
+        divTag2.setAttribute("class", "right")
+        divmain.append(divTag2)
+
+        var ulTag = document.createElement("ul")
+        divTag2.append(ulTag)
+
+        var li1 = document.createElement("li")
+        ulTag.append(li1)
+        li1.innerHTML = "Employee Name : " + param.Name
+
+        var li2 = document.createElement("li")
+        ulTag.append(li2)
+        li2.innerHTML = "Employee Age : " + param.Age
+
+        var li3 = document.createElement("li")
+        ulTag.append(li3)
+        li3.innerHTML = "Employee Gender : " + param.Gender
+
+        var li4 = document.createElement("li")
+        ulTag.append(li4)
+        li4.innerHTML = "Employee BasicSalary : " + param.BasicSalary
+
+        var li5 = document.createElement("li")
+        ulTag.append(li5)
+        li5.innerHTML = "Employee TotalSalary : " + param.TotalSalary
+
+        var divTag1 = document.createElement("div")
+        divTag1.setAttribute("class", "left")
+        divmain.append(divTag1)
+
+        var imageTag = document.createElement("img")
+        imageTag.setAttribute("src", param.image)
+        divTag1.append(imageTag)
+      }
+      for (var i = 0; i < empDetails.length; i++) {
+        empData(empDetails[i])
+      }
+    </script>
+  </body>
+</html>

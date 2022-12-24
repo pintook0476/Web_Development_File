@@ -1,0 +1,30 @@
+Conic Gradient - It is a Gradient with color transitions rotated around a center point
+
+    Eg: background-image: conic-gradient(pink, blue, green);
+
+    Pie Chart - background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+
+---
+Flex Box:
+
+After block, inline, table and position layout, we go for flex layout to create flexible containers
+
+Display: flex - > makes container as flex container
+
+flex-direction -> column, row, column-reverse, row-reverse
+flex-wrap - wrap, no-wrap, wrap-reverse
+flex-flow -> combination of wrap and direction
+justify-content -center, reverse, flex-start, flex-end, space-around, space-between, 
+align-items - center, flex-start, flex-end, stretch 
+align-content - The align-content property is used to align the flex lines.
+    space-between, space-around, center, flex-start, flex-end
+
+perfect centering
+
+Flex items: 
+order -specifies order of rendering
+flex-grow:  specifies how much has to be grown relevant to others
+flex-shrink
+flex-basis -specifies the initial length of a flex item
+flex - combination of flex-grow, flex-shrink, and flex-basis
+align-self

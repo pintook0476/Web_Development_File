@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header{
+         border: 2px solid;
+         background-color: aqua;
+         margin: 2px;
+         padding: 2px;
+         text-align: center;
+         text-decoration: underline;
+    }
+    .footer{
+         border: 2px solid;
+         background-color: aqua;
+         margin: 2px;
+         padding: 2px;
+         text-align: center;
+    }
+    .body1{
+         border: 2px solid;
+         margin: 21px;
+         padding: 84px;
+         text-align: center;
+    }
+    .body2{
+         border: 2px solid;
+         margin: 21px;
+         padding: 84px;
+         text-align: center;
+    }
+    .body3{
+         border: 2px solid;
+         margin: 21px;
+         padding: 84px;
+         text-align: center;
+    }
+    .body4{
+         border: 2px solid;
+         margin: 21px;
+         padding: 84px;
+         text-align: center;
+    }
+    .adjust{
+         border: 2px solid;
+         
+        position:absolute;
+        background-color: white;
+        top: 48px;
+        bottom: 688px;
+    }
+    .adjust1{
+         border: 2px solid;
+         
+        position:absolute;
+        background-color: white;
+        top: 314px;
+        bottom:421px;
+    }
+    .adjust2{
+         border: 2px solid;
+         
+        position:absolute;
+        background-color: white;
+        top: 583px;
+        bottom: 149px;
+    }
+</style>
+</head>
+<body>
+    <div class="header">Student regitration</div>
+    <div class="body1">
+        <form action="" method="get">
+            <ul>
+             <div>
+                <div class="adjust">peronal details</div>
+                <label for="username">Student name:</label> 
+                <input type="text" name="userName" placeholder="Enter user name">
+                <label for="course">Course opted:</label> 
+                <input type="text" name="course" >
+             </div>
+             <div>  
+                <label for="mid">Mail id:</label> 
+                <input type="text" name="mid" >
+                <label for="gnd">Gender:</label> 
+                <input type="radio" name="gnd" >male
+                <input type="radio" name="gnd" >female
+            </div>
+            </ul>
+          </form>
+    </div>
+    <div class="body2">
+        <form action="" method="get">
+            <ul>
+              <div>
+                <div class="adjust1">Education details</div>
+                <label for="username">Qualification:</label> 
+                <input type="text" name="userName">
+                <label for="course">Languages known:</label> 
+                <input type="checkbox" name="course" >odia
+                <input type="checkbox" name="course" >hindi
+                <input type="checkbox" name="course" >englih
+                <input type="checkbox" name="course" >sanskrit
+             </div>
+             <div>  
+                <label for="mid">avg mark:</label> 
+                <input type="text" name="mid" >
+                
+            </div>
+            </ul>
+          </form>
+    </div>
+    <div class="body3">
+        <form action="" method="get">
+            <ul>
+              <div>
+                <div class="adjust2">Address</div>
+                <label for="username">Dno.</label> 
+                <input type="text" name="userName">
+                <label for="username">street name</label> 
+                <input type="text" name="userName">
+                
+                  <label for="course">state:</label> 
+                <select>
+                  <option>odisha</option>
+                  <option>andhra</option>
+                  <option>bihar</option>
+                  <option>mp</option>
+                </select>
+                <label for="course">country:</label> 
+                <select>
+                  <option>india</option>
+                  <option>burma</option>
+                  <option>uk</option>
+                  <option>usa</option>
+                </select>
+                <label for="username">Landmark:</label> 
+                <input type="text" name="userName">
+             </div>
+         
+            </ul>
+          </form>
+    </div>
+    <div class="body4">
+        <form action="" method="get">
+            <ul>
+              <label for="text">Write about your Self?</label><br>
+              <textarea name="text" rows="4" cols="50"></textarea>
+            </ul>
+          </form>
+    </div>
+    <div class="footer">&copy 2022</div>
+</body>
+</html>

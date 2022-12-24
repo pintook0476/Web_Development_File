@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details through Prompt Method</title>
+</head>
+
+<body>
+    <script>
+        var EmpName = prompt('Enter Emp Name'), basicSal, pf, hra, totalSal;
+        var EmpAge = prompt('Enter Emp Age');
+        var empGender = prompt('Enter Emp Gender');
+        var EmpDep = prompt('Enter Emp Department');
+
+        var basicSal = prompt('Enter Emp Basic Salary');
+        basicSal = parseInt(basicSal);
+
+        pf = (12 / 100) * basicSal;
+
+        hra = (24 / 100) * basicSal;
+
+        totalSal = basicSal + pf + hra;
+
+        console.log('Emp Name is ' + EmpName);
+        console.log('Emp Age is ' + EmpAge);
+        console.log('Emp Gender is ' + empGender);
+        console.log('Emp Department is ' + EmpDep);
+        console.log('Emp Basic Salary is ' + basicSal);
+        console.log('Emp PF is ' + pf);
+        console.log('Emp HRA is ' + hra);
+        console.log('Emp Total Salary is ' + totalSal);     
+    </script>
+</body>
+
+</html>

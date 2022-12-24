@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>emplyee details with input as private
+        </title>
+    </head>
+<body>
+    <script>
+        function getUserData()
+        {
+            var ename,department,gender,basicSalary,tax;
+
+            ename=prompt("Enter employee name:");
+            gender=prompt("Enter employee gender:");
+            department=prompt("Enter employee department");
+            basicSalary=parseInt(prompt("Enter employee basic salary:"));
+            var totalSalary=calTotSal(basicSalary);
+            showUserDetails(ename,department,gender,basicSalary,totalSalary,tax);
+
+        }
+
+        function calTotSal(basicSalary)
+        {
+            var hra=basicSalary*(25/100);
+            var pf=basicSalary*(14/100);
+            var total=basicSalary+pf+hra;
+            return total;
+        }
+
+        function showUserDetails(ename,department,gender,basicSalary,totalSalary,tax)
+        {
+            console.log("Employee Name: " +ename);
+            console.log("Employee Department: " + department);
+            console.log("Gender:" + gender);
+            console.log("Basic Salary:" +basicSalary);
+            console.log("Emplyee Total Salary:" +totalSalary);
+           
+            tax=calTax(gender,basicSalary);
+            console.log("Total Tax:" +tax);
+        }
+        
+
+        function calTax(gender, basicSalary)
+        {
+            var tax;
+            
+                if(gender=="male"){
+                    if(basicSalary>=200000)
+                    {
+                         tax=basicSalary*(15/100);
+                        
+                    }
+
+                    else if(basicSalary>=100000 && basicSalary<200000)
+                    {
+                         tax=basicSalary*(10/100);
+                    }
+
+                    else if(basicSalary>=50000 && basicSalary<100000)
+                    {
+                         tax= basicSalary*(5/100);
+                    }
+
+                    else{
+                        console.log("You Don't have to pay any tax:");
+                    }
+
+                }
+
+                if(gender=="female")
+                {
+                    if(basicSalary>=200000)
+                    {
+                        tax=basicSalary*(10/100);
+                        
+                    }
+
+                    else if(basicSalary>=100000 && basicSalary<200000)
+                    {
+                        tax=basicSalary*(5/100);
+                    }
+
+                    else if(basicSalary>=50000 && basicSalary<100000)
+                    {
+                         tax= basicSalary*(3/100);
+                    }
+
+                    else{
+                        console.log("You Don't have to pay any tax:");
+                    }
+                }
+                return tax;
+            }
+        
+
+            getUserData();
+       
+    </script>
+    
+</body>
+</html>

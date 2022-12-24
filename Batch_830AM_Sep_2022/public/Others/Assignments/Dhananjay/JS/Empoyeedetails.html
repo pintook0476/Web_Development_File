@@ -1,0 +1,47 @@
+<!<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script>
+       var employeename= 'Geeta';
+       var age=20;
+       var gender='female';
+       var department='science';
+       var bascisalary=80000;
+       var pf=(12 / 100) * bascisalary;
+       var hra=(24 / 100) * bascisalary;
+       totalslary=bascisalary+pf+hra;
+       avg=totalslary / 12;
+       firsttax=(15 / 100) * totalslary;
+       secondtax=(10 / 100) * totalslary;
+
+       console.log('Employee name is ' + employeename);
+       console.log('age is ' + age);
+       console.log('gender is ' + gender);
+       console.log('Department is ' + department);
+       console.log('HRA is ' + hra);
+       console.log('PF is ' + pf);
+       console.log('tatol salary is ' + totalslary);
+       console.log('avg is ' + avg);
+
+       if (gender == 'female' && totalslary > 500000) {     
+           var taxvalue=totalslary * (15 / 100);
+           console.log(taxvalue);
+                
+            }
+            else if (gender == 'female' && totalslary < 500000) {
+               var taxvalue=totalslary * (10 / 100);
+                console.log(taxvalue);
+            } else {
+                console.log('Zero Tax');
+            }
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

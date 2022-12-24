@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .parent{
+                border: 1px solid;
+                width: 800px;
+                height: 100px;
+                text-align: center;
+                background-color: red;
+            }
+            .child{
+                border: 1px solid;
+                width: 500px;
+                height: 60px;
+                text-align: center;
+                margin: 10px;
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>Event Bubbling And Event Capturing</h3>
+        <div class="parent">Parent
+            <div class="child">Child</div>
+        </div>
+
+
+        <script>
+            var isChildClicked = false;
+            document.querySelector(".parent").addEventListener("click", () => {
+                if(isChildClicked){
+                    isChildClicked = false;
+                    return;
+
+                }
+                console.log("Parent Got Clicked");
+            }, false);
+
+            document.querySelector(".child").addEventListener("click", () => {
+                isChildClicked = true;
+                console.log("Child Got Clicked");
+            }, false);
+
+        </script>
+        
+    </body>
+</html>

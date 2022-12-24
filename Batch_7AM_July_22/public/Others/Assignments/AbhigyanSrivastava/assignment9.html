@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+    <style>
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+            border: 2px solid;
+            background-color: red;
+            width: 100%;
+            
+        }
+        .firstContainer , .details {
+             border: 1px solid;
+             margin: 20px;
+             padding: 10px;
+        }
+        li{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            width: 500px;
+        }
+        div{
+            border: 1px solid;
+            width: 140px;
+            margin: 10px;
+            padding: 5px;
+            position: absolute;
+        }
+        .secondcontainer{
+            background-color: aquamarine;
+            left: 90px;
+            top: 71px;
+            
+        }
+        .thirdcontainer{
+            background-color: blue;
+            left: 90px;
+            top: 275px;
+        }
+        .fourthcontainer{
+            background-color: brown;
+            left: 90px;
+            top: 481px;
+        }
+        .fifthcontainer{
+            background-color: blueviolet;
+            left: 90px;
+            top: 732px;
+        }
+        .course{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>    
+    <h3 class="heading">Student registration</h3>   
+    <ul class="firstContainer">
+        <div class="secondcontainer">Personal Details</div>
+        <ul class="details">
+        <li>
+            <label for="Student name">Student Name :</label>
+            <input type="text" name="Student name"> 
+        </li>
+        <li>
+            <label for="mail id"> Mail Id :</label>
+            <input type="text" mail id="student mailn id">
+           </li>
+        <li class="course">
+            <label for="course opted">Course opted :</label>
+            <select name="" id="">
+                <option value="">C</option>
+                <option value="">C++</option>
+                <option value="">Java</option>
+                <option value="">Python</option>
+                <option value="">Java Script</option>
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">Bootstrap</option>
+            </select>
+        </li>
+        <li>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female 
+        </li>
+    </ul>
+    <ul class="details">
+        <div class="thirdcontainer">Education Details</div>
+        <li>
+            <label for="Qualification:">Qualification:</label>
+            <input type="text" Qualification="student Qualification:">
+        </li>
+        <li>
+            <label for="language"> Languages Known :</label>
+            <input type="checkbox">English
+            <input type="checkbox">Hindi
+            <input type="checkbox">Telugu
+            <input type="checkbox">Urdu
+        </li>
+        <li>
+            <label for="avg marks">Avg Marks :</label>
+            <input type="text">
+        </li>
+    </ul>
+    <ul class="details">
+        <div class="fourthcontainer">Address</div>
+        <li>
+            <label for="Dno">Dno:</label>
+            <input type="text" name="dno">
+        </li>
+        <li class="course">
+            <label for="landmark">landmark:</label>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </li>
+        <li>
+            <label for="street">Street Name:</label>
+            <input type="text" name="Street">
+        </li>
+        <li>
+            <label for="state">State:</label>
+            <select name="" id="">
+                <option value="">Assam</option>
+                <option value="">Delhi</option>
+                <option value="">Utterpradesh</option>
+                <option value="">Telangana</option>
+                <option value="">Uttrakhand</option>
+                <option value="">Bihar</option>
+                <option value="">Rajasthan</option>
+                <option value="">M.P</option>
+                <option value="">Westbengal</option>
+                <option value="">Jharkhand</option>
+                <option value="">Karnatak</option>
+                <option value="">Andhrapradesh</option>
+                <option value="">Jammukashmir</option>
+            </select>
+        </li>
+        <li>
+            <label for="country">Country:</label>
+            <select name="" id="">
+                <option value="">India</option>
+                <option value="">Usa</option>
+                <option value="">China</option>
+                <option value="">Japan</option>
+                <option value="">Russia</option>
+            </select>
+        </li>
+    </ul>
+    <ul class="details">
+        <div class="fifthcontainer">About Yourself</div>
+        <li>
+            <label for="aboutself">About Yourself:</label>
+            <textarea name="aboutself" id="" cols="50" rows="10"></textarea>
+        </li>
+    </ul>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating_js_function</title>
+</head>
+<body>
+   <script>
+
+
+    var empname, empage, empgen, emploc, empsalary, emppf, emphra, emptotalsalary, emptax;
+ 
+    function Employee_Details(){
+     empname = prompt("Enter_Employee_Name: ");
+     empage = prompt("Enter_Employee_Age :");
+     empgen = prompt("Enter_Employee_Gender :");
+     emploc = prompt("Enter_Employee_Location :");
+     empsalary = prompt("Enter_Employee_Salary :");
+     empsalary = parseInt(empsalary);
+    }
+    //pf,hra and totalsalary calculate
+
+     function Employee_Calculating_Salary(){
+    pf = (10 / 100 * empsalary);
+    hra = (12/ 100 * empsalary);
+    emptotalsalary = ( pf + hra + empsalary);
+    emptax = (emptotalsalary / 30) ;
+     }
+    // show the enter data calculate
+
+    function Display_EmployeeDetails(){
+    console.log("Enter Name :" + empname);
+    console.log("Enter Age :" + empage);
+    console.log("Enter Gender :" + empgen);
+    console.log("Enter Location :" + emploc);
+    console.log("Enter Salary :" + empsalary);
+    console.log("Enter pf :" + pf);
+    console.log("Enter hra :" + hra);
+    console.log("Show the Totalsalary :" + emptotalsalary);
+    console.log(" Show the tax :" + emptax);
+    }
+     
+    function employee_tax(){
+        if(emptax >= 10000){
+            console.log("Employee Pay Tax");
+        }else(emptax >= 5000)
+            console.log("Emplyee Not Pay Tax");
+        }
+       
+      for(var i = 0; i < 2; i ++){
+
+      
+
+    Employee_Details();
+    Employee_Calculating_Salary();
+    Display_EmployeeDetails();
+    employee_tax();
+      }
+   </script> 
+</body>
+</html>

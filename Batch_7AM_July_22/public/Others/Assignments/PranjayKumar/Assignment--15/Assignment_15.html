@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_15</title>
+</head>
+<body>
+    <script>
+      function input_details()
+      {
+              var eName,age,gender,basicSal,totalSal,newSal,tax,pf,hra; 
+              eName = prompt("Enter the employee full name");
+              age = prompt("Enter the employee Age");
+              gender = prompt("Enter the gender (male or female)");
+              basicSal = prompt("Enter the employee basic sallary");
+              basicSal = parseInt(basicSal);
+              totalSal = sal_calculation (basicSal);
+              Employee_Statement(eName,age,gender,basicSal,totalSal,newSal,tax,pf,hra);
+      }        
+      function sal_calculation(basicSal)
+      {        
+              pf = basicSal*(15/100);
+              hra = basicSal*(25/100);
+              totalSal = pf + hra + basicSal;
+              return totalSal;
+      }
+      function Employee_Statement(eName,age,gender,basicSal,totalSal,newSal,tax,pf,hra)  
+      {
+            console.log("Employee Name:- " +eName);
+            console.log("Employee Age:- "+age);
+            console.log("Employee Gender:- "+gender);
+            console.log("Employee Basic Sallary:- "+basicSal);
+            console.log("Your total salary:- "+totalSal)
+            condition(totalSal,gender);
+      }      
+      
+
+      function condition(totalSal,gender)
+      {
+        if(gender == 'male' || gender == 'Male' || gender == 'MALE')
+        {
+                
+              if(totalSal >= 20000)
+              {
+                tax = (15/100)*totalSal;
+                newSal = totalSal - tax;
+                console.log("In-Hand Sallary after 15% tax deduction  "+newSal);
+              }
+
+              else if(totalSal >= 100000 && totalSal < 200000)
+              {
+                tax = (10/100)*totalSal;
+                newSal = totalSal - tax;
+                console.log("In-Hand Sallary after 10% tax dedution  "+newSal);
+              }
+
+              else if(totalSal >= 50000 && totalSal < 100000)
+              {
+                tax = (5/100)*totalSal;
+                newSal = totalSal - tax;
+                console.log("In-Hand Sallary after 5% tax dedution  "+newSal);
+
+              }
+
+              else if(totalSal < 49999)
+              {
+                  console.log("No any tax dudection your sallary is less than 50k  "+totalSal);
+              }
+
+
+        }
+
+        else if(gender == 'female' || gender == 'Female' || gender == 'FEMALE')
+        {
+            
+
+            if(totalSal >= 20000)
+            {
+              tax = (10/100)*totalSal;
+              newSal = totalSal - tax;
+              console.log("In-Hand Sallary after 10% tax deduction  "+newSal);
+            }
+
+            else if(totalSal >= 100000 && totalSal < 200000)
+            {
+              tax = (5/100)*totalSal;
+              newSal = totalSal - tax;
+              console.log("In-Hand Sallary after 5% tax dedution  "+newSal);
+            }
+
+            else if(totalSal < 99999)
+            {
+              console.log("you don't need to pay tax your sallary is less than 1 lack  " +totalSal )
+            }
+
+        }
+         else
+            {
+            console.log("INVALID GENDER");
+            }
+      } 
+            input_details();
+
+    </script>
+</body>
+</html>

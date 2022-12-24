@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport", charset="width=device-width" initial-scale="1.0">
+    <head>
+        <title>
+            Document
+        </title>
+        <style>
+            
+        .header,
+        .footer,
+        .container{
+             border: 1px solid;
+             padding: 5px;
+             margin: 5px;
+             text-align: center;
+             position: relative;
+             right: 5px;
+             left: 5px;
+             
+        }
+         .container{
+           top: 50px;
+           bottom: 50px;
+           overflow: hidden;     
+         }
+         .footer{
+            bottom: 5px;
+         }
+         .lblock,
+            .rblock {
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+                float: left;
+                height: 700px;
+                overflow: auto;
+
+            }
+            .lblock {
+                width: 30%;
+            }
+            .rblock {
+                width: 70%;
+            }
+            .lblock li {
+                border: 1px solid #ccc;
+                margin: 15px;
+                padding: 15px;
+                list-style-position: inside;
+                text-align: center;
+            }
+            .lblock li:hover {
+                background-color: purple;
+                cursor: pointer;
+            }
+            .studentDetailsBlock > li {
+                list-style: none;
+                border: 2px solid;
+                height: 250px;
+                margin: 10px;
+                padding: 10px;
+            }
+            .studentDetailsBlock {
+                margin: 10px;
+                padding: 10px;
+            }
+            .imgBlock,
+            .dblock {
+                float: inline-start;
+                margin: 10px;
+                padding: 10px;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .dblock li {
+                list-style: none;
+                margin: 5px;
+                padding: 5px;
+                text-align: left;
+            }
+        </style>
+         </head>
+         <body>
+             <div class="header">
+                 Student Detail page
+             </div>
+             <div class="container">
+                <div class="lblock">
+                     <ol>
+                         <li>Raj</li>
+                         <li>Teena</li>
+                         <li>Meena</li>
+                         <li>Krish</li>
+                         <li>Suresh</li>
+                         <li>ABC</li>
+                         <li>
+                             <a href="#details_12">Pqr</a>
+                         </li>
+                         <li>PRasad</li>
+                     </ol>
+                </div>
+                <div class="rblock">
+                     <ul class="studentDetailsBlock">
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li><li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li id="details_12">
+                             <div class="imgBlock">
+                                 <img src="images/emp4.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: PQR
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="imgBlock">
+                                 <img src="images/emp1.PNG" alt="">
+                             </div>
+                             <div class="dblock">
+                                 <ul>
+                                     <li>
+                                         Name: Raj
+                                     </li>
+                                     <li>
+                                         Age: 20
+                                     </li>
+                                     <li>
+                                         Gender: MAle
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                     </ul>
+                </div>
+             </div>
+             <div class="footer">
+                 @copy rights 2022
+             </div>
+         </body>
+     </html>
+
+            
+        

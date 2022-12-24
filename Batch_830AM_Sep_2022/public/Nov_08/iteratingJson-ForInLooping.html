@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JSON OBJ iteration
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var sDetails = [
+                "Raj", 
+                20, 
+                'Male', 
+                'Hyderabad', 
+                502032, 
+                true
+            ];
+
+            for (var i = 0; i < sDetails.length; i++) {
+                console.log(sDetails[i])
+            }*/
+            
+            var sDetailsObj = {
+                name: "Raj",
+                age: 20,
+                "gender": 'Male',
+                pinCode: 502032,
+                'isFeePaid': true,
+                marks: [34, 77, 89]
+            };
+
+            for ( var temp in sDetailsObj) {  // temp = undefined
+                console.log(temp); // name
+                console.log(sDetailsObj[temp]); // sDetailsObj['name']
+            }
+            
+            console.log("GEnder is " + sDetailsObj.gender);
+            console.log("GEnder is " + sDetailsObj['gender']);
+
+            console.log(sDetailsObj.marks)
+            console.log(sDetailsObj['marks']);
+
+            console.log(sDetailsObj.marks[2])
+            console.log(sDetailsObj['marks'][2]);
+
+
+        </script>
+    </body>
+</html>

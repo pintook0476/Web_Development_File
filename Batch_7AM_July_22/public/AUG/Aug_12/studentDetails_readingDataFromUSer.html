@@ -1,0 +1,42 @@
+9<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Student Details 
+        </h3>
+        <script>
+            var sname = prompt("Enter Student name");
+            var age = prompt("Enter age");
+            var gender = prompt("enter Gender");
+            var loc = prompt("Enter locaiton");
+
+            var m1 = prompt("Enter sub 1 marks");
+            m1 = parseInt(m1);
+            var m2 = prompt("Enter sub 2 marks");
+            m2 = parseInt(m2);
+            var m3 = prompt("Enter sub 3 marks");
+            m3= parseInt(m3);
+
+            // Caluculating total and avg.
+            var total = m1 + m2 + m3;
+            var avg = total / 3;
+
+            // display the values back to user
+
+            console.log("Student details");
+            console.log("Name " + sname);
+            console.log("Gender " + gender);
+            console.log("Location is " + loc);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg);
+
+
+        </script>
+    </body>
+</html>

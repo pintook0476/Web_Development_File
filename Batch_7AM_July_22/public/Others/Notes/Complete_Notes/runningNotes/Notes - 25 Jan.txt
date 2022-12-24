@@ -1,0 +1,137 @@
+1/24/2021 - HTML TAGS / CSS Pseudo Classes
+
+Sunday, January 24, 2021
+
+8:39 PM
+
+<img> </img>  Image Tag  :   Images can be added to Web page
+
+ 
+
+<img>  is a pre-defined tag, supported in HTML using which we could add an image to the web page. It takes mandatory attribute 'src' through which we can specify the absolute or relative path of an external image resource
+
+ 
+
+One <img> tag is used to add one single image and multiple images can be added to a page using multiple <img> tags
+
+ 
+
+ 
+
+ 
+
+Syntax:  <img src=" .. Absolute/relative path"/>
+
+ 
+
+Example:   <img src="http://3.bp.blogspot.com/-8AZPuwgoO2E/UL0uVS877RI/AAAAAAAB4tU/5dLKQgiPWck/s1600/India_Flag11.jpg"/>
+
+ 
+
+ 
+
+Absolute Path:              Specify the full URL Path/location of the image/resource
+
+ 
+
+Relative  Path:               Specifying resource that is relative to HTML Page, which means when images are saved on local, we can specify the saved image name with extension and it should work on page.
+
+ 
+
+ 
+
+ 
+
+ 
+
+<a></a>  Anchor Tag :  Linking external Pages to the HTML
+
+ 
+
+Using href attribute in anchor tag, we can link the external web pages to the Existing Page.
+
+ 
+
+Using target="_blank" attribute, the href link to web page will be opened in a new tab.
+
+ 
+
+ 
+
+ 
+
+ 
+
+CSS Pseudo Classes:
+
+ 
+
+Following are pre-defined pseudo classes in CSS, using which we could be able to apply the CSS to an element not while loading on the page but based on its current state.
+
+ 
+
+:active
+
+It selects the active links - When we clicked on link but not left the click of mouse
+
+:checked
+
+To select the checked input element with type checkbox
+
+:disabled
+
+Disabled input elements
+
+h3:empty
+
+Selects every h3 tag which is empty
+
+:enabled
+
+Selects every input element which is in enabled state
+
+:first-child
+
+Selects tag which is in first child position
+
+:last-child
+
+Selects tag which is in last child position
+
+:nth-child(2)
+
+Selects element which is in 2nd position
+
+:nth-last-child(2)
+
+Selects element which is in 2nd position from last
+
+:only-child
+
+Selects element which is the only child
+
+:focus
+
+Selects elements which is in focus state
+
+:visited
+
+Anchor tag which is already visited
+
+:hover
+
+Selects when cursor hover over element
+
+CSS Pseudo elements:
+
+Following are pre-defined pseudo elements supported in CSS, HTML using which we could able to add the CSS Properties not to the complete content but partially
+
+::after
+
+::before
+
+::first-letter
+
+::first-line
+
+::selection

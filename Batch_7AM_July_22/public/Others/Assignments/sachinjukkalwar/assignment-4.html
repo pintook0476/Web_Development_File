@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            css floatin property
+        </title>
+        <style>
+            .heading{
+                border: 2px solid;
+                text-align: center;
+             
+            }
+            .container div{
+                border: 2px solid;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                text-align: center;
+            }
+            .block1{
+                border: 1px solid;
+                width: 100px;
+                height: 100px;
+            }
+            .block2,.block1,.block8{
+                float: left;
+                
+            }
+            .block3,.block6,.block9,.block11{
+                float: right;
+            }
+            .block4{
+                clear: both;
+                float: right;
+            }
+            
+            .block5,.block7,.block10{
+                clear: both;
+                float: left;
+
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="heading">Block Game</div>
+        <div class="container">
+        <div class="block1">1</div>
+        <div class="block2">2</div>
+        <div class="block3">3</div>
+        <div class="block4">4</div>
+        <div class="block5">5</div>
+        <div class="block6">6</div>
+        <div class="block7">7</div>
+        <div class="block8">8</div>
+        <div class="block9">9</div>
+        <div class="block10">10</div>
+        <div class="block11">11</div>
+    </div>
+    </body>
+</html>

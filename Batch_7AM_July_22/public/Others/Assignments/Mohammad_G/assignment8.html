@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            text-align: center;
+            border: 2px solid #2880f2;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+        }
+
+        .table {
+            text-align: center;
+            width: 100%;
+            border: 2px solid #2880f2;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+
+        table thead th {
+            border: 1px solid #2880f2;
+        }
+
+        table tbody td {
+            border: 1px solid #2880f2;
+
+        }
+
+        table tbody tr table {
+            width: 100%;
+            height: 200px;
+            padding: 3px;
+        }
+
+        .image {
+            border: 1px solid black;
+            width: 50%;
+            height: 130px;
+        }
+
+        .footer {
+            width: 100%;
+            border: 1px solid #2880f2;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head">Student Details-Progress Card</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Picture</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Male</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alexa</td>
+                <td>Female</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Robert</td>
+                <td>Male</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Michael</td>
+                <td>Male</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1496360166961-10a51d5f367a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Jenifer</td>
+                <td>Male</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Natalie</td>
+                <td>Male</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1563306406-e66174fa3787?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Angel</td>
+                <td>Female</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Grace</td>
+                <td>Female</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Annabel</td>
+                <td>Female</td>
+                <td><img class="image"
+                        src="https://images.unsplash.com/photo-1544408649-f9deffa177cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=677&q=80"
+                        alt="Student"></td>
+                <td>HSC</td>
+                <td style="background-color: white;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Social Sciences</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <td>10</td>
+            <td>David</td>
+            <td>Male</td>
+            <td><img class="image"
+                    src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                    alt="Student"></td>
+            <td>HSC</td>
+            <td style="background-color: white;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Obtained Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>35</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>35</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>Social Sciences</td>
+                            <td>100</td>
+                            <td>35</td>
+                            <td>99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">&#64;Copyright 2022</div>
+</body>
+
+</html>

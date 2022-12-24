@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag And Drop</title>
+    <link rel="stylesheet" href="drag&drop.css">
+</head>
+<body>
+    <header>
+        <div class="header"><h2>Shop Online</h2></div>
+    </header>
+    <aside>
+        <div class="section">
+            <h3 class="innerHeading">Men's Products</h3>
+            <div class="container mcontainer" ondrop="elementGotDrop(event);" ondragover="dragGotOver(event);"></div>
+        </div>
+        <div class="section">
+            <h3 class="innerHeading">Women's Products</h3>
+            <div class="container wcontainer" ondrop="elementGotDrop(event);" ondragover="dragGotOver(event);"></div>
+        </div>
+        <div class="section">
+            <h3 class="innerHeading">Kid's Products</h3>
+            <div class="container kcontainer" ondrop="elementGotDrop(event);" ondragover="dragGotOver(event);"></div>
+        </div>
+    </aside>
+    <br/>
+    <section>
+        <div class="products mp">
+       <h4>Men's Products</h4>
+       <img class="men" id="mpic_1" src="images/mshirt.jpeg" alt="" ondragstart="dragIsStart(event);">
+       <img class="men" id="mpic_2" src="images/cap.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="men" id="mpic_3" src="images/mshoe.jpeg" alt="" ondragstart="dragIsStart(event);">
+       <img class="men" id="mpic_4" src="images/watch.jpg" alt="" ondragstart="dragIsStart(event);">
+       </div>
+       <div class="products wp">
+       <h4>Women's Products</h4>
+       <img class="women" id="wpic_1" src="images/gcap.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="women" id="wpic_2" src="images/gwatch.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="women" id="wpic_3" src="images/gtshirt.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="women" id="wpic_4" src="images/purse.jpeg" alt="" ondragstart="dragIsStart(event);">
+       </div>
+       <div class="products kp">
+       <h4>Kid's Products</h4>
+       <img class="kid" id="kpic_1" src="images/bag.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="kid" id="kpic_2" src="images/bottle.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="kid" id="kpic_3" src="images/tel.jpg" alt="" ondragstart="dragIsStart(event);">
+       <img class="kid" id="kpic_4" src="images/bike.jpeg" alt="" ondragstart="dragIsStart(event);">
+       </div>
+    </section>
+   <script src="drag&drop.js"></script>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating json object
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var sdetails = ["Raj", 20, 'Male', [90, 66, 45], 0, 0];           
+
+            for (var i = 0 ; i < sdetails[3].length; i++) {
+                sdetails[4] += sdetails[3][i];
+            }
+            sdetails[5] = sdetails[4] / sdetails[3].length;
+
+            console.log("Studetn Details");
+            console.log("STudent name " + sdetails[0]);
+            console.log("STudent Age " + sdetails[1]);
+            console.log("STudent Gender " + sdetails[2]);
+            console.log("STudent Total " + sdetails[4]);
+            console.log("AVg " + sdetails[5]);*/
+
+            var sdetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                marks: [34, 56, 78, 33, 45],
+                total: 0,
+                avg: 0
+            }
+
+            for (var i = 0 ; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }
+
+            sdetails.avg = sdetails.total / sdetails.marks.length;
+
+            console.log("Studetn Details");
+            console.log("STudent name " + sdetails.name);
+            console.log("STudent Age " + sdetails.age);
+            console.log("STudent Gender " + sdetails.gender);
+            console.log("STudent Total " + sdetails.total);
+            console.log("AVg " + sdetails.avg);
+
+
+        </script>
+    </body>
+</html>

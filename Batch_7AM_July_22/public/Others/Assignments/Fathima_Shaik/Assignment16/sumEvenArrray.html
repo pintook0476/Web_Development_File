@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of even numbers in an array</title>
+</head>
+<body>
+    <h3> Sum of even numbers in an array </h3>
+    <script>
+        var a = [12,16,23,25,38];
+        console.log("Given array: " + a);
+        var temp = 0;
+        for(var i=0; i<a.length; i++){
+            if(a[i] % 2 == 0){
+                temp = temp + a[i];
+            }
+        }
+        console.log("The sum of even values in an array: " + temp);
+    </script>
+</body>
+</html>

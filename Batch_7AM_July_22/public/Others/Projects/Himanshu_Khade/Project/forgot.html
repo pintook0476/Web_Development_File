@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forgot password </title>
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(#9ED2C6, #68696b);
+            }
+            .box{
+                width: 536px;
+                height: 252px;
+                border-radius: 15px;
+                position: absolute;
+                left: 393px;
+                top: 116px;
+                background: linear-gradient(#c4d4f5,#eaecea);
+                text-align: center;
+                padding: 50px;
+            }
+            label{
+                font-size: larger;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+            .textbox{        
+                width: 224px;
+                top: 128px;
+                left: 206px;
+                position: absolute;
+                height: 24px;
+                border-radius: 5px;
+                border: 0.5px solid #00FFAB;
+            }
+            .button{
+                width: 146px;
+                height: 35px;
+                background: linear-gradient(#00ffaa, #26b5c5);
+                border-radius: 10px;
+                border: 1px;
+                margin: 10px;
+            }
+            .submit{
+                position: absolute;
+                left: 323px;
+                bottom: 74px;;
+            }
+            .reset{
+                position: absolute;
+                left: 127px;
+                bottom: 74px;;
+            }
+            .logo{
+                height: 82px;
+                width: 123px;
+                position: relative;
+                top: 12px;
+                left: 48px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./image/logo.png" class="logo" alt="">
+        </div>
+        <div class="box">
+            <form action="/login.html" method="get">
+                <div><label for="email">Enter Register EmailId or Phone number</label></div>
+                <div><input type="text" name="email" class="textbox" placeholder="EmailId or Phone Number"></div>
+                <div><input type="submit" value="Continue" class="submit button"></div>
+                <div><input type="reset" value="Back" class="reset button"></div>
+            </form>
+        </div>
+    </body>
+</html>

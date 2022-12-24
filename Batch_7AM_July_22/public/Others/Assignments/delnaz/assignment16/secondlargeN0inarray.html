@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = [23 , 45 , 67 , 89 , 23, 90 , 12 ,24 ];
+        console.log("no. of digit " +n.length)
+        var first = 0 ;
+        var second = 0 ;
+        for(var i  = 0 ; i < n.length ; i ++)
+        {
+            if(n[i] >first )
+            {
+                second = first;
+                first = n[i];
+            }
+        }
+        console.log("the first no ."  +first);
+        console.log("the second largest NO. = " +second)
+
+    </script>
+</body>
+</html>

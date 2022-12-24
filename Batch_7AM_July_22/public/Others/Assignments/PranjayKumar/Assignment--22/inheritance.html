@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Demostrating of Daynamic and Static inharitence</title>
+   <style>
+    .formBox {
+        border: 2px solid blue;
+        width: 500px;
+        background-color: yellow;
+        color: black;
+        align-items: center;
+        justify-content: center;
+    }
+    li{
+        list-style: none;
+        margin: 15px;
+        padding: 15px;
+    }
+    h3 {
+        margin: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-family: cursive;
+        color: blueviolet;
+        margin-left: 100px;
+    }
+   </style>
+</head>
+<body>
+   <h3>Student Intrence Form</h3>
+   <div class="formBox">
+       <ul>
+           <li>
+               Student name: <input type="text" id="sName">
+           </li>
+           <li>
+               Student Age: <input type="text" id="sAge">
+           </li>
+           <li>
+               Student Gender: <span><input type="radio" name="gender" value="Male" checked>Male</span>
+                              <span> <input type="radio" name="gender" value="Female">Female</span>  
+           </li>
+           <li>
+               Section: <input type="text" id="sec">
+           </li>
+           <li>
+               <input type="button" value="Submit" onclick="readStudentData()" >
+           </li>
+       </ul>
+   </div>
+   <script src="inheritance.js"></script>
+</body>
+</html>

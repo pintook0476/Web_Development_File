@@ -1,0 +1,94 @@
+.tax {
+    float: left;
+    padding-left: 15px;
+}
+.total {
+    float: right;
+    padding-right: 15px;
+}
+.tableFooter,
+th { 
+    color:white;
+    background-color: #b01131;
+    font-size: 15px;
+}
+img {
+   width: 100%;
+   height: auto;
+}        
+
+tr {
+    background: #e5e5e5;
+}
+
+.priceDetails,
+.itemDesc {
+    background-color: #fff;
+    padding: 3px;
+}
+.priceDetails {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.itemDesc {
+    padding-left: 15px;
+}
+.subItems {
+    padding-left: 5px;
+}
+
+td:first-child {
+    text-align: center;
+}
+table td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 3px !important;
+}
+table tr:first-child td {
+    padding-top: 10px !important;
+}
+table tr:last-child td {
+    padding-bottom: 10px !important;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+.theader {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.table > tbody > tr > .itemsCount,
+.table > tbody > tr > .msgCell,
+.table > tbody > tr > th {
+    vertical-align: middle;
+}
+.taxAndTotal {
+    font-weight: bold;
+}
+
+#thanksTable tr:first-child td,
+#thanksTable tr:last-child td {
+    background-color: #b01131;
+}
+.msgCell {
+    height: 250px;    
+    color: #fff;
+}
+
+.thanksTotalPrice {
+    font-weight: bold;
+    color: #b01131;
+    border: none;
+    
+}
+#thanksTable {
+    font-size: xx-large;
+}
+
+tbody {
+    font-size: 15px;
+}

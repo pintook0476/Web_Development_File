@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding largest num & smallest num</title>
+</head>
+<body>
+    Press F12 
+        <script>
+            var Data = [ 90, 22,  53 ,65 ,82 , 102, 180 , 45 ,72] ;
+                var small = Data [0];
+                var large = Data [0];
+                
+
+                for( var i = 1 ; i < Data.length ; i++){
+                    
+                    if (small < Data[i]) {
+                        small = small ;
+                    } else {
+                        small = Data [i];
+                    }
+
+                    if ( large > Data[i]) {
+                        large = large ;                       
+                    } else {
+                        large = Data [i] ;
+                    }
+                    
+                }
+                console.log( "smallest is" + small);
+                console.log("large is " + large);
+                    
+
+        </script>
+</body>
+</html>

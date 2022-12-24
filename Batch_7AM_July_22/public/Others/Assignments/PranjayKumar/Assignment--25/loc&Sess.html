@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonestrating of local and session strorage</title>
+    <script src="../public/jquery.js"></script>
+    <script src="../public/userpreference.js"></script>
+    <style>
+        .welcomeBlock{
+            display: none;
+            border: 3px solid #191919;
+            color:#999;
+            font-size: 30px;
+            width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            text-align: center;
+
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        .bgchange{
+            text-align: right;
+            padding: 20px;
+        }
+        .idandpass{
+            width: 350px;
+            height: 350px;
+            border: 3px solid #191919;
+            border-radius: 20px;
+            background-color: aliceblue;
+            color: blue;
+           text-align: center;
+           padding: 20px;
+           margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgchange">
+        Select Theme: <select name="" id="themeChoose" onchange="getuserchoosetheme()">
+            <option>red</option>
+            <option>blue</option>
+            <option>Yellow</option>
+            <option>green</option>
+            <option>orange</option>
+            <option>dark</option>
+        </select>
+    </div>
+    <div class="idandpass">
+        User Name: <input type="email" class="uName" placeholder="enter userName"><br><br>
+        Passwprd: <input type="text" id="pass1" placeholder="enter password"><br><br>
+        <br>
+        <input type="button" value="Saveusername" onclick="saveuserName()">
+    </div>
+    <div class="welcomeBlock"></div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>
+            none
+        </title>
+        <style>
+            .title{
+                color:blue;
+                text-align: center;
+            }
+            .container{
+                border:2px solid;
+                width:800px;
+                height:400px;
+                margin:10px auto;
+                padding:10px;
+            }
+            ul,li{
+                list-style-type:none;
+                margin:10px;
+                padding:10px;
+            }
+            .empgenerate{
+                border:2px solid blue;
+                width:800px;
+                height:600px;
+                margin:10px auto;
+                padding:10px;
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            employee list
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    enter employee name:<input type="text" id="ename">
+                </li>
+                <li>
+                    enter employee id:<input type="text" id="eid">
+                </li>
+                <li>
+                    enter your department:<input type="text" id="edepartment">
+                </li>
+                <li>
+                    enter your gender:<input type="text" id="egender">
+                </li>
+                <li>
+                    enter your basic salary:<input type="text" id="esal">
+                </li>
+                <li>
+                    <input type="button" value="employee details" onclick="empdetails.readingData()">
+                </li>
+            </ul>
+        </div>
+        <div class="empgenerate" id="generate">
+            <ul>
+                <li>
+                    employee name is :<span id="dname"></span>
+                </li>
+                <li>
+                    employee id is :<span id="did"></span> 
+                </li>
+                <li>
+                    employee department is :<span id="ddepartment"></span>
+                </li>
+                <li>
+                    gender :<span id="dgender"></span>
+                </li>
+                <li>
+                    basic salary :<span id="dbasic_sal"></span>
+                </li>
+                <li>
+                    pf :<span id="dpf"></span>
+                </li>
+                <li>
+                    hra:<span id="dhra"></span>
+                </li>
+                <li>
+                    total salary:<span id="dtotal_sal"></span>
+                </li>
+                <li>
+                    tax:<span id="dtax"></span>
+                </li>
+                <li>
+                    total salary after tax:<span id="dtotal_sal_tax"></span>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var empdetails={
+                readingData(){
+                    this.name=document.querySelector("#ename").value
+                    this.id=document.querySelector("#eid").value
+                    this.department=document.querySelector("#edepartment").value
+                    this.gender=document.querySelector("#egender").value
+                    this.basic_sal=document.querySelector("#esal").value
+                    this.getTotalsal()
+                    this.displayData();
+                },
+                getTotalsal(){
+                    this.basic_sal=parseInt(this.basic_sal)
+                    this.pf=this.basic_sal*(12/100);
+                    this.pf=parseInt(this.pf)
+                    this.hra=this.basic_sal*(24/100);
+                    this.hra=parseInt(this.hra)
+                    this.total_sal=parseInt(this.basic_sal+this.pf+this.hra)
+                    this.getTax()
+                },
+                getTax(){
+                    if(this.gender=="male"){
+                        if(this.total_sal>=200000){
+                            this.tax=parseInt(this.total_sal*(15/100))
+                            this.total_sal_tax=parseInt(this.total_sal-this.tax);
+                        }
+                        else if(this.total_sal>=100000){
+                            this.tax=parseInt(this.total_sal*(10/100))
+                            this.total_sal_tax=parseInt(this.total_sal-this.tax);
+                        }
+                        else if(this.total_sal>=50000){
+                            this.tax=parseInt(this.total_sal*(5/100))
+                            this.total_sal_tax=parseInt(this.total_sal-this.tax);
+                        }
+                        else{
+                            this.tax="no tax"
+                        }
+                    }
+                    else if(this.gender=="female"){
+                        if(this.total_sal>=200000){
+                            this.tax=parseInt(this.total_sal*(10/100))
+                            this.total_sal_tax=parseInt(this.total_sal-this.tax);
+                        }
+                        else if(this.total_sal>=100000){
+                            this.tax=parseInt(this.total_sal*(5/100))
+                            this.total_sal_tax=parseInt(this.total_sal-this.tax);
+                        }
+                        else{
+                            this.tax="no tax"
+                        }
+                    }
+                    else{
+                        this.tax="no tax"
+                    }
+                },
+                displayData(){
+                    document.querySelector("#dname").innerHTML=this.name
+                    document.querySelector("#did").innerHTML=this.id
+                    document.querySelector("#ddepartment").innerText=this.department
+                    document.querySelector("#dgender").innerHTML=this.gender
+                    document.querySelector("#dbasic_sal").innerHTML=this.basic_sal
+                    document.querySelector("#dpf").innerHTML=this.pf
+                    document.querySelector("#dhra").innerHTML=this.hra
+                    document.querySelector("#dtotal_sal").innerHTML=this.total_sal
+                    document.querySelector("#dtax").innerHTML=this.tax
+                    document.querySelector("#dtotal_sal_tax").innerHTML=this.total_sal_tax
+                    document.querySelector("#generate").style.display="block"
+                }
+            }
+        </script>
+    </body>
+</html>

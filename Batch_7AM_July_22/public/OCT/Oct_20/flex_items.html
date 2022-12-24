@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Flex containers and flex items
+        </title>
+        <style>
+            .container {
+                display: flex;                
+                /*flex-wrap: wrap;*/
+
+                height: 500px;
+                border: 1px solid red;
+            }
+            .container div {
+                width: 120px;
+                height: 120px;
+                text-align: center;
+                border-radius: 5px;
+                border: 1px solid #000;
+                margin: 2px;
+
+            }
+
+            .item2 {
+                
+                flex-shrink: 2;
+                flex-basis: 200px;
+                /*flex: 2 3 200px;*/
+                background-size: 100% 100%;
+                background-image: url("https://media.zigcdn.com/media/model/2022/Jun/venue-new-1_270x180.jpg");
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div >Item 1</div>       
+            <div class="item2">Item 2</div>  
+            <div >Item 3</div>  
+            <div  class="item4">Item 4</div>  
+            <div >Item 5</div> 
+            <div >Item 1</div>       
+            <div >Item 1</div>       
+            <div >Item 2</div>  
+            <div >Item 3</div>  
+           
+           
+          
+        </div>
+    </body>
+</html>

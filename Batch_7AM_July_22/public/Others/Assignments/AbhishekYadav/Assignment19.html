@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <style>
+        #messages {
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+        
+        #button {
+            margin: 20px 10px;
+        }
+        
+        .valid {
+            color: green;
+        }
+        
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Enter Your Password</h3>
+    <div><input type="text" id="passwordText" maxlength="8" onkeyup="detectback(event)" onkeypress="buttonpress(event) "></div>
+    <div><input type="button" disabled id="button" value="Submit" onclick=""></div>
+
+    <div id="messages">
+        <div class="error valid " id="ckarchek">Should be Total 8 Characters</div>
+        <div class="valid error" id="upperchek">Should start with Upper Case</div>
+        <div class="valid error" id="symbolcheck">Should have only one Symbol</div>
+        <div class="valid error" id="numbercheck">Should always end with a number</div>
+    </div>
+    <script>
+        var detectback = (event) => {
+            if (event.keyCode == 8) {
+                buttonpress(event);
+            }
+        }
+        var buttonpress = (event) => {
+            console.log("yes122");
+            var vlength = document.querySelector("#passwordText").value.length;
+            if (vlength == 0) {
+                if (event.keyCode <= 90 && event.keyCode >= 65) {
+                    document.querySelector("#upperchek").classList.remove('error');
+                } else {
+                    document.querySelector("#upperchek").classList.add('error');
+                }
+            }
+            if (vlength == 7) {
+                if (event.keyCode <= 57 && event.keyCode >= 48) {
+                    document.querySelector("#numbercheck").classList.remove('error');
+                } else {
+                    document.querySelector("#numbercheck").classList.add('error');
+                }
+            }
+            if (vlength == 7) {
+                document.querySelector("#ckarchek").classList.remove('error');
+                document.querySelector("#ckarchek").classList.add('valid');
+                document.querySelector("#button").removeAttribute("disabled");
+            } else {
+                document.querySelector("#ckarchek").classList.remove('valid');
+                document.querySelector("#ckarchek").classList.add('error');
+            }
+
+            var count = 0;
+
+            if ((event.keycode == 8) || (event.keyCode <= 47 && event.keyCode >= 32) || (event.keyCode <= 64 && event.keyCode >= 58) || (event.keyCode <= 96 && event.keyCode >= 91) || (event.keyCode <= 127 && event.keyCode >= 123)) {
+                count = count + 1;
+            }
+
+            if (count == '1') {
+                document.querySelector("#symbolcheck").classList.remove('error');
+            } else if (count > 1) {
+                document.querySelector("#symbolcheck").classList.add('error');
+            }
+        }
+    </script>
+</body>
+
+</html>

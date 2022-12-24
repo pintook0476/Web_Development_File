@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+            assignment_11
+        </title>
+    </head>
+    <body>
+        <script>
+            var tax,pf,hra,total_salary;
+            function userdata()
+            {
+                var name=prompt("enter your name");
+                var age=prompt("enter your age");
+                var gender=prompt("enter your gender");
+                var department=prompt("enter your department");
+                var basicsalary=parseInt(prompt("enter your basic salary"));
+                dispalydata(name,age,gender,department,basicsalary);
+            }
+            userdata();
+            function dispalydata(name,age,gender,department,basicsalary)
+            {
+                console.log("Name is "+name);
+                console.log("Age is "+age);
+                console.log("Gender is "+gender);
+                console.log("Department is "+department);
+                console.log("Basic salary is "+basicsalary);
+                calculations(basicsalary,gender);
+            }
+            function calculations(basicsalary,gender)
+            {
+                var pf=basicsalary*(14/100);
+                var hra=basicsalary*(25/100);
+                var total_salary=basicsalary+pf+hra;
+                console.log("PF is "+pf);
+                console.log("HRA is "+hra);
+                console.log("Total Salary is "+total_salary);
+                if(gender=='male')
+                {
+                    if(total_salary>=200000)
+                    {
+                        tax=total_salary*(15/100);
+                        console.log("Tax is "+tax);
+                        total_salary=total_salary-tax;
+                        console.log("Your salary  after tax "+total_salary);
+                    }
+                    else if(total_salary>=100000)
+                    {
+                        tax=total_salary*(10/100);
+                        console.log("Tax is "+tax);
+                        total_salary=total_salary-tax;
+                        console.log("Your salary after tax is "+total_salary);
+                    }
+                    else if(total_salary>=50000)
+                    {
+                        tax=total_salary*(5/100);
+                        console.log("Tax is "+tax);
+                        total_salary=total_salary-tax;
+                        console.log("Your salary after tax is "+total_salary);
+                    }
+                    else{
+                        console.log("No tax");
+                    }
+                }
+                else if(gender=="female")
+                {
+                    if(total_salary>=200000)
+                    {
+                        tax=total_salary*(10/100);
+                        console.log("Tax is "+tax);
+                        total_salary=total_salary-tax;
+                        console.log("Your salary after tax is "+total_salary);
+                    }
+                    else if(total_salary>=100000)
+                    {
+                        tax=total_salary*(5/100);
+                        console.log("Tax is "+tax);
+                        total_salary=total_salary-tax;
+                        console.log("Your salary  after tax is "+total_salary);
+                    }
+                    else
+                    {
+                        console.log("No tax");
+                    }
+                }
+                else{
+                    console.log("No tax");
+                }
+            }
+        </script>
+    </body>
+</html>

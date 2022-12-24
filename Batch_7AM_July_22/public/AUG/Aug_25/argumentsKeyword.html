@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            arguments keyword
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var test = function() {
+                // arguments
+            }
+            var addValues = function() {
+                console.log(arguments);
+                var result = 0;
+                for (var i = 0 ; i < arguments.length; i++) {
+                    result += arguments[i];
+                }
+                return result;
+            }
+            /*var addValues = (...test) => {
+                console.log(test);
+                var result = 0;
+                for (var i = 0 ; i < test.length; i++) {
+                    result += test[i];
+                }
+                return result;
+            }*/
+
+            var sum = addValues(30, 40, 11, 44, 56, 78, 90);
+            console.log("The sum is " + sum);
+
+            var sum = addValues(30, 40);
+            console.log("The sum is " + sum);
+            
+            var sum = addValues(30, 40, 33, 55);
+            console.log("The sum is " + sum);
+        </script>
+    </body>
+</html>

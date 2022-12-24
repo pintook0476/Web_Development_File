@@ -1,0 +1,206 @@
+HTML INTRO---------
+
+
+html - Parent tag holds the coomplete content of page
+
+head - > Holds header content of page
+
+title - to add title to page
+
+body -> holds the actual content of page
+
+p -> Paragraph tag holds multline text content
+
+div -> Block level element to group relative set of elements as block
+
+span -> Inline element to add content in same line
+
+h1 to h6 -> Heading tags
+
+br -> to add line breaks to content
+
+ul, ol -> List items
+
+hr - > To add horizontal line 
+
+etc.
+
+Basic Structure of a HTML Page:
+
+	<html>
+		<head>
+			<title>
+				Page title
+			</title>
+		</head>
+		<body>
+			Actual content of page...
+		</body>
+	</html>
+---------------------------------------------------------
+id -> Through which we an add a unique reference to elements
+
+name -> name value can be added to html elements
+
+class -> To inject single or multiple classes to an element
+
+style -> To inject single or multiple inline css
+
+href -> To set external link to a or link tag
+
+src -> To specify external resource path to script or img tag
+
+
+etc2
+
+Syntax:
+
+	<tagname attributename1="value1" attributename1="value1" attributename2="value2" ...>
+		...
+		...
+	</tagname>
+ note:
+	1.For a single html element we can inject or add any number of attributes
+	2.The same attribute cann't be repeated with in the same tag.
+	3.For every html element we can add attributes
+	4.HTML also provide a feature of creating custom attributes with user define values.
+	
+-----------------------------------------------------------------------------------------------------------------------------------------
+CSS: 
+
+a group of required property being binded as a module,assigned with a user defined name is called a css class.
+	1."class" is a predefined html attribute through which we can add or inject any number of css classes to html elements.
+	2. A single class attribute is used to inject any number of css classes.
+	3."style" is a pre-defined tag under which we can define any number of css classes.
+	4.Class name always start with "."operator,while defining a class.
+
+
+	.<classname>{
+	....
+	....//set of css properties
+	}
+eg:
+	<style>
+	  .abc{
+		font-size:20px;
+		text-decoration:underline;
+		}
+	<p class="abc">
+	good morning
+	<p>
+
+-------------------------------------------------------------------------------------------------------------------
+	
+Differnt  ways of creating a css class:
+	1.Through a class name(UserDefined).
+	2.Through an ID of an Element.
+	3.Through the tag name
+Creating a class using ID of an Element:
+	A CSS clss can be created using id of an existing element where the difference is it always start with '#' 
+	syntax:
+		#<element ID>{
+			---------
+			---------
+		}
+
+
+	Example:
+		<style>
+			#container{
+			--------
+
+			}
+		</style>
+		<p id="container">
+			----
+			----
+		</p> 
+
+	Defining a class using TAG
+		If some set of html tagsof same type should have the same type of lookend feel with in page, we can make use the particular tag name itself to define css class
+		while defining a css class using tag name it doesn need to start with any symbol.
+		syntax:
+		<tagname>{
+			---------
+			---------
+		}
+		
+		Example:
+		<style>
+			h3{
+			--------
+
+			}
+		</style>
+		<h3 >
+			----
+			----
+		</h3> 
+ ---------------------------------------------------------------------------------------------------------------
+we could debug html|css|js code of any web page.following are the default features been supported or achieved through debugging tool.
+	1.through debugging tool we can explode DOM structure of any web page within browser.
+	2.debugger tool provides an option to add|delete|update any html element or its corresponding css property dynamically whwn page is running.
+	3.Its provides an option to debugg jscode by adding breakpoints,adding watchers to d variables which we want to monitor.
+	4.through debugging tool it is very easy to reffer to a particular html code of a corresponding view within a page.
+	5.it also provides an option to monitor list of all network calls happened within current page.
+	6.we can monitor any REST calls(Header) info  the response total time taken,response status code from server etc...
+	7.through debugging tool we can also monitor performance of page by monitoring list of resorces getting loaded along with total time taken toget loaded
+	8.we can also monitor the memory management of current web page
+	Note f12 is sct of opening debugging tool..
+
+
+DOM structure:
+*DOM indecates they tree structure of current web Page by specifying the number of elements participating with in the team, relations between the elements and attribute element is holding etc...
+
+----------------------------------------------------------------------------------------------------------------------------------------
+CSS Priorities:
+	Among all the 4 diff ways of applying CSS to HTML elements, if we change the same css property with a diff value using all the 4 diff ways browser bydefault follows the below priority order while applying css to html elements.
+	1.among all the ways of applying css to html, inline css takes the higher priority in order 
+	2.CSS Been added through id takes second priority inorder.
+	3.CSS been added through a class takes 3rd priority inorder.
+	4.CSS been added through tag name always takes least priority inorder.
+Note:
+	User want to override the default priority order we go with the property '!important'.
+	Any CSS property been added with !important' always takes higher priority overrides default priority order.
+
+	.abc{
+		font-size:20px !important;
+		color:blue;
+		background-color:yellow !important;
+	}
+----------------------------------------------------------------------------------------------------------------------------------------
+Adding images to a container using img tag
+	'img' a predefined tag supported in html using dis we could add n image to webpage.It takes an mandatory atribute  'src' using which we can specify paths of an external img resource.1 img tag is used to have a single image.Multiple img can be added into a page using multiple img tags
+	<img src="...absolute / relative path"/>
+
+	<img src="https://sample.com/dta/images/abc.jpg
+--------------------------------------------------------------------------------------------------------------------------------------
+CSS Pseudo Classes
+	Following are pre-defined pseudo classes supported using which we coluld able to apply the css to an element not while loading on the page but based on its current state
+:active -> it selects the active links
+:checked -> to select the checked input elemets with type checkbox
+:disabled-> disabled input elements
+h3:empty-> selects every h3 tag which is empty
+:enabled->selects every input element which is enable
+:first-child:selects tag which is in first child position
+:last-child:selects tag which is in last child position
+:nth-child(2)->selects element in 2nd position
+:nth-last-child(2)->selects ee=lement in 2nd position from last
+:only-child-> selects element which is only child
+:focus->selects element which is in focus state
+:visited->anchor tag which is already visited
+etc...
+pseudo elements:
+following are predefined elements using which we could able to add the css properties not to the complete content but partially we could apply.
+::after
+::before::first-letter::selection
+
+Syntax:
+class::pseudo class{
+..
+...
+}
+eg:
+.abc::first-letter{
+font-size:20px;color:red;
+}

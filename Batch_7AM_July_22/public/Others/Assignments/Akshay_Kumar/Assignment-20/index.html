@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Password validation
+        </title>
+        <style>
+            .passwrdValidationListBlock {
+                position: absolute;
+                left: 365px;
+                top: 7px;
+            }
+            .error {
+                color: red;
+            }
+            .valid {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        Enter Account Password: 
+        <input type="text" id="pwdText" onkeyup="validateUpPress(event)" onkeypress="validatePassword(event)">
+        <div class="passwrdValidationListBlock">
+            <div class="eightChar error">Should be Total 8 Charecters</div>
+            <div class="upprcaseValidate error">Should start with Upper case</div>
+            <div class="symbolValidate error">Should have only one symbol</div>
+            <div class="minNumberValidate error">Should minimum have one number</div>
+            <div class="endNumberValidate error">Should always end with a number</div>
+        </div>
+        <br>
+        <input type="button" value="Submit" disabled>
+        <script>
+            
+            var validateUpPress = (event) => {
+                var length = document.querySelector("#pwdText").value.length;
+                /*if (length == 8) {
+                    document.querySelector(".eightChar").style.color = 'GREEN';
+                } else {
+                    document.querySelector(".eightChar").style.color = 'RED';
+                }*/
+                //uppercase validation
+                var first = document.querySelector("#pwdText").value;
+                if(first.charCodeAt(0)>=65 && first.charCodeAt(0)<=90){
+                    document.querySelector(".upprcaseValidate").classList.remove('error');
+                    document.querySelector(".upprcaseValidate").classList.add('valid');
+                }else{
+                    document.querySelector(".upprcaseValidate").classList.remove('valid');
+                    document.querySelector(".upprcaseValidate").classList.add('error');
+                }
+
+                //length validation
+                if (length == 8) {
+                    document.querySelector(".eightChar").classList.remove('error');
+                    document.querySelector(".eightChar").classList.add('valid');
+                } else {
+                    document.querySelector(".eightChar").classList.remove('valid');
+                    document.querySelector(".eightChar").classList.add('error');
+                }
+
+                //symbol validation
+                var count=0;
+                var numcount = 0;
+                for(var i=0;i<length;i++){
+                    if(first.charCodeAt(i)>=32 && first.charCodeAt(i)<=126){
+                        if(first.charCodeAt(i)<=47){
+                            count++;
+                        }else if(first.charCodeAt(i)>=58 && first.charCodeAt(i)<=64){
+                            count++;
+                        }else if(first.charCodeAt(i)>=91 && first.charCodeAt(i)<=96){
+                            count++;
+                        }else if(first.charCodeAt(i)>=123){
+                            count++;
+                        }
+                    }
+                }
+                if(count==1){
+                    document.querySelector(".symbolValidate").classList.remove('error');
+                    document.querySelector(".symbolValidate").classList.add('valid');
+                }else{
+                    document.querySelector(".symbolValidate").classList.remove('valid');
+                    document.querySelector(".symbolValidate").classList.add('error');
+                }
+
+                //minimum number validation
+                for(var i=0;i<length;i++){
+                    if(first.charCodeAt(i)>=48 && first.charCodeAt(i)<=57){
+                        numcount++;
+                    }
+                }
+                if(numcount>0){
+                    document.querySelector(".minNumberValidate").classList.remove('error');
+                    document.querySelector(".minNumberValidate").classList.add('valid');
+                }else{
+                    document.querySelector(".minNumberValidate").classList.remove('valid');
+                    document.querySelector(".minNumberValidate").classList.add('error');
+                }
+
+                //endnumber validation
+                if(first.charCodeAt(length-1)>=48 && first.charCodeAt(length-1)<=57){
+                    document.querySelector(".endNumberValidate").classList.remove('error');
+                    document.querySelector(".endNumberValidate").classList.add('valid');
+                }else{
+                    document.querySelector(".endNumberValidate").classList.remove('valid');
+                    document.querySelector(".endNumberValidate").classList.add('error');
+                }
+            }
+        </script>
+    </body>
+</html>

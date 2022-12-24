@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Creating a signup/login page for an e-commerce website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header {
+            display: inline-block;
+        }
+
+        nav {
+            margin-left: 300px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 6px;
+            margin: 0px 10px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bolder;
+            float: left;
+            margin: 0px 50px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .logIn {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+
+        .heading {
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        .email,
+        .password,
+        .or,
+        .signUp {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        .txt {
+            height: 29px;
+            margin-left: 12px;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        .btn{
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <p>Navbar</p>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="logIn">
+        <div class="heading">
+            <p>Log in</p>
+        </div>
+        <br>
+        <form method="get" action="">
+            <div class="email">
+                Email: <input type="email" name="email" class="txt" placeholder="Enter your email">
+            </div>
+            <br>
+            <div class="password">
+                Password: <input type="password" name="password" class="txt" placeholder="Enter your password">
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Log in" class="btn">
+            </div>
+        </form>
+        <br>
+        <p class="or">Or</p>
+        <br>
+        <div class="signUp">
+            Not a member ? <a href="signUp.html">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

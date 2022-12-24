@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title {
+            border: 2px solid;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        ul {
+            border: 1px solid;
+            margin: 20px auto;
+            list-style: none;
+            width: 500px;
+            padding: 10px;
+        }
+        
+        li {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+        }
+        
+        .titleCollege {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        class CollegeDetails {
+            constructor(obj1) {
+                this.collegeName = obj1.collegeName;
+                this.collegeCode = obj1.collegeCode;
+            }
+        }
+
+        class StudentDetails extends CollegeDetails {
+            constructor(obj1, obj2) {
+                    super(obj1);
+                    this.studentName = obj2.stuName;
+                    this.studentAge = obj2.stuAge;
+                    this.studentCourse = obj2.stuCourse;
+                    this.studentAdhar = obj2.stuAdhar;
+                }
+                /*
+                showData() {
+                    console.log("Student name : " + this.studentName);
+                    console.log("Student Age : " + this.studentAge);
+                    console.log("Student Take this Course : " + this.studentCourse);
+                    console.log("Student name : " + this.studentAdhar);
+                    console.log("College name : " + this.collegeName);
+                    console.log("College Code : " + this.collegeCode);
+                }*/
+        }
+
+        var obj1 = {};
+        var arr = [];
+        var getCollegeDetails = () => {
+            obj1.collegeName = document.querySelector("#collegeName").value;
+            obj1.collegeCode = document.querySelector("#collegeCode").value;
+        }
+
+        var getStudentDetails = () => {
+            var obj2 = {};
+            obj2.stuName = document.querySelector("#stuName").value;
+            obj2.stuAge = document.querySelector("#stuAge").value;
+            obj2.stuCourse = document.querySelector("#course").value;
+            obj2.stuAdhar = document.querySelector("#adharNo").value;
+            var s1 = new StudentDetails(obj1, obj2);
+            arr.push(s1);
+        }
+
+        var showAllData = () => {
+            for (var i = 0; i < arr.length; i++) {
+                console.log("Student name : " + arr[i].studentName);
+                console.log("Student Age : " + arr[i].studentAge);
+                console.log("Student Take this Course : " + arr[i].studentCourse);
+                console.log("Student name : " + arr[i].studentAdhar);
+                console.log("College name : " + arr[i].collegeName);
+                console.log("College Code : " + arr[i].collegeCode);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h4>Student Registration Page With College Details With the help of Classes</h4>
+    <h3 id="title">Student Registration</h3>
+    <ul>
+        <li class="titleCollege">College Details</li>
+        <li>College Name : <input type="text" id="collegeName"></li>
+        <li>College Code : <input type="text" id="collegeCode"></li>
+        <li><input type="button" value="Submit" onclick="getCollegeDetails()"></li>
+    </ul>
+    <ul>
+        <li class="titleCollege">Student Details</li>
+        <li>Name : <input type="text" id="stuName"></li>
+        <li>Age : <input type="text" id="stuAge"></li>
+        <li>Cource :
+            <select id="course">
+                <option>B-tech</option>
+                <option>BSC</option>
+                <option>Bcom</option>
+                <option>BCA</option>
+            </select>
+        </li>
+        <li>Adhar No : <input type="text" id="adharNo"></li>
+        <li><input type="button" value="Submit" onclick="getStudentDetails()"></li>
+        <li><input type="button" value="Get All Student Data" onclick="showAllData()"></li>
+    </ul>
+</body>
+
+</html>

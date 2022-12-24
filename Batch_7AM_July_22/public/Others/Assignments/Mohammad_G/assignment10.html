@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment10</title>
+</head>
+
+<body>
+    <script>
+        var ename = prompt("Please enter employee name");
+        var eage = prompt("Employee age");
+        var egender = prompt("Enter gender")
+        var bsal = parseInt(prompt("Enter your basic salary"));
+
+        var pf = bsal * 0.14;
+        var hra = bsal * 0.24;
+        var tsal = bsal + pf + hra;
+
+        document.write("Employee Name : " + ename + "<br>");
+        document.write("Employee Age : " + eage + "<br>");
+        document.write("Employee PF : " + pf + "<br>");
+        document.write("Employee hra : " + hra + "<br>");
+        document.write("Employee salary : " + tsal);
+    </script>
+</body>
+
+</html>

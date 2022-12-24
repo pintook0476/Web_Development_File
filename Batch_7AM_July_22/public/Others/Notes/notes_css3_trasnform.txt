@@ -1,0 +1,16 @@
+Transform - 2D
+    translate()
+    rotate()
+    scaleX()
+    scaleY()
+    scale()
+    skewX()
+    skewY()
+    skew() - method skews an element along the X and Y-axis by the given angles.
+    matrix() - ombines all the 2D transform methods into one  - matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) - matrix(1, -0.3, 0, 1, 0, 0);
+
+
+Transform - 3D
+    scale3d(x,y,z) - scale3d(2, 0.7, 0.2)
+    rotate3d(x,y,z,angle) - rotate3d(0, 1, 0, 60deg);
+    translate3d(x,y,z) - translate3d(10px, 0, 100px);

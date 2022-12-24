@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> Employee Details
+    <script>
+var eName,eDept,gender,eage,basicSalary,pf,hra,tax,total,tax_5, tax_10, tax_15;
+ function readStudentData(){
+    eName = prompt("Enter Employee Name");
+    eage = prompt("Enter Employee Age");
+    eDept = prompt("Enter Employee Department");
+    gender = prompt("Enter Your gender");
+    basicSalary = prompt("Enter your basic Salary");
+    basicSalary = parseInt(basicSalary);
+  
+ }
+  
+  function getTotalAndAvg(){
+     pf = basicSalary *(14/100);   
+     hra = basicSalary *(24/100);
+     total = basicSalary + pf + hra;
+            
+            tax_5 = 5 / 100 * total;
+            tax_10 = 10 / 100 * total;
+            tax_15 = 15 / 100 * total;
+   
+      getUserDetails(); 
+  }
+    function getUserDetails(){
+     console.log("Employee name is " + eName);
+     console.log("Employee age is " + eage);
+     console.log("Employee gender is " + gender);
+     console.log("Employee Department is " + eDept);
+     console.log("Employee basic salary is " + basicSalary);
+     console.log("Employee pf is " + pf);
+     console.log("Employee hra is " + hra);
+     console.log("Employee total Salary is " + total);
+     console.log("tax is "  + tax);
+     printUserDetails();
+    }
+     function printUserDetails(){
+      if (total >= 50000 && total < 100000 && gender == "male") {
+         console.log("Your tax is " + tax_5)
+            }
+
+            else if (total >= 100000 && total < 200000 && gender == "male") {
+               console.log("Your tax is " + tax_10);
+            }
+
+       else if (total > 200000 && gender == "male") {
+
+         console.log("Your tax is " + tax_15);
+        }
+
+      
+        else if (total >= 100000 && total < 200000 && gender == "female") {
+
+         console.log("Your tax is " + tax_5);
+        }
+
+       else if (total > 200000 && gender == "female") {
+
+         console.log("Your tax is " + tax_10);
+      }
+
+    else {
+
+      console.log("Your tax is 0");
+     }
+      }
+      readStudentData();
+      printUserDetails();
+      getTotalAndAvg()
+     </script>
+    
+</body>
+</html>

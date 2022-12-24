@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Armstrong numbers in an array</title>
+</head>
+<body>
+    <h3> Armstrong numbers in an array </h3>
+    <h3> for output check console </h3>
+    <script>
+        // Enter Array by user
+        var a = [];
+        var b = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+            b[i]=prompt("Enter value at index: " + i)
+            a[i]=parseInt(b[i]);
+        }
+        console.log("Given array: " + a);
+
+
+        
+        //check armstrong numbers or not
+        for(var i=0; i<a.length; i++){ 
+            var temp = a[i];
+        
+            var num = 0 ;
+            while(temp > 0){
+                var rem = temp % 10 ;  
+                num = num + (rem ** b[i].length) ;
+                temp = parseInt(temp / 10) ;
+            }
+            if(num == a[i]){
+                console.log(a[i] + " is an armstrong number");
+            }
+            else
+            {
+                console.log(a[i] + " is not an armstrong number");   
+            }
+        }       
+    </script>
+</body>
+</html>

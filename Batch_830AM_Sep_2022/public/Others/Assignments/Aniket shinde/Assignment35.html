@@ -1,0 +1,61 @@
++<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <metacharset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee detail in jason</title>
+        <body>
+            <script>
+                var empDetails={
+                name:"Aniket",
+                Age:22,
+                Gender:"male",
+                Department:"IT",
+                basicSal:460000,
+                totalSal:0,
+                taxValue:0,
+                pf:0,
+                hra:0,
+                };
+                
+                 empDetails.pf=(12/100)*empDetails.basicSal;
+                 empDetails.hra=(24/100)*empDetails.basicSal;
+                 empDetails.totalSal = empDetails.pf + empDetails.hra + empDetails.basicSal;
+
+                
+                
+                if (empDetails.Gender == 'Male') {
+                    if (empDetails.totalSal >= 500000) {
+                        empDetails.taxValue = empDetails.totalSal * (15 / 100);
+                    } else if (empDetails.totalSal >= 30000) {
+                        empDetails.taxValue = empDetails.totalSal * (10 / 100);
+                    }  else {
+                        empDetails.taxValue = 0;
+                    }
+                } else { // Female
+                    if (empDetails.totalSal >= 500000) {
+                        empDetails.taxValue = empDetails.totalSal * (10 / 100);
+                    } else {
+                        empDetails.taxValue = 0;
+                    }
+                }
+            
+
+           
+
+                 console.log("empDetails")
+                 console.log("name" + empDetails.name);
+                 console.log("Age" + empDetails.Age);
+                 console.log("Gender" + empDetails.Gender);
+                 console.log("Department"+ empDetails.Department);
+                 console.log("basicSal"+ empDetails.basicSal);
+                 console.log("totalSal"+ empDetails.totalSal);
+                 console.log("taxValue" + empDetails.taxValue);
+                 console.log("pf "+ empDetails.pf);
+                 console.log("hra" + empDetails.hra);
+
+
+
+            </script>
+        </body>

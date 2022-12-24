@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Css OverFlow Property
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                background-color: #ccc;
+                width: 600px;
+                height: 500px;
+                overflow-y: auto;
+            }
+
+            /* .child {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+            }
+
+            .child1 {
+                
+                background-color: aqua;
+            }
+            .child2 {
+                
+                background-color: yellowgreen;
+            } */
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            .child1,
+            .child2,
+            .child3,
+            .child4,
+            .child5 {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+            }
+            .child1 {                
+                background-color: aqua;
+            }
+            .child2 {                
+                background-color: yellowgreen;
+            }
+            .child3 {                
+                background-color: yellow;
+            }
+            .child4 {                
+                background-color: blue;
+            }
+            .child5 {                
+                background-color: red;
+            }
+
+            #c_01 {
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>
+            Demonstrating css Overflow Property...
+        </h3>
+        <div class="container">
+            Content
+            <div class="child1">
+                Child1
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-rdG60g8bLdmwcuNWdUhQZEbf4d-Ms3YCg&usqp=CAU" alt="">
+            </div>
+            <div class="child2">Child2</div>
+            <div class="child3">Child2</div>
+            <div class="child4">Child2</div>
+            <div class="child5" id="c_01">Child2</div>
+            <div class="child1">Child1</div>
+            <div class="child2">Child2</div>
+            
+        </div>
+    </body>
+</html>

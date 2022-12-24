@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From User Using DHTML</title>
+    <style>
+        .mainContainer {
+            border: 1px solid rgb(68, 122, 184);
+            border-radius: 5px;
+           width: 32%;
+           margin: 0px auto;
+           background-color: rgb(233, 231, 231);
+        }
+        .heading {
+            width: 90%;
+            margin: 10px auto;
+            background-color: rgb(68, 122, 184);
+            color: rgb(233, 231, 231);
+            border-radius: 5px;
+            position: relative;   
+        }
+        img {
+            margin: 5px 0px 0px 340px;
+        }
+        h2 {
+            display: inline;
+           position: absolute;
+           top: -10px;
+           left: 20px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .actualContainer {
+            list-style: none;
+        }
+        .input {
+            width: 340px;
+            height: 25px;
+            margin: 5px 0px;
+            color: rgb(38, 96, 161);
+        }
+        .btn input {
+            background-color: rgb(185, 42, 32);
+            color: rgb(233, 231, 231);
+            border: none;
+            width: 54px;
+            height: 25px;
+            margin: 5px 0px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .resultDisplay {
+            height: 25px;
+            width: 340px;
+            font-weight: bold;
+            margin: 5px 0px;
+            padding: 5px 0px 0px 10px;
+            background-color: rgb(68, 122, 184);
+            color: rgb(233, 231, 231);
+            border-radius: 5px;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            <img src="CalLogo.PNG" alt="Logo"><h2>Calculator</h2>
+        </div>
+        <ul class="actualContainer">
+            <li><input type="text" id="fval" class="input" placeholder="Enter First Number"></li>
+            <li><input type="text" id="sval" class="input" placeholder="Enter Second Number"></li>
+           <li class="btn">
+               <input type="button" id="addition" value="+" onclick="readData('addition');">
+               <input type="button" id="subtraction" value="-" onclick="readData('subtraction');">
+               <input type="button" id="multiplication" value="x" onclick="readData('multiplication');">
+               <input type="button" id="division" value="/" onclick="readData('division');">
+               <input type="button" id="modulus" value="%" onclick="readData('modulus');">
+               <input type="button" id="power" value="e" onclick="readData('power');">
+           </li>
+           <div class="resultDisplay">Result: <span id="resDisplay"></span></div>
+        </ul>
+    </div>
+
+    <script>
+         var readData = (userOption) => {
+                var a1 = parseInt(document.querySelector("#fval").value);
+                var a2 = parseInt(document.querySelector("#sval").value);
+                
+                switch (userOption) {
+                    case 'addition' : 
+                        var result = a1 + a2;
+                        break;
+
+                    case 'subtraction' : 
+                        var result = a1 - a2;
+                        break;
+
+                    case 'multiplication' : 
+                        var result = a1 * a2;
+                        break;
+
+                    case 'division' : 
+                        var result = a1 / a2;
+                        break;
+
+                    case 'modulus' : 
+                    var result = a1 % a2;
+                    break;
+
+                    case 'power' : 
+                    var result = a1 ** a2;
+                    break;
+
+                }
+                document.querySelector("#resDisplay").innerHTML = result;
+                document.querySelector(".resultDisplay").style.display = "block";
+            }
+    </script>
+</body>
+</html>

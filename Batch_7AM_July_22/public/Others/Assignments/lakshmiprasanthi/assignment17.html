@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ var xDate = new Date;
+
+ months = ["January", "Febuary", "March", "April", "May", "June", "July", "Auguest", "September", "Octomber", "November", "December"];
+      
+ console.log(months[xDate.getMonth()] + ", " + xDate.getDate() + "th, " + xDate.getFullYear());
+
+  // 3. Tue, Aug 30th 2022 
+  days = ["Sunday", "Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"];
+        console.log(days[xDate.getDate()] + ", " + months[xDate.getMonth()].substr(0,3) + " " + xDate.getFullYear());
+ 
+ // 4. Tuesday, Auguest 30th 2022
+        console.log(days[xDate.getDate()] + ", " + months[xDate.getMonth()] + ", " + xDate.getFullYear());
+
+   // 5. 30/08/2022
+          console.log("30" + "/0" + xDate.getMonth() + "/" + xDate.getFullYear());
+  
+   // 6. 30th Aug 2022
+   console.log("30" + "th" + " " + months [xDate.getMonth()].substr(0,3) + " , " + xDate.getFullYear() );     
+   
+    // 7. 30th Aug, 2022 09:30:10
+   
+
+console.log(xDate.getDate() + "th " +  months [xDate.getMonth()].substr(0,3) + ", " + xDate.getFullYear() + " " + xDate.getHours() + ":" + xDate.getMinutes() + ":" + xDate.getSeconds())
+  
+// 8. Aug/30/2022 10:20
+
+console.log(xDate.getDate()  + "/" + "30" + "/" +xDate.getFullYear() + " " +  "10:20" );
+
+// 9.  30-Aug-2022 20:30:10
+console.log("30" + "-" +months [xDate.getMonth()].substr(0,3) + "-" + xDate.getFullYear() + " " + "20:30:10");
+</script>
+    
+</body>
+</html>

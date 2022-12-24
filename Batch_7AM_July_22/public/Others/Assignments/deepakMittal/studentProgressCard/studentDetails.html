@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="studentDetailsStyle.css">
+    </head>
+    <body>
+        <h3><div>Student Progress Card Generator</div></h3>
+
+        <div class="getStudentDetails">
+            <ul>
+                <li>Student Name : <input type="text" id="sName"></li>
+                <li>Student Age : <input type="text" id="sAge"></li>
+                <li>Student Location : <input type="text" id="sLocation"></li>
+                <li>Student Mobile No. : <input type="text" id="sMobile"></li>
+                <li>Student Gender : 
+                    <input type="radio" id="sGender" name="gender" value="Male" checked>Male
+                    <input type="radio" id="sGender" name="gender" value="Female">Female
+                </li>
+                <li>Student Class : 
+                    <select name="" id="sClass">
+                        <option value="Class I">Class I</option>
+                        <option value="Class II">Class II</option>
+                        <option value="Class III">Class III</option>
+                        <option value="Class IV">Class IV</option>
+                        <option value="Class V">Class V</option>
+                        <option value="Class VI">Class VI</option>
+                    </select>
+                </li>
+
+                <li id="studentMarks">Marks : 
+                    <input type="text" id="m1">
+                    <input type="text" id="m2">
+                    <input type="text" id="m3">
+                    <input type="text" id="m4">
+                    <input type="text" id="m5">
+                </li>
+
+                <li>
+                    <input type="button" value="Submit Details" onclick="studentProgressCard()">
+                </li>
+            </ul>
+        </div>
+
+        <div class="displayDetailsHere">
+            <ul>
+                <li>Student Name : <span id="studentName"></span></li>
+                <li>Student Age : <span id="studentAge"></span></li>
+                <li>Student Location : <span id="studentLocation"></span></li>
+                <li>Student Mobile : <span id="studentMobile"></span></li>
+                <li>Student Gender : <span id="studentGender"></span></li>
+                <li>Student Class : <span id="studentClass"></span></li>
+                <li>Total Marks: <span id="studentMarkss"></span></li>
+                <li>Percentage : <span id="studentAvg"></span></li>
+                <li>Grade : <span id="studentGrade"></span></li>
+            </ul>
+        </div>
+        <script src="studentDetauils.Js"></script>
+    </body>
+</html>

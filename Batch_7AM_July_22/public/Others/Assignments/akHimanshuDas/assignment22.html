@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Assignment 22</title>
+    </head>
+    <body>
+        <h3>Finding smallest and greatest number inside an array</h3>
+        <script>
+            var dataInput=() =>{
+                var data=[1,2,4,6,3,9,0,11,14,7];
+                console.log(data);
+                var out=greaterSmallerData(data);
+                console.log("Greater number= "+out[0]);
+                console.log("Smaller number= "+out[1]);
+            }
+            var greaterSmallerData=(data) =>{
+                var greater=data[0];
+                var smaller=data[0];
+                for(var i=0;i<data.length;i++){
+                    if(greater>data[i])
+                    greater=data[i];
+                    if(smaller<data[i])
+                    smaller=data[i];
+                }
+                var out=[greater,smaller];
+                return out;
+            }
+            dataInput();
+        </script>
+    </body>
+</html>

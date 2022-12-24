@@ -1,0 +1,22 @@
+.addNewProductBlock ul {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.addNewProductBlock ul li {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.succssBlock {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+    color: green;
+}

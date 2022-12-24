@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+          emp details
+        </title>
+    <style>
+    h2{
+       border: 1px solid;
+       text-align: center;
+       width: 500px;
+       height:auto;
+       background-color: aqua;
+      border-style:groove ;
+    }
+    h2{
+        position: absolute;
+        left: 350px;
+        bottom: 470px;
+    }
+    </style>
+    </head>
+    <body>
+         <h2>Emp Details using functions passing para&return</h2>
+        <script>
+            function readdata(){
+                var ename,gender,age,dept,basicsal,pf,hra,totalsal;
+
+                ename = prompt("Enter the ename");
+                gender = prompt("Enter the gender : male or female");
+                age = prompt("Enter the age");
+                dept = prompt("Enter the dept");
+                basicsal = prompt("Enter the basicsal");
+                basicsal = parseInt(basicsal);
+                pf = (basicsal * 14)/100;
+                hra = (basicsal * 20)/100;
+                totalsal =gettotalsal(basicsal,pf,hra);
+                displaydata(ename,gender,age,dept,basicsal,pf,hra,totalsal);
+            }
+            function gettotalsal(a,b,c){
+                var totalsal = a + b + c;
+                return totalsal;
+               
+            }
+            function displaydata(ename,gender,age,dept,basicsal,pf,hra,totalsal){
+               console.log("Empname  :" + ename);
+               console.log("Gender  :" + gender);
+               console.log("Age  :" + age);
+               console.log("Dept :" + dept);
+               console.log("Basicsal : " + basicsal);
+               console.log("Pf :" + pf);
+               console.log("Hra :" + hra);
+               console.log("Totalsal :" + totalsal);
+               gettaxper(gender,totalsal);
+            }
+            function gettaxper(gender,totalsal){
+                if (gender == "male") {
+                    if(totalsal >= 200000){
+                       var tax=(15*totalsal)/100;
+                       console.log("tax with 15% : " + tax);
+                    }else if(totalsal >100000){
+                       var tax=(10*totalsal)/100;
+                        console.log("tax with 10% : " + tax);
+                    }else if(totalsal >= 50000){
+                        var tax=(0*totalsal)/100;
+                        console.log("tax with 0% :" + tax);
+                    }
+                }
+                if(gender == "female") {
+                    if(totalsal>=200000){
+                        var tax=(10*totalsal)/100;
+                        console.log("tax with 10% : " + tax);
+                    }else if(totalsal >= 100000){
+                        var tax=(5*totalsal)/100;
+                        console.log("tax with 5% : " + tax);
+                    }else if(totalsal >= 50000){
+                        var tax=(0*totalsal)/100;
+                         console.log("tax with 0% : " + tax);
+                    }
+                }
+                var total=(totalsal-tax);
+                console.log("total amount:"+ total);
+                console.log("Done");
+            }
+            readdata();
+        </script>
+    </body>
+</html>

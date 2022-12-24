@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var employname = prompt("enter employname");
+            console.log(employname);
+            var Age = prompt("enter Age");
+            console.log(Age);
+            var Gendar = prompt("enter gendar");
+            console.log(Gendar);
+            var basicsalary = prompt("enter salary");
+            var basicsalary = parseInt(basicsalary);
+            var pf = prompt("enter pf");
+            var pf = parseInt(pf);
+            var pf = basicsalary*(pf/100);
+            var hra = prompt("enter hra");
+            var hra = parseInt(hra);
+            var hra = basicsalary*(hra/100);
+            var totalsalary = basicsalary+pf+hra;
+            console.log("total salary is"+ totalsalary);
+        </script>
+    </body>
+</html>

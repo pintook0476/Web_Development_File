@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: azure;
+        }
+
+        .Headings {
+            position: sticky;
+            top: 0px;
+            color: rgba(172, 120, 41, 0.918);
+            background-color: rgba(171, 229, 229, 0.734);
+            padding: 5px;
+            text-align: center;
+        }
+
+        .HeadButtons {
+
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+
+        .HeadButtons:hover {
+            background-color: rgb(171, 229, 229)
+        }
+
+        .UserInfo {
+            border: 1px solid;
+            width: 300px;
+            height: 55px;
+            margin: 20px auto;
+            padding: 10px;
+            padding-top: 15px !important;
+        }
+    </style>
+
+    <title>Forgot Mail Id</title>
+</head>
+
+<body>
+    <div class="Headings">
+        <span class="HeadButtons">
+            Home
+        </span>
+        <span class="HeadButtons">
+            Galary
+        </span>
+        <span class="HeadButtons">
+            AboutUs
+        </span>
+        <span class="HeadButtons">
+            ContactUs
+        </span>
+        <span class="HeadButtons">
+            Offers
+        </span>
+    </div>
+    <div class="UserInfo">
+        <form action="HomePage.html" method="get">
+            <label for="Mail Id">Mail Id:</label>
+            <input type="email" name="MailId" required>
+            <br>
+            <br>
+            <center>
+                <button>submit</button>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

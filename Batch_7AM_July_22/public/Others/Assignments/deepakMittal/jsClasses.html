@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>JavaScipt Classes</h3>
+        
+        <script>
+
+            class BookDetails {
+                constructor(bName, bPrice, bAuthor){
+                    this.bookName = bName;
+                    this.price = bPrice;
+                    this.author = bAuthor;
+                    this.displayBookData();
+                    this.sample();
+                }
+                displayBookData(){
+                    console.log("Display Book Details Invoked");
+
+                }
+
+                sample (){
+                    console.log("Sample Details Invoked");
+                }
+            }
+
+            var b1 = new BookDetails("Rich Dad", 2000, "Abc Lt");
+            var b2 = new BookDetails("Ram Katha", 10000, "Pqr Ltd");
+            
+            console.log(b1);
+            console.log(b2);
+
+
+        </script>
+    </body>
+</html>

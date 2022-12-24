@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+</head>
+<body>
+    <h3>To get the Output please go to the Console Window !</h3>
+    <script>
+       var userNum = prompt("Enter any Number To get Lucky Number of it") ;
+       userNum = parseInt(userNum);
+       console.log('Entered Number Is ' + userNum);
+       var rem;
+       var count = 0;
+       while (userNum > 0) 
+       {
+        rem = userNum % 10 ;
+        userNum = userNum / 10;
+        userNum = parseInt(userNum);
+        count = count + rem ;
+        if (userNum == 0 && count > 9)
+        {
+            userNum = count ;
+            count = 0;
+        }
+       }
+       console.log('Lucky Number Is ' + count);
+    </script>
+</body>
+</html>

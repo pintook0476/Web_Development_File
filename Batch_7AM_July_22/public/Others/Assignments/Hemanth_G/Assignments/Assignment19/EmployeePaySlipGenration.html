@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pay Slip Genration</title>
+    <link rel="stylesheet" href="EmployeePaySlipGenration.css">
+    
+   
+</head>
+
+<body>
+    <div class="title">
+        Employee Pay slip Genration
+    </div>
+    <ul>
+        <li>
+            Enter Employee Name :
+            <input type="text" id = "eName">
+           <div class="nameMandateErr">Name is Mandate Field</div> 
+          
+        </li>
+        <li>
+            Enter Employee Age :
+            <input type="text" id = "eAge">
+        </li>
+        <li>
+            Gender :
+            <input checked type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li>
+            Enter Basic Salary :
+            <input type="text"  id="eBasic">
+            
+        </li>
+        
+        <li>
+            <input type="submit" value="Generate Pay Slip" onclick = "employeeDetails.readEmployeeDetails();">
+        </li>
+    </ul>
+
+    <ul class="paySlipBlock">
+        <li>
+            Employee Name : <span id="dname"></span>
+        </li>
+        <li>
+            Employee Age : <span id="dage"></span>
+        </li>
+        <li>
+            Employee Gender : <span id="dgender"></span>
+        </li>
+        <li>
+            Employee Basic Salary : <span id="dBasic"></span>
+        </li>
+       
+        <li>
+            Employee Pf : <span id="dpf"></span>
+        </li>
+        <li>
+            Employee Hra : <span id="dhra"></span>
+        </li>
+        <li>
+            Employee Total salary : <span id="dtotal"></span>
+        </li>
+        <li>
+            Employee TaxTobepaid : <span id="dtax"></span>
+        </li>
+
+    </ul>
+    <script src="EmployeePaySlipGenration.js"></script>
+</body>
+
+</html>

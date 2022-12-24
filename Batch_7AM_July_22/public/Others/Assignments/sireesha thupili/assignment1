@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <tittle>
+            list of registered students
+        </tittle>
+    </head> 
+        <style>
+            .heading{
+                color: brown;
+                text-align: center;
+                text-decoration: underline;
+                border: double;
+                font-style: italic;background-color: aqua;
+
+            }
+            img{
+                width: 150px;
+                height: 150px;
+            ]
+        </style>
+    <body>  
+        <h1 class="heading"><b>list of registeredstudents</h1></b>
+        <img src="https://media.istockphoto.com/photos/passport-photo-of-a-young-arabic-woman-picture-id564567808?s=612x612">
+        <h3 class="content">1.NAME;sireesha<br>
+            AGE;22<br>
+            GENDER;female<br>
+        LOCATION;hyderabad<br></h3>
+         <img src="https://thumbs.dreamstime.com/b/passport-photo-portrait-asian-smiling-woman-109538764.jpg">
+        <h3>2.NAME;supriya<br>
+            AGE;23<br> 
+        GENDER;female<br>
+        LOCATION;nellore<br></h3>
+         <img src="https://i.pinimg.com/474x/4a/5c/2f/4a5c2f2a828314d79432bb91afeb3ef3.jpg"><br>
+        <h3>3.NAME;abhishek<br>
+               AGE;25,<br>
+             GENDER;male<br>  
+             LOCATION;ammerpet<br></h3>
+            <img src="https://i.pinimg.com/550x/f5/3e/c6/f53ec61db2e49c82b057554cb4a0cb91.jpg"><br>
+         <h3 >4.NAME;chandra<br>
+                AGE;24<br>
+                GENDER;male<br>
+             LOCATION;kukatpally</h3><br>
+             <img src="https://us.123rf.com/450wm/kadettmann/kadettmann2011/kadettmann201100074/158825218-passport-photo-of-latin-american-businessman-with-beard-on-isolated-white-background-for-cut-out.jpg?ver=6">
+            <h3> 5.NAME:hemanth<BR>
+                AGE;24<br>
+                GENDER;male<br>
+                LOCATION;mumbai<br></h3>
+                <img src="https://i.pinimg.com/originals/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg">
+            <h3>6.NAME;usha<br>
+                AGE;27<br>
+                GENDER;female<br>
+                LOCATION;vizag<br>
+
+            </h3>
+            <img src="https://media.istockphoto.com/photos/passport-picture-businesswoman-with-brown-hair-picture-id856479974?k=20&m=856479974&s=612x612&w=0&h=2a6E9509zCKLZkC9FoaAwaiC0DlPXUoN_46P3Un_xKk="><br>
+            <h3>7.NAME:vasavi<BR>
+                  AGE;28<br>
+                GENDER;female<br>
+                LOCATION;hyderabad<br></h3>
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-smiling-woman-in-a-blue-shirt-picture-id515630181?k=20&m=515630181&s=612x612&w=0&h=XJnIoZkvMJiL__5OOJikWzgi18u7KklNPl2HfK4KeRg=">
+                <h3>8.NAME:poojitha<Br>
+                    AGE:25<br>
+                    GENDER:female<br>
+                    LOCATION;hyderabad<br></h3>
+                <img src="https://i.pinimg.com/474x/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg">
+                <h3>9.NAME;raj<br>
+                    AGE;26<BR>
+                GENDER;male<br>
+                LOCATION:vizag<br></h3>
+                <img src="https://image.shutterstock.com/image-photo/passport-photo-young-attractive-sexy-260nw-200475077.jpg">
+                <h3>10.NAME;latha<br>
+                    AGE;30<br>
+                    GENDER:female<bR>
+                LOCATION:kakinada<br></h3>
+
+
+    </body>
+</html>

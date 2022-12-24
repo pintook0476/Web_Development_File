@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 - Smallest No.</title>
+</head>
+
+<body>
+    <script>
+        var num = () => {
+            
+            
+            var digits = [5, 2, 15, 20, 25, 1, 35, 40, 45, 50];
+            var smallest = digits[0];
+            smallestNum(digits, smallest);
+            
+        }
+
+        var smallestNum = (digits, smallest) => {
+            for (var i = 0; i < digits.length; i++) {
+                document.write(digits[i] + "<br>");
+                if (digits[i] < smallest) {
+                    smallest = digits[i];
+                }
+            }
+
+            document.write("the smallest is " + smallest);
+           
+        }
+
+       
+ num();
+    </script>
+</body>
+
+</html>

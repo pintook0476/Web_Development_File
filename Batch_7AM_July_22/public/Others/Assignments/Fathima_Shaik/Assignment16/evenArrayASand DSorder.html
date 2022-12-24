@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out Even numbers and sort out either in ascending or descending order</title>
+</head>
+<body>
+    <h3> Find out Even numbers and sort out either in ascending or descending order</h3>
+    <script>
+        var a = [45,22,88,56,37,19,68];
+        var temp = [];
+        var b ;
+        console.log("Even numbers within the given array:");
+        for(var i=0; i<a.length; i++){
+            if(a[i] % 2 == 0){
+                console.log(a[i]);
+                temp.push(a[i]);
+            }
+        }
+        
+        //sorting out in ascending order 
+        for(i=0; i<temp.length; i++){
+            for(var j=i+1; j<temp.length; j++){
+            if (temp[i] > temp[j]){
+                b = temp[i];//b=temp[0]
+                temp[i] = temp[j];//temp[0]=temp[1]
+                temp[j] = b ;//temp[1]=b
+            }
+            }
+        }
+
+        console.log("After sorting out in AS order: " + temp);
+
+        var temp = [];
+        console.log("Even numbers within the given array:");
+        for(var i=0; i<a.length; i++){
+            if(a[i] % 2 == 0){
+                console.log(a[i]);
+                temp.push(a[i]);
+            }
+        }
+
+       //sorting out in descending order
+        for(i=0; i<temp.length; i++){
+            for(var j=i+1; j<temp.length; j++){
+            if(temp[i] < temp[j]){
+                b = temp[j];//b[0]=temp[1];
+                temp[j] = temp[i];//temp[1]=temp[0]
+                temp[i] = b ;//temp[0]=b[0]
+            }
+            }
+        }
+
+        console.log("After sorting out in DS order: " + temp);
+    </script>
+</body>
+</html>

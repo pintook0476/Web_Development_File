@@ -1,0 +1,180 @@
+<html> 
+    <head> 
+        <title>  Regestration form using Form Tag</title>
+    </head>
+    <style> 
+     .head{
+        text-align: center;
+        background-color: rgb(255, 0, 0);
+        border: 2px solid;
+        height: 30px;
+        font-size: 20px;
+        padding-top: 5px;
+        
+     }
+     .body{
+        border: 2px solid;
+        height: 1100px;
+        margin: 25px 0px;
+        border-radius: 5px;
+        background-color: lightskyblue;
+     }
+     .Container1, .Container2, .Container3, .Container4{
+        border: 2px solid;
+        margin: 10px;
+        height: 120px;
+        padding: 25px 0px 15px 10px;
+        font-size: 20px;
+        background-color:rgb(178, 186, 29);
+     }
+     li{
+        list-style-type: none;
+     }
+     .Tophead1, .Tophead2, .Tophead3, .Tophead4{
+        border: 2px solid;
+        width: 200px;
+        height: 30px;
+        border-radius: 3px;
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+        left: 50px;
+        top: 28px;
+        background-color: aquamarine;
+        padding: 5px;
+     }
+     .Course{
+        position: relative;
+        left: 900px;
+        bottom: 141px;
+     }
+    .Container2{
+        background-color: lightcoral;
+    }
+    .Container3 {
+        height: 160px;
+    }
+
+    .Container4{
+        height: 250px;
+        background-color: lightcoral;
+
+    }
+    .Landmark{
+        position: relative;
+        left: 900px;
+        bottom: 150px;
+    }
+    .footer{
+        border: 2px solid;
+        height: 30px;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        padding-top: 5px;
+        margin-top: 20px;
+    }
+    
+    </style>
+    <body>
+        <form action="http://www.test.com" method="get">
+            <div Class="Head"> Student Registration </div>  
+            <div class="body">
+                <div class="Tophead1"> Personal Details  </div>
+                <ul class="Container1">
+                   <li> 
+                        <label for="username"> Enter Student Name: </label>
+                        <input type="text" name="username">  <required>
+                    </li> 
+                        <br>
+                    <li>
+                         <label for="mailID"> Mail ID: </label>
+                        <input type="text" name="mailID"> 
+                     </li>  
+                        <br>
+                    <li>
+                         <label for="gender"> Gender: </label>                       
+                        <input type="Radio" name="Gender" value="Male"> Male 
+                        <input type="radio" name="Gender" value="female"> Female  
+                    </li> 
+                            <br>
+                    <li class="Course"> 
+                        Courses Opted: <select name="Course">
+                            <option value="FullstackUI">   Full Stack UI </option>
+                            <option value="AWS">   AWS </option>
+                            <option value="Java">  Java </option>
+                        </select> 
+                        
+                    </li>
+                </ul>
+                <div class="Tophead2"> Education Details </div>
+                <ul class="Container2"> 
+                    <li>
+                        <label for="Edu">  Qualification </label>
+                        <input type="text" name="Edu"> 
+                    </li>
+                        <br>
+                    <li> 
+                        Languages Known :
+                        <input type="checkbox" value="English" name="Eng">  English
+                        <input type="checkbox" value="Telugu" name="Tel"> Telugu
+                        <input type="checkbox" value="Hindi" name="Hin"> Hindi
+                        <input type="checkbox" value="urdu" name="urdu"> urdu 
+                    </li>
+                        <br>
+                    <li>
+                        <label for="Marks">    Average Marks: </label> 
+                        <input type="text" name="Marks"> <required>
+                    </li>
+                 </ul>
+                 <div class="Tophead3"> Address </div>
+                 <ul Class="Container3">
+                    <li> 
+                         <label for="Add1" >    Door/Flat No.   </label> 
+                            <input type="text" name="Add1"> 
+                    </li>
+                    <br>
+                    <li> 
+                            <label for="Street">   Street Name  <label>
+                            <input type="text" name="Street">
+                    </li>
+                        <br>
+                    <li>State:
+                        <select name="Streetname" > 
+                            <option value="Name1"> Delhi </option>
+                            <option value="Name2"> AP </option>
+                            <option value="Name3"> Telangana </option>
+                            <option value="Name4"> Goa </option>
+                        </select>
+                    </li>
+                        <br>
+                    <li> 
+                        Country:
+                        <select>
+                            <option value="IND"> India </option> 
+                            <option value="PAK"> Pakistan   </option>
+                            <option value="Ire"> Ireland </option>
+                            <option value="USA"> USA </option>   
+                        </select>
+                    </li>
+                            <br>
+                        <li class="Landmark"> 
+                        <label for="Landmark"> Landmark: </Label> 
+                        <textarea name="Landmark"> </textarea>
+                    </li>
+                </ul>
+                <div class="Tophead4"> About Yourself </div>
+                <ul class="Container4"> 
+                    <li> About Youself: 
+                        <textarea maxlength="700" rows="15" cols="70" name="About">   </textarea>
+                    </li>
+                </ul>
+             </div>
+
+             <input type="submit" value="Register" target="_blank">
+
+             <div class="footer"> ©Copyright2022 </div> 
+
+        </form> 
+    </body>
+ 
+</html>

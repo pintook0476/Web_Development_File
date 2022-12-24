@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML input elements
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/samplefavicon.png">
+        <style>
+            ul {
+                border: 1px solid;
+                margin: 30px auto;
+                width: 500px;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 5px;
+                padding: 5px;
+            }
+            input[name=sample] {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://testingsample.com/abc/data" method="POST"> 
+            <ul>
+                <li>
+                    Enter Student name: 
+                    <input type="text" maxlength="10" name="userName">
+                </li>
+                <li>
+                    Enter Account pwd : 
+                    <input type="password" name="actPasswd">
+                </li>
+                <li>
+                    Gender: 
+                    <input type="radio" name="gender" value="male"> Male  
+                    <input type="radio" name="gender" value="female"> Female
+                </li>
+                <li>
+                    Country : 
+                    <select name="userCountry">
+                        <option>India</option>
+                        <option selected>USA</option>
+                        <option>Russia</option>
+                    </select>
+                </li>
+                <li>
+                    Languages you know: 
+                    
+                    <input type="checkbox" name="lng_eng"> English
+                    <input type="checkbox" name="lng_tel"> Telugu
+                    <input type="checkbox" name="lng_spn"> Spanish
+                    <input type="checkbox" name="lng_hin"> Hindi
+                </li>
+                <li>
+                    Tell about urself within 300 char 
+                    <textarea maxlength="300" rows="20" cols="20" name="abturslf"></textarea>
+                </li>
+            
+                <li>
+                    
+
+                    <input type="submit" value="Register details">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>

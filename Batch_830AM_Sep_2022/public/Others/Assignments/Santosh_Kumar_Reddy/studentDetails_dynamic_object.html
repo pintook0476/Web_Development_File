@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentData = {
+
+            readStudentDetails(){
+                studentData.name = prompt("Enter Student Name");
+                this.age = prompt("Enter the age");
+                this.gender = prompt("Enter the gender");
+                this.marks =[];
+
+                for(i=0 ;i <5 ;i++){
+                    this.marks[i] = parseInt(prompt("Enter Your marks"));
+                }
+                this.getTotalAndAvg();
+            },
+            getTotalAndAvg(){
+                this.total = 0;
+                    for (var i = 0 ; i <this.marks.length; i++) {
+                        this.total += studentData.marks[i];
+                    }
+                    this.avg = this.total / this.marks.length;
+                    this.getGrade();
+            },
+            getGrade(){
+                var grade = 0;
+                if(this.avg >=40 ){
+                    this.getGrade = "You are passed"
+                }
+                else{
+                    this.grade = "You have a surprise at home"
+                }
+            },
+            displayDetails(){
+                this.readStudentDetails();
+                    console.log("STudent name is " + this.name);
+                    console.log("Age is " + this.age);
+                    console.log("Gender is " + this.gender);
+                    console.log("Totla is " + this.total);
+                    console.log("Avg is " + this.avg);
+                    console.log("Grade is " + this.grade);
+            }
+        };
+        studentData.displayDetails();
+    </script>
+</body>
+</html>

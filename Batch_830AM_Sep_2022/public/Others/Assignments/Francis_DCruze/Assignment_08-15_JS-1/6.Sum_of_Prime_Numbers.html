@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of Prime Numbers</title>
+        <style>
+            div{
+                border: 2px solid;
+                text-align: center;
+                margin-top: 150px;
+                background-color: black;
+                color: rgb(95, 81, 81);
+                padding: 25px;
+                border-radius: 30px;
+                box-shadow: 5px 5px 8px 5px;
+            }
+            h1,h2{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>PLEASE OPEN THE CONSOLE TAB TO CHECK JS PROGRAM</h1>
+            <h2>THANK YOU !</h2>
+        </div>
+
+        <script>
+            var countTracker=0;
+            var sumPrime = 0;
+
+            console.log(`Sum of Prime Numbers between 1 to 100 :`);
+
+            for(var i = 100; i > 1; i--)
+            {
+                if (i > 1)
+                {   
+                    countTracker =0;
+                    
+                    for(var j = 2; j <= i; j++)
+                    {
+                        if(i % j == 0)
+                        {
+                            countTracker++;
+                        }
+                    }
+                    if(countTracker <= 1)
+                    {
+                        
+                        sumPrime += i;
+                    }
+                }
+            }
+            console.log(`${sumPrime}`);
+
+        </script>
+    </body>
+</html>

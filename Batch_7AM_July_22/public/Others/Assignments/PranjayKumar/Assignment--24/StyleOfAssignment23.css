@@ -1,0 +1,50 @@
+.collegeBox 
+{
+    border-top: 10px solid red;
+    border-right: 10px solid yellow;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid yellow;
+    width: 450px;
+    margin-left: 50px;
+    padding: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: rgb(3, 23, 23);
+    color: aqua;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.cTitle{
+    color: yellowgreen;
+    font-family: cursive;
+}
+.collegeBox ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+.studentBox{
+    border-top: 10px solid red;
+    border-right: 10px solid yellow;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid yellow;
+    width: 550px;
+    margin-left: 540px;
+    padding: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: rgb(3, 23, 23);
+    color: aqua;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.stitle{
+    color: blueviolet;
+    font-family: cursive;
+}
+.studentBox ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+
+}

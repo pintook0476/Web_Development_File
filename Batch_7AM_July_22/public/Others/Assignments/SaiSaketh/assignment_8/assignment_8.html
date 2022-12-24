@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>student Registeration Page</title>
+        <style>
+            .heading
+            {
+                border: 1px solid;
+                width: 100%;
+                height: 20px;
+                text-align: center;
+            }
+            .subHeading
+            {
+                border: 1px solid;
+                width: 150px;
+                height: 20px;
+                text-align: center;
+                position: absolute;
+                top: 50px;
+                left: 30px;
+                background-color: white;
+            }
+            .details
+            {
+                border: 1px solid;
+                height: 130px;
+                margin: 10px;
+                padding: 3px;
+                margin-top: 30px;
+            }
+            .name
+            {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+            .course
+            {
+                float: right;
+                margin: 5px;
+                padding: 5px;
+            }
+            .email
+            {
+                float: left;
+                clear: both;
+                margin: 5px;
+                padding: 5px;
+            }
+            .gender
+            {
+                float: left;
+                clear: both;
+                margin: 5px;
+                padding: 5px;
+            }
+            .education
+            {
+                border: 1px solid;
+                margin: 3px;
+                padding: 3px;
+                width: 150px;
+                height: 15px;
+                text-align: center;
+                position: absolute;
+                top: 204px;
+                left: 30px;
+                background-color: white;
+            }
+            .block1
+            {
+                border: 1px solid;
+                margin: 10px;
+                margin-top: 20px;
+                padding: 15px;
+            }
+            .language
+            {
+                padding: 15px;
+                left: 9px;
+                right: 10px;
+            }
+            .address
+            {
+                border: 1px solid;
+                height: 130px;
+                margin: 10px;
+                padding: 3px;
+                margin-top: 20px;
+                padding-top: 15px;
+            }
+            .block2
+            {
+                border: 1px solid;
+                margin: 3px;
+                padding: 3px;
+                width: 80px;
+                height: 15px;
+                text-align: center;
+                position: absolute;
+                background-color: white;
+                left: 30px;
+                bottom: 250px;
+            }
+            .landmark
+            {
+                float: right;
+                clear: both;
+            }
+            .street
+            {
+                float: left;
+                clear: both;
+            }
+            .country
+            {
+                float: left;
+                clear: both;
+            }
+            .about
+            {
+                border: 2px solid;
+                margin: 2px;
+                padding: 3px;
+                text-align: center;
+                width: 100px;
+                height: 15px;
+                position: absolute;
+                left: 30px;
+                bottom: 80px;
+                background-color: white;
+            }
+            .block3
+            {
+                border: 1px solid;
+                padding: 10px;
+                padding-top: 15px;
+                margin: 10px;
+                margin-top: 20px;
+            }
+            .footer
+            {
+                border: 2px solid;
+                text-align: center;
+                margin: 10px;
+            }
+            .submit
+            {
+                border: 1px;
+                text-align: center;
+            }
+            .border
+            {
+                border: 1px solid;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border">
+        <div class="heading">Student Registeration Form</div>
+            <div class="subHeading">Personal Details</div>
+        <div class="details"> 
+            <div class="name">Student Name    : <input type="text"></div>
+            <div class="course">
+                Course opted : 
+                        <select name="">
+                                <option>Select Course</option>
+                                <option>Ui developer</option>
+                                <option>Java</option>
+                                <option>Phyton</option>
+                                <option>Data science</option>
+                            </select>
+            </div>
+            <div class="email">Email :<input type="email" name="emailid" value=""></div>
+            <div class="gender">Gender : 
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="others">Others
+            </div>
+            
+        </div>
+        <div class="education">Education Details </div>
+        <div class="block1">
+            <div>Qualification <input type="text"></div>
+            <div class="language">
+                Languages Know : 
+                <input type="checkbox" name="language_english" value="English">English
+                <input type="checkbox" name="language_telugu" value="telugu">Telugu
+                <input type="checkbox" name="language_hindi" value="hindi">Hindi
+                <input type="checkbox" name="language_urdu" value="urdu"> urdu
+            </div>
+            <div>Avarage Marks : <input type="text"></div>
+        </div>
+        <div class="block2">Address</div>
+        <div class="address">
+            <div>Dno : <input type="text" name="Dno" value=""></div>
+            <div class="landmark">LandMark : <input type="text"></div>
+            <div class="street"> Street name  : <input type="text" name="Street name" value=""></div>
+            <div> State : 
+                <select name="">
+                <option>Select State</option>
+                <option>telangana</option>
+                <option>Andra Pradesh</option>
+                <option>Delhi</option>
+                <option>Utther Pradesh</option>
+            </select>
+        </div>
+        <div class="country"> Country :
+            <select name="">
+                <option>select Country</option>
+                <option>india</option>
+                <option>Pakstain</option>
+                <option>West bengal</option>
+                <option>Bangladesh</option>
+            </select>
+        </div>
+        </div>
+        <div class="about">About Urself</div>
+        <div class="block3">About Yourself :<textarea maxlength="100" cols="50" rows="5" name="aboutUser" placeholder="Tell about yourselfS"></textarea></div>
+        <div class="submit"><input type="submit"></div>
+        <div class="footer">&copy Copyrights reserved 2022</div>
+        </div>
+    </body>
+</html>

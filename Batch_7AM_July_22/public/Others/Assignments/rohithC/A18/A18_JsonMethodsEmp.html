@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Json Method</title>
+    </head>
+    <body>
+        <script>
+           var empdetails = {
+                /*name : 'raj',
+                age : 22 ,
+                gender : 'male',
+                ttlsal : 200000,*/
+                takingvalues : function() {
+                    empdetails.name = prompt('name');
+                    empdetails.age = prompt ('age');
+                    empdetails.gender = prompt ('gender');
+                    empdetails.ttlsal = prompt ('basicsal');
+                    this.ttlsal = parseInt (this.ttlsal);
+                    empdetails.pfAndHra();
+                },
+
+                pfAndHra : function () {
+                    empdetails.pf = (empdetails.ttlsal * 12) / 100 ;
+                    empdetails.hra = (empdetails.ttlsal * 25)/ 100 ;
+                    this.totalsalary  = this.pf + this.hra + this.ttlsal;
+                    this.taxDetails();
+                },
+
+                taxDetails : function () {
+                    this.taxpercent = 0;
+                    if (this.gender == "male" ) {
+                        if (this.totalsalary >= 400000) {
+                            this.taxpercent = 15;
+                        } else if (this.totalsalary >= 200000) {
+                            this.taxpercent = 10;
+                        } else if (this.totalsalary >= 100000) {
+                            this.taxpercent = 5;
+                        }
+                    } else {
+                        if (this.totalsalary >= 400000) {
+                            this.taxpercent = 10;
+                        } else if (this.totalsalary >= 200000 ) {
+                            this.taxpercent = 5;
+                        }
+                    }
+                    this.taxtopay = (this.totalsalary * this.taxpercent) / 100 ;
+                    this.totalsalary = this.totalsalary - this.taxtopay;
+                    this.displayingValues();
+                },
+
+                displayingValues : function () {
+                    console.log(this.name);
+                    console.log(this.age);
+                    console.log(this.gender);
+                    console.log('tax' + this.taxpercent)
+                    console.log(this.totalsalary);
+
+                },   
+           }
+           empdetails.takingvalues(); 
+        </script>
+    </body>
+</html>

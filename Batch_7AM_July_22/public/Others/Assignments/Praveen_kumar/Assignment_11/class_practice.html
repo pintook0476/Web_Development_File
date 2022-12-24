@@ -1,0 +1,37 @@
+var sum=0;
+for(var i=176;i<=277;i++)
+{
+    if(i%2!=0)
+    {
+    sum+=i;
+    }
+
+}
+
+console.log(sum);
+
+var n=prompt("Enter the number:");
+
+for( var i=1;i<=20;i++)
+{
+    var j=i*n;
+
+    console.log(n + "*" + i + "=" + j);
+}
+
+var n=prompt("Enter the number:");
+var count;
+n=parseInt(n);
+
+for(var i=1; i<=n;i++)
+{
+    if(n%i==0)
+    count++;
+
+}
+
+if(count==2)
+console.log(n+ " is a prime number");
+
+else
+comsole.log( n+ " is not a prime number");

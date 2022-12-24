@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details</title>
+</head>
+<body>
+    <script>
+        var empldetails = ()=>{
+           var empdel = {
+            printdetails : function(){
+            this.Employer_name = prompt("enter the name ");
+            this.Age = prompt("enter the age ");
+            this.Gender = prompt("enter the gender ");
+            this.Company_name= prompt("enter the company name");
+            this.Basicpay = prompt("enter the basicsalary ");
+            this.Basicpay= parseInt(this.Basicpay);
+            empdel.totals();
+            },
+            totals : function(){
+                this.Hra = (this.Basicpay * 10 ) / 100 ;
+                this.Hra= parseInt(this.Hra);
+                this.Pf = (this.Basicpay * 10 ) / 100 ;
+                this.Pf= parseInt(this.Pf);
+                this.totalsal = this.Basicpay + this.Hra + this.Pf;
+                empdel.taxpaid();
+                
+            },
+            taxpaid : function (){
+                this.tax = 0 ; 
+                if (this.totalsal >= 50000 &&  this.totalsal <= 100000 && this.Gender == "male") {
+                    this.tax = 5;
+                }else if (this.totalsal >= 100000 &&  this.totalsal <= 200000 && this.Gender == "male") {
+                    this.tax = 10;
+                }else if (this.totalsal >= 200000 && this.Gender == "male") {
+                    this.tax = 15;
+                }
+            else{ 
+                if(this.totalsal >= 100000 &&  this.totalsal <= 200000 && this.Gender == "female") {
+                     this.tax = 10;
+               }
+               else if  (this.totalsal >= 200000 && this.Gender == "female") {
+                    this.tax = 15;
+                }
+                }
+            
+                this.taxtotal = (this.totalsal * this.tax)/100;
+                this.display();
+            },
+            display : function (){
+                
+           console.log("enter name " + this.Employer_name) ;
+           console.log("enter age  " + this.Age) ;
+           console.log("enter gender " + this.Gender) ;
+           console.log("enter company name " + this.Company_name) ;
+           console.log("enter basicpay " + this.Basicpay) ;
+           console.log("enter hra " + this.Hra) ;
+           console.log("enter pf " + this.Pf) ;
+           console.log("enter total " + this.totalsal) ;
+           console.log("enter tax " + this.taxtotal) ;
+         
+            }
+          
+           };
+
+           empdel.printdetails();
+           console.log(empdel)
+
+        }
+       
+        empldetails();
+     
+     
+    </script>
+    
+</body>
+</html>

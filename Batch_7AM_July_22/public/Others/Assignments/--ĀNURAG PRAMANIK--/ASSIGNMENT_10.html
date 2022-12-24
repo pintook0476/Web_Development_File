@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casting type
+    </title>
+</head>
+
+<body><h1>..EMPLOYEE DETAILS..
+</h1>
+<H2>FOR DETAILS ..PLS OPEN CONSOLE..</H2>
+    <script>
+        var eName = prompt('Enter Employee Name');
+        var age = prompt('Enter age');
+        var gender = prompt('Gender is');
+        var loc = prompt('enter location');
+        var bsalary = prompt('Basic Salary is');
+        // converting string to number with the help of parseInt..
+        bsalary = parseInt(bsalary);
+        var pf = bsalary * (14 / 100);
+        var hra = bsalary * (24 / 100);
+        var total = bsalary + pf + hra;
+
+        
+        console.log('EMPLOYEE_DETAILS');
+        console.log('EMPLOYEE NAME IS :' + ' ' + eName);
+        console.log('AGE IS :' + ' ' + age);
+        console.log('GENDER IS :' + ' ' + gender);
+        console.log('location is :' + ' ' + loc);
+        console.log('BASIC SALARY IS :' + ' ' + bsalary);
+        console.log('PF OF EMPLOYEE '+eName+' is :'+pf );
+        console.log('HRA OF EMPLOYEE '+eName+' is :'+hra);
+        console.log('TOTAL SALARY OF '+eName+' is :' + total);
+
+        if(total >=80000){
+        console.log(eName+' needs to pay tax 15% 0f income');    
+    }
+        else if
+        (total >= 30000 && total <=79000 )
+            {console.log(eName+' needs to pay tax 10% of income');
+        }
+        else{
+        console.log('No need to pay tax');
+    }
+
+
+    </script>
+</body>
+
+</html>

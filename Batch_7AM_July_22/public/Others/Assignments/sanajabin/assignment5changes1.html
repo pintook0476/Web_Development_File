@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>
+            Assignment 5
+        </title>
+        <style>
+            
+            .header{
+                border: 2px solid;
+                text-align: center;
+                text-decoration: underline;
+                padding: 5px;
+                margin: 5px;
+                background-color:lightblue;
+                font-weight: bold;
+            }
+            .maincontainer{
+                border: 2px solid;
+                padding: 5px;
+                margin: 5px;
+                height: 500px; 
+                background-color: azure;
+            }
+            .footer{
+                font-weight: bold;
+                padding: 5px;
+                margin: 8px;
+                text-align: center;
+                border: 2px solid;
+                width: 97%;
+                height: 10px;
+                background-color: lightblue;
+             }
+            .leftBlock,
+            .rightBlock{
+                border: 2px solid;
+                margin:10px;
+                padding:10px;
+                float:left;
+                height: 460px;
+                overflow: auto;
+            }
+            .leftBlock{
+                width: 30%;
+                background-color: lightblue;
+            }
+            .rightBlock{
+                width: 60%;
+                background-color: lightblue;
+            }
+            .leftBlock li{
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style-position: inside;
+            }
+            .leftBlock li:hover{
+                background-color: lightslategray;
+            }
+            .detailscontainer > li {
+                list-style: none;
+                height: 100px;
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock,
+            .detailsBlock {
+                float: left;
+                margin: 5px;
+                padding: 5px;
+            }
+            .imgBlock{
+                border: 2px solid;
+                width: 100px;
+            }
+            .imgBlock img {
+                width: 100px;
+                height: 80px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="header">Students Details</div>
+        <div class="maincontainer">
+        <div class="leftBlock">
+            <ol>
+                <li>Anjali</li>
+                <li>Sheetal</li>
+                <li>
+                    <a href="#riyankaDetails">Riyanka</a>
+                </li>
+                <li>Mathew</li>
+                <li>Rishi</li>
+                <li>Harsh</li>
+                <li>Vivek</li>
+                <li>Saumya</li>
+                <li>Mayank</li>
+                <li>Lata</li>
+           </ol>
+        </div>
+        <div class="rightBlock">
+            <ul class="detailscontainer">
+                <li>
+                    <div class="imgBlock">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJEYIXAierNGJTmyg71hVu-xj7s3VyxSMNA&usqp=CAU">
+                    </div>
+                    <div class="detailsBlock">
+                        <ul>
+                            <li>Name:Anjali</li>
+                            <li>Age: 20</li>
+                            <li>Gender: Female</li>
+                        </ul>
+                    </div>
+                </li>
+                    <li>
+                        <div class="imgBlock">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBEC9O4uTK9sVdYSnCYMp9SOackvMcaYW0A&usqp=CAU">
+                        </div>
+                        <div class="detailsBlock">
+                            <ul>
+                                <li>Name:Sheetal</li>
+                                <li>Age: 20</li>
+                                <li>Gender: Female</li>
+                            </ul>
+                        </div>
+                        <li id="riyankaDetails">
+                            <div class="imgBlock">
+                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66hPx_0xsQIq9ye9I1rkk2Wn0eW7awDxgNw&usqp=CAU">
+                            </div>
+                            <div class="detailsBlock">
+                                <ul>
+                                    <li>Name:Riyanka</li>
+                                    <li>Age: 23</li>
+                                    <li>Gender: Female</li>
+                                </ul>
+                            </div>
+                        </li>
+                            <li>
+                                <div class="imgBlock">
+                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqITML4YzPidJR-Yc3-_Y1uEi25jmjD3jbw&usqp=CAU">
+                                </div>
+                                <div class="detailsBlock">
+                                    <ul>
+                                        <li>Name:Mathew</li>
+                                        <li>Age: 20</li>
+                                        <li>Gender: Male</li>
+                                    </ul>
+                                </div>
+                            </li>
+                                <li>
+                                    <div class="imgBlock">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbiWbEFj13q--vTZ2b3Szd-dW9hX-ZEIZCw&usqp=CAU">
+                                    </div>
+                                    <div class="detailsBlock">
+                                        <ul>
+                                            <li>Name:Rishi</li>
+                                            <li>Age: 24</li>
+                                            <li>Gender: Male</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                    <li>
+                                        <div class="imgBlock">
+                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4Ll4at8n5FnIHz2YCAB3DmV_yhSmJ6LQGA&usqp=CAU">
+                                        </div>
+                                        <div class="detailsBlock">
+                                            <ul>
+                                                <li>Name:Harsh</li>
+                                                <li>Age: 22</li>
+                                                <li>Gender: Male</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                        <li>
+                                            <div class="imgBlock">
+                                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqM_rS2aPeF7HCSUX9el9l3xT3FyHe1eX9cQ&usqp=CAU">
+                                            </div>
+                                            <div class="detailsBlock">
+                                                <ul>
+                                                    <li>Name:Vivek</li>
+                                                    <li>Age: 25</li>
+                                                    <li>Gender: Male</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                            <li>
+                                                <div class="imgBlock">
+                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RuabYzy5_IBMy8WIlJxX90gtH8DcUgIFiw&usqp=CAU">
+                                                </div>
+                                                <div class="detailsBlock">
+                                                    <ul>
+                                                        <li>Name:Saumya</li>
+                                                        <li>Age: 21</li>
+                                                        <li>Gender: Female</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                                <li>
+                                                    <div class="imgBlock">
+                                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmg6Qb16BA-QwPUl6Ue9_gzaSdH6-0DamWA&usqp=CAU">
+                                                    </div>
+                                                    <div class="detailsBlock">
+                                                        <ul>
+                                                            <li>Name:Mayank</li>
+                                                            <li>Age: 26</li>
+                                                            <li>Gender: Male</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                    <li>
+                                                        <div class="imgBlock">
+                                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVodgB4_5JLprAALucIS03zumW3mmVl6B2w&usqp=CAU">
+                                                        </div>
+                                                        <div class="detailsBlock">
+                                                            <ul>
+                                                                <li>Name:Lata</li>
+                                                                <li>Age: 23</li>
+                                                                <li>Gender: Female</li>
+                                                            </ul>
+                                                        </li>
+         </div>
+      </div>
+     <div class="footer"> &#169 copyrights 2022</div>
+</body>
+</head>
+</html>
+        

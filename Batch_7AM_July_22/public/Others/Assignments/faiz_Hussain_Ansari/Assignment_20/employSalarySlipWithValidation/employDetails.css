@@ -1,0 +1,28 @@
+.eDetails,.showingData {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px auto;
+    width: 500px;
+    background-color: rgb(185, 185, 185);
+
+}
+ li {
+    border:  1px solid;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: white;
+}
+.showingData{
+    background-color: cadetblue;
+    display: none;
+}
+.cardHeading {
+    font-size: large;
+    font-weight: bold;
+    color: brown;
+}
+.nameMandatErr, .charMandate, .ageMandatErr,.salMandatErr,.ageNumMandate,.salNumMandate {
+    color: red;
+    display: none;
+}

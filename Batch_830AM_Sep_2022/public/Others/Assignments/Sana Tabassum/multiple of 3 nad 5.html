@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>size of int ,float,double and char </title>
+<head>
+<style>
+    body{
+      background: linear-gradient(rgba(245, 242, 236, 0.8), rgba(228, 206, 206, 0.4)), url("pics29.jpg");
+  background-size: cover;
+  height: 100vh;
+        
+    }
+#container{
+    position:relative;
+    height:30rem;
+    width:45rem;
+    left:28rem;
+    top:5rem;
+    text-align: center;
+    border-radius: 4px;
+    background-image:radial-gradient(rgb(245, 212, 48),white);
+    box-shadow:  rgb(106, 236, 134) 5px 5px 10px 10px;
+  }
+  button{
+    
+    height: 13%;
+    width:20%;
+    background-color:rgb(166, 234, 147);
+    border:none;
+    font-size:1.5rem;
+    position: relative;
+    top:15%;
+    color:rgb(12, 73, 4);
+    cursor:pointer;
+    }
+    h1{
+      position: relative;
+      top:2rem;
+      color:rgb(5, 26, 95);
+    }
+    h2{
+      position: relative;
+      top:4rem;
+      color:rgb(14, 12, 81)1;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    
+    h2 input{
+        height: 1.8rem;
+        color:black;
+        font-size: 20px;
+        border: none;
+         box-shadow:5px 5px 8px 8px orange;
+    }
+    
+    h3{
+        position: relative;
+      
+      color:white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    h3 input{
+        height: 2rem;
+        color:rgb(20, 49, 51);
+    }
+    h5{
+    color:rgb(30, 13, 159);
+    position: relative;
+    top:2rem;
+
+    font-size: 29px;
+   }
+   
+    #text4{
+      width:20%;
+      height:10%;
+      background-color: aliceblue;
+      font-size:36px;
+      position: relative;
+      left:2%;
+      top:5px;
+      border: none;
+      box-shadow:5px 5px 8px 8px orange;
+    }
+    #text5{
+      position: relative;
+      top:5rem;
+      color:rgb(58, 10, 15);
+    }
+     
+  </style>
+</head>
+<body>
+    <div id ="container">
+        <h1>find the multiples </h1>
+        <h2 id="xvlaue">EnterThe Number:&nbsp;<input type="text" id="text1" value="" ></h2>
+        <button id="submit" onclick="mySub()" >Submit</button>&nbsp;<button id="reset" onclick="myReset()">Reset</button><br>
+
+   
+   
+     <h3 id="text5"></h3>
+<script type="text/javascript">
+function mySub(){
+
+var x=document.getElementById("text1").value;
+x=parseInt(x);
+
+for (var i=1;i<=x;i++){
+var num1=false;
+var num2=false;
+if(i%3==0){
+num1=true;
+}  
+if(i%5){
+  num2=true;
+}
+ 
+if(num1==true && num2==true){
+  document.getElementById("text5").innerHTML="!Hip.Hooray";
+
+}else if(num1==true && num2!=true){
+  document.getElementById("text5").innerHTML="Hoorrayyy";
+}else if(num2==true && num1!=true){
+  document.getElementById("text5").innerHTML="!!Hip Hip Hoorah";
+}else {
+  document.getElementById("text5").innerHTML=i;
+}
+}
+
+
+
+};
+ 
+
+
+
+function myReset(){
+document.getElementById("text1").value="";
+document.getElementById("text5").innerHTML="";
+
+};
+
+</script>
+   
+</body>
+</html>

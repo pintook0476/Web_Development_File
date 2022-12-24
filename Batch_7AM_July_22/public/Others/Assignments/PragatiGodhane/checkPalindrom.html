@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+    <style>
+        body{
+            background-color: rgb(141, 221, 197);
+        }
+
+        p{
+            text-decoration: underline;
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <p>Check whether the number is Palindrom</p>
+    <script>
+
+
+var num= parseInt(prompt("Enter any number"));
+
+var original = num;
+var rev = 0;
+
+while(num!=0)
+{
+rev = (rev * 10 ) + num % 10;
+num = parseInt(num /10); 
+}
+
+if(original == rev)
+{
+
+    console.log(`Number is palindrom -> original : ${original} and rev number ${rev}`);
+}
+else{
+    console.log(`Not a palindrom`);
+}
+   
+</script>
+</body>
+
+</html>

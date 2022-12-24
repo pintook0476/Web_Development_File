@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Number Array </title>
+    </head>
+    <body>
+        <script>
+        //     var num = prompt("Enter any number");
+        //         num = parseInt(num);
+        //         var output = num;
+        //         var rem;
+        //         var reverseNumber =0;
+        //         while(num > 0){
+        //             rem = num % 10;
+        //             //console.log(rem);
+        //             reverseNumber = reverseNumber * 10 +rem;
+        //             num = parseInt(num/10);
+        //         }
+        //     //console.log(reverseNumber);
+        //    if(output == reverseNumber){
+        //     console.log("The given number is palindrome " + output);
+        //    }else{
+        //     console.log("The given number is not a palindrome " +output);
+        //    }
+
+        // var num = [121,231,456,646,789,989];
+        // var rem;
+        // var reverseNumber = 0;
+        // var temp = [];
+
+        // for(var i = 0; i <= num.length -1; i++){
+        //     while(num[i]>0){
+        //         rem = num[i] % 10;
+        //         reverseNumber = reverseNumber * 10 + rem;
+        //         num[i] = parseInt(num[i]/10);
+        //     }
+        //     if(num[i] == reverseNumber){
+        //         temp.push(reverseNumber);
+               
+        //     }
+        //     //console.log(temp);
+        // }
+
+        const arr = ['carecar', 1344, 12321, 'did', 'cannot',121,646];
+        const isPalindrome = (el) => {
+        const str = String(el);
+        let i = 0;
+        let j = str.length - 1;
+        while(i < j) {
+            if(str[i] === str[j]) {
+                i++;
+                j--;
+            }
+            else {
+                return false;
+            }
+        }
+        return true;
+        };
+        const findPalindrome = (arr) => {
+        return arr.filter(el => isPalindrome(el));
+        };
+        console.log(findPalindrome(arr));
+        
+        </script>
+    </body>
+</html>

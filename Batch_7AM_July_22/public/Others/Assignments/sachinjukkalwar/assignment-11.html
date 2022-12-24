@@ -1,0 +1,56 @@
+<!DOCtype HTTML>
+<html>
+    <head>
+        <title>
+            assignment-11
+        </title>
+    </head>
+    <body>
+        <script>
+            var ename = prompt("enter your name");
+            var eage = prompt("enter your age");
+            var egender = prompt("enter your gender");
+            var department = prompt("enter your department");
+            var basicsalary = prompt("enter your basicsalary");
+            basicsalary = parseInt(basicsalary);
+            var pf = 14/100 * basicsalary;
+            var hra = 25/100 * basicsalary;
+            var totalsalary = pf + hra + basicsalary;
+
+            console.log('employee name' + ename);
+            console.log('employee age' + eage);
+            console.log('employee gender' + egender);
+            console.log('department' + department);
+            console.log('basicsalary' + basicsalary);
+            console.log('totalsalary' + totalsalary);
+            if (egender == 'M' || egender == 'm'){
+                if(totalsalary >=200000) {
+                console.log("Tax percentage is 15%");
+            }
+            else if(totalsalary >=100000){
+                console.log("Tax percentage is 10%");
+            }
+            else if(totalsalary >=50000){
+                console.log("Tax percentage is 5%");
+            }
+            else{
+                console.log("Tax percentage is 0%");
+            }
+        }
+        
+            if(egender == 'F' || egender == 'f'){
+                if(totalsalary >=200000) {
+                console.log("Tax percentage is 10%");
+            }
+            else if(totalsalary >=100000){
+                console.log("Tax percentage is 5%");
+            }
+            else if(totalsalary >=50000){
+                console.log("Tax percentage is 0%");
+            }
+            
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            assignment_15
+        </title>
+    </head>
+    <body>
+        <script>
+             var  a = [121,274,383,900,517,256,696,969,734,567,282];
+             var i;
+             var temp;
+             var rev=0;
+             var n;
+             for(i=0;i<a.length;i++)
+             { 
+                temp=a[i];
+                n=a[i];
+                while (n!=0)
+                {
+                    var rem=n%10;
+                    n=n/10;
+                    n=parseInt(n);
+                    rev=rev+(rem*rem*rem);
+                }
+                if(temp==rev)
+                {
+                    console.log(temp+" armstrong number");
+                }
+                else{
+                    console.log(temp+" not a armstrong");
+                }
+             }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: green;
+            }
+            .block2 {
+                background-color: blue;
+                position: relative;
+                left: 90px;
+                top: 40px;
+                z-index: 279;
+            }   
+            .block3 {
+                background-color: yellow;
+                position: absolute;
+                left: 150px;
+                z-index: 278;
+               
+            }
+            .block4 {
+                background-color: pink;
+                z-index: 101;
+                position: relative;
+            }
+            .block5 {
+                background-color: aquamarine;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+            <div class="block block1">Block 1</div>
+            <div class="block block1">Block 1</div>
+            <div class="block block2">Block 2</div>
+            <div class="block block3">Block 3</div>
+            <div class="block block4">Block 4</div>
+            <div class="block block5">Block 5</div>
+            <div class="block block5">Block 5</div>
+    </body>
+</html>`

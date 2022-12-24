@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //declare global variables
+    var name; var dept; var gender; var baseSal;var HRA; var PF;
+    var TotalSal; var tax;
+    // function for getting employee details
+    function readInfo(){
+        name = prompt("Enter Employee name");
+        dept = prompt("Enter Dept");
+        gender = prompt("Enter Gender");
+        baseSal = prompt("Enter Basic Salary");
+        baseSal = parseInt(baseSal);
+    }
+
+    function calcTotalSal(){
+        HRA = (12 * baseSal)/100;
+        PF = (24 * baseSal)/100;
+        TotalSal = baseSal + PF + HRA;
+
+    }
+
+    function calcTax(){
+        if(gender === "male"){
+
+            if(TotalSal >= 200000){
+                tax = (20 * TotalSal)/100;
+                
+            }
+
+            else if(TotalSal >= 100000){
+                tax = (15 * TotalSal)/100;
+            }
+
+            else if(TotalSal >= 50000){
+                tax = (10 * TotalSal)/100;
+            }
+
+            else{
+                tax = 0;
+            }   
+        }  
+
+      
+        else{
+
+            if(TotalSal >= 200000){
+                tax = (15 * TotalSal)/100;
+                
+            }
+
+            else if(TotalSal >= 100000){
+                tax = (10 * TotalSal)/100;
+            }
+
+            else if(TotalSal >= 50000){
+                tax = (5 * TotalSal)/100;
+            }
+
+            else{
+                tax = 0;
+            }   
+
+        }
+        
+    }
+       //displaying employee details
+    function displayDet() {
+                console.log("Employee Name: " + name);
+                console.log("Employee Gender: " + gender);
+                console.log("Employee Department: " + dept);
+                console.log("Employee Basic Salary: " + baseSal);
+                console.log("Employee PF: " + PF);
+                console.log("Employee HRA: " + HRA);
+                console.log("Employee Total Salary: " + TotalSal);
+                console.log("Employee Total Tax: " + tax);
+    }            
+   
+
+    readInfo();
+    calcTotalSal();
+    calcTax();
+    displayDet();
+
+</script>
+</body>
+</html>

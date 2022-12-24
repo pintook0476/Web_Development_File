@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details in JS - by Dinesh</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">See at the Console</h1>
+    <script>
+      var empName = prompt("Enter the Employee name");
+      var gender = prompt("Enter Employee gender");
+      var age = prompt("Enter Employee Age");
+      var bs = prompt("Enter Employee Basic Salary");
+      bs = parseInt(bs);
+      var pf = bs * (14 / 100);
+      var hra = bs * (25 / 100);
+      var total = bs + pf + hra;
+
+      console.log("Employee name is " + empName);
+      console.log("Employee gender is " + gender);
+      console.log("Employee age is " + age);
+      console.log("Employee total salary is " + total);
+    </script>
+  </body>
+</html>

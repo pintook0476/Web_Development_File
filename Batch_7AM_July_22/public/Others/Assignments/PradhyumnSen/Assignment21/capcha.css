@@ -1,0 +1,39 @@
+.block1{
+    border: 1px solid;
+    width: 228px;
+    position: relative;
+    top: 83px;
+    left: 40%;
+    
+}
+.showdata{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    
+}
+.showdata div{
+    
+    height: 30px;
+    font-size: 28px;
+}
+
+    
+
+.block1 div{
+    margin: 10px;
+}
+.hide{
+    display: none;
+}
+.block2{
+    border: 1px solid;
+    width: 228px;
+    position: relative;
+    top: 83px;
+    left: 40%;
+    text-align: center;
+    
+    
+
+}

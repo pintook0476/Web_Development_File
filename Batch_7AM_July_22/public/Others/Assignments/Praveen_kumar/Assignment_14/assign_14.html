@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate Employee details</title>
+    </head>
+    <body>
+        <script>
+            var ename, age, gender, location,bs,hra,pf,tot,tax ;
+
+            function readempdetails()
+            {
+                 ename=prompt("Enter employee name:");
+                 age=prompt("Enter employee age:");
+                 gender=prompt("Enter employee gender:");
+                 location=prompt("Enter employee location:");
+                 bs=parseInt(prompt("Enter employee basic salary:"));
+                
+                calctax();
+            }
+
+            function calctax()
+            {
+                if(gender=="male"){
+                    if(bs>=200000)
+                    {
+                         tax=bs*(15/100);
+                        
+                    }
+
+                    if(bs>=10000 && bs<200000)
+                    {
+                         tax=bs*(10/100);
+                    }
+
+                    if(bs>=50000 && bs<100000)
+                    {
+                         tax= bs*(5/100);
+                    }
+
+                }
+
+                if(gender=="female")
+                {
+                    if(bs>=200000)
+                    {
+                        var tax=bs*(10/100);
+                        
+                    }
+
+                    if(bs>=10000 && bs<200000)
+                    {
+                        var tax=bs*(5/100);
+                    }
+
+                    if(bs>=50000 && bs<100000)
+                    {
+                        var tax= bs*(3/100);
+                    }
+                }
+                calc_hra_pf();
+                displayemployeedetails();
+                
+            }
+
+            function calc_hra_pf()
+            {
+               
+                 hra=bs*(25/100);
+                 pf=bs*(14/100);
+                 tot=hra+bs+pf-tax;
+             }
+
+           
+            function displayemployeedetails()
+            {
+                
+                console.log("Employee details");
+                console.log("Employee Name: " +ename);
+                console.log("Employee Age:" +age);
+                console.log("Employee gender:" + gender);
+                console.log("Employee location:" + location);
+                console.log("Employee total salary:"+ tot);
+                console.log("Total tax:" +tax);
+
+            }
+
+        readempdetails();
+
+
+
+        </script>
+        
+    </body>
+</html>

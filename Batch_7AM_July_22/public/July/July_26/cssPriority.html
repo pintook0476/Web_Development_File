@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS Priority Order
+        </title>
+        <style>
+            * {
+                font-size: 20px;
+            }
+            .myText {
+                color: greenyellow;
+                font-size: 20px !important;
+            }
+
+            #myContent {
+                background-color: green;
+                font-size: 15px !important;
+            }
+            p {
+                border: 3px solid red;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myContent" style="font-size:30px;text-decoration: underline;" class="myText">
+            Hello every one, a very good morning to all....
+        </p>
+        <h2 style="font-size:30px;text-decoration: underline;" class="myText">
+            Hello every one, a very good morning to all....
+        </h2>
+
+        <img src="../../carz.jpg" alt="" />
+    </body>
+</html>

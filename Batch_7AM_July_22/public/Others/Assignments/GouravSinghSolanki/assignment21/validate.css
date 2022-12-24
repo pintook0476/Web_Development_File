@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #050527e0;
+}
+.main{
+    display: inline-block;
+    margin: 50px 0px 0px 24%;
+    background-color: white;
+    border-radius: 5px;
+}
+.section{
+    display: inline-block;
+    padding: 15px;
+}
+.msg{
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px;
+    font-family: arial;
+    font-weight: 600;
+}
+#password{
+    padding: 10px;
+    font-size: 15px;
+}
+.button{
+    margin: 19px;
+    padding: 10px 44px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0078d4;
+    color: white;
+    font-weight: 700;
+}
+.button:focus{
+    color: #0078d4;
+    background-color: white;
+    border: 1px solid black;
+}
+.section2{
+    color: red;
+    font-size: 17px;
+}
+.valid{
+    color: rgb(6, 82, 6);
+}

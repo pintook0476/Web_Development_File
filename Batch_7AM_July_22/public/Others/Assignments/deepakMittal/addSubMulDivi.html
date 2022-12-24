@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Choose One Of Them</h3>
+        <h2>add, mul, sub, divi</h2>
+
+        <script>
+
+          function getVauleFromUser(){
+            var play = prompt("Choose One Of add, mul, sub, div");
+            if(play == "add"){
+                additionOfvAlues();
+            }
+            if(play == "mul"){
+                multipilicationOfValues();
+            }
+            if(play == "sub"){
+                subtractionOfValues();
+            }
+            if(play == "div"){
+                divisionOfValues();
+            }
+          }
+
+          getVauleFromUser();
+
+          function divisionOfValues(){
+          var a = prompt("Enter First Number");
+          a = parseInt(a);
+          var b = prompt("Enter Second Vaule");
+          b = parseInt(b);  
+          var total = a / b;
+          document.write("Your Division Is " + total);
+         }
+ 
+         function subtractionOfValues (){
+          var a = prompt("Enter First Number");
+          a = parseInt(a);
+          var b = prompt("Enter Second Vaule");
+          b = parseInt(b);
+          var total = a - b;
+          document.write("Your Substraction is " + total);
+         }
+
+          function multipilicationOfValues(){
+          var a = prompt("Enter First Number");
+          a = parseInt(a);
+          var b = prompt("Enter Second Vaule");
+          b = parseInt(b);
+          var total = a * b;
+          document.write("Your Multiplication is " + total);
+          }
+ 
+         function additionOfvAlues(){
+          var a = prompt("Enter First Number");
+          a = parseInt(a);
+          var b = prompt("Enter Second Vaule");
+          b = parseInt(b);
+          var total = a + b;
+          document.write("Your Value Total Is " + total);
+        }
+</script>
+        
+    </body>
+</html>

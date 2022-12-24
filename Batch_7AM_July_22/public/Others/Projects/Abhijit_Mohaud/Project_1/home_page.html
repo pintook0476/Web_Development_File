@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url(img/img_8.jpg);
+        background-size: 100% 800px;
+      }
+      .left{
+        border: 20px solid rgba(10, 10, 10, 0.205);
+        border-radius: 4%;
+        display: inline-block;
+        position: absolute;
+        left: 1%;
+        text-align: center;
+      }
+      .left:hover{
+        text-decoration: underline;
+        border: 20px double rgba(77, 71, 71, 0.795);
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        background-color: rgb(10, 10, 10);
+        padding-top: 1%;
+        text-align: center;
+        text-decoration-color: rgb(172, 60, 82);
+      }
+      .mid{
+        display: block;
+        /* width: 33%; */
+        /* border: 2px solid yellow; */
+        margin: 12px auto;
+        width: 33%;
+      }
+      .right{
+        /* border: 2px solid yellow; */
+        /* display: inline-block; */
+        position: absolute;
+        right: 1%;
+        top: 12px;
+      }
+      .navbar{
+        display: inline-block;
+      }
+      .navbar li{
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a{
+        color: rgb(13, 135, 241);
+        text-decoration: none;
+        padding: 10px;
+      }
+      .navbar li a:hover{
+        text-decoration: underline;
+        color: rgb(235, 219, 219);
+        text-decoration-thickness: 20%;
+        font-style: italic;
+      }
+      .left img {
+        width: 50px;
+      }
+      .leftCont{
+        color: rgb(235, 158, 15);
+      }
+      .leftCont:hover{
+        font-family: fantasy;
+        cursor:pointer;
+      }
+      div img{
+        border: 2px slid yellow;
+        border-radius: 60% ;
+      }
+      .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: aliceblue;
+        border:2px solid rgb(71, 70, 67);
+        border-radius: 20%;
+        
+      }
+      .btn:hover{
+        color: aqua;
+        font-weight: bolder;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <div class="left">
+           <a href="login_page.html" target="_blank"><img src="img/img_7.jpg" alt=""></a> 
+           <a href="login_page.html" target="_blank"><div class="leftCont">Music World</div></a>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+  </body>
+</html>

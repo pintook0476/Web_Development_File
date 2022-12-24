@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = 123456;
+            var count = 0;
+            while(n > 0) {
+                var rem = n % 10;
+                if(rem % 2 == 0) {
+                    console.log('even digit is ' + rem);
+                    count++;
+                }
+                n = n/ 10;
+                n = parseInt(n);
+            } console.log('Num of even digits ' + count);
+             
+        </script>  
+    </body>
+</html>

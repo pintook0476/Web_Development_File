@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out number of values in an array without using length property</title>
+</head>
+<body>
+    <h3> number of values in an array without using length property </h3>
+    <script>
+        /* Enter Array Dynamically
+        var a = [];
+        var range = parseInt(prompt("Enter Array size: "));
+        for(var i=0; i<range; i++){
+            a[i]=parseInt(prompt("Enter value at index: " + i));
+        }
+        console.log("Given array: " + a);*/
+
+        //Enter an array statically
+        
+        var a = [1,12,345.9,true,"mujammil",4,5,9,7,"fathima"]
+        console.log("Given array:" + a);
+
+        
+        //find out number of values in an array without using length property
+        var temp = 0 ;
+        for(var i = 0; a[i] != undefined; i++){
+        temp = temp + 1 ;
+        }
+        console.log("size of given array: " + temp);
+        </script>
+</body>
+</html>

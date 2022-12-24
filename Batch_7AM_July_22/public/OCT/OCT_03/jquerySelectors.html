@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Jqury Selectors
+        </title>
+        <script src="../../jquery.js"></script>
+        <style>
+            .highlight {
+                border: 1px solid;
+                background-color: green;
+                font-size: 20px;
+            }
+            #abc{
+
+            }
+            .abc {
+
+            }
+            abc {
+
+            }
+            div.abc {
+
+            }
+            div[title=test] {
+
+            }
+
+            div > span {
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>test 1</div>
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+            <span>Item 5</span>
+            <h2>
+                <span>under heading</span>
+            </h2>
+        </div>
+        <div>TESTING</div>
+        <div>
+            <p>
+                Hello
+            </p>
+        </div>
+        <p>
+            <span>ONE </span>
+            <span>TWO</span>
+        </p>
+        
+        <script>
+            // $("span:first").addClass("highlight");
+            // $("a[target !=_blank]").
+            // $("span:odd").addClass("highlight");
+
+            //$("span").addClass("highlight");
+            // $("div > span").addClass("highlight");
+
+            // $("span:first-of-type").addClass("highlight");
+
+            // $(".abc:checked")
+            $("div:has(p)").addClass("highlight");
+        </script>
+    </body>
+</html>

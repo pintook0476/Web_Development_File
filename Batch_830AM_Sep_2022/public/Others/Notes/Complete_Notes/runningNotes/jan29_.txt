@@ -1,0 +1,32 @@
+Html Ul and Ol tags:
+	Ul and Ol are pre-defined html tags bein supported using which we could able to group relative items as individual blocks 
+	Ul and Ol almost renders the same the only diff is the items under Ol tag(Ordered List)comes with default serial number where as UL tag(unordered list)comes with a default bullet symbol 
+
+Syntax: Ul
+	<ul>
+		<li>
+		------
+		------
+		 </li>
+		<li>
+		------
+		------
+		 </li>	
+	<ul>	
+Syntax:Ol
+	<ol>
+		<li>
+		------
+		------
+		 </li>
+		<li>
+		------
+		------
+		 </li>	
+	<0l>
+
+Note:
+	"List-style is a css property through which we cn control the type of list style.	
+
+CSS Overflow:
+	any time the child elements dimension are higher than the parent elements,child element tries to get render out of the parent container.in order to make the child elements only to get rendered within the parent container we make use the css property overflow which adds a scrollbar to a container.

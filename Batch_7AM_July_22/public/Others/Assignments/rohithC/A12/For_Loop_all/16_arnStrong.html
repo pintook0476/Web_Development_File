@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Armstrong number</title>
+    </head>
+    <body>
+        <!--  to find a power of any number we use double astric = 5 ** 3-->
+        press F12 or go to console tab
+        <script type="text/javascript"> 
+            var n = prompt("enter a num") ;
+                var temp;
+            var totaldigits = n.length;
+                n  = parseInt(n);
+            var Armstrong = 0;
+                temp = n ;
+            while( n > 0   ) {
+                var rem = n % 10;
+                Armstrong = Armstrong + (rem ** totaldigits);
+                var n = n / 10 ;
+                n = parseInt (n);
+
+                
+
+            }
+                if (temp == Armstrong) {
+                console.log( "its a armstong no.");
+                } else { console.log("not a armsrong")}
+           
+
+            
+
+            
+        
+        </script>
+    </body>
+</html>

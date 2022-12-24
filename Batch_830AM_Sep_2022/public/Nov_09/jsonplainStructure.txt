@@ -1,0 +1,39 @@
+name
+first name
+lastname
+phoneno 
+    persnlno - > multiple 
+    office no - > single value 
+
+email 
+    persnl - > multiple 
+    office - > single 
+gender 
+adress 
+    persnl 
+        dno 
+        streetname 
+        pic code 
+        sateInfo 
+            satename 
+            statecode 
+    office 
+        countrydetails
+            countryName 
+            counry code 
+        Building no
+        pincode 
+profilePic - single value 
+relationship - 
+socialID
+    telegramid - 
+    linkedid
+    fbid 
+    twitterid
+website - multiple 
+dob 
+    month
+    year
+    day 
+
+

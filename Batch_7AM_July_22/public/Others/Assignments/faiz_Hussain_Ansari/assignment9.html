@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 9</title>
+        <style>
+            body{
+                background-color: rgb(207, 205, 205);
+            }
+            ul{
+                background-color: azure;
+            }
+             h1,h2 {
+                border: 2px solid;
+                text-align: center;
+                text-decoration: underline;
+                background-color: cadetblue;
+            }
+            .header h1{
+                padding: 6px;
+            }
+
+            .container {
+                border: 2px solid;
+                font-weight: bolder;
+
+            }
+
+            .footer h2 {
+                padding: 12px;
+            }
+
+            .box {
+                border: 2px solid;
+                height: 200px;
+                margin: 11px;
+                width: 95%;
+                margin-top: 25px;
+            }
+            #aboutcont{
+                height: 300px;
+            }
+            li{
+                list-style: none;
+            }
+            input,select{
+                border: 2px solid;
+            }
+
+            .textbox1 {
+                top: 112px;
+               
+            }
+            .linebox{
+                border: 2px solid;
+                width: 200px;
+                height: 20px;
+                background-color: white;
+                position: absolute;
+                left: 60px;
+
+            }
+
+            .textbox{
+                position: absolute;
+                top: -1px;
+                left: 176px;
+                width: 260px;
+             }
+
+            .studentName {
+                position: absolute;
+                top: 150px;
+                left: 41px;
+            }
+
+            .mailId {
+                position: absolute;
+                top: 200px;
+                left: 41px;
+            }
+            .textbox4 {
+                position: absolute;
+                top: -1px;
+                left: 200px;
+                width: 268px;
+
+            }
+            .courseOpted{
+                position: absolute;
+                top: 150px;
+                left: 830px;
+                
+            }
+            .gender{
+                position: absolute;
+                top: 260px;
+                left: 41px;
+                
+            }
+            .radiobutton1{
+                position: absolute;
+                top: -1px;
+                left: 50px;
+                width: 260px;
+            }
+            .radiobutton2{
+                position: absolute;
+                top: -1px;
+                left: 190px;
+                width: 260px;
+            }
+            .male{
+                position: absolute;
+                left: 200px;
+            }
+            .female{
+                position: absolute;
+                left: 340px;
+            }
+            .educationDetail{
+                top: 341px;
+            }
+            .studentQualification{
+                position: absolute;
+                top: 380px;
+                left: 41px;
+            }
+            .language{
+                position: absolute;
+                top: 430px;
+                left: 41px;
+            }
+            .chkbox1{
+                position: absolute;
+                top: -1px;
+                left: 50px;
+                width: 260px;
+            }
+            .chkbox2{
+                position: absolute;
+                top: -1px;
+                left: 277px;
+                width: 260px;
+            }
+            .chkbox3{
+                position: absolute;
+                top: -1px;
+                left: 520px;
+                width: 260px;
+            }
+            .chkbox4{
+                position: absolute;
+                top: -1px;
+                left: 760px;
+                width: 260px;
+            }
+            
+            .english{
+                position: absolute;
+                left: 438px;
+            }
+            .telugu{
+                position: absolute;
+                left: 211px;
+            }
+            .urdu{
+                position: absolute;
+                left: 680px;
+            }
+            .hindi{
+                position: absolute;
+                left: 920px;
+            }
+            .averageMarks{
+                position: absolute;
+                top: 490px;
+                left: 41px;
+            }
+            .address{
+                top: 570px;
+            }
+            .dNo{
+                position: absolute;
+                top: 611px;
+                left: 41px
+            }
+            .streetName{
+                position: absolute;
+                top: 655px;
+                left: 41px
+            }
+            .landMark{
+                position: absolute;
+                top: 672px;
+                left: 860px;
+            }
+            .landMarkBox{
+                position: absolute;
+                top: -22px;
+                left: 140px;
+                width: 260px;
+                height: 60px;
+            }
+            .state{
+                position: absolute;
+                top: 700px;
+                left: 41px
+            }
+            .locationbox{
+                position: absolute;
+                top: -1px;
+                left: 176px;
+                width: 268px;
+            }
+            .country{
+                position: absolute;
+                top: 745px;
+                left: 41px
+            }
+            .aboutYourSelf{
+                top: 798px;
+            }
+            .about{
+                position: absolute;
+                top: 943px;
+                left: 41px
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Student Registration Page</h1>
+        </div>
+        <div class="container">
+            <ul class="box">
+
+                <li class="personalDetail">
+                    <div class="linebox textbox1">Personal Details</div>
+                </li>
+                <li class=studentName>
+                    Student Name:<input class="textbox textbox2" type="text">
+                </li>
+                <li class="mailId">
+                    Mail Id:<input class="textbox textbox3" type="text">
+                </li>
+                <li class="courseOpted">
+                    Course opted:
+                    <select class="textbox4">
+                        <option value="baca">BCA</option>
+                        <option value="mca">MCA</option>
+                        <option value="btch" selected>B.tech</option>
+                        <option value="bphr">B.pharma</option>
+                    </select>
+                </li>
+                <li class="gender">
+                    Gender:<input class="radiobutton1" type="radio" name="Gender"><span class="male">Male
+                    </span> 
+                           <input class="radiobutton2" type="radio" name="Gender"><span class="female">Female
+                    </span> 
+                 </li>
+            </ul>
+            <ul class="box">
+                 <li>
+                    <div class="linebox educationDetail">Education Details</div>
+                </li>
+                <li class=studentQualification>
+                    Qualification:<input class="textbox qualification" type="text">
+                </li>
+                <li class="language">
+                    Language Known: <input class="chkbox1" type="checkbox" name=""><span class="english">English</span>
+                    <input class="chkbox2" type="checkbox" name=""><span class="telugu">Telugu</span>
+                    <input class="chkbox3"  type="checkbox" name=""><span class="urdu">Urdu</span>
+                    <input class="chkbox4"  type="checkbox" name=""><span class="hindi">Hindi</span>
+                </li>
+                <li class="averageMarks">
+                    Average Marks:<input class="textbox marksBox" type="text">
+                </li>
+            </ul>
+            <ul class="box">
+                 <li>
+                    <div class="linebox address">Address</div>
+                </li>
+                <li class=dNo>
+                    Dno:<input class="textbox dNum" type="text">
+                </li>
+                <li class=streetName>
+                    Street Name:<input class="textbox streetNamebox" type="text">
+                </li>
+                <li class=landMark>
+                    LandMark:<input class="landMarkBox" type="text">
+                </li>
+                <li class="state">
+                    State:
+                    <select class="locationbox">
+                        <option value="tel">Telangan</option>
+                        <option value="del">Delhi</option>
+                        <option value="utr" selected>uttarakhand</option>
+                        <option value="Har">Haryana</option>
+                    </select>
+                </li>
+                <li class="country">
+                    Country:
+                    <select class="locationbox">
+                        <option value="tel">India</option>
+                        <option value="del">China</option>
+                        <option value="utr">Nepal</option>
+                        <option value="Har">turkey</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="box" id="aboutcont">
+                <li>
+                    <div class="linebox aboutYourSelf">About Yourself</div>
+                </li>
+                <br><br>
+                <li style="margin-left: 120px;">
+                    <span class="about">About Yourself:</span><textarea style="border: 2px solid ;"  class="" name="" id="" cols="145" rows="15"></textarea>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <h2>@ copy Right 2022</h2>
+        </div>
+    </body>
+</html>

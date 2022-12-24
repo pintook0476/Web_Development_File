@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            fuction with local variables
+        </title>
+    </head>
+    <body>
+        to learn the concept of local and global variable in function
+        <script>
+            function readEmployeeDetails() {
+                var name = prompt("Enter Name");
+                var age = prompt("Enter Age");
+                var gender = prompt("Enter Gender");
+                var basicSal = prompt("Enter basic salary");
+                basicSal = parseInt(basicSal);
+                calculatingTotalSal(basicSal , gender ,name , age );
+            }
+            function calculatingTotalSal(basicSal , gender , name ,age){
+                var pf = basicSal * 14/100 ;
+                var hra = basicSal * 25/100 ;
+                var totalSal = basicSal + pf + hra ;
+                var tax;
+                if(gender == 'male')
+                  tax =  taxForMale(totalSal) ;
+                 else 
+                 tax =  taxForFemale(totalSal) ;
+                 outputDetails(name , age ,totalSal , tax);   
+            }
+            function taxForMale(totalSal){
+                var tax ;
+                if ( totalSal >= 200000){
+                        tax = totalSal * 15/100 ;
+                    } else if ( totalSal >=100000){
+                        tax = totalSal * 10/100 ;
+                    } else if ( totalSal >=50000){
+                        tax = totalSal * 5/100 ;
+                    } else {
+                        tax = 0;
+                    }
+                    return tax;
+               // outputDetails(tax);
+            }
+            function taxForFemale(totalSal){
+                var tax ;
+                if ( totalSal >= 200000){
+                        tax = totalSal * 10/100 ;
+                    } else if ( totalSal >=100000){
+                        tax = totalSal * 5/100 ;
+                    } else {
+                        tax = 0 ;
+                    }
+                    return tax;
+              //  outputDetails(tax);
+            }
+            function outputDetails(name, age , totalSal ,tax){
+                console.log("Employee name : " + name) ;
+                console.log("Employee age : " + age) ;
+                console.log("Total Salary : " + totalSal) ;
+                console.log("Total payable tax : " + tax) ;
+            }
+            readEmployeeDetails();
+        </script>
+    </body>
+</html>

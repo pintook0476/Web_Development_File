@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Percentage Calculate</title>
+</head>
+<body>
+      <script>
+        var name = prompt("Enter Employe Name");
+        var age = prompt("Enter Your Age");
+        var gender = prompt("Enter Your Gender");
+        var dept = prompt("Enter Your Department");
+        var salary = prompt("Enter Yorr Basic Salary");
+        salary = parseInt(salary);
+        var pf = salary * (15/100);
+        var hrf = salary * (10/100);
+        var total = pf + hrf + salary;
+        document.write("Name: " + name);
+        document.write("<br>");
+        document.write("Age: " + age);
+        document.write("<br>");
+        document.write("Gender: " + gender);
+        document.write("<br>");
+        document.write("Department: " + dept);
+        document.write("<br>");
+        document.write("Salary: " + salary);
+        document.write("<br>");
+        document.write("Total Salary: " + total);
+        document.write("<br>");
+        if (gender == "Male") {
+          if (total >= 200000) {
+            document.write("Your Tax Is: " + total*(15/100));
+          }else if(total >= 100000 ){
+            document.write("Your Tax Is: " + total*(10/100));
+          }else if (total >= 50000){
+            document.write("Your Tax Is: " + total*(5/100));
+          }else{
+            document.write("Yout Tax Is 'Zero'.");
+          }
+        }else{
+        if (gender == "Female") {
+          if (total >= 200000) {
+            document.write("Your Tax Is: " + total*(10/100));
+          }else if(total >= 100000 ){
+            document.write("Your Tax Is: " + total*(5/100));
+          }else {
+            document.write("Yout Tax Is 'Zero'.");
+          }
+        }
+      }
+      </script>
+</body>
+</html>

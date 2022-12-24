@@ -1,0 +1,14 @@
+
+CodeRepo: GITHUB
+
+Webtechnologies: HTML5, CSS3, JS, Object Oriented Javascript, ECMA 6,
+                 XML, JSON, AJAX, DHTML
+Libraries and Frameworks:   Jquery, Angular, React, Handlebars
+
+Web Server: Node js with Express framework
+
+Database: Mongodb
+
+Tools: POSTMAN, GIT Desktop, Debugging Tool, Mongo Compass
+
+Editors: Visual studio code, Sublime 

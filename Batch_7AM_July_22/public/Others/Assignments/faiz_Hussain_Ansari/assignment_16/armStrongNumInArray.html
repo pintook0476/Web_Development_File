@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var userData = () => {
+                var n = [];
+                for (i = 0; i < 4; i++) {
+                    n[i] = prompt('Enter a no.' + i);
+                    n[i] = parseInt(n[i]);
+                }
+                displayData(n)
+            }
+            var displayData = (n) => {
+                for (i = 0; i < n.length; i++) {
+                    console.log(n[i])
+                    n[i] = n[i].toString()
+                    digits = n[i].length
+                    n[i] = parseInt(n[i]);
+                    var count = 0;
+                    var temp = n[i]
+                    while (n[i] > 0) {
+                        var rem = (n[i] % 10)
+                        var count = count + (rem ** digits);
+                        n[i] = (n[i] / 10);
+                        n[i] = parseInt(n[i]);
+
+
+                    } if (temp == count) {
+                        console.log('It is armstrong no. ' + temp)
+                    } else {
+                        console.log('Not a armstrong')
+                    }
+
+                }
+            }
+            userData()
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>

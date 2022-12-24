@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Deatails</title>
+    <link rel="stylesheet" href="EmployeeDetails.css">
+    <script src="EmployeeDetails.js"></script>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <ul>
+        <li>
+            Employee Name :
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </li>
+        <li>
+            Employee Age :
+            <input type="text" id="age" placeholder="Enter Your Age">
+        </li>
+        <li>
+            Gender :
+            <input type="radio" name="gender" value="Male" checked >Male
+            <input type="radio" name="gender" value="Female">Female
+        </li>
+        <li>
+            Employee Basic Salary :
+            <input type="text" id="basicsalary">
+        </li>
+            <input type="button" value="Submit" class="button" onclick="empDetails.readEmpData()">
+    </ul>
+    <ul class="displaybox">
+        <li>
+            Employee Name : <span id="dname"></span>
+        </li>
+        <li>
+            Employee age : <span id="dage"></span>
+        </li>
+        <li>
+            Gender : <span id="dgender"></span>
+        </li>
+        <li>
+            Employee Basic Salary : <span id="dbasicsalary"></span>
+        </li>
+        <li>
+            Employee Pf is : <span id="dpf"></span>
+        </li>
+        <li>
+            Employee Hra is : <span id="dhra"></span>
+        </li>
+        <li>
+            Employee Total Salary : <span id="dtotal"></span>
+        </li>
+        <li>
+            You have to pay tax : <span id="dtax"></span>
+        </li>
+    </ul>
+</body>
+</html>

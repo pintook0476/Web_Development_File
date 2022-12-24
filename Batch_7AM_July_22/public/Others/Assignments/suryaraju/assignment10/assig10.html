@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assiginment10</title>
+</head>
+
+<body>
+    <h3>Employee Details</h3>
+    <script>
+        var eName = prompt("Enter Employee Name");
+        var eDept = prompt("Enter Employee Department")
+        var basicSalary = prompt("Enter your basic Salary");
+        var basicSalary = parseInt(basicSalary);
+        var pf = 14 / 100 * basicSalary;
+        var hra = 25 / 100 * basicSalary;
+        var total = basicSalary + pf + hra;
+        
+        document.write("Employee name is " + eName + "<br>");
+        document.write("Employee Department is " + eDept + "<br>");
+        document.write("Employee basic salary is " + basicSalary + "<br>");
+        document.write("Employee pf is " + pf + "<br>");
+        document.write("Employee hra is " + hra + "<br>");
+        document.write("Employee total Salary is " + total + "<br>");
+        
+
+
+    </script>
+
+</body>
+
+</html>

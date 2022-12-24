@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+    </head>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+
+        .mainContainer{
+            border: 1px solid;
+            height: 99%;
+            width: 99%;
+            background-image: url(file:///C:/Users/jyothi/OneDrive/Desktop/webapplication/public/DurgaSirUI/1st_project/project_images/BACKGROUND_IMAGE_LOGIN_PAGE.jpg);
+        }
+        ul{
+            border: 1px solid;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            left: 550px;
+            top:200px;
+            background-color: rgba(212, 244, 242, 0.948);
+        }
+        li{
+            height: 40px;
+            padding: 8px 8px;
+            list-style: none;
+        }
+
+    </style>
+    <body>
+        <div class="mainContainer">
+            <ul class="loginContainer">
+                <li class="style1">User Id:
+                    <input type="text" name="user">
+                </li>
+                <li class="style1">Passward:
+                    <input type="password" name="passward">
+                </li>
+                <li class="style1">
+                    <input type="button" value="Submit">
+                </li>
+                <li class="style1"><span>Sign up</span>
+                    <input type="hidden" value="action">
+                </li>
+                <li class="style1"><span>Forgot Passward?</span>
+                    <input type="hidden" value="action">
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

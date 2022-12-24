@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array pratice</title>
+</head>
+<body>
+    <div>array pratice</div>
+
+    <script type="text/javascript">
+        var sum=0
+        var a=[];
+        var n=prompt("Enter the value of n");
+        n=parseInt(n);
+        for (var i=0; i < n; i++) {
+            a[i]= prompt("Enter the value of array");
+            a[i]=parseInt(a[i]);
+        }
+        console.log(a);
+        for (var i=0; i<a.length; i++) {
+            if (a[i]%2==0) {
+              sum+=a[i];  
+            }
+        }
+        console.log("The sum of even number is" + sum);
+
+    </script>
+</body>
+</html>

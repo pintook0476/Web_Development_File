@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            using function parameters
+        </title>
+    </head>
+        <body>
+            <script>
+
+                function readUserData(){
+                    var ename, age, gender, basicSalary, pf, hra
+                    ename = prompt("Enter employee name");
+                    age = prompt("Enter Employee Age");
+                    gender = prompt("Enter employee gender");
+                    basicSalary = prompt("Enter Your Basic Salary");
+                    basicSalary = parseInt(basicSalary);
+                    totalSalary = calculateData(pf, hra, basicSalary);
+                    displayData(ename, age, gender, basicSalary, totalSalary);
+                }
+                function calculateData(pf, hra, basicSalary){
+                    var pf = basicSalary * (14/100);
+                    var hra = basicSalary * (25/100);
+                    var totalSalary = basicSalary + pf + hra
+                    return totalSalary;
+                }
+                function displayData(ename, age, gender, basicSalary, totalSalary, pf, hra){
+                    calculateData(pf, hra, basicSalary);
+                    console.log("Employee Name :" + ename);
+                    console.log("Employee age :" + age);
+                    console.log("Employee gender :" + gender);
+                    console.log("Employee Basic Salary is :" + basicSalary);
+                    console.log("Employee Total Salary is :" + totalSalary);
+                    displayTax(gender);
+                }
+                function displayTax(gender){
+                if ( gender == "male" || gender == "Male"){
+                    if (totalSalary >= 200000){
+                        console.log("Your Need to pay as tax :" + totalSalary * (15/100));
+                    } else if (totalSalary >= 100000){
+                        console.log("Your Need to pay as tax :" + totalSalary * (10/100));
+                    } else if (totalSalary >= 50000){
+                        console.log("Your Need to pay as tax :" + totalSalary * (5/100));
+                    } else {
+                        console.log("No need to pay any tax");
+                    }
+                } if ( gender == "female" || gender == "Female") {
+                    if (totalSalary >= 200000){
+                        console.log("Your Need to pay as tax :" + totalSalary * (10/100));
+                    } else if (totalSalary >= 100000){
+                        console.log("Your Need to pay as tax :" + totalSalary * (5/100));
+                    } else {
+                        console.log("No need to pay any tax");
+                    }
+                }
+                }
+                readUserData();
+            </script>
+        </body>
+</html>

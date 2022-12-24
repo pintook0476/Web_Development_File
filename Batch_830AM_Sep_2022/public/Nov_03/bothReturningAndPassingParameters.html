@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           Passing and Returnig values From Functions
+        </title>
+    </head>
+    <body>
+        Demonstrating -Passing and Returning values from functions
+        <script>
+            
+            var  readData = () => {
+                var a1, a2;
+                a1 = prompt("Enter a value ");
+                a1 = parseInt(a1);
+                a2 = prompt("Enter second value");
+                a2 = parseInt(a2);
+                var result = performSum( a1, a2); 
+                console.log("The sum is " + result);
+            }
+            var  performSum = (a1, a2) => { 
+                var sum = a1 + a2; // sum = 20 + 80 = 100
+                return sum // return 100;
+            }
+            readData();
+        </script>
+    </body>
+</html>

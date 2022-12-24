@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename , age , basicsalery , hra , pf , totalsalery;
+        function details() {
+            ename = prompt("enter name");
+            age = prompt("enter age");
+            basicsalery = prompt("enter salery");
+            basicsalery=parseInt(basicsalery);
+            console.log(basicsalery);
+            
+        }
+        function tax() {
+            hra = (basicsalery * 15)/10;
+            console.log(hra);
+            pf = (basicsalery * 10)/10;
+            console.log(pf)
+            
+        }
+        function totalSalery(){
+            totalSalery = hra + pf + basicsalery;
+            console.log(totalSalery);
+
+        }
+        details();
+        tax();
+        totalSalery();
+
+        </script>
+
+</body>
+</html>

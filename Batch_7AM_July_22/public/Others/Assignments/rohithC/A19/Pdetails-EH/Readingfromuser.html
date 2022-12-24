@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pay Slip </title>
+        <link rel="stylesheet" href="./readingData.css">
+    </head>
+    <body>
+        <div class="header">   
+            Naresh IT° Payslip Generator
+        </div>
+        <div class="container"> 
+            <h3>Enter Details for Payslip</h3>
+            <div class="innerbox"> 
+                <div>
+                    <span> 
+                        First Name : 
+                        <input type="text" placeholder="Enter First Name" id="fname">
+                    </span>
+                    <span> 
+                        Last Name : 
+                        <input type="text" placeholder="Enter Last Name" id="lastname">
+                    </span>
+                </div>
+                <div>
+                    <span> 
+                        Age : 
+                        <input type="text" placeholder="Enter Age" id="age"> 
+                    </span>
+                    <span> 
+                        Year of joining : 
+                        <input type="text" placeholder="Joining Date" id="year">
+                    </span>
+                </div>
+                <div>
+                    <label for="gender">Gender :</label>
+                    <input type="radio" name="gender" value="Male" class="gender"> Male </input>
+                    <input type="radio" name="gender" value="Female" class="gender"> Female </input>
+                    <input type="radio" name="gender" value="Others" class="gender" checked> Others </input>
+                </div>
+                <div>
+                    Role In a Company :
+                    <select name="role" id="role" class="innerbox" > 
+                        <option> UI Full Stack</option>
+                        <option> Python </option>
+                        <option> Java </option>
+                        <option> C++ </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Basicsal">  Basic Salary :</label>
+                    <input type="text" placeholder="Enter Salary" id="salarybasic" name="Basicsal">
+                </div>
+                <div> 
+                    <input type="button" id="btn" value="GENERATE" onclick="employeedetails.gettingValues()">
+                </div>
+            </div>
+        </div>
+        <div class="payslip">
+            <h3>Payslip</h3>
+            <ul class="heads"> 
+                <li>
+                    Name : <span id="dname"></span>
+                </li>
+                <li>
+                    Age : <span id="dage" ></span>
+                </li>
+                <li>
+                    Gender : <span id="dgender"></span>
+                </li>
+                <li>
+                    Year Joined : <span id="dyear"></span>
+                </li>
+                <li>
+                    Role : <span id="drole"></span>
+                </li>
+                <li>
+                    Basicsal : <span id="dBasicSal"></span>
+                </li>
+                <li>
+                    pf percentage : <span id="dpf"></span>
+                </li>
+                <li>
+                    hra percentage : <span id="dhra"></span>
+                </li>
+                <li>
+                    Total Salary : <span id="dTotalSal"></span>
+                </li>
+                <li>
+                   Tax percentage : <span id="dtax"></span>
+                </li>
+                <li>
+                    Final Salary : <span id="dFinalSal"></span>
+                </li>
+            </ul>
+            
+
+        </div>
+
+        <script src="./readingdata.js"></script>
+    </body>
+    <footer>    
+        copyright© 2022 - Developed by Rohith (NareshIT)
+    </footer>
+</html>

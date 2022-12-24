@@ -1,0 +1,137 @@
+<!doctype html>
+<style>
+    textarea { vertical-align: bottom; }
+    #output { overflow: auto; }
+    #output > p { overflow-wrap: break-word; }
+    #output span { color: blue; }
+    #output span.error { color: red; }
+</style>
+<h2>WebSocket Test</h2>
+<!--<textarea cols=60 rows=6></textarea>-->
+<button>send</button>
+<div id=output></div>
+<div id="tablearea">
+    <table id="table"></table>
+</div>
+<script>
+    // http://www.websocket.org/echo.html
+
+    var button = document.querySelector("button"),
+        output = document.querySelector("#output"),
+        textarea = document.querySelector("textarea"),
+        // wsUri = "ws://echo.websocket.org/",
+        wsUri = "ws://127.0.0.1:7606/",
+        websocket = new WebSocket(wsUri);
+
+    button.addEventListener("click", onClickButton);
+
+    websocket.onopen = function (e) {
+        writeToScreen("CONNECTED");
+        doSend("WebSocket rocks");
+    };
+
+    websocket.onclose = function (e) {
+        writeToScreen("DISCONNECTED");
+    };
+
+    websocket.onmessage = function (e) {
+ if (typeof event.data === "string") {
+
+     var jsonObject = JSON.parse(event.data);
+     if (jsonObject.metaInfo.image != null)
+     {
+         var buffer = jsonObject.metaInfo.image;
+     }
+            var tabarea = document.getElementById("tablearea");
+            var table = document.getElementById("table")
+           
+          
+            var tr = document.createElement('tr');
+            tr.appendChild(document.createElement("td"));
+            tr.cells[0].appendChild(document.createTextNode("SNO"))
+            tr.appendChild(document.createElement("td"));
+            tr.cells[1].appendChild(document.createTextNode("Item"))
+            tr.appendChild(document.createElement("td"));
+            tr.cells[2].appendChild(document.createTextNode("Qty"))
+            tr.appendChild(document.createElement("td"));
+            tr.cells[3].appendChild(document.createTextNode("Price"))
+            table.appendChild(tr);
+            for (var i = 0; i < jsonObject.orderDetails.length; i++) {
+                 tr = document.createElement('tr');
+              
+                    tr.appendChild(document.createElement('td'));
+                
+
+               
+                    tr.cells[0].appendChild(document.createTextNode(jsonObject.orderDetails[i].Serialnumber));
+                    tr.appendChild(document.createElement('td'));
+
+
+
+                    tr.cells[1].appendChild(document.createTextNode(jsonObject.orderDetails[i].description));
+                    tr.appendChild(document.createElement('td'));
+
+
+
+                    tr.cells[2].appendChild(document.createTextNode(jsonObject.orderDetails[i].Itemquantity));
+                    tr.appendChild(document.createElement('td'));
+
+
+
+                    tr.cells[3].appendChild(document.createTextNode(jsonObject.orderDetails[i].Price));
+                    if (jsonObject.orderDetails[i].Item != null)
+                        {
+                         for (var j = 0; j < jsonObject.orderDetails[i].items.length; j++)
+{
+tr = document.createElement('tr');
+tr.appendChild(document.createElement('td'));
+ tr.cells[0].appendChild(document.createTextNode(' '));
+tr.appendChild(document.createElement('td'));
+tr.cells[1].appendChild(document.createTextNode(jsonObject.orderDetails[i].items[j].description));
+                    tr.appendChild(document.createElement('td'));
+
+
+
+                    tr.cells[2].appendChild(document.createTextNode(jsonObject.orderDetails[i].items[j].Itemquantity));
+                    tr.appendChild(document.createElement('td'));
+                    tr.cells[3].appendChild(document.createTextNode(''));
+                    tr.appendChild(document.createElement('td'));
+
+}
+}
+
+                    table.appendChild(tr);
+
+            }
+            table.setAttribute("border", "2");
+            tabarea.appendChild(table);
+
+            console.log("Json Arrived");
+}
+ //textarea.value =e.data;
+        writeToScreen("<span>RESPONSE: " + e.data + "</span>");
+  
+    };
+
+    websocket.onerror = function (e) {
+        writeToScreen("<span class=error>ERROR:</span> " + e.data);
+    };
+
+    function doSend(message) {
+        writeToScreen("SENT: " + message);
+        websocket.send(message);
+    }
+
+    function writeToScreen(message) {
+        output.insertAdjacentHTML("afterbegin", "<p>" + message + "</p>");
+    }
+
+    function onClickButton() {
+        var text = ' '//textarea.value;
+
+        text && doSend(text);
+       // textarea.value = "";
+       // textarea.focus();
+    }
+    
+</script>

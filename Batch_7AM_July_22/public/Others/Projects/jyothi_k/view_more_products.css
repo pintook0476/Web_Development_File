@@ -1,0 +1,24 @@
+.headerFooter{
+    border:1px solid;
+    height: 30px;
+    width: 100%;
+}
+.mainContainer{
+    border: 1px solid;
+    height: 800px;
+    width: 100%;
+    overflow: auto;
+}
+ul{
+    border: 1px solid;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    width: 450px;
+    float: left;
+}
+li{
+    border: 1px solid;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    list-style: none;
+}

@@ -1,0 +1,81 @@
+
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h2>Employ Details with using</h2>
+    <script>
+        function employdetails (){
+        var employname = prompt("enter employ name");
+        var employage = prompt("enter Age");
+        var Gendar = prompt("enter Gendar");
+        var Department = prompt("Department");
+        var Basicsalary = prompt("Basic salary");
+        var Basicsalary = parseInt(Basicsalary);
+        var pf = Basicsalary * (14 / 100);
+        var pf = parseInt(pf);
+        var hrf = Basicsalary * (25 / 100);
+        var hrf = parseInt(hrf);
+
+        var totalsalary = Basicsalary + pf + hrf;
+
+
+        console.log(" employ name " + employname);
+        console.log(" age " + employage);
+        console.log(" Gendar " + Gendar);
+        console.log(" Department " + Department);
+        console.log( " Basicsalary " + Basicsalary);
+        console.log(" Totalsalary is " + totalsalary);
+        condition();
+        }
+        function condition(){
+            
+            
+        if (Gendar == 'Male' && totalsalary >= 200000){
+            var taxparsentage = totalsalary * (15 / 100);
+                console.log(" Tax is " + taxparsentage);
+            }
+        else if(Gendar == "Male" && totalsalary >= 100000){
+        var taxparsentage = totalsalary * (10 / 100);
+        console.log(" Tax is "+ taxparsentage);
+        }else if(Gendar == "Male" && totalsalary >= 50000){
+            var taxparsentage = totalsalary * (5 / 100);
+            console.log(" Tax is " + taxparsentage);
+        }else if(Gendar == "Male" && totalsalary <= 50000){
+            var taxparsentage = 0 ;
+            console.log(" Tax is " + taxparsentage);
+        }
+
+        if(Gendar == "Female" && totalsalary >= 200000){
+            
+            var taxparsentage = totalsalary * (10 / 100);
+            console.log(" Tax is "+ taxparsentage);
+         }else if(Gendar == "Female" && totalsalary >= 100000){
+            
+            var taxparsentage = totalsalary * (5 / 100);
+            console.log(" Tax is " + taxparsentage);
+        }else if(Gendar == "Female" && totalsalary >=50000 ){
+            var taxparsentage = 0;
+            console.log(" Tax is " + taxparsentage);
+        }
+        console.log(" Tax is " + taxparsentage);
+
+        console.log("all process completed");
+    }
+    employdetails ();
+
+        
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sonsie+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-lava: #463f3aff;
+  --middle-grey: #8a817cff;
+  --pale-silver: #bcb8b1ff;
+  --isabelline: #f4f3eeff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--pale-silver);
+}
+.wraper {
+  width: 60%;
+  height: 72%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+.heading {
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark-lava);
+  color: var(--isabelline);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
+  line-height: 50px;
+}
+.hero, .innerBox{
+    width: 98%;
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+}
+.leftBox{
+  width: 49.5%;
+  font-size: 18px;
+  font-family: Titan One;
+  padding: 10px 15px;
+
+  /* margin-left: 10px; */
+}
+.innerBox{
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+.innerBox span{
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  user-select: none;
+  font-size: 25px;
+  text-decoration: line-through;
+  font-weight: 500;
+  background: #071E22;
+  color: #D4DF9E;
+  font-family: Georgia;
+}
+input{
+  width: 100%;
+  height: 30px;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  margin: 5px auto;
+  margin-bottom: 5px;
+  padding: 0 15px;
+  outline-color: var(--middle-grey);
+}
+#captchaInput{
+  text-transform: none;
+}
+.error{
+  display: none;
+  font-size: 11px;
+  text-align: right;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #ff3636;
+}
+
+
+
+
+
+
+
+
+
+.empcard{
+  display: none;
+  width: 800px;
+  margin: 50px auto;
+  scale: .5;
+  background-color: #fff;
+}
+.card{
+  height: 15%;
+  width: 100%;
+  background-color: #304258;
+  font-family: 'Trocchi';
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data{
+  height: 81.7%;
+  margin: 15px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.right{
+  width: 50%;
+}
+.details{
+  height: 40px;
+  width: 190%;
+  border: 2px solid var(--middle-grey);
+  margin-bottom: 10px;
+  padding: 0 15px;
+  line-height: 40px;
+  font-size: 15px;
+  font-family: Alfa Slab One;
+  position: relative;
+}
+.userInput{
+  position: absolute;
+  right: 15px;
+}
+img{
+  height: 285px;
+  width: 230px;
+}
+.print{
+  width: 100px;
+  margin-bottom: 30px;
+}

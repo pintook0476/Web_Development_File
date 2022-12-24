@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16. smallest and largest number</title>
+</head>
+<body>
+    <script>
+        var data =[14,27,56,67,89,24,54.79,91,63]
+        console.log("total digit =    "   + data.length);
+        var largest = data[0];
+        var smallest = data[0];
+  
+        
+        for(var i = 0 ; i < data.length ; i ++)
+        {
+            if (data[i] > largest){
+                largest = data[i];
+            }
+            else if(data[i] < smallest)
+               smallest  = data[i];
+        }
+    
+        console.log("largest no is = " + largest);
+        console.log("smallest no is = " + smallest);
+
+    </script>
+    
+</body>
+</html>

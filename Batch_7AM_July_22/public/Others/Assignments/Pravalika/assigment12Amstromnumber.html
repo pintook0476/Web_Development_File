@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ARMSTRONG NUMBER
+        </title>
+        <body>
+            <script>
+                var n=prompt("enter the number");
+                n=parseInt(n);
+                var armstrongnumber=0;
+                var totaldigits=n.length;
+                n=parseInt(n);
+                while(n>0){
+                    var rem=n%10;
+                    armstrongnumber=armstrongnumber+(rem**totaldigits);
+                    n=n/10;
+                    console.log('armstrongnumber');
+
+                    
+                }  
+                
+
+            </script>
+        </body>
+    </head>
+</html>

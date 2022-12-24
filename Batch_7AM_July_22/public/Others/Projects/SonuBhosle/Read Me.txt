@@ -1,0 +1,18 @@
+ 
+  // About Project //
+
+ Project Name  : Online Grocery Shopping
+ Images Source : Bigbasket.com
+ Images Url    : Postimg.org
+ languages     : Html & Css
+
+  // Include pages
+  
+ index.html (login page)
+ register.html
+ resetpass.html
+ products.html
+ buy.html
+ style.css
+ 
+ // Thank You //

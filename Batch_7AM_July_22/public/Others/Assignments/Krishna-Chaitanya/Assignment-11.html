@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating conditional control Structure
+        </title>
+        <script>
+              var ename = prompt("Enter your Name");
+               var age = prompt("Enter your Age");
+               var gender = prompt("Enter gender male/female");
+               var loc = prompt("Enter your location");
+               var depart = prompt ("Enter Your Department name");
+               var bsalary = prompt ("Enter Basic salary");
+               bsalary = parseInt(bsalary);
+            var pf = bsalary * 14/100;
+            pf = parseInt(pf);
+            var hra = bsalary * 25/100;
+            hra = parseInt(hra);
+            var total = bsalary + pf + hra;
+console.log("Your Name is " + ename);
+console.log("Your Age is " + age);
+console.log("Your Location is " + loc);
+console.log("Your Department is " + depart);
+console.log("Your Basic salary is " + bsalary);
+console.log("Your PF is " +pf);
+console.log("Your Basic HRA allowance is " + hra);
+console.log("Your Total salary is " + total);
+
+if (gender == 'male' || gender == 'Male') {
+    if (total >= 200000){
+        console.log("your tax rate is 15%");
+        var tax = bsalary * (10 / 100);
+    console.log("Your Total Tax is " + tax);
+    }
+else if  (total >= 100000) {
+console.log("your tax rate is 10%");
+var tax = bsalary * (10 / 100);
+console.log("Your Total Tax is " + tax);
+}
+else if (total >= 50000) {
+    console.log("Your tax rate is 10%");
+    var tax = bsalary * (10 / 100);
+    console.log("Your Total Tax is " + tax);
+} else { 
+    console.log("Your tax rate is Zero");
+}
+}
+else {
+    if (total >= 200000){
+        console.log("your tax rate is 10%");
+        var tax = bsalary * (10 / 100);
+        console.log("Your Total Tax is " + tax);
+    }
+    else if (total >= 100000){
+        console.log("your tax rate is 5%");
+        var tax = bsalary * (5 / 100);
+        console.log("Your Total Tax is " + tax);
+    }
+     else {
+        console.log("your tax rate is zero");
+        
+    }
+}
+
+        </script>
+    </head>
+    <body>
+        
+    </body></html>

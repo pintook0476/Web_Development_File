@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pallindrome</title>
+</head>
+<body>
+    <script>
+ //write a program to read number from the user and check wheather  it is pallindrome or not 121 ->121 //
+
+ var su = prompt("Enter the number ");
+ var see = su ;
+ var be = 0;
+ while (su != 0 ) {
+
+    be =(be * 10)+(su%10);
+    su = parseInt(su/10);
+    
+ }
+
+ if (see == be  ) {
+    console.log ("its a pallindrome number " + be);
+ }else{
+    console.log("it is not a pallindrome number " + be );
+ }
+
+ 
+
+
+
+    </script>
+    
+</body>
+</html>

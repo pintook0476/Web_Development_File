@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe details</title>
+</head>
+<body>
+
+    <script>
+
+        var ename , egender ,eage , esal , pf , hra , total , tax_5 ,tax_10 , tax_15 ;
+        
+        
+        function userdata() {
+
+
+            ename = prompt (" Enter your name ");
+            egender= prompt ("Enter your gender");
+            eage = prompt("Enter your age");
+            esal = prompt("enter your salary");
+            esal = parseInt(esal);
+            calculateuserdata();
+
+        }
+
+        function calculateuserdata() {
+
+            pf = 14 / 100 * esal;
+            hra = 25 / 100 * esal;
+            total = esal + pf + hra ;
+            tax_5 = 5 / 100 * total;
+            tax_10 = 10 / 100 * total;
+            tax_15 = 15 / 100 * total;
+            getuserdata();
+
+
+        }
+
+        function getuserdata(){
+
+            console.log("User name is "+ ename);
+            console.log("user gender is " + egender);
+            console.log("user age is "+ eage);
+            console.log("user sal is " + esal);
+            console.log("user pf is"+ pf);
+            console.log("user hra is"+ hra);
+            console.log("user total salary is "+ total);
+            printuserdetails();
+
+        }
+
+        function printuserdetails(){
+
+            if ( egender == "male"){
+            if (total >= 200000){
+                console.log("tax percentage is "+(15/100)*total);
+            } else if (total >= 100000){
+                console.log("tax percentage is 10%");
+            } else if ( total>= 50000){
+                console.log("tax percentage is 5%");
+            } else{
+                console.log("tax is 0");
+            }
+
+        } else{
+            if (total >= 200000){
+                console.log("tax percentage is 10%");
+            } else if(total>= 100000){
+                console.log("tax percentage is 5%");
+            } else {
+                console.log("tax percentage is 0");
+            }
+
+
+        }
+
+
+
+
+        }
+
+        userdata();
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

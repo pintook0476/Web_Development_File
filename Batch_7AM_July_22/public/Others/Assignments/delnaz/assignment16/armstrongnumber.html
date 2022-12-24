@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = [234 ,567 , 407 , 301 ,153 , 373 ,789, 371,56 ]
+        console.log("total number " +n);
+        
+        for(var i = 0 ; i < n.length ; i++ ){
+            var temp = n[i];
+            var arm = 0;
+            while(temp > 0 ) {
+                var rem  = temp %  10 ;
+                arm = arm +  (rem * rem * rem);
+                temp = temp/10;
+                temp = parseInt(temp);
+            }
+            if(arm == n[i]){
+                    console.log("its a armstrong " +n[i]);
+            }
+        }   
+
+    </script>
+</body>
+</html>

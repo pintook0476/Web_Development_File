@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Passing parameters to functions
+        </title>
+    </head>
+    <body>
+        Demonstrating - passing parameters to functions
+        <script>
+            
+            var  readData = () => {
+                var a1, a2;
+                var name = 'TEena'
+                a1 = prompt("Enter a value ");
+                a1 = parseInt(a1);
+                a2 = prompt("Enter second value");
+                a2 = parseInt(a2);
+                performSum(a1, a2, name); // performSum(90, 20)
+            }
+            var  performSum = (a1, p2, name) => { // p1= 90, p2 = 20
+                console.log("name is " + name);
+                var sum = a1 + p2;
+                console.log("The sum is " + sum);
+            }
+            readData();
+        </script>
+    </body>
+</html>

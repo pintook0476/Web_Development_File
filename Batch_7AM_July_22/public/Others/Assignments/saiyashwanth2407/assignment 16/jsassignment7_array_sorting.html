@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>
+            WAP to read an array from the user and return the ascending and descending order of the array.
+        </h2>
+        <p> solution: Go to console -> </p> 
+        <h3> ascendingArr(array); </h3>
+        <h3> descendingArr(array); </h3>
+
+        <script>
+
+
+            //WAP to read an array from the user and return the ascending and descending order of the array.
+            var inputArr = [];
+            var userInputArray =()=>{
+                while (true){
+                    var temp = prompt("Enter number or Enter "+ '"end"' +" to exit");
+                    if(temp == 'end'){
+                        break;
+                    }
+                    temp = parseInt(temp);
+                    inputArr.push(temp);
+                }
+                console.log("Original Array - [" + inputArr +"]");
+            }
+
+            
+            var ascendingArr = (arr)=>{
+                for(var j = 0; j< arr.length; j++){
+                    for(var i = (j+1); i < arr.length; i++){
+                        if(arr[j] > arr[i]){
+                            var swap = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = swap;
+                        }
+                    }
+                }
+                console.log("Ascending order - [" + arr +"]");
+            }
+            
+            
+            var descendingArr = (arr)=>{
+                for(var j = 0; j< arr.length; j++){
+                    for(var i = (j+1); i < arr.length; i++){
+                        if(arr[j] < arr[i]){
+                            var swap = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = swap;
+                        }
+                    }
+                }
+                console.log("Descending order - [" + arr +"]");
+            }
+            
+            userInputArray();
+            var copiedArr = inputArr.slice(0, inputArr.length);  //used slice method to copy the array into other variable.
+            ascendingArr(copiedArr);
+            descendingArr(copiedArr);
+            
+        </script>
+    </body>
+</html>

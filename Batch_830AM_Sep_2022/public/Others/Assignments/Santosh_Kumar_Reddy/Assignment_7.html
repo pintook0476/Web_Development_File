@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details(Assgn7)</title>
+    </head>
+<body>
+    <script>
+        var ename = prompt("Please enter the Employee name"), tsal , bsal , epf, hra;
+        var eage = prompt("Enter the age");
+        var egender = prompt("Enter gender");
+        var edpet = prompt("Enter your department");
+        var bsal = prompt("Enter your sallery");
+
+        bsal = parseInt(bsal)
+        epf = parseInt(epf)
+
+        epf = 12 * bsal / 100;
+        ehra = 24 * bsal / 100;
+
+        tsal = epf + ehra + bsal;
+        console.log("Employee name is" + ename);
+        console.log("Employee age is"+ eage);
+        console.log("Gender" + egender);
+        console.log("Department" + edpet);
+        console.log("Your Sallery" + bsal);
+        console.log("Your pf is" + epf);
+        console.log("Your hra is" + ehra);
+
+    </script>
+</body>
+</html>

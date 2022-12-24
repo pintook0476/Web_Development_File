@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function employeuserdata(){
+            var ename,age,gender,dep,salary;
+        ename = prompt('enter employe name');
+         age = prompt('enter age');
+         gender = prompt('enter gender') ;
+         dep = prompt('enter dep');
+         salary = prompt('enter salary');
+        salary = parseInt(salary);
+        getuserdetails( ename,age,gender,dep,salary);
+        }
+        //calculating pf
+        function calculatePf(salary){
+         var pf;
+         pf = salary * ( 14 / 100 );
+         return pf;
+       }
+
+        //calculating hra
+         function calculateHra(salary){
+         var hra;
+         hra = salary * ( 25 / 100 );
+         return hra;
+       }
+
+        //calculating total salry
+        function calculateTotSal(salary){
+         var totalsalary;
+         var pf = calculatePf(salary);
+         var hra = calculateHra(salary);
+         totalsalary = pf + hra + salary;
+         return totalsalary;
+       }
+        function getuserdetails(ename,age,gender,dep,salary,pf,hra,totalsalary){
+        console.log(' ename' + ename);
+        console.log('age' + age);
+        console.log('gender' + gender) ;
+        console.log('dep' + dep);
+        console.log('salary' + salary);
+        
+        var pf = calculatePf(salary);
+        var hra = calculateHra(salary);
+        var totalsalary = calculateTotSal(salary);
+        console.log('pf' + pf);
+        console.log('hra' + hra);
+        console.log('totalsalary' + totalsalary);
+        tax(gender,totalsalary)
+        }
+         //calculating tax
+         function tax(gender, totalsalary){
+        var tax;
+        if(gender == 'Male' || gender == 'male'){
+            if(totalsalary >= 200000){
+                console.log('Your Tax percentage is 15%');
+                tax = totalsalary * (15 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);
+            }
+            else if ( totalsalary >= 100000 && totalsalary < 200000) {
+            console.log('Your Tax percentage is 10%');
+                tax = totalsalary * (10 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          } 
+          else if (totalsalary >= 50000 && totalsalary < 100000) {
+            console.log('Your Tax percentage is 5%');
+                tax = totalsalary * (5 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          }
+          else {
+             tax = 0;
+            console.log('Tax = 0'); 
+          }
+       }
+       else if (gender == "Female" || gender == "female" ) {
+        if (totalsalary >= 200000) {
+               console.log('Your Tax percentage is 10%');
+                tax = 200000 * (10 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);
+          }
+          else if (totalsalary >= 100000 && totalsalary < 200000) {
+            console.log('Your Tax percentage is 5%');
+               tax = totalsalary * (5 / 100);
+               console.log('Total Tax to be paid: ₹' + tax);  
+          } 
+          else if (totalsalary >= 50000 && totalsalary < 100000) {
+             console.log('Tax = 0'); 
+          }
+          else {
+             tax = 0;
+            console.log('Tax = 0'); 
+          }
+          return tax ;
+       }
+       else  {
+        
+        
+        
+        console.log("Invalid Gender");
+         console.log("Please! Enter the Valid gender.");
+       }
+    
+    if(totalHandsalary = totalsalary - tax ){  
+    console.log('Total In Hand Salary ' + totalHandsalary); 
+    }
+  }
+        employeuserdata();
+    </script>
+</body>
+
+</html>

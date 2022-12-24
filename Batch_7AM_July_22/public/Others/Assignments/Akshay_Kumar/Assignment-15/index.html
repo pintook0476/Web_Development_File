@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-15</title>
+    </head>
+    <body>
+        <script>
+            function readingData(){
+                var eName = prompt("enter employee name");
+                var eDept = prompt("enter department name");
+                var age = prompt("enter employee age");
+                var gender = prompt("enter employee gender");
+                var basicSalary = prompt("enter employee basic salary");
+                calculatingTotalSalary(basicSalary,gender);
+            }
+
+            function calculatingTotalSalary(basicSalary,gender){
+                basicSalary = parseInt(basicSalary);
+                var pf = (14/100)*basicSalary;
+                var hra = (25/100)*basicSalary;
+                var totalSalary = basicSalary+pf+hra;
+                displayData(pf,hra,totalSalary,gender);
+            }
+
+            function displayData(pf,hra,totalSalary,gender){
+                console.log("employee pf is "+pf);
+                console.log("employee hra is "+hra);
+                console.log("toatl salary is "+totalSalary);
+                calculatingTax(gender,totalSalary);
+            }
+
+            function calculatingTax(gender,totalSalary){
+                if(gender == "male"){
+                    if(totalSalary >= 200000){
+                        console.log("tax percentage is "+ (15/100)*totalSalary);
+                    } else if(totalSalary >= 100000){
+                        console.log("tax percentage is "+(10/100)*totalSalary);
+                    } else if(totalSalary >= 50000){
+                        console.log("tax percentage is "+(5/100)*totalSalary);
+                    } else{
+                        console.log("tax is 0");
+                    }
+                } else{
+                    if(totalSalary >= 200000){
+                        console.log("tax percentage is "+(10/100)*totalSalary);
+                    } else if(totalSalary >= 100000){
+                        console.log("tax percentage is "+(5/100)*totalSalary);
+                    }else{
+                        console.log("tax is 0");
+                    }
+                }
+            }
+
+            readingData();
+        </script>
+    </body>
+</html>

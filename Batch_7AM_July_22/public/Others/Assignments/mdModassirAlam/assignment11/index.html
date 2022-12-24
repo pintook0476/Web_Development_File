@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From The User</title>
+</head>
+<body>
+    <script>
+        /*Write a program to work with employee details like employee name, gender, department, basic salary, calculate the total salary where total salary is equal to pf + HRA + basic salary. Where pf is 14% of basic salary and HRA is 25% of basic salary*/
+
+        var empName = prompt("Enter user name");
+        var empGender = prompt("Enter user gender");
+        var empDept = prompt("Enter user department");
+        var empBasicSalary = prompt("Enter user Salary");
+        empBasicSalary = parseInt(empBasicSalary);
+
+        console.log("The name of the employee is "+ empName);
+        console.log("The employee gender is "+ empGender);
+        console.log("The basic salary of employee is "+ empBasicSalary);
+
+        var empPf = empBasicSalary * 14/100;
+        console.log("The employee pf is "+empPf);
+        var empHra = empBasicSalary * 25/100;
+        console.log("The employee HRA is "+empHra);
+
+        var empTotalSalary = empPf + empHra + empBasicSalary;
+        console.log("The total employee salary is "+empTotalSalary);
+
+        /* For male finding the text percentage*/
+
+        if(empGender == 'male' && empTotalSalary >= 200000){
+            var taxPercentage = empTotalSalary * 15/100;
+            var empTotalSalaryLeft = empTotalSalary - taxPercentage;
+            console.log("Total Salary left after tax Payment of 15% is "+ empTotalSalaryLeft);
+        }
+        else if(empGender == 'male' && empTotalSalary >= 100000){
+            var taxPercentage1 = empTotalSalary * 10/100;
+            var empTotalSalaryLeft1 = empTotalSalary - taxPercentage1;
+            console.log("Total Salary left after tax Payment of 10% is "+ empTotalSalaryLeft1);
+        }
+        else if(empGender == 'male' && empTotalSalary >= 50000){
+            var taxPercentage2 = empTotalSalary * 5/100;
+            var empTotalSalaryLeft2 = empTotalSalary - taxPercentage2;
+            console.log("Total Salary left after tax Payment of 5% is "+ empTotalSalaryLeft2);
+        }
+        // else{
+        //     console.log("Total Salary left after tax Payment of 0% is "+ empTotalSalary);
+        // }
+
+        /*For female finding tex percentage*/
+
+        if(empGender == 'female' && empTotalSalary >= 200000){
+            var taxPercentage3 = empTotalSalary * 10/100;
+            var empTotalSalaryLeft3 = empTotalSalary - taxPercentage3;
+            console.log("Total Salary left after tax Payment of 10% is "+ empTotalSalaryLeft3);
+        }
+        else if(empGender == 'female' && empTotalSalary >= 100000){
+            var taxPercentage4 = empTotalSalary * 5/100;
+            var empTotalSalaryLeft4 = empTotalSalary - taxPercentage4;
+            console.log("Total Salary left after tax Payment of 5% is "+ empTotalSalaryLeft4);
+        }
+        else if(empGender == 'female' && empTotalSalary >= 50000){
+            // var taxPercentage2 = empTotalSalary * 5/100;
+            // var empTotalSalaryLeft1 = empTotalSalary - taxPercentage1;
+            console.log("Total Salary left after tax Payment of 0% is "+ empTotalSalary);
+        }
+        // else{
+        //     console.log("Total Salary "+ empTotalSalary);
+        // }
+    </script>
+</body>
+</html>

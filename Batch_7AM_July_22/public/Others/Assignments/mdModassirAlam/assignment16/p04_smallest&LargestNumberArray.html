@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest And Largest Number Array</title>
+</head>
+<body>
+    <script>
+        /* Write a program to find out the smallest and the largest number from the given number*/
+
+        var num = [3,2,1,9,3,8,1,2]; // empty array
+        // for(var i = 0; i < 5; i++){
+        //     num[i] = prompt("Enter any 5 number to see odd number sum "+ i);
+        //     num[i] = parseInt(num[i]);
+        // }
+        console.log(num);
+        var largest = num[0];
+        var smallest = num[0];
+        for(var x = 0; x < num.length; x++){
+            if(num[x] < smallest ){
+                smallest = num[x];
+            }else if(num[x] > largest){
+                largest = num[x];
+            }
+        }
+        console.log(smallest);
+        console.log(largest);
+    </script>
+</body>
+</html>

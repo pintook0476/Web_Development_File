@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag drop events
+        </title>
+        <style>
+            input {
+                width: 400px;
+            }
+            .editBlock {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            Hello every one how are you doing...
+        </div>
+        <div class="editBlock">
+            <input type="text" id="editbox">
+            <span>Save</span>
+        </div>
+
+        <script>
+            var isBoxClicked = false;
+            document.querySelector("#container").addEventListener("click", () => {
+                isBoxClicked = true;
+                document.querySelector(".editBlock").style.display = 'block';
+
+                document.querySelector("#editbox").value = document.querySelector("#container").innerText;
+
+                document.querySelector("#container").style.display = 'none';
+            });
+
+            document.querySelector("span").addEventListener("click", () => {
+                var value = document.querySelector("#editbox").value;
+                document.querySelector("#container").innerText = value;
+
+                document.querySelector(".editBlock").style.display = 'none';
+
+                document.querySelector("#container").style.display = 'block';
+
+
+            })
+           
+        </script>
+    </body>
+</html>

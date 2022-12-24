@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Page</title>
+        <style>
+            h3{
+                border: 2px solid;
+                text-align: center;
+                margin: 20px;
+                padding: 10px;
+                font-size:26px;
+            }
+            .dtlsBorder1,
+            .dtlsBorder2,
+            .dtlsBorder3,
+            .dtlsBorder4{
+                border: 2px solid;
+                position: absolute;
+                top: 100px;
+                left: 107px;
+                height: 35px;
+                font-weight: bold;
+                text-align: center;
+           }
+           .dtlsBorder2{
+            top: 283px;
+            left: 107px;
+           }
+           .dtlsBorder3{
+            top: 466px;
+            left: 107px;
+           }
+           .dtlsBorder4{
+            top: 693px;
+            left: 107px;
+           }
+            .personalDtls,
+            .educationDtls,
+            .addressDetails,
+            .aboutYourself{
+                border: 2px solid;
+                margin: 10px;
+                padding: 15px;
+                list-style: none;
+                margin-top: 20px;
+            }
+            .bodyBorder{
+                border: 2px solid;
+                margin: 20px;
+                height: auto;
+            }
+            .course{
+                float: right;
+                position: absolute;
+                left: 700px;
+                top: 123px;
+            }
+            li{
+                height: 3px;
+                padding: 20px;
+            }
+            .landmark{
+                float: right;
+                position: absolute;
+                left: 700px;
+                top: 478px;
+            }
+            .aboutYourself{
+                height: 142px;
+            }
+            .sName{
+                position: absolute;
+                left: 234px;
+                width: 270px;
+                height: 20px;
+            }
+            .eMail{
+                position: absolute;
+                left: 234px;
+                width: 270px;
+                height: 20px;
+            }
+            .gender{
+                position: absolute;
+                left: 230px;
+            }
+            .footer{
+                border: 2px solid;
+                margin: 20px;
+                padding: 8px;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student Registration Page</h3>
+        <form action="" class="bodyBorder">
+           
+            <input type="text" class="dtlsBorder1" value="Personal Details">
+            <ul class="personalDtls">
+                <li>
+                    <div for="sName"><b>Student Name:</b>
+                        <input type="text" name="sName" class="sName">
+                    </div>
+                </li>
+                <li>
+                    <div for="eMail"><b>Mail Id:</b>
+                        <input type="email" name="eMail" class="eMail">
+                    </div>
+                </li>
+                <li>
+                    <div for="gender"><b>Gender:</b>
+                        <span  class="gender"><input type="radio" name="gender"><b style="margin-left: 5px;">Male</b>
+                        <input type="radio" name="gender" style="margin-left: 28px;"><b style="margin-left: 5px;">Female</b></span>
+                    </div>
+                </li>
+                <li class="course">
+                    <b>Course:</b>
+                    <select name="course" id="selectCourse" style="left: 111px; position: absolute; width: 278px; height: 26px;">
+                        <option value=""></option>
+                        <option value="mca">MCA</option>
+                        <option value="mba">MBA</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="msc">M.Sc</option>
+                    </select>
+                </li>
+            </ul>
+            <input type="text" class="dtlsBorder2" value="Education Details">
+            <ul class="educationDtls">
+                <li>
+                    <b>Qualification:</b>
+                    <input type="text" name="qualification" style="position: absolute; width: 270px; height: 20px; left: 234px;">
+                </li>
+                <li>
+                    <b>Languages Known:</b>
+                    <input type="checkbox" value="odia" style="margin-left: 20px;"><b style="margin-left: 5px;">Odia</b>
+                    <input type="checkbox" value="english" style="margin-left: 24px;"><b style="margin-left: 5px;">English</b>
+                    <input type="checkbox" value="hindi" style="margin-left: 24px;"><b style="margin-left: 5px;">Hindi</b>
+                    <input type="checkbox" value="telgu" style="margin-left: 24px;"><b style="margin-left: 5px;">Telgu</b>
+                </li>
+                <li>
+                    <b>Avg. Marks:</b>
+                    <input type="number & special_character" style="position: absolute; width: 270px; height: 20px; left: 234px;">
+                </li>
+            </ul>
+            <input type="text" class="dtlsBorder3" value="Address">
+            <ul class="addressDetails">
+                <li>
+                    <b>Door No. :</b>
+                    <input type="text" name="doorNumber" style="position: absolute; width: 270px; height: 20px; left: 234px;">
+                </li>
+                <li>
+                    <b>Street Name:</b>
+                    <input type="text" name="streetName" style="position: absolute; width: 270px; height: 20px; left: 234px;">
+                </li>
+                <li>
+                    <b>State:</b>
+                    <select name="" style="position: absolute; width: 278px; height: 26px; left: 234px;">
+                        <option value=""></option>
+                        <option value="">Odisha</option>
+                        <option value="">West Bengal</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Chhattisgarh</option>
+                        <option value="">Andhra Pradesh</option>
+                    </select>
+                </li>
+                <li>
+                    <b>Country:</b>
+                    <select name="" style="position: absolute; width: 278px; height: 26px; left: 234px;">
+                        <option value=""></option>
+                        <option value="">IND</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                        <option value="">UAE</option>
+                        <option value="">Russia</option>
+                        <option value="">Sri Lanka</option>
+                    </select>
+                </li>
+                <li class="landmark">
+                    <b style="margin-top: 3px;position: absolute;">Land Mark:</b>
+                    <input type="text" style="left: 117px; position: absolute; width: 270px; height: 35px;">
+                </li>
+            </ul>
+            <input type="text" class="dtlsBorder4" value="About Yourself">
+            <ul class="aboutYourself">
+                <li>                  
+                    <b style="position: absolute; top: 787px; left: 73px;">About Yourself:</b>
+                    <textarea style="position: absolute; top: 745px; left: 230px;" name="aboutUser" maxlength="100" cols="45" rows="8"></textarea>
+                </li>
+            </ul>
+        </form> 
+        <div class="footer">
+            &#64; Copyright 2022
+        </div>
+    </body>
+</html>

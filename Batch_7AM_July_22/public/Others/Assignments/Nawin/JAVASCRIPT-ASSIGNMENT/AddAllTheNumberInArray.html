@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dataInput=() =>{
+            var data=[91,82,73,54,65,36,27,78,99,110];
+            var sum=calculatingSum(data);
+            console.log("Sum of all the number inside an array= "+sum);
+        }
+        var calculatingSum=(mark) =>{
+            var sum=0;
+            for(var i=0;i<mark.length;i++){
+                sum+=mark[i];
+            }
+            return sum;
+        }
+        dataInput();
+    </script>
+</body>
+</html>

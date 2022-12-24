@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting values in a array</title>
+</head>
+<body>
+    Press F12 
+    <script> 
+        var data = [56,63,82,4,58,23,32,48,92];
+
+            for (var i = 0  ; i < data.length ; i++) {
+                for ( var j = i + 1 ; j < data.length ; j++){
+
+                    if (data[i] > data[j]) { //to find descending change to  '< '
+                        var temp = data[i];
+                        data[i] = data [j];
+                        data[j] = temp;
+                    }
+                }
+            }
+                console.log(data);
+        
+            //console.log(data);
+
+    </script>
+</body>
+</html>

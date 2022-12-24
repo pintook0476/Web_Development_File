@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment Conditions </title>
+</head>
+
+<body>
+    <Script>
+
+        var Name = prompt("name");
+        var Age = prompt("Age");
+        var Gender = prompt("Gender");
+        var Dept = prompt("Department");
+        var Basicsal = prompt("Basic salary");
+        Basicsal = parseInt(Basicsal);
+        //calc//
+        var pf = Basicsal * (14 / 100);
+        var Hra = Basicsal * (24 / 100);
+
+        var totalsal = Basicsal + pf + Hra;
+        // console//
+
+        console.log("Name = " + Name);
+        console.log("Age = " + Age);
+        console.log("Gender = " + Gender);
+        console.log("Department =" + Dept);
+        console.log("Basic Salary = " + Basicsal);
+        console.log("Total Salary" + totalsal);
+
+        if (Gender == "male") {
+
+            if (totalsal >= 200000) {
+                console.log(" tax is 15%");
+                var tax_15 = totalsal * (15 / 100);
+                console.log("tax = " + tax_15);
+            }
+            else if (totalsal >= 100000) {
+                console.log("tax is 10%");
+                var tax_10 = totalsal * (10 / 100);
+                console.log("tax = " + tax_10)
+            }
+            else if (totalsal >= 50000) {
+                console.log(" tax is 5% ");
+                var tax_5 = totalsal * (5 / 100);
+                console.log("tax =" + tax_5);
+            }
+            else {
+                console.log( " no tax ");
+            }
+
+        }
+
+        else  {
+            
+            if (totalsal >= 200000) {
+                console.log("tax is 10%");
+                var tax_F15 = totalsal * (10 / 100);
+                console.log("tax = " + tax_F15);
+            }
+            else if (totalsal >= 100000) {
+                console.log(" tax is 5% ");
+                var tax_F10 = totalsal * (5 / 100);
+                console.log("tax = " + tax_F10);
+            }
+            else{
+                console.log("no tax");
+            }
+            
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

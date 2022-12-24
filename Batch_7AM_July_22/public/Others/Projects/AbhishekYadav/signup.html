@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        /*header*/
+        
+        #header {
+            width: 100%;
+            height: 60px;
+            background-color: #6f2cbd;
+        }
+        
+        #span-container {
+            padding: 10px;
+            width: 300px;
+            float: left;
+        }
+        
+        #search {
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            padding-left: 30px;
+            font-weight: bold;
+            border: none;
+        }
+        
+        #heading {
+            height: 30px;
+        }
+        
+        #heading {
+            list-style: none;
+            margin: auto;
+            padding: 0px;
+            padding-top: 20px;
+            width: 700px;
+        }
+        
+        #heading li {
+            color: white;
+            float: left;
+            font-weight: bold;
+            margin-left: 50px;
+            font-size: 20px;
+            padding: 2px 10px;
+            border-radius: 10px;
+        }
+        
+        #hover {
+            background-color: #fdc50c;
+        }
+        /* page css properties*/
+        
+        #loginhead {
+            position: absolute;
+            padding: 5px 30px;
+            color: white;
+            background-color: #fdc50c;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            top: 280px;
+            left: 976px;
+        }
+        
+        .main-image {
+            background-image: url("https://img.freepik.com/premium-vector/modern-flat-website-login-page-templates_2095-182.jpg?w=1060");
+            height: 753px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        
+        #anc {
+            text-decoration: none;
+        }
+        
+        #email {
+            border-radius: 6px;
+            height: 34px;
+            border: none;
+            position: absolute;
+            top: 357px;
+            left: 920px;
+            width: 225px;
+            padding-left: 10px;
+        }
+        
+        #password {
+            border-radius: 6px;
+            height: 34px;
+            border: none;
+            position: absolute;
+            top: 420px;
+            left: 920px;
+            width: 225px;
+            padding-left: 10px;
+        }
+        
+        #cpassword {
+            border-radius: 6px;
+            height: 34px;
+            border: none;
+            position: absolute;
+            top: 480px;
+            left: 920px;
+            width: 225px;
+            padding-left: 10px;
+        }
+        
+        #forgot {
+            font-size: 12px;
+            padding-left: 17px;
+            color: #fdc50c;
+        }
+        
+        #loginbutton {
+            border: none;
+            position: absolute;
+            top: 536px;
+            left: 933px;
+            color: white;
+            background-color: #fdc50c;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 65px;
+            border-radius: 10px;
+        }
+        
+        #signup {
+            position: absolute;
+            top: 690px;
+            left: 970px;
+            height: 20px;
+            width: 180px;
+            background-color: #dedfe1;
+        }
+        /* Footer*/
+        
+        #footer {
+            height: 50px;
+            background-color: #6f2cbd;
+        }
+        
+        #copyright {
+            color: white;
+            margin: auto;
+            width: 200px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="span-container">
+            <input type="search" id="search" placeholder="search product">
+        </div>
+
+        <div>
+            <ul id="heading">
+                <li>Home</li>
+                <li>About</li>
+                <li id="hover">Login</li>
+                <li>My cart</li>
+                <li>My Orders</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="loginhead">Signup</div>
+        <div class="main-image"></div>
+
+        <input type="email" placeholder="Enter Your Email" id="email">
+
+        <input type="password" placeholder="Enter Your password here" id="password">
+        <input type="password" placeholder="Confirm Password" id="cpassword">
+
+        <button id="loginbutton">SIGN UP</button>
+        <span id="signup">Have an account? <span id="signtext"><a id="anc" href="loginPage.html"> log in</a> </span></span>
+
+
+    </div>
+    <div id="footer">
+        <div id="copyright">
+            <div>Copyright @ 2022</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name =prompt("enter user name");
+        console.log(name);
+        var gender = prompt("male/female");
+        gender=parseInt(gender);
+        console.log(gender);
+        var basicSalary = prompt("enter your basic salary");
+        basicSalary=parseInt(basicSalary);
+        var hra = basicSalary + (14/100);
+        var pf = basicSalary + (25/100);
+        var totalSalary = (basicSalary+hra+pf);
+        console.log(totalSalary);
+        console.log(hra);
+        console.log(pf);
+        if(gender==0 || gender==1)
+        {
+        if(gender == 1)
+        {
+            console.log("male");
+          if(totalSalary>=200000) 
+          {
+            console.log("tax percentage is 15%");
+          } 
+          if(totalSalary<200000 && totalSalary>=100000)
+            {
+                console.log("tax percentage is 10%");
+            }
+            if(totalSalary<100000 && totalSalary>=50000)
+                {
+                    console.log("tax percentage is 5%");
+                }
+        }
+        if(gender == 0)
+        {
+            console.log("female");
+            if(totalSalary>=200000) 
+          {
+            console.log("tax percentage is 10%");
+          } 
+          if(totalSalary<200000 && totalSalary>=100000)
+            {
+                console.log("tax percentage is 5%");
+            }
+            if(totalSalary<100000 && totalSalary>=50000)
+                {
+                    console.log("no tax");
+                }
+        }
+    }
+    else{
+        console.log("pleasen enter valid gender");
+    }
+
+
+
+    </script>
+    
+</body>
+</html>

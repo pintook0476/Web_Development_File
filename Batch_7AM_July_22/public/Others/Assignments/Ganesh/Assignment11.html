@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+          emp details
+        </title>
+    <style>
+    h2{
+       border: 1px solid;
+       text-align: center;
+       width: 700px;
+       height:3px;
+       background-color: aqua;
+      border-style:groove ;
+    }
+    h2{
+        position: absolute;
+        left: 350px;
+        bottom: 470px;
+    }
+    </style>
+    </head>
+    <body>
+        <h2>Emp Details using conditional control structures</h2>
+        <script>
+           var ename = prompt("Enter the ename");
+           var gender = prompt("Enter the gender : male or female");
+           var age = prompt("Enter the age");
+           var dept = prompt("Enter the dept");
+           var basicsal = prompt("Enter the basicsal");
+           basicsal = parseInt(basicsal);
+
+           var pf = (basicsal * 14)/100;
+           var hra = (basicsal * 20)/100;
+
+           var totalsal = pf + hra + basicsal;
+
+           console.log("Empname  :" + ename);
+           console.log("Gender  :" + gender);
+           console.log("Age  :" + age);
+           console.log("Dept :" + dept);
+           console.log("Basicsal : " + basicsal);
+           console.log("Pf :" + pf);
+           console.log("Hra :" + hra);
+           console.log("Totalsal :" + totalsal);
+
+            if (gender == "male") {
+                if(totalsal >= 200000){
+                    var tax=(15*totalsal)/100;
+                  console.log("tax with 15% : " + tax);
+                }else if(totalsal >100000){
+                    var tax=(10*totalsal)/100;
+                    console.log("tax with 10% : " + tax);
+                }else if(totalsal >= 50000){
+                    var tax=(0*totalsal)/100;
+                    console.log("tax with 0% :" + tax);
+                }
+            }
+            if(gender == "female") {
+                if(totalsal>=200000){
+                    var tax=(10*totalsal)/100;
+                    console.log("tax with 10% : " + tax);
+                }else if(totalsal >= 100000){
+                    var tax=(5*totalsal)/100;
+                    console.log("tax with 5% : " + tax);
+                }else if(totalsal >= 50000){
+                    var tax=(0*totalsal)/100;
+                    console.log("tax with 0% : " + tax);
+                }
+            }
+            var total=totalsal-tax;
+            console.log("total amount:"+ total);
+            console.log("Done");
+        </script>
+    </body>
+</html>

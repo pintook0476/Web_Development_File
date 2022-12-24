@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>armstrong in range(1-1000)</title>
+</head>
+
+<body>
+    <h1>armstrong no. between 1 and 1000</h1>
+    <script>
+        for (var i = 1; i <= 1000; i++) {
+            var temp1 = i;
+            var num = i;
+            var armstrong = 0;
+            
+            while (temp1 > 0) {
+                var rem = temp1 % 10;
+                temp1 = temp1 / 10;
+                temp1 = parseInt(temp1);
+                armstrong = armstrong + (rem ** i.toString().length);
+
+            }
+            if (armstrong == num) {
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+
+</html>

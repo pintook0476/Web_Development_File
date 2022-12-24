@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var sDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'MAle',
+                marks: [34, 56, 78, 90, 88],
+                getTotalAndAvg() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += sDetails.marks[i];
+                    }
+                    sDetails.avg = this.total / this.marks.length;
+                    var data = this.getGrade();
+                    this.grade = data.grade;
+                },
+                getGrade: () => {
+                    var gradeValue;
+                    if (sDetails.avg >= 40) {
+                        gradeValue = 'you are Passed';
+                    } else {
+                        gradeValue = 'You have a surprise';
+                    }
+                    return {grade: gradeValue};
+                },
+                displayDetails() {
+                    this.getTotalAndAvg();
+                    console.log("STudent name is " + sDetails.name);
+                    console.log("Age is " + this.age);
+                    console.log("Gender is " + this.gender);
+                    console.log("Totla is " + sDetails.total);
+                    console.log("Avg is " + this.avg);
+                    console.log("Grade is " + sDetails.grade);
+                }
+            };
+            
+            sDetails.displayDetails();
+            
+            var empDetails = {
+                
+                readEmpDetails() {
+                    this.empName = prompt("Enter name of employeee");
+                    this.empAge = prompt("Enter age of employee");
+                    this.empGender = prompt("Enter gender for employee");
+                    this.empBasicSal = prompt("Enter basic salary");
+                    this.empBasicSal = parseInt(this.empBasicSal);
+                    this.empContactNo = [];
+                    /*var i = 0;
+                    while (i < 2) {
+                        this.empContactNo[i] = prompt("Enter contact no.");
+                        i++;
+                    }*/
+                    for (var i = 0; i < 2; i++) {
+                        this.empContactNo[i] = prompt("Enter contact no.");
+                    }
+                    this.getPfAndHra();
+                },
+                getPfAndHra() {
+                    this.pf = this.empBasicSal * 0.12;
+                    this.hra = this.empBasicSal * 0.25;
+                    this.totalSal = this.pf + this.hra + this.empBasicSal;
+                    this.getTotalTax();
+                },
+                getTotalTax() {
+                    var taxPercent = 0;
+                    if (this.empGender == 'Male') {
+                        if (this.totalSal >= 500000) {
+                            taxPercent = 15;
+                        } else if (this.totalSal >= 300000) {
+                            taxPercent = 10;
+                        } else if (this.totalSal >= 100000) {
+                            taxPercent = 5;
+                        } 
+                    } else if (this.empGender == 'Female') {
+                        if (this.totalSal >= 500000) {
+                            taxPercent = 10;
+                        } else if (this.totalSal >= 300000) {
+                            taxPercent = 5;
+                        }
+                    }
+                    this.taxTobePaid = (this.totalSal * taxPercent) / 100;
+                    this.totolSalAfterTaxDeduction = this.totalSal - this.taxTobePaid;
+                },
+                displayEmployeeDetails() {
+                    this.readEmpDetails();
+                    console.log("Employee details");
+                    console.log("Employee name " + this.empName);
+                    console.log("Employee age " + this.empAge)
+                    console.log("Employee Basic Sal "  + this.empBasicSal)
+                    console.log("Employe contact no." + this.empContactNo);
+                    console.log("Employee Tax to be paid " + this.taxTobePaid);
+                    console.log("Employee Total Sal after tax deductions " + this.totolSalAfterTaxDeduction);
+
+                    console.log(this);
+                }
+            }
+            for (var i = 0; i < 3;i++) {
+                empDetails.displayEmployeeDetails();
+            }
+
+        </script>
+    </body>
+</html>

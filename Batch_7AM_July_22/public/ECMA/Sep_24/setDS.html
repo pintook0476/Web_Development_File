@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Set DS
+    </title>
+</head>
+<body>
+    <script>
+        var data = [34, 45, 67, 89];
+
+        var data = new Array();
+
+
+        var s1 = new Set();
+        s1.add(90).add(99).add(123).add(90).add(99);
+        s1.add(100);
+
+        console.log(s1.size);
+        console.log(s1.has(101))
+        console.log(s1.values())
+        s1.delete(123)
+
+        console.log(s1);
+
+    for (let value of s1) {
+        console.log(value);
+    }
+
+    </script>
+</body>
+</html>

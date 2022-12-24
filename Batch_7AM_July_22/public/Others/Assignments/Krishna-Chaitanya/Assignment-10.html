@@ -1,0 +1,35 @@
+<html>
+<script>
+
+var name=prompt("enter name");
+var age=prompt("enter age");
+var basicsal= prompt ("Enter your Basic Salary");
+var loc =prompt("enter your location");
+var Gender = prompt("Enter your Gender");
+
+// converting string to number with the help of parseInt..
+var basicsal = parseInt(basicsal);
+
+var pf = basicsal * (14 / 100);
+
+var pf = parseInt(pf);
+
+        var hra = basicsal * (24 / 100);
+        // converting string to number with the help of parseInt..
+        var hra = parseInt(hra);
+
+var totalsal = basicsal + pf + hra;
+
+
+
+
+console.log("name " + name);
+console.log("age " + age);
+console.log("Your location is " + loc);
+console.log("Your Gender is " + Gender);
+console.log("Your basic Salary " + basicsal);
+console.log("Total sal " + totalsal);
+console.log("Your HRA is " + hra);
+console.log('PF OF EMPLOYEE '+ name +' is :'+ pf );
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var studentName, total = 0, avg, sage, sgender;
+            var marks = [];
+            var i;
+            function readStudentData() {
+                studentName = prompt("Enter student name");
+                sage = prompt("Enter age");
+                sgender = prompt("Enter gender");            
+
+                for (i = 0 ; i < 5; i++) {
+                    marks[i] = prompt("Enter value of subject " + (i + 1));
+                    marks[i] = parseInt(marks[i]);
+                }
+                getTotalAndAvg();
+            }
+
+            function getTotalAndAvg() {
+                for (var i = 0 ; i < marks.length; i++) {
+                    total += marks[i];
+                }
+                avg = total / 5;
+            }
+
+            function displayStudentDetails() {
+                readStudentData();
+                console.log("Student name is " + studentName);
+                console.log("Age is " + sage);
+                console.log("Gender is " + sgender);
+                console.log("Total is " + total);
+                console.log("AVg is " + avg);
+                getGrade();
+            }
+           
+            function getGrade() {
+                if (avg >= 40) {
+                    console.log("passed");
+                    if (avg >= 90) {
+                        console.log("Distiction");
+                    } else if (avg >= 60) {
+                        console.log("first class");
+                    } else {
+                        console.log("SEcond class");
+                    }
+                } else {
+                    console.log("Failed")
+                }
+            }
+
+            
+            displayStudentDetails();
+            
+
+        </script>
+    </body>
+</html>
+

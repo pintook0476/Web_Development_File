@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../../jquery.js"></script>
+        <style>
+            .block {
+                background-color: grey;
+                height: 700px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        select page: 
+        <select name="" id="pgetype" onchange="showpage()">
+            <option value="login">Login</option>
+            <option value="fg">Forgot Page</option>
+            <option value="signup">New signup</option>
+            <option value="career">Careers</option>
+        </select>
+        <div class="mainContainer">
+            <div class="loginBlock block">
+                user id
+                <input type="text">
+                <input type="password">
+            </div>
+
+            <div class="fbblock block">
+                Forgot password page
+                
+            </div>
+            <div class="newsignup  block">
+               new signup page
+            </div>
+            <script>
+                var showpage = () => {
+                    $(".block").hide();
+                    var pageType = $("#pgetype").val();
+                    switch(pageType) {
+                        case 'login':
+                            $(".loginBlock").show();
+                            break;
+                        case 'fg':
+                            $(".fbblock").show();
+                            break;
+                        case 'signup':
+                            $(".newsignup").show();
+                            break;
+                    }
+                }
+                showpage();
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <script>
+                var myDate=new Date();
+                var monthFormat=['January', 'February', 'March', 'April', 'May', 'June',  'july', 'Augest', 'September', 'October', 'November', 'December']
+                var monthFormat1=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',  'jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+                
+                var dateFormat=['Sun', 'Mon','Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+                var dateFormat1=['Sunday', 'Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] 
+                var format1= monthFormat[myDate.getMonth()]+','+' ' +myDate.getDate()+'th'+' '+myDate.getFullYear();
+                console.log(format1)
+                var format2=dateFormat[myDate.getDay()]+','+' '+monthFormat1[myDate.getMonth()]+' '+myDate.getDate()+'th'+' '+myDate.getFullYear();
+                console.log(format2)
+                var format3=dateFormat1[myDate.getDay()]+',' +' '+monthFormat[myDate.getMonth()]+' '+myDate.getDate()+'th'+' '+myDate.getFullYear();
+                console.log(format3)
+                var format4='0'+myDate.getDate()+'/'+'0'+myDate.getMonth()+'/'+myDate.getFullYear();
+                console.log(format4)
+                var format5=myDate.getDate()+'th'+' '+monthFormat1[myDate.getMonth()]+','+' '+myDate.getFullYear();
+                console.log(format5)
+                var format6=myDate.getDate()+'th'+' '+monthFormat1[myDate.getMonth()]+','+' '+myDate.getFullYear()+'  '+myDate.getHours()+':'+myDate.getMinutes()+':'+myDate.getSeconds();
+                console.log(format6)
+                var format7=monthFormat1[myDate.getMonth()]+'/'+myDate.getDate()+'/'+myDate.getFullYear()+'  '+myDate.getHours()+':'+myDate.getMinutes();+':'+myDate.getSeconds();
+                console.log(format7);
+                var format8=myDate.getDate()+'-'+monthFormat1[myDate.getMonth()]+'-'+myDate.getFullYear()+' '+myDate.getHours()+':'+myDate.getMinutes()+':'+myDate.getSeconds();
+                console.log(format8);
+            </script>
+        </body>
+        </html>monthFormat[my]

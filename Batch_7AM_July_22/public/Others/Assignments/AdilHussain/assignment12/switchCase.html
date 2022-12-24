@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of All prime no.</title>
+</head>
+
+<body>
+    <script>
+
+        var a, b;
+        ans = 0;
+        switch (a) {
+            case 2:
+                for (a = 2; a <= 100; a++) {
+                    var result = true
+                    for (b = 2; b < a; b++) {
+                        if (a % b == 0) {
+                            result = false;
+                            break;
+                        }
+
+                    }
+                    if (result == true) {
+                        document.write(a + "<br>");
+                        ans += a;
+
+                    }
+
+                }
+                document.write(ans);
+                break;
+            default:
+                document.write("Nor integer nor prime");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assignment22.css">
+    </head>
+    <body>
+        <div class="maincontainer" id="Maincontainer">
+            <div class="details">
+                Bank Details
+            </div>
+            <div class="cname">
+                Customer Name :
+            </div>
+            <div>
+                <input type="text" id="cinput">
+            </div>
+            <div class=" cname">
+                Account no. :
+            </div>
+            <div>
+                <input type="text" id="Anumber">
+            </div>
+            <div class="cname">
+                Address :
+                
+            </div>
+            <div>
+                <input type="text" id="cAddress">
+            </div>
+            <div class="ckyc ">
+                Kyc
+                <select name="" id="Ekyc">
+                    <option value="Aadhar">Aadhar</option>
+                    <option value="Pan card">Pan card</option>
+                    <option value="Voter Id">Voter Id</option>
+                </select>
+            </div>
+            <div class="">
+                <input type="button" value="Check Balance" id="checkBalance" onclick="userData();">
+            </div>
+        </div>
+        <div class="Showdetails hide">
+            <div class="cnumber" id="outputname" >
+                Customer Name : 
+            </div>
+            <div class="cnumber" id="outputnumber">
+                Account Number :
+            </div>
+            <div class="cnumber" id="outputaddress">
+                Address :
+            </div>
+            <div class="cnumber" id="outputkyc">
+                Kyc :
+            </div>
+            <div class="cnumber" id="outputbalance">
+                Account Balance :
+            </div>
+
+        </div>
+        <script src="Assignment22.js"></script>
+    </body>
+</html>

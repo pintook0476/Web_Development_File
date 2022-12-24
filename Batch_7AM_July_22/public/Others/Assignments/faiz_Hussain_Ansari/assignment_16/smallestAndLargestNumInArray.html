@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var number = [20,40,9,22,3,16,24];
+            var largest = number[0];
+            var smallest = number[0];
+
+            for (var i = 1; i < number.length; i++) {
+                if (number[i] > largest) {
+                    largest = number[i];
+                } else if (number[i] < smallest) {
+                    smallest = number[i];
+                }
+                
+            }   console.log("largest num is " + largest);
+                console.log("smallest num is " + smallest);
+
+        </script>
+    </body>
+</html>

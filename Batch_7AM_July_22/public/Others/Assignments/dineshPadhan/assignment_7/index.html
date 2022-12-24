@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Game | by Dinesh Padhan</title>
+    <style>
+        body {
+            background-color: #dfdbff;
+        }
+        /* header */
+        .header {
+            text-align: center;
+            border: 2px solid ;
+            background-color: blanchedalmond;
+            font-size: 25px;
+            line-height: 50px;
+            font-weight: bold;
+            text-decoration-color: #7c7c7c;
+        }
+        .txt2{
+            position: absolute;
+            font-weight: bold;
+            font-size: 25px;
+            left: 245px;
+            top: 19px;
+            color: rgb(255, 0, 0);
+        }
+        .txt1:hover{
+            border: 2px solid black;
+            color: #7c7c7c;
+            animation: block ease .2s ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes block {
+            0% {
+                font-size: 25px;
+                line-height: 50px;
+            }
+            25% {
+                font-size: 26px;
+                line-height: 50px;
+            }
+            50% {
+                font-size: 27px;
+                line-height: 50px;
+            }
+            75% {
+                font-size: 28px;
+                line-height: 50px;
+            }
+            100% {
+                font-size: 29px;
+                line-height: 50px;
+            }
+            75% {
+                font-size: 28px;
+                line-height: 50px;
+            }
+            50% {
+                font-size: 27px;
+                line-height: 50px;
+            }
+            25% {
+                font-size: 26px;
+                line-height: 50px;
+            }
+            0% {
+                font-size: 25px;
+                line-height: 50px;
+            }
+        }
+        /* Main Box */
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid transparent;
+            margin: 10px auto;
+            padding: 2px;
+            position: relative;
+            background-color: white;
+            box-shadow:0px 0px 4px 4px rgba(65, 65, 65, 0.701) ;
+        }
+        /* box */
+        .container .box {
+            height: 75px;
+            width: 75px;
+            border: 2px solid;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            position: absolute;
+            margin: 5px 5px;
+        }
+        .box:hover, .b1:hover, .b2:hover, .b3:hover, .b4:hover {
+            transform: scale(1.2);
+        }
+        .l-bottom {
+            bottom: 0%;
+        }
+        .r-top {
+            right: 0px;
+            top: 0px;
+        }
+        .r-bottom {
+            bottom: 0;
+            right: 0;
+        }
+        /* Sub box */
+        .item {
+            height: 75px;
+            width: 75px;
+            border: 2px solid;
+        }
+        .b1 {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .b2 {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+        .b3 {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .b4 {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        /* center Box  */
+        .center {
+            top: 200px;
+            left: 200px;
+            position: relative;
+        }
+        .center1 {
+            position: absolute;
+            left: -50px;
+            top: -50px;
+        }
+        .center2 {
+            position: absolute;
+            left: -50px;
+            bottom: -50px;
+        }
+        .center3 {
+            position: absolute;
+            right: -50px;
+            top: -50px;
+        }
+        .center4{
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+        .footer{
+            height: 25px;
+            line-height: 25px;
+            background-color: #ffdcb2;
+            border: 2px solid rgb(137, 137, 137);
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header txt1">Block Game</div>
+    <span class="txt2">Block Game</span>
+    <div class="container">
+        <div class="box l-top">
+            <div class="item b1"></div>
+        </div>
+        <div class="box l-bottom">
+            <div class="item b2"></div>
+        </div>
+        <div class="box r-top">
+            <div class="item b3"></div>
+        </div>
+        <div class="box r-bottom">
+            <div class="item b4"></div>
+        </div>
+        <div class="box center">
+            <div class="item center1 middle"></div>
+            <div class="item center2 middle"></div>
+            <div class="item center3 middle"></div>
+            <div class="item center4 middle"></div>
+        </div>
+    </div>
+    <div class="footer">&copy; Copyright 2022 All Rights Resolved || <strong>DP Solution</strong></span></div>
+</body>
+</html>

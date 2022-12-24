@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student details declaring gobally </title>
+</head>
+<body>
+    <script>
+         var employeedetails = ()=>{
+            var ename ,  age , gender , company , loc ,  basicpay , score;
+            ename = prompt("enter employee name ");
+            age  = prompt("enter employee age  ");
+            gender= prompt("enter employee gender ");
+            company  = prompt("enter employee company name ");
+            loc= prompt("enter employee location ");
+            basicpay = prompt("enter basicsalary");
+            basicpay=parseInt(basicpay);
+            var score = totalbaiscs(basicpay);
+            employeevalues (ename ,  age , gender , company , loc ,  basicpay , score );
+
+         }
+         var totalbaiscs=(basicpay)=>{
+            var hra= basicpay *10/100;
+            var pf = basicpay *10/100;
+            var total = hra + pf + basicpay ;
+            return total ;
+         }
+         var employeevalues= ( ename ,  age , gender , company , loc ,  basicpay , score )=>{
+            console.log("name "+ ename );
+            console.log("age "+ age );
+            console.log("gender "+ gender );
+            console.log("company "+ company);
+            console.log("location  "+ loc);
+            console.log("basicsalary "+  basicpay);
+            console.log("totalsalary"+ score );
+         }
+         employeedetails ();
+
+
+       
+            
+           
+       
+       
+    
+    </script>
+    
+</body>
+</html>

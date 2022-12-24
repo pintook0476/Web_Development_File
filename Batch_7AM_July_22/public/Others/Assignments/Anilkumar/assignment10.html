@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ename = prompt('enter employe name');
+        var age = prompt('enter age');
+        var dep = prompt('enter dep');
+        var basicsalary = prompt('enter salary');
+        basicsalary = parseInt(basicsalary);
+        var pf = basicsalary * (14 / 100);
+        var hra = basicsalary * (24 / 100);
+        var totalsalary = pf + hra + basicsalary;
+
+        console.log('enter ename' + ename);
+        console.log('age' + age);
+        console.log('dep' + dep);
+        console.log('basicsalary' + basicsalary);
+        console.log('pf' + pf);
+        console.log('hra' + hra);
+        console.log('totalsalary' + totalsalary);
+    </script>
+</body>
+
+</html>

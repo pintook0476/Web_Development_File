@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>smallest and largest number in an array</title>
+    </head>
+    <body>
+        <h1>find smallest and largest number in a given array</h1>
+        <script>
+            var arrayFormation = () => {
+                var number = [1,6,3,46,5,67,0,8,9];
+                calculateLargestNLowest(number);
+            }
+            var calculateLargestNLowest = (number) => {
+                var temp = number[0];
+                var temp2 = number[0];
+               for(var i = 0 ; i < number.length ; i++){
+                    if (temp < number[i])
+                        var smallest = temp;
+                    else if (temp > number[i]){
+                        temp = number[i];
+                        var smallest = temp;
+                    }
+                    if (temp2 > number[i])
+                        var largest = temp2;
+                    else if ( temp2 < number[i]){
+                        temp2 = number[i];
+                        var largest = temp2;
+                    }
+               }
+               output(number , smallest , largest);
+            }
+            var output = (number ,smallest , largest) => {
+                console.log(number);
+                console.log("smallest number in array is : " + smallest );
+                console.log("largest number in array is : " + largest)
+            }
+            arrayFormation();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student progress Card Generation</title>
+    <link rel="stylesheet" href="StudentProgressGeneration.css">
+    <script src="StudentProgressCardGeneration.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            <div id="img"><img src="Slogo.PNG" alt="logo"></div>
+            <div id="headline"><h2>Student Progress Card Generator</h2></div>
+        </div>
+        <ul class="readStuData">
+            <li><input type="text" class="input" id="sname" placeholder="Enter Student Name" autocomplete="off"></li>
+                 <div class="mandate nameMandate">Name Field Is Mandetory</div>
+            <li><input type="number" class="input" id="age" placeholder="Enter Your Age" min="1" max="100"></li>
+                <div class="mandate ageMandate">Age Field Is Mandetory</div>
+            <li class="gen" id="gen1"> Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input checked type="radio" name="gender" value="Male"> Male
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Female"> Female</li>
+            <li class="gen"> 
+                <select name="" id="sclass">
+                <option selected >Class I</option>
+                <option>Class II</option>
+                <option>Class III</option>
+                <option>Class IV</option>
+                <option>Class V</option>
+                <option>Class VI</option>
+                <option>Class VII</option>
+                <option>Class VIII</option>
+                <option>Class IX</option>
+                <option>Class X</option>
+                <option>Class XI</option>
+                <option>Class XII</option>
+                </select>
+            </li>  
+            <li class="marksBlock"> Marks : 
+                <input type="text" id="m1" placeholder="Sub-1" maxlength="2" autocomplete="off">
+                <input type="text" id="m2" placeholder="Sub-2" maxlength="2" autocomplete="off">
+                <input type="text" id="m3" placeholder="Sub-3" maxlength="2" autocomplete="off">
+                <input type="text" id="m4" placeholder="Sub-4" maxlength="2" autocomplete="off">
+                <input type="text" id="m5" placeholder="Sub-5" maxlength="2" autocomplete="off">
+            </li> 
+            <div class="mandate mMandate">Marks Field Is Mandetory</div>
+            <li class="btn"><input id="mainbutton" type="button" value="Generate Progress Card" 
+                onclick="generateProgressCard();"></li> 
+        </ul>
+    </div>
+    <div class="displayBlock">  
+        <table class="innertable">
+            <thead id="id">
+             <tr>
+                <th colspan="4"><img class="logo1" src="ulogo.PNG"><div class="block">Central Board Of Secondary Education <br>
+                    <span style="font-size: 12px; color: #f53607;"> Committed To Equaty & Excellence in Education</span></div></th>
+             </tr>
+            </thead>
+            <tbody>
+                   
+                    <tr class="content">
+                        <td colspan="2">Name: <span id="dName"></span></td>
+                        <td colspan="2">Age : <span id="dAge"></span></td>
+                    </tr> 
+                    <tr class="content">
+                        <td colspan="2">Gender : <span id="dGender"></span></td>
+                        <td colspan="2">Standard : <span id="dClass"></span></td>
+                    </tr> 
+                    <tr>
+                        <th class="litheading">Subjects</th>
+                        <td class="litheading">Max Marks</td>
+                        <td class="litheading">Min Marks</td>
+                        <td class="litheading">Obtained Marks</td>
+                    </tr>
+                    <tr>
+                        <th class="text">English</th>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><span id="dm1"></span></td>
+                    </tr>
+                    <tr>
+                        <th class="text">Mathematics</th>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><span id="dm2"></span></td>
+                    </tr>
+                    <tr>
+                        <th class="text">physics</th>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><span id="dm3"></span></td>
+                    </tr>
+                    <tr>
+                        <th class="text">Chemistry</th>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><span id="dm4"></span></td>
+                    </tr>
+                    <tr>
+                        <th class="text">Economics</th>
+                        <td>100</td>
+                        <td>40</td>
+                        <td><span id="dm5"></span></td>
+                    </tr>
+            </tbody>
+            <tfoot style="text-align: left;">
+             <tr>
+                <th colspan="4">Result: <span id="dRes"></span>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    Total Marks: <span id="dTotal"></span>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+                    Percentage: <span id="dPer"></span>
+                </th>
+             </tr>
+            </tfoot>
+         </table>
+        </div> 
+   
+    
+    <!-- <ul class="displayBlock">
+        <li>Student Name : <span id="dName"></span></li>
+        <li>Age : <span id="dAge"></span></li>
+        <li>Gender : <span id="dGender"></span></li>
+        <li>Class : <span id="dClass"></span></li>
+        <li>Total Marks : <span id="dTotal"></span></li>
+        <li>Average : <span id="dAvg"></span></li>
+        <li>Grade : <span id="dGrade"></span></li>
+    </ul> -->
+</body>
+</html>

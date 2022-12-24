@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="app.js"></script>
+        <style>
+            .tax {
+                float: left;
+            }
+            .total {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div ng-app="app" ng-controller="appController">
+            <table id='table' class="table table-striped">
+                <thead>
+                    <!-- HEADING FORMATION -->
+                    <tr  class="bg-info">
+                        <th>Items: {{orderData.length}}</th>
+                        <th>YOURORDER</th>
+                        <th  style="text-align: right;">Price</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in orderData">
+                        <td>
+                            <div>{{$index + 1}}</div>
+                            
+                        </td>
+                        <td>
+                            <div>{{data.description}}</div>
+                            <div>{{data.items.description}}</div>                            
+                        </td>
+                        <td>                            
+                            <div  style="text-align: right;">{{data.Price}}</div>
+                            <div style="text-align: right;">{{data.items.Price}}</div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <span class="tax">Tax: ${{totalTaxValue}}</span>
+                            <span class="total">Total $ {{totalPrice}}</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>

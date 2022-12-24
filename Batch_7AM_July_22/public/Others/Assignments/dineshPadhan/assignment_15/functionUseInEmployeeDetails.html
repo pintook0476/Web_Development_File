@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details | By Dinesh</title>
+</head>
+<body>
+    <script>
+        var name, age, dept, address, sal, pf, hra, total;
+        function getDetails() {
+            name=prompt("Enter the Employee name")
+            age=prompt("Enter the Employee Age")
+            dept=prompt("Enter the Employee\'s Depatment")
+            sal=parseInt(prompt("Enter the Employee\'s Basic Salary"))
+            getCalculation()
+        }
+        function getCalculation() {
+            pf=sal*(5/100)
+            hra=sal*(15/100)
+            total=sal+pf+hra
+            output()
+        }
+        function output() {
+            alert("Employee Name is "+name+"\nEmployee Age is "+age+"\nEmployee\'s Depatment"+dept+"\nEmployee\'s total Salary")
+        }
+        getDetails()
+    </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student's Details</title>
+    <style>
+        body{
+    box-sizing: border-box;
+    /* background-color: #065571; */
+    z-index: 0;
+}
+h1{
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: #baffa6;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 26px;
+    padding: 4px;
+}
+.container{
+    border: 2px solid red;
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #fae198;
+}
+.set1{
+    margin: 0px auto;
+    border: 2px solid blue;
+    float: left;
+    overflow: auto;
+    height: 82%;
+}
+div legend{
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    border: 2px solid;
+    background-color: darkslategrey;
+    color: aliceblue;
+    font-size: 22px;
+    z-index: 1;
+    /* border-radius: 15px; */
+}
+#studentsName{
+    width: 25%;
+    float: inline-start;
+    /* height: 100%; */
+    margin: 0px 5px;
+    background-color: #baffa6;
+}
+#studentsDetailsHead{
+    width: 72%;
+    margin: 0px 0px;
+    background-color: #baffa6;
+}
+.studentsDetails{
+    border: 2px solid black;
+    background-color: #b6b6cb;
+    height: 50%;
+    margin: 2px auto;
+    border-radius: 20px 0px 30px 0px;
+}
+
+.profile1 a {
+    border: 1.5px solid red;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 3px 4px;
+    padding: 5px 0px;
+    background-color: #cca9a9;
+}
+.pic{
+    border: 1px solid red;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    height: 35%;
+    border-radius: 40%;
+}
+    
+.studentsDetails li{
+    list-style-type: none;
+    /* display: inline-block; */
+    border: 1px solid #b5eda9;
+    margin: 3px auto;
+    font-size: 24px;
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+button{
+    border: 2px solid red;
+    float: right;
+    position: relative;
+    bottom: 15px;
+    right: 20px;
+    border-radius: 10px;
+}
+.Dorae{
+    color: #002db5;;
+}
+footer{
+    text-align: center;
+    clear: both;
+    background-color:rgb(31, 53, 53);
+    position: relative;
+    top: 3px;
+    width: 98.2%;
+    left: 5px;
+    padding: 2px;
+    color: aliceblue;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registered Student's Details</h1>
+        <div class="set1" id="studentsName">
+            <legend>Student's Name</legend>
+            <div class="profile1" id="name1"><a href="#Profile_Pic-1">Doraemon</a></div>
+            <div class="profile1" id="name2"><a href="#Profile_Pic-2">Nobita Nobi</a></div>
+            <div class="profile1" id="name3"><a href="#Profile_Pic-3">Takeshi Gian Goda</a></div>
+            <div class="profile1" id="name4"><a href="#Profile_Pic-4">Suneo Honekawa</a></div>
+            <div class="profile1" id="name5"><a href="#Profile_Pic-5">Shizuka Minamoto</a></div>
+            <div class="profile1" id="name6"><a href="#Profile_Pic-6">Dorami</a></div>
+            <div class="profile1" id="name7"><a href="#Profile_Pic-7">Hidetoshi Dekisugi</a></div>
+        </div>
+        <div class="set1" id="studentsDetailsHead">
+            <legend>Student's Details</legend>
+            <img src="https://cdn.pixabay.com/photo/2019/10/16/09/09/doraemon-4553920_1280.png" alt="Profile_Pic-1" class="pic" id="Profile_Pic-1">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Doraemon</span></li>
+                    <li>Species: <span class="Dorae"> Robot cat</span></li>
+                    <li>First Appearance: <span class="Dorae"> 15 December 1969</span></li>
+                    <li>Generation: <span class="Dorae"> 21st Century</span></li>
+                    <li>Speciality: <span class="Dorae"> 4-Dimensional Pocket</span></li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/originals/bf/eb/a8/bfeba832a872fef7b0426e3c314041d9.png" alt="Profile_Pic-2" class="pic" id="Profile_Pic-2">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Nobita Nobi</span></li>
+                    <li>Gender: <span class="Dorae"> Male</span></li>
+                    <li>First Appearance: <span class="Dorae"> December 1969</span></li>
+                    <li>Enemy: <span class="Dorae"> Gian</span></li>
+                    <li>Speciality: <span class="Dorae"> The Lazy King</span></li>
+                </ul>
+            </div>
+            <img src="http://pm1.narvii.com/6286/7aee1dce5f8b7980a7960da82389a9902cae280f_00.jpg" alt="Profile_Pic-3" class="pic" id="Profile_Pic-3">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Takeshi Gian Goda</span></li>
+                    <li>Gender: <span class="Dorae"> Male</span></li>
+                    <li>First Appearance: <span class="Dorae"> December 1969</span></li>
+                    <li>Sister: <span class="Dorae"> Jaiko</span></li>
+                    <li>Speciality: <span class="Dorae"> Horrible Singer</span></li>
+                </ul>
+            </div>
+            <img src="https://gamek.mediacdn.vn/133514250583805952/2021/10/25/anh-4-16351413356291292942919.jpg" alt="Profile_Pic-4" class="pic" id="Profile_Pic-4">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Suneo Honekawa</span></li>
+                    <li>Gender: <span class="Dorae"> Male</span></li>
+                    <li>First Appearance: <span class="Dorae"> December 1969</span></li>
+                    <li>Height: <span class="Dorae">Shortest</span></li>
+                    <li>Speciality: <span class="Dorae"> narcissist (handsome guy)</span></li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/originals/b4/fc/98/b4fc98b3314d6bb01e6b2cf557d2207e.jpg" alt="Profile_Pic-5" class="pic" id="Profile_Pic-5">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Shizuka Minamoto</span></li>
+                    <li>Gender: <span class="Dorae"> Female</span></li>
+                    <li>First Appearance: <span class="Dorae"> December 1969</span></li>
+                    <li>Favourite Color: <span class="Dorae"> Pink</span></li>
+                    <li>Speciality: <span class="Dorae"> smart, kind and pretty</span></li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/564x/47/11/8b/47118bea1933b2131f70545ea255214d.jpg" alt="Profile_Pic-6" class="pic" id="Profile_Pic-6">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Dorami</span></li>
+                    <li>Species: <span class="Dorae"> Robot cat</span></li>
+                    <li>First Appearance: <span class="Dorae"> 15 December 1969</span></li>
+                    <li>Generation: <span class="Dorae"> 21st Century</span></li>
+                    <li>Speciality: <span class="Dorae"> Better skills in using Gadgets</span></li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/736x/24/68/b6/2468b6db8a1b4e52e25f9374955f3e83.jpg" alt="Profile_Pic-7" class="pic" id="Profile_Pic-7">
+            <div class="studentsDetails">
+                <ul>
+                    <li>Name: <span class="Dorae"> Hidetoshi Dekisugi</span></li>
+                    <li>Gender: <span class="Dorae"> Male</span></li>
+                    <li>First Appearance: <span class="Dorae"> December 1969</span></li>
+                    <li>Favourite: <span class="Dorae"> Astronomy and Philosophy</span></li>
+                    <li>Speciality: <span class="Dorae"> High intelligence</span></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            Copyrights @2022 FD(Front_Dev)
+        </footer>
+    </div>
+</body>
+
+</html>

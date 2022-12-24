@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Details with Json Object With Methods</title>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <ul>
+        <li>Employee Name: <span id="empname"></span></li>
+        <li>Employee Gender: <span id="empgender"></span></li>
+        <li>Employee PF: <span id="emppf"></span></li>
+        <li>Employee HRA: <span id="emphra"></span></li>
+        <li>Employee Total Salary: <span id="empsalary" style="color: green;"></span></li>
+    </ul>
+
+    <script>
+        var empData = {
+            readEmpData: function() {
+                this.empName = prompt("Enter employee name");
+                this.empGender = prompt("Enter employee gender");
+                this.empbasicSal = prompt("Enter employee basic salary");
+                this.empbasicSal = parseInt(this.empbasicSal);
+                this.getPfAndHra();
+            },
+            getPfAndHra: function() {
+                this.pf = (12 * this.empbasicSal) / 100;
+                this.hra = (25 * this.empbasicSal) / 100;
+                this.totalSal = this.pf + this.hra + this.empbasicSal;
+                this.getTotalTax();
+            },
+            getTotalTax: function() {
+                var taxPercent = 0;
+                if(this.empGender == 'male'){  //for male
+                    if(this.total >= 500000){
+                        this.taxPercent = 15;
+                    }else if(this.totalSal >= 300000){
+                        this.taxPercent = 10;
+                    }else if(this.totalSal >= 100000){
+                        this.taxPercent = 5;
+                    }
+                }else{ //for female
+                    if(this.totalSal >= 500000){
+                        this.taxPercent = 10;
+                    }else if(this.totalSal >= 300000){
+                        this.taxPercent = 5;
+                    }
+                }
+                this.taxTobePaid = (this.taxPercent * this.totalSal) / 100;
+                this.totalSal = this.totalSal - this.taxTobePaid;
+                this.displayEmployeeDetails();
+            },
+            displayEmployeeDetails: function() {
+                //readEmpData();
+                // console.log("Employee Details");
+                // console.log("Employee name " + this.empName);
+                // console.log("Gender " + this.empGender);
+                // console.log("Total Sal " + this.totalSal);
+
+                document.querySelector("#empname").innerHTML = this.empName;
+                document.querySelector("#empgender").innerHTML = this.empGender;
+                document.querySelector("#emppf").innerHTML = this.pf;
+                document.querySelector("#emphra").innerHTML = this.hra;
+                document.querySelector("#empsalary").innerHTML = "<b>" + this.totalSal + "</b>"
+            }
+        }
+        empData.readEmpData();
+        
+    </script>
+</body>
+</html>

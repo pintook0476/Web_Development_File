@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Assignment-10)Student details using condition</title>
+</head>
+<body> <h1>Go to Console Window to see the Output</h1>
+        <script>
+             var sname= prompt("Enter Student Name");
+             var sage= prompt("Enter your Age in Number");
+             var school_name=prompt("Enter your School Name")
+
+             var m1 = prompt("Enter your Subject 1 marks");
+             m1= parseInt(m1);
+             var count=0;
+             if (m1<35)
+             {
+               count++;
+             }
+             var m2 = prompt("Enter your Subject 2 marks");
+             m2= parseInt(m2);
+             if (m2<35)
+             {
+               count++;
+             }
+             var m3 = prompt("Enter your Subject 3 marks");
+             m3= parseInt(m3);
+             if (m3<35)
+             {
+               count++;
+             }
+             var m4 = prompt("Enter your Subject 4 marks");
+             m4= parseInt(m4);
+             if (m4<35)
+             {
+               count++;
+             }
+             var m5 = prompt("Enter your Subject 5 marks");
+             m5= parseInt(m5);
+             if (m5<35)
+             {
+               count++;
+             }
+
+             var total= m1 + m2 + m3 + m4 + m5;
+             var avg = (m1 + m2 + m3 + m4 + m5) / 5;            
+         
+             console.log("Student name is "+sname);
+             console.log("School name is "+school_name);
+             console.log("Total marks is "+total);
+             console.log("Average is "+avg);
+
+               if(m1>=35 && m2>=35 && m3>=35 && m4>=35 && m5>=35)
+                     if(avg>=75)
+                     {                
+                        console.log("Distinction");
+                     }
+                     else if( avg>=60 && avg<75 )
+                     {               
+                        console.log("First Class");
+                     }
+                     else if( avg>=50 && avg<60 )
+                     {                
+                        console.log("Second Class");
+                     }
+                     else if( avg>=40 && avg<50 )
+                     {                
+                        console.log("Third Class");
+                     }
+                     else 
+                     {                
+                        console.log("You just passed the exam")
+                     }
+               else
+                     {
+                        console.log("Opps! you are not promoted to higher class");
+                        console.log("You have failed in "+count +" subjects ");
+                     }
+
+        </script>
+        
+    
+</body>
+</html>

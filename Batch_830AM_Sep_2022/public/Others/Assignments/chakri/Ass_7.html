@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+         <title>Registration Page</title>
+         <link rel="icon" href="https://www.clipartmax.com/png/middle/120-1207150_test-tube-free-icon-blood-sample-icon.png">
+         <style>
+            .container{
+                border: 1px solid;
+                height: 500px;
+                width: 800px;
+                text-align: center;
+                position: relative;
+                left: 250px;
+                background-color: brown;
+                color:white;
+                
+            }
+             li{
+                font-size: 20px;
+                list-style: none;
+                color: white;
+                text-align: left;
+                margin: 3px;
+                border: 1px solid #ccc;
+            }
+            .box1{
+                position: relative;
+                left: 1px;
+            }
+            .box2{
+                position: relative;
+                left: 23px;
+            }
+            .box3{
+                position: relative;
+                right: 2px;
+
+            }
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6,
+            .box7{
+                margin: 8px;
+            }
+            .dropdown-content{
+                display:none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="font-size: 30px" >DNR collge of engineering&Technology
+            <div style="font-size: 20px;">Student Registration form</div>
+            <br>
+            <li>Name:
+                <input type="text" name="username" class="box1" placeholder="enterusername">
+            </li>
+            <li>DOB:
+                <input type="date" class="box4">
+             </li>
+             <li>
+                Gender:
+                <input type="radio" name="gender">male
+                <input type="radio" name="gender">female
+             </li>
+             <li>Email:
+                <input type="text" name="mail" class="box2" placeholder="enter mailid">
+             </li>
+             <li>current address:
+                <textarea maxlength="100" rows="4" cols="35" class="box3"></textarea>
+             </li>
+             <li>School:
+                <select name="schoolnames" class="box5" placeholder="enter schoolname">
+                    <option>Srikaktiya</option>
+                    <option >Bhasyam</option>
+                    <option>aditya</option>
+                    <option>Narayana</option>
+                    <option>sri chaitanya</option>
+                    <option >sri bharathi</option>
+                </select>
+             </li>
+             <li>Course:
+                <select name="coursename" class="box6">
+                    <option>Btech</option>
+                    <option>Degree</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <OPtion>microbiology</OPtion>
+                    <option>Dental</option>
+                </select>
+             </li>
+             <li>Mobile no:
+                    <select type:"checkbox">
+                        <option>India</option>
+                        <option>USA</option>
+                    </select>
+                    <input type="text" placeholder="enter number">
+             </li>
+             
+             <div>
+                <input type="submit" value="Reset"><span>     </span><input type="submit" value="Resgister">
+             </div>
+        </div>
+        
+        
+    </body>
+    </html>

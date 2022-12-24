@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+            border: 1px solid black;
+            background-color: lightgray;
+            color: cornflowerblue;
+        }
+
+        .container {
+            width: 96%;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0px auto;
+        }
+
+        .block {
+            width: 90%;
+            height: 70px;
+            border: 1px solid black;
+            padding: 35px 30px;
+            margin: 15px auto;
+            background-color: lightgray;
+            color: darkgoldenrod;
+            margin-bottom: 2%;
+        }
+
+        li {
+            margin: 2px auto;
+        }
+
+        .block1 {
+            width: 20%;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            left: 15%;
+            top: 92px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .block2 {
+            width: 20%;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            left: 15%;
+            top: 263px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .block3 {
+            width: 20%;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            left: 15%;
+            top: 58.2%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .block4 {
+            width: 20%;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            left: 15%;
+            bottom: 108px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .liStyle {
+            list-style: none;
+        }
+
+        .courseList {
+            position: absolute;
+            top: 19.4%;
+            right: 30%;
+        }
+
+        .inputStyle {
+            position: relative;
+            left: 3.3%;
+        }
+
+        #selWidth {
+            width: 160px;
+        }
+
+        .landmark {
+            position: absolute;
+            right: 20%;
+            bottom: 200px;
+        }
+
+        .secondText {
+            float: left;
+            list-style-type: none;
+        }
+
+        #secondText {
+            list-style-type: none;
+        }
+
+        #country {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header">Student Registration Page</h1>
+    <div class="container">
+        <form action="" method="get">
+            <ul class="block">
+                <li class="liStyle">Student Name
+                    <input type="text" name="stuName" value="name">
+                </li>
+                <li class="liStyle">Mail-id
+                    <input type="text" name="stuMail" value="email" class="inputStyle">
+                </li>
+                <li class="liStyle">Gender
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </li>
+                <li class="liStyle courseList">Course Opted
+                    <select name="courses" id="selWidth">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="boot">Bootstrap</option>
+                    </select>
+
+                </li>
+            </ul>
+            <div class="block1">Personal details</div>
+            <div>
+                <ul class="block">
+                    <li class="liStyle">Qualifications
+                        <input type="text" name="stuName" value="name">
+                    </li>
+                    <li class="liStyle">Languages Known
+                        <input type="checkbox" name="lang" value="English">English
+                        <input type="checkbox" name="lang" value="Hindi">Hindi
+                        <input type="checkbox" name="lang" value="Urdu">Urdu
+                    </li>
+                    <li class="liStyle">Average Marks
+                        <input type="number" name="gender" value="male">
+                    </li>
+                </ul>
+            </div>
+            <div class="block2">Educational details</div>
+            <div>
+                <ul class="block">
+                    <li class="liStyle">Dno
+                        <input type="number" name="dNo" value="dNo">
+                    </li>
+                    <li class="liStyle">Street Name
+                        <input type="text" name="location" value="location" class="inputStyle">
+                    </li>
+                    <li class="liStyle">State
+                        <select name="states" id="#">
+                            <option value="MH">Maharashtra</option>
+                            <option value="TL">Telangana</option>
+                            <option value="wb">West bengal</option>
+                            <option value="kr">Kerala</option>
+                        </select>
+                    </li>
+                    <li class="liStyle">Country
+                        <select name="Country" id="country">
+                            <option value="us">America</option>
+                            <option value="uk">England</option>
+                            <option value="in">India</option>
+                            <option value="ja">Japan</option>
+                        </select>
+                    </li>
+                    <div class="landmark">
+                        <div> Landmark </div>
+                        <div><textarea name="landmark" id="#" cols="30" rows="4"></textarea></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="block3">Address</div>
+            <div class="block">
+                <ul id="secondText">
+                    <li>
+                        <div class="secondText">About Yourself :</div>
+                        <div class="secondText"><textarea name="about" id="#" cols="80" rows="4"></textarea></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="block4">About Yourself</div>
+        </form>
+    </div>
+</body>
+
+</html>

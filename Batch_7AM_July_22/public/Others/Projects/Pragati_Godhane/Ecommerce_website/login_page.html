@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+
+            background-image: linear-gradient(rgba(216,194,249,0.7),rgba(212,160,229,1.0)),url('Image/backGround_2.jpg');
+            width: 100vw;
+            height: 100vh;
+        }
+        .login_page{
+
+            width:30vw;
+            height:60vh;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-image: linear-gradient(106.5deg,rgba(255,215,185,1.0) 23%, rgba(223,259,247,0.8) 93%),url("Image/backGround_2.jpg");
+            position: absolute;
+            top: 20vh;
+            left: 35vw;
+            
+            
+            
+            
+        }
+
+        .login_pg_heading{
+
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center; 
+            font-size: 25px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(235, 20, 56);
+            
+           
+        }
+
+        .login_page input{
+
+            width:350px;
+            height:30px;
+            margin-top: 28px;
+            margin-left: 30px;
+            
+            color: rgb(43, 4, 78);
+            border-bottom: 1px solid rgb(230, 102, 63);
+            color: rgb(73, 42, 73);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: transparent;
+            font-size: 15px;
+            font-family: sans-serif ;
+
+            
+            
+        }  
+
+        .login_page input:focus{
+
+            outline: none;
+        }
+
+        ::placeholder{
+
+            color: black;
+            padding-left: 5px;
+        }
+
+        #pwd{
+
+            margin-top: 20px;
+        }
+
+        .login_page button{
+            width:100px;
+            height:30px;
+            position: relative;
+            top: 40px;
+            left: 150px;
+            color: white;
+            background-color: rgb(102, 96, 107);
+            border: none;
+            border-radius: 5px ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        button:hover{
+
+            background-color: orangered;
+            color: white;
+        }
+
+        .login_page .link{
+            margin: 50px;
+            text-align: center;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        .login_page .Sign_up, .login_page .frgt_pass{
+          position: relative;
+          top:-35px;
+          text-align: center;
+          padding: 5px;
+          
+           
+            
+        }
+
+        .login_page .Sign_up a,  .login_page .frgt_pass a{
+
+            color: rgb(235, 20, 56);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+
+
+           
+        }
+
+        .login_page .frgt_pass a:hover{
+
+            color: black;
+        }
+
+        .login_page .Sign_up a:hover{
+
+        color: black;
+        }
+                
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="login_page">
+
+
+        <p class="login_pg_heading">Login</p>
+        <input id="user_name" type="username" placeholder="Enter your user name">
+        <input id="pwd" type="password" name="password"  placeholder="Enter your password">
+        <button id="login_btn" type="submit" value="Login">Submit</button>
+        
+        <p class="link">Dont have an account?<br>New user<br></p>
+        <p class="Sign_up"><a href="">Sign Up</a></p>
+        <p class="frgt_pass"><a href="">Forget Password</a></p>
+    
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-16</title>
+    </head>
+    <body>
+        <script>
+            var date = new Date();
+            console.log(date);
+
+            // mm-dd-yyyy
+            console.log(date.getMonth()+'-'+date.getDate()+'-'+date.getFullYear());
+
+            // Aug, 30th 2022
+            var monthFormat = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            console.log(monthFormat[date.getMonth()]+', '+date.getDate()+'th '+date.getFullYear());
+
+            // August, 30th 2022
+            var monthFormat1 = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            console.log(monthFormat1[date.getMonth()]+', '+date.getDate()+'th '+date.getFullYear());
+
+            // Tue, Aug 30th 2022
+            var dayFormat = ['Sun','Mon','Tue','Wed','Thrus','Fri','Sat'];
+            console.log(dayFormat[date.getDay()]+', '+monthFormat[date.getMonth()]+', '+date.getDate()+'th '+date.getFullYear());
+
+            // Tuesday, August 30th 2022
+            var dayFormat1 = ['Sunday','Monday','Tuesday','Wednesday','Thrusday','Friday','Saturday'];
+            console.log(dayFormat1[date.getDay()]+', '+monthFormat1[date.getMonth()]+', '+date.getDate()+'th '+date.getFullYear());
+
+            // 30/08/2022
+            console.log(date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear());
+
+            // 30th Aug, 2022
+            console.log(date.getDate()+'th '+monthFormat[date.getMonth()]+', '+date.getFullYear());
+
+            // 30th Aug, 2022 09:30:10
+            console.log(date.getDate()+'th '+monthFormat[date.getMonth()]+', '+date.getFullYear()+' '+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds());
+
+            // Aug/30/2022 10:20
+            console.log(monthFormat[date.getMonth()]+'/'+date.getDate()+'/'+date.getFullYear()+' '+date.getHours()+':'+date.getMinutes());
+
+            // 30-Aug-2022 20:30:10
+            console.log(date.getDate()+'-'+monthFormat[date.getMonth()]+'-'+date.getFullYear()+' '+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds());
+        </script>
+    </body>
+</html>

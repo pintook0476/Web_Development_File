@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var count = 0;
+        var a = prompt("enter a no");
+        a = parseInt(a);
+        while (a != 0) {
+            count = count + 1;
+            a = a / 10;
+            a = parseInt(a);
+        }
+        document.write("total no of digit " + count);
+    </script>
+</body>
+
+</html>

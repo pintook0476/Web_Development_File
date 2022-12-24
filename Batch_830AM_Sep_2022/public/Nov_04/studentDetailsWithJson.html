@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Array holding diffrnt datatypes of data
+        </title>
+    </head>
+    <body>
+        <script>
+            var studentDetails = {
+                "name": "Teena", 
+                'total': 0,
+                age: 20, gender: 'Female', 
+                marks: [35, 56, 78, 89, 90], 
+                avg: 0
+                
+            };
+
+            for (var i = 0; i < studentDetails.marks.length; i++) {
+                studentDetails.total += studentDetails.marks[i];
+            }
+            studentDetails.avg = studentDetails.total / studentDetails.marks.length;
+
+            console.log("Student  details");
+            console.log("Student name " + studentDetails.name);
+            console.log("Age is " + studentDetails.age);
+            console.log("Gender " + studentDetails.gender);
+            console.log("Total is " + studentDetails.total);
+            console.log("AVg is " + studentDetails.avg);
+        </script>
+    </body>
+</html>

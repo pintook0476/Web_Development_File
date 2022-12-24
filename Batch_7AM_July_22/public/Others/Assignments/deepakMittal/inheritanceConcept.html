@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Inheritance Concept In Java Script</h3>
+        <script>
+            var sellerInformation = {
+                manufecturue : "Abc Ltd",
+                place : "Hyderabad"
+            };
+            
+
+            var productDetails1 = {
+                name : "Laptop",
+                price : 15000,
+                discount : 15,
+               
+                displayProductDetails (){
+                console.log("Product Name : " + this.name);
+                console.log("Product Price : " + this.price);
+                console.log("Product Discount : " + this.discount);
+                console.log("Product Manufecturer : " + this.manufecturue);
+                console.log("Product Place : " + this.place);
+            }
+            };
+            productDetails1.__proto__ = sellerInformation;
+            
+
+            var productDetails2 = {
+                name : 'tv',
+                price : 10000,
+                discount : 15,
+            
+                displayProductDetails1 (){
+                console.log("Product Name : " + this.name);
+                console.log("Product Price : " + this.price);
+                console.log("Product Discount : " + this.discount);
+                console.log("Product Manufecturer : " + this.manufecturue);
+                console.log("Product Place : " + this.place);
+            }
+            };
+            productDetails2.__proto__ = sellerInformation;
+            productDetails1.displayProductDetails();
+            productDetails2.displayProductDetails1();
+
+           
+        </script>
+        
+    </body>
+</html>

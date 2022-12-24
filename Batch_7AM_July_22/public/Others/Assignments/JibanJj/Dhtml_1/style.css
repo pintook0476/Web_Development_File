@@ -1,0 +1,51 @@
+.header{
+    border: 1px solid;
+    height: 40px;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    background-color: azure;
+}
+.mainContainer{
+    border: 1px solid;
+    height: 600px;
+    overflow: auto;
+    
+}
+.pDetails{
+    list-style-type: none;
+    border: 1px solid;
+    height: 350px;
+    width: 250px;
+    margin-left: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    float: left;
+}
+.pDetails li {
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    margin-left: 15px;
+}
+.pImage img{
+    height: 150px;
+    margin-left: 20%;
+}
+.actualPrice{
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.discountPrice{
+    font-weight: bold;
+    color: green;
+}
+.ratingStar img{
+    height: 20px;
+    width: 20px;
+}
